@@ -19,3 +19,5 @@ function(add_task name)
     add_subdirectory(${name})
   endif()
 endfunction()
+
+add_task(single-number-iii)
