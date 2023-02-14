@@ -21,3 +21,4 @@ function(add_task name)
 endfunction()
 
 add_task(single-number-iii)
+add_task(single-number-ii)
