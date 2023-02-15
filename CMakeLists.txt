@@ -21,6 +21,7 @@ function(add_task name)
 endfunction()
 
 add_task(add-binary)
+add_task(add-two-numbers)
 add_task(plus-one)
 add_task(single-number-i)
 add_task(single-number-ii)
