@@ -22,6 +22,7 @@ endfunction()
 
 add_task(add-binary)
 add_task(add-two-numbers)
+add_task(find-all-lonely-numbers-in-the-array)
 add_task(palindrome-number)
 add_task(plus-one)
 add_task(remove-duplicate-letters)
