@@ -10,18 +10,18 @@ public:
     int carry = 0;
     auto node = dummy;
     while (l1 || l2 || carry) {
-      int k = carry;
+      int sum = carry;
       if (l1) {
-        k += l1->val;
+        sum += l1->val;
         l1 = l1->next;
       }
       if (l2) {
-        k += l2->val;
+        sum += l2->val;
         l2 = l2->next;
       }
 
-      carry = k / 10;
-      node->next = new ListNode(k % 10);
+      carry = sum / 10;
+      node->next = new ListNode(sum % 10);
       node = node->next;
     }
 

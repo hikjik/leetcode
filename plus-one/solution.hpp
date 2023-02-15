@@ -9,14 +9,14 @@ public:
     std::vector<int> result;
     result.reserve(digits.size() + 1);
 
-    int r = 1;
+    int carry = 1;
     for (auto it = digits.rbegin(); it != digits.rend(); ++it) {
-      int k = r + *it;
-      r = k / 10;
-      result.push_back(k % 10);
+      int sum = carry + *it;
+      carry = sum / 10;
+      result.push_back(sum % 10);
     }
-    if (r) {
-      result.push_back(r);
+    if (carry) {
+      result.push_back(carry);
     }
 
     std::reverse(result.begin(), result.end());
