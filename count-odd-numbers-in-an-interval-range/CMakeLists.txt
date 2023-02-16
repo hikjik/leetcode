@@ -1,0 +1,1 @@
+add_catch(count_odd_numbers_in_an_interval_range test.cpp)
