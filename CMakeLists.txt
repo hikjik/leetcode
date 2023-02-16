@@ -22,6 +22,7 @@ endfunction()
 
 add_task(add-binary)
 add_task(add-two-numbers)
+add_task(binary-search)
 add_task(contains-duplicate)
 add_task(find-all-lonely-numbers-in-the-array)
 add_task(find-pivot-index)
