@@ -22,6 +22,7 @@ endfunction()
 
 add_task(add-binary)
 add_task(add-two-numbers)
+add_task(average-salary-excluding-the-minimum-and-maximum-salary)
 add_task(binary-search)
 add_task(contains-duplicate)
 add_task(count-odd-numbers-in-an-interval-range)

@@ -1,0 +1,1 @@
+add_catch(average_salary_excluding_the_minimum_and_maximum_salary test.cpp)
