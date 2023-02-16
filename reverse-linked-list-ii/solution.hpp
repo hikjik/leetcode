@@ -1,11 +1,12 @@
 #pragma once
 
-#include "list_node.hpp"
+#include <list_node.h>
 
 class Solution {
 public:
   static ListNode *reverseBetween(ListNode *head, int left, int right) {
-    auto dummy = new ListNode(0, head);
+    auto dummy_node = ListNode(0, head);
+    auto dummy = &dummy_node;
 
     auto before_reversed_part = dummy;
     for (int i = 1; i < left; ++i) {
@@ -24,8 +25,6 @@ public:
     before_reversed_part->next->next = node;
     before_reversed_part->next = reversed_list_head;
 
-    auto new_head = dummy->next;
-    delete dummy;
-    return new_head;
+    return dummy->next;
   }
 };

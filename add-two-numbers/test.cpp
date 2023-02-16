@@ -1,35 +1,9 @@
 #include <catch.hpp>
+#include <list_node.h>
 
-#include <list_node.hpp>
 #include <solution.hpp>
 
 #include <vector>
-
-ListNode *VectorToList(std::vector<int> values) {
-  ListNode *head = nullptr;
-  for (auto it = values.rbegin(); it != values.rend(); ++it) {
-    head = new ListNode(*it, head);
-  }
-  return head;
-}
-
-std::vector<int> ListToVector(ListNode *head) {
-  std::vector<int> array;
-  while (head) {
-    array.push_back(head->val);
-    head = head->next;
-  }
-  return array;
-}
-
-void FreeList(ListNode *head) {
-  if (!head) {
-    return;
-  }
-
-  FreeList(head->next);
-  delete head;
-}
 
 void CheckSolution(const std::vector<int> &first,
                    const std::vector<int> &second,

@@ -1,11 +1,12 @@
 #pragma once
 
-#include "list_node.hpp"
+#include <list_node.h>
 
 class Solution {
 public:
   static ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-    auto dummy = new ListNode();
+    auto dummy_node = ListNode();
+    auto dummy = &dummy_node;
 
     int carry = 0;
     auto node = dummy;
@@ -25,8 +26,6 @@ public:
       node = node->next;
     }
 
-    auto head = dummy->next;
-    delete dummy;
-    return head;
+    return dummy->next;
   }
 };

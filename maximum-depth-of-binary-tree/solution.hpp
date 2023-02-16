@@ -1,6 +1,6 @@
 #pragma once
 
-#include "tree_node.hpp"
+#include <tree_node.h>
 
 #include <algorithm>
 
