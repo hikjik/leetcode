@@ -50,7 +50,7 @@ def update_cmake(new_task_name: str) -> None:
 def create_task_folder(new_task_name: str) -> None:
     words = new_task_name.lower().strip().split()
 
-    task_path = Path('-'.join(words))
+    task_path = Path("solutions") / Path('-'.join(words))
     task_path.mkdir()
 
     with open(task_path / SOLUTION_FILE, "w") as file:

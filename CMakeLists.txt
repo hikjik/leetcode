@@ -15,8 +15,8 @@ include(tools/cmake/BuildFlags.cmake)
 include_directories(tools/util)
 
 function(add_task name)
-  if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/${name})
-    add_subdirectory(${name})
+  if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/solutions/${name})
+    add_subdirectory(solutions/${name})
   endif()
 endfunction()
 
