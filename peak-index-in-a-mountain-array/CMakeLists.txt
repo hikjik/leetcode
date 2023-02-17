@@ -1,0 +1,1 @@
+add_catch(peak_index_in_a_mountain_array test.cpp)
