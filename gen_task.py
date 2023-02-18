@@ -65,7 +65,7 @@ def create_task_folder(new_task_name: str) -> None:
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument('-t', '--task-name', type=str, required=True)
+    parser.add_argument('task_name', type=str)
     args = parser.parse_args()
 
     create_task_folder(args.task_name)
