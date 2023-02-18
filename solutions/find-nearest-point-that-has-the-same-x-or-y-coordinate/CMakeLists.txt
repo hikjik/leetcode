@@ -1,0 +1,1 @@
+add_catch(find_nearest_point_that_has_the_same_x_or_y_coordinate test.cpp)
