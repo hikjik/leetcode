@@ -1,0 +1,1 @@
+add_catch(find_smallest_letter_greater_than_target test.cpp)
