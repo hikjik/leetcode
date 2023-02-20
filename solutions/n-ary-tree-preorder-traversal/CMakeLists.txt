@@ -1,0 +1,1 @@
+add_catch(n_ary_tree_preorder_traversal test.cpp)
