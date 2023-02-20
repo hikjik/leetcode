@@ -1,0 +1,1 @@
+add_catch(check_if_it_is_a_straight_line test.cpp)
