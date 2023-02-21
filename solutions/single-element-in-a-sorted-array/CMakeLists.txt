@@ -1,0 +1,1 @@
+add_catch(single_element_in_a_sorted_array test.cpp)
