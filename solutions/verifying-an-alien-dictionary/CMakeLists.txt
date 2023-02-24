@@ -1,0 +1,1 @@
+add_catch(verifying_an_alien_dictionary test.cpp)
