@@ -20,6 +20,7 @@ function(add_task name)
   endif()
 endfunction()
 
+add_task(01-matrix)
 add_task(add-binary)
 add_task(add-two-numbers)
 add_task(arranging-coins)
