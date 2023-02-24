@@ -1,0 +1,1 @@
+add_catch(check_if_n_and_its_double_exist test.cpp)
