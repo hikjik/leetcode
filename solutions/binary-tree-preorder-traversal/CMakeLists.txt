@@ -1,0 +1,1 @@
+add_catch(binary_tree_preorder_traversal test.cpp)
