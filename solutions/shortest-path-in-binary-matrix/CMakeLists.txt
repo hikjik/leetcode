@@ -1,0 +1,1 @@
+add_catch(shortest_path_in_binary_matrix test.cpp)
