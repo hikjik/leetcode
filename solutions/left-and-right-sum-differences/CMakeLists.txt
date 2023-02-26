@@ -1,0 +1,1 @@
+add_catch(left_and_right_sum_differences test.cpp)
