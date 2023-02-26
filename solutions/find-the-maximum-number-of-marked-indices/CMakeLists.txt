@@ -1,0 +1,1 @@
+add_catch(find_the_maximum_number_of_marked_indices test.cpp)
