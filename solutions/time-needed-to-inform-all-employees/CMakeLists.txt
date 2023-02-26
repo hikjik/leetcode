@@ -1,0 +1,1 @@
+add_catch(time_needed_to_inform_all_employees test.cpp)
