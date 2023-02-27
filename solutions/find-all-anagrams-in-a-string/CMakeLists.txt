@@ -1,0 +1,1 @@
+add_catch(find_all_anagrams_in_a_string test.cpp)
