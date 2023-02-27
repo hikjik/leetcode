@@ -1,0 +1,1 @@
+add_catch(longest_repeating_character_replacement test.cpp)
