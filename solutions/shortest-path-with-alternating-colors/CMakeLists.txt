@@ -1,0 +1,1 @@
+add_catch(shortest_path_with_alternating_colors test.cpp)
