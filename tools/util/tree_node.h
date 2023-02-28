@@ -70,3 +70,19 @@ bool EqualTree(TreeNode *root1, TreeNode *root2) {
   return EqualTree(root1->left, root2->left) &&
          EqualTree(root1->right, root2->right);
 }
+
+void TraversePreOrder(TreeNode *root, std::vector<int> *values) {
+  if (!root) {
+    return;
+  }
+
+  values->push_back(root->val);
+  TraversePreOrder(root->left, values);
+  TraversePreOrder(root->right, values);
+}
+
+std::vector<int> TraversePreOrder(TreeNode *root) {
+  std::vector<int> values;
+  TraversePreOrder(root, &values);
+  return values;
+}
