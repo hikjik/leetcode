@@ -1,0 +1,1 @@
+add_catch(shortest_path_visiting_all_nodes test.cpp)
