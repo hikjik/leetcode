@@ -1,0 +1,1 @@
+add_catch(longest_palindromic_substring test.cpp)
