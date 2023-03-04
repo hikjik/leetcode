@@ -1,0 +1,1 @@
+add_catch(count_subarrays_with_fixed_bounds test.cpp)
