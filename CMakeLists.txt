@@ -21,6 +21,7 @@ function(add_task name)
 endfunction()
 
 add_task(01-matrix)
+add_task(3sum)
 add_task(add-binary)
 add_task(add-two-numbers)
 add_task(all-paths-from-source-to-target)
