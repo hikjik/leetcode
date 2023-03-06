@@ -4,16 +4,21 @@
 
 class Solution {
 public:
-  static void sortColors(std::vector<int> &colors) {
-    int num_colors = 3;
-    std::vector<int> cnt(num_colors, 0);
-    for (auto c : colors) {
-      cnt[c]++;
-    }
-
-    for (int c = 0, i = 0; c < num_colors; ++c) {
-      while (cnt[c]--) {
-        colors[i++] = c;
+  static void sortColors(std::vector<int> &nums) {
+    int zero = 0, two = nums.size() - 1;
+    for (int i = 0; i <= two;) {
+      switch (nums[i]) {
+      case 0:
+        std::swap(nums[i++], nums[zero++]);
+        break;
+      case 1:
+        i++;
+        break;
+      case 2:
+        std::swap(nums[i], nums[two--]);
+        break;
+      default:
+        throw;
       }
     }
   }
