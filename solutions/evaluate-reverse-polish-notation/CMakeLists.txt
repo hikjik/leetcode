@@ -1,0 +1,1 @@
+add_catch(evaluate_reverse_polish_notation test.cpp)
