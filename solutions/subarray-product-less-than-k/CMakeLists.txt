@@ -1,0 +1,1 @@
+add_catch(subarray_product_less_than_k test.cpp)
