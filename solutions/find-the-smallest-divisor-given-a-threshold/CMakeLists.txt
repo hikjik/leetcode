@@ -1,0 +1,1 @@
+add_catch(find_the_smallest_divisor_given_a_threshold test.cpp)
