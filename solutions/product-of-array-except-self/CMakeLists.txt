@@ -1,0 +1,1 @@
+add_catch(product_of_array_except_self test.cpp)
