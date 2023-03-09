@@ -1,0 +1,1 @@
+add_catch(increasing_triplet_subsequence test.cpp)
