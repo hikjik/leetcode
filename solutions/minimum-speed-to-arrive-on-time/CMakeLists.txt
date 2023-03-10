@@ -1,0 +1,1 @@
+add_catch(minimum_speed_to_arrive_on_time test.cpp)
