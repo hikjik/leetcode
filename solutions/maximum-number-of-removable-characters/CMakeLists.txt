@@ -1,0 +1,1 @@
+add_catch(maximum_number_of_removable_characters test.cpp)
