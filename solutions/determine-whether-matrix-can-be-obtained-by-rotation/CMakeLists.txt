@@ -1,0 +1,1 @@
+add_catch(test_determine_whether_matrix_can_be_obtained_by_rotation test.cpp)
