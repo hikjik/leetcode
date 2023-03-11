@@ -1,1 +1,1 @@
-add_catch(longest_palindromic_subsequence test.cpp)
+add_catch(test_longest_palindromic_subsequence test.cpp)

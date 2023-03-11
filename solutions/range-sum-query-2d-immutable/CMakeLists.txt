@@ -1,1 +1,1 @@
-add_catch(range_sum_query_2d_immutable test.cpp)
+add_catch(test_range_sum_query_2d_immutable test.cpp)

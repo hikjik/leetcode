@@ -1,1 +1,1 @@
-add_catch(is_subsequence test.cpp)
+add_catch(test_is_subsequence test.cpp)

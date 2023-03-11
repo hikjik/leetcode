@@ -1,1 +1,1 @@
-add_catch(diameter_of_binary_tree test.cpp)
+add_catch(test_diameter_of_binary_tree test.cpp)

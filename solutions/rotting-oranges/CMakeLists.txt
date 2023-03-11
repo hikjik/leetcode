@@ -1,1 +1,1 @@
-add_catch(rotting_oranges test.cpp)
+add_catch(test_rotting_oranges test.cpp)

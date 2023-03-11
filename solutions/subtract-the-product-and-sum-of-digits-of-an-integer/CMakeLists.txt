@@ -1,1 +1,1 @@
-add_catch(subtract_the_product_and_sum_of_digits_of_an_integer test.cpp)
+add_catch(test_subtract_the_product_and_sum_of_digits_of_an_integer test.cpp)

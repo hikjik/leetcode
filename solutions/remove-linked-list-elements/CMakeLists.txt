@@ -1,1 +1,1 @@
-add_catch(remove_linked_list_elements test.cpp)
+add_catch(test_remove_linked_list_elements test.cpp)

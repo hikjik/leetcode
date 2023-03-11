@@ -1,1 +1,1 @@
-add_catch(remove_nth_node_from_end_of_list test.cpp)
+add_catch(test_remove_nth_node_from_end_of_list test.cpp)

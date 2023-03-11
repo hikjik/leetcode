@@ -1,1 +1,1 @@
-add_catch(reverse_words_in_a_string_iii test.cpp)
+add_catch(test_reverse_words_in_a_string_iii test.cpp)

@@ -1,1 +1,1 @@
-add_catch(richest_customer_wealth test.cpp)
+add_catch(test_richest_customer_wealth test.cpp)

@@ -1,1 +1,1 @@
-add_catch(bulls_and_cows test.cpp)
+add_catch(test_bulls_and_cows test.cpp)

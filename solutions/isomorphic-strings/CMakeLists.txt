@@ -1,1 +1,1 @@
-add_catch(isomorphic_strings test.cpp)
+add_catch(test_isomorphic_strings test.cpp)

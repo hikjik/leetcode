@@ -1,1 +1,1 @@
-add_catch(where_will_the_ball_fall test.cpp)
+add_catch(test_where_will_the_ball_fall test.cpp)

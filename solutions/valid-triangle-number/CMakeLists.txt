@@ -1,1 +1,1 @@
-add_catch(valid_triangle_number test.cpp)
+add_catch(test_valid_triangle_number test.cpp)

@@ -1,1 +1,1 @@
-add_catch(as_far_from_land_as_possible test.cpp)
+add_catch(test_as_far_from_land_as_possible test.cpp)

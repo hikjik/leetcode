@@ -1,1 +1,1 @@
-add_catch(ransom_note test.cpp)
+add_catch(test_ransom_note test.cpp)

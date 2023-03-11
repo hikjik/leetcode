@@ -1,1 +1,1 @@
-add_catch(house_robber test.cpp)
+add_catch(test_house_robber test.cpp)

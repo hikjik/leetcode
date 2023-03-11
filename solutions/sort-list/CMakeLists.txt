@@ -1,1 +1,1 @@
-add_catch(sort_list test.cpp)
+add_catch(test_sort_list test.cpp)

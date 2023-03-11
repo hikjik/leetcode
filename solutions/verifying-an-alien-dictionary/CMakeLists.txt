@@ -1,1 +1,1 @@
-add_catch(verifying_an_alien_dictionary test.cpp)
+add_catch(test_verifying_an_alien_dictionary test.cpp)

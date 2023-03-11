@@ -1,1 +1,1 @@
-add_catch(find_the_town_judge test.cpp)
+add_catch(test_find_the_town_judge test.cpp)

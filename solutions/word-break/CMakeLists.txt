@@ -1,1 +1,1 @@
-add_catch(word_break test.cpp)
+add_catch(test_word_break test.cpp)

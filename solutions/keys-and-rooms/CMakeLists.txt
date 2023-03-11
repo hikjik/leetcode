@@ -1,1 +1,1 @@
-add_catch(keys_and_rooms test.cpp)
+add_catch(test_keys_and_rooms test.cpp)

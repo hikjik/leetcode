@@ -1,1 +1,1 @@
-add_catch(decode_string test.cpp)
+add_catch(test_decode_string test.cpp)

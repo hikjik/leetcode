@@ -1,1 +1,1 @@
-add_catch(construct_quad_tree test.cpp)
+add_catch(test_construct_quad_tree test.cpp)

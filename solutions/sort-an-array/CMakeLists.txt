@@ -1,1 +1,1 @@
-add_catch(sort_an_array test.cpp)
+add_catch(test_sort_an_array test.cpp)

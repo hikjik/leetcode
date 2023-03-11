@@ -1,1 +1,1 @@
-add_catch(sqrt test.cpp)
+add_catch(test_sqrt test.cpp)

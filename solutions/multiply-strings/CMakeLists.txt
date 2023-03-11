@@ -1,1 +1,1 @@
-add_catch(multiply_strings test.cpp)
+add_catch(test_multiply_strings test.cpp)

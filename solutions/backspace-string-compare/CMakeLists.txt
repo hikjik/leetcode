@@ -1,1 +1,1 @@
-add_catch(backspace_string_compare test.cpp)
+add_catch(test_backspace_string_compare test.cpp)

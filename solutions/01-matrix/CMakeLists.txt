@@ -1,1 +1,1 @@
-add_catch(01_matrix test.cpp)
+add_catch(test_01_matrix test.cpp)

@@ -1,1 +1,1 @@
-add_catch(find_duplicate_subtrees test.cpp)
+add_catch(test_find_duplicate_subtrees test.cpp)

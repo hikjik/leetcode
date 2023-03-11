@@ -1,1 +1,1 @@
-add_catch(shortest_bridge test.cpp)
+add_catch(test_shortest_bridge test.cpp)

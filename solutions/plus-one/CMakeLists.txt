@@ -1,1 +1,1 @@
-add_catch(plus_one test.cpp)
+add_catch(test_plus_one test.cpp)

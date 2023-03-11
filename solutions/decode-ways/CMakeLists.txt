@@ -1,1 +1,1 @@
-add_catch(decode_ways test.cpp)
+add_catch(test_decode_ways test.cpp)

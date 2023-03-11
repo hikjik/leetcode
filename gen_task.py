@@ -4,7 +4,7 @@ from typing import List
 
 CMAKE_LISTS_FILE = 'CMakeLists.txt'
 CMAKE_LISTS_FILE_CONTENT = """\
-add_catch({task_name} test.cpp)
+add_catch(test_{task_name} test.cpp)
 """
 
 SOLUTION_FILE = 'solution.hpp'

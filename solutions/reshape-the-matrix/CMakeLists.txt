@@ -1,1 +1,1 @@
-add_catch(reshape_the_matrix test.cpp)
+add_catch(test_reshape_the_matrix test.cpp)

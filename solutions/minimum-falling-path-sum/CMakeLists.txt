@@ -1,1 +1,1 @@
-add_catch(minimum_falling_path_sum test.cpp)
+add_catch(test_minimum_falling_path_sum test.cpp)

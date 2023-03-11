@@ -1,1 +1,1 @@
-add_catch(wiggle_subsequence test.cpp)
+add_catch(test_wiggle_subsequence test.cpp)

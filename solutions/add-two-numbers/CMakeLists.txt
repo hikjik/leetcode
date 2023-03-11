@@ -1,1 +1,1 @@
-add_catch(add_two_numbers test.cpp)
+add_catch(test_add_two_numbers test.cpp)

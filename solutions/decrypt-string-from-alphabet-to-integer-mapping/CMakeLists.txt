@@ -1,1 +1,1 @@
-add_catch(decrypt_string_from_alphabet_to_integer_mapping test.cpp)
+add_catch(test_decrypt_string_from_alphabet_to_integer_mapping test.cpp)

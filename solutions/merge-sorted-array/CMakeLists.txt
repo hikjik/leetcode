@@ -1,1 +1,1 @@
-add_catch(merge_sorted_array test.cpp)
+add_catch(test_merge_sorted_array test.cpp)

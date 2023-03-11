@@ -1,1 +1,1 @@
-add_catch(intersection_of_two_arrays_ii test.cpp)
+add_catch(test_intersection_of_two_arrays_ii test.cpp)

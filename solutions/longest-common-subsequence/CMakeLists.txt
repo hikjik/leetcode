@@ -1,1 +1,1 @@
-add_catch(longest_common_subsequence test.cpp)
+add_catch(test_longest_common_subsequence test.cpp)

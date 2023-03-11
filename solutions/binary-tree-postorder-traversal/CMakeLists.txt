@@ -1,1 +1,1 @@
-add_catch(binary_tree_postorder_traversal test.cpp)
+add_catch(test_binary_tree_postorder_traversal test.cpp)

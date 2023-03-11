@@ -1,1 +1,1 @@
-add_catch(search_in_rotated_sorted_array test.cpp)
+add_catch(test_search_in_rotated_sorted_array test.cpp)

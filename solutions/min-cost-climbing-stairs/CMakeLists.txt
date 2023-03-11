@@ -1,1 +1,1 @@
-add_catch(min_cost_climbing_stairs test.cpp)
+add_catch(test_min_cost_climbing_stairs test.cpp)

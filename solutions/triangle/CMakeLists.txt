@@ -1,1 +1,1 @@
-add_catch(triangle test.cpp)
+add_catch(test_triangle test.cpp)

@@ -1,1 +1,1 @@
-add_catch(spiral_matrix_ii test.cpp)
+add_catch(test_spiral_matrix_ii test.cpp)

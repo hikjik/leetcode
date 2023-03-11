@@ -1,1 +1,1 @@
-add_catch(reorder_routes_to_make_all_paths_lead_to_the_city_zero test.cpp)
+add_catch(test_reorder_routes_to_make_all_paths_lead_to_the_city_zero test.cpp)

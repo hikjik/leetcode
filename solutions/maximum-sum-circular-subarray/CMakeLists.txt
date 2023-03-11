@@ -1,1 +1,1 @@
-add_catch(maximum_sum_circular_subarray test.cpp)
+add_catch(test_maximum_sum_circular_subarray test.cpp)

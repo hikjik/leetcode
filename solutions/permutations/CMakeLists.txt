@@ -1,1 +1,1 @@
-add_catch(permutations test.cpp)
+add_catch(test_permutations test.cpp)

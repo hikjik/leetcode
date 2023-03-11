@@ -1,1 +1,1 @@
-add_catch(capacity_to_ship_packages_within_d_days test.cpp)
+add_catch(test_capacity_to_ship_packages_within_d_days test.cpp)

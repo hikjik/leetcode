@@ -1,1 +1,1 @@
-add_catch(squares_of_a_sorted_array test.cpp)
+add_catch(test_squares_of_a_sorted_array test.cpp)

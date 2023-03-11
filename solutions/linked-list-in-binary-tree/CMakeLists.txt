@@ -1,1 +1,1 @@
-add_catch(linked_list_in_binary_tree test.cpp)
+add_catch(test_linked_list_in_binary_tree test.cpp)

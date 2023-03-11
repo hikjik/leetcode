@@ -1,1 +1,1 @@
-add_catch(balanced_binary_tree test.cpp)
+add_catch(test_balanced_binary_tree test.cpp)

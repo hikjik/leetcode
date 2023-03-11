@@ -1,1 +1,1 @@
-add_catch(possible_bipartition test.cpp)
+add_catch(test_possible_bipartition test.cpp)

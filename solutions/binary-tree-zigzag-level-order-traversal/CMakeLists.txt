@@ -1,1 +1,1 @@
-add_catch(binary_tree_zigzag_level_order_traversal test.cpp)
+add_catch(test_binary_tree_zigzag_level_order_traversal test.cpp)

@@ -1,1 +1,1 @@
-add_catch(ipo test.cpp)
+add_catch(test_ipo test.cpp)

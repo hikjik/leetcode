@@ -1,1 +1,1 @@
-add_catch(find_minimum_in_rotated_sorted_array test.cpp)
+add_catch(test_find_minimum_in_rotated_sorted_array test.cpp)

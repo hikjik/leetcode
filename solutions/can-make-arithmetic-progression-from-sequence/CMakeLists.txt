@@ -1,1 +1,1 @@
-add_catch(can_make_arithmetic_progression_from_sequence test.cpp)
+add_catch(test_can_make_arithmetic_progression_from_sequence test.cpp)

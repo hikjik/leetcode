@@ -1,1 +1,1 @@
-add_catch(first_unique_character_in_a_string test.cpp)
+add_catch(test_first_unique_character_in_a_string test.cpp)

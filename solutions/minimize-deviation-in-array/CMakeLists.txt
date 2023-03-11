@@ -1,1 +1,1 @@
-add_catch(minimize_deviation_in_array test.cpp)
+add_catch(test_minimize_deviation_in_array test.cpp)

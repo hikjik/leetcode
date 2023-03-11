@@ -1,1 +1,1 @@
-add_catch(add_binary test.cpp)
+add_catch(test_add_binary test.cpp)

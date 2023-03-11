@@ -1,1 +1,1 @@
-add_catch(merge_intervals test.cpp)
+add_catch(test_merge_intervals test.cpp)

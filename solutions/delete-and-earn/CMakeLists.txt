@@ -1,1 +1,1 @@
-add_catch(delete_and_earn test.cpp)
+add_catch(test_delete_and_earn test.cpp)

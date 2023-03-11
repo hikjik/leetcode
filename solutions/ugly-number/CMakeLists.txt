@@ -1,1 +1,1 @@
-add_catch(ugly_number test.cpp)
+add_catch(test_ugly_number test.cpp)

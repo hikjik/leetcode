@@ -1,1 +1,1 @@
-add_catch(pacific_atlantic_water_flow test.cpp)
+add_catch(test_pacific_atlantic_water_flow test.cpp)

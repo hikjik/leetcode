@@ -1,1 +1,1 @@
-add_catch(reverse_linked_list test.cpp)
+add_catch(test_reverse_linked_list test.cpp)

@@ -1,1 +1,1 @@
-add_catch(happy_number test.cpp)
+add_catch(test_happy_number test.cpp)

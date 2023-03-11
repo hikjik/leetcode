@@ -1,1 +1,1 @@
-add_catch(rotate_image test.cpp)
+add_catch(test_rotate_image test.cpp)

@@ -1,1 +1,1 @@
-add_catch(minimum_genetic_mutation test.cpp)
+add_catch(test_minimum_genetic_mutation test.cpp)

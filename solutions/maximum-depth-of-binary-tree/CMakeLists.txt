@@ -1,1 +1,1 @@
-add_catch(maximum_depth_of_binary_tree test.cpp)
+add_catch(test_maximum_depth_of_binary_tree test.cpp)

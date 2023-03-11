@@ -1,1 +1,1 @@
-add_catch(kth_missing_positive_number test.cpp)
+add_catch(test_kth_missing_positive_number test.cpp)

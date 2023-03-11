@@ -1,1 +1,1 @@
-add_catch(find_the_distance_value_between_two_arrays test.cpp)
+add_catch(test_find_the_distance_value_between_two_arrays test.cpp)

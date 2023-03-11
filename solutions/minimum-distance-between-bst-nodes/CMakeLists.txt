@@ -1,1 +1,1 @@
-add_catch(minimum_distance_between_bst_nodes test.cpp)
+add_catch(test_minimum_distance_between_bst_nodes test.cpp)

@@ -1,1 +1,1 @@
-add_catch(open_the_lock test.cpp)
+add_catch(test_open_the_lock test.cpp)

@@ -1,1 +1,1 @@
-add_catch(count_negative_numbers_in_a_sorted_matrix test.cpp)
+add_catch(test_count_negative_numbers_in_a_sorted_matrix test.cpp)

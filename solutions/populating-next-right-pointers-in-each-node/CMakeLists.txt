@@ -1,1 +1,1 @@
-add_catch(populating_next_right_pointers_in_each_node test.cpp)
+add_catch(test_populating_next_right_pointers_in_each_node test.cpp)

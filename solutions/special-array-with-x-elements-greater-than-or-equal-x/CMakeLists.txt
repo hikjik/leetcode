@@ -1,1 +1,1 @@
-add_catch(special_array_with_x_elements_greater_than_or_equal_x test.cpp)
+add_catch(test_special_array_with_x_elements_greater_than_or_equal_x test.cpp)

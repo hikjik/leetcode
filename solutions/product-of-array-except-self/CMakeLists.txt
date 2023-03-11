@@ -1,1 +1,1 @@
-add_catch(product_of_array_except_self test.cpp)
+add_catch(test_product_of_array_except_self test.cpp)

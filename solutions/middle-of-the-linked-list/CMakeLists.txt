@@ -1,1 +1,1 @@
-add_catch(middle_of_the_linked_list test.cpp)
+add_catch(test_middle_of_the_linked_list test.cpp)

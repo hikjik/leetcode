@@ -1,1 +1,1 @@
-add_catch(arithmetic_slices test.cpp)
+add_catch(test_arithmetic_slices test.cpp)

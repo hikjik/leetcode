@@ -1,1 +1,1 @@
-add_catch(valid_anagram test.cpp)
+add_catch(test_valid_anagram test.cpp)

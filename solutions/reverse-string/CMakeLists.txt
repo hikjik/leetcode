@@ -1,1 +1,1 @@
-add_catch(reverse_string test.cpp)
+add_catch(test_reverse_string test.cpp)

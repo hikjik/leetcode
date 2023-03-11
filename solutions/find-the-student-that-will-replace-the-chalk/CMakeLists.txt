@@ -1,1 +1,1 @@
-add_catch(find_the_student_that_will_replace_the_chalk test.cpp)
+add_catch(test_find_the_student_that_will_replace_the_chalk test.cpp)

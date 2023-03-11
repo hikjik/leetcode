@@ -1,1 +1,1 @@
-add_catch(guess_number_higher_or_lower test.cpp)
+add_catch(test_guess_number_higher_or_lower test.cpp)

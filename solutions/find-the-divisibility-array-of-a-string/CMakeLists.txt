@@ -1,1 +1,1 @@
-add_catch(find_the_divisibility_array_of_a_string test.cpp)
+add_catch(test_find_the_divisibility_array_of_a_string test.cpp)

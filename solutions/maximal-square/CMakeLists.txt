@@ -1,1 +1,1 @@
-add_catch(maximal_square test.cpp)
+add_catch(test_maximal_square test.cpp)

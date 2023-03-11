@@ -1,1 +1,1 @@
-add_catch(minimum_time_to_complete_trips test.cpp)
+add_catch(test_minimum_time_to_complete_trips test.cpp)

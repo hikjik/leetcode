@@ -1,1 +1,1 @@
-add_catch(to_lower_case test.cpp)
+add_catch(test_to_lower_case test.cpp)

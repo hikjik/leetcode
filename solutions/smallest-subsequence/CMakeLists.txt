@@ -1,1 +1,1 @@
-add_catch(smallest_subsequence test.cpp)
+add_catch(test_smallest_subsequence test.cpp)

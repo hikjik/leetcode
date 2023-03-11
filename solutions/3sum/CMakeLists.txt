@@ -1,1 +1,1 @@
-add_catch(3sum test.cpp)
+add_catch(test_3sum test.cpp)

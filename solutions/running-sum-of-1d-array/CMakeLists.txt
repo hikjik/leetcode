@@ -1,1 +1,1 @@
-add_catch(running_sum_of_1d_array test.cpp)
+add_catch(test_running_sum_of_1d_array test.cpp)

@@ -1,1 +1,1 @@
-add_catch(pascals_triangle test.cpp)
+add_catch(test_pascals_triangle test.cpp)

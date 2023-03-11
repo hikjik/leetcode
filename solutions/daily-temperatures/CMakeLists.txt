@@ -1,1 +1,1 @@
-add_catch(daily_temperatures test.cpp)
+add_catch(test_daily_temperatures test.cpp)

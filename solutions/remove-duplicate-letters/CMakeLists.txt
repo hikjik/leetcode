@@ -1,1 +1,1 @@
-add_catch(remove_duplicate_letters test.cpp)
+add_catch(test_remove_duplicate_letters test.cpp)

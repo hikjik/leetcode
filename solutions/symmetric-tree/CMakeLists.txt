@@ -1,1 +1,1 @@
-add_catch(symmetric_tree test.cpp)
+add_catch(test_symmetric_tree test.cpp)

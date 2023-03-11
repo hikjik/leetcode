@@ -1,1 +1,1 @@
-add_catch(permutation_in_string test.cpp)
+add_catch(test_permutation_in_string test.cpp)

@@ -1,1 +1,1 @@
-add_catch(matrix_diagonal_sum test.cpp)
+add_catch(test_matrix_diagonal_sum test.cpp)

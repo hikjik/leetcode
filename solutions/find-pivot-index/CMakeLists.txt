@@ -1,1 +1,1 @@
-add_catch(find_pivot_index test.cpp)
+add_catch(test_find_pivot_index test.cpp)

@@ -1,1 +1,1 @@
-add_catch(merge_two_sorted_lists test.cpp)
+add_catch(test_merge_two_sorted_lists test.cpp)

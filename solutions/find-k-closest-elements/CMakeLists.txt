@@ -1,1 +1,1 @@
-add_catch(find_k_closest_elements test.cpp)
+add_catch(test_find_k_closest_elements test.cpp)

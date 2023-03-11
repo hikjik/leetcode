@@ -1,1 +1,1 @@
-add_catch(container_with_most_water test.cpp)
+add_catch(test_container_with_most_water test.cpp)

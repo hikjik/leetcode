@@ -1,1 +1,1 @@
-add_catch(best_time_to_buy_and_sell_stock_with_transaction_fee test.cpp)
+add_catch(test_best_time_to_buy_and_sell_stock_with_transaction_fee test.cpp)

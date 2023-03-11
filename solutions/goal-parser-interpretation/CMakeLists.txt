@@ -1,1 +1,1 @@
-add_catch(goal_parser_interpretation test.cpp)
+add_catch(test_goal_parser_interpretation test.cpp)

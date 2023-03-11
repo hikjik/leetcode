@@ -1,1 +1,1 @@
-add_catch(design_hashmap test.cpp)
+add_catch(test_design_hashmap test.cpp)

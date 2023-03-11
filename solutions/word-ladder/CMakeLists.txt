@@ -1,1 +1,1 @@
-add_catch(word_ladder test.cpp)
+add_catch(test_word_ladder test.cpp)

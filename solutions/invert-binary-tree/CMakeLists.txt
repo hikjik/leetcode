@@ -1,1 +1,1 @@
-add_catch(invert_binary_tree test.cpp)
+add_catch(test_invert_binary_tree test.cpp)

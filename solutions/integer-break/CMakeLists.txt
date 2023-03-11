@@ -1,1 +1,1 @@
-add_catch(integer_break test.cpp)
+add_catch(test_integer_break test.cpp)

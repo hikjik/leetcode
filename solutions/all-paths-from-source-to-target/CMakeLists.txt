@@ -1,1 +1,1 @@
-add_catch(all_paths_from_source_to_target test.cpp)
+add_catch(test_all_paths_from_source_to_target test.cpp)

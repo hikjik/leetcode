@@ -1,1 +1,1 @@
-add_catch(minimum_number_of_vertices_to_reach_all_nodes test.cpp)
+add_catch(test_minimum_number_of_vertices_to_reach_all_nodes test.cpp)

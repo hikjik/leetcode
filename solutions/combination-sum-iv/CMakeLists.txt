@@ -1,1 +1,1 @@
-add_catch(combination_sum_iv test.cpp)
+add_catch(test_combination_sum_iv test.cpp)

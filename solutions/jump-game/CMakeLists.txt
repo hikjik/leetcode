@@ -1,1 +1,1 @@
-add_catch(jump_game test.cpp)
+add_catch(test_jump_game test.cpp)

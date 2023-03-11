@@ -1,1 +1,1 @@
-add_catch(search_a_2d_matrix_ii test.cpp)
+add_catch(test_search_a_2d_matrix_ii test.cpp)

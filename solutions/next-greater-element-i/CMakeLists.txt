@@ -1,1 +1,1 @@
-add_catch(next_greater_element_i test.cpp)
+add_catch(test_next_greater_element_i test.cpp)

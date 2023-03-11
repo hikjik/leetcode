@@ -1,1 +1,1 @@
-add_catch(sum_of_all_odd_length_subarrays test.cpp)
+add_catch(test_sum_of_all_odd_length_subarrays test.cpp)

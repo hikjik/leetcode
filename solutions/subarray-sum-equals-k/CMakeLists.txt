@@ -1,1 +1,1 @@
-add_catch(subarray_sum_equals_k test.cpp)
+add_catch(test_subarray_sum_equals_k test.cpp)

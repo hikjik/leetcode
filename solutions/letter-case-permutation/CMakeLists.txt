@@ -1,1 +1,1 @@
-add_catch(letter_case_permutation test.cpp)
+add_catch(test_letter_case_permutation test.cpp)

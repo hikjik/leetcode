@@ -1,1 +1,1 @@
-add_catch(palindrome_number test.cpp)
+add_catch(test_palindrome_number test.cpp)

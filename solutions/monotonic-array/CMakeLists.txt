@@ -1,1 +1,1 @@
-add_catch(monotonic_array test.cpp)
+add_catch(test_monotonic_array test.cpp)

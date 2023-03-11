@@ -1,1 +1,1 @@
-add_catch(n_queens test.cpp)
+add_catch(test_n_queens test.cpp)

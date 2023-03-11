@@ -1,1 +1,1 @@
-add_catch(edit_distance test.cpp)
+add_catch(test_edit_distance test.cpp)

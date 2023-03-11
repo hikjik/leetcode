@@ -1,1 +1,1 @@
-add_catch(reverse_bits test.cpp)
+add_catch(test_reverse_bits test.cpp)

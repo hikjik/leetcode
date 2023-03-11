@@ -1,1 +1,1 @@
-add_catch(maximal_network_rank test.cpp)
+add_catch(test_maximal_network_rank test.cpp)

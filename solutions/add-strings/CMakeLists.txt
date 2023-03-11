@@ -1,1 +1,1 @@
-add_catch(add_strings test.cpp)
+add_catch(test_add_strings test.cpp)

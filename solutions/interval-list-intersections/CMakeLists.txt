@@ -1,1 +1,1 @@
-add_catch(interval_list_intersections test.cpp)
+add_catch(test_interval_list_intersections test.cpp)

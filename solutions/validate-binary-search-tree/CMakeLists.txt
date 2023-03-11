@@ -1,1 +1,1 @@
-add_catch(validate_binary_search_tree test.cpp)
+add_catch(test_validate_binary_search_tree test.cpp)

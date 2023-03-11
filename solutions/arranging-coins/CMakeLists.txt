@@ -1,1 +1,1 @@
-add_catch(arranging_coins test.cpp)
+add_catch(test_arranging_coins test.cpp)

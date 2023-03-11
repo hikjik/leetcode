@@ -1,1 +1,1 @@
-add_catch(valid_sudoku test.cpp)
+add_catch(test_valid_sudoku test.cpp)

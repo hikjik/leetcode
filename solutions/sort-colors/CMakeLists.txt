@@ -1,1 +1,1 @@
-add_catch(sort_colors test.cpp)
+add_catch(test_sort_colors test.cpp)

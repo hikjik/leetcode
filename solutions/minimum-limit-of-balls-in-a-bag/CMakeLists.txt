@@ -1,1 +1,1 @@
-add_catch(minimum_limit_of_balls_in_a_bag test.cpp)
+add_catch(test_minimum_limit_of_balls_in_a_bag test.cpp)

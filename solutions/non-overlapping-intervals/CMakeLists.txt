@@ -1,1 +1,1 @@
-add_catch(non-overlapping_intervals test.cpp)
+add_catch(test_non-overlapping_intervals test.cpp)

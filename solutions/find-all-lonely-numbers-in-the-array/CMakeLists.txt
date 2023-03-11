@@ -1,1 +1,1 @@
-add_catch(find_all_lonely_numbers_in_the_array test.cpp)
+add_catch(test_find_all_lonely_numbers_in_the_array test.cpp)

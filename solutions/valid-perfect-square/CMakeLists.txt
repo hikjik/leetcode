@@ -1,1 +1,1 @@
-add_catch(valid_perfect_square test.cpp)
+add_catch(test_valid_perfect_square test.cpp)

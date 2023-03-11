@@ -1,1 +1,1 @@
-add_catch(largest_perimeter_triangle test.cpp)
+add_catch(test_largest_perimeter_triangle test.cpp)

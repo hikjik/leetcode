@@ -1,1 +1,1 @@
-add_catch(water_and_jug_problem test.cpp)
+add_catch(test_water_and_jug_problem test.cpp)

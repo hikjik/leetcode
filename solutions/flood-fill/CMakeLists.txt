@@ -1,1 +1,1 @@
-add_catch(flood_fill test.cpp)
+add_catch(test_flood_fill test.cpp)

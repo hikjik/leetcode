@@ -1,1 +1,1 @@
-add_catch(longest_palindrome test.cpp)
+add_catch(test_longest_palindrome test.cpp)

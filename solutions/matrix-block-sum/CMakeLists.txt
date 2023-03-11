@@ -1,1 +1,1 @@
-add_catch(matrix_block_sum test.cpp)
+add_catch(test_matrix_block_sum test.cpp)

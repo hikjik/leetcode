@@ -1,1 +1,1 @@
-add_catch(contains_duplicate test.cpp)
+add_catch(test_contains_duplicate test.cpp)

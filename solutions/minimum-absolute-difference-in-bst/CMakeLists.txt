@@ -1,1 +1,1 @@
-add_catch(minimum_absolute_difference_in_bst test.cpp)
+add_catch(test_minimum_absolute_difference_in_bst test.cpp)

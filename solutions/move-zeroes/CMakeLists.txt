@@ -1,1 +1,1 @@
-add_catch(move_zeroes test.cpp)
+add_catch(test_move_zeroes test.cpp)

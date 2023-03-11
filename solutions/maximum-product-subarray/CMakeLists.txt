@@ -1,1 +1,1 @@
-add_catch(maximum_product_subarray test.cpp)
+add_catch(test_maximum_product_subarray test.cpp)

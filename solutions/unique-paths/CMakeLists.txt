@@ -1,1 +1,1 @@
-add_catch(unique_paths test.cpp)
+add_catch(test_unique_paths test.cpp)

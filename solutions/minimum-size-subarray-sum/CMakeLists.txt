@@ -1,1 +1,1 @@
-add_catch(minimum_size_subarray_sum test.cpp)
+add_catch(test_minimum_size_subarray_sum test.cpp)

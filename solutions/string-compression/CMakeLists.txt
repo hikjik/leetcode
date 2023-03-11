@@ -1,1 +1,1 @@
-add_catch(string_compression test.cpp)
+add_catch(test_string_compression test.cpp)

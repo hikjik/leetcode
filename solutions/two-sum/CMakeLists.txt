@@ -1,1 +1,1 @@
-add_catch(two_sum test.cpp)
+add_catch(test_two_sum test.cpp)

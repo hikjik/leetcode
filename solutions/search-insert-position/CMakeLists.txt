@@ -1,1 +1,1 @@
-add_catch(search_insert_position test.cpp)
+add_catch(test_search_insert_position test.cpp)

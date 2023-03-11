@@ -1,1 +1,1 @@
-add_catch(remove_duplicates_from_sorted_list_ii test.cpp)
+add_catch(test_remove_duplicates_from_sorted_list_ii test.cpp)
