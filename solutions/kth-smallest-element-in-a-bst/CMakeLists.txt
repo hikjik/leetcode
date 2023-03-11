@@ -1,0 +1,1 @@
+add_catch(test_kth_smallest_element_in_a_bst test.cpp)
