@@ -2,33 +2,24 @@
 
 #include <tree_node.h>
 
-#include <vector>
-
 class Solution {
 public:
   static bool isValidBST(TreeNode *root) {
-    std::vector<int> values;
-    traverseInOrder(root, &values);
-    return isStrictlySorted(values);
+    return isValidBST(root, nullptr, nullptr);
   }
 
 private:
-  static void traverseInOrder(TreeNode *root, std::vector<int> *values) {
+  static bool isValidBST(TreeNode *root, TreeNode *min_node,
+                         TreeNode *max_node) {
     if (!root) {
-      return;
+      return true;
+    }
+    if ((min_node && min_node->val >= root->val) ||
+        (max_node && root->val >= max_node->val)) {
+      return false;
     }
 
-    traverseInOrder(root->left, values);
-    values->push_back(root->val);
-    traverseInOrder(root->right, values);
-  }
-
-  static bool isStrictlySorted(const std::vector<int> &values) {
-    for (size_t i = 1; i < values.size(); ++i) {
-      if (values[i - 1] >= values[i]) {
-        return false;
-      }
-    }
-    return true;
+    return isValidBST(root->left, min_node, root) &&
+           isValidBST(root->right, root, max_node);
   }
 };
