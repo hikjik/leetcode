@@ -1,0 +1,1 @@
+add_catch(test_subtree_of_another_tree test.cpp)
