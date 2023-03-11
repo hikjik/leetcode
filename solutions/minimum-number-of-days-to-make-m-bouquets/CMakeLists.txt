@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_days_to_make_m_bouquets test.cpp)
