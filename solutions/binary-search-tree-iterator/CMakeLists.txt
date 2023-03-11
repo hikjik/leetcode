@@ -1,0 +1,1 @@
+add_catch(test_binary_search_tree_iterator test.cpp)
