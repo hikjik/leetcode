@@ -1,0 +1,1 @@
+add_catch(test_minimum_absolute_sum_difference test.cpp)
