@@ -1,0 +1,1 @@
+add_catch(test_serialize_and_deserialize_binary_tree test.cpp)
