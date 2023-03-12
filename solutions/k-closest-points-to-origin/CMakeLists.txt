@@ -1,0 +1,1 @@
+add_catch(test_k_closest_points_to_origin test.cpp)
