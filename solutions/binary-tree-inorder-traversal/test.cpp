@@ -1,5 +1,4 @@
 #include <catch.hpp>
-#include <tree_node.h>
 
 #include <solution.hpp>
 
@@ -17,8 +16,7 @@ void CheckSolution(const std::vector<std::optional<int>> &values,
 
 TEST_CASE("Simple") {
   {
-    std::vector<std::optional<int>> values{
-        1, std::nullopt, 2, std::nullopt, std::nullopt, 3};
+    std::vector<std::optional<int>> values{1, std::nullopt, 2, 3};
     std::vector<int> expected{1, 3, 2};
     CheckSolution(values, expected);
   }

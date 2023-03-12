@@ -1,7 +1,6 @@
 #include <catch.hpp>
 
 #include <solution.hpp>
-#include <tree_node.h>
 
 #include <optional>
 #include <vector>

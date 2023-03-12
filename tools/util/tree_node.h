@@ -15,28 +15,30 @@ struct TreeNode {
 };
 
 TreeNode *VectorToTree(const std::vector<std::optional<int>> &values) {
-  if (values.empty() || !values[0].has_value()) {
+  if (values.empty()) {
     return nullptr;
   }
 
-  auto root = new TreeNode(values[0].value());
-  std::queue<std::pair<TreeNode *, size_t>> items;
-  items.emplace(root, 0);
-  while (!items.empty()) {
-    const auto &[node, index] = items.front();
-    items.pop();
+  auto root = new TreeNode(values.front().value());
 
-    const auto left = 2 * index + 1;
-    if (left < values.size() && values[left].has_value()) {
-      node->left = new TreeNode(values[left].value());
-      items.emplace(node->left, left);
-    }
+  std::queue<TreeNode *> queue;
+  queue.push(root);
 
-    const auto right = 2 * index + 2;
-    if (right < values.size() && values[right].has_value()) {
-      node->right = new TreeNode(values[right].value());
-      items.emplace(node->right, right);
+  size_t i = 1;
+  while (!queue.empty()) {
+    auto node = queue.front();
+    queue.pop();
+
+    if (i < values.size() && values[i].has_value()) {
+      node->left = new TreeNode(values[i].value());
+      queue.push(node->left);
     }
+    ++i;
+    if (i < values.size() && values[i].has_value()) {
+      node->right = new TreeNode(values[i].value());
+      queue.push(node->right);
+    }
+    ++i;
   }
 
   return root;
