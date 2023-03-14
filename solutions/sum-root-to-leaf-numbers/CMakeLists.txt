@@ -1,0 +1,1 @@
+add_catch(test_sum_root_to_leaf_numbers test.cpp)
