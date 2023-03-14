@@ -10,8 +10,8 @@ TEST_CASE("Simple") {
     REQUIRE(permutations == Solution::permute(nums));
   }
   {
-    std::vector<int> nums{0, 1};
-    std::vector<std::vector<int>> permutations{{0, 1}, {1, 0}};
+    std::vector<int> nums{0, 2};
+    std::vector<std::vector<int>> permutations{{0, 2}, {2, 0}};
     REQUIRE(permutations == Solution::permute(nums));
   }
   {
