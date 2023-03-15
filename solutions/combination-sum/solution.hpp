@@ -5,7 +5,8 @@
 class Solution {
 public:
   static std::vector<std::vector<int>>
-  combinationSum(const std::vector<int> &candidates, int target) {
+  combinationSum(std::vector<int> candidates, int target) {
+    std::sort(candidates.begin(), candidates.end());
     std::vector<std::vector<int>> combinations;
     std::vector<int> combination;
     combinationSum(0, candidates, target, &combinations, &combination);
@@ -17,18 +18,16 @@ private:
                              int target,
                              std::vector<std::vector<int>> *combinations,
                              std::vector<int> *combination) {
-    if (target < 0 || i == candidates.size()) {
-      return;
-    }
     if (target == 0) {
       combinations->push_back(*combination);
       return;
     }
 
-    combination->push_back(candidates[i]);
-    combinationSum(i, candidates, target - candidates[i], combinations,
-                   combination);
-    combination->pop_back();
-    combinationSum(i + 1, candidates, target, combinations, combination);
+    for (size_t j = i; j < candidates.size() && candidates[j] <= target; ++j) {
+      combination->push_back(candidates[j]);
+      combinationSum(j, candidates, target - candidates[j], combinations,
+                     combination);
+      combination->pop_back();
+    }
   }
 };

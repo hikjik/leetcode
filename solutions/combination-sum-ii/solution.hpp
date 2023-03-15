@@ -30,7 +30,7 @@ private:
       }
 
       if (candidates[i] > target) {
-        continue;
+        break;
       }
 
       combination->push_back(candidates[j]);
