@@ -18,6 +18,16 @@ ListNode *VectorToList(std::vector<int> values) {
   return head;
 }
 
+bool EqualList(ListNode *head1, ListNode *head2) {
+  if (!head1 && !head2) {
+    return true;
+  }
+  if (head1 && !head2 || !head1 && head2 || head1->val != head2->val) {
+    return false;
+  }
+  return EqualList(head1->next, head2->next);
+}
+
 std::vector<int> ListToVector(ListNode *head) {
   std::vector<int> array;
   while (head) {

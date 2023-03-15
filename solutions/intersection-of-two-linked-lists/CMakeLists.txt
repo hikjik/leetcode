@@ -1,0 +1,1 @@
+add_catch(test_intersection_of_two_linked_lists test.cpp)
