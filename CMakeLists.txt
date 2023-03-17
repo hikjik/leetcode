@@ -22,6 +22,7 @@ endfunction()
 
 add_task(01-matrix)
 add_task(3sum)
+add_task(3sum-closest)
 add_task(add-binary)
 add_task(add-strings)
 add_task(add-to-array-form-of-integer)
