@@ -1,0 +1,1 @@
+add_catch(test_design_add_and_search_words_data_structure test.cpp)
