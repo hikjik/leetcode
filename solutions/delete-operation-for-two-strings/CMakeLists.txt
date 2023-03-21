@@ -1,0 +1,1 @@
+add_catch(test_delete_operation_for_two_strings test.cpp)
