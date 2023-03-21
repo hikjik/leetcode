@@ -1,0 +1,1 @@
+add_catch(test_number_of_zero_filled_subarrays test.cpp)
