@@ -1,0 +1,1 @@
+add_catch(test_number_of_longest_increasing_subsequence test.cpp)
