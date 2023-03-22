@@ -1,0 +1,1 @@
+add_catch(test_minimum_score_of_a_path_between_two_cities test.cpp)
