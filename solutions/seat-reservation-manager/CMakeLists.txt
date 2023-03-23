@@ -1,0 +1,1 @@
+add_catch(test_seat_reservation_manager test.cpp)
