@@ -1,0 +1,1 @@
+add_catch(test_copy_list_with_random_pointer test.cpp)
