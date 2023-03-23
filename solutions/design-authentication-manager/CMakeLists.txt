@@ -1,0 +1,1 @@
+add_catch(test_design_authentication_manager test.cpp)
