@@ -1,0 +1,1 @@
+add_catch(test_flatten_nested_list_iterator test.cpp)
