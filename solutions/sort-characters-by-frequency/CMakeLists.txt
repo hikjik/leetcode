@@ -1,0 +1,1 @@
+add_catch(test_sort_characters_by_frequency test.cpp)
