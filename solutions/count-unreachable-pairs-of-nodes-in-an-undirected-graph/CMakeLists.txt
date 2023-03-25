@@ -1,0 +1,1 @@
+add_catch(test_count_unreachable_pairs_of_nodes_in_an_undirected_graph test.cpp)
