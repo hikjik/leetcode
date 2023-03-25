@@ -1,0 +1,1 @@
+add_catch(test_letter_combinations_of_a_phone_number test.cpp)
