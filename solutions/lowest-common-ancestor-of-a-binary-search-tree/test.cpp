@@ -8,8 +8,8 @@
 void CheckSolution(const std::vector<std::optional<int>> &values, int p_val,
                    int q_val, int lca_val) {
   auto root = VectorToTree(values);
-  auto p = Find(root, p_val);
-  auto q = Find(root, q_val);
+  auto p = FindBST(root, p_val);
+  auto q = FindBST(root, q_val);
 
   auto lca = Solution::lowestCommonAncestor(root, p, q);
 

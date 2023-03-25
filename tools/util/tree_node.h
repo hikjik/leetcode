@@ -44,11 +44,19 @@ TreeNode *VectorToTree(const std::vector<std::optional<int>> &values) {
   return root;
 }
 
+TreeNode *FindBST(TreeNode *root, int val) {
+  if (!root || root->val == val) {
+    return root;
+  }
+  return val < root->val ? FindBST(root->left, val) : FindBST(root->right, val);
+}
+
 TreeNode *Find(TreeNode *root, int val) {
   if (!root || root->val == val) {
     return root;
   }
-  return val < root->val ? Find(root->left, val) : Find(root->right, val);
+  auto left = Find(root->left, val);
+  return left ? left : FindBST(root->right, val);
 }
 
 void FreeTree(TreeNode *root) {
