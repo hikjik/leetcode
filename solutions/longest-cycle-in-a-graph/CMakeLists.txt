@@ -1,0 +1,1 @@
+add_catch(test_longest_cycle_in_a_graph test.cpp)
