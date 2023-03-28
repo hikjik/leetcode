@@ -1,0 +1,1 @@
+add_catch(test_increment_submatrices_by_one test.cpp)
