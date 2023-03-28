@@ -1,0 +1,1 @@
+add_catch(test_longest_ideal_subsequence test.cpp)
