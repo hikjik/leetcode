@@ -1,0 +1,1 @@
+add_catch(test_minimum_cost_for_tickets test.cpp)
