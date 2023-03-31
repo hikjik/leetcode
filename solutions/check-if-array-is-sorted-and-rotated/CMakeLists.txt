@@ -1,0 +1,1 @@
+add_catch(test_check_if_array_is_sorted_and_rotated test.cpp)
