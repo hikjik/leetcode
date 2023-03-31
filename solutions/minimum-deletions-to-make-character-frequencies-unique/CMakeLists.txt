@@ -1,0 +1,1 @@
+add_catch(test_minimum_deletions_to_make_character_frequencies_unique test.cpp)
