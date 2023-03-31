@@ -1,0 +1,1 @@
+add_catch(test_number_of_ways_of_cutting_a_pizza test.cpp)
