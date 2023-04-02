@@ -1,0 +1,1 @@
+add_catch(test_successful_pairs_of_spells_and_potions test.cpp)
