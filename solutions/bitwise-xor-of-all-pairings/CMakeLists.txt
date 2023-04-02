@@ -1,0 +1,1 @@
+add_catch(test_bitwise_xor_of_all_pairings test.cpp)
