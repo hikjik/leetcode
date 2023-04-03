@@ -1,0 +1,1 @@
+add_catch(test_frequency_of_the_most_frequent_element test.cpp)
