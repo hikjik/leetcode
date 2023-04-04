@@ -1,0 +1,1 @@
+add_catch(test_ways_to_split_array_into_three_subarrays test.cpp)
