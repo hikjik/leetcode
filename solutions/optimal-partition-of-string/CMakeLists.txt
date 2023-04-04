@@ -1,0 +1,1 @@
+add_catch(test_optimal_partition_of_string test.cpp)
