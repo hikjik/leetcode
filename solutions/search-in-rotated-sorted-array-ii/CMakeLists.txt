@@ -1,0 +1,1 @@
+add_catch(test_search_in_rotated_sorted_array_ii test.cpp)
