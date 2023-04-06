@@ -1,0 +1,1 @@
+add_catch(test_minimize_maximum_of_array test.cpp)
