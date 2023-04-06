@@ -1,0 +1,1 @@
+add_catch(test_most_profit_assigning_work test.cpp)
