@@ -1,0 +1,1 @@
+add_catch(test_random_pick_with_weight test.cpp)
