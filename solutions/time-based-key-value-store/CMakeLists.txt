@@ -1,0 +1,1 @@
+add_catch(test_time_based_key_value_store test.cpp)
