@@ -1,0 +1,1 @@
+add_catch(test_number_of_subsequences_that_satisfy_the_given_sum_condition test.cpp)
