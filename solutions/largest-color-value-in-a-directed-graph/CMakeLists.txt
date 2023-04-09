@@ -1,0 +1,1 @@
+add_catch(test_largest_color_value_in_a_directed_graph test.cpp)
