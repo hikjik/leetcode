@@ -1,0 +1,1 @@
+add_catch(test_range_sum_of_sorted_subarray_sums test.cpp)
