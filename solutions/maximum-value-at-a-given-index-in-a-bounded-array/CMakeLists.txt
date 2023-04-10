@@ -1,0 +1,1 @@
+add_catch(test_maximum_value_at_a_given_index_in_a_bounded_array test.cpp)
