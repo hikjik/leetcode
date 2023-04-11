@@ -1,0 +1,1 @@
+add_catch(test_removing_stars_from_a_string test.cpp)
