@@ -1,0 +1,1 @@
+add_catch(test_avoid_flood_in_the_city test.cpp)
