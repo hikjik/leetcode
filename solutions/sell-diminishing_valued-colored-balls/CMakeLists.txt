@@ -1,0 +1,1 @@
+add_catch(test_sell_diminishing_valued_colored_balls test.cpp)
