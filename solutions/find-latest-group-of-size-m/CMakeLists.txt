@@ -1,0 +1,1 @@
+add_catch(test_find_latest_group_of_size_m test.cpp)
