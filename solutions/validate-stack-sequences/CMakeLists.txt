@@ -1,0 +1,1 @@
+add_catch(test_validate_stack_sequences test.cpp)
