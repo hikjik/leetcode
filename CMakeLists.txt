@@ -220,6 +220,7 @@ add_task(maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshol
 add_task(maximum-subarray)
 add_task(maximum-sum-circular-subarray)
 add_task(maximum-value-at-a-given-index-in-a-bounded-array)
+add_task(maximum-value-of-k-coins-from-piles)
 add_task(merge-intervals)
 add_task(merge-k-sorted-lists)
 add_task(merge-sorted-array)

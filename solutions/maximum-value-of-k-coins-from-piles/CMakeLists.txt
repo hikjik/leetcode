@@ -1,0 +1,1 @@
+add_catch(test_maximum_value_of_k_coins_from_piles test.cpp)
