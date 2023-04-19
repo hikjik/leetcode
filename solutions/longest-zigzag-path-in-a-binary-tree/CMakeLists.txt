@@ -1,0 +1,1 @@
+add_catch(test_longest_zigzag_path_in_a_binary_tree test.cpp)
