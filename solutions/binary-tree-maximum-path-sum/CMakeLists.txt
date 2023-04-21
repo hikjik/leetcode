@@ -1,0 +1,1 @@
+add_catch(test_binary_tree_maximum_path_sum test.cpp)
