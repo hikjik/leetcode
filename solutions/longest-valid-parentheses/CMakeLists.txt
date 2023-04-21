@@ -1,0 +1,1 @@
+add_catch(test_longest_valid_parentheses test.cpp)
