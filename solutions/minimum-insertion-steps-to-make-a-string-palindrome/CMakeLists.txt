@@ -1,0 +1,1 @@
+add_catch(test_minimum_insertion_steps_to_make_a_string_palindrome test.cpp)
