@@ -1,0 +1,1 @@
+add_catch(test_largest_rectangle_in_histogram test.cpp)
