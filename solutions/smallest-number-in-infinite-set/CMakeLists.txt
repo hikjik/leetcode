@@ -1,0 +1,1 @@
+add_catch(test_smallest_number_in_infinite_set test.cpp)
