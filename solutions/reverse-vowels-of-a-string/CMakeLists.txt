@@ -1,0 +1,1 @@
+add_catch(test_reverse_vowels_of_a_string test.cpp)
