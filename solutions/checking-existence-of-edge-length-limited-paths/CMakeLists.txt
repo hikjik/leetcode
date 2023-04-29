@@ -1,0 +1,1 @@
+add_catch(test_checking_existence_of_edge_length_limited_paths test.cpp)
