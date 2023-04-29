@@ -1,0 +1,1 @@
+add_catch(test_create_binary_tree_from_descriptions test.cpp)
