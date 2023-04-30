@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_flips_to_convert_binary_matrix_to_zero_matrix test.cpp)
