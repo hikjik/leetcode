@@ -1,0 +1,1 @@
+add_catch(test_maximum_score_words_formed_by_letters test.cpp)
