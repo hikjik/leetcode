@@ -1,0 +1,1 @@
+add_catch(test_earliest_possible_day_of_full_bloom test.cpp)
