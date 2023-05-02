@@ -1,0 +1,1 @@
+add_catch(test_number_of_visible_people_in_a_queue test.cpp)
