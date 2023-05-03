@@ -1,0 +1,1 @@
+add_catch(test_find_the_difference_of_two_arrays test.cpp)
