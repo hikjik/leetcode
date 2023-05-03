@@ -1,0 +1,1 @@
+add_catch(test_shortest_impossible_sequence_of_rolls test.cpp)
