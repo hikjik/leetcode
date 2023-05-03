@@ -1,0 +1,1 @@
+add_catch(test_maximum_frequency_stack test.cpp)
