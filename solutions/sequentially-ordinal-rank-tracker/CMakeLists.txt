@@ -1,0 +1,1 @@
+add_catch(test_sequentially_ordinal_rank_tracker test.cpp)
