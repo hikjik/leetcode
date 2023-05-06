@@ -1,6 +1,6 @@
 #pragma once
 
-#include <queue>
+#include <set>
 #include <string>
 
 class SORTracker {
@@ -12,43 +12,23 @@ private:
     int score;
   };
 
-  struct LocationLess {
-    bool operator()(const Location &lhs, const Location &rhs) {
-      return lhs.score == rhs.score ? lhs.name > rhs.name
-                                    : lhs.score < rhs.score;
-    }
-  };
-
   struct LocationGreater {
-    bool operator()(const Location &lhs, const Location &rhs) {
+    bool operator()(const Location &lhs, const Location &rhs) const {
       return lhs.score == rhs.score ? lhs.name < rhs.name
                                     : lhs.score > rhs.score;
     }
   };
 
-  std::priority_queue<Location, std::vector<Location>, LocationLess> max_heap;
-  std::priority_queue<Location, std::vector<Location>, LocationGreater>
-      min_heap;
-  size_t k = 0;
+  std::set<Location, LocationGreater> locations;
+  std::set<Location, LocationGreater>::const_iterator it_best = locations.end();
 
 public:
   void add(std::string name, int score) {
-    min_heap.emplace(name, score);
-    if (min_heap.size() > k + 1) {
-      max_heap.push(min_heap.top());
-      min_heap.pop();
+    auto [it, _] = locations.emplace(name, score);
+    if (it_best == locations.end() || LocationGreater()(*it, *it_best)) {
+      --it_best;
     }
   }
 
-  std::string get() {
-    const auto name = min_heap.top().name;
-    ++k;
-
-    if (!max_heap.empty()) {
-      min_heap.push(max_heap.top());
-      max_heap.pop();
-    }
-
-    return name;
-  }
+  std::string get() { return (it_best++)->name; }
 };
