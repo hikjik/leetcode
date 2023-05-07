@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_increments_on_subarrays_to_form_a_target_array test.cpp)
