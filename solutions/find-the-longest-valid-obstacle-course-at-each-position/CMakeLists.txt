@@ -1,0 +1,1 @@
+add_catch(test_find_the_longest_valid_obstacle_course_at_each_position test.cpp)
