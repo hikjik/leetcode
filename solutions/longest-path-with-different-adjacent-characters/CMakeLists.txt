@@ -1,0 +1,1 @@
+add_catch(test_longest_path_with_different_adjacent_characters test.cpp)
