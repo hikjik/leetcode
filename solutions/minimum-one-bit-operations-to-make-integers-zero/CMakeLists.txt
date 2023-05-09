@@ -1,0 +1,1 @@
+add_catch(test_minimum_one_bit_operations_to_make_integers_zero test.cpp)
