@@ -1,0 +1,1 @@
+add_catch(test_solving_questions_with_brainpower test.cpp)
