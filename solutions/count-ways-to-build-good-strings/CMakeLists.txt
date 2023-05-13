@@ -1,0 +1,1 @@
+add_catch(test_count_ways_to_build_good_strings test.cpp)
