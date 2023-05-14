@@ -1,0 +1,1 @@
+add_catch(test_maximize_score_after_n_operations test.cpp)
