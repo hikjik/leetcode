@@ -1,0 +1,1 @@
+add_catch(test_maximum_twin_sum_of_a_linked_list test.cpp)
