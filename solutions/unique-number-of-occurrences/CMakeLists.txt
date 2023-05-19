@@ -1,0 +1,1 @@
+add_catch(test_unique_number_of_occurrences test.cpp)
