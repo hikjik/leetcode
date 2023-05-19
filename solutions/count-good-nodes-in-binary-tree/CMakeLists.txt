@@ -1,0 +1,1 @@
+add_catch(test_count_good_nodes_in_binary_tree test.cpp)
