@@ -1,0 +1,1 @@
+add_catch(test_maximum_level_sum_of_a_binary_tree test.cpp)
