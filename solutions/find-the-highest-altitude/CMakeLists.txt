@@ -1,0 +1,1 @@
+add_catch(test_find_the_highest_altitude test.cpp)
