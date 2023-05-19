@@ -1,0 +1,1 @@
+add_catch(test_equal_row_and_column_pairs test.cpp)
