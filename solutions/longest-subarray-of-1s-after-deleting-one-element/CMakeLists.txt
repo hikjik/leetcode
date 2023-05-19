@@ -1,0 +1,1 @@
+add_catch(test_longest_subarray_of_1s_after_deleting_one_element test.cpp)
