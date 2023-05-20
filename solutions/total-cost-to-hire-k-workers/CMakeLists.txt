@@ -1,0 +1,1 @@
+add_catch(test_total_cost_to_hire_k_workers test.cpp)
