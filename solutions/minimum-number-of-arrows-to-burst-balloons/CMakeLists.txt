@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_arrows_to_burst_balloons test.cpp)
