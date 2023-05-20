@@ -1,0 +1,1 @@
+add_catch(test_maximum_performance_of_a_team test.cpp)
