@@ -1,0 +1,1 @@
+add_catch(test_greatest_common_divisor_of_strings test.cpp)
