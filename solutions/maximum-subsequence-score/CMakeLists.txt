@@ -1,0 +1,1 @@
+add_catch(test_maximum_subsequence_score test.cpp)
