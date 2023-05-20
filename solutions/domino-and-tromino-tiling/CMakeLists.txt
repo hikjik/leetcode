@@ -1,0 +1,1 @@
+add_catch(test_domino_and_tromino_tiling test.cpp)
