@@ -1,0 +1,1 @@
+add_catch(test_average_of_levels_in_binary_tree test.cpp)
