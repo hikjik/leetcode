@@ -1,0 +1,1 @@
+add_catch(test_kth_largest_element_in_a_stream test.cpp)
