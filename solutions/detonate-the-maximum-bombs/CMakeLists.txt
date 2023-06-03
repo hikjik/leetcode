@@ -1,0 +1,1 @@
+add_catch(test_detonate_the_maximum_bombs test.cpp)
