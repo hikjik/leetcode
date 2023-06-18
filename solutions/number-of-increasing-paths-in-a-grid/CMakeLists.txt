@@ -1,0 +1,1 @@
+add_catch(test_number_of_increasing_paths_in_a_grid test.cpp)
