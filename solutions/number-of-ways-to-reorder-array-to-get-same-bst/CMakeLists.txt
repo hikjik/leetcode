@@ -1,0 +1,1 @@
+add_catch(test_number_of_ways_to_reorder_array_to_get_same_bst test.cpp)
