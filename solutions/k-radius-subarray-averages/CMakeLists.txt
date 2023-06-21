@@ -1,0 +1,1 @@
+add_catch(test_k_radius_subarray_averages test.cpp)
