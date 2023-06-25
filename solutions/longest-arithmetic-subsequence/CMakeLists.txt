@@ -1,0 +1,1 @@
+add_catch(test_longest_arithmetic_subsequence test.cpp)
