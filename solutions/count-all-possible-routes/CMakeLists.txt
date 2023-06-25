@@ -1,0 +1,1 @@
+add_catch(test_count_all_possible_routes test.cpp)
