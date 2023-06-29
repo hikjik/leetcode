@@ -1,0 +1,1 @@
+add_catch(test_shortest_path_to_get_all_keys test.cpp)
