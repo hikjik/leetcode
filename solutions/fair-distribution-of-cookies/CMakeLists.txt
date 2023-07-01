@@ -1,0 +1,1 @@
+add_catch(test_fair_distribution_of_cookies test.cpp)
