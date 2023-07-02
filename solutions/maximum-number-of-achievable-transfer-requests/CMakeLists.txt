@@ -1,0 +1,1 @@
+add_catch(test_maximum_number_of_achievable_transfer_requests test.cpp)
