@@ -1,0 +1,1 @@
+add_catch(test_substring_with_largest_variance test.cpp)
