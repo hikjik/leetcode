@@ -1,0 +1,1 @@
+add_catch(test_minimum_depth_of_binary_tree test.cpp)

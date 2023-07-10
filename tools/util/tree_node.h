@@ -73,7 +73,7 @@ bool EqualTree(TreeNode *root1, TreeNode *root2) {
   if (!root1 && !root2) {
     return true;
   }
-  if (root1 && !root2 || !root1 && root2 || root1->val != root2->val) {
+  if ((root1 && !root2) || (!root1 && root2) || root1->val != root2->val) {
     return false;
   }
 
