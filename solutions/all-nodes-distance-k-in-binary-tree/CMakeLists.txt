@@ -1,0 +1,1 @@
+add_catch(test_all_nodes_distance_k_in_binary_tree test.cpp)
