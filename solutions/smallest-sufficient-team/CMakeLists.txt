@@ -1,0 +1,1 @@
+add_catch(test_smallest_sufficient_team test.cpp)
