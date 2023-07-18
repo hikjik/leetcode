@@ -1,0 +1,1 @@
+add_catch(test_maximum_number_of_events_that_can_be_attended_ii test.cpp)
