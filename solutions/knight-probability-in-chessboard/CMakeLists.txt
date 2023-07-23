@@ -1,0 +1,1 @@
+add_catch(test_knight_probability_in_chessboard test.cpp)
