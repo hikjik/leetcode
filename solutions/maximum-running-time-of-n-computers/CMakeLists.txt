@@ -1,0 +1,1 @@
+add_catch(test_maximum_running_time_of_n_computers test.cpp)
