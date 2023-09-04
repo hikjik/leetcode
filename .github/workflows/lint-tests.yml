@@ -1,0 +1,31 @@
+name: Lint tests
+
+on: [push, pull_request]
+
+jobs:
+  cpp-lint:
+    name: C++ Formatting Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v3
+
+      - name: Run clang-format style check
+        uses: jidicula/clang-format-action@v4.11.0
+        with:
+          clang-format-version: '14'
+          check-path: solutions
+
+  py-lint:
+    name: Python Formatting Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v3
+
+      - name: Run black style check
+        uses: rickstaa/action-black@v1
+        with:
+            black_args: ". --check --diff"
