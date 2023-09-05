@@ -1,0 +1,1 @@
+add_catch(test_unique_binary_search_trees_ii test.cpp)
