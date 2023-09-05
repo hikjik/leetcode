@@ -1,0 +1,1 @@
+add_catch(test_minimize_the_maximum_difference_of_pairs test.cpp)
