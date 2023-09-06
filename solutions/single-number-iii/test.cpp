@@ -7,8 +7,8 @@
 
 template <class T>
 void CheckSorted(std::vector<T> expected, std::vector<T> actual) {
-  std::ranges::sort(expected);
-  std::ranges::sort(actual);
+  std::sort(expected.begin(), expected.end());
+  std::sort(actual.begin(), actual.end());
   REQUIRE(expected == actual);
 }
 

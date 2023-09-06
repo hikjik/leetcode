@@ -16,4 +16,6 @@ function(add_catch TARGET)
 
   target_link_libraries(${TARGET}
     contrib_catch_main)
+
+  add_test(NAME ${TARGET} COMMAND ${TARGET})
 endfunction()

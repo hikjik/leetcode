@@ -2,6 +2,7 @@
 
 #include <tree_node.h>
 
+#include <climits>
 #include <queue>
 
 class Solution {

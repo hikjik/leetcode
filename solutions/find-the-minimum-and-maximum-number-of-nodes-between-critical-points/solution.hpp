@@ -3,6 +3,7 @@
 #include <list_node.h>
 
 #include <algorithm>
+#include <climits>
 #include <vector>
 
 class Solution {

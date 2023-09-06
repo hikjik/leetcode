@@ -20,6 +20,8 @@ function(add_task name)
   endif()
 endfunction()
 
+enable_testing()
+
 add_task(01-matrix)
 add_task(3sum)
 add_task(3sum-closest)

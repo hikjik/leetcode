@@ -1,7 +1,7 @@
 #pragma once
 
 #include <algorithm>
-#include <limits>
+#include <climits>
 #include <vector>
 
 class Solution {

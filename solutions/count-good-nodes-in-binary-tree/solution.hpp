@@ -2,6 +2,8 @@
 
 #include <tree_node.h>
 
+#include <climits>
+
 class Solution {
 public:
   static int goodNodes(TreeNode *root) { return dfs(INT_MIN, root); }
