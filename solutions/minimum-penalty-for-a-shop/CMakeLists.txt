@@ -1,0 +1,1 @@
+add_catch(test_minimum_penalty_for_a_shop test.cpp)
