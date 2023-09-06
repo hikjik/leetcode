@@ -1,0 +1,1 @@
+add_catch(test_largest_time_for_given_digits test.cpp)
