@@ -5,10 +5,10 @@
 
 class Solution {
 private:
-  const int kAlphabetSize = 26;
+  static const int kAlphabetSize = 26;
 
 public:
-  std::string convertToTitle(int columnNumber) {
+  static std::string convertToTitle(int columnNumber) {
     std::string title;
     while (columnNumber--) {
       title += 'A' + columnNumber % kAlphabetSize;

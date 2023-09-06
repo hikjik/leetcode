@@ -6,7 +6,7 @@
 
 class Solution {
 public:
-  std::vector<ListNode *> splitListToParts(ListNode *head, int k) {
+  static std::vector<ListNode *> splitListToParts(ListNode *head, int k) {
     const auto length = getLength(head);
     const auto q = length / k, r = length % k;
 
@@ -28,7 +28,7 @@ public:
   }
 
 private:
-  int getLength(ListNode *head) {
+  static int getLength(ListNode *head) {
     int length = 0;
     for (auto node = head; node; node = node->next) {
       ++length;

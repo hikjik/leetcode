@@ -5,7 +5,7 @@
 
 class Solution {
 public:
-  int minimizeMax(std::vector<int> nums, int p) {
+  static int minimizeMax(std::vector<int> nums, int p) {
     std::sort(nums.begin(), nums.end());
     int left = 0, right = nums.back() - nums.front();
     while (left < right) {
@@ -16,7 +16,7 @@ public:
   }
 
 private:
-  int countValidPairs(const std::vector<int> nums, int threshold) {
+  static int countValidPairs(const std::vector<int> nums, int threshold) {
     int cnt = 0;
     for (size_t i = 0; i + 1 < nums.size(); ++i) {
       if (nums[i + 1] - nums[i] <= threshold) {

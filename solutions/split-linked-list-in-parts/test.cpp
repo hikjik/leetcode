@@ -5,7 +5,7 @@
 void CheckSolution(size_t k, const std::vector<int> &values,
                    const std::vector<std::vector<int>> &expected) {
   auto head = VectorToList(values);
-  auto parts = Solution().splitListToParts(head, k);
+  auto parts = Solution::splitListToParts(head, k);
   REQUIRE(k == parts.size());
 
   std::vector<std::vector<int>> actual;

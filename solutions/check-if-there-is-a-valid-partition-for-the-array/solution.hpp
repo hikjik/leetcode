@@ -5,7 +5,7 @@
 
 class Solution {
 public:
-  bool validPartition(const std::vector<int> &nums) {
+  static bool validPartition(const std::vector<int> &nums) {
     const int n = nums.size();
     switch (n) {
     case 1:
@@ -30,11 +30,11 @@ public:
   }
 
 private:
-  bool valid2(int i, const std::vector<int> &nums) {
+  static bool valid2(int i, const std::vector<int> &nums) {
     return nums[i] == nums[i + 1];
   }
 
-  bool valid3(int i, const std::vector<int> &nums) {
+  static bool valid3(int i, const std::vector<int> &nums) {
     return nums[i] == nums[i + 1] && nums[i] == nums[i + 2] ||
            nums[i] == nums[i + 1] - 1 && nums[i] == nums[i + 2] - 2;
   }

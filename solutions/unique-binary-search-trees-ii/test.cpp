@@ -11,7 +11,7 @@ void CheckSolution(int n,
     expected.push_back(VectorToTree(v));
   }
 
-  const auto actual = Solution().generateTrees(n);
+  const auto actual = Solution::generateTrees(n);
   REQUIRE(expected.size() == actual.size());
   for (size_t i = 0; i < expected.size(); ++i) {
     REQUIRE(EqualTree(expected[i], actual[i]));

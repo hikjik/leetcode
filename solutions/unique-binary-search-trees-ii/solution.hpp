@@ -10,13 +10,14 @@ private:
   using Memo = std::map<std::pair<int, int>, std::vector<TreeNode *>>;
 
 public:
-  std::vector<TreeNode *> generateTrees(int n) {
+  static std::vector<TreeNode *> generateTrees(int n) {
     Memo memo;
     return generateTrees(1, n, &memo);
   }
 
 private:
-  std::vector<TreeNode *> generateTrees(int left, int right, Memo *memo) {
+  static std::vector<TreeNode *> generateTrees(int left, int right,
+                                               Memo *memo) {
     if (left > right) {
       return {nullptr};
     }

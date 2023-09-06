@@ -4,10 +4,10 @@
 
 class Solution {
 public:
-  const size_t kMaxSteps = 171;
-  const size_t kAmount = 25;
+  static const size_t kMaxSteps = 171;
+  static const size_t kAmount = 25;
 
-  double soupServings(int n) {
+  static double soupServings(int n) {
     const size_t steps = (n + kAmount - 1) / kAmount;
     if (steps > kMaxSteps) {
       return 1.0;
@@ -16,7 +16,7 @@ public:
   }
 
 private:
-  double compute(int A, int B, std::unordered_map<int, double> &&memo) {
+  static double compute(int A, int B, std::unordered_map<int, double> &&memo) {
     if (A <= 0 && B <= 0) {
       return 0.5;
     }
