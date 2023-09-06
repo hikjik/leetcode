@@ -1,0 +1,1 @@
+add_catch(test_extra_characters_in_a_string test.cpp)
