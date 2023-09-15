@@ -1,0 +1,1 @@
+add_catch(test_min_cost_to_connect_all_points test.cpp)
