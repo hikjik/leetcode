@@ -1,0 +1,1 @@
+add_catch(test_path_with_minimum_effort test.cpp)
