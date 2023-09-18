@@ -1,25 +1,25 @@
 #pragma once
 
-#include <queue>
+#include <algorithm>
+#include <numeric>
 #include <vector>
 
 class Solution {
 public:
   static std::vector<int> kWeakestRows(const std::vector<std::vector<int>> &mat,
                                        int k) {
-    int n = mat.size();
-    std::priority_queue<std::pair<int, int>> queue;
-    for (int i = 0; i < n; ++i) {
-      auto it = std::find(mat[i].begin(), mat[i].end(), 0);
-      const int weakness = std::distance(it, mat[i].end());
-      queue.emplace(weakness, -i);
+    std::vector<std::pair<int, int>> soldiers;
+    for (size_t i = 0; i < mat.size(); ++i) {
+      const auto count = std::accumulate(mat[i].begin(), mat[i].end(), 0);
+      soldiers.push_back({count, i});
     }
 
-    std::vector<int> weakest_rows(k);
+    std::partial_sort(soldiers.begin(), soldiers.begin() + k, soldiers.end());
+
+    std::vector<int> weakest_rows_ids(k);
     for (int i = 0; i < k; ++i) {
-      weakest_rows[i] = -queue.top().second;
-      queue.pop();
+      weakest_rows_ids[i] = soldiers[i].second;
     }
-    return weakest_rows;
+    return weakest_rows_ids;
   }
 };
