@@ -1,0 +1,1 @@
+add_catch(test_count_all_valid_pickup_and_delivery_options test.cpp)
