@@ -1,0 +1,1 @@
+add_catch(test_minimum_operations_to_reduce_x_to_zero test.cpp)
