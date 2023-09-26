@@ -1,0 +1,1 @@
+add_catch(test_sort_items_by_groups_respecting_dependencies test.cpp)
