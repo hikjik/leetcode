@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_taps_to_open_to_water_a_garden test.cpp)
