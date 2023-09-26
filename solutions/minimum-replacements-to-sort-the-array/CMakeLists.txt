@@ -1,0 +1,1 @@
+add_catch(test_minimum_replacements_to_sort_the_array test.cpp)
