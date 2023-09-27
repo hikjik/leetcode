@@ -2,6 +2,8 @@
 
 LeetCode С++ solutions with VS Code.
 
+<img width="50%" src="https://leetcard.jacoblin.cool/alexandr_morev?theme=wtf&ext=heatmap">
+
 ## Setup VS Code
 
 Install c++ compiler and cmake in Ubuntu:
