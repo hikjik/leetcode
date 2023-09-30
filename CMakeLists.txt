@@ -23,6 +23,7 @@ endfunction()
 enable_testing()
 
 add_task(01-matrix)
+add_task(132-pattern)
 add_task(3sum)
 add_task(3sum-closest)
 add_task(add-binary)
