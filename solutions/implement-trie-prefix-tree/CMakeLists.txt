@@ -1,0 +1,1 @@
+add_catch(test_implement_trie_prefix_tree test.cpp)

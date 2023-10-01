@@ -1,0 +1,1 @@
+add_catch(test_insert_delete_getrandom_o1 test.cpp)

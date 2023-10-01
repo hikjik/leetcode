@@ -1,0 +1,1 @@
+add_catch(test_two_sum_ii_input_array_is_sorted test.cpp)
