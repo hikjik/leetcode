@@ -28,17 +28,21 @@ ext install ms-python.vscode-pylance
 
 ## Generating a template for a task
 
-Open project and run the following command in the VS Code terminal:
+Copy the slug of the desired LeetCode problem as shown in the picture:
+
+![plot](./res/slug.png)
+
+Open project and run the following command in the VS Code terminal, specify the previously copied slug:
 
 ```bash
-python3 gen_task.py "Some Problem"
+python3 leetcode.py get concatenation-of-array
 ```
 
-Open the following files:
+The command above will generate several files, open them in the terminal:
 
 ```bash
-code solutions/some-problem/solution.hpp
-code solutions/some-problem/test.cpp
+code solutions/concatenation-of-array/solution.hpp
+code solutions/concatenation-of-array/test.cpp
 ```
 
 After writing the solution to the problem and the tests, use the VS Code status bar to run the tests:
@@ -46,6 +50,12 @@ After writing the solution to the problem and the tests, use the VS Code status 
 
 Or use TestMate extension:
 ![plot](./res/test-mate.png)
+
+The command to get the LeetCode Daily question:
+
+```bash
+python3 leetcode.py get-daily
+```
 
 ## Auto-Format in VS Code
 
