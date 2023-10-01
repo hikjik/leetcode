@@ -1,4 +1,4 @@
-from argparse import ArgumentParser, BooleanOptionalAction
+from argparse import ArgumentParser
 from dataclasses import dataclass
 from glob import glob
 from pathlib import Path
