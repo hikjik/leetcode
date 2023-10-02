@@ -1,0 +1,1 @@
+add_catch(test_remove_colored_pieces_if_both_neighbors_are_the_same_color test.cpp)
