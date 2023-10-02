@@ -2,6 +2,7 @@ from argparse import ArgumentParser
 from dataclasses import dataclass
 from glob import glob
 from pathlib import Path
+import re
 
 import requests
 
@@ -14,6 +15,8 @@ SOLUTION_FILE = "solution.hpp"
 SOLUTION_FILE_CONTENT = """\
 #pragma once
 
+{std_includes}
+{utils_includes}
 {snippet}
 """
 
@@ -54,6 +57,7 @@ class Task:
     content: str
     code_snippets: dict[str, str]
     meta_data: str
+    test_cases: list[str]
 
 
 def get_daily_question_slug() -> Task:
@@ -93,6 +97,7 @@ def get_task_info(task_slug: str) -> Task:
                 code
             }
             metaData
+            exampleTestcaseList
         }
     }
     """
@@ -117,6 +122,7 @@ def get_task_info(task_slug: str) -> Task:
         content=question["content"],
         code_snippets=snippets,
         meta_data=question["metaData"],
+        test_cases=question["exampleTestcaseList"],
     )
 
 
@@ -139,7 +145,7 @@ def update_cmake(task_slug: str) -> None:
             file.write(task)
 
 
-def create_problem_description_file(task_path: Path, task: Task) -> None:
+def create_description_file(task_path: Path, task: Task) -> None:
     with open(task_path / DESCRIPTION_FILE, "w") as file:
         file.write(
             DESCRIPTION_FILE_CONTENT.format(
@@ -149,6 +155,46 @@ def create_problem_description_file(task_path: Path, task: Task) -> None:
                 color=DIFFICULTY_COLOR_MAP[task.difficulty],
                 difficulty=task.difficulty,
                 content=task.content,
+            )
+        )
+
+
+def create_solution_file(task_path: Path, task: Task) -> None:
+    code = task.code_snippets["cpp"]
+    code = re.sub(r"\n\s*(.*\(.*\) \{\n)", r"\n    static \1", code)
+
+    std_includes = ""
+    for p in ["vector", "string"]:
+        if p in code:
+            code = code.replace(p, "std::" + p)
+            std_includes += f"#include <{p}>\n"
+
+    utils_includes = ""
+    if "ListNode" in code:
+        utils_includes += f"\n#include <list_node>\n"
+    if "TreeNode" in code:
+        utils_includes += f"\n#include <tree_node>\n"
+
+    with open(task_path / SOLUTION_FILE, "w") as file:
+        file.write(
+            SOLUTION_FILE_CONTENT.format(
+                snippet=code,
+                std_includes=std_includes,
+                utils_includes=utils_includes,
+            )
+        )
+
+
+def create_test_file(task_path: Path, task: Task) -> None:
+    with open(task_path / TEST_FILE, "w") as file:
+        file.write(TEST_FILE_CONTENT)
+
+
+def create_cmake_file(task_path: Path, task: Task) -> None:
+    with open(task_path / CMAKE_LISTS_FILE, "w") as file:
+        file.write(
+            CMAKE_LISTS_FILE_CONTENT.format(
+                task_name=task.title_slug.replace("-", "_"),
             )
         )
 
@@ -163,25 +209,10 @@ def create_task_folder(task_slug: str) -> None:
 
     task_path.mkdir()
 
-    with open(task_path / SOLUTION_FILE, "w") as file:
-        file.write(
-            SOLUTION_FILE_CONTENT.format(
-                snippet=task.code_snippets["cpp"],
-            )
-        )
-
-    with open(task_path / TEST_FILE, "w") as file:
-        file.write(TEST_FILE_CONTENT)
-
-    with open(task_path / CMAKE_LISTS_FILE, "w") as file:
-        file.write(
-            CMAKE_LISTS_FILE_CONTENT.format(
-                task_name=task_slug.replace("-", "_"),
-            )
-        )
-
-    create_problem_description_file(task_path, task)
-
+    create_solution_file(task_path, task)
+    create_description_file(task_path, task)
+    create_test_file(task_path, task)
+    create_cmake_file(task_path, task)
     update_cmake(task_slug)
 
     print(f"Created file: {task_path / SOLUTION_FILE}")
@@ -230,7 +261,7 @@ if __name__ == "__main__":
         for path in glob("./solutions/*", recursive=False):
             task_path = Path(path)
             task = get_task_info(task_path.name)
-            create_problem_description_file(task_path, task)
+            create_description_file(task_path, task)
     else:
         print(f"Unknown command {args.cmd}")
         parser.print_help()
