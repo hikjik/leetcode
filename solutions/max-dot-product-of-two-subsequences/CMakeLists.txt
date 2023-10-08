@@ -1,0 +1,1 @@
+add_catch(test_max_dot_product_of_two_subsequences test.cpp)
