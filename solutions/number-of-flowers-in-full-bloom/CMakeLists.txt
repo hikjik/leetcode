@@ -1,0 +1,1 @@
+add_catch(test_number_of_flowers_in_full_bloom test.cpp)
