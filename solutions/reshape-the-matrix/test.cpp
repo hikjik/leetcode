@@ -3,14 +3,30 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    Matrix<int> mat{{1, 2}, {3, 4}};
-    Matrix<int> expected{{1, 2, 3, 4}};
-    REQUIRE(expected == Solution::matrixReshape(mat, 1, 4));
-  }
-  {
-    Matrix<int> mat{{1, 2}, {3, 4}};
-    Matrix<int> expected{{1, 2}, {3, 4}};
-    REQUIRE(expected == Solution::matrixReshape(mat, 2, 4));
+  struct TestCase {
+    std::vector<std::vector<int>> mat;
+    int r;
+    int c;
+    std::vector<std::vector<int>> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .mat{{1, 2}, {3, 4}},
+          .r = 1,
+          .c = 4,
+          .expected{{1, 2, 3, 4}},
+      },
+      {
+          .mat{{1, 2}, {3, 4}},
+          .r = 2,
+          .c = 4,
+          .expected{{1, 2}, {3, 4}},
+      },
+  };
+
+  for (const auto &[mat, r, c, expected] : test_cases) {
+    const auto actual = Solution::matrixReshape(mat, r, c);
+    REQUIRE(expected == actual);
   }
 }

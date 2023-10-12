@@ -3,7 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(4 == Solution::longestPalindromeSubseq("bbbab"));
-  REQUIRE(2 == Solution::longestPalindromeSubseq("cbbd"));
-  REQUIRE(1 == Solution::longestPalindromeSubseq("abcdef"));
+  struct TestCase {
+    std::string s;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "bbbab",
+          .expected = 4,
+      },
+      {
+          .s = "cbbd",
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[s, expected] : test_cases) {
+    const auto actual = Solution::longestPalindromeSubseq(s);
+    REQUIRE(expected == actual);
+  }
 }

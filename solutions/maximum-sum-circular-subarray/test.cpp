@@ -3,20 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1 - 2, 3, -2};
-    REQUIRE(3 == Solution::maxSubarraySumCircular(nums));
-  }
-  {
-    std::vector<int> nums{5, -3, 5};
-    REQUIRE(10 == Solution::maxSubarraySumCircular(nums));
-  }
-  {
-    std::vector<int> nums{-3, -2, -3};
-    REQUIRE(-2 == Solution::maxSubarraySumCircular(nums));
-  }
-  {
-    std::vector<int> nums{1};
-    REQUIRE(1 == Solution::maxSubarraySumCircular(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, -2, 3, -2},
+          .expected = 3,
+      },
+      {
+          .nums{5, -3, 5},
+          .expected = 10,
+      },
+      {
+          .nums{-3, -2, -3},
+          .expected = -2,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::maxSubarraySumCircular(nums);
+    REQUIRE(expected == actual);
   }
 }

@@ -5,11 +5,10 @@
 class Solution {
 public:
   static ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-    auto dummy_node = ListNode();
-    auto dummy = &dummy_node;
+    auto dummy = ListNode();
 
     int carry = 0;
-    auto node = dummy;
+    auto node = &dummy;
     while (l1 || l2 || carry) {
       int sum = carry;
       if (l1) {
@@ -26,6 +25,6 @@ public:
       node = node->next;
     }
 
-    return dummy->next;
+    return dummy.next;
   }
 };

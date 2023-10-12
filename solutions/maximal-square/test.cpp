@@ -3,19 +3,31 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<char>> matrix{{'1', '0', '1', '0', '0'},
-                                          {'1', '0', '1', '1', '1'},
-                                          {'1', '1', '1', '1', '1'},
-                                          {'1', '0', '0', '1', '0'}};
-    REQUIRE(4 == Solution::maximalSquare(matrix));
-  }
-  {
-    std::vector<std::vector<char>> matrix{{'0', '1'}, {'1', '0'}};
-    REQUIRE(1 == Solution::maximalSquare(matrix));
-  }
-  {
-    std::vector<std::vector<char>> matrix{{'0'}};
-    REQUIRE(0 == Solution::maximalSquare(matrix));
+  struct TestCase {
+    std::vector<std::vector<char>> matrix;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .matrix{{'1', '0', '1', '0', '0'},
+                  {'1', '0', '1', '1', '1'},
+                  {'1', '1', '1', '1', '1'},
+                  {'1', '0', '0', '1', '0'}},
+          .expected = 4,
+      },
+      {
+          .matrix{{'0', '1'}, {'1', '0'}},
+          .expected = 1,
+      },
+      {
+          .matrix{{'0'}},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[matrix, expected] : test_cases) {
+    const auto actual = Solution::maximalSquare(matrix);
+    REQUIRE(expected == actual);
   }
 }

@@ -2,21 +2,27 @@
 
 #include <solution.hpp>
 
-#include <algorithm>
-
 TEST_CASE("Simple") {
-  {
-    int k = 2;
-    std::vector<int> nums{1, 1, 1, 2, 2, 3};
-    std::vector<int> expected{1, 2};
-    auto actual = Solution::topKFrequent(nums, k);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
-  }
-  {
-    int k = 1;
-    std::vector<int> nums{1};
-    std::vector<int> expected{1};
+  struct TestCase {
+    std::vector<int> nums;
+    int k;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 1, 1, 2, 2, 3},
+          .k = 2,
+          .expected{1, 2},
+      },
+      {
+          .nums{1},
+          .k = 1,
+          .expected{1},
+      },
+  };
+
+  for (const auto &[nums, k, expected] : test_cases) {
     auto actual = Solution::topKFrequent(nums, k);
     std::sort(actual.begin(), actual.end());
     REQUIRE(expected == actual);

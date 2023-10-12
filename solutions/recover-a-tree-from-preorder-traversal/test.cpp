@@ -2,32 +2,32 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::string &traversal,
-                   const std::vector<std::optional<int>> &values) {
-  auto actual = Solution::recoverFromPreorder(traversal);
-  auto expected = VectorToTree(values);
-  REQUIRE(EqualTree(expected, actual));
-  FreeTree(expected), FreeTree(actual);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::string traversal = "1-2--3--4-5--6--7";
-    std::vector<std::optional<int>> values{1, 2, 5, 3, 4, 6, 7};
-    CheckSolution(traversal, values);
-  }
-  {
-    std::string traversal = "1-2--3---4-5--6---7";
-    std::vector<std::optional<int>> values{
-        1, 2, 5, 3, std::nullopt, 6, std::nullopt, 4, std::nullopt, 7};
-    CheckSolution(traversal, values);
-  }
-  {
-    std::string traversal = "1-401--349---90--88";
-    std::vector<std::optional<int>> values{1, 401, std::nullopt, 349, 88, 90};
-    CheckSolution(traversal, values);
+  struct TestCase {
+    std::string traversal;
+    Tree expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .traversal = "1-2--3--4-5--6--7",
+          .expected{1, 2, 5, 3, 4, 6, 7},
+      },
+      {
+          .traversal = "1-2--3---4-5--6---7",
+          .expected{1, 2, 5, 3, std::nullopt, 6, std::nullopt, 4, std::nullopt,
+                    7},
+      },
+      {
+          .traversal = "1-401--349---90--88",
+          .expected{1, 401, std::nullopt, 349, 88, 90},
+      },
+  };
+
+  for (const auto &[traversal, expected] : test_cases) {
+    const Tree actual = Solution::recoverFromPreorder(traversal);
+    REQUIRE(expected == actual);
   }
 }

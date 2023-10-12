@@ -3,16 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{3, 0, 1};
-    REQUIRE(2 == Solution::missingNumber(nums));
-  }
-  {
-    std::vector<int> nums{0, 1};
-    REQUIRE(2 == Solution::missingNumber(nums));
-  }
-  {
-    std::vector<int> nums{9, 6, 4, 2, 3, 5, 7, 0, 1};
-    REQUIRE(8 == Solution::missingNumber(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{3, 0, 1},
+          .expected = 2,
+      },
+      {
+          .nums{0, 1},
+          .expected = 2,
+      },
+      {
+          .nums{9, 6, 4, 2, 3, 5, 7, 0, 1},
+          .expected = 8,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::missingNumber(nums);
+    REQUIRE(expected == actual);
   }
 }

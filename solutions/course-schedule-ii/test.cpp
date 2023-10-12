@@ -2,50 +2,57 @@
 
 #include <solution.hpp>
 
-void CheckSolution(const std::vector<std::vector<int>> &prerequisites,
-                   int num_courses, bool cycle) {
-  auto actual = Solution::findOrder(num_courses, prerequisites);
-  if (cycle) {
-    REQUIRE(actual.empty());
-    return;
-  }
-
-  REQUIRE(num_courses * 1UL == actual.size());
-
-  std::unordered_map<int, int> positions;
-  for (size_t i = 0; i < actual.size(); ++i) {
-    positions[actual[i]] = i;
-  }
-  REQUIRE(num_courses * 1UL == positions.size());
-  for (const auto &edge : prerequisites) {
-    REQUIRE(positions[edge[0]] > positions[edge[1]]);
-  }
-}
-
 TEST_CASE("Simple") {
-  {
-    int num_courses = 2;
-    std::vector<std::vector<int>> prerequisites{{1, 0}};
-    CheckSolution(prerequisites, num_courses, false);
-  }
-  {
-    int num_courses = 4;
-    std::vector<std::vector<int>> prerequisites{{1, 0}, {2, 0}, {3, 1}, {3, 2}};
-    CheckSolution(prerequisites, num_courses, false);
-  }
-  {
-    int num_courses = 1;
+  struct TestCase {
+    int numCourses;
     std::vector<std::vector<int>> prerequisites;
-    CheckSolution(prerequisites, num_courses, false);
-  }
-  {
-    int num_courses = 2;
-    std::vector<std::vector<int>> prerequisites{{0, 1}, {1, 0}};
-    CheckSolution(prerequisites, num_courses, true);
-  }
-  {
-    int num_courses = 3;
-    std::vector<std::vector<int>> prerequisites{{1, 0}, {1, 2}, {0, 1}};
-    CheckSolution(prerequisites, num_courses, true);
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .numCourses = 2,
+          .prerequisites{{1, 0}},
+          .expected{0, 1},
+      },
+      {
+          .numCourses = 4,
+          .prerequisites{{1, 0}, {2, 0}, {3, 1}, {3, 2}},
+          .expected{0, 2, 1, 3},
+      },
+      {
+          .numCourses = 1,
+          .prerequisites{},
+          .expected{0},
+      },
+
+      {
+          .numCourses = 2,
+          .prerequisites{{0, 1}, {1, 0}},
+          .expected{},
+      },
+      {
+          .numCourses = 3,
+          .prerequisites{{1, 0}, {1, 2}, {0, 1}},
+          .expected{},
+      },
+  };
+
+  for (const auto &[numCourses, prerequisites, expected] : test_cases) {
+    const auto actual = Solution::findOrder(numCourses, prerequisites);
+    if (expected.empty()) {
+      REQUIRE(actual.empty());
+    } else {
+      REQUIRE(numCourses * 1UL == actual.size());
+
+      std::unordered_map<int, int> positions;
+      for (size_t i = 0; i < actual.size(); ++i) {
+        positions[actual[i]] = i;
+      }
+      REQUIRE(numCourses * 1UL == positions.size());
+      for (const auto &edge : prerequisites) {
+        REQUIRE(positions[edge[0]] > positions[edge[1]]);
+      }
+    }
   }
 }

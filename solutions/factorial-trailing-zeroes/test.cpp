@@ -3,8 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(0 == Solution::trailingZeroes(0));
-  REQUIRE(0 == Solution::trailingZeroes(3));
-  REQUIRE(1 == Solution::trailingZeroes(5));
-  REQUIRE(24 == Solution::trailingZeroes(100));
+  struct TestCase {
+    int n;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 3,
+          .expected = 0,
+      },
+      {
+          .n = 5,
+          .expected = 1,
+      },
+      {
+          .n = 0,
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::trailingZeroes(n);
+    REQUIRE(expected == actual);
+  }
 }

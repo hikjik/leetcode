@@ -3,8 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    REQUIRE(15 == Solution::subtractProductAndSum(234));
-    REQUIRE(21 == Solution::subtractProductAndSum(4421));
+  struct TestCase {
+    int n;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 234,
+          .expected = 15,
+      },
+      {
+          .n = 4421,
+          .expected = 21,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::subtractProductAndSum(n);
+    REQUIRE(expected == actual);
   }
 }

@@ -4,7 +4,7 @@
 
 class Solution {
 public:
-  static int countNegatives(std::vector<std::vector<int>> &grid) {
+  static int countNegatives(const std::vector<std::vector<int>> &grid) {
     int n = grid.size(), m = grid.back().size();
 
     int j = m - 1;

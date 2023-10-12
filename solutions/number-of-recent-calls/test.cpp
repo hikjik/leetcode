@@ -3,9 +3,10 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  RecentCounter recentCounter;
-  REQUIRE(1 == recentCounter.ping(1));
-  REQUIRE(2 == recentCounter.ping(100));
-  REQUIRE(3 == recentCounter.ping(3001));
-  REQUIRE(3 == recentCounter.ping(3002));
+  auto recent_counter = RecentCounter();
+
+  REQUIRE(1 == recent_counter.ping(1));
+  REQUIRE(2 == recent_counter.ping(100));
+  REQUIRE(3 == recent_counter.ping(3001));
+  REQUIRE(3 == recent_counter.ping(3002));
 }

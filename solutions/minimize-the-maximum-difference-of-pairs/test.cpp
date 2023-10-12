@@ -3,19 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{10, 1, 2, 7, 1, 3};
-    int p = 2;
-    REQUIRE(1 == Solution::minimizeMax(nums, p));
-  }
-  {
-    std::vector<int> nums{4, 2, 1, 2};
-    int p = 1;
-    REQUIRE(0 == Solution::minimizeMax(nums, p));
-  }
-  {
-    std::vector<int> nums{50};
-    int p = 0;
-    REQUIRE(0 == Solution::minimizeMax(nums, p));
+  struct TestCase {
+    std::vector<int> nums;
+    int p;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{10, 1, 2, 7, 1, 3},
+          .p = 2,
+          .expected = 1,
+      },
+      {
+          .nums{4, 2, 1, 2},
+          .p = 1,
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[nums, p, expected] : test_cases) {
+    const auto actual = Solution::minimizeMax(nums, p);
+    REQUIRE(expected == actual);
   }
 }

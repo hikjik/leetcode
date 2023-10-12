@@ -2,31 +2,34 @@
 
 #include <solution.hpp>
 
-void CheckSolution(std::vector<int> nums, int val, int k) {
-  std::vector<int> expected;
-  for (auto a : nums) {
-    if (a != val) {
-      expected.push_back(a);
-    }
-  }
-  std::sort(expected.begin(), expected.end());
-
-  REQUIRE(k == Solution::removeElement(nums, val));
-
-  nums.resize(k);
-  std::sort(nums.begin(), nums.end());
-  REQUIRE(expected == nums);
-}
-
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{3, 2, 2, 3};
-    int val = 3, k = 2;
-    CheckSolution(nums, val, k);
-  }
-  {
-    std::vector<int> nums{0, 1, 2, 2, 3, 0, 4, 2};
-    int val = 2, k = 5;
-    CheckSolution(nums, val, k);
+  struct TestCase {
+    std::vector<int> nums;
+    int val;
+    int size;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{3, 2, 2, 3},
+          .val = 3,
+          .size = 2,
+          .expected{2, 2},
+      },
+      {
+          .nums{0, 1, 2, 2, 3, 0, 4, 2},
+          .val = 2,
+          .size = 5,
+          .expected{0, 1, 4, 0, 3},
+      },
+  };
+
+  for (auto &[nums, val, size, expected] : test_cases) {
+    REQUIRE(size == Solution::removeElement(nums, val));
+    nums.resize(size);
+    std::sort(expected.begin(), expected.end());
+    std::sort(nums.begin(), nums.end());
+    REQUIRE(expected == nums);
   }
 }

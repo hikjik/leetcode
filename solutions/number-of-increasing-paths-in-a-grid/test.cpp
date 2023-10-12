@@ -3,12 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> grid{{1, 1}, {3, 4}};
-    REQUIRE(8 == Solution::countPaths(grid));
-  }
-  {
-    std::vector<std::vector<int>> grid{{1}, {2}};
-    REQUIRE(3 == Solution::countPaths(grid));
+  struct TestCase {
+    std::vector<std::vector<int>> grid;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .grid{{1, 1}, {3, 4}},
+          .expected = 8,
+      },
+      {
+          .grid{{1}, {2}},
+          .expected = 3,
+      },
+  };
+
+  for (const auto &[grid, expected] : test_cases) {
+    const auto actual = Solution::countPaths(grid);
+    REQUIRE(expected == actual);
   }
 }

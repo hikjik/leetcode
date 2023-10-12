@@ -3,14 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{9};
-    int max_operations = 2;
-    REQUIRE(3 == Solution::minimumSize(nums, max_operations));
-  }
-  {
-    std::vector<int> nums{2, 4, 8, 2};
-    int max_operations = 4;
-    REQUIRE(2 == Solution::minimumSize(nums, max_operations));
+  struct TestCase {
+    std::vector<int> nums;
+    int maxOperations;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{9},
+          .maxOperations = 2,
+          .expected = 3,
+      },
+      {
+          .nums{2, 4, 8, 2},
+          .maxOperations = 4,
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[nums, maxOperations, expected] : test_cases) {
+    const auto actual = Solution::minimumSize(nums, maxOperations);
+    REQUIRE(expected == actual);
   }
 }

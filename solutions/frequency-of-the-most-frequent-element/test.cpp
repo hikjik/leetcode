@@ -3,19 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int k = 5;
-    std::vector<int> nums{1, 2, 4};
-    REQUIRE(3 == Solution::maxFrequency(nums, k));
-  }
-  {
-    int k = 5;
-    std::vector<int> nums{1, 4, 8, 13};
-    REQUIRE(2 == Solution::maxFrequency(nums, k));
-  }
-  {
-    int k = 2;
-    std::vector<int> nums{3, 9, 6};
-    REQUIRE(1 == Solution::maxFrequency(nums, k));
+  struct TestCase {
+    std::vector<int> nums;
+    int k;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 4},
+          .k = 5,
+          .expected = 3,
+      },
+      {
+          .nums{1, 4, 8, 13},
+          .k = 5,
+          .expected = 2,
+      },
+      {
+          .nums{3, 9, 6},
+          .k = 2,
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[nums, k, expected] : test_cases) {
+    const auto actual = Solution::maxFrequency(nums, k);
+    REQUIRE(expected == actual);
   }
 }

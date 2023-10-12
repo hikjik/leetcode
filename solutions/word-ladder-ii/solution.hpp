@@ -9,7 +9,7 @@ class Solution {
 public:
   static std::vector<std::vector<std::string>>
   findLadders(std::string begin_word, std::string end_word,
-              std::vector<std::string> &word_list) {
+              const std::vector<std::string> &word_list) {
     std::unordered_set<std::string> words{word_list.begin(), word_list.end()};
     if (!words.count(end_word)) {
       return {};

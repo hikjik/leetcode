@@ -3,16 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 2, 3, 4};
-    REQUIRE(3 == Solution::numberOfArithmeticSlices(nums));
-  }
-  {
-    std::vector<int> nums{1};
-    REQUIRE(0 == Solution::numberOfArithmeticSlices(nums));
-  }
-  {
-    std::vector<int> nums{1, 2};
-    REQUIRE(0 == Solution::numberOfArithmeticSlices(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 3, 4},
+          .expected = 3,
+      },
+      {
+          .nums{1},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::numberOfArithmeticSlices(nums);
+    REQUIRE(expected == actual);
   }
 }

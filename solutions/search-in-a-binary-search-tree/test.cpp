@@ -2,20 +2,30 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{4, 2, 7, 1, 3};
-    auto root = VectorToTree(values);
+  struct TestCase {
+    Tree root;
+    int val;
+    Tree expected;
+  };
 
-    auto find = Solution::searchBST(root, 2);
-    REQUIRE(find);
-    REQUIRE(2 == find->val);
+  std::vector<TestCase> test_cases{
+      {
+          .root{4, 2, 7, 1, 3},
+          .val = 2,
+          .expected{2, 1, 3},
+      },
+      {
+          .root{4, 2, 7, 1, 3},
+          .val = 5,
+          .expected{},
+      },
+  };
 
-    REQUIRE_FALSE(Solution::searchBST(root, 5));
-
-    FreeTree(root);
+  for (const auto &[root, val, expected] : test_cases) {
+    const auto actual = Solution::searchBST(root, val);
+    REQUIRE(expected == Tree(Copy(actual)));
   }
 }

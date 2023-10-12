@@ -1,23 +1,28 @@
 #include <catch.hpp>
-#include <list_node.h>
 
 #include <solution.hpp>
 
-#include <vector>
-
-void CheckSolution(std::vector<int> values, int expected) {
-  auto head = VectorToList(values);
-  auto actual = Solution::getDecimalValue(head);
-  REQUIRE(expected == actual);
-}
+#include <list_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> values{1, 0, 1};
-    CheckSolution(values, 5);
-  }
-  {
-    std::vector<int> values{0};
-    CheckSolution(values, 0);
+  struct TestCase {
+    List head;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{1, 0, 1},
+          .expected = 5,
+      },
+      {
+          .head{0},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[head, expected] : test_cases) {
+    const auto actual = Solution::getDecimalValue(head);
+    REQUIRE(expected == actual);
   }
 }

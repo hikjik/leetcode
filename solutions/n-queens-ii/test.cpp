@@ -3,6 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(1 == Solution::totalNQueens(1));
-  REQUIRE(2 == Solution::totalNQueens(4));
+  struct TestCase {
+    int n;
+    size_t expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 4,
+          .expected = 2,
+      },
+      {
+          .n = 1,
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::totalNQueens(n);
+    REQUIRE(expected == actual);
+  }
 }

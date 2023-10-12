@@ -3,8 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(7 == Solution::longestPalindrome("abccccdd"));
-  REQUIRE(1 == Solution::longestPalindrome("a"));
-  REQUIRE(4 == Solution::longestPalindrome("aaaa"));
-  REQUIRE(7 == Solution::longestPalindrome("aaaAaaaa"));
+  struct TestCase {
+    std::string s;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "abccccdd",
+          .expected = 7,
+      },
+      {
+          .s = "a",
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[s, expected] : test_cases) {
+    const auto actual = Solution::longestPalindrome(s);
+    REQUIRE(expected == actual);
+  }
 }

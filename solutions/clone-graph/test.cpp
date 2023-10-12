@@ -43,45 +43,52 @@ std::vector<Node *> GetNodes(Node *node) {
   return nodes;
 }
 
-void CheckSolution(const std::vector<std::vector<int>> &graph) {
-  REQUIRE(!graph.empty());
-
-  auto nodes = BuildNodes(graph);
-
-  auto cloned = Solution::cloneGraph(nodes.front());
-  auto cloned_nodes = GetNodes(cloned);
-
-  REQUIRE(nodes.size() == cloned_nodes.size());
-  for (size_t i = 0; i < nodes.size(); ++i) {
-    REQUIRE_FALSE(nodes[i] == cloned_nodes[i]);
-  }
-
-  std::vector<std::vector<int>> cloned_graph(cloned_nodes.size());
-  for (size_t i = 0; i < nodes.size(); ++i) {
-    for (auto v : cloned_nodes[i]->neighbors) {
-      cloned_graph[i].push_back(v->val + 1);
-    }
-  }
-
-  REQUIRE(graph == cloned_graph);
-
-  for (auto node : nodes) {
-    delete node;
-  }
-  for (auto node : cloned_nodes) {
-    delete node;
-  }
-}
-
 TEST_CASE("Empty") { REQUIRE(nullptr == Solution::cloneGraph(nullptr)); }
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> graph{{2, 4}, {1, 3}, {2, 4}, {1, 3}};
-    CheckSolution(graph);
-  }
-  {
-    std::vector<std::vector<int>> graph{{}};
-    CheckSolution(graph);
+  struct TestCase {
+    std::vector<std::vector<int>> edges;
+    std::vector<std::vector<int>> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .edges{{2, 4}, {1, 3}, {2, 4}, {1, 3}},
+          .expected{{2, 4}, {1, 3}, {2, 4}, {1, 3}},
+      },
+      {
+          .edges{{}},
+          .expected{{}},
+      },
+  };
+
+  for (const auto &[edges, expected] : test_cases) {
+    REQUIRE(!edges.empty());
+
+    auto nodes = BuildNodes(edges);
+
+    auto cloned = Solution::cloneGraph(nodes.front());
+    auto cloned_nodes = GetNodes(cloned);
+
+    REQUIRE(nodes.size() == cloned_nodes.size());
+    for (size_t i = 0; i < nodes.size(); ++i) {
+      REQUIRE_FALSE(nodes[i] == cloned_nodes[i]);
+    }
+
+    std::vector<std::vector<int>> cloned_graph(cloned_nodes.size());
+    for (size_t i = 0; i < nodes.size(); ++i) {
+      for (auto v : cloned_nodes[i]->neighbors) {
+        cloned_graph[i].push_back(v->val + 1);
+      }
+    }
+
+    REQUIRE(edges == cloned_graph);
+
+    for (auto node : nodes) {
+      delete node;
+    }
+    for (auto node : cloned_nodes) {
+      delete node;
+    }
   }
 }

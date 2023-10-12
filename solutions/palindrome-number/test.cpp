@@ -3,7 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  { REQUIRE(true == Solution::isPalindrome(121)); }
-  { REQUIRE(false == Solution::isPalindrome(-121)); }
-  { REQUIRE(false == Solution::isPalindrome(10)); }
+  struct TestCase {
+    int x;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .x = 121,
+          .expected = true,
+      },
+      {
+          .x = -121,
+          .expected = false,
+      },
+      {
+          .x = 10,
+          .expected = false,
+      },
+  };
+
+  for (const auto &[x, expected] : test_cases) {
+    const auto actual = Solution::isPalindrome(x);
+    REQUIRE(expected == actual);
+  }
 }

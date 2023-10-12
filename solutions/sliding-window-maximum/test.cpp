@@ -3,16 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int k = 3;
-    std::vector<int> nums{1, 3, -1, -3, 5, 3, 6, 7};
-    std::vector<int> expected{3, 3, 5, 5, 6, 7};
-    REQUIRE(expected == Solution::maxSlidingWindow(nums, k));
-  }
-  {
-    int k = 1;
-    std::vector<int> nums{1};
-    std::vector<int> expected{1};
-    REQUIRE(expected == Solution::maxSlidingWindow(nums, k));
+  struct TestCase {
+    std::vector<int> nums;
+    int k;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 3, -1, -3, 5, 3, 6, 7},
+          .k = 3,
+          .expected{3, 3, 5, 5, 6, 7},
+      },
+      {
+          .nums{1},
+          .k = 1,
+          .expected{1},
+      },
+  };
+
+  for (const auto &[nums, k, expected] : test_cases) {
+    const auto actual = Solution::maxSlidingWindow(nums, k);
+    REQUIRE(expected == actual);
   }
 }

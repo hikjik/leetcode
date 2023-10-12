@@ -3,20 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 2, 3, 4};
-    REQUIRE(1 == Solution::minimumDeviation(nums));
-  }
-  {
-    std::vector<int> nums{4, 1, 5, 20, 3};
-    REQUIRE(3 == Solution::minimumDeviation(nums));
-  }
-  {
-    std::vector<int> nums{2, 10, 8};
-    REQUIRE(3 == Solution::minimumDeviation(nums));
-  }
-  {
-    std::vector<int> nums{3, 5};
-    REQUIRE(1 == Solution::minimumDeviation(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 3, 4},
+          .expected = 1,
+      },
+      {
+          .nums{4, 1, 5, 20, 3},
+          .expected = 3,
+      },
+      {
+          .nums{2, 10, 8},
+          .expected = 3,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::minimumDeviation(nums);
+    REQUIRE(expected == actual);
   }
 }

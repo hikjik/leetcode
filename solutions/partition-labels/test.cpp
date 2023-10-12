@@ -3,14 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::string s = "ababcbacadefegdehijhklij";
-    std::vector<int> expected{9, 7, 8};
-    REQUIRE(expected == Solution::partitionLabels(s));
-  }
-  {
-    std::string s = "eccbbbbdec";
-    std::vector<int> expected{10};
-    REQUIRE(expected == Solution::partitionLabels(s));
+  struct TestCase {
+    std::string s;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "ababcbacadefegdehijhklij",
+          .expected{9, 7, 8},
+      },
+      {
+          .s = "eccbbbbdec",
+          .expected{10},
+      },
+  };
+
+  for (const auto &[s, expected] : test_cases) {
+    const auto actual = Solution::partitionLabels(s);
+    REQUIRE(expected == actual);
   }
 }

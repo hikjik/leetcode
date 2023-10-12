@@ -3,22 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int size = 2;
-    std::vector<int> nums{1, 1, 2};
-    REQUIRE(size == Solution::removeDuplicates(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int size;
+    std::vector<int> expected;
+  };
 
-    nums.erase(nums.begin() + size, nums.end());
-    std::vector<int> expected{1, 2};
-    REQUIRE(expected == nums);
-  }
-  {
-    int size = 5;
-    std::vector<int> nums{0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-    REQUIRE(size == Solution::removeDuplicates(nums));
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 1, 2},
+          .size = 2,
+          .expected{1, 2},
+      },
+      {
+          .nums{0, 0, 1, 1, 1, 2, 2, 3, 3, 4},
+          .size = 5,
+          .expected{0, 1, 2, 3, 4},
+      },
+  };
 
+  for (auto &[nums, size, expected] : test_cases) {
+    REQUIRE(size == Solution::removeDuplicates(nums));
     nums.erase(nums.begin() + size, nums.end());
-    std::vector<int> expected{0, 1, 2, 3, 4};
     REQUIRE(expected == nums);
   }
 }

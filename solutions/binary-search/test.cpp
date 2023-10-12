@@ -2,17 +2,28 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{-1, 0, 3, 5, 9, 12};
-    int target = 9;
-    REQUIRE(4 == Solution::search(nums, target));
-  }
-  {
-    std::vector<int> nums{-1, 0, 3, 5, 9, 12};
-    int target = 2;
-    REQUIRE(-1 == Solution::search(nums, target));
+  struct TestCase {
+    std::vector<int> nums;
+    int target;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{-1, 0, 3, 5, 9, 12},
+          .target = 9,
+          .expected = 4,
+      },
+      {
+          .nums{-1, 0, 3, 5, 9, 12},
+          .target = 2,
+          .expected = -1,
+      },
+  };
+
+  for (const auto &[nums, target, expected] : test_cases) {
+    const auto actual = Solution::search(nums, target);
+    REQUIRE(expected == actual);
   }
 }

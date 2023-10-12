@@ -2,17 +2,30 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{5, 3, 6, 2, 4, std::nullopt, 7};
-    auto root = VectorToTree(values);
+  struct TestCase {
+    Tree root;
+    int k;
+    bool expected;
+  };
 
-    REQUIRE(Solution::findTarget(root, 9));
-    REQUIRE_FALSE(Solution::findTarget(root, 28));
+  std::vector<TestCase> test_cases{
+      {
+          .root{5, 3, 6, 2, 4, std::nullopt, 7},
+          .k = 9,
+          .expected = true,
+      },
+      {
+          .root{5, 3, 6, 2, 4, std::nullopt, 7},
+          .k = 28,
+          .expected = false,
+      },
+  };
 
-    FreeTree(root);
+  for (const auto &[root, k, expected] : test_cases) {
+    const auto actual = Solution::findTarget(root, k);
+    REQUIRE(expected == actual);
   }
 }

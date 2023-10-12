@@ -3,18 +3,16 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  FreqStack stack;
-  stack.push(5);
-  stack.push(7);
-  stack.push(5);
-  stack.push(7);
-  stack.push(4);
-  stack.push(5);
+  auto freq_stack = FreqStack();
 
-  REQUIRE(5 == stack.pop());
-  REQUIRE(7 == stack.pop());
-  REQUIRE(5 == stack.pop());
-  REQUIRE(4 == stack.pop());
-  REQUIRE(7 == stack.pop());
-  REQUIRE(5 == stack.pop());
+  freq_stack.push(5);
+  freq_stack.push(7);
+  freq_stack.push(5);
+  freq_stack.push(7);
+  freq_stack.push(4);
+  freq_stack.push(5);
+  REQUIRE(5 == freq_stack.pop());
+  REQUIRE(7 == freq_stack.pop());
+  REQUIRE(5 == freq_stack.pop());
+  REQUIRE(4 == freq_stack.pop());
 }

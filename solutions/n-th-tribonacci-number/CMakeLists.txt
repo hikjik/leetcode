@@ -1,1 +1,1 @@
-add_catch(test_n-th_tribonacci_number test.cpp)
+add_catch(test_n_th_tribonacci_number test.cpp)

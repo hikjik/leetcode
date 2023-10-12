@@ -3,13 +3,14 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  MyHashSet myHashSet;
-  myHashSet.add(1);
-  myHashSet.add(2);
-  REQUIRE(myHashSet.contains(1));
-  REQUIRE_FALSE(myHashSet.contains(3));
-  myHashSet.add(2);
-  REQUIRE(myHashSet.contains(2));
-  myHashSet.remove(2);
-  REQUIRE_FALSE(myHashSet.contains(2));
+  auto my_hash_set = MyHashSet();
+
+  my_hash_set.add(1);
+  my_hash_set.add(2);
+  REQUIRE(true == my_hash_set.contains(1));
+  REQUIRE(false == my_hash_set.contains(3));
+  my_hash_set.add(2);
+  REQUIRE(true == my_hash_set.contains(2));
+  my_hash_set.remove(2);
+  REQUIRE(false == my_hash_set.contains(2));
 }

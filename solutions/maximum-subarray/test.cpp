@@ -2,19 +2,29 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{-2, 1, -3, 4, -1, 2, 1, -5, 4};
-    REQUIRE(6 == Solution::maxSubArray(nums));
-  }
-  {
-    std::vector<int> nums{1};
-    REQUIRE(1 == Solution::maxSubArray(nums));
-  }
-  {
-    std::vector<int> nums{5, 4, -1, 7, 8};
-    REQUIRE(23 == Solution::maxSubArray(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{-2, 1, -3, 4, -1, 2, 1, -5, 4},
+          .expected = 6,
+      },
+      {
+          .nums{1},
+          .expected = 1,
+      },
+      {
+          .nums{5, 4, -1, 7, 8},
+          .expected = 23,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::maxSubArray(nums);
+    REQUIRE(expected == actual);
   }
 }

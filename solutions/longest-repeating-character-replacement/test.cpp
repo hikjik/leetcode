@@ -3,6 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(4 == Solution::characterReplacement("ABAB", 2));
-  REQUIRE(4 == Solution::characterReplacement("AABABBA", 1));
+  struct TestCase {
+    std::string s;
+    int k;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "ABAB",
+          .k = 2,
+          .expected = 4,
+      },
+      {
+          .s = "AABABBA",
+          .k = 1,
+          .expected = 4,
+      },
+  };
+
+  for (const auto &[s, k, expected] : test_cases) {
+    const auto actual = Solution::characterReplacement(s, k);
+    REQUIRE(expected == actual);
+  }
 }

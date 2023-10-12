@@ -65,7 +65,7 @@ int x = []() {
 
 class Solution {
 public:
-  static std::vector<int> sortArray(std::vector<int> &nums) {
+  static std::vector<int> sortArray(std::vector<int> nums) {
     std::random_shuffle(nums.begin(), nums.end());
     Sort(nums.begin(), nums.end());
     return nums;

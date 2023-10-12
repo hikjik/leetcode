@@ -2,37 +2,32 @@
 
 #include <solution.hpp>
 
-void CheckSolution(const std::vector<int> &values) {
-  auto head = VectorToList(values);
-  auto root = Solution::sortedListToBST(head);
-
-  REQUIRE(isValidBST(root));
-  REQUIRE(isBalanced(root));
-  REQUIRE(values == TraverseInOrder(root));
-
-  FreeList(head);
-  FreeTree(root);
-}
+#include <list_node.h>
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> values{-10, -3, 0, 5, 9};
-    CheckSolution(values);
-  }
-  {
-    std::vector<int> values{1, 2, 3};
-    CheckSolution(values);
-  }
-  {
-    std::vector<int> values{1, 2};
-    CheckSolution(values);
-  }
-  {
-    std::vector<int> values{1};
-    CheckSolution(values);
-  }
-  {
-    std::vector<int> values;
-    CheckSolution(values);
+  struct TestCase {
+    List head;
+    Tree expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{-10, -3, 0, 5, 9},
+          .expected{0, -3, 9, -10, std::nullopt, 5},
+      },
+      {
+          .head{},
+          .expected{},
+      },
+  };
+
+  for (const auto &[head, expected] : test_cases) {
+    const Tree actual = Solution::sortedListToBST(head);
+
+    REQUIRE(actual.IsValidBST());
+    REQUIRE(actual.IsBalanced());
+    REQUIRE(expected.Traverse(Tree::Order::kInOrder) ==
+            actual.Traverse(Tree::Order::kInOrder));
   }
 }

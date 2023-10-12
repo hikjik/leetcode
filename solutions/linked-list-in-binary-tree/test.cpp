@@ -2,85 +2,42 @@
 
 #include <solution.hpp>
 
-#include <optional>
-
-void CheckSolution(const std::vector<int> &list_values,
-                   const std::vector<std::optional<int>> &tree_values,
-                   bool expected) {
-  auto head = VectorToList(list_values);
-  auto root = VectorToTree(tree_values);
-
-  REQUIRE(expected == Solution::isSubPath(head, root));
-
-  FreeList(head);
-  FreeTree(root);
-}
+#include <list_node.h>
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> list_values{4, 2, 8};
-    std::vector<std::optional<int>> tree_values{1,
-                                                4,
-                                                4,
-                                                std::nullopt,
-                                                2,
-                                                2,
-                                                std::nullopt,
-                                                1,
-                                                std::nullopt,
-                                                6,
-                                                8,
-                                                std::nullopt,
-                                                std::nullopt,
-                                                std::nullopt,
-                                                std::nullopt,
-                                                1,
-                                                3};
-    bool expected = true;
-    CheckSolution(list_values, tree_values, expected);
-  }
-  {
-    std::vector<int> list_values{1, 4, 2, 6};
-    std::vector<std::optional<int>> tree_values{1,
-                                                4,
-                                                4,
-                                                std::nullopt,
-                                                2,
-                                                2,
-                                                std::nullopt,
-                                                1,
-                                                std::nullopt,
-                                                6,
-                                                8,
-                                                std::nullopt,
-                                                std::nullopt,
-                                                std::nullopt,
-                                                std::nullopt,
-                                                1,
-                                                3};
-    bool expected = true;
-    CheckSolution(list_values, tree_values, expected);
-  }
-  {
-    std::vector<int> list_values{1, 4, 2, 6, 8};
-    std::vector<std::optional<int>> tree_values{1,
-                                                4,
-                                                4,
-                                                std::nullopt,
-                                                2,
-                                                2,
-                                                std::nullopt,
-                                                1,
-                                                std::nullopt,
-                                                6,
-                                                8,
-                                                std::nullopt,
-                                                std::nullopt,
-                                                std::nullopt,
-                                                std::nullopt,
-                                                1,
-                                                3};
-    bool expected = false;
-    CheckSolution(list_values, tree_values, expected);
+  struct TestCase {
+    List head;
+    Tree root;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{4, 2, 8},
+          .root{1, 4, 4, std::nullopt, 2, 2, std::nullopt, 1, std::nullopt, 6,
+                8, std::nullopt, std::nullopt, std::nullopt, std::nullopt, 1,
+                3},
+          .expected = true,
+      },
+      {
+          .head{1, 4, 2, 6},
+          .root{1, 4, 4, std::nullopt, 2, 2, std::nullopt, 1, std::nullopt, 6,
+                8, std::nullopt, std::nullopt, std::nullopt, std::nullopt, 1,
+                3},
+          .expected = true,
+      },
+      {
+          .head{1, 4, 2, 6, 8},
+          .root{1, 4, 4, std::nullopt, 2, 2, std::nullopt, 1, std::nullopt, 6,
+                8, std::nullopt, std::nullopt, std::nullopt, std::nullopt, 1,
+                3},
+          .expected = false,
+      },
+  };
+
+  for (const auto &[head, root, expected] : test_cases) {
+    const auto actual = Solution::isSubPath(head, root);
+    REQUIRE(expected == actual);
   }
 }

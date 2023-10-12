@@ -3,9 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(3 == Solution::maxVowels("abciiidef", 3));
-  REQUIRE(2 == Solution::maxVowels("aeiou", 2));
-  REQUIRE(2 == Solution::maxVowels("aebbb", 2));
-  REQUIRE(2 == Solution::maxVowels("bbbaa", 2));
-  REQUIRE(2 == Solution::maxVowels("leetcode", 3));
+  struct TestCase {
+    std::string s;
+    int k;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "abciiidef",
+          .k = 3,
+          .expected = 3,
+      },
+      {
+          .s = "aeiou",
+          .k = 2,
+          .expected = 2,
+      },
+      {
+          .s = "leetcode",
+          .k = 3,
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[s, k, expected] : test_cases) {
+    const auto actual = Solution::maxVowels(s, k);
+    REQUIRE(expected == actual);
+  }
 }

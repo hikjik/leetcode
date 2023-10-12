@@ -3,8 +3,40 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  std::vector<int> nums{1, 2, 3, 4};
-  REQUIRE(13 == Solution::rangeSum(nums, 4, 1, 5));
-  REQUIRE(6 == Solution::rangeSum(nums, 4, 3, 4));
-  REQUIRE(50 == Solution::rangeSum(nums, 4, 1, 10));
+  struct TestCase {
+    std::vector<int> nums;
+    int n;
+    int left;
+    int right;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 3, 4},
+          .n = 4,
+          .left = 1,
+          .right = 5,
+          .expected = 13,
+      },
+      {
+          .nums{1, 2, 3, 4},
+          .n = 4,
+          .left = 3,
+          .right = 4,
+          .expected = 6,
+      },
+      {
+          .nums{1, 2, 3, 4},
+          .n = 4,
+          .left = 1,
+          .right = 10,
+          .expected = 50,
+      },
+  };
+
+  for (const auto &[nums, n, left, right, expected] : test_cases) {
+    const auto actual = Solution::rangeSum(nums, n, left, right);
+    REQUIRE(expected == actual);
+  }
 }

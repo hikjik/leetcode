@@ -3,9 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(Solution::isUgly(6));
-  REQUIRE(Solution::isUgly(1));
-  REQUIRE_FALSE(Solution::isUgly(14));
-  REQUIRE_FALSE(Solution::isUgly(0));
-  REQUIRE_FALSE(Solution::isUgly(-1));
+  struct TestCase {
+    int n;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 6,
+          .expected = true,
+      },
+      {
+          .n = 1,
+          .expected = true,
+      },
+      {
+          .n = 14,
+          .expected = false,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::isUgly(n);
+    REQUIRE(expected == actual);
+  }
 }

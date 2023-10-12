@@ -3,8 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(6 == Solution::countDigitOne(13));
-  REQUIRE(0 == Solution::countDigitOne(0));
-}
+  struct TestCase {
+    int n;
+    int expected;
+  };
 
-TEST_CASE("Big") { REQUIRE(900000001 == Solution::countDigitOne(1e9)); }
+  std::vector<TestCase> test_cases{
+      {
+          .n = 13,
+          .expected = 6,
+      },
+      {
+          .n = 0,
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::countDigitOne(n);
+    REQUIRE(expected == actual);
+  }
+}

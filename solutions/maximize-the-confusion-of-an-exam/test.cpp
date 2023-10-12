@@ -3,7 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(4 == Solution::maxConsecutiveAnswers("TTFF", 2));
-  REQUIRE(3 == Solution::maxConsecutiveAnswers("TFFT", 1));
-  REQUIRE(5 == Solution::maxConsecutiveAnswers("TTFTTFTT", 1));
+  struct TestCase {
+    std::string answerKey;
+    int k;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .answerKey = "TTFF",
+          .k = 2,
+          .expected = 4,
+      },
+      {
+          .answerKey = "TFFT",
+          .k = 1,
+          .expected = 3,
+      },
+      {
+          .answerKey = "TTFTTFTT",
+          .k = 1,
+          .expected = 5,
+      },
+  };
+
+  for (const auto &[answerKey, k, expected] : test_cases) {
+    const auto actual = Solution::maxConsecutiveAnswers(answerKey, k);
+    REQUIRE(expected == actual);
+  }
 }

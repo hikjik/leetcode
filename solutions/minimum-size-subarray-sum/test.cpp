@@ -3,19 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{2, 3, 1, 2, 4, 3};
-    int target = 7;
-    REQUIRE(2 == Solution::minSubArrayLen(target, nums));
-  }
-  {
-    std::vector<int> nums{1, 4, 4};
-    int target = 4;
-    REQUIRE(1 == Solution::minSubArrayLen(target, nums));
-  }
-  {
-    std::vector<int> nums{1, 1, 1, 1, 1, 1, 1, 1};
-    int target = 11;
-    REQUIRE(0 == Solution::minSubArrayLen(target, nums));
+  struct TestCase {
+    int target;
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .target = 7,
+          .nums{2, 3, 1, 2, 4, 3},
+          .expected = 2,
+      },
+      {
+          .target = 4,
+          .nums{1, 4, 4},
+          .expected = 1,
+      },
+      {
+          .target = 11,
+          .nums{1, 1, 1, 1, 1, 1, 1, 1},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[target, nums, expected] : test_cases) {
+    const auto actual = Solution::minSubArrayLen(target, nums);
+    REQUIRE(expected == actual);
   }
 }

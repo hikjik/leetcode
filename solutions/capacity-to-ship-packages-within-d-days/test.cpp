@@ -3,16 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> weights{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    REQUIRE(15 == Solution::shipWithinDays(weights, 5));
-  }
-  {
-    std::vector<int> weights{3, 2, 2, 4, 1, 4};
-    REQUIRE(6 == Solution::shipWithinDays(weights, 3));
-  }
-  {
-    std::vector<int> weights{1, 2, 3, 1, 1};
-    REQUIRE(3 == Solution::shipWithinDays(weights, 4));
+  struct TestCase {
+    std::vector<int> weights;
+    int days;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .weights{1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+          .days = 5,
+          .expected = 15,
+      },
+      {
+          .weights{3, 2, 2, 4, 1, 4},
+          .days = 3,
+          .expected = 6,
+      },
+      {
+          .weights{1, 2, 3, 1, 1},
+          .days = 4,
+          .expected = 3,
+      },
+  };
+
+  for (const auto &[weights, days, expected] : test_cases) {
+    const auto actual = Solution::shipWithinDays(weights, days);
+    REQUIRE(expected == actual);
   }
 }

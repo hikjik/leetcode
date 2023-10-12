@@ -2,29 +2,41 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::vector<std::optional<int>> &values, int p_val,
-                   int q_val, int lca_val) {
-  auto root = VectorToTree(values);
-  auto p = FindBST(root, p_val);
-  auto q = FindBST(root, q_val);
-
-  auto lca = Solution::lowestCommonAncestor(root, p, q);
-
-  REQUIRE(lca);
-  REQUIRE(lca_val == lca->val);
-
-  FreeTree(root);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{
-        6, 2, 8, 0, 4, 7, 9, std::nullopt, std::nullopt, 3, 5};
-    int p = 2, q = 8;
-    int lca = 6;
-    CheckSolution(values, p, q, lca);
+  struct TestCase {
+    Tree root;
+    int p;
+    int q;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{6, 2, 8, 0, 4, 7, 9, std::nullopt, std::nullopt, 3, 5},
+          .p = 2,
+          .q = 8,
+          .expected = 6,
+      },
+      {
+          .root{6, 2, 8, 0, 4, 7, 9, std::nullopt, std::nullopt, 3, 5},
+          .p = 2,
+          .q = 4,
+          .expected = 2,
+      },
+      {
+          .root{2, 1},
+          .p = 2,
+          .q = 1,
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[root, p, q, expected] : test_cases) {
+    const auto actual =
+        Solution::lowestCommonAncestor(root, root.Find(p), root.Find(q));
+    REQUIRE(actual);
+    REQUIRE(expected == actual->val);
   }
 }

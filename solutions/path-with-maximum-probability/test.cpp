@@ -3,28 +3,46 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int n = 3;
-    std::vector<std::vector<int>> edges{{0, 1}, {1, 2}, {0, 2}};
-    std::vector<double> succProb{0.5, 0.5, 0.2};
-    int start = 0, end = 2;
-    REQUIRE(0.25000 ==
-            Solution::maxProbability(n, edges, succProb, start, end));
-  }
-  {
-    int n = 3;
-    std::vector<std::vector<int>> edges{{0, 1}, {1, 2}, {0, 2}};
-    std::vector<double> succProb{0.5, 0.5, 0.3};
-    int start = 0, end = 2;
-    REQUIRE(0.30000 ==
-            Solution::maxProbability(n, edges, succProb, start, end));
-  }
-  {
-    int n = 3;
-    std::vector<std::vector<int>> edges{{0, 1}};
-    std::vector<double> succProb{0.5};
-    int start = 0, end = 2;
-    REQUIRE(0.00000 ==
-            Solution::maxProbability(n, edges, succProb, start, end));
+  struct TestCase {
+    int n;
+    std::vector<std::vector<int>> edges;
+    std::vector<double> succProb;
+    int start_node;
+    int end_node;
+    double expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 3,
+          .edges{{0, 1}, {1, 2}, {0, 2}},
+          .succProb{0.5, 0.5, 0.2},
+          .start_node = 0,
+          .end_node = 2,
+          .expected = 0.25000,
+      },
+      {
+          .n = 3,
+          .edges{{0, 1}, {1, 2}, {0, 2}},
+          .succProb{0.5, 0.5, 0.3},
+          .start_node = 0,
+          .end_node = 2,
+          .expected = 0.30000,
+      },
+      {
+          .n = 3,
+          .edges{{0, 1}},
+          .succProb{0.5},
+          .start_node = 0,
+          .end_node = 2,
+          .expected = 0.00000,
+      },
+  };
+
+  for (const auto &[n, edges, succProb, start_node, end_node, expected] :
+       test_cases) {
+    const auto actual =
+        Solution::maxProbability(n, edges, succProb, start_node, end_node);
+    REQUIRE(expected == Approx(actual));
   }
 }

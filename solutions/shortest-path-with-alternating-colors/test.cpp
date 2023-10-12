@@ -3,28 +3,31 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int n = 3;
-    std::vector<std::vector<int>> red_edges{{0, 1}, {1, 2}};
-    std::vector<std::vector<int>> blue_edges{};
-    std::vector<int> expected{0, 1, -1};
-    REQUIRE(expected ==
-            Solution::shortestAlternatingPaths(n, red_edges, blue_edges));
-  }
-  {
-    int n = 3;
-    std::vector<std::vector<int>> red_edges{{0, 1}};
-    std::vector<std::vector<int>> blue_edges{{2, 1}};
-    std::vector<int> expected{0, 1, -1};
-    REQUIRE(expected ==
-            Solution::shortestAlternatingPaths(n, red_edges, blue_edges));
-  }
-  {
-    int n = 5;
-    std::vector<std::vector<int>> red_edges{{0, 1}, {1, 2}, {2, 3}, {3, 4}};
-    std::vector<std::vector<int>> blue_edges{{1, 2}, {2, 3}, {3, 1}};
-    std::vector<int> expected{0, 1, 2, 3, 7};
-    REQUIRE(expected ==
-            Solution::shortestAlternatingPaths(n, red_edges, blue_edges));
+  struct TestCase {
+    int n;
+    std::vector<std::vector<int>> redEdges;
+    std::vector<std::vector<int>> blueEdges;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 3,
+          .redEdges{{0, 1}, {1, 2}},
+          .blueEdges{},
+          .expected{0, 1, -1},
+      },
+      {
+          .n = 3,
+          .redEdges{{0, 1}},
+          .blueEdges{{2, 1}},
+          .expected{0, 1, -1},
+      },
+  };
+
+  for (const auto &[n, redEdges, blueEdges, expected] : test_cases) {
+    const auto actual =
+        Solution::shortestAlternatingPaths(n, redEdges, blueEdges);
+    REQUIRE(expected == actual);
   }
 }

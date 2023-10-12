@@ -6,7 +6,7 @@
 
 class Solution {
 public:
-  static int minFlips(std::vector<std::vector<int>> &mat) {
+  static int minFlips(std::vector<std::vector<int>> mat) {
     int min_flips = INT_MAX;
     dfs(0, 0, 0, &mat, &min_flips);
     return min_flips == INT_MAX ? -1 : min_flips;

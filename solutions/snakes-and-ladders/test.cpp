@@ -3,20 +3,29 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> board = {
-        {-1, -1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1, -1},
-        {-1, -1, -1, -1, -1, -1}, {-1, 35, -1, -1, 13, -1},
-        {-1, -1, -1, -1, -1, -1}, {-1, 15, -1, -1, -1, -1}};
-    REQUIRE(4 == Solution::snakesAndLadders(board));
-  }
-  {
-    std::vector<std::vector<int>> board = {{-1, -1}, {-1, 3}};
-    REQUIRE(1 == Solution::snakesAndLadders(board));
-  }
-  {
-    std::vector<std::vector<int>> board = {
-        {-1, -1, -1}, {-1, 9, 8}, {-1, 8, 9}};
-    REQUIRE(1 == Solution::snakesAndLadders(board));
+  struct TestCase {
+    std::vector<std::vector<int>> board;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .board{{-1, -1, -1, -1, -1, -1},
+                 {-1, -1, -1, -1, -1, -1},
+                 {-1, -1, -1, -1, -1, -1},
+                 {-1, 35, -1, -1, 13, -1},
+                 {-1, -1, -1, -1, -1, -1},
+                 {-1, 15, -1, -1, -1, -1}},
+          .expected = 4,
+      },
+      {
+          .board{{-1, -1}, {-1, 3}},
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[board, expected] : test_cases) {
+    const auto actual = Solution::snakesAndLadders(board);
+    REQUIRE(expected == actual);
   }
 }

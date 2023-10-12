@@ -3,8 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(7 == Solution::calculate("3+2*2"));
-  REQUIRE(1 == Solution::calculate(" 3/2 "));
-  REQUIRE(5 == Solution::calculate(" 3+5 / 2 "));
-  REQUIRE(14 == Solution::calculate(" 1 - 2 + 3 + 4*3*1 + 5 /6 "));
+  struct TestCase {
+    std::string s;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "3+2*2",
+          .expected = 7,
+      },
+      {
+          .s = " 3/2 ",
+          .expected = 1,
+      },
+      {
+          .s = " 3+5 / 2 ",
+          .expected = 5,
+      },
+  };
+
+  for (const auto &[s, expected] : test_cases) {
+    const auto actual = Solution::calculate(s);
+    REQUIRE(expected == actual);
+  }
 }

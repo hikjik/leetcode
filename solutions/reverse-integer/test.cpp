@@ -3,8 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(9 == Solution::reverse(900000));
-  REQUIRE(321 == Solution::reverse(123));
-  REQUIRE(-321 == Solution::reverse(-123));
-  REQUIRE(21 == Solution::reverse(120));
+  struct TestCase {
+    int x;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .x = 123,
+          .expected = 321,
+      },
+      {
+          .x = -123,
+          .expected = -321,
+      },
+      {
+          .x = 120,
+          .expected = 21,
+      },
+  };
+
+  for (const auto &[x, expected] : test_cases) {
+    const auto actual = Solution::reverse(x);
+    REQUIRE(expected == actual);
+  }
 }

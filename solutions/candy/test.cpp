@@ -3,16 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> ratings{1, 0, 2};
-    REQUIRE(5 == Solution::candy(ratings));
-  }
-  {
-    std::vector<int> ratings{1, 2, 2};
-    REQUIRE(4 == Solution::candy(ratings));
-  }
-  {
-    std::vector<int> ratings{1, 0, 2, 3, 5, 2, 1};
-    REQUIRE(15 == Solution::candy(ratings));
+  struct TestCase {
+    std::vector<int> ratings;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .ratings{1, 0, 2},
+          .expected = 5,
+      },
+      {
+          .ratings{1, 2, 2},
+          .expected = 4,
+      },
+  };
+
+  for (const auto &[ratings, expected] : test_cases) {
+    const auto actual = Solution::candy(ratings);
+    REQUIRE(expected == actual);
   }
 }

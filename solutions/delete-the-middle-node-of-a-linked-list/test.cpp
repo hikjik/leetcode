@@ -2,28 +2,31 @@
 
 #include <solution.hpp>
 
-void CheckSolution(const std::vector<int> &values,
-                   const std::vector<int> &expected) {
-  auto head = VectorToList(values);
-  head = Solution::deleteMiddle(head);
-  REQUIRE(expected == ListToVector(head));
-  FreeList(head);
-}
+#include <list_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> values{1, 3, 4, 7, 1, 2, 6};
-    std::vector<int> expected{1, 3, 4, 1, 2, 6};
-    CheckSolution(values, expected);
-  }
-  {
-    std::vector<int> values{1, 2, 3, 4};
-    std::vector<int> expected{1, 2, 4};
-    CheckSolution(values, expected);
-  }
-  {
-    std::vector<int> values{1, 2};
-    std::vector<int> expected{1};
-    CheckSolution(values, expected);
+  struct TestCase {
+    List head;
+    List expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{1, 3, 4, 7, 1, 2, 6},
+          .expected{1, 3, 4, 1, 2, 6},
+      },
+      {
+          .head{1, 2, 3, 4},
+          .expected{1, 2, 4},
+      },
+      {
+          .head{2, 1},
+          .expected{2},
+      },
+  };
+
+  for (const auto &[head, expected] : test_cases) {
+    const List actual = Solution::deleteMiddle(Copy(head));
+    REQUIRE(expected == actual);
   }
 }

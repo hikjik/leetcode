@@ -2,38 +2,36 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::vector<std::optional<int>> &values, int target,
-                   bool has_path) {
-  auto root = VectorToTree(values);
-
-  REQUIRE(has_path == Solution::hasPathSum(root, target));
-
-  FreeTree(root);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    int target = 22;
-    bool has_path = true;
-    std::vector<std::optional<int>> values{
-        5, 4, 8, 11,           std::nullopt, 13,
-        4, 7, 2, std::nullopt, std::nullopt, std::nullopt,
-        1};
-    CheckSolution(values, target, has_path);
-  }
-  {
-    int target = 5;
-    bool has_path = false;
-    std::vector<std::optional<int>> values{1, 2, 3};
-    CheckSolution(values, target, has_path);
-  }
-  {
-    int target = 0;
-    bool has_path = false;
-    std::vector<std::optional<int>> values;
-    CheckSolution(values, target, has_path);
+  struct TestCase {
+    Tree root;
+    int targetSum;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{5, 4, 8, 11, std::nullopt, 13, 4, 7, 2, std::nullopt,
+                std::nullopt, std::nullopt, 1},
+          .targetSum = 22,
+          .expected = true,
+      },
+      {
+          .root{1, 2, 3},
+          .targetSum = 5,
+          .expected = false,
+      },
+      {
+          .root{},
+          .targetSum = 0,
+          .expected = false,
+      },
+  };
+
+  for (const auto &[root, targetSum, expected] : test_cases) {
+    const auto actual = Solution::hasPathSum(root, targetSum);
+    REQUIRE(expected == actual);
   }
 }

@@ -1,21 +1,32 @@
 #include <catch.hpp>
-#include <list_node.h>
 
 #include <solution.hpp>
 
-#include <vector>
-
-void CheckSolution(std::vector<int> values, std::vector<int> expected) {
-  auto head = VectorToList(values);
-  auto sorted = Solution::sortList(head);
-
-  REQUIRE(expected == ListToVector(sorted));
-
-  FreeList(sorted);
-}
+#include <list_node.h>
 
 TEST_CASE("Simple") {
-  CheckSolution({4, 2, 1, 3}, {1, 2, 3, 4});
-  CheckSolution({-1, 5, 3, 4, 0}, {-1, 0, 3, 4, 5});
-  CheckSolution({}, {});
+  struct TestCase {
+    List head;
+    List expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{4, 2, 1, 3},
+          .expected{1, 2, 3, 4},
+      },
+      {
+          .head{-1, 5, 3, 4, 0},
+          .expected{-1, 0, 3, 4, 5},
+      },
+      {
+          .head{},
+          .expected{},
+      },
+  };
+
+  for (const auto &[head, expected] : test_cases) {
+    const List actual = Solution::sortList(Copy(head));
+    REQUIRE(expected == actual);
+  }
 }

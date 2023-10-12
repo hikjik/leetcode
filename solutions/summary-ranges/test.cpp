@@ -3,14 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{0, 1, 2, 4, 5, 7};
-    std::vector<std::string> expected{"0->2", "4->5", "7"};
-    REQUIRE(expected == Solution::summaryRanges(nums));
-  }
-  {
-    std::vector<int> nums{0, 2, 3, 4, 6, 8, 9};
-    std::vector<std::string> expected{"0", "2->4", "6", "8->9"};
-    REQUIRE(expected == Solution::summaryRanges(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    std::vector<std::string> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{0, 1, 2, 4, 5, 7},
+          .expected{"0->2", "4->5", "7"},
+      },
+      {
+          .nums{0, 2, 3, 4, 6, 8, 9},
+          .expected{"0", "2->4", "6", "8->9"},
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::summaryRanges(nums);
+    REQUIRE(expected == actual);
   }
 }

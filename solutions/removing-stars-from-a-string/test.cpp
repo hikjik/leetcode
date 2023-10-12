@@ -3,6 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE("lecoe" == Solution::removeStars("leet**cod*e"));
-  REQUIRE("" == Solution::removeStars("erase*****"));
+  struct TestCase {
+    std::string s;
+    std::string expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "leet**cod*e",
+          .expected = "lecoe",
+      },
+      {
+          .s = "erase*****",
+          .expected = "",
+      },
+  };
+
+  for (const auto &[s, expected] : test_cases) {
+    const auto actual = Solution::removeStars(s);
+    REQUIRE(expected == actual);
+  }
 }

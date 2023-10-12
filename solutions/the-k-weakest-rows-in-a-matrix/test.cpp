@@ -3,21 +3,31 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> mat{{1, 1, 0, 0, 0},
-                                      {1, 1, 1, 1, 0},
-                                      {1, 0, 0, 0, 0},
-                                      {1, 1, 0, 0, 0},
-                                      {1, 1, 1, 1, 1}};
-    int k = 3;
-    std::vector<int> expected{2, 0, 3};
-    REQUIRE(expected == Solution::kWeakestRows(mat, k));
-  }
-  {
-    std::vector<std::vector<int>> mat{
-        {1, 0, 0, 0}, {1, 1, 1, 1}, {1, 0, 0, 0}, {1, 0, 0, 0}};
-    int k = 2;
-    std::vector<int> expected{0, 2};
-    REQUIRE(expected == Solution::kWeakestRows(mat, k));
+  struct TestCase {
+    std::vector<std::vector<int>> mat;
+    int k;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .mat{{1, 1, 0, 0, 0},
+               {1, 1, 1, 1, 0},
+               {1, 0, 0, 0, 0},
+               {1, 1, 0, 0, 0},
+               {1, 1, 1, 1, 1}},
+          .k = 3,
+          .expected{2, 0, 3},
+      },
+      {
+          .mat{{1, 0, 0, 0}, {1, 1, 1, 1}, {1, 0, 0, 0}, {1, 0, 0, 0}},
+          .k = 2,
+          .expected{0, 2},
+      },
+  };
+
+  for (const auto &[mat, k, expected] : test_cases) {
+    const auto actual = Solution::kWeakestRows(mat, k);
+    REQUIRE(expected == actual);
   }
 }

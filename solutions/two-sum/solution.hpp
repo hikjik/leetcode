@@ -5,12 +5,12 @@
 
 class Solution {
 public:
-  static std::vector<int> twoSum(std::vector<int> &nums, int target) {
+  static std::vector<int> twoSum(const std::vector<int> &nums, int target) {
     std::unordered_map<int, int> table;
     int size = nums.size();
     for (int i = 0; i < size; ++i) {
       if (auto it = table.find(nums[i]); it != table.end()) {
-        return {i, it->second};
+        return {it->second, i};
       }
       table[target - nums[i]] = i;
     }

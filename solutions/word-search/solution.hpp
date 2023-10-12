@@ -5,7 +5,8 @@
 
 class Solution {
 public:
-  static bool exist(std::vector<std::vector<char>> &board, std::string word) {
+  static bool exist(const std::vector<std::vector<char>> &board,
+                    std::string word) {
     int m = board.size(), n = board.back().size();
     std::vector<std::vector<bool>> visited(m, std::vector<bool>(n, false));
 

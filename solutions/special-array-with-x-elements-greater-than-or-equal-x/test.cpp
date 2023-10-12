@@ -3,16 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{3, 5};
-    REQUIRE(2 == Solution::specialArray(nums));
-  }
-  {
-    std::vector<int> nums{0, 0};
-    REQUIRE(-1 == Solution::specialArray(nums));
-  }
-  {
-    std::vector<int> nums{0, 4, 3, 0, 4};
-    REQUIRE(3 == Solution::specialArray(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{3, 5},
+          .expected = 2,
+      },
+      {
+          .nums{0, 0},
+          .expected = -1,
+      },
+      {
+          .nums{0, 4, 3, 0, 4},
+          .expected = 3,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::specialArray(nums);
+    REQUIRE(expected == actual);
   }
 }

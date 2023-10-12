@@ -3,22 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int k = 34;
-    std::vector<int> nums{1, 2, 0, 0};
-    std::vector<int> expected{1, 2, 3, 4};
-    REQUIRE(expected == Solution::addToArrayForm(nums, k));
-  }
-  {
-    int k = 181;
-    std::vector<int> nums{2, 7, 4};
-    std::vector<int> expected{4, 5, 5};
-    REQUIRE(expected == Solution::addToArrayForm(nums, k));
-  }
-  {
-    int k = 806;
-    std::vector<int> nums{2, 1, 5};
-    std::vector<int> expected{1, 0, 2, 1};
-    REQUIRE(expected == Solution::addToArrayForm(nums, k));
+  struct TestCase {
+    std::vector<int> num;
+    int k;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .num{1, 2, 0, 0},
+          .k = 34,
+          .expected{1, 2, 3, 4},
+      },
+      {
+          .num{2, 7, 4},
+          .k = 181,
+          .expected{4, 5, 5},
+      },
+      {
+          .num{2, 1, 5},
+          .k = 806,
+          .expected{1, 0, 2, 1},
+      },
+  };
+
+  for (const auto &[num, k, expected] : test_cases) {
+    const auto actual = Solution::addToArrayForm(num, k);
+    REQUIRE(expected == actual);
   }
 }

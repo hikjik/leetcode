@@ -3,18 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int k = 2;
-    std::vector<std::string> words{"i", "love", "leetcode",
-                                   "i", "love", "coding"};
-    std::vector<std::string> expected{"i", "love"};
-    REQUIRE(expected == Solution::topKFrequent(words, k));
-  }
-  {
-    int k = 4;
-    std::vector<std::string> words{"the", "day", "is",    "sunny", "the",
-                                   "the", "the", "sunny", "is",    "is"};
-    std::vector<std::string> expected{"the", "is", "sunny", "day"};
-    REQUIRE(expected == Solution::topKFrequent(words, k));
+  struct TestCase {
+    std::vector<std::string> words;
+    int k;
+    std::vector<std::string> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .words{"i", "love", "leetcode", "i", "love", "coding"},
+          .k = 2,
+          .expected{"i", "love"},
+      },
+      {
+          .words{"the", "day", "is", "sunny", "the", "the", "the", "sunny",
+                 "is", "is"},
+          .k = 4,
+          .expected{"the", "is", "sunny", "day"},
+      },
+  };
+
+  for (const auto &[words, k, expected] : test_cases) {
+    const auto actual = Solution::topKFrequent(words, k);
+    REQUIRE(expected == actual);
   }
 }

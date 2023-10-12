@@ -2,32 +2,31 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::vector<std::optional<int>> &values,
-                   const std::vector<int> &expected) {
-  auto root = VectorToTree(values);
-
-  REQUIRE(expected == Solution::preorderTraversal(root));
-
-  FreeTree(root);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{1, std::nullopt, 2, 3};
-    std::vector<int> expected{1, 2, 3};
-    CheckSolution(values, expected);
-  }
-  {
-    std::vector<std::optional<int>> values{1};
-    std::vector<int> expected{1};
-    CheckSolution(values, expected);
-  }
-  {
-    std::vector<std::optional<int>> values;
+  struct TestCase {
+    Tree root;
     std::vector<int> expected;
-    CheckSolution(values, expected);
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{1, std::nullopt, 2, 3},
+          .expected{1, 2, 3},
+      },
+      {
+          .root{},
+          .expected{},
+      },
+      {
+          .root{1},
+          .expected{1},
+      },
+  };
+
+  for (const auto &[root, expected] : test_cases) {
+    const auto actual = Solution::preorderTraversal(root);
+    REQUIRE(expected == actual);
   }
 }

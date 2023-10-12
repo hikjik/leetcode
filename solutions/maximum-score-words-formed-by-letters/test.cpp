@@ -3,25 +3,39 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::string> words{"dog", "cat", "dad", "good"};
-    std::vector<char> letters{'a', 'a', 'c', 'd', 'd', 'd', 'g', 'o', 'o'};
-    std::vector<int> scores{1, 0, 9, 5, 0, 0, 3, 0, 0, 0, 0, 0, 0,
-                            0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-    REQUIRE(23 == Solution::maxScoreWords(words, letters, scores));
-  }
-  {
-    std::vector<std::string> words{"xxxz", "ax", "bx", "cx"};
-    std::vector<char> letters{'z', 'a', 'b', 'c', 'x', 'x', 'x'};
-    std::vector<int> scores{4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 10};
-    REQUIRE(27 == Solution::maxScoreWords(words, letters, scores));
-  }
-  {
-    std::vector<std::string> words{"leetcode"};
-    std::vector<char> letters{'l', 'e', 't', 'c', 'o', 'd'};
-    std::vector<int> scores{0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0,
-                            0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0};
-    REQUIRE(0 == Solution::maxScoreWords(words, letters, scores));
+  struct TestCase {
+    std::vector<std::string> words;
+    std::vector<char> letters;
+    std::vector<int> score;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .words{"dog", "cat", "dad", "good"},
+          .letters{'a', 'a', 'c', 'd', 'd', 'd', 'g', 'o', 'o'},
+          .score{1, 0, 9, 5, 0, 0, 3, 0, 0, 0, 0, 0, 0,
+                 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+          .expected = 23,
+      },
+      {
+          .words{"xxxz", "ax", "bx", "cx"},
+          .letters{'z', 'a', 'b', 'c', 'x', 'x', 'x'},
+          .score{4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 10},
+          .expected = 27,
+      },
+      {
+          .words{"leetcode"},
+          .letters{'l', 'e', 't', 'c', 'o', 'd'},
+          .score{0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0,
+                 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[words, letters, score, expected] : test_cases) {
+    const auto actual = Solution::maxScoreWords(words, letters, score);
+    REQUIRE(expected == actual);
   }
 }

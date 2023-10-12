@@ -6,7 +6,8 @@
 
 class Solution {
 public:
-  static int maxDotProduct(std::vector<int> &nums1, std::vector<int> &nums2) {
+  static int maxDotProduct(const std::vector<int> &nums1,
+                           const std::vector<int> &nums2) {
     const int n = nums1.size(), m = nums2.size();
 
     std::vector dp(n + 1, std::vector<int>(m + 1, INT_MIN));

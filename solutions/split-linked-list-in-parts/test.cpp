@@ -2,40 +2,33 @@
 
 #include <solution.hpp>
 
-void CheckSolution(size_t k, const std::vector<int> &values,
-                   const std::vector<std::vector<int>> &expected) {
-  auto head = VectorToList(values);
-  auto parts = Solution::splitListToParts(head, k);
-  REQUIRE(k == parts.size());
-
-  std::vector<std::vector<int>> actual;
-  for (auto *part : parts) {
-    actual.push_back(ListToVector(part));
-  }
-  REQUIRE(actual == expected);
-
-  for (auto *part : parts) {
-    FreeList(part);
-  }
-}
+#include <list_node.h>
 
 TEST_CASE("Simple") {
-  {
-    int k = 5;
-    std::vector<int> values{1, 2, 3};
-    std::vector<std::vector<int>> expected{{1}, {2}, {3}, {}, {}};
-    CheckSolution(k, values, expected);
-  }
-  {
-    int k = 3;
-    std::vector<int> values{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    std::vector<std::vector<int>> expected{{1, 2, 3, 4}, {5, 6, 7}, {8, 9, 10}};
-    CheckSolution(k, values, expected);
-  }
-  {
-    int k = 2;
-    std::vector<int> values;
-    std::vector<std::vector<int>> expected{{}, {}};
-    CheckSolution(k, values, expected);
+  struct TestCase {
+    List head;
+    int k;
+    std::vector<List> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{1, 2, 3},
+          .k = 5,
+          .expected{{1}, {2}, {3}, {}, {}},
+      },
+      {
+          .head{1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+          .k = 3,
+          .expected{{1, 2, 3, 4}, {5, 6, 7}, {8, 9, 10}},
+      },
+  };
+
+  for (const auto &[head, k, expected] : test_cases) {
+    const auto actual = Solution::splitListToParts(Copy(head), k);
+    REQUIRE(expected.size() == actual.size());
+    for (size_t i = 0; i < expected.size(); ++i) {
+      REQUIRE(expected[i] == List(actual[i]));
+    }
   }
 }

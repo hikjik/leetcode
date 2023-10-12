@@ -2,32 +2,35 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
-void CheckSolution(const std::vector<int> &values, int n,
-                   const std::vector<int> &expected) {
-  auto head = VectorToList(values);
-  auto modified = Solution::removeNthFromEnd(head, n);
-
-  REQUIRE(expected == ListToVector(modified));
-
-  FreeList(modified);
-}
+#include <list_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> values{1, 2, 3, 4, 5};
-    std::vector<int> expected{1, 2, 3, 5};
-    CheckSolution(values, 2, expected);
-  }
-  {
-    std::vector<int> values{1, 2};
-    std::vector<int> expected{1};
-    CheckSolution(values, 1, expected);
-  }
-  {
-    std::vector<int> values{1};
-    std::vector<int> expected;
-    CheckSolution(values, 1, expected);
+  struct TestCase {
+    List head;
+    int n;
+    List expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{1, 2, 3, 4, 5},
+          .n = 2,
+          .expected{1, 2, 3, 5},
+      },
+      {
+          .head{1},
+          .n = 1,
+          .expected{},
+      },
+      {
+          .head{1, 2},
+          .n = 1,
+          .expected{1},
+      },
+  };
+
+  for (const auto &[head, n, expected] : test_cases) {
+    const List actual = Solution::removeNthFromEnd(Copy(head), n);
+    REQUIRE(expected == actual);
   }
 }

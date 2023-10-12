@@ -3,15 +3,23 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{2, 0, 2, 1, 1, 0};
-    std::vector<int> expected{0, 0, 1, 1, 2, 2};
-    Solution::sortColors(nums);
-    REQUIRE(expected == nums);
-  }
-  {
-    std::vector<int> nums{2, 0, 1};
-    std::vector<int> expected{0, 1, 2};
+  struct TestCase {
+    std::vector<int> nums;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{2, 0, 2, 1, 1, 0},
+          .expected{0, 0, 1, 1, 2, 2},
+      },
+      {
+          .nums{2, 0, 1},
+          .expected{0, 1, 2},
+      },
+  };
+
+  for (auto &[nums, expected] : test_cases) {
     Solution::sortColors(nums);
     REQUIRE(expected == nums);
   }

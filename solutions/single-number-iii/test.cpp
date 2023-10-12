@@ -2,27 +2,30 @@
 
 #include <solution.hpp>
 
-#include <algorithm>
-#include <vector>
-
-template <class T>
-void CheckSorted(std::vector<T> expected, std::vector<T> actual) {
-  std::sort(expected.begin(), expected.end());
-  std::sort(actual.begin(), actual.end());
-  REQUIRE(expected == actual);
-}
-
 TEST_CASE("Simple") {
-  {
-    std::vector<int> test{1, 2, 1, 3, 2, 5};
-    CheckSorted({3, 5}, Solution::singleNumber(test));
-  }
-  {
-    std::vector<int> test{{-1, 0}};
-    CheckSorted({-1, 0}, Solution::singleNumber(test));
-  }
-  {
-    std::vector<int> test{{0, 1}};
-    CheckSorted({0, 1}, Solution::singleNumber(test));
+  struct TestCase {
+    std::vector<int> nums;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 1, 3, 2, 5},
+          .expected{3, 5},
+      },
+      {
+          .nums{-1, 0},
+          .expected{-1, 0},
+      },
+      {
+          .nums{0, 1},
+          .expected{0, 1},
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    auto actual = Solution::singleNumber(nums);
+    std::sort(actual.begin(), actual.end());
+    REQUIRE(expected == actual);
   }
 }

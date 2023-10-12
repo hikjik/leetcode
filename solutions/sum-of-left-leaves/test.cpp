@@ -2,26 +2,27 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::vector<std::optional<int>> &values,
-                   int expected) {
-  auto root = VectorToTree(values);
-
-  REQUIRE(expected == Solution::sumOfLeftLeaves(root));
-
-  FreeTree(root);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{
-        3, 9, 20, std::nullopt, std::nullopt, 15, 7};
-    CheckSolution(values, 24);
-  }
-  {
-    std::vector<std::optional<int>> values{1};
-    CheckSolution(values, 0);
+  struct TestCase {
+    Tree root;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{3, 9, 20, std::nullopt, std::nullopt, 15, 7},
+          .expected = 24,
+      },
+      {
+          .root{1},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[root, expected] : test_cases) {
+    const auto actual = Solution::sumOfLeftLeaves(root);
+    REQUIRE(expected == actual);
   }
 }

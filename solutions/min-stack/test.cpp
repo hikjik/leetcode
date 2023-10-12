@@ -3,12 +3,13 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  auto obj = new MinStack();
-  obj->push(-2);
-  obj->push(0);
-  obj->push(-3);
-  REQUIRE(-3 == obj->getMin());
-  obj->pop();
-  REQUIRE(0 == obj->top());
-  REQUIRE(-2 == obj->getMin());
+  auto min_stack = MinStack();
+
+  min_stack.push(-2);
+  min_stack.push(0);
+  min_stack.push(-3);
+  REQUIRE(-3 == min_stack.getMin());
+  min_stack.pop();
+  REQUIRE(0 == min_stack.top());
+  REQUIRE(-2 == min_stack.getMin());
 }

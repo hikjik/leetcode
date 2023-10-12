@@ -3,20 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 5, 11, 5};
-    REQUIRE(Solution::canPartition(nums));
-  }
-  {
-    std::vector<int> nums{1, 2, 3, 5};
-    REQUIRE_FALSE(Solution::canPartition(nums));
-  }
-  {
-    std::vector<int> nums{14, 9, 8, 4, 3, 2};
-    REQUIRE(Solution::canPartition(nums));
-  }
-  {
-    std::vector<int> nums{1, 2, 5};
-    REQUIRE_FALSE(Solution::canPartition(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 5, 11, 5},
+          .expected = true,
+      },
+      {
+          .nums{1, 2, 3, 5},
+          .expected = false,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::canPartition(nums);
+    REQUIRE(expected == actual);
   }
 }

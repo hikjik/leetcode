@@ -6,8 +6,10 @@
 
 class NestedInteger {
 public:
-  NestedInteger(std::variant<int, std::vector<NestedInteger>> variant)
-      : variant_(variant) {}
+  NestedInteger(std::vector<NestedInteger> variant)
+      : variant_(std::move(variant)) {}
+
+  NestedInteger(int variant) : variant_(variant) {}
 
   NestedInteger(std::initializer_list<NestedInteger> list) {
     variant_ = std::vector<NestedInteger>(list.begin(), list.end());

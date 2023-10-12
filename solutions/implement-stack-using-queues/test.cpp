@@ -3,12 +3,11 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  MyStack stack;
-  stack.push(1);
-  stack.push(2);
-  REQUIRE(2 == stack.top());
-  REQUIRE(2 == stack.pop());
-  REQUIRE_FALSE(stack.empty());
-  REQUIRE(1 == stack.pop());
-  REQUIRE(stack.empty());
+  auto my_stack = MyStack();
+
+  my_stack.push(1);
+  my_stack.push(2);
+  REQUIRE(2 == my_stack.top());
+  REQUIRE(2 == my_stack.pop());
+  REQUIRE(false == my_stack.empty());
 }

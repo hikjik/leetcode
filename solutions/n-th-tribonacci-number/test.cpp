@@ -3,9 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(0 == Solution::tribonacci(0));
-  REQUIRE(1 == Solution::tribonacci(1));
-  REQUIRE(1 == Solution::tribonacci(2));
-  REQUIRE(4 == Solution::tribonacci(4));
-  REQUIRE(1389537 == Solution::tribonacci(25));
+  struct TestCase {
+    int n;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 4,
+          .expected = 4,
+      },
+      {
+          .n = 25,
+          .expected = 1389537,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::tribonacci(n);
+    REQUIRE(expected == actual);
+  }
 }

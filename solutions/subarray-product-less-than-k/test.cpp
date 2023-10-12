@@ -3,19 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int k = 100;
-    std::vector<int> nums{10, 5, 2, 6};
-    REQUIRE(8 == Solution::numSubarrayProductLessThanK(nums, k));
-  }
-  {
-    int k = 0;
-    std::vector<int> nums{1, 2, 3};
-    REQUIRE(0 == Solution::numSubarrayProductLessThanK(nums, k));
-  }
-  {
-    int k = 50;
-    std::vector<int> nums{100, 1, 2, 3};
-    REQUIRE(6 == Solution::numSubarrayProductLessThanK(nums, k));
+  struct TestCase {
+    std::vector<int> nums;
+    int k;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{10, 5, 2, 6},
+          .k = 100,
+          .expected = 8,
+      },
+      {
+          .nums{1, 2, 3},
+          .k = 0,
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[nums, k, expected] : test_cases) {
+    const auto actual = Solution::numSubarrayProductLessThanK(nums, k);
+    REQUIRE(expected == actual);
   }
 }

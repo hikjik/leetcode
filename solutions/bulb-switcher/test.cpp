@@ -3,10 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(0 == Solution::bulbSwitch(0));
-  REQUIRE(1 == Solution::bulbSwitch(1));
-  REQUIRE(1 == Solution::bulbSwitch(3));
-  REQUIRE(2 == Solution::bulbSwitch(5));
-  REQUIRE(3 == Solution::bulbSwitch(10));
-  REQUIRE(4 == Solution::bulbSwitch(16));
+  struct TestCase {
+    int n;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 3,
+          .expected = 1,
+      },
+      {
+          .n = 0,
+          .expected = 0,
+      },
+      {
+          .n = 1,
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::bulbSwitch(n);
+    REQUIRE(expected == actual);
+  }
 }

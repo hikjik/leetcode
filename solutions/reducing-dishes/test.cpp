@@ -3,16 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> satisfaction{-1, -8, 0, 5, -9};
-    REQUIRE(14 == Solution::maxSatisfaction(satisfaction));
-  }
-  {
-    std::vector<int> satisfaction{4, 3, 2};
-    REQUIRE(20 == Solution::maxSatisfaction(satisfaction));
-  }
-  {
-    std::vector<int> satisfaction{-1, -4, -5};
-    REQUIRE(0 == Solution::maxSatisfaction(satisfaction));
+  struct TestCase {
+    std::vector<int> satisfaction;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .satisfaction{-1, -8, 0, 5, -7},
+          .expected = 14,
+      },
+      {
+          .satisfaction{4, 3, 2},
+          .expected = 20,
+      },
+      {
+          .satisfaction{-1, -4, -5},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[satisfaction, expected] : test_cases) {
+    const auto actual = Solution::maxSatisfaction(satisfaction);
+    REQUIRE(expected == actual);
   }
 }

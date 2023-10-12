@@ -3,16 +3,30 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::string start_gene = "AACCGGTT";
-    std::string end_gene = "AACCGGTA";
-    std::vector<std::string> bank{"AACCGGTA"};
-    REQUIRE(1 == Solution::minMutation(start_gene, end_gene, bank));
-  }
-  {
-    std::string start_gene = "AACCGGTT";
-    std::string end_gene = "AAACGGTA";
-    std::vector<std::string> bank{"AACCGGTA", "AACCGCTA", "AAACGGTA"};
-    REQUIRE(2 == Solution::minMutation(start_gene, end_gene, bank));
+  struct TestCase {
+    std::string startGene;
+    std::string endGene;
+    std::vector<std::string> bank;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .startGene = "AACCGGTT",
+          .endGene = "AACCGGTA",
+          .bank{"AACCGGTA"},
+          .expected = 1,
+      },
+      {
+          .startGene = "AACCGGTT",
+          .endGene = "AAACGGTA",
+          .bank{"AACCGGTA", "AACCGCTA", "AAACGGTA"},
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[startGene, endGene, bank, expected] : test_cases) {
+    const auto actual = Solution::minMutation(startGene, endGene, bank);
+    REQUIRE(expected == actual);
   }
 }

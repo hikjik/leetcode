@@ -3,20 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> citations{0, 1, 3, 5, 6};
-    REQUIRE(3 == Solution::hIndex(citations));
-  }
-  {
-    std::vector<int> citations{0, 2, 100};
-    REQUIRE(2 == Solution::hIndex(citations));
-  }
-  {
-    std::vector<int> citations{0, 0, 0, 0};
-    REQUIRE(0 == Solution::hIndex(citations));
-  }
-  {
-    std::vector<int> citations{1, 1, 1, 1};
-    REQUIRE(1 == Solution::hIndex(citations));
+  struct TestCase {
+    std::vector<int> citations;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .citations{0, 1, 3, 5, 6},
+          .expected = 3,
+      },
+      {
+          .citations{1, 2, 100},
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[citations, expected] : test_cases) {
+    const auto actual = Solution::hIndex(citations);
+    REQUIRE(expected == actual);
   }
 }

@@ -3,12 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> rooms{{1}, {2}, {3}, {}};
-    REQUIRE(Solution::canVisitAllRooms(rooms));
-  }
-  {
-    std::vector<std::vector<int>> rooms{{1, 3}, {3, 0, 1}, {2}, {0}};
-    REQUIRE_FALSE(Solution::canVisitAllRooms(rooms));
+  struct TestCase {
+    std::vector<std::vector<int>> rooms;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .rooms{{1}, {2}, {3}, {}},
+          .expected = true,
+      },
+      {
+          .rooms{{1, 3}, {3, 0, 1}, {2}, {0}},
+          .expected = false,
+      },
+  };
+
+  for (const auto &[rooms, expected] : test_cases) {
+    const auto actual = Solution::canVisitAllRooms(rooms);
+    REQUIRE(expected == actual);
   }
 }

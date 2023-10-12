@@ -3,12 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{8, 1, 5, 2, 6};
-    REQUIRE(11 == Solution::maxScoreSightseeingPair(nums));
-  }
-  {
-    std::vector<int> nums{1, 2};
-    REQUIRE(2 == Solution::maxScoreSightseeingPair(nums));
+  struct TestCase {
+    std::vector<int> values;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .values{8, 1, 5, 2, 6},
+          .expected = 11,
+      },
+      {
+          .values{1, 2},
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[values, expected] : test_cases) {
+    const auto actual = Solution::maxScoreSightseeingPair(values);
+    REQUIRE(expected == actual);
   }
 }

@@ -3,19 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 2, 3, 4};
-    std::vector<int> expected{24, 12, 8, 6};
-    REQUIRE(expected == Solution::productExceptSelf(nums));
-  }
-  {
-    std::vector<int> nums{-1, 1, 0, -3, 3};
-    std::vector<int> expected{0, 0, 9, 0, 0};
-    REQUIRE(expected == Solution::productExceptSelf(nums));
-  }
-  {
-    std::vector<int> nums{-1, 1, 0, -3, 0};
-    std::vector<int> expected{0, 0, 0, 0, 0};
-    REQUIRE(expected == Solution::productExceptSelf(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 3, 4},
+          .expected{24, 12, 8, 6},
+      },
+      {
+          .nums{-1, 1, 0, -3, 3},
+          .expected{0, 0, 9, 0, 0},
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::productExceptSelf(nums);
+    REQUIRE(expected == actual);
   }
 }

@@ -23,19 +23,32 @@ bool IsNoFlood(const std::vector<int> &rains, const std::vector<int> &ans) {
 }
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> rains{1, 2, 3, 4};
-    const auto ans = Solution::avoidFlood(rains);
-    REQUIRE(IsNoFlood(rains, ans));
-  }
-  {
-    std::vector<int> rains{1, 2, 0, 0, 2, 1};
-    const auto ans = Solution::avoidFlood(rains);
-    REQUIRE(IsNoFlood(rains, ans));
-  }
-  {
-    std::vector<int> rains{1, 2, 0, 2, 1};
+  struct TestCase {
+    std::vector<int> rains;
     std::vector<int> expected;
-    REQUIRE(expected == Solution::avoidFlood(rains));
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .rains{1, 2, 3, 4},
+          .expected{-1, -1, -1, -1},
+      },
+      {
+          .rains{1, 2, 0, 0, 2, 1},
+          .expected{-1, -1, 2, 1, -1, -1},
+      },
+      {
+          .rains{1, 2, 0, 1, 2},
+          .expected{},
+      },
+  };
+
+  for (const auto &[rains, expected] : test_cases) {
+    const auto actual = Solution::avoidFlood(rains);
+    if (expected.empty()) {
+      REQUIRE(expected == actual);
+    } else {
+      REQUIRE(IsNoFlood(rains, actual));
+    }
   }
 }

@@ -6,7 +6,7 @@ template <typename T> using Matrix = std::vector<std::vector<T>>;
 
 class Solution {
 public:
-  static bool searchMatrix(Matrix<int> &matrix, int target) {
+  static bool searchMatrix(const Matrix<int> &matrix, int target) {
     size_t rows = matrix.size();
     size_t cols = matrix.back().size();
 

@@ -8,7 +8,7 @@
 class Solution {
 public:
   static int minMutation(std::string start_gene, std::string end_gene,
-                         std::vector<std::string> &bank) {
+                         const std::vector<std::string> &bank) {
     std::unordered_set<std::string> mutations{bank.begin(), bank.end()};
 
     std::queue<std::pair<std::string, int>> queue;

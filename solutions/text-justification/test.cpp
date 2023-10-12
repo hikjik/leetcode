@@ -3,31 +3,36 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int max_width = 16;
-    std::vector<std::string> words{
-        "This", "is", "an", "example", "of", "text", "justification."};
-    std::vector<std::string> expected{"This    is    an", "example  of text",
-                                      "justification.  "};
-    REQUIRE(expected == Solution::fullJustify(words, max_width));
-  }
-  {
-    int max_width = 16;
-    std::vector<std::string> words{"What",           "must",  "be",
-                                   "acknowledgment", "shall", "be"};
-    std::vector<std::string> expected{"What   must   be", "acknowledgment  ",
-                                      "shall be        "};
-    REQUIRE(expected == Solution::fullJustify(words, max_width));
-  }
-  {
-    int max_width = 20;
-    std::vector<std::string> words{
-        "Science", "is", "what",       "we",   "understand", "well",
-        "enough",  "to", "explain",    "to",   "a",          "computer.",
-        "Art",     "is", "everything", "else", "we",         "do"};
-    std::vector<std::string> expected{
-        "Science  is  what we", "understand      well", "enough to explain to",
-        "a  computer.  Art is", "everything  else  we", "do                  "};
-    REQUIRE(expected == Solution::fullJustify(words, max_width));
+  struct TestCase {
+    std::vector<std::string> words;
+    int maxWidth;
+    std::vector<std::string> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .words{"This", "is", "an", "example", "of", "text", "justification."},
+          .maxWidth = 16,
+          .expected{"This    is    an", "example  of text", "justification.  "},
+      },
+      {
+          .words{"What", "must", "be", "acknowledgment", "shall", "be"},
+          .maxWidth = 16,
+          .expected{"What   must   be", "acknowledgment  ", "shall be        "},
+      },
+      {
+          .words{"Science", "is", "what", "we", "understand", "well", "enough",
+                 "to", "explain", "to", "a", "computer.", "Art", "is",
+                 "everything", "else", "we", "do"},
+          .maxWidth = 20,
+          .expected{"Science  is  what we", "understand      well",
+                    "enough to explain to", "a  computer.  Art is",
+                    "everything  else  we", "do                  "},
+      },
+  };
+
+  for (const auto &[words, maxWidth, expected] : test_cases) {
+    const auto actual = Solution::fullJustify(words, maxWidth);
+    REQUIRE(expected == actual);
   }
 }

@@ -3,19 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int k = 0;
-    std::vector<int> nums{1};
-    REQUIRE(0 == Solution::smallestRangeII(nums, k));
-  }
-  {
-    int k = 2;
-    std::vector<int> nums{0, 10};
-    REQUIRE(6 == Solution::smallestRangeII(nums, k));
-  }
-  {
-    int k = 3;
-    std::vector<int> nums{1, 3, 6};
-    REQUIRE(3 == Solution::smallestRangeII(nums, k));
+  struct TestCase {
+    std::vector<int> nums;
+    int k;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1},
+          .k = 0,
+          .expected = 0,
+      },
+      {
+          .nums{0, 10},
+          .k = 2,
+          .expected = 6,
+      },
+      {
+          .nums{1, 3, 6},
+          .k = 3,
+          .expected = 3,
+      },
+  };
+
+  for (const auto &[nums, k, expected] : test_cases) {
+    const auto actual = Solution::smallestRangeII(nums, k);
+    REQUIRE(expected == actual);
   }
 }

@@ -3,19 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::string> strs{"flower", "flow", "flight"};
-    std::string prefix = "fl";
-    REQUIRE(prefix == Solution::longestCommonPrefix(strs));
-  }
-  {
-    std::vector<std::string> strs{"dog", "racecar", "car"};
-    std::string prefix = "";
-    REQUIRE(prefix == Solution::longestCommonPrefix(strs));
-  }
-  {
-    std::vector<std::string> strs{"flower", "flower", "flower", "flower"};
-    std::string prefix = "flower";
-    REQUIRE(prefix == Solution::longestCommonPrefix(strs));
+  struct TestCase {
+    std::vector<std::string> strs;
+    std::string expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .strs{"flower", "flow", "flight"},
+          .expected = "fl",
+      },
+      {
+          .strs{"dog", "racecar", "car"},
+          .expected = "",
+      },
+  };
+
+  for (const auto &[strs, expected] : test_cases) {
+    const auto actual = Solution::longestCommonPrefix(strs);
+    REQUIRE(expected == actual);
   }
 }

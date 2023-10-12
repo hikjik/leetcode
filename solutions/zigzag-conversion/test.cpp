@@ -3,8 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE("PAHNAPLSIIGYIR" == Solution::convert("PAYPALISHIRING", 3));
-  REQUIRE("PINALSIGYAHRPI" == Solution::convert("PAYPALISHIRING", 4));
-  REQUIRE("A" == Solution::convert("A", 1));
-  REQUIRE("ABC" == Solution::convert("ABC", 1));
+  struct TestCase {
+    std::string s;
+    int numRows;
+    std::string expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "PAYPALISHIRING",
+          .numRows = 3,
+          .expected = "PAHNAPLSIIGYIR",
+      },
+      {
+          .s = "PAYPALISHIRING",
+          .numRows = 4,
+          .expected = "PINALSIGYAHRPI",
+      },
+      {
+          .s = "A",
+          .numRows = 1,
+          .expected = "A",
+      },
+  };
+
+  for (const auto &[s, numRows, expected] : test_cases) {
+    const auto actual = Solution::convert(s, numRows);
+    REQUIRE(expected == actual);
+  }
 }

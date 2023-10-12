@@ -1,9 +1,8 @@
 #include <catch.hpp>
-#include <list_node.h>
 
 #include <solution.hpp>
 
-#include <vector>
+#include <list_node.h>
 
 ListNode *Advance(ListNode *head, int n) {
   auto node = head;
@@ -13,41 +12,52 @@ ListNode *Advance(ListNode *head, int n) {
   return node;
 }
 
-void CheckSolution(const std::vector<int> &values, int pos, bool expected) {
-  auto head = VectorToList(values);
-
-  ListNode *tail = nullptr;
-  if (pos != -1) {
-    auto cycle_start = Advance(head, pos);
-    tail = Advance(head, values.size() - 1);
-    tail->next = cycle_start;
+int Length(ListNode *head) {
+  int length = 0;
+  for (auto node = head; node; node = node->next) {
+    ++length;
   }
-
-  auto is_cycle = Solution::hasCycle(head);
-
-  if (pos != -1) {
-    tail->next = nullptr;
-  }
-  REQUIRE(expected == is_cycle);
-
-  FreeList(head);
+  return length;
 }
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> values{3, 2, 0, -4};
-    CheckSolution(values, 1, true);
-  }
-  {
-    std::vector<int> values{1, 2};
-    CheckSolution(values, 0, true);
-  }
-  {
-    std::vector<int> values{1};
-    CheckSolution(values, -1, false);
-  }
-  {
-    std::vector<int> values;
-    CheckSolution(values, -1, false);
+  struct TestCase {
+    List head;
+    int pos;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{3, 2, 0, -4},
+          .pos = 1,
+          .expected = true,
+      },
+      {
+          .head{1, 2},
+          .pos = 0,
+          .expected = true,
+      },
+      {
+          .head{1},
+          .pos = -1,
+          .expected = false,
+      },
+  };
+
+  for (const auto &[head, pos, expected] : test_cases) {
+    List copy(head);
+
+    ListNode *tail = nullptr;
+    if (pos != -1) {
+      tail = Advance(copy, Length(copy) - 1);
+      tail->next = Advance(copy, pos);
+    }
+
+    REQUIRE(expected == Solution::hasCycle(copy));
+
+    if (pos != -1) {
+      tail->next = nullptr;
+    }
   }
 }

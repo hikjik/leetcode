@@ -2,38 +2,33 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::vector<std::optional<int>> &values,
-                   const std::vector<std::optional<int>> &flatten_values) {
-  auto root = VectorToTree(values);
-  auto flatten = VectorToTree(flatten_values);
-
-  Solution::flatten(root);
-
-  REQUIRE(EqualTree(root, flatten));
-
-  FreeTree(root);
-  FreeTree(flatten);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{1, 2, 5, 3, 4, std::nullopt, 6};
-    std::vector<std::optional<int>> flatten{1, std::nullopt, 2, std::nullopt,
-                                            3, std::nullopt, 4, std::nullopt,
-                                            5, std::nullopt, 6};
-    CheckSolution(values, flatten);
-  }
-  {
-    std::vector<std::optional<int>> values;
-    std::vector<std::optional<int>> flatten;
-    CheckSolution(values, flatten);
-  }
-  {
-    std::vector<std::optional<int>> values{0};
-    std::vector<std::optional<int>> flatten{0};
-    CheckSolution(values, flatten);
+  struct TestCase {
+    Tree root;
+    Tree expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{1, 2, 5, 3, 4, std::nullopt, 6},
+          .expected{1, std::nullopt, 2, std::nullopt, 3, std::nullopt, 4,
+                    std::nullopt, 5, std::nullopt, 6},
+      },
+      {
+          .root{},
+          .expected{},
+      },
+      {
+          .root{0},
+          .expected{0},
+      },
+  };
+
+  for (const auto &[root, expected] : test_cases) {
+    TreeNode *copy = Copy(root);
+    Solution::flatten(copy);
+    REQUIRE(expected == Tree(copy));
   }
 }

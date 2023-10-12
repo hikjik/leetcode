@@ -2,33 +2,33 @@
 
 #include <solution.hpp>
 
-#include <algorithm>
-#include <vector>
-
-template <class T>
-void CheckSorted(std::vector<T> expected, std::vector<T> actual) {
-  std::sort(expected.begin(), expected.end());
-  std::sort(actual.begin(), actual.end());
-  REQUIRE(expected == actual);
-}
-
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{2, 7, 11, 15};
-    int target = 9;
-    std::vector<int> expected{0, 1};
-    CheckSorted(expected, Solution::twoSum(nums, target));
-  }
-  {
-    std::vector<int> nums{3, 2, 4};
-    int target = 6;
-    std::vector<int> expected{1, 2};
-    CheckSorted(expected, Solution::twoSum(nums, target));
-  }
-  {
-    std::vector<int> nums{3, 3};
-    int target = 6;
-    std::vector<int> expected{0, 1};
-    CheckSorted(expected, Solution::twoSum(nums, target));
+  struct TestCase {
+    std::vector<int> nums;
+    int target;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{2, 7, 11, 15},
+          .target = 9,
+          .expected{0, 1},
+      },
+      {
+          .nums{3, 2, 4},
+          .target = 6,
+          .expected{1, 2},
+      },
+      {
+          .nums{3, 3},
+          .target = 6,
+          .expected{0, 1},
+      },
+  };
+
+  for (const auto &[nums, target, expected] : test_cases) {
+    auto actual = Solution::twoSum(nums, target);
+    REQUIRE(expected == actual);
   }
 }

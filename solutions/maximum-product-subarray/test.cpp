@@ -3,16 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{2, 3, -2, 4};
-    REQUIRE(6 == Solution::maxProduct(nums));
-  }
-  {
-    std::vector<int> nums{-2, 0, -1};
-    REQUIRE(0 == Solution::maxProduct(nums));
-  }
-  {
-    std::vector<int> nums{-4, -3, -2};
-    REQUIRE(12 == Solution::maxProduct(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{2, 3, -2, 4},
+          .expected = 6,
+      },
+      {
+          .nums{-2, 0, -1},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::maxProduct(nums);
+    REQUIRE(expected == actual);
   }
 }

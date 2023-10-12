@@ -3,12 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(Solution::wordPattern("abba", "dog cat cat dog"));
-  REQUIRE_FALSE(Solution::wordPattern("abba", "dog cat cat fish"));
-  REQUIRE_FALSE(Solution::wordPattern("aaaa", "dog cat cat dog"));
+  struct TestCase {
+    std::string pattern;
+    std::string s;
+    bool expected;
+  };
 
-  REQUIRE_FALSE(Solution::wordPattern("abb", "dog cat cat dog"));
-  REQUIRE_FALSE(Solution::wordPattern("abba", "dog cat cat"));
+  std::vector<TestCase> test_cases{
+      {
+          .pattern = "abba",
+          .s = "dog cat cat dog",
+          .expected = true,
+      },
+      {
+          .pattern = "abba",
+          .s = "dog cat cat fish",
+          .expected = false,
+      },
+      {
+          .pattern = "aaaa",
+          .s = "dog cat cat dog",
+          .expected = false,
+      },
+  };
 
-  REQUIRE_FALSE(Solution::wordPattern("abba", "dog dog dog dog"));
+  for (const auto &[pattern, s, expected] : test_cases) {
+    const auto actual = Solution::wordPattern(pattern, s);
+    REQUIRE(expected == actual);
+  }
 }

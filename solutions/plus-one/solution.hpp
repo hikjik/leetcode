@@ -5,7 +5,7 @@
 
 class Solution {
 public:
-  static std::vector<int> plusOne(std::vector<int> &digits) {
+  static std::vector<int> plusOne(const std::vector<int> &digits) {
     std::vector<int> result;
     result.reserve(digits.size() + 1);
 

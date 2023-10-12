@@ -2,17 +2,25 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{4000, 3000, 1000, 2000};
-    REQUIRE_THAT(Solution::average(nums),
-                 Catch::Matchers::WithinAbs(2500.00000, 1e5));
-  }
-  {
-    std::vector<int> nums{1000, 2000, 3000};
-    REQUIRE_THAT(Solution::average(nums),
-                 Catch::Matchers::WithinAbs(2000.00000, 1e5));
+  struct TestCase {
+    std::vector<int> salary;
+    double expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .salary{4000, 3000, 1000, 2000},
+          .expected = 2500.00000,
+      },
+      {
+          .salary{1000, 2000, 3000},
+          .expected = 2000.00000,
+      },
+  };
+
+  for (const auto &[salary, expected] : test_cases) {
+    const auto actual = Solution::average(salary);
+    REQUIRE(expected == Approx(actual));
   }
 }

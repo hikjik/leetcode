@@ -3,6 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(3 == Solution::numSquares(12));
-  REQUIRE(2 == Solution::numSquares(13));
+  struct TestCase {
+    int n;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 12,
+          .expected = 3,
+      },
+      {
+          .n = 13,
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::numSquares(n);
+    REQUIRE(expected == actual);
+  }
 }

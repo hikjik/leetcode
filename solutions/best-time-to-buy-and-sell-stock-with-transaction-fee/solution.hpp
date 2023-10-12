@@ -4,8 +4,8 @@
 
 class Solution {
 public:
-  static int maxProfit(std::vector<int> &prices, int fee) {
-    size_t n = prices.size();
+  static int maxProfit(const std::vector<int> &prices, int fee) {
+    const auto n = prices.size();
 
     std::vector<std::vector<int>> dp(2, std::vector<int>(n, 0));
     dp[1][0] = -prices[0];

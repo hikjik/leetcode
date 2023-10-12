@@ -2,24 +2,27 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::vector<std::optional<int>> &values,
-                   bool expected) {
-  auto root = VectorToTree(values);
-  REQUIRE(expected == Solution::isSymmetric(root));
-  FreeTree(root);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{1, 2, 2, 3, 4, 4, 3};
-    CheckSolution(values, true);
-  }
-  {
-    std::vector<std::optional<int>> values{
-        1, 2, 2, std::nullopt, 3, std::nullopt, 3};
-    CheckSolution(values, false);
+  struct TestCase {
+    Tree root;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{1, 2, 2, 3, 4, 4, 3},
+          .expected = true,
+      },
+      {
+          .root{1, 2, 2, std::nullopt, 3, std::nullopt, 3},
+          .expected = false,
+      },
+  };
+
+  for (const auto &[root, expected] : test_cases) {
+    const auto actual = Solution::isSymmetric(root);
+    REQUIRE(expected == actual);
   }
 }

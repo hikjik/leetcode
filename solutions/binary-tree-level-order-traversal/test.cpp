@@ -2,33 +2,31 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::vector<std::optional<int>> &values,
-                   const std::vector<std::vector<int>> &expected) {
-  auto root = VectorToTree(values);
-
-  REQUIRE(expected == Solution::levelOrder(root));
-
-  FreeTree(root);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{
-        3, 9, 20, std::nullopt, std::nullopt, 15, 7};
-    std::vector<std::vector<int>> expected{{3}, {9, 20}, {15, 7}};
-    CheckSolution(values, expected);
-  }
-  {
-    std::vector<std::optional<int>> values{1};
-    std::vector<std::vector<int>> expected{{1}};
-    CheckSolution(values, expected);
-  }
-  {
-    std::vector<std::optional<int>> values;
+  struct TestCase {
+    Tree root;
     std::vector<std::vector<int>> expected;
-    CheckSolution(values, expected);
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{3, 9, 20, std::nullopt, std::nullopt, 15, 7},
+          .expected{{3}, {9, 20}, {15, 7}},
+      },
+      {
+          .root{1},
+          .expected{{1}},
+      },
+      {
+          .root{},
+          .expected{},
+      },
+  };
+
+  for (const auto &[root, expected] : test_cases) {
+    const auto actual = Solution::levelOrder(root);
+    REQUIRE(expected == actual);
   }
 }

@@ -2,14 +2,25 @@
 
 #include <solution.hpp>
 
-#include <limits>
-
 TEST_CASE("Simple") {
-  int n = 5;
-  REQUIRE(4 == Solution::firstBadVersion(n));
-}
+  struct TestCase {
+    int n;
+    int expected;
+  };
 
-TEST_CASE("Big") {
-  int n = std::numeric_limits<int>::max();
-  REQUIRE(4 == Solution::firstBadVersion(n));
+  std::vector<TestCase> test_cases{
+      {
+          .n = 5,
+          .expected = 4,
+      },
+      {
+          .n = std::numeric_limits<int>::max(),
+          .expected = 4,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::firstBadVersion(n);
+    REQUIRE(expected == actual);
+  }
 }

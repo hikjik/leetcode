@@ -3,12 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> matrix{{2, 1, 3}, {6, 5, 4}, {7, 8, 9}};
-    REQUIRE(13 == Solution::minFallingPathSum(matrix));
-  }
-  {
-    std::vector<std::vector<int>> matrix{{-19, 57}, {-40, -5}};
-    REQUIRE(-59 == Solution::minFallingPathSum(matrix));
+  struct TestCase {
+    std::vector<std::vector<int>> matrix;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .matrix{{2, 1, 3}, {6, 5, 4}, {7, 8, 9}},
+          .expected = 13,
+      },
+      {
+          .matrix{{-19, 57}, {-40, -5}},
+          .expected = -59,
+      },
+  };
+
+  for (const auto &[matrix, expected] : test_cases) {
+    const auto actual = Solution::minFallingPathSum(matrix);
+    REQUIRE(expected == actual);
   }
 }

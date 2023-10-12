@@ -3,16 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> rods{1, 2, 3, 6};
-    REQUIRE(6 == Solution::tallestBillboard(rods));
-  }
-  {
-    std::vector<int> rods{1, 2, 3, 4, 5, 6};
-    REQUIRE(10 == Solution::tallestBillboard(rods));
-  }
-  {
-    std::vector<int> rods{1, 2};
-    REQUIRE(0 == Solution::tallestBillboard(rods));
+  struct TestCase {
+    std::vector<int> rods;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .rods{1, 2, 3, 6},
+          .expected = 6,
+      },
+      {
+          .rods{1, 2, 3, 4, 5, 6},
+          .expected = 10,
+      },
+      {
+          .rods{1, 2},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[rods, expected] : test_cases) {
+    const auto actual = Solution::tallestBillboard(rods);
+    REQUIRE(expected == actual);
   }
 }

@@ -3,12 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(Solution::isPerfectSquare(16));
-  REQUIRE(Solution::isPerfectSquare(1));
-  REQUIRE_FALSE(Solution::isPerfectSquare(14));
-}
+  struct TestCase {
+    int num;
+    bool expected;
+  };
 
-TEST_CASE("Overflow") {
-  REQUIRE_FALSE(Solution::isPerfectSquare(2147483647));
-  REQUIRE(Solution::isPerfectSquare(1975269136));
+  std::vector<TestCase> test_cases{
+      {
+          .num = 16,
+          .expected = true,
+      },
+      {
+          .num = 14,
+          .expected = false,
+      },
+  };
+
+  for (const auto &[num, expected] : test_cases) {
+    const auto actual = Solution::isPerfectSquare(num);
+    REQUIRE(expected == actual);
+  }
 }

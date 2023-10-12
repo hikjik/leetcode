@@ -1,29 +1,28 @@
 #include <catch.hpp>
-#include <list_node.h>
 
 #include <solution.hpp>
 
-#include <vector>
-
-void CheckSolution(const std::vector<int> &values,
-                   const std::vector<int> &expected) {
-  auto head = VectorToList(values);
-  auto deduplicated = Solution::deleteDuplicates(head);
-
-  REQUIRE(expected == ListToVector(deduplicated));
-
-  FreeList(deduplicated);
-}
+#include <list_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> values{1, 1, 2};
-    std::vector<int> expected{1, 2};
-    CheckSolution(values, expected);
-  }
-  {
-    std::vector<int> values{1, 1, 2, 3, 3};
-    std::vector<int> expected{1, 2, 3};
-    CheckSolution(values, expected);
+  struct TestCase {
+    List head;
+    List expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{1, 1, 2},
+          .expected{1, 2},
+      },
+      {
+          .head{1, 1, 2, 3, 3},
+          .expected{1, 2, 3},
+      },
+  };
+
+  for (const auto &[head, expected] : test_cases) {
+    const List actual = Solution::deleteDuplicates(Copy(head));
+    REQUIRE(expected == actual);
   }
 }

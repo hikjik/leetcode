@@ -1,1 +1,1 @@
-add_catch(test_find_critical_and_pseudo-critical_edges_in_minimum_spanning_tree test.cpp)
+add_catch(test_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree test.cpp)

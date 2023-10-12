@@ -4,7 +4,7 @@
 
 class Solution {
 public:
-  static int uniquePathsIII(std::vector<std::vector<int>> &grid) {
+  static int uniquePathsIII(std::vector<std::vector<int>> grid) {
     int x = 0, y = 0;
     int empty = 1;
     for (size_t i = 0; i < grid.size(); ++i) {

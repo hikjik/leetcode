@@ -1,1 +1,1 @@
-add_catch(test_add_to_array-form_of_integer test.cpp)
+add_catch(test_add_to_array_form_of_integer test.cpp)

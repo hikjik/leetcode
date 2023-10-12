@@ -3,12 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> stones{2, 7, 4, 1, 8, 1};
-    REQUIRE(1 == Solution::lastStoneWeight(stones));
-  }
-  {
-    std::vector<int> stones{1};
-    REQUIRE(1 == Solution::lastStoneWeight(stones));
+  struct TestCase {
+    std::vector<int> stones;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .stones{2, 7, 4, 1, 8, 1},
+          .expected = 1,
+      },
+      {
+          .stones{1},
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[stones, expected] : test_cases) {
+    const auto actual = Solution::lastStoneWeight(stones);
+    REQUIRE(expected == actual);
   }
 }

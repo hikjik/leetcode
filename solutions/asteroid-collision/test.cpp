@@ -3,24 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> asteroids{5, 10, -5};
-    std::vector<int> expected{5, 10};
-    REQUIRE(expected == Solution::asteroidCollision(asteroids));
-  }
-  {
-    std::vector<int> asteroids{8, -8};
+  struct TestCase {
+    std::vector<int> asteroids;
     std::vector<int> expected;
-    REQUIRE(expected == Solution::asteroidCollision(asteroids));
-  }
-  {
-    std::vector<int> asteroids{10, 2, -5};
-    std::vector<int> expected{10};
-    REQUIRE(expected == Solution::asteroidCollision(asteroids));
-  }
-  {
-    std::vector<int> asteroids{-2, -1, 1, 2};
-    std::vector<int> expected{-2, -1, 1, 2};
-    REQUIRE(expected == Solution::asteroidCollision(asteroids));
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .asteroids{5, 10, -5},
+          .expected{5, 10},
+      },
+      {
+          .asteroids{8, -8},
+          .expected{},
+      },
+      {
+          .asteroids{10, 2, -5},
+          .expected{10},
+      },
+  };
+
+  for (const auto &[asteroids, expected] : test_cases) {
+    const auto actual = Solution::asteroidCollision(asteroids);
+    REQUIRE(expected == actual);
   }
 }

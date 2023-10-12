@@ -8,7 +8,7 @@ class Solution {
 private:
   // Floyd-Warshall Algorithm
   static std::vector<std::vector<int>>
-  computeDistances(int n, std::vector<std::vector<int>> &edges) {
+  computeDistances(int n, const std::vector<std::vector<int>> &edges) {
     std::vector<std::vector<int>> distances(n, std::vector<int>(n, INT_MAX));
     for (const auto &edge : edges) {
       const auto u = edge[0] - 1, v = edge[1] - 1;
@@ -37,7 +37,8 @@ private:
 
 public:
   static std::vector<int>
-  countSubgraphsForEachDiameter(int n, std::vector<std::vector<int>> &edges) {
+  countSubgraphsForEachDiameter(int n,
+                                const std::vector<std::vector<int>> &edges) {
     const auto distances = computeDistances(n, edges);
 
     std::vector<int> ans(n - 1, 0);

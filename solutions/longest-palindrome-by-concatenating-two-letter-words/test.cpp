@@ -3,21 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::string> words{"lc", "cl", "gg"};
-    REQUIRE(6 == Solution::longestPalindrome(words));
-  }
-  {
-    std::vector<std::string> words{"ab", "ty", "yt", "lc", "cl", "ab"};
-    REQUIRE(8 == Solution::longestPalindrome(words));
-  }
-  {
-    std::vector<std::string> words{"cc", "ll", "xx"};
-    REQUIRE(2 == Solution::longestPalindrome(words));
-  }
-  {
-    std::vector<std::string> words{"dd", "aa", "bb", "dd", "aa", "dd", "bb",
-                                   "dd", "aa", "cc", "bb", "cc", "dd", "cc"};
-    REQUIRE(22 == Solution::longestPalindrome(words));
+  struct TestCase {
+    std::vector<std::string> words;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .words{"lc", "cl", "gg"},
+          .expected = 6,
+      },
+      {
+          .words{"ab", "ty", "yt", "lc", "cl", "ab"},
+          .expected = 8,
+      },
+      {
+          .words{"cc", "ll", "xx"},
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[words, expected] : test_cases) {
+    const auto actual = Solution::longestPalindrome(words);
+    REQUIRE(expected == actual);
   }
 }

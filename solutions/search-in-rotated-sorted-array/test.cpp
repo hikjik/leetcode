@@ -3,19 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{4, 5, 6, 7, 0, 1, 2};
-    int target = 0;
-    REQUIRE(4 == Solution::search(nums, target));
-  }
-  {
-    std::vector<int> nums{4, 5, 6, 7, 0, 1, 2};
-    int target = 3;
-    REQUIRE(-1 == Solution::search(nums, target));
-  }
-  {
-    std::vector<int> nums{1};
-    int target = 0;
-    REQUIRE(-1 == Solution::search(nums, target));
+  struct TestCase {
+    std::vector<int> nums;
+    int target;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{4, 5, 6, 7, 0, 1, 2},
+          .target = 0,
+          .expected = 4,
+      },
+      {
+          .nums{4, 5, 6, 7, 0, 1, 2},
+          .target = 3,
+          .expected = -1,
+      },
+      {
+          .nums{1},
+          .target = 0,
+          .expected = -1,
+      },
+  };
+
+  for (const auto &[nums, target, expected] : test_cases) {
+    const auto actual = Solution::search(nums, target);
+    REQUIRE(expected == actual);
   }
 }

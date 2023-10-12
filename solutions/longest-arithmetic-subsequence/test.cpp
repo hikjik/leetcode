@@ -3,16 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{3, 6, 9, 12};
-    REQUIRE(4 == Solution::longestArithSeqLength(nums));
-  }
-  {
-    std::vector<int> nums{9, 4, 7, 2, 10};
-    REQUIRE(3 == Solution::longestArithSeqLength(nums));
-  }
-  {
-    std::vector<int> nums{20, 1, 15, 3, 10, 5, 8};
-    REQUIRE(4 == Solution::longestArithSeqLength(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{3, 6, 9, 12},
+          .expected = 4,
+      },
+      {
+          .nums{9, 4, 7, 2, 10},
+          .expected = 3,
+      },
+      {
+          .nums{20, 1, 15, 3, 10, 5, 8},
+          .expected = 4,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::longestArithSeqLength(nums);
+    REQUIRE(expected == actual);
   }
 }

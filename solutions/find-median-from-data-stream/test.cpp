@@ -3,10 +3,11 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  MedianFinder median_finder;
+  auto median_finder = MedianFinder();
+
   median_finder.addNum(1);
   median_finder.addNum(2);
-  REQUIRE(1.5 == median_finder.findMedian());
+  REQUIRE(1.5 == Approx(median_finder.findMedian()));
   median_finder.addNum(3);
-  REQUIRE(2.0 == median_finder.findMedian());
+  REQUIRE(2.0 == Approx(median_finder.findMedian()));
 }

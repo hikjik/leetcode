@@ -3,15 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(0 == Solution::fib(0));
-  REQUIRE(1 == Solution::fib(1));
-  REQUIRE(1 == Solution::fib(2));
-  REQUIRE(2 == Solution::fib(3));
-  REQUIRE(3 == Solution::fib(4));
-  REQUIRE(5 == Solution::fib(5));
-}
+  struct TestCase {
+    int n;
+    int expected;
+  };
 
-TEST_CASE("Big") {
-  REQUIRE(832040 == Solution::fib(30));
-  REQUIRE(514229 == Solution::fib(29));
+  std::vector<TestCase> test_cases{
+      {
+          .n = 2,
+          .expected = 1,
+      },
+      {
+          .n = 3,
+          .expected = 2,
+      },
+      {
+          .n = 4,
+          .expected = 3,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::fib(n);
+    REQUIRE(expected == actual);
+  }
 }

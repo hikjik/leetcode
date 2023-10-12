@@ -3,7 +3,9 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  LRUCache cache(2);
+  int capacity = 2;
+  auto cache = LRUCache(capacity);
+
   cache.put(1, 1);
   cache.put(2, 2);
   REQUIRE(1 == cache.get(1));

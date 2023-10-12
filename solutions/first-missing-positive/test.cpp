@@ -3,20 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 2, 0};
-    REQUIRE(3 == Solution::firstMissingPositive(nums));
-  }
-  {
-    std::vector<int> nums{3, 4, -1, 1};
-    REQUIRE(2 == Solution::firstMissingPositive(nums));
-  }
-  {
-    std::vector<int> nums{7, 8, 9, 11, 12};
-    REQUIRE(1 == Solution::firstMissingPositive(nums));
-  }
-  {
-    std::vector<int> nums{2, 2, 2};
-    REQUIRE(1 == Solution::firstMissingPositive(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 0},
+          .expected = 3,
+      },
+      {
+          .nums{3, 4, -1, 1},
+          .expected = 2,
+      },
+      {
+          .nums{7, 8, 9, 11, 12},
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::firstMissingPositive(nums);
+    REQUIRE(expected == actual);
   }
 }

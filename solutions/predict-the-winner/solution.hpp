@@ -5,7 +5,7 @@
 
 class Solution {
 public:
-  static bool PredictTheWinner(const std::vector<int> &nums) {
+  static bool predictTheWinner(const std::vector<int> &nums) {
     const int n = nums.size();
     std::vector dp(n, std::vector<int>(n, 0));
     for (int i = 0; i < n; ++i) {

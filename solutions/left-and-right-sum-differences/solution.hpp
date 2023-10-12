@@ -4,7 +4,7 @@
 
 class Solution {
 public:
-  static std::vector<int> leftRigthDifference(const std::vector<int> &nums) {
+  static std::vector<int> leftRightDifference(const std::vector<int> &nums) {
     size_t n = nums.size();
 
     std::vector<int> left(n, 0);

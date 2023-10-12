@@ -3,7 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(3 == Solution::romanToInt("III"));
-  REQUIRE(58 == Solution::romanToInt("LVIII"));
-  REQUIRE(1994 == Solution::romanToInt("MCMXCIV"));
+  struct TestCase {
+    std::string s;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "III",
+          .expected = 3,
+      },
+      {
+          .s = "LVIII",
+          .expected = 58,
+      },
+      {
+          .s = "MCMXCIV",
+          .expected = 1994,
+      },
+  };
+
+  for (const auto &[s, expected] : test_cases) {
+    const auto actual = Solution::romanToInt(s);
+    REQUIRE(expected == actual);
+  }
 }

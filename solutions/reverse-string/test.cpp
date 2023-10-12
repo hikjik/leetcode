@@ -3,16 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<char> str{'h', 'e', 'l', 'l', 'o'};
-    std::vector<char> expected{'o', 'l', 'l', 'e', 'h'};
-    Solution::reverseString(str);
-    REQUIRE(expected == str);
-  }
-  {
-    std::vector<char> str{'H', 'a', 'n', 'n', 'a', 'h'};
-    std::vector<char> expected{'h', 'a', 'n', 'n', 'a', 'H'};
-    Solution::reverseString(str);
-    REQUIRE(expected == str);
+  struct TestCase {
+    std::vector<char> s;
+    std::vector<char> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s{'h', 'e', 'l', 'l', 'o'},
+          .expected{'o', 'l', 'l', 'e', 'h'},
+      },
+      {
+          .s{'H', 'a', 'n', 'n', 'a', 'h'},
+          .expected{'h', 'a', 'n', 'n', 'a', 'H'},
+      },
+  };
+
+  for (auto &[s, expected] : test_cases) {
+    Solution::reverseString(s);
+    REQUIRE(expected == s);
   }
 }

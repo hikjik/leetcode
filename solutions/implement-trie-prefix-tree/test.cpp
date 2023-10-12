@@ -4,10 +4,11 @@
 
 TEST_CASE("Simple") {
   auto trie = Trie();
+
   trie.insert("apple");
-  REQUIRE(trie.search("apple"));
-  REQUIRE_FALSE(trie.search("app"));
-  REQUIRE(trie.startsWith("app"));
+  REQUIRE(true == trie.search("apple"));
+  REQUIRE(false == trie.search("app"));
+  REQUIRE(true == trie.startsWith("app"));
   trie.insert("app");
-  REQUIRE(trie.search("app"));
+  REQUIRE(true == trie.search("app"));
 }

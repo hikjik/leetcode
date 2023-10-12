@@ -3,14 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{10, 4, 8, 3};
-    std::vector<int> diff{15, 1, 11, 22};
-    REQUIRE(diff == Solution::leftRigthDifference(nums));
-  }
-  {
-    std::vector<int> nums{1};
-    std::vector<int> diff{0};
-    REQUIRE(diff == Solution::leftRigthDifference(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{10, 4, 8, 3},
+          .expected{15, 1, 11, 22},
+      },
+      {
+          .nums{1},
+          .expected{0},
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::leftRightDifference(nums);
+    REQUIRE(expected == actual);
   }
 }

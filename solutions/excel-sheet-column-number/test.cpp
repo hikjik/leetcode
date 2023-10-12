@@ -3,7 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(1 == Solution::titleToNumber("A"));
-  REQUIRE(28 == Solution::titleToNumber("AB"));
-  REQUIRE(701 == Solution::titleToNumber("ZY"));
+  struct TestCase {
+    std::string columnTitle;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .columnTitle = "A",
+          .expected = 1,
+      },
+      {
+          .columnTitle = "AB",
+          .expected = 28,
+      },
+      {
+          .columnTitle = "ZY",
+          .expected = 701,
+      },
+  };
+
+  for (const auto &[columnTitle, expected] : test_cases) {
+    const auto actual = Solution::titleToNumber(columnTitle);
+    REQUIRE(expected == actual);
+  }
 }

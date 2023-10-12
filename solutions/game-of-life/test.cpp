@@ -3,18 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> board{
-        {0, 1, 0}, {0, 0, 1}, {1, 1, 1}, {0, 0, 0}};
+  struct TestCase {
+    std::vector<std::vector<int>> board;
+    std::vector<std::vector<int>> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .board{{0, 1, 0}, {0, 0, 1}, {1, 1, 1}, {0, 0, 0}},
+          .expected{{0, 0, 0}, {1, 0, 1}, {0, 1, 1}, {0, 1, 0}},
+      },
+      {
+          .board{{1, 1}, {1, 0}},
+          .expected{{1, 1}, {1, 1}},
+      },
+  };
+
+  for (auto &[board, expected] : test_cases) {
     Solution::gameOfLife(board);
-    std::vector<std::vector<int>> expected{
-        {0, 0, 0}, {1, 0, 1}, {0, 1, 1}, {0, 1, 0}};
-    REQUIRE(expected == board);
-  }
-  {
-    std::vector<std::vector<int>> board{{1, 1}, {1, 0}};
-    Solution::gameOfLife(board);
-    std::vector<std::vector<int>> expected{{1, 1}, {1, 1}};
     REQUIRE(expected == board);
   }
 }

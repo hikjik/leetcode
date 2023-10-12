@@ -3,19 +3,33 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int n = 5;
-    std::vector<std::vector<int>> edges{{0, 1, 1}, {1, 2, 1}, {2, 3, 2},
-                                        {0, 3, 2}, {0, 4, 3}, {3, 4, 3},
-                                        {1, 4, 6}};
-    std::vector<std::vector<int>> expected{{0, 1}, {2, 3, 4, 5}};
-    REQUIRE(expected == Solution::findCriticalAndPseudoCriticalEdges(n, edges));
-  }
-  {
-    int n = 5;
-    std::vector<std::vector<int>> edges{
-        {0, 1, 1}, {1, 2, 1}, {2, 3, 1}, {0, 3, 1}};
-    std::vector<std::vector<int>> expected{{}, {0, 1, 2, 3}};
-    REQUIRE(expected == Solution::findCriticalAndPseudoCriticalEdges(n, edges));
+  struct TestCase {
+    int n;
+    std::vector<std::vector<int>> edges;
+    std::vector<std::vector<int>> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 5,
+          .edges{{0, 1, 1},
+                 {1, 2, 1},
+                 {2, 3, 2},
+                 {0, 3, 2},
+                 {0, 4, 3},
+                 {3, 4, 3},
+                 {1, 4, 6}},
+          .expected{{0, 1}, {2, 3, 4, 5}},
+      },
+      {
+          .n = 4,
+          .edges{{0, 1, 1}, {1, 2, 1}, {2, 3, 1}, {0, 3, 1}},
+          .expected{{}, {0, 1, 2, 3}},
+      },
+  };
+
+  for (const auto &[n, edges, expected] : test_cases) {
+    const auto actual = Solution::findCriticalAndPseudoCriticalEdges(n, edges);
+    REQUIRE(expected == actual);
   }
 }

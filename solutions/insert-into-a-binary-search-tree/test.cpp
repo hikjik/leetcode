@@ -2,35 +2,36 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::vector<std::optional<int>> &values,
-                   const std::vector<std::optional<int>> &values_expected,
-                   int target) {
-  auto root = VectorToTree(values);
-  auto actual = Solution::insertIntoBST(root, target);
-
-  auto expected = VectorToTree(values_expected);
-
-  REQUIRE(EqualTree(actual, expected));
-
-  FreeTree(actual);
-  FreeTree(expected);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{4, 2, 7, 1, 3};
-    std::vector<std::optional<int>> expected{4, 2, 7, 1, 3, 5};
-    int target = 5;
-    CheckSolution(values, expected, target);
-  }
-  {
-    std::vector<std::optional<int>> values{40, 20, 60, 10, 30, 50, 70};
-    std::vector<std::optional<int>> expected{
-        40, 20, 60, 10, 30, 50, 70, std::nullopt, std::nullopt, 25};
-    int target = 25;
-    CheckSolution(values, expected, target);
+  struct TestCase {
+    Tree root;
+    int val;
+    Tree expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{4, 2, 7, 1, 3},
+          .val = 5,
+          .expected{4, 2, 7, 1, 3, 5},
+      },
+      {
+          .root{40, 20, 60, 10, 30, 50, 70},
+          .val = 25,
+          .expected{40, 20, 60, 10, 30, 50, 70, std::nullopt, std::nullopt, 25},
+      },
+      {
+          .root{4, 2, 7, 1, 3, std::nullopt, std::nullopt, std::nullopt,
+                std::nullopt, std::nullopt, std::nullopt},
+          .val = 5,
+          .expected{4, 2, 7, 1, 3, 5},
+      },
+  };
+
+  for (const auto &[root, val, expected] : test_cases) {
+    const Tree actual = Solution::insertIntoBST(Copy(root), val);
+    REQUIRE(expected == actual);
   }
 }

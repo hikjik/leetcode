@@ -18,8 +18,8 @@ private:
 
 public:
   static std::vector<std::string>
-  findWords(std::vector<std::vector<char>> &board,
-            std::vector<std::string> &words) {
+  findWords(std::vector<std::vector<char>> board,
+            const std::vector<std::string> &words) {
     const int m = board.size(), n = board.back().size();
 
     auto root = std::make_unique<TrieNode>();

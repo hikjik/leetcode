@@ -3,20 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> grid{{0, 1}, {1, 0}};
-    REQUIRE(1 == Solution::shortestBridge(grid));
-  }
-  {
-    std::vector<std::vector<int>> grid{{0, 1, 0}, {0, 0, 0}, {0, 0, 1}};
-    REQUIRE(2 == Solution::shortestBridge(grid));
-  }
-  {
-    std::vector<std::vector<int>> grid{{1, 1, 1, 1, 1},
-                                       {1, 0, 0, 0, 1},
-                                       {1, 0, 1, 0, 1},
-                                       {1, 0, 0, 0, 1},
-                                       {1, 1, 1, 1, 1}};
-    REQUIRE(1 == Solution::shortestBridge(grid));
+  struct TestCase {
+    std::vector<std::vector<int>> grid;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .grid{{0, 1}, {1, 0}},
+          .expected = 1,
+      },
+      {
+          .grid{{0, 1, 0}, {0, 0, 0}, {0, 0, 1}},
+          .expected = 2,
+      },
+      {
+          .grid{{1, 1, 1, 1, 1},
+                {1, 0, 0, 0, 1},
+                {1, 0, 1, 0, 1},
+                {1, 0, 0, 0, 1},
+                {1, 1, 1, 1, 1}},
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[grid, expected] : test_cases) {
+    const auto actual = Solution::shortestBridge(grid);
+    REQUIRE(expected == actual);
   }
 }

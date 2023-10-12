@@ -3,7 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(4 == Solution::rangeBitwiseAnd(5, 7));
-  REQUIRE(0 == Solution::rangeBitwiseAnd(0, 0));
-  REQUIRE(0 == Solution::rangeBitwiseAnd(1, 2147483647));
+  struct TestCase {
+    int left;
+    int right;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .left = 5,
+          .right = 7,
+          .expected = 4,
+      },
+      {
+          .left = 0,
+          .right = 0,
+          .expected = 0,
+      },
+      {
+          .left = 1,
+          .right = 2147483647,
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[left, right, expected] : test_cases) {
+    const auto actual = Solution::rangeBitwiseAnd(left, right);
+    REQUIRE(expected == actual);
+  }
 }

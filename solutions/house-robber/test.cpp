@@ -3,12 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 2, 3, 1};
-    REQUIRE(4 == Solution::rob(nums));
-  }
-  {
-    std::vector<int> nums{2, 7, 9, 3, 1};
-    REQUIRE(12 == Solution::rob(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 3, 1},
+          .expected = 4,
+      },
+      {
+          .nums{2, 7, 9, 3, 1},
+          .expected = 12,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::rob(nums);
+    REQUIRE(expected == actual);
   }
 }

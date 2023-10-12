@@ -3,16 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> matrix{{1}};
-    REQUIRE(matrix == Solution::generateMatrix(1));
-  }
-  {
-    std::vector<std::vector<int>> matrix{{1, 2}, {4, 3}};
-    REQUIRE(matrix == Solution::generateMatrix(2));
-  }
-  {
-    std::vector<std::vector<int>> matrix{{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
-    REQUIRE(matrix == Solution::generateMatrix(3));
+  struct TestCase {
+    int n;
+    std::vector<std::vector<int>> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 3,
+          .expected{{1, 2, 3}, {8, 9, 4}, {7, 6, 5}},
+      },
+      {
+          .n = 1,
+          .expected{{1}},
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::generateMatrix(n);
+    REQUIRE(expected == actual);
   }
 }

@@ -3,19 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> coins{1, 2, 5};
-    int amount = 5;
-    REQUIRE(4 == Solution::change(amount, coins));
-  }
-  {
-    std::vector<int> coins{2};
-    int amount = 3;
-    REQUIRE(0 == Solution::change(amount, coins));
-  }
-  {
-    std::vector<int> coins{10};
-    int amount = 10;
-    REQUIRE(1 == Solution::change(amount, coins));
+  struct TestCase {
+    int amount;
+    std::vector<int> coins;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .amount = 5,
+          .coins{1, 2, 5},
+          .expected = 4,
+      },
+      {
+          .amount = 3,
+          .coins{2},
+          .expected = 0,
+      },
+      {
+          .amount = 10,
+          .coins{10},
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[amount, coins, expected] : test_cases) {
+    const auto actual = Solution::change(amount, coins);
+    REQUIRE(expected == actual);
   }
 }

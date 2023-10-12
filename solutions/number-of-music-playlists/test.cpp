@@ -3,16 +3,36 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int n = 3, goal = 3, k = 1;
-    REQUIRE(6 == Solution::numMusicPlaylists(n, goal, k));
-  }
-  {
-    int n = 2, goal = 3, k = 0;
-    REQUIRE(6 == Solution::numMusicPlaylists(n, goal, k));
-  }
-  {
-    int n = 2, goal = 3, k = 1;
-    REQUIRE(2 == Solution::numMusicPlaylists(n, goal, k));
+  struct TestCase {
+    int n;
+    int goal;
+    int k;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 3,
+          .goal = 3,
+          .k = 1,
+          .expected = 6,
+      },
+      {
+          .n = 2,
+          .goal = 3,
+          .k = 0,
+          .expected = 6,
+      },
+      {
+          .n = 2,
+          .goal = 3,
+          .k = 1,
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[n, goal, k, expected] : test_cases) {
+    const auto actual = Solution::numMusicPlaylists(n, goal, k);
+    REQUIRE(expected == actual);
   }
 }

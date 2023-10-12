@@ -3,14 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 2, 3};
-    int target = 4;
-    REQUIRE(7 == Solution::combinationSum4(nums, target));
-  }
-  {
-    std::vector<int> nums{9};
-    int target = 3;
-    REQUIRE(0 == Solution::combinationSum4(nums, target));
+  struct TestCase {
+    std::vector<int> nums;
+    int target;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 3},
+          .target = 4,
+          .expected = 7,
+      },
+      {
+          .nums{9},
+          .target = 3,
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[nums, target, expected] : test_cases) {
+    const auto actual = Solution::combinationSum4(nums, target);
+    REQUIRE(expected == actual);
   }
 }

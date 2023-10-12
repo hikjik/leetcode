@@ -6,7 +6,7 @@
 
 class Solution {
 public:
-  static int numSubmatrixSumTarget(std::vector<std::vector<int>> &mat,
+  static int numSubmatrixSumTarget(std::vector<std::vector<int>> mat,
                                    int target) {
     const int rows = mat.size(), cols = mat.back().size();
 

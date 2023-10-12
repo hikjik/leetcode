@@ -3,20 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 2, 3, 4};
-    REQUIRE_FALSE(Solution::find132pattern(nums));
-  }
-  {
-    std::vector<int> nums{3, 1, 4, 2};
-    REQUIRE(Solution::find132pattern(nums));
-  }
-  {
-    std::vector<int> nums{-1, 3, 2, 0};
-    REQUIRE(Solution::find132pattern(nums));
-  }
-  {
-    std::vector<int> nums{1, 0, 1, -4, -3};
-    REQUIRE_FALSE(Solution::find132pattern(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 2, 3, 4},
+          .expected = false,
+      },
+      {
+          .nums{3, 1, 4, 2},
+          .expected = true,
+      },
+      {
+          .nums{-1, 3, 2, 0},
+          .expected = true,
+      },
+      {
+          .nums{1, 0, 1, -4, -3},
+          .expected = false,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::find132pattern(nums);
+    REQUIRE(expected == actual);
   }
 }

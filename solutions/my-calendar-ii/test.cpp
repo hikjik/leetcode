@@ -3,11 +3,12 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  MyCalendarTwo calendar;
-  REQUIRE(calendar.book(10, 20));
-  REQUIRE(calendar.book(50, 60));
-  REQUIRE(calendar.book(10, 40));
-  REQUIRE_FALSE(calendar.book(5, 15));
-  REQUIRE(calendar.book(5, 10));
-  REQUIRE(calendar.book(25, 55));
+  auto my_calendar_two = MyCalendarTwo();
+
+  REQUIRE(true == my_calendar_two.book(10, 20));
+  REQUIRE(true == my_calendar_two.book(50, 60));
+  REQUIRE(true == my_calendar_two.book(10, 40));
+  REQUIRE(false == my_calendar_two.book(5, 15));
+  REQUIRE(true == my_calendar_two.book(5, 10));
+  REQUIRE(true == my_calendar_two.book(25, 55));
 }

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cassert>
 #include <optional>
 #include <queue>
 #include <vector>
@@ -19,42 +20,77 @@ public:
       : val(_val), left(_left), right(_right), next(_next) {}
 };
 
-Node *VectorToTree(const std::vector<std::optional<int>> &values) {
-  if (values.empty()) {
-    return nullptr;
+Node *Copy(Node *node) {
+  if (node) {
+    assert(!node->next);
+
+    return new Node(node->val, Copy(node->left), Copy(node->right), nullptr);
   }
-
-  auto root = new Node(values.front().value());
-
-  std::queue<Node *> queue;
-  queue.push(root);
-
-  size_t i = 1;
-  while (!queue.empty()) {
-    auto node = queue.front();
-    queue.pop();
-
-    if (i < values.size() && values[i].has_value()) {
-      node->left = new Node(values[i].value());
-      queue.push(node->left);
-    }
-    ++i;
-    if (i < values.size() && values[i].has_value()) {
-      node->right = new Node(values[i].value());
-      queue.push(node->right);
-    }
-    ++i;
-  }
-
-  return root;
+  return nullptr;
 }
 
-void FreeTree(Node *root) {
-  if (!root) {
-    return;
+class Tree {
+public:
+  Tree() : root_(nullptr) {}
+
+  Tree(const Tree &other) : root_(Copy(other.root_)) {}
+
+  Tree(Tree &&other) : Tree() { Swap(other); }
+
+  Tree(std::initializer_list<std::optional<int>> list) : Tree() {
+    if (list.size() == 0) {
+      return;
+    }
+
+    auto it = list.begin();
+    assert(it->has_value());
+    root_ = new Node(it->value());
+    ++it;
+
+    std::queue<Node *> queue{{root_}};
+    while (!queue.empty()) {
+      auto node = queue.front();
+      queue.pop();
+
+      if (it != list.end()) {
+        if (it->has_value()) {
+          node->left = new Node(it->value());
+          queue.push(node->left);
+        }
+        ++it;
+      }
+
+      if (it != list.end()) {
+        if (it->has_value()) {
+          node->right = new Node(it->value());
+          queue.push(node->right);
+        }
+        ++it;
+      }
+    }
   }
 
-  FreeTree(root->left);
-  FreeTree(root->right);
-  delete root;
-}
+  Tree(Node *root) { root_ = root; }
+
+  Tree &operator=(Tree other) {
+    Swap(other);
+    return *this;
+  }
+
+  void Swap(Tree &other) { std::swap(root_, other.root_); }
+
+  ~Tree() { Clear(root_); }
+
+  operator Node *() const { return root_; }
+
+private:
+  void Clear(Node *node) {
+    if (node) {
+      Clear(node->left);
+      Clear(node->right);
+      delete node;
+    }
+  }
+
+  Node *root_;
+};

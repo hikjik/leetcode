@@ -3,12 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{2, 1, 2};
-    REQUIRE(5 == Solution::largestPerimeter(nums));
-  }
-  {
-    std::vector<int> nums{1, 2, 1, 10};
-    REQUIRE(0 == Solution::largestPerimeter(nums));
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{2, 1, 2},
+          .expected = 5,
+      },
+      {
+          .nums{1, 2, 1, 10},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::largestPerimeter(nums);
+    REQUIRE(expected == actual);
   }
 }

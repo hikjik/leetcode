@@ -3,7 +3,8 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  SORTracker tracker;
+  auto tracker = SORTracker();
+
   tracker.add("bradford", 2);
   tracker.add("branford", 3);
   REQUIRE("branford" == tracker.get());

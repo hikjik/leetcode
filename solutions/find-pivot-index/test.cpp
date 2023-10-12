@@ -2,21 +2,29 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 7, 3, 6, 5, 6};
-    REQUIRE(3 == Solution::pivotIndex(nums));
-  }
+  struct TestCase {
+    std::vector<int> nums;
+    int expected;
+  };
 
-  {
-    std::vector<int> nums{1, 2, 3};
-    REQUIRE(-1 == Solution::pivotIndex(nums));
-  }
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 7, 3, 6, 5, 6},
+          .expected = 3,
+      },
+      {
+          .nums{1, 2, 3},
+          .expected = -1,
+      },
+      {
+          .nums{2, 1, -1},
+          .expected = 0,
+      },
+  };
 
-  {
-    std::vector<int> nums{2, 1, -1};
-    REQUIRE(0 == Solution::pivotIndex(nums));
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::pivotIndex(nums);
+    REQUIRE(expected == actual);
   }
 }

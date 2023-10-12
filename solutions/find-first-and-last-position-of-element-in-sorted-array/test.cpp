@@ -3,19 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{5, 7, 7, 8, 8, 10};
-    std::vector<int> expected{3, 4};
-    REQUIRE(expected == Solution::searchRange(nums, 8));
-  }
-  {
-    std::vector<int> nums{5, 7, 7, 8, 8, 10};
-    std::vector<int> expected{-1, -1};
-    REQUIRE(expected == Solution::searchRange(nums, 6));
-  }
-  {
+  struct TestCase {
     std::vector<int> nums;
-    std::vector<int> expected{-1, -1};
-    REQUIRE(expected == Solution::searchRange(nums, 0));
+    int target;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{5, 7, 7, 8, 8, 10},
+          .target = 8,
+          .expected{3, 4},
+      },
+      {
+          .nums{5, 7, 7, 8, 8, 10},
+          .target = 6,
+          .expected{-1, -1},
+      },
+      {
+          .nums{},
+          .target = 0,
+          .expected{-1, -1},
+      },
+  };
+
+  for (const auto &[nums, target, expected] : test_cases) {
+    const auto actual = Solution::searchRange(nums, target);
+    REQUIRE(expected == actual);
   }
 }

@@ -2,41 +2,24 @@
 
 #include <solution.hpp>
 
-#include <algorithm>
-
 TEST_CASE("Simple") {
-  {
-    std::string s("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT");
-    std::vector<std::string> expected{"AAAAACCCCC", "CCCCCAAAAA"};
-    auto actual = Solution::findRepeatedDnaSequences(s);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
-  }
-  {
-    std::string s("AAAAAAAAAAAAA");
-    std::vector<std::string> expected{"AAAAAAAAAA"};
-    auto actual = Solution::findRepeatedDnaSequences(s);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
-  }
-  {
-    std::string s("AAAAAAAAAAA");
-    std::vector<std::string> expected{"AAAAAAAAAA"};
-    auto actual = Solution::findRepeatedDnaSequences(s);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
-  }
-  {
-    std::string s(
-        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-    std::vector<std::string> expected{"AAAAAAAAAA"};
+  struct TestCase {
+    std::string s;
+    std::vector<std::string> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
+          .expected{"AAAAACCCCC", "CCCCCAAAAA"},
+      },
+      {
+          .s = "AAAAAAAAAAAAA",
+          .expected{"AAAAAAAAAA"},
+      },
+  };
+
+  for (const auto &[s, expected] : test_cases) {
     auto actual = Solution::findRepeatedDnaSequences(s);
     std::sort(actual.begin(), actual.end());
     REQUIRE(expected == actual);

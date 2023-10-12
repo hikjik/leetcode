@@ -5,7 +5,7 @@
 
 class Solution {
 public:
-  static std::vector<int> nextGreaterElements(std::vector<int> &nums) {
+  static std::vector<int> nextGreaterElements(const std::vector<int> &nums) {
     int n = nums.size();
     std::stack<std::pair<int, int>> stack;
     std::vector<int> greater_elements(n, -1);

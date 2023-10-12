@@ -3,16 +3,31 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> difficulty{2, 4, 6, 8, 10};
-    std::vector<int> profit{10, 20, 30, 40, 50};
-    std::vector<int> workers{4, 5, 6, 7};
-    REQUIRE(100 == Solution::maxProfitAssignment(difficulty, profit, workers));
-  }
-  {
-    std::vector<int> difficulty{85, 47, 57};
-    std::vector<int> profit{24, 66, 99};
-    std::vector<int> workers{40, 25, 25};
-    REQUIRE(0 == Solution::maxProfitAssignment(difficulty, profit, workers));
+  struct TestCase {
+    std::vector<int> difficulty;
+    std::vector<int> profit;
+    std::vector<int> worker;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .difficulty{2, 4, 6, 8, 10},
+          .profit{10, 20, 30, 40, 50},
+          .worker{4, 5, 6, 7},
+          .expected = 100,
+      },
+      {
+          .difficulty{85, 47, 57},
+          .profit{24, 66, 99},
+          .worker{40, 25, 25},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[difficulty, profit, worker, expected] : test_cases) {
+    const auto actual =
+        Solution::maxProfitAssignment(difficulty, profit, worker);
+    REQUIRE(expected == actual);
   }
 }

@@ -2,22 +2,35 @@
 
 #include <solution.hpp>
 
-void CheckSolution(std::string s, bool is_possible) {
-  auto ans = Solution::reorganizeString(s);
-  if (is_possible) {
-    for (size_t i = 0; i + 1 < ans.size(); ++i) {
-      REQUIRE(ans[i] != ans[i + 1]);
-    }
-
-    std::sort(ans.begin(), ans.end());
-    std::sort(s.begin(), s.end());
-    REQUIRE(s == ans);
-  } else {
-    REQUIRE(ans == "");
-  }
-}
-
 TEST_CASE("Simple") {
-  CheckSolution("aab", true);
-  CheckSolution("aaab", false);
+  struct TestCase {
+    std::string s;
+    std::string expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "aab",
+          .expected = "aba",
+      },
+      {
+          .s = "aaab",
+          .expected = "",
+      },
+  };
+
+  for (auto &[s, expected] : test_cases) {
+    auto actual = Solution::reorganizeString(s);
+    if (expected.empty()) {
+      REQUIRE("" == actual);
+    } else {
+      for (size_t i = 0; i + 1 < actual.size(); ++i) {
+        REQUIRE(actual[i] != actual[i + 1]);
+      }
+
+      std::sort(actual.begin(), actual.end());
+      std::sort(expected.begin(), expected.end());
+      REQUIRE(expected == actual);
+    }
+  }
 }

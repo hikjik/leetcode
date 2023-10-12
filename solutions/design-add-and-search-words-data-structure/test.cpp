@@ -3,13 +3,13 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  auto obj = WordDictionary();
-  obj.addWord("bad");
-  obj.addWord("dad");
-  obj.addWord("mad");
+  auto word_dictionary = WordDictionary();
 
-  REQUIRE_FALSE(obj.search("pad"));
-  REQUIRE(obj.search("bad"));
-  REQUIRE(obj.search(".ad"));
-  REQUIRE(obj.search("b.."));
+  word_dictionary.addWord("bad");
+  word_dictionary.addWord("dad");
+  word_dictionary.addWord("mad");
+  REQUIRE(false == word_dictionary.search("pad"));
+  REQUIRE(true == word_dictionary.search("bad"));
+  REQUIRE(true == word_dictionary.search(".ad"));
+  REQUIRE(true == word_dictionary.search("b.."));
 }

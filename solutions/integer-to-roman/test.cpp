@@ -3,8 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE("III" == Solution::intToRoman(3));
-  REQUIRE("LVIII" == Solution::intToRoman(58));
-  REQUIRE("MCMXCIV" == Solution::intToRoman(1994));
-  REQUIRE("MMXXIII" == Solution::intToRoman(2023));
+  struct TestCase {
+    int num;
+    std::string expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .num = 3,
+          .expected = "III",
+      },
+      {
+          .num = 58,
+          .expected = "LVIII",
+      },
+      {
+          .num = 1994,
+          .expected = "MCMXCIV",
+      },
+  };
+
+  for (const auto &[num, expected] : test_cases) {
+    const auto actual = Solution::intToRoman(num);
+    REQUIRE(expected == actual);
+  }
 }

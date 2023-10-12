@@ -3,18 +3,30 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<char>> grid{{'1', '1', '1', '1', '0'},
-                                        {'1', '1', '0', '1', '0'},
-                                        {'1', '1', '0', '0', '0'},
-                                        {'0', '0', '0', '0', '0'}};
-    REQUIRE(1 == Solution::numIslands(grid));
-  }
-  {
-    std::vector<std::vector<char>> grid{{'1', '1', '0', '0', '0'},
-                                        {'1', '1', '0', '0', '0'},
-                                        {'0', '0', '1', '0', '0'},
-                                        {'0', '0', '0', '1', '1'}};
-    REQUIRE(3 == Solution::numIslands(grid));
+  struct TestCase {
+    std::vector<std::vector<char>> grid;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .grid{{'1', '1', '1', '1', '0'},
+                {'1', '1', '0', '1', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'}},
+          .expected = 1,
+      },
+      {
+          .grid{{'1', '1', '0', '0', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '1', '0', '0'},
+                {'0', '0', '0', '1', '1'}},
+          .expected = 3,
+      },
+  };
+
+  for (const auto &[grid, expected] : test_cases) {
+    const auto actual = Solution::numIslands(grid);
+    REQUIRE(expected == actual);
   }
 }

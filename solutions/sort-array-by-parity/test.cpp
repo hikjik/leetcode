@@ -3,13 +3,25 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  std::vector<int> nums{0};
-  REQUIRE(nums == Solution::sortArrayByParity(nums));
-}
+  struct TestCase {
+    std::vector<int> nums;
+    std::vector<int> expected;
+  };
 
-TEST_CASE("Is Partitioned") {
-  std::vector<int> nums{3, 1, 2, 4};
-  const auto actual = Solution::sortArrayByParity(nums);
-  REQUIRE(std::is_partitioned(actual.begin(), actual.end(),
-                              [](int a) { return a % 2 == 0; }));
+  std::vector<TestCase> test_cases{
+      {
+          .nums{3, 1, 2, 4},
+          .expected{2, 4, 3, 1},
+      },
+      {
+          .nums{0},
+          .expected{0},
+      },
+  };
+
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::sortArrayByParity(nums);
+    REQUIRE(std::is_partitioned(actual.begin(), actual.end(),
+                                [](int a) { return a % 2 == 0; }));
+  }
 }

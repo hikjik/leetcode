@@ -2,17 +2,25 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> grid{
-        {0, 0, 0, 0}, {1, 0, 1, 0}, {0, 1, 1, 0}, {0, 0, 0, 0}};
-    REQUIRE(3 == Solution::numEnclaves(grid));
-  }
-  {
-    std::vector<std::vector<int>> grid{
-        {0, 1, 1, 0}, {0, 0, 1, 0}, {0, 0, 1, 0}, {0, 0, 0, 0}};
-    REQUIRE(0 == Solution::numEnclaves(grid));
+  struct TestCase {
+    std::vector<std::vector<int>> grid;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .grid{{0, 0, 0, 0}, {1, 0, 1, 0}, {0, 1, 1, 0}, {0, 0, 0, 0}},
+          .expected = 3,
+      },
+      {
+          .grid{{0, 1, 1, 0}, {0, 0, 1, 0}, {0, 0, 1, 0}, {0, 0, 0, 0}},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[grid, expected] : test_cases) {
+    const auto actual = Solution::numEnclaves(grid);
+    REQUIRE(expected == actual);
   }
 }

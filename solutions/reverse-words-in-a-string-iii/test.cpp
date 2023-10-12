@@ -3,19 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    auto str = "Let's take LeetCode contest";
-    auto expected = "s'teL ekat edoCteeL tsetnoc";
-    REQUIRE(expected == Solution::reverseWords(str));
-  }
-  {
-    auto str = "God Ding";
-    auto expected = "doG gniD";
-    REQUIRE(expected == Solution::reverseWords(str));
-  }
-  {
-    auto str = "God";
-    auto expected = "doG";
-    REQUIRE(expected == Solution::reverseWords(str));
+  struct TestCase {
+    std::string s;
+    std::string expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "Let's take LeetCode contest",
+          .expected = "s'teL ekat edoCteeL tsetnoc",
+      },
+      {
+          .s = "God Ding",
+          .expected = "doG gniD",
+      },
+  };
+
+  for (const auto &[s, expected] : test_cases) {
+    const auto actual = Solution::reverseWords(s);
+    REQUIRE(expected == actual);
   }
 }

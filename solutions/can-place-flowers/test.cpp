@@ -3,14 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int n = 1;
-    std::vector<int> flowerbed{1, 0, 0, 0, 1};
-    REQUIRE(Solution::canPlaceFlowers(flowerbed, n));
-  }
-  {
-    int n = 2;
-    std::vector<int> flowerbed{1, 0, 0, 0, 1};
-    REQUIRE_FALSE(Solution::canPlaceFlowers(flowerbed, n));
+  struct TestCase {
+    std::vector<int> flowerbed;
+    int n;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .flowerbed{1, 0, 0, 0, 1},
+          .n = 1,
+          .expected = true,
+      },
+      {
+          .flowerbed{1, 0, 0, 0, 1},
+          .n = 2,
+          .expected = false,
+      },
+  };
+
+  for (const auto &[flowerbed, n, expected] : test_cases) {
+    const auto actual = Solution::canPlaceFlowers(flowerbed, n);
+    REQUIRE(expected == actual);
   }
 }

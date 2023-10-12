@@ -3,14 +3,16 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  MyCircularQueue q(3);
-  REQUIRE(q.enQueue(1));
-  REQUIRE(q.enQueue(2));
-  REQUIRE(q.enQueue(3));
-  REQUIRE_FALSE(q.enQueue(3));
-  REQUIRE(3 == q.Rear());
-  REQUIRE(q.isFull());
-  REQUIRE(q.deQueue());
-  REQUIRE(q.enQueue(4));
-  REQUIRE(4 == q.Rear());
+  int k = 3;
+  auto my_circular_queue = MyCircularQueue(k);
+
+  REQUIRE(true == my_circular_queue.enQueue(1));
+  REQUIRE(true == my_circular_queue.enQueue(2));
+  REQUIRE(true == my_circular_queue.enQueue(3));
+  REQUIRE(false == my_circular_queue.enQueue(4));
+  REQUIRE(3 == my_circular_queue.Rear());
+  REQUIRE(true == my_circular_queue.isFull());
+  REQUIRE(true == my_circular_queue.deQueue());
+  REQUIRE(true == my_circular_queue.enQueue(4));
+  REQUIRE(4 == my_circular_queue.Rear());
 }

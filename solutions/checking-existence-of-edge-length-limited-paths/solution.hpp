@@ -52,8 +52,8 @@ private:
 class Solution {
 public:
   static std::vector<bool>
-  distanceLimitedPathsExist(int n, std::vector<std::vector<int>> &edges,
-                            std::vector<std::vector<int>> &queries) {
+  distanceLimitedPathsExist(int n, std::vector<std::vector<int>> edges,
+                            std::vector<std::vector<int>> queries) {
     auto compare = [](const std::vector<int> &lhs,
                       const std::vector<int> &rhs) { return lhs[2] < rhs[2]; };
     for (size_t i = 0; i < queries.size(); ++i) {

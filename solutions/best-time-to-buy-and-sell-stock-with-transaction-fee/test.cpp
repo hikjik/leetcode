@@ -3,14 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> prices{1, 3, 2, 8, 4, 9};
-    int fee = 2;
-    REQUIRE(8 == Solution::maxProfit(prices, fee));
-  }
-  {
-    std::vector<int> prices{1, 3, 7, 5, 10, 3};
-    int fee = 3;
-    REQUIRE(6 == Solution::maxProfit(prices, fee));
+  struct TestCase {
+    std::vector<int> prices;
+    int fee;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .prices{1, 3, 2, 8, 4, 9},
+          .fee = 2,
+          .expected = 8,
+      },
+      {
+          .prices{1, 3, 7, 5, 10, 3},
+          .fee = 3,
+          .expected = 6,
+      },
+  };
+
+  for (const auto &[prices, fee, expected] : test_cases) {
+    const auto actual = Solution::maxProfit(prices, fee);
+    REQUIRE(expected == actual);
   }
 }

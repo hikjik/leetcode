@@ -3,7 +3,40 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(4 == Solution::nthUglyNumber(3, 2, 3, 5));
-  REQUIRE(6 == Solution::nthUglyNumber(4, 2, 3, 4));
-  REQUIRE(10 == Solution::nthUglyNumber(5, 2, 11, 13));
+  struct TestCase {
+    int n;
+    int a;
+    int b;
+    int c;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 3,
+          .a = 2,
+          .b = 3,
+          .c = 5,
+          .expected = 4,
+      },
+      {
+          .n = 4,
+          .a = 2,
+          .b = 3,
+          .c = 4,
+          .expected = 6,
+      },
+      {
+          .n = 5,
+          .a = 2,
+          .b = 11,
+          .c = 13,
+          .expected = 10,
+      },
+  };
+
+  for (const auto &[n, a, b, c, expected] : test_cases) {
+    const auto actual = Solution::nthUglyNumber(n, a, b, c);
+    REQUIRE(expected == actual);
+  }
 }

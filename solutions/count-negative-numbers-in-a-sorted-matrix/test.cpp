@@ -3,18 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> grid{
-        {4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}};
-    REQUIRE(8 == Solution::countNegatives(grid));
-  }
-  {
-    std::vector<std::vector<int>> grid{{3, 2}, {1, 0}};
-    REQUIRE(0 == Solution::countNegatives(grid));
-  }
-  {
-    std::vector<std::vector<int>> grid{
-        {-1, -1, -1}, {-1, -1, -1}, {-1, -1, -1}};
-    REQUIRE(9 == Solution::countNegatives(grid));
+  struct TestCase {
+    std::vector<std::vector<int>> grid;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .grid{{4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}},
+          .expected = 8,
+      },
+      {
+          .grid{{3, 2}, {1, 0}},
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[grid, expected] : test_cases) {
+    const auto actual = Solution::countNegatives(grid);
+    REQUIRE(expected == actual);
   }
 }

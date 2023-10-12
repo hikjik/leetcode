@@ -1,1 +1,1 @@
-add_catch(test_h-index_ii test.cpp)
+add_catch(test_h_index_ii test.cpp)

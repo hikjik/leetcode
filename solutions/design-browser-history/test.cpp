@@ -3,15 +3,17 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  auto obj = new BrowserHistory("leetcode.com");
-  obj->visit("google.com");
-  obj->visit("facebook.com");
-  obj->visit("youtube.com");
-  REQUIRE("facebook.com" == obj->back(1));
-  REQUIRE("google.com" == obj->back(1));
-  REQUIRE("facebook.com" == obj->forward(1));
-  obj->visit("linkedin.com");
-  REQUIRE("linkedin.com" == obj->forward(2));
-  REQUIRE("google.com" == obj->back(2));
-  REQUIRE("leetcode.com" == obj->back(7));
+  std::string homepage = "leetcode.com";
+  auto browser_history = BrowserHistory(homepage);
+
+  browser_history.visit("google.com");
+  browser_history.visit("facebook.com");
+  browser_history.visit("youtube.com");
+  REQUIRE("facebook.com" == browser_history.back(1));
+  REQUIRE("google.com" == browser_history.back(1));
+  REQUIRE("facebook.com" == browser_history.forward(1));
+  browser_history.visit("linkedin.com");
+  REQUIRE("linkedin.com" == browser_history.forward(2));
+  REQUIRE("google.com" == browser_history.back(2));
+  REQUIRE("leetcode.com" == browser_history.back(7));
 }

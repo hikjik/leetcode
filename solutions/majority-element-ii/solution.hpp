@@ -6,7 +6,7 @@
 
 class Solution {
 public:
-  static std::vector<int> majorityElement(std::vector<int> &nums) {
+  static std::vector<int> majorityElement(const std::vector<int> &nums) {
     int num1 = INT_MAX, num2 = INT_MAX;
     int cnt1 = 0, cnt2 = 0;
     for (auto num : nums) {

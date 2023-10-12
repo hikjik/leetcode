@@ -2,29 +2,28 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(std::vector<std::optional<int>> values) {
-  auto root = VectorToTree(values);
-
-  Codec codec;
-  auto root_decoded = codec.deserialize(codec.serialize(root));
-
-  REQUIRE(EqualTree(root, root_decoded));
-
-  FreeTree(root);
-  FreeTree(root_decoded);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{1, 2, 3, std::nullopt, std::nullopt,
-                                           4, 5};
-    CheckSolution(values);
-  }
-  {
-    std::vector<std::optional<int>> values;
-    CheckSolution(values);
+  struct TestCase {
+    Tree root;
+    Tree expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{1, 2, 3, std::nullopt, std::nullopt, 4, 5},
+          .expected{1, 2, 3, std::nullopt, std::nullopt, 4, 5},
+      },
+      {
+          .root{},
+          .expected{},
+      },
+  };
+
+  for (const auto &[root, expected] : test_cases) {
+    Codec codec;
+    const Tree actual = codec.deserialize(codec.serialize(root));
+    REQUIRE(expected == actual);
   }
 }

@@ -2,22 +2,33 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{1, 3, 5, 6};
-    int target = 5;
-    REQUIRE(2 == Solution::searchInsert(nums, target));
-  }
-  {
-    std::vector<int> nums{1, 3, 5, 6};
-    int target = 2;
-    REQUIRE(1 == Solution::searchInsert(nums, target));
-  }
-  {
-    std::vector<int> nums{1, 3, 5, 6};
-    int target = 7;
-    REQUIRE(4 == Solution::searchInsert(nums, target));
+  struct TestCase {
+    std::vector<int> nums;
+    int target;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{1, 3, 5, 6},
+          .target = 5,
+          .expected = 2,
+      },
+      {
+          .nums{1, 3, 5, 6},
+          .target = 2,
+          .expected = 1,
+      },
+      {
+          .nums{1, 3, 5, 6},
+          .target = 7,
+          .expected = 4,
+      },
+  };
+
+  for (const auto &[nums, target, expected] : test_cases) {
+    const auto actual = Solution::searchInsert(nums, target);
+    REQUIRE(expected == actual);
   }
 }

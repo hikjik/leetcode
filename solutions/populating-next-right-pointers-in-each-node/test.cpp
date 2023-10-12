@@ -2,40 +2,40 @@
 
 #include <solution.hpp>
 
+#include <tree_node_with_next.h>
+
 #include <optional>
 #include <queue>
 #include <vector>
 
-void CheckSolution(const std::vector<std::optional<int>> &values,
-                   const std::vector<std::optional<int>> &expected) {
-  auto root = VectorToTree(values);
-  Solution::connect(root);
-
-  std::vector<std::optional<int>> actual;
-  for (auto node = root; node; node = node->left) {
-    auto next = node;
-    while (next) {
-      actual.push_back(next->val);
-      next = next->next;
-    }
-    actual.push_back(std::nullopt);
-  }
-
-  REQUIRE(expected == actual);
-
-  FreeTree(root);
-}
-
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{1, 2, 3, 4, 5, 6, 7};
-    std::vector<std::optional<int>> expected{
-        1, std::nullopt, 2, 3, std::nullopt, 4, 5, 6, 7, std::nullopt};
-    CheckSolution(values, expected);
-  }
-  {
-    std::vector<std::optional<int>> values;
+  struct TestCase {
+    Tree root;
     std::vector<std::optional<int>> expected;
-    CheckSolution(values, expected);
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{1, 2, 3, 4, 5, 6, 7},
+          .expected{1, std::nullopt, 2, 3, std::nullopt, 4, 5, 6, 7,
+                    std::nullopt},
+      },
+      {
+          .root{},
+          .expected{},
+      },
+  };
+
+  for (auto &[root, expected] : test_cases) {
+    std::vector<std::optional<int>> actual;
+    for (auto node = Solution::connect(root); node; node = node->left) {
+      auto next = node;
+      while (next) {
+        actual.push_back(next->val);
+        next = next->next;
+      }
+      actual.push_back(std::nullopt);
+    }
+    REQUIRE(expected == actual);
   }
 }

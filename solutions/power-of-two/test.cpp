@@ -3,7 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(Solution::isPowerOfTwo(1));
-  REQUIRE(Solution::isPowerOfTwo(16));
-  REQUIRE_FALSE(Solution::isPowerOfTwo(3));
+  struct TestCase {
+    int n;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 1,
+          .expected = true,
+      },
+      {
+          .n = 16,
+          .expected = true,
+      },
+      {
+          .n = 3,
+          .expected = false,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::isPowerOfTwo(n);
+    REQUIRE(expected == actual);
+  }
 }

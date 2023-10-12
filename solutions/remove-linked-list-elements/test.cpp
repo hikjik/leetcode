@@ -2,35 +2,35 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
-void CheckSolution(const std::vector<int> &values, int val,
-                   const std::vector<int> &expected) {
-  auto head = VectorToList(values);
-  auto modified = Solution::removeElements(head, val);
-
-  REQUIRE(expected == ListToVector(modified));
-
-  FreeList(modified);
-}
+#include <list_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> values{1, 2, 6, 3, 4, 5, 6};
-    int val = 6;
-    std::vector<int> expected{1, 2, 3, 4, 5};
-    CheckSolution(values, val, expected);
-  }
-  {
-    std::vector<int> values;
-    int val = 1;
-    std::vector<int> expected;
-    CheckSolution(values, val, expected);
-  }
-  {
-    std::vector<int> values{7, 7, 7, 7};
-    int val = 7;
-    std::vector<int> expected;
-    CheckSolution(values, val, expected);
+  struct TestCase {
+    List head;
+    int val;
+    List expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{1, 2, 6, 3, 4, 5, 6},
+          .val = 6,
+          .expected{1, 2, 3, 4, 5},
+      },
+      {
+          .head{},
+          .val = 1,
+          .expected{},
+      },
+      {
+          .head{7, 7, 7, 7},
+          .val = 7,
+          .expected{},
+      },
+  };
+
+  for (const auto &[head, val, expected] : test_cases) {
+    const List actual = Solution::removeElements(Copy(head), val);
+    REQUIRE(expected == actual);
   }
 }

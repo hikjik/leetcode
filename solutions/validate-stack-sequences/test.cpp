@@ -3,14 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> pushed{1, 2, 3, 4, 5};
-    std::vector<int> popped{4, 5, 3, 2, 1};
-    REQUIRE(Solution::validateStackSequences(pushed, popped));
-  }
-  {
-    std::vector<int> pushed{1, 2, 3, 4, 5};
-    std::vector<int> popped{4, 3, 5, 1, 2};
-    REQUIRE_FALSE(Solution::validateStackSequences(pushed, popped));
+  struct TestCase {
+    std::vector<int> pushed;
+    std::vector<int> popped;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .pushed{1, 2, 3, 4, 5},
+          .popped{4, 5, 3, 2, 1},
+          .expected = true,
+      },
+      {
+          .pushed{1, 2, 3, 4, 5},
+          .popped{4, 3, 5, 1, 2},
+          .expected = false,
+      },
+  };
+
+  for (const auto &[pushed, popped, expected] : test_cases) {
+    const auto actual = Solution::validateStackSequences(pushed, popped);
+    REQUIRE(expected == actual);
   }
 }

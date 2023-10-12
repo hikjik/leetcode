@@ -2,19 +2,19 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
 TEST_CASE("Simple") {
-  std::vector<std::optional<int>> values{3, 1, 4, std::nullopt, 2};
-  auto root = VectorToTree(values);
+  {
+    Tree root{7, 3, 15, std::nullopt, std::nullopt, 9, 20};
+    auto iterator = BSTIterator(root);
 
-  auto iterator = new BSTIterator(root);
-  for (auto a : {1, 2, 3, 4}) {
-    REQUIRE(iterator->hasNext());
-    REQUIRE(a == iterator->next());
+    REQUIRE(3 == iterator.next());
+    REQUIRE(7 == iterator.next());
+    REQUIRE(true == iterator.hasNext());
+    REQUIRE(9 == iterator.next());
+    REQUIRE(true == iterator.hasNext());
+    REQUIRE(15 == iterator.next());
+    REQUIRE(true == iterator.hasNext());
+    REQUIRE(20 == iterator.next());
+    REQUIRE(false == iterator.hasNext());
   }
-  REQUIRE_FALSE(iterator->hasNext());
-
-  FreeTree(root);
 }

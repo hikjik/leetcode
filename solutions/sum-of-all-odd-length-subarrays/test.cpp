@@ -3,16 +3,28 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> arr{1, 4, 2, 5, 3};
-    REQUIRE(58 == Solution::sumOddLengthSubarrays(arr));
-  }
-  {
-    std::vector<int> arr{1, 2};
-    REQUIRE(3 == Solution::sumOddLengthSubarrays(arr));
-  }
-  {
-    std::vector<int> arr{10, 11, 12};
-    REQUIRE(66 == Solution::sumOddLengthSubarrays(arr));
+  struct TestCase {
+    std::vector<int> arr;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .arr{1, 4, 2, 5, 3},
+          .expected = 58,
+      },
+      {
+          .arr{1, 2},
+          .expected = 3,
+      },
+      {
+          .arr{10, 11, 12},
+          .expected = 66,
+      },
+  };
+
+  for (const auto &[arr, expected] : test_cases) {
+    const auto actual = Solution::sumOddLengthSubarrays(arr);
+    REQUIRE(expected == actual);
   }
 }

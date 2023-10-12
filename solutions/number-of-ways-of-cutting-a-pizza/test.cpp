@@ -3,19 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int k = 3;
-    std::vector<std::string> pizza{"A..", "AAA", "..."};
-    REQUIRE(3 == Solution::ways(pizza, k));
-  }
-  {
-    int k = 3;
-    std::vector<std::string> pizza{"A..", "AA.", "..."};
-    REQUIRE(1 == Solution::ways(pizza, k));
-  }
-  {
-    int k = 1;
-    std::vector<std::string> pizza{"A..", "A..", "..."};
-    REQUIRE(1 == Solution::ways(pizza, k));
+  struct TestCase {
+    std::vector<std::string> pizza;
+    int k;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .pizza{"A..", "AAA", "..."},
+          .k = 3,
+          .expected = 3,
+      },
+      {
+          .pizza{"A..", "AA.", "..."},
+          .k = 3,
+          .expected = 1,
+      },
+      {
+          .pizza{"A..", "A..", "..."},
+          .k = 1,
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[pizza, k, expected] : test_cases) {
+    const auto actual = Solution::ways(pizza, k);
+    REQUIRE(expected == actual);
   }
 }

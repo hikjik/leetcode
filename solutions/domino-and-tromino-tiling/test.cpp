@@ -3,7 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(1 == Solution::numTilings(1));
-  REQUIRE(2 == Solution::numTilings(2));
-  REQUIRE(5 == Solution::numTilings(3));
+  struct TestCase {
+    int n;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 3,
+          .expected = 5,
+      },
+      {
+          .n = 1,
+          .expected = 1,
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::numTilings(n);
+    REQUIRE(expected == actual);
+  }
 }

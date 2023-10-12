@@ -3,14 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int n = 2;
-    std::vector<int> expected{0, 1, 1};
-    REQUIRE(expected == Solution::countBits(n));
-  }
-  {
-    int n = 5;
-    std::vector<int> expected{0, 1, 1, 2, 1, 2};
-    REQUIRE(expected == Solution::countBits(n));
+  struct TestCase {
+    int n;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 2,
+          .expected{0, 1, 1},
+      },
+      {
+          .n = 5,
+          .expected{0, 1, 1, 2, 1, 2},
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::countBits(n);
+    REQUIRE(expected == actual);
   }
 }

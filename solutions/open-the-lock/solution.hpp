@@ -7,7 +7,8 @@
 
 class Solution {
 public:
-  static int openLock(std::vector<std::string> &deadends, std::string target) {
+  static int openLock(const std::vector<std::string> &deadends,
+                      std::string target) {
     std::unordered_set<std::string> visited{deadends.begin(), deadends.end()};
     const std::string start_wheel = "0000";
     if (visited.count(start_wheel)) {

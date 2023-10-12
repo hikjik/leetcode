@@ -3,14 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::string target = "aba";
-    std::vector<std::string> words{"acca", "bbbb", "caca"};
-    REQUIRE(6 == Solution::numWays(words, target));
-  }
-  {
-    std::string target = "bab";
-    std::vector<std::string> words{"abba", "baab"};
-    REQUIRE(4 == Solution::numWays(words, target));
+  struct TestCase {
+    std::vector<std::string> words;
+    std::string target;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .words{"acca", "bbbb", "caca"},
+          .target = "aba",
+          .expected = 6,
+      },
+      {
+          .words{"abba", "baab"},
+          .target = "bab",
+          .expected = 4,
+      },
+  };
+
+  for (const auto &[words, target, expected] : test_cases) {
+    const auto actual = Solution::numWays(words, target);
+    REQUIRE(expected == actual);
   }
 }

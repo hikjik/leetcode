@@ -4,7 +4,7 @@
 
 class Solution {
 public:
-  static int pivotIndex(std::vector<int> &nums) {
+  static int pivotIndex(const std::vector<int> &nums) {
     int left = 0;
     int right = 0;
     for (size_t i = 0; i < nums.size(); ++i) {

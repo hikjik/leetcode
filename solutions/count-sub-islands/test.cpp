@@ -2,33 +2,44 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
 TEST_CASE("Simple") {
-  {
-    Grid2D<int> grid1{{1, 1, 1, 0, 0},
-                      {0, 1, 1, 1, 1},
-                      {0, 0, 0, 0, 0},
-                      {1, 0, 0, 0, 0},
-                      {1, 1, 0, 1, 1}};
-    Grid2D<int> grid2{{1, 1, 1, 0, 0},
-                      {0, 0, 1, 1, 1},
-                      {0, 1, 0, 0, 0},
-                      {1, 0, 1, 1, 0},
-                      {0, 1, 0, 1, 0}};
-    REQUIRE(3 == Solution::countSubIslands(grid1, grid2));
-  }
-  {
-    Grid2D<int> grid1{{1, 0, 1, 0, 1},
-                      {1, 1, 1, 1, 1},
-                      {0, 0, 0, 0, 0},
-                      {1, 1, 1, 1, 1},
-                      {1, 0, 1, 0, 1}};
-    Grid2D<int> grid2{{0, 0, 0, 0, 0},
-                      {1, 1, 1, 1, 1},
-                      {0, 1, 0, 1, 0},
-                      {0, 1, 0, 1, 0},
-                      {1, 0, 0, 0, 1}};
-    REQUIRE(2 == Solution::countSubIslands(grid1, grid2));
+  struct TestCase {
+    std::vector<std::vector<int>> grid1;
+    std::vector<std::vector<int>> grid2;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .grid1{{1, 1, 1, 0, 0},
+                 {0, 1, 1, 1, 1},
+                 {0, 0, 0, 0, 0},
+                 {1, 0, 0, 0, 0},
+                 {1, 1, 0, 1, 1}},
+          .grid2{{1, 1, 1, 0, 0},
+                 {0, 0, 1, 1, 1},
+                 {0, 1, 0, 0, 0},
+                 {1, 0, 1, 1, 0},
+                 {0, 1, 0, 1, 0}},
+          .expected = 3,
+      },
+      {
+          .grid1{{1, 0, 1, 0, 1},
+                 {1, 1, 1, 1, 1},
+                 {0, 0, 0, 0, 0},
+                 {1, 1, 1, 1, 1},
+                 {1, 0, 1, 0, 1}},
+          .grid2{{0, 0, 0, 0, 0},
+                 {1, 1, 1, 1, 1},
+                 {0, 1, 0, 1, 0},
+                 {0, 1, 0, 1, 0},
+                 {1, 0, 0, 0, 1}},
+          .expected = 2,
+      },
+  };
+
+  for (const auto &[grid1, grid2, expected] : test_cases) {
+    const auto actual = Solution::countSubIslands(grid1, grid2);
+    REQUIRE(expected == actual);
   }
 }

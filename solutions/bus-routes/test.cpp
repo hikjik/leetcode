@@ -3,25 +3,30 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int source = 1, target = 6;
-    std::vector<std::vector<int>> routes{{1, 2, 7}, {3, 6, 7}};
-    REQUIRE(2 == Solution::numBusesToDestination(routes, source, target));
-  }
-  {
-    int source = 15, target = 12;
-    std::vector<std::vector<int>> routes{
-        {7, 12}, {4, 5, 15}, {6}, {15, 19}, {9, 12, 13}};
-    REQUIRE(-1 == Solution::numBusesToDestination(routes, source, target));
-  }
-  {
-    int source = 5, target = 5;
-    std::vector<std::vector<int>> routes{{1, 7}, {3, 5}};
-    REQUIRE(0 == Solution::numBusesToDestination(routes, source, target));
-  }
-  {
-    int source = 1, target = 2;
-    std::vector<std::vector<int>> routes{{1, 2}};
-    REQUIRE(1 == Solution::numBusesToDestination(routes, source, target));
+  struct TestCase {
+    std::vector<std::vector<int>> routes;
+    int source;
+    int target;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .routes{{1, 2, 7}, {3, 6, 7}},
+          .source = 1,
+          .target = 6,
+          .expected = 2,
+      },
+      {
+          .routes{{7, 12}, {4, 5, 15}, {6}, {15, 19}, {9, 12, 13}},
+          .source = 15,
+          .target = 12,
+          .expected = -1,
+      },
+  };
+
+  for (const auto &[routes, source, target, expected] : test_cases) {
+    const auto actual = Solution::numBusesToDestination(routes, source, target);
+    REQUIRE(expected == actual);
   }
 }

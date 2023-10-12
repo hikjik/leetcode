@@ -5,7 +5,7 @@
 
 class Solution {
 public:
-  static int maxProfit(std::vector<int> &prices) {
+  static int maxProfit(const std::vector<int> &prices) {
     size_t n = prices.size();
 
     std::vector<std::vector<int>> dp(2, std::vector<int>(n, 0));

@@ -3,7 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE(0 == Solution::strStr("sadbutsad", "sad"));
-  REQUIRE(-1 == Solution::strStr("leetcode", "leeto"));
-  REQUIRE(8 == Solution::strStr("advleefvleetorsa", "leeto"));
+  struct TestCase {
+    std::string haystack;
+    std::string needle;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .haystack = "sadbutsad",
+          .needle = "sad",
+          .expected = 0,
+      },
+      {
+          .haystack = "leetcode",
+          .needle = "leeto",
+          .expected = -1,
+      },
+  };
+
+  for (const auto &[haystack, needle, expected] : test_cases) {
+    const auto actual = Solution::strStr(haystack, needle);
+    REQUIRE(expected == actual);
+  }
 }

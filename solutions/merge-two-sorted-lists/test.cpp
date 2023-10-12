@@ -1,41 +1,36 @@
 #include <catch.hpp>
-#include <list_node.h>
 
 #include <solution.hpp>
 
-#include <vector>
-
-void CheckSolution(const std::vector<int> &first,
-                   const std::vector<int> &second,
-                   const std::vector<int> &expected) {
-  auto first_list = VectorToList(first);
-  auto second_list = VectorToList(second);
-  auto merged_list = Solution::mergeTwoLists(first_list, second_list);
-
-  REQUIRE(expected == ListToVector(merged_list));
-
-  FreeList(first_list);
-  FreeList(second_list);
-  FreeList(merged_list);
-}
+#include <list_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> first{1, 2, 4};
-    std::vector<int> second{1, 3, 4};
-    std::vector<int> expected{1, 1, 2, 3, 4, 4};
-    CheckSolution(first, second, expected);
-  }
-  {
-    std::vector<int> first{};
-    std::vector<int> second{};
-    std::vector<int> expected{};
-    CheckSolution(first, second, expected);
-  }
-  {
-    std::vector<int> first{};
-    std::vector<int> second{0};
-    std::vector<int> expected{0};
-    CheckSolution(first, second, expected);
+  struct TestCase {
+    List list1;
+    List list2;
+    List expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .list1{1, 2, 4},
+          .list2{1, 3, 4},
+          .expected{1, 1, 2, 3, 4, 4},
+      },
+      {
+          .list1{},
+          .list2{},
+          .expected{},
+      },
+      {
+          .list1{},
+          .list2{0},
+          .expected{0},
+      },
+  };
+
+  for (const auto &[list1, list2, expected] : test_cases) {
+    const List actual = Solution::mergeTwoLists(list1, list2);
+    REQUIRE(expected == actual);
   }
 }

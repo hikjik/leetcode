@@ -3,14 +3,27 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int target = 1;
-    std::vector<int> nums{-1, 2, 1, -4};
-    REQUIRE(2 == Solution::threeSumClosest(nums, target));
-  }
-  {
-    int target = 1;
-    std::vector<int> nums{0, 0, 0};
-    REQUIRE(0 == Solution::threeSumClosest(nums, target));
+  struct TestCase {
+    std::vector<int> nums;
+    int target;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{-1, 2, 1, -4},
+          .target = 1,
+          .expected = 2,
+      },
+      {
+          .nums{0, 0, 0},
+          .target = 1,
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[nums, target, expected] : test_cases) {
+    const auto actual = Solution::threeSumClosest(nums, target);
+    REQUIRE(expected == actual);
   }
 }

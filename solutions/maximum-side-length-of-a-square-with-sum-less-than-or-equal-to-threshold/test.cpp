@@ -3,19 +3,33 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int threshold = 4;
-    std::vector<std::vector<int>> mat{
-        {1, 1, 3, 2, 4, 3, 2}, {1, 1, 3, 2, 4, 3, 2}, {1, 1, 3, 2, 4, 3, 2}};
-    REQUIRE(2 == Solution::maxSideLength(mat, threshold));
-  }
-  {
-    int threshold = 1;
-    std::vector<std::vector<int>> mat{{2, 2, 2, 2, 2},
-                                      {2, 2, 2, 2, 2},
-                                      {2, 2, 2, 2, 2},
-                                      {2, 2, 2, 2, 2},
-                                      {2, 2, 2, 2, 2}};
-    REQUIRE(0 == Solution::maxSideLength(mat, threshold));
+  struct TestCase {
+    std::vector<std::vector<int>> mat;
+    int threshold;
+    int expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .mat{{1, 1, 3, 2, 4, 3, 2},
+               {1, 1, 3, 2, 4, 3, 2},
+               {1, 1, 3, 2, 4, 3, 2}},
+          .threshold = 4,
+          .expected = 2,
+      },
+      {
+          .mat{{2, 2, 2, 2, 2},
+               {2, 2, 2, 2, 2},
+               {2, 2, 2, 2, 2},
+               {2, 2, 2, 2, 2},
+               {2, 2, 2, 2, 2}},
+          .threshold = 1,
+          .expected = 0,
+      },
+  };
+
+  for (const auto &[mat, threshold, expected] : test_cases) {
+    const auto actual = Solution::maxSideLength(mat, threshold);
+    REQUIRE(expected == actual);
   }
 }

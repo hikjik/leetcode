@@ -3,6 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE("jkab" == Solution::freqAlphabets("10#11#12"));
-  REQUIRE("acz" == Solution::freqAlphabets("1326#"));
+  struct TestCase {
+    std::string s;
+    std::string expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "10#11#12",
+          .expected = "jkab",
+      },
+      {
+          .s = "1326#",
+          .expected = "acz",
+      },
+  };
+
+  for (const auto &[s, expected] : test_cases) {
+    const auto actual = Solution::freqAlphabets(s);
+    REQUIRE(expected == actual);
+  }
 }

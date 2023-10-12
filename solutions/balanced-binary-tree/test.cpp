@@ -2,31 +2,31 @@
 
 #include <solution.hpp>
 
-#include <optional>
-#include <vector>
-
-void CheckSolution(const std::vector<std::optional<int>> &values,
-                   bool expected) {
-  auto root = VectorToTree(values);
-
-  REQUIRE(expected == Solution::isBalanced(root));
-
-  FreeTree(root);
-}
+#include <tree_node.h>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::optional<int>> values{
-        3, 9, 20, std::nullopt, std::nullopt, 15, 7};
-    CheckSolution(values, true);
-  }
-  {
-    std::vector<std::optional<int>> values{
-        1, 2, 2, 3, 3, std::nullopt, std::nullopt, 4, 4};
-    CheckSolution(values, false);
-  }
-  {
-    std::vector<std::optional<int>> values;
-    CheckSolution(values, true);
+  struct TestCase {
+    Tree root;
+    bool expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .root{3, 9, 20, std::nullopt, std::nullopt, 15, 7},
+          .expected = true,
+      },
+      {
+          .root{1, 2, 2, 3, 3, std::nullopt, std::nullopt, 4, 4},
+          .expected = false,
+      },
+      {
+          .root{},
+          .expected = true,
+      },
+  };
+
+  for (const auto &[root, expected] : test_cases) {
+    const auto actual = Solution::isBalanced(root);
+    REQUIRE(expected == actual);
   }
 }

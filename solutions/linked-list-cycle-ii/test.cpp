@@ -1,9 +1,8 @@
 #include <catch.hpp>
-#include <list_node.h>
 
 #include <solution.hpp>
 
-#include <vector>
+#include <list_node.h>
 
 ListNode *Advance(ListNode *head, int n) {
   auto node = head;
@@ -13,50 +12,54 @@ ListNode *Advance(ListNode *head, int n) {
   return node;
 }
 
-void CheckSolution(const std::vector<int> &values, int pos,
-                   const std::vector<int> &expected) {
-  auto head = VectorToList(values);
-
-  ListNode *tail = nullptr;
-  if (pos != -1) {
-    auto cycle_start = Advance(head, pos);
-    tail = Advance(head, values.size() - 1);
-    tail->next = cycle_start;
+int Length(ListNode *head) {
+  int length = 0;
+  for (auto node = head; node; node = node->next) {
+    ++length;
   }
-
-  auto cycle_detected = Solution::detectCycle(head);
-
-  if (pos != -1) {
-    tail->next = nullptr;
-  }
-  REQUIRE(expected == ListToVector(cycle_detected));
-
-  FreeList(head);
+  return length;
 }
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> values{3, 2, 0, -4};
-    int pos = 1;
-    std::vector<int> expected{2, 0, -4};
-    CheckSolution(values, pos, expected);
-  }
-  {
-    std::vector<int> values{1, 2};
-    int pos = 0;
-    std::vector<int> expected{1, 2};
-    CheckSolution(values, pos, expected);
-  }
-  {
-    std::vector<int> values{1};
-    int pos = -1;
-    std::vector<int> expected;
-    CheckSolution(values, pos, expected);
-  }
-  {
-    std::vector<int> values;
-    int pos = -1;
-    std::vector<int> expected;
-    CheckSolution(values, pos, expected);
+  struct TestCase {
+    List head;
+    int pos;
+    List expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .head{3, 2, 0, -4},
+          .pos = 1,
+          .expected{2, 0, -4},
+      },
+      {
+          .head{1, 2},
+          .pos = 0,
+          .expected{1, 2},
+      },
+      {
+          .head{1},
+          .pos = -1,
+          .expected{},
+      },
+  };
+
+  for (const auto &[head, pos, expected] : test_cases) {
+    List copy(head);
+
+    ListNode *tail = nullptr;
+    if (pos != -1) {
+      tail = Advance(copy, Length(copy) - 1);
+      tail->next = Advance(copy, pos);
+    }
+
+    const auto actual = Solution::detectCycle(copy);
+
+    if (pos != -1) {
+      tail->next = nullptr;
+    }
+
+    REQUIRE(expected == List(Copy(actual)));
   }
 }

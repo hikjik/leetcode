@@ -2,22 +2,29 @@
 
 #include <solution.hpp>
 
-#include <vector>
-
 TEST_CASE("Simple") {
-  {
-    std::vector<int> test{1, 2, 3};
-    std::vector<int> expected{1, 2, 4};
-    REQUIRE(expected == Solution::plusOne(test));
-  }
-  {
-    std::vector<int> test{4, 3, 2, 1};
-    std::vector<int> expected{4, 3, 2, 2};
-    REQUIRE(expected == Solution::plusOne(test));
-  }
-  {
-    std::vector<int> test{9};
-    std::vector<int> expected{1, 0};
-    REQUIRE(expected == Solution::plusOne(test));
+  struct TestCase {
+    std::vector<int> digits;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .digits{1, 2, 3},
+          .expected{1, 2, 4},
+      },
+      {
+          .digits{4, 3, 2, 1},
+          .expected{4, 3, 2, 2},
+      },
+      {
+          .digits{9},
+          .expected{1, 0},
+      },
+  };
+
+  for (const auto &[digits, expected] : test_cases) {
+    const auto actual = Solution::plusOne(digits);
+    REQUIRE(expected == actual);
   }
 }

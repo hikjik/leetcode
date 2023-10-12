@@ -19,14 +19,24 @@ bool IsPeak(const std::vector<int> &peak,
 }
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> mat{{1, 4}, {3, 2}};
-    const auto peak = Solution::findPeakGrid(mat);
-    REQUIRE(IsPeak(peak, mat));
-  }
-  {
-    std::vector<std::vector<int>> mat{{10, 20, 15}, {21, 30, 14}, {7, 16, 32}};
-    const auto peak = Solution::findPeakGrid(mat);
-    REQUIRE(IsPeak(peak, mat));
+  struct TestCase {
+    std::vector<std::vector<int>> mat;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .mat{{1, 4}, {3, 2}},
+          .expected{0, 1},
+      },
+      {
+          .mat{{10, 20, 15}, {21, 30, 14}, {7, 16, 32}},
+          .expected{1, 1},
+      },
+  };
+
+  for (const auto &[mat, expected] : test_cases) {
+    const auto actual = Solution::findPeakGrid(mat);
+    REQUIRE(IsPeak(actual, mat));
   }
 }

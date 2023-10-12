@@ -6,11 +6,11 @@
 class Solution {
 public:
   static std::vector<std::vector<int>> threeSum(std::vector<int> nums) {
-    int n = nums.size();
-    std::vector<std::vector<int>> triplets;
+    const int n = nums.size();
 
     std::sort(nums.begin(), nums.end());
 
+    std::vector<std::vector<int>> triplets;
     for (int i = 0; i < n; ++i) {
       if (i > 0 && nums[i - 1] == nums[i]) {
         continue;
@@ -18,8 +18,7 @@ public:
 
       int l = i + 1, r = n - 1;
       while (l < r) {
-        int sum = nums[l] + nums[r] + nums[i];
-
+        const auto sum = nums[l] + nums[r] + nums[i];
         if (sum == 0) {
           triplets.push_back({nums[i], nums[l], nums[r]});
           while (l < r && nums[l] == nums[l + 1]) {
@@ -29,12 +28,7 @@ public:
             --r;
           }
         }
-
-        if (sum < 0) {
-          l++;
-        } else {
-          r--;
-        }
+        sum < 0 ? ++l : --r;
       }
     }
     return triplets;

@@ -3,14 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<std::vector<int>> intervals{{1, 3}, {2, 6}, {8, 10}, {15, 18}};
-    std::vector<std::vector<int>> expected{{1, 6}, {8, 10}, {15, 18}};
-    REQUIRE(expected == Solution::merge(intervals));
-  }
-  {
-    std::vector<std::vector<int>> intervals{{1, 4}, {4, 5}};
-    std::vector<std::vector<int>> expected{{1, 5}};
-    REQUIRE(expected == Solution::merge(intervals));
+  struct TestCase {
+    std::vector<std::vector<int>> intervals;
+    std::vector<std::vector<int>> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .intervals{{1, 3}, {2, 6}, {8, 10}, {15, 18}},
+          .expected{{1, 6}, {8, 10}, {15, 18}},
+      },
+      {
+          .intervals{{1, 4}, {4, 5}},
+          .expected{{1, 5}},
+      },
+  };
+
+  for (const auto &[intervals, expected] : test_cases) {
+    const auto actual = Solution::merge(intervals);
+    REQUIRE(expected == actual);
   }
 }

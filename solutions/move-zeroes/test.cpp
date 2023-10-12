@@ -3,21 +3,23 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<int> nums{0, 1, 0, 3, 12};
-    std::vector<int> expected{1, 3, 12, 0, 0};
-    Solution::moveZeroes(nums);
-    REQUIRE(expected == nums);
-  }
-  {
-    std::vector<int> nums{1, 1, 0, 3, 12};
-    std::vector<int> expected{1, 1, 3, 12, 0};
-    Solution::moveZeroes(nums);
-    REQUIRE(expected == nums);
-  }
-  {
-    std::vector<int> nums{0};
-    std::vector<int> expected{0};
+  struct TestCase {
+    std::vector<int> nums;
+    std::vector<int> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nums{0, 1, 0, 3, 12},
+          .expected{1, 3, 12, 0, 0},
+      },
+      {
+          .nums{0},
+          .expected{0},
+      },
+  };
+
+  for (auto &[nums, expected] : test_cases) {
     Solution::moveZeroes(nums);
     REQUIRE(expected == nums);
   }

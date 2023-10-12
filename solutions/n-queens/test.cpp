@@ -3,13 +3,25 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::vector<ChessBoard> expected{{".Q..", "...Q", "Q...", "..Q."},
-                                     {"..Q.", "Q...", "...Q", ".Q.."}};
-    REQUIRE(expected == Solution::solveNQueens(4));
-  }
-  {
-    std::vector<ChessBoard> expected{{"Q"}};
-    REQUIRE(expected == Solution::solveNQueens(1));
+  struct TestCase {
+    int n;
+    std::vector<std::vector<std::string>> expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .n = 4,
+          .expected{{".Q..", "...Q", "Q...", "..Q."},
+                    {"..Q.", "Q...", "...Q", ".Q.."}},
+      },
+      {
+          .n = 1,
+          .expected{{"Q"}},
+      },
+  };
+
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::solveNQueens(n);
+    REQUIRE(expected == actual);
   }
 }

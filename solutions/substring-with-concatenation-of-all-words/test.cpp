@@ -3,22 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    std::string s = "barfoothefoobarman";
-    std::vector<std::string> words{"foo", "bar"};
-    std::vector<int> expected{0, 9};
-    REQUIRE(expected == Solution::findSubstring(s, words));
-  }
-  {
-    std::string s = "wordgoodgoodgoodbestword";
-    std::vector<std::string> words{"word", "good", "best", "word"};
+  struct TestCase {
+    std::string s;
+    std::vector<std::string> words;
     std::vector<int> expected;
-    REQUIRE(expected == Solution::findSubstring(s, words));
-  }
-  {
-    std::string s = "barfoofoobarthefoobarman";
-    std::vector<std::string> words{"bar", "foo", "the"};
-    std::vector<int> expected{6, 9, 12};
-    REQUIRE(expected == Solution::findSubstring(s, words));
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .s = "barfoothefoobarman",
+          .words{"foo", "bar"},
+          .expected{0, 9},
+      },
+      {
+          .s = "wordgoodgoodgoodbestword",
+          .words{"word", "good", "best", "word"},
+          .expected{},
+      },
+      {
+          .s = "barfoofoobarthefoobarman",
+          .words{"bar", "foo", "the"},
+          .expected{6, 9, 12},
+      },
+  };
+
+  for (const auto &[s, words, expected] : test_cases) {
+    const auto actual = Solution::findSubstring(s, words);
+    REQUIRE(expected == actual);
   }
 }

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cassert>
 #include <optional>
 #include <queue>
 #include <vector>
@@ -19,39 +20,80 @@ public:
   }
 };
 
-Node *VectorToNAryTree(const std::vector<std::optional<int>> &values) {
-  if (values.empty()) {
-    return nullptr;
+Node *Copy(Node *node) {
+  if (node) {
+    std::vector<Node *> children;
+    for (auto *child : node->children) {
+      children.push_back(Copy(child));
+    }
+    return new Node(node->val, std::move(children));
   }
+  return nullptr;
+}
 
-  auto root = new Node(values.front().value());
+class Tree {
+public:
+  Tree() : root_(nullptr) {}
 
-  std::queue<Node *> queue;
-  queue.push(root);
+  Tree(const Tree &other) : root_(Copy(other.root_)) {}
 
-  size_t i = 1;
-  while (!queue.empty()) {
-    auto node = queue.front();
-    queue.pop();
+  Tree(Tree &&other) : Tree() { Swap(other); }
 
-    for (++i; i < values.size() && values[i].has_value(); ++i) {
-      auto child = new Node(values[i].value());
-      node->children.push_back(child);
-      queue.push(child);
+  Tree(std::initializer_list<std::optional<int>> list) : Tree() {
+    if (list.size() == 0) {
+      return;
+    }
+
+    auto it = list.begin();
+    assert(it->has_value());
+    root_ = new Node(it->value());
+    ++it;
+
+    std::queue<Node *> queue;
+    queue.push(root_);
+
+    while (!queue.empty()) {
+      auto node = queue.front();
+      queue.pop();
+
+      if (it != list.end()) {
+        ++it;
+      }
+
+      while (it != list.end() && it->has_value()) {
+        auto child = new Node(it->value());
+        node->children.push_back(child);
+        queue.push(child);
+        ++it;
+      }
     }
   }
 
-  return root;
-}
+  Tree(Node *root) { root_ = root; }
 
-void FreeNAryTree(Node *root) {
-  if (!root) {
-    return;
+  Tree &operator=(Tree other) {
+    Swap(other);
+    return *this;
   }
 
-  for (auto child : root->children) {
-    FreeNAryTree(child);
+  void Swap(Tree &other) { std::swap(root_, other.root_); }
+
+  ~Tree() { Clear(root_); }
+
+  operator Node *() const { return root_; }
+
+private:
+  void Clear(Node *node) {
+    if (!node) {
+      return;
+    }
+
+    for (auto child : node->children) {
+      Clear(child);
+    }
+
+    delete node;
   }
 
-  delete root;
-}
+  Node *root_;
+};

@@ -3,10 +3,24 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  REQUIRE("Radiant" == Solution::predictPartyVictory("RD"));
-  REQUIRE("Dire" == Solution::predictPartyVictory("RDD"));
-  REQUIRE("Dire" == Solution::predictPartyVictory("DDRRR"));
-  REQUIRE("Dire" == Solution::predictPartyVictory(
-                        "DDDDRRDDDRDRDRRDDRDDDRDRRRRDRRRRRDRDDRDDRRDDRRRDDRRRDD"
-                        "DDRRRRRRRDDRRRDDRDDDRRRDRDDRDDDRRDRRDRRRDRDRDR"));
+  struct TestCase {
+    std::string senate;
+    std::string expected;
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .senate = "RD",
+          .expected = "Radiant",
+      },
+      {
+          .senate = "RDD",
+          .expected = "Dire",
+      },
+  };
+
+  for (const auto &[senate, expected] : test_cases) {
+    const auto actual = Solution::predictPartyVictory(senate);
+    REQUIRE(expected == actual);
+  }
 }

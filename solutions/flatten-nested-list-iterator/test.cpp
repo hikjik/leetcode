@@ -2,33 +2,29 @@
 
 #include <solution.hpp>
 
-void CheckSolution(const std::vector<NestedInteger> &nested_list,
-                   const std::vector<int> expected) {
-  NestedIterator iterator(nested_list);
-  std::vector<int> flatten;
-  while (iterator.hasNext()) {
-    flatten.push_back(iterator.next());
-  }
-  REQUIRE(expected == flatten);
-}
-
 TEST_CASE("Simple") {
-  {
-    std::vector<NestedInteger> list{{NestedInteger(1), NestedInteger(1)},
-                                    NestedInteger(2),
-                                    {NestedInteger(1), NestedInteger(1)}};
-    std::vector<int> expected{1, 1, 2, 1, 1};
-    CheckSolution(list, expected);
-  }
-  {
-    std::vector<NestedInteger> list{NestedInteger(1),
-                                    {NestedInteger(4), {NestedInteger(6)}}};
-    std::vector<int> expected{1, 4, 6};
-    CheckSolution(list, expected);
-  }
-  {
-    std::vector<NestedInteger> list{{}};
+  struct TestCase {
+    std::vector<NestedInteger> nestedList;
     std::vector<int> expected;
-    CheckSolution(list, expected);
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .nestedList{{1, 1}, 2, {1, 1}},
+          .expected{1, 1, 2, 1, 1},
+      },
+      {
+          .nestedList{1, {4, {6}}},
+          .expected{1, 4, 6},
+      },
+  };
+
+  for (const auto &[nestedList, expected] : test_cases) {
+    NestedIterator iterator(nestedList);
+    std::vector<int> flatten;
+    while (iterator.hasNext()) {
+      flatten.push_back(iterator.next());
+    }
+    REQUIRE(expected == flatten);
   }
 }

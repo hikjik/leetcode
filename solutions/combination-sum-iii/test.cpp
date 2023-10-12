@@ -3,19 +3,32 @@
 #include <solution.hpp>
 
 TEST_CASE("Simple") {
-  {
-    int k = 3, n = 7;
-    std::vector<std::vector<int>> expected{{1, 2, 4}};
-    REQUIRE(expected == Solution::combinationSum3(k, n));
-  }
-  {
-    int k = 3, n = 9;
-    std::vector<std::vector<int>> expected{{1, 2, 6}, {1, 3, 5}, {2, 3, 4}};
-    REQUIRE(expected == Solution::combinationSum3(k, n));
-  }
-  {
-    int k = 4, n = 1;
+  struct TestCase {
+    int k;
+    int n;
     std::vector<std::vector<int>> expected;
-    REQUIRE(expected == Solution::combinationSum3(k, n));
+  };
+
+  std::vector<TestCase> test_cases{
+      {
+          .k = 3,
+          .n = 7,
+          .expected{{1, 2, 4}},
+      },
+      {
+          .k = 3,
+          .n = 9,
+          .expected{{1, 2, 6}, {1, 3, 5}, {2, 3, 4}},
+      },
+      {
+          .k = 4,
+          .n = 1,
+          .expected{},
+      },
+  };
+
+  for (const auto &[k, n, expected] : test_cases) {
+    const auto actual = Solution::combinationSum3(k, n);
+    REQUIRE(expected == actual);
   }
 }
