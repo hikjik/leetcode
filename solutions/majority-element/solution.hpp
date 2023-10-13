@@ -5,7 +5,7 @@
 class Solution {
 public:
   static int majorityElement(const std::vector<int> &nums) {
-    int cnt = 0, majority;
+    int cnt = 0, majority = 0;
     for (auto num : nums) {
       if (!cnt) {
         majority = num;
