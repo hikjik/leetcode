@@ -1,0 +1,1 @@
+add_catch(test_find_all_numbers_disappeared_in_an_array test.cpp)
