@@ -1,0 +1,1 @@
+add_catch(test_construct_the_rectangle test.cpp)
