@@ -1,0 +1,1 @@
+add_catch(test_convert_a_number_to_hexadecimal test.cpp)
