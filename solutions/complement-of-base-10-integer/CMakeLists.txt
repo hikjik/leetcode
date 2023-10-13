@@ -1,0 +1,1 @@
+add_catch(test_complement_of_base_10_integer test.cpp)
