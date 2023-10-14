@@ -1,0 +1,1 @@
+add_catch(test_maximum_odd_binary_number test.cpp)
