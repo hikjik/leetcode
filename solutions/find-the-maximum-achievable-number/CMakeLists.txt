@@ -1,0 +1,1 @@
+add_catch(test_find_the_maximum_achievable_number test.cpp)
