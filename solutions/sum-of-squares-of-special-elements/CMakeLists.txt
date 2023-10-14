@@ -1,0 +1,1 @@
+add_catch(test_sum_of_squares_of_special_elements test.cpp)
