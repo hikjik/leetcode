@@ -1,0 +1,1 @@
+add_catch(test_minimum_operations_to_collect_elements test.cpp)
