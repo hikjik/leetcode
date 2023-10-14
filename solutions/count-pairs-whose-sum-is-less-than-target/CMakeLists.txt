@@ -1,0 +1,1 @@
+add_catch(test_count_pairs_whose_sum_is_less_than_target test.cpp)
