@@ -1,0 +1,1 @@
+add_catch(test_account_balance_after_rounded_purchase test.cpp)
