@@ -1,0 +1,1 @@
+add_catch(test_sum_of_values_at_indices_with_k_set_bits test.cpp)
