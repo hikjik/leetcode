@@ -1,0 +1,1 @@
+add_catch(test_check_if_strings_can_be_made_equal_with_operations_i test.cpp)
