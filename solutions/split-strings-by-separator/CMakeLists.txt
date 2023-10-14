@@ -1,0 +1,1 @@
+add_catch(test_split_strings_by_separator test.cpp)
