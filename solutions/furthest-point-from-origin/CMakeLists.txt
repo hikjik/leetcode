@@ -1,0 +1,1 @@
+add_catch(test_furthest_point_from_origin test.cpp)
