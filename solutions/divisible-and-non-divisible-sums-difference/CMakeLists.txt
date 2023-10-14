@@ -1,0 +1,1 @@
+add_catch(test_divisible_and_non_divisible_sums_difference test.cpp)
