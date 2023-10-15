@@ -1,0 +1,1 @@
+add_catch(test_neither_minimum_nor_maximum test.cpp)

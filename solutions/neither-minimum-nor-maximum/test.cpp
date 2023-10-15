@@ -4,27 +4,27 @@
 
 TEST_CASE("Simple") {
   struct TestCase {
-    std::vector<std::vector<int>> nums;
+    std::vector<int> nums;
     int expected;
   };
 
   std::vector<TestCase> test_cases{
       {
-          .nums{{3, 6}, {1, 5}, {4, 7}},
-          .expected = 7,
+          .nums{3, 2, 1, 4},
+          .expected = 2,
       },
       {
-          .nums{{1, 3}, {5, 8}},
-          .expected = 7,
+          .nums{1, 2},
+          .expected = -1,
       },
       {
-          .nums{{4, 4}, {9, 10}, {9, 10}, {3, 8}},
-          .expected = 8,
+          .nums{2, 1, 3},
+          .expected = 2,
       },
   };
 
   for (const auto &[nums, expected] : test_cases) {
-    const auto actual = Solution::numberOfPoints(nums);
+    const auto actual = Solution::findNonMinOrMax(nums);
     REQUIRE(expected == actual);
   }
 }
