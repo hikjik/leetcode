@@ -1,0 +1,1 @@
+add_catch(test_remove_trailing_zeros_from_a_string test.cpp)
