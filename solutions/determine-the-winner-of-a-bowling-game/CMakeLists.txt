@@ -1,0 +1,1 @@
+add_catch(test_determine_the_winner_of_a_bowling_game test.cpp)
