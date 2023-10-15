@@ -1,0 +1,1 @@
+add_catch(test_find_indices_with_index_and_value_difference_i test.cpp)
