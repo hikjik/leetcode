@@ -1,0 +1,1 @@
+add_catch(test_minimum_string_length_after_removing_substrings test.cpp)
