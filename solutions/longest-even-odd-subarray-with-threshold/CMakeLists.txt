@@ -1,0 +1,1 @@
+add_catch(test_longest_even_odd_subarray_with_threshold test.cpp)
