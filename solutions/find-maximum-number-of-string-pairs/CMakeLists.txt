@@ -1,0 +1,1 @@
+add_catch(test_find_maximum_number_of_string_pairs test.cpp)
