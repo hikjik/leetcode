@@ -1,0 +1,1 @@
+add_catch(test_number_of_ways_to_stay_in_the_same_place_after_some_steps test.cpp)
