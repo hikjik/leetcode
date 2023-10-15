@@ -1,0 +1,1 @@
+add_catch(test_total_distance_traveled test.cpp)
