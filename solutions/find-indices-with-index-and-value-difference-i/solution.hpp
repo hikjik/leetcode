@@ -5,7 +5,7 @@
 
 class Solution {
 public:
-  static std::vector<int> findIndices(std::vector<int> &nums,
+  static std::vector<int> findIndices(const std::vector<int> &nums,
                                       int indexDifference,
                                       int valueDifference) {
     const int n = nums.size();
