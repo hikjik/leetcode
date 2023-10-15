@@ -1,0 +1,1 @@
+add_catch(test_points_that_intersect_with_cars test.cpp)
