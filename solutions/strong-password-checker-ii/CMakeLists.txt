@@ -1,0 +1,1 @@
+add_catch(test_strong_password_checker_ii test.cpp)
