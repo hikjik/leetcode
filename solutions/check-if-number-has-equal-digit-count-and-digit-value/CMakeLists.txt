@@ -1,0 +1,1 @@
+add_catch(test_check_if_number_has_equal_digit_count_and_digit_value test.cpp)
