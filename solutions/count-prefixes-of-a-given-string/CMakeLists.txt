@@ -1,0 +1,1 @@
+add_catch(test_count_prefixes_of_a_given_string test.cpp)
