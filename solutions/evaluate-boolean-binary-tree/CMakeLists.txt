@@ -1,0 +1,1 @@
+add_catch(test_evaluate_boolean_binary_tree test.cpp)
