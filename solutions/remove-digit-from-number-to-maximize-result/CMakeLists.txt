@@ -1,0 +1,1 @@
+add_catch(test_remove_digit_from_number_to_maximize_result test.cpp)
