@@ -1,0 +1,1 @@
+add_catch(test_rearrange_characters_to_make_target_string test.cpp)
