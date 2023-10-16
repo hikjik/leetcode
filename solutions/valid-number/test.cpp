@@ -11,7 +11,7 @@ TEST_CASE("VALID NUMBERS") {
   }
 }
 
-TEST_CASE("Not Valid Numbers") {
+TEST_CASE("NOT VALID NUMBERS") {
   std::vector<std::string> not_numbers{"abc", "1a",  "1e",       "e3", "99e2.5",
                                        "--6", "-+3", "95a54e53", ".",  "e"};
   for (const auto &not_number : not_numbers) {

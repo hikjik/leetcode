@@ -1,0 +1,1 @@
+add_catch(test_regular_expression_matching test.cpp)
