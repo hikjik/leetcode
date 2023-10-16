@@ -1,0 +1,1 @@
+add_catch(test_check_if_matrix_is_x_matrix test.cpp)
