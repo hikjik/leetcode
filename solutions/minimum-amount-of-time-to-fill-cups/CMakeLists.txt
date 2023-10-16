@@ -1,0 +1,1 @@
+add_catch(test_minimum_amount_of_time_to_fill_cups test.cpp)
