@@ -1,0 +1,1 @@
+add_catch(test_maximum_number_of_pairs_in_array test.cpp)
