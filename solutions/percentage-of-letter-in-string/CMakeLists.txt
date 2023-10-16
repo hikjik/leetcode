@@ -1,0 +1,1 @@
+add_catch(test_percentage_of_letter_in_string test.cpp)
