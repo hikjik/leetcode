@@ -1,0 +1,1 @@
+add_catch(test_intersection_of_multiple_arrays test.cpp)
