@@ -1,0 +1,1 @@
+add_catch(test_find_the_k_beauty_of_a_number test.cpp)
