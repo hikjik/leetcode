@@ -1,0 +1,1 @@
+add_catch(test_calculate_amount_paid_in_taxes test.cpp)
