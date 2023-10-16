@@ -1,0 +1,1 @@
+add_catch(test_find_resultant_array_after_removing_anagrams test.cpp)
