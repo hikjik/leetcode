@@ -1,0 +1,1 @@
+add_catch(test_remove_letter_to_equalize_frequency test.cpp)
