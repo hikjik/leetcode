@@ -1,0 +1,1 @@
+add_catch(test_largest_local_values_in_a_matrix test.cpp)
