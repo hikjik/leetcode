@@ -1,0 +1,1 @@
+add_catch(test_count_days_spent_together test.cpp)
