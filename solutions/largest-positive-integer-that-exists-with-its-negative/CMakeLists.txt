@@ -1,0 +1,1 @@
+add_catch(test_largest_positive_integer_that_exists_with_its_negative test.cpp)
