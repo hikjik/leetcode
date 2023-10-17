@@ -1,0 +1,1 @@
+add_catch(test_minimum_hours_of_training_to_win_a_competition test.cpp)
