@@ -1,0 +1,1 @@
+add_catch(test_longest_subsequence_with_limited_sum test.cpp)
