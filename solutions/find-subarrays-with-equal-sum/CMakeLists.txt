@@ -1,0 +1,1 @@
+add_catch(test_find_subarrays_with_equal_sum test.cpp)
