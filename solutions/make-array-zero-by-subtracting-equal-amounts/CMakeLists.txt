@@ -1,0 +1,1 @@
+add_catch(test_make_array_zero_by_subtracting_equal_amounts test.cpp)
