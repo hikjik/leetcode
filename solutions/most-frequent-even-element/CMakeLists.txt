@@ -1,0 +1,1 @@
+add_catch(test_most_frequent_even_element test.cpp)
