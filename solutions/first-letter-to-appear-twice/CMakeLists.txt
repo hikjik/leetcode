@@ -1,0 +1,1 @@
+add_catch(test_first_letter_to_appear_twice test.cpp)
