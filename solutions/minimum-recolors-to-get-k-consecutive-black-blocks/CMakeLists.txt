@@ -1,0 +1,1 @@
+add_catch(test_minimum_recolors_to_get_k_consecutive_black_blocks test.cpp)
