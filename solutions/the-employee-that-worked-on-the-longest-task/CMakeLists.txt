@@ -1,0 +1,1 @@
+add_catch(test_the_employee_that_worked_on_the_longest_task test.cpp)
