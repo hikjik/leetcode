@@ -1,0 +1,1 @@
+add_catch(test_determine_if_two_events_have_conflict test.cpp)
