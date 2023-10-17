@@ -1,0 +1,1 @@
+add_catch(test_check_distances_between_same_letters test.cpp)
