@@ -1,0 +1,1 @@
+add_catch(test_validate_binary_tree_nodes test.cpp)
