@@ -1,0 +1,1 @@
+add_catch(test_distribute_money_to_maximum_children test.cpp)
