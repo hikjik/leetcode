@@ -1,0 +1,1 @@
+add_catch(test_find_closest_number_to_zero test.cpp)
