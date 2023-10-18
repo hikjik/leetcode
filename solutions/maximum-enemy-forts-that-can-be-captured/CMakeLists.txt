@@ -1,0 +1,1 @@
+add_catch(test_maximum_enemy_forts_that_can_be_captured test.cpp)
