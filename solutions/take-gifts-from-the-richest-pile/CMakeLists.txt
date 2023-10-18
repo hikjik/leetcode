@@ -1,0 +1,1 @@
+add_catch(test_take_gifts_from_the_richest_pile test.cpp)
