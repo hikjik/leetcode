@@ -1,0 +1,1 @@
+add_catch(test_separate_the_digits_in_an_array test.cpp)
