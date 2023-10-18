@@ -1,0 +1,1 @@
+add_catch(test_number_of_even_and_odd_bits test.cpp)
