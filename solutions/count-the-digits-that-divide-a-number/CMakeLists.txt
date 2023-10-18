@@ -1,0 +1,1 @@
+add_catch(test_count_the_digits_that_divide_a_number test.cpp)
