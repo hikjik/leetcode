@@ -1,0 +1,1 @@
+add_catch(test_calculate_delayed_arrival_time test.cpp)
