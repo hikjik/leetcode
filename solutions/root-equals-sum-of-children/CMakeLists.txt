@@ -1,0 +1,1 @@
+add_catch(test_root_equals_sum_of_children test.cpp)
