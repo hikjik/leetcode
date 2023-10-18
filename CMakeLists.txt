@@ -406,6 +406,7 @@ add_task(maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshol
 add_task(maximum-subarray)
 add_task(maximum-subsequence-score)
 add_task(maximum-sum-circular-subarray)
+add_task(maximum-sum-with-exactly-k-elements)
 add_task(maximum-twin-sum-of-a-linked-list)
 add_task(maximum-value-at-a-given-index-in-a-bounded-array)
 add_task(maximum-value-of-a-string-in-an-array)
