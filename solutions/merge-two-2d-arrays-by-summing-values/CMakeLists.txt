@@ -1,0 +1,1 @@
+add_catch(test_merge_two_2d_arrays_by_summing_values test.cpp)
