@@ -1,0 +1,1 @@
+add_catch(test_find_the_distinct_difference_array test.cpp)
