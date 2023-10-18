@@ -1,0 +1,1 @@
+add_catch(test_k_items_with_the_maximum_sum test.cpp)
