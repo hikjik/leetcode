@@ -1,0 +1,1 @@
+add_catch(test_maximum_count_of_positive_integer_and_negative_integer test.cpp)
