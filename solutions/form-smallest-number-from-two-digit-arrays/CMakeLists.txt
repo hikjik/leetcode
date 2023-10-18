@@ -1,0 +1,1 @@
+add_catch(test_form_smallest_number_from_two_digit_arrays test.cpp)
