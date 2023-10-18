@@ -1,0 +1,1 @@
+add_catch(test_find_the_width_of_columns_of_a_grid test.cpp)
