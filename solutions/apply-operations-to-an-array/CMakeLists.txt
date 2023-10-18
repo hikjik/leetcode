@@ -1,0 +1,1 @@
+add_catch(test_apply_operations_to_an_array test.cpp)
