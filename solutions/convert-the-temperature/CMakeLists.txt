@@ -1,0 +1,1 @@
+add_catch(test_convert_the_temperature test.cpp)
