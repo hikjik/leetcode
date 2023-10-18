@@ -1,0 +1,1 @@
+add_catch(test_shortest_distance_to_target_string_in_a_circular_array test.cpp)
