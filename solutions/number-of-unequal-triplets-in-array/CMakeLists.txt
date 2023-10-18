@@ -1,0 +1,1 @@
+add_catch(test_number_of_unequal_triplets_in_array test.cpp)
