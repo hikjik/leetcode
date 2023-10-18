@@ -1,0 +1,1 @@
+add_catch(test_find_the_losers_of_the_circular_game test.cpp)
