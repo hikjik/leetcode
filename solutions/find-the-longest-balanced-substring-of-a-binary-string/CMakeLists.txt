@@ -1,0 +1,1 @@
+add_catch(test_find_the_longest_balanced_substring_of_a_binary_string test.cpp)
