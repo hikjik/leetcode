@@ -1,0 +1,1 @@
+add_catch(test_count_pairs_of_similar_strings test.cpp)
