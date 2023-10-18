@@ -1,0 +1,1 @@
+add_catch(test_maximum_difference_by_remapping_a_digit test.cpp)
