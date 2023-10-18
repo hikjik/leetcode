@@ -1,0 +1,1 @@
+add_catch(test_delete_greatest_value_in_each_row test.cpp)
