@@ -1,0 +1,1 @@
+add_catch(test_maximum_sum_with_exactly_k_elements test.cpp)
