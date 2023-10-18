@@ -1,0 +1,1 @@
+add_catch(test_categorize_box_according_to_criteria test.cpp)
