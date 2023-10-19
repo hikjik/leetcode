@@ -1,0 +1,1 @@
+add_catch(test_split_a_string_in_balanced_strings test.cpp)
