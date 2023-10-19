@@ -1,0 +1,1 @@
+add_catch(test_minimum_index_sum_of_two_lists test.cpp)
