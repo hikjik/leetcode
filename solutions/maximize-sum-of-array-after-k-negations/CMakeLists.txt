@@ -1,0 +1,1 @@
+add_catch(test_maximize_sum_of_array_after_k_negations test.cpp)
