@@ -1,0 +1,1 @@
+add_catch(test_occurrences_after_bigram test.cpp)
