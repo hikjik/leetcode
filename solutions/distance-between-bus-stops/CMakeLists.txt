@@ -1,0 +1,1 @@
+add_catch(test_distance_between_bus_stops test.cpp)
