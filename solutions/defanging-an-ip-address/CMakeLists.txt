@@ -1,0 +1,1 @@
+add_catch(test_defanging_an_ip_address test.cpp)
