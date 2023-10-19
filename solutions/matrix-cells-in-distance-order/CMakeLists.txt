@@ -1,0 +1,1 @@
+add_catch(test_matrix_cells_in_distance_order test.cpp)
