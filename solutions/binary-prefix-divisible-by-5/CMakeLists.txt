@@ -1,0 +1,1 @@
+add_catch(test_binary_prefix_divisible_by_5 test.cpp)
