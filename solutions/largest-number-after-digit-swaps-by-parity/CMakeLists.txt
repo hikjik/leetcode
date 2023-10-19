@@ -1,0 +1,1 @@
+add_catch(test_largest_number_after_digit_swaps_by_parity test.cpp)
