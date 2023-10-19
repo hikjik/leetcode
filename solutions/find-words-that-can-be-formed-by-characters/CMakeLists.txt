@@ -1,0 +1,1 @@
+add_catch(test_find_words_that_can_be_formed_by_characters test.cpp)
