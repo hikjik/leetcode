@@ -1,0 +1,1 @@
+add_catch(test_available_captures_for_rook test.cpp)
