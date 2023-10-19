@@ -1,0 +1,1 @@
+add_catch(test_sum_of_root_to_leaf_binary_numbers test.cpp)
