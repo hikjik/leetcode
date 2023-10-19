@@ -1,0 +1,1 @@
+add_catch(test_number_of_equivalent_domino_pairs test.cpp)
