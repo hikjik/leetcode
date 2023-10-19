@@ -1,0 +1,1 @@
+add_catch(test_minimum_cost_to_move_chips_to_the_same_position test.cpp)
