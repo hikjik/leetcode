@@ -1,0 +1,1 @@
+add_catch(test_remove_outermost_parentheses test.cpp)
