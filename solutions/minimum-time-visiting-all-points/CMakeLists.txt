@@ -1,0 +1,1 @@
+add_catch(test_minimum_time_visiting_all_points test.cpp)
