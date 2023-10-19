@@ -1,0 +1,1 @@
+add_catch(test_remove_all_adjacent_duplicates_in_string test.cpp)
