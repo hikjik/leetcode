@@ -1,0 +1,1 @@
+add_catch(test_kth_distinct_string_in_an_array test.cpp)
