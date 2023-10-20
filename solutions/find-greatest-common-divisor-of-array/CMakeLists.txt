@@ -1,0 +1,1 @@
+add_catch(test_find_greatest_common_divisor_of_array test.cpp)
