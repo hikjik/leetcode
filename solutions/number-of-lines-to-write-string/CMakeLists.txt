@@ -1,0 +1,1 @@
+add_catch(test_number_of_lines_to_write_string test.cpp)
