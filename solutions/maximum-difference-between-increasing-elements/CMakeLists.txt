@@ -1,0 +1,1 @@
+add_catch(test_maximum_difference_between_increasing_elements test.cpp)
