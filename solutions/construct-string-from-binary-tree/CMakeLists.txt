@@ -1,0 +1,1 @@
+add_catch(test_construct_string_from_binary_tree test.cpp)
