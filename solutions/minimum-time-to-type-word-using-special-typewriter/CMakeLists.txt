@@ -1,0 +1,1 @@
+add_catch(test_minimum_time_to_type_word_using_special_typewriter test.cpp)
