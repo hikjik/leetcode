@@ -1,0 +1,1 @@
+add_catch(test_check_if_numbers_are_ascending_in_a_sentence test.cpp)
