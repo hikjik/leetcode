@@ -1,0 +1,1 @@
+add_catch(test_uncommon_words_from_two_sentences test.cpp)
