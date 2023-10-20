@@ -1,0 +1,1 @@
+add_catch(test_number_of_strings_that_appear_as_substrings_in_word test.cpp)
