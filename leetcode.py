@@ -1,5 +1,6 @@
 import json
 import re
+import subprocess
 from argparse import ArgumentParser
 from dataclasses import dataclass
 from glob import glob
@@ -549,6 +550,8 @@ def create_test_file(task_path: Path, task: Task) -> None:
 
     with open(task_path / TEST_FILE, "w") as file:
         file.write(content)
+
+    subprocess.run(["clang-format", "-i", task_path / TEST_FILE])
 
 
 def create_cmake_file(task_path: Path, task: Task) -> None:
