@@ -1,0 +1,1 @@
+add_catch(test_unique_morse_code_words test.cpp)
