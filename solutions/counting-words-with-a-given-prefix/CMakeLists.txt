@@ -1,0 +1,1 @@
+add_catch(test_counting_words_with_a_given_prefix test.cpp)
