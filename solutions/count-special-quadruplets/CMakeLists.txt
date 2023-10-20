@@ -1,0 +1,1 @@
+add_catch(test_count_special_quadruplets test.cpp)
