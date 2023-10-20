@@ -1,0 +1,1 @@
+add_catch(test_positions_of_large_groups test.cpp)
