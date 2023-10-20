@@ -1,0 +1,1 @@
+add_catch(test_final_value_of_variable_after_performing_operations test.cpp)
