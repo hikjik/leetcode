@@ -1,0 +1,1 @@
+add_catch(test_shortest_distance_to_a_character test.cpp)
