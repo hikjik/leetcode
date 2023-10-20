@@ -1,0 +1,1 @@
+add_catch(test_find_if_path_exists_in_graph test.cpp)
