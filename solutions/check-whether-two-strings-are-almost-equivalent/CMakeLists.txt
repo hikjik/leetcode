@@ -1,0 +1,1 @@
+add_catch(test_check_whether_two_strings_are_almost_equivalent test.cpp)
