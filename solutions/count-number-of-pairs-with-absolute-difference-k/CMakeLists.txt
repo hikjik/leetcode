@@ -1,0 +1,1 @@
+add_catch(test_count_number_of_pairs_with_absolute_difference_k test.cpp)
