@@ -1,0 +1,1 @@
+add_catch(test_increasing_order_search_tree test.cpp)
