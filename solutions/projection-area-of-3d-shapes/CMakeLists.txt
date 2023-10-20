@@ -1,0 +1,1 @@
+add_catch(test_projection_area_of_3d_shapes test.cpp)
