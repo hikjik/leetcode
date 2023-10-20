@@ -1,0 +1,1 @@
+add_catch(test_surface_area_of_3d_shapes test.cpp)
