@@ -1,0 +1,1 @@
+add_catch(test_smallest_index_with_equal_value test.cpp)
