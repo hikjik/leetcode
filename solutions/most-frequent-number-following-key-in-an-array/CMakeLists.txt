@@ -1,0 +1,1 @@
+add_catch(test_most_frequent_number_following_key_in_an_array test.cpp)
