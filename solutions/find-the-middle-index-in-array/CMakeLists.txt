@@ -1,0 +1,1 @@
+add_catch(test_find_the_middle_index_in_array test.cpp)
