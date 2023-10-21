@@ -448,12 +448,10 @@ def create_solution_file(task_path: Path, task: Task) -> None:
     code = re.sub(r"\n\s*(.*\(.*\) \{\n)", r"\n    static \1", code)
 
     std_includes = ""
-    code, n = re.subn(r"([ (<])(vector)", r"\1std::\2", code)
-    if n:
-        std_includes += f"#include <vector>\n"
-    code, n = re.subn(r"([ (])(string )", r"\1std::\2", code)
-    if n:
-        std_includes += f"#include <string>\n"
+    for p in ["vector", "string"]:
+        code, n = re.subn(rf"([ (<])({p})", rf"\1std::\2", code)
+        if n:
+            std_includes += f"#include <{p}>\n"
 
     utils_includes = ""
     if "ListNode" in code:
