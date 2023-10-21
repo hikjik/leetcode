@@ -448,10 +448,12 @@ def create_solution_file(task_path: Path, task: Task) -> None:
     code = re.sub(r"\n\s*(.*\(.*\) \{\n)", r"\n    static \1", code)
 
     std_includes = ""
-    for p in ["vector", "string"]:
-        if p in code:
-            code = code.replace(p, "std::" + p)
-            std_includes += f"#include <{p}>\n"
+    code, n = re.subn(r"([ (<])(vector)", r"\1std::\2", code)
+    if n:
+        std_includes += f"#include <vector>\n"
+    code, n = re.subn(r"([ (])(string )", r"\1std::\2", code)
+    if n:
+        std_includes += f"#include <string>\n"
 
     utils_includes = ""
     if "ListNode" in code:
@@ -467,6 +469,8 @@ def create_solution_file(task_path: Path, task: Task) -> None:
                 utils_includes=utils_includes,
             )
         )
+
+    subprocess.run(["clang-format", "-i", task_path / SOLUTION_FILE])
 
 
 def create_test_content(task: Task) -> str:
