@@ -1,0 +1,1 @@
+add_catch(test_longest_continuous_increasing_subsequence test.cpp)
