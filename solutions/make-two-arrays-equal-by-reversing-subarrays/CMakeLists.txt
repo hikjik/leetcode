@@ -1,0 +1,1 @@
+add_catch(test_make_two_arrays_equal_by_reversing_subarrays test.cpp)
