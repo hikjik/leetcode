@@ -1,0 +1,1 @@
+add_catch(test_1_bit_and_2_bit_characters test.cpp)
