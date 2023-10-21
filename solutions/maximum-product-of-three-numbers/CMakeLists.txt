@@ -1,0 +1,1 @@
+add_catch(test_maximum_product_of_three_numbers test.cpp)
