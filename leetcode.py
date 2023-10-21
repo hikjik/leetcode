@@ -445,7 +445,9 @@ def create_description_file(task_path: Path, task: Task) -> None:
 
 def create_solution_file(task_path: Path, task: Task) -> None:
     code = task.code_snippets["cpp"]
-    code = re.sub(r"\n\s*(.*\(.*\) \{\n)", r"\n    static \1", code)
+
+    if not task.system_design:
+        code = re.sub(r"\n\s*(.*\(.*\) \{\n)", r"\n    static \1", code)
 
     std_includes = ""
     for p in ["vector", "string"]:
@@ -524,7 +526,11 @@ def create_design_test_content(task: Task) -> str:
             else:
                 if method.return_type == "double":
                     call_expr = f"Approx({call_expr})"
-                calls.append(f"REQUIRE({data.output} == {call_expr})")
+                if "vector" in method.return_type:
+                    rt = method.return_type
+                else:
+                    rt = ""
+                calls.append(f"REQUIRE({rt}{data.output} == {call_expr})")
 
         args_init = task.cls.args_initialization(test_data[0].inputs)
         constructor_init = task.cls.initialization()
