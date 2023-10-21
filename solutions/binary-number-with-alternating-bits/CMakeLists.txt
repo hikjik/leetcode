@@ -1,0 +1,1 @@
+add_catch(test_binary_number_with_alternating_bits test.cpp)
