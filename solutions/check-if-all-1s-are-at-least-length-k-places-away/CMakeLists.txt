@@ -1,0 +1,1 @@
+add_catch(test_check_if_all_1s_are_at_least_length_k_places_away test.cpp)
