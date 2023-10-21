@@ -1,0 +1,1 @@
+add_catch(test_cells_with_odd_values_in_a_matrix test.cpp)
