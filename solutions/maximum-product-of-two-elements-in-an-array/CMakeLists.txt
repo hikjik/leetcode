@@ -1,0 +1,1 @@
+add_catch(test_maximum_product_of_two_elements_in_an_array test.cpp)
