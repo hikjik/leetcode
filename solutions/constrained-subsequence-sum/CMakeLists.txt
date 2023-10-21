@@ -1,0 +1,1 @@
+add_catch(test_constrained_subsequence_sum test.cpp)
