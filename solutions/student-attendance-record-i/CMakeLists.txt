@@ -1,0 +1,1 @@
+add_catch(test_student_attendance_record_i test.cpp)
