@@ -1,0 +1,1 @@
+add_catch(test_maximum_population_year test.cpp)
