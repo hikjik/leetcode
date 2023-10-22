@@ -1,0 +1,1 @@
+add_catch(test_substrings_of_size_three_with_distinct_characters test.cpp)
