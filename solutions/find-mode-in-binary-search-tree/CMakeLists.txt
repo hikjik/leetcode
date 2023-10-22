@@ -1,0 +1,1 @@
+add_catch(test_find_mode_in_binary_search_tree test.cpp)
