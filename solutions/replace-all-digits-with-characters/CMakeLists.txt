@@ -1,0 +1,1 @@
+add_catch(test_replace_all_digits_with_characters test.cpp)
