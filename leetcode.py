@@ -447,7 +447,7 @@ def create_solution_file(task_path: Path, task: Task) -> None:
     code = task.code_snippets["cpp"]
 
     if not task.system_design:
-        code = re.sub(r"\n\s*(.*\(.*\) \{\n)", r"\n    static \1", code)
+        code = re.sub(r"\n\s*(.*\(.*\)\s*\{\s*)", r"\n  static \1", code)
 
     std_includes = ""
     for p in ["vector", "string"]:

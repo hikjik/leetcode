@@ -1,0 +1,1 @@
+add_catch(test_longest_harmonious_subsequence test.cpp)
