@@ -1,0 +1,1 @@
+add_catch(test_longest_uncommon_subsequence_i test.cpp)
