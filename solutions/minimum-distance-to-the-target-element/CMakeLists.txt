@@ -1,0 +1,1 @@
+add_catch(test_minimum_distance_to_the_target_element test.cpp)
