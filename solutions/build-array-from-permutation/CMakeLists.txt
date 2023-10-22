@@ -1,0 +1,1 @@
+add_catch(test_build_array_from_permutation test.cpp)
