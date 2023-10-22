@@ -1,0 +1,1 @@
+add_catch(test_sum_of_digits_in_base_k test.cpp)
