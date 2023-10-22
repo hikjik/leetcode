@@ -1,0 +1,1 @@
+add_catch(test_largest_odd_number_in_string test.cpp)
