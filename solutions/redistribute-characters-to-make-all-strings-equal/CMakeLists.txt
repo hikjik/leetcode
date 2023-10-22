@@ -1,0 +1,1 @@
+add_catch(test_redistribute_characters_to_make_all_strings_equal test.cpp)
