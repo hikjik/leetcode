@@ -1,0 +1,1 @@
+add_catch(test_minimum_operations_to_make_the_array_increasing test.cpp)
