@@ -1,0 +1,1 @@
+add_catch(test_check_if_the_sentence_is_pangram test.cpp)
