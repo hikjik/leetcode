@@ -1,0 +1,1 @@
+add_catch(test_check_if_all_characters_have_equal_number_of_occurrences test.cpp)
