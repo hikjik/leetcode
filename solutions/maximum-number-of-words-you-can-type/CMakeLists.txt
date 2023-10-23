@@ -1,0 +1,1 @@
+add_catch(test_maximum_number_of_words_you_can_type test.cpp)
