@@ -1,0 +1,1 @@
+add_catch(test_second_largest_digit_in_a_string test.cpp)
