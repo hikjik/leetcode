@@ -1,0 +1,1 @@
+add_catch(test_minimum_changes_to_make_alternating_binary_string test.cpp)
