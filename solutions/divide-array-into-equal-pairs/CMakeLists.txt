@@ -1,0 +1,1 @@
+add_catch(test_divide_array_into_equal_pairs test.cpp)
