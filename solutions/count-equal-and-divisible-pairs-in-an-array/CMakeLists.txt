@@ -1,0 +1,1 @@
+add_catch(test_count_equal_and_divisible_pairs_in_an_array test.cpp)
