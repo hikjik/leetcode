@@ -1,0 +1,1 @@
+add_catch(test_check_if_all_as_appears_before_all_bs test.cpp)
