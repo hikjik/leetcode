@@ -1,0 +1,1 @@
+add_catch(test_count_elements_with_strictly_smaller_and_greater_elements test.cpp)
