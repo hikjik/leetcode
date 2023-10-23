@@ -1,0 +1,1 @@
+add_catch(test_minimum_bit_flips_to_convert_number test.cpp)
