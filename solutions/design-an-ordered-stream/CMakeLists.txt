@@ -1,0 +1,1 @@
+add_catch(test_design_an_ordered_stream test.cpp)
