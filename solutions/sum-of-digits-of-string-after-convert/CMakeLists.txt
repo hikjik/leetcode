@@ -1,0 +1,1 @@
+add_catch(test_sum_of_digits_of_string_after_convert test.cpp)
