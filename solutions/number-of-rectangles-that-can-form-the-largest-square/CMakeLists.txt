@@ -1,0 +1,1 @@
+add_catch(test_number_of_rectangles_that_can_form_the_largest_square test.cpp)
