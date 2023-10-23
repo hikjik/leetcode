@@ -1,0 +1,1 @@
+add_catch(test_keep_multiplying_found_values_by_two test.cpp)
