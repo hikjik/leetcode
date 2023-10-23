@@ -1,0 +1,1 @@
+add_catch(test_replace_all_s_to_avoid_consecutive_repeating_characters test.cpp)
