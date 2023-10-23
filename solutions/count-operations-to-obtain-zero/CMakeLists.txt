@@ -1,0 +1,1 @@
+add_catch(test_count_operations_to_obtain_zero test.cpp)
