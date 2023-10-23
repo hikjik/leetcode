@@ -1,0 +1,1 @@
+add_catch(test_sort_even_and_odd_indices_independently test.cpp)
