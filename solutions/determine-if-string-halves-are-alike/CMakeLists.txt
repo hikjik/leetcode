@@ -1,0 +1,1 @@
+add_catch(test_determine_if_string_halves_are_alike test.cpp)
