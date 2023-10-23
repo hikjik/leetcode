@@ -1,0 +1,1 @@
+add_catch(test_minimum_sum_of_four_digit_number_after_splitting_digits test.cpp)
