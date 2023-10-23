@@ -1,0 +1,1 @@
+add_catch(test_count_items_matching_a_rule test.cpp)
