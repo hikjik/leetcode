@@ -1,0 +1,1 @@
+add_catch(test_determine_color_of_a_chessboard_square test.cpp)
