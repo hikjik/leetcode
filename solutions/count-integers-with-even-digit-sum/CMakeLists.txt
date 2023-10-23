@@ -1,0 +1,1 @@
+add_catch(test_count_integers_with_even_digit_sum test.cpp)
