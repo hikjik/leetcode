@@ -1,0 +1,1 @@
+add_catch(test_final_prices_with_a_special_discount_in_a_shop test.cpp)
