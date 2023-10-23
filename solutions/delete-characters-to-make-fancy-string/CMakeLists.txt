@@ -1,0 +1,1 @@
+add_catch(test_delete_characters_to_make_fancy_string test.cpp)
