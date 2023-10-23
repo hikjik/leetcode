@@ -1,0 +1,1 @@
+add_catch(test_latest_time_by_replacing_hidden_digits test.cpp)
