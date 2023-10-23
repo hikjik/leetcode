@@ -1,0 +1,1 @@
+add_catch(test_finding_3_digit_even_numbers test.cpp)
