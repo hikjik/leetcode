@@ -1,0 +1,1 @@
+add_catch(test_count_square_sum_triples test.cpp)
