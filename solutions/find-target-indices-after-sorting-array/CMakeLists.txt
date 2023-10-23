@@ -1,0 +1,1 @@
+add_catch(test_find_target_indices_after_sorting_array test.cpp)
