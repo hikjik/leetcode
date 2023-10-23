@@ -1,0 +1,1 @@
+add_catch(test_most_visited_sector_in_a_circular_track test.cpp)
