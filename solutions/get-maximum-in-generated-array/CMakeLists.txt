@@ -1,0 +1,1 @@
+add_catch(test_get_maximum_in_generated_array test.cpp)
