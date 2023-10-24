@@ -1,0 +1,1 @@
+add_catch(test_xor_operation_in_an_array test.cpp)
