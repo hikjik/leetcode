@@ -1,0 +1,1 @@
+add_catch(test_check_array_formation_through_concatenation test.cpp)
