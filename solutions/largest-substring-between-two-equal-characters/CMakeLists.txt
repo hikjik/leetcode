@@ -1,0 +1,1 @@
+add_catch(test_largest_substring_between_two_equal_characters test.cpp)
