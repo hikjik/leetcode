@@ -1,0 +1,1 @@
+add_catch(test_increasing_decreasing_string test.cpp)
