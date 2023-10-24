@@ -1,0 +1,1 @@
+add_catch(test_convert_integer_to_the_sum_of_two_no_zero_integers test.cpp)
