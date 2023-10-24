@@ -1,0 +1,1 @@
+add_catch(test_mean_of_array_after_removing_some_elements test.cpp)
