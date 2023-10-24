@@ -1,0 +1,1 @@
+add_catch(test_replace_elements_with_greatest_element_on_right_side test.cpp)
