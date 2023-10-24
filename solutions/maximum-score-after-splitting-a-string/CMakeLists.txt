@@ -1,0 +1,1 @@
+add_catch(test_maximum_score_after_splitting_a_string test.cpp)
