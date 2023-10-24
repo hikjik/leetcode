@@ -1,0 +1,1 @@
+add_catch(test_how_many_numbers_are_smaller_than_the_current_number test.cpp)
