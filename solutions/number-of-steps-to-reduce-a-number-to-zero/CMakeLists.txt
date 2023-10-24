@@ -1,0 +1,1 @@
+add_catch(test_number_of_steps_to_reduce_a_number_to_zero test.cpp)
