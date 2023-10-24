@@ -1,0 +1,1 @@
+add_catch(test_find_lucky_integer_in_an_array test.cpp)
