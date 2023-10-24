@@ -1,0 +1,1 @@
+add_catch(test_sort_array_by_increasing_frequency test.cpp)
