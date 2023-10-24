@@ -1,0 +1,1 @@
+add_catch(test_rearrange_spaces_between_words test.cpp)
