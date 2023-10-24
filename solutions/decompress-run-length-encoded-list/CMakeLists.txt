@@ -1,0 +1,1 @@
+add_catch(test_decompress_run_length_encoded_list test.cpp)
