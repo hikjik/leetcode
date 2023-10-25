@@ -1,0 +1,1 @@
+add_catch(test_remove_palindromic_subsequences test.cpp)
