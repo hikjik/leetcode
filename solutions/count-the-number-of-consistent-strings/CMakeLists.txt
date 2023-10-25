@@ -1,0 +1,1 @@
+add_catch(test_count_the_number_of_consistent_strings test.cpp)
