@@ -1,0 +1,1 @@
+add_catch(test_lucky_numbers_in_a_matrix test.cpp)
