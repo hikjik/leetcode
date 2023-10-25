@@ -1,0 +1,1 @@
+add_catch(test_find_n_unique_integers_sum_up_to_zero test.cpp)
