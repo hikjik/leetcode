@@ -1,0 +1,1 @@
+add_catch(test_find_all_k_distant_indices_in_an_array test.cpp)
