@@ -1,0 +1,1 @@
+add_catch(test_string_matching_in_an_array test.cpp)
