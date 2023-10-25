@@ -1,0 +1,1 @@
+add_catch(test_find_a_corresponding_node_of_a_binary_tree_in_a_clone_of_that_tree test.cpp)
