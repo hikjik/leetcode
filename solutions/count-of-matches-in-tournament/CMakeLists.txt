@@ -1,0 +1,1 @@
+add_catch(test_count_of_matches_in_tournament test.cpp)
