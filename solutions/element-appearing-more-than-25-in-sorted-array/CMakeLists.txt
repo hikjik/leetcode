@@ -1,0 +1,1 @@
+add_catch(test_element_appearing_more_than_25_in_sorted_array test.cpp)
