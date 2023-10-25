@@ -1,0 +1,1 @@
+add_catch(test_calculate_money_in_leetcode_bank test.cpp)
