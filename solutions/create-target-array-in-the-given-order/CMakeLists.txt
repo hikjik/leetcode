@@ -1,0 +1,1 @@
+add_catch(test_create_target_array_in_the_given_order test.cpp)
