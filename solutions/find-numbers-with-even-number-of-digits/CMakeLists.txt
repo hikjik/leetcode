@@ -1,0 +1,1 @@
+add_catch(test_find_numbers_with_even_number_of_digits test.cpp)
