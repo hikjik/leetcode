@@ -1,0 +1,1 @@
+add_catch(test_maximum_units_on_a_truck test.cpp)
