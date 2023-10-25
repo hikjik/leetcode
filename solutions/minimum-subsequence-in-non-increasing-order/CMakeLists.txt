@@ -1,0 +1,1 @@
+add_catch(test_minimum_subsequence_in_non_increasing_order test.cpp)
