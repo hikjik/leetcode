@@ -1,0 +1,1 @@
+add_catch(test_generate_a_string_with_characters_that_have_odd_counts test.cpp)
