@@ -1,0 +1,1 @@
+add_catch(test_count_vowel_substrings_of_a_string test.cpp)
