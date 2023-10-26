@@ -1,3 +1,4 @@
+import colorsys
 import json
 import re
 import subprocess
@@ -86,6 +87,103 @@ DIFFICULTY_COLOR_MAP = {
 }
 
 LEETCODE_GRAPHQL_URL = "https://leetcode.com/graphql"
+
+TAGS = [
+    "Brainteaser",
+    "Probability and Statistics",
+    "Geometry",
+    "Combinatorics",
+    "Number Theory",
+    "Game Theory",
+    "Math",
+    "Sliding Window",
+    "Two Pointers",
+    "Recursion",
+    "Counting",
+    "Enumeration",
+    "Simulation",
+    "Prefix Sum",
+    "Divide and Conquer",
+    "Rolling Hash",
+    "Hash Function",
+    "Interactive",
+    "Monotonic Queue",
+    "Monotonic Stack",
+    "Data Stream",
+    "Iterator",
+    "Graph",
+    "Breadth-First Search",
+    "Depth-First Search",
+    "Union Find",
+    "Topological Sort",
+    "Strongly Connected Component",
+    "Biconnected Component",
+    "Shortest Path",
+    "Minimum Spanning Tree",
+    "Eulerian Circuit",
+    "Bit Manipulation",
+    "Randomized",
+    "Reservoir Sampling",
+    "Rejection Sampling",
+    "Database",
+    "Concurrency",
+    "Shell",
+    "Line Sweep",
+    "Merge Sort",
+    "Quickselect",
+    "Binary Search",
+    "Counting Sort",
+    "Radix Sort",
+    "Bucket Sort",
+    "Sorting",
+    "Memoization",
+    "Dynamic Programming",
+    "Backtracking",
+    "Greedy",
+    "Bitmask",
+    "Design",
+    "Array",
+    "Matrix",
+    "Stack",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Linked List",
+    "Doubly-Linked List",
+    "Hash Table",
+    "Tree",
+    "Binary Tree",
+    "Binary Search Tree",
+    "Ordered Set",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "String",
+    "String Matching",
+    "Trie",
+    "Suffix Array",
+]
+
+
+def get_colors(
+    n: int = len(TAGS),
+    saturation: float = 1.0,
+    value: float = 1.0,
+):
+    hsv_colors = [[x * 1.0 / n, saturation, value] for x in range(n)]
+    hex_colors = []
+    for hsv in hsv_colors:
+        hsv = [int(x * 255) for x in colorsys.hsv_to_rgb(*hsv)]
+        hex_colors.append(f"{hsv[0]:02x}{hsv[1]:02x}{hsv[2]:02x}")
+    return hex_colors
+
+
+def badge(
+    tag: str,
+    style: str = "flat-square",
+    color: str = "blue",
+) -> str:
+    tag = tag.replace("-", " ")
+    url = "https://img.shields.io/badge/"
+    return f"<img src='{url}{tag}-{color}?style={style}'/>"
 
 
 @dataclass
@@ -202,6 +300,7 @@ class Task:
     cls: Class
     test_examples: list[str]
     system_design: bool
+    tags: list[str]
 
 
 TEST_DATA_MAPPINGS = {
@@ -354,6 +453,9 @@ def get_task_info(task_slug: str) -> Task:
                 langSlug
                 code
             }
+            topicTags {
+                name
+            }
             metaData
             exampleTestcaseList
         }
@@ -385,6 +487,7 @@ def get_task_info(task_slug: str) -> Task:
         cls=parse_cls(json.loads(question["metaData"])),
         test_examples=question["exampleTestcaseList"],
         system_design="systemdesign" in question["metaData"],
+        tags=[tag["name"] for tag in question["topicTags"]],
     )
 
 
@@ -451,7 +554,7 @@ def create_solution_file(task_path: Path, task: Task) -> None:
 
     std_includes = ""
     for p in ["vector", "string"]:
-        code, n = re.subn(rf"([ (<])({p})", rf"\1std::\2", code)
+        code, n = re.subn(rf"([ (<])({p})", r"\1std::\2", code)
         if n:
             std_includes += f"#include <{p}>\n"
 
@@ -590,6 +693,94 @@ def create_task_folder(task_slug: str) -> None:
     print(f"Created file: {task_path / SOLUTION_FILE}")
 
 
+def update_readme_table() -> None:
+    slugs: set[int] = set()
+    problems: list[dict[str, Any]] = []
+
+    try:
+        with open("res/problems.json", mode="r") as file:
+            for row in json.load(file):
+                slugs.add(row["Slug"])
+                problems.append(row)
+    except FileNotFoundError:
+        pass
+
+    for path in sorted(glob("./solutions/*")):
+        task_path = Path(path)
+        if task_path.name in slugs:
+            continue
+
+        try:
+            task = get_task_info(task_path.name)
+        except Exception as e:
+            print(e)
+            continue
+
+        problems.append(
+            {
+                "ID": task.frontend_id,
+                "Title": task.title,
+                "Slug": task.title_slug,
+                "Difficulty": task.difficulty,
+                "Tags": task.tags,
+                "Space": "",
+                "Time": "",
+                "Notes": "",
+            }
+        )
+
+    problems.sort(key=lambda x: int(x["ID"]))
+
+    with open("res/problems.json", mode="w") as file:
+        json.dump(problems, file)
+
+    with open("README.md", mode="r") as file:
+        lines = file.readlines()
+
+    with open("README.md", mode="w") as file:
+        for line in lines:
+            file.write(line)
+            if line.startswith("## Accepted solution"):
+                break
+
+        file.write("\n")
+        file.write(
+            "| № | Title | Solution | Difficulty | Time " "| Space | Tags | Notes |\n"
+        )
+        file.write(
+            "| - | ----- | -------- | ---------- | ---- |" " ---- | ----- | ----- |\n"
+        )
+
+        problems.sort(key=lambda x: int(x["ID"]), reverse=True)
+        colors = get_colors(saturation=0.6, value=0.5)
+        for problem in problems:
+            task_id = problem["ID"]
+            title = problem["Title"]
+            slug = problem["Slug"]
+            url = f"https://leetcode.com/problems/{slug}/"
+            difficulty_badge = badge(
+                tag=problem["Difficulty"],
+                style="flat-square",
+                color="dark" + DIFFICULTY_COLOR_MAP[problem["Difficulty"]],
+            )
+            tags = [
+                badge(tag=tag, color=colors[TAGS.index(tag)]) for tag in problem["Tags"]
+            ]
+            space = problem["Space"]
+            time = problem["Time"]
+            notes = problem["Notes"]
+            file.write(
+                f"| {task_id}. "
+                f"| [{title}]({url}) "
+                f"| [C++](./solutions/{slug}/solution.hpp) "
+                f"| {difficulty_badge} "
+                f"| {time} "
+                f"| {space}"
+                f"| {' '.join(tags)} "
+                f"| {notes} |\n"
+            )
+
+
 if __name__ == "__main__":
     parser = ArgumentParser()
     subparsers = parser.add_subparsers(title="Commands", dest="cmd")
@@ -621,6 +812,11 @@ if __name__ == "__main__":
         help="Update LeetCode Problems Description",
     )
 
+    update_readme = subparsers.add_parser(
+        "update-readme",
+        help="Update README.md",
+    )
+
     args = parser.parse_args()
 
     if args.cmd is None:
@@ -634,6 +830,8 @@ if __name__ == "__main__":
             task_path = Path(path)
             task = get_task_info(task_path.name)
             create_description_file(task_path, task)
+    elif args.cmd == "update-readme":
+        update_readme_table()
     else:
         print(f"Unknown command {args.cmd}")
         parser.print_help()
