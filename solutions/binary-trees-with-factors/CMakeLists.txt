@@ -1,0 +1,1 @@
+add_catch(test_binary_trees_with_factors test.cpp)
