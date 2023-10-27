@@ -8,8 +8,8 @@
             "Array",
             "Hash Table"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -22,8 +22,8 @@
             "Math",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n+m)",
         "Notes": ""
     },
     {
@@ -36,8 +36,8 @@
             "String",
             "Sliding Window"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -50,8 +50,8 @@
             "Binary Search",
             "Divide and Conquer"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;min(n,m))",
         "Notes": ""
     },
     {
@@ -75,8 +75,8 @@
         "Tags": [
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -87,8 +87,8 @@
         "Tags": [
             "Math"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;n)",
         "Notes": ""
     },
     {
@@ -99,8 +99,8 @@
         "Tags": [
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -111,8 +111,8 @@
         "Tags": [
             "Math"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(log&nbsp;n)",
+        "Time": "O(log&nbsp;n)",
         "Notes": ""
     },
     {
@@ -125,8 +125,8 @@
             "Dynamic Programming",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {

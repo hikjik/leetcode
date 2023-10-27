@@ -4,19 +4,16 @@
 
 class Solution {
 public:
-  static int reverse(int x) {
-    int res = 0;
-    while (x) {
-      int d = x % 10;
-      if (res > INT_MAX / 10 || res == INT_MAX / 10 && d > 7) {
+  static int reverse(int n) {
+    int ans = 0;
+    while (n) {
+      const auto r = n % 10;
+      if (ans > INT_MAX / 10 || ans < INT_MIN / 10) {
         return 0;
       }
-      if (res < INT_MIN / 10 || res == INT_MIN / 10 && d < -8) {
-        return 0;
-      }
-      res = res * 10 + d;
-      x /= 10;
+      ans = ans * 10 + r;
+      n /= 10;
     }
-    return res;
+    return ans;
   }
 };
