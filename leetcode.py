@@ -744,14 +744,9 @@ def update_readme_table() -> None:
                 break
 
         file.write("\n")
-        file.write(
-            "| № | Title | Solution | Difficulty | Time " "| Space | Tags | Notes |\n"
-        )
-        file.write(
-            "| - | ----- | -------- | ---------- | ---- |" " ---- | ----- | ----- |\n"
-        )
+        file.write("|№|Title|Code|Difficulty|Time|Space|Tags|Notes|\n")
+        file.write("|-|-----|:--:|----------|:--:|:---:|----|-----|\n")
 
-        problems.sort(key=lambda x: int(x["ID"]), reverse=True)
         colors = get_colors(saturation=0.6, value=0.5)
         for problem in problems:
             task_id = problem["ID"]
@@ -775,7 +770,7 @@ def update_readme_table() -> None:
                 f"| [C++](./solutions/{slug}/solution.hpp) "
                 f"| {difficulty_badge} "
                 f"| {time} "
-                f"| {space}"
+                f"| {space} "
                 f"| {' '.join(tags)} "
                 f"| {notes} |\n"
             )

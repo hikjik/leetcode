@@ -4,27 +4,27 @@
 
 TEST_CASE("Simple") {
   struct TestCase {
-    int x;
+    int n;
     int expected;
   };
 
   std::vector<TestCase> test_cases{
       {
-          .x = 123,
+          .n = 123,
           .expected = 321,
       },
       {
-          .x = -123,
+          .n = -123,
           .expected = -321,
       },
       {
-          .x = 120,
+          .n = 120,
           .expected = 21,
       },
   };
 
-  for (const auto &[x, expected] : test_cases) {
-    const auto actual = Solution::reverse(x);
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::reverse(n);
     REQUIRE(expected == actual);
   }
 }

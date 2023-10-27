@@ -6,20 +6,14 @@
 class Solution {
 public:
   static std::string longestCommonPrefix(const std::vector<std::string> &strs) {
-    size_t j = 0;
-    while (isEqual(j, strs)) {
-      ++j;
-    }
-    return strs.front().substr(0, j);
-  }
-
-private:
-  static bool isEqual(size_t j, const std::vector<std::string> &strs) {
-    for (const auto &str : strs) {
-      if (str.size() <= j || str[j] != strs.front()[j]) {
-        return false;
+    const int n = strs.size(), m = strs[0].size();
+    for (int j = 0; j < m; ++j) {
+      for (int i = 0; i < n; ++i) {
+        if (std::ssize(strs[i]) <= j || strs[i][j] != strs[0][j]) {
+          return strs[0].substr(0, j);
+        }
       }
     }
-    return true;
+    return strs[0];
   }
 };

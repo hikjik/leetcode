@@ -5,19 +5,19 @@
 #include <vector>
 
 class Solution {
-  static const size_t SUDOKU_SIZE = 9;
-  static const char EMPTY = '.';
+  static const size_t kSize = 9;
+  static const char kEmpty = '.';
 
 public:
   static bool isValidSudoku(const std::vector<std::vector<char>> &board) {
-    std::array<std::unordered_set<int>, SUDOKU_SIZE> rows;
-    std::array<std::unordered_set<int>, SUDOKU_SIZE> cols;
-    std::array<std::unordered_set<int>, SUDOKU_SIZE> boxes;
+    std::array<std::unordered_set<int>, kSize> rows;
+    std::array<std::unordered_set<int>, kSize> cols;
+    std::array<std::unordered_set<int>, kSize> boxes;
 
-    for (size_t i = 0; i < SUDOKU_SIZE; ++i) {
-      for (size_t j = 0; j < SUDOKU_SIZE; ++j) {
+    for (size_t i = 0; i < kSize; ++i) {
+      for (size_t j = 0; j < kSize; ++j) {
         const auto c = board[i][j];
-        if (c == EMPTY) {
+        if (c == kEmpty) {
           continue;
         }
 

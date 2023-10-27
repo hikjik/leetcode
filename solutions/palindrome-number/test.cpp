@@ -4,27 +4,27 @@
 
 TEST_CASE("Simple") {
   struct TestCase {
-    int x;
+    int n;
     bool expected;
   };
 
   std::vector<TestCase> test_cases{
       {
-          .x = 121,
+          .n = 121,
           .expected = true,
       },
       {
-          .x = -121,
+          .n = -121,
           .expected = false,
       },
       {
-          .x = 10,
+          .n = 10,
           .expected = false,
       },
   };
 
-  for (const auto &[x, expected] : test_cases) {
-    const auto actual = Solution::isPalindrome(x);
+  for (const auto &[n, expected] : test_cases) {
+    const auto actual = Solution::isPalindrome(n);
     REQUIRE(expected == actual);
   }
 }

@@ -8,8 +8,8 @@
             "Array",
             "Hash Table"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -22,8 +22,8 @@
             "Math",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n+m)",
         "Notes": ""
     },
     {
@@ -36,8 +36,8 @@
             "String",
             "Sliding Window"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -50,8 +50,8 @@
             "Binary Search",
             "Divide and Conquer"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;min(n,m))",
         "Notes": ""
     },
     {
@@ -63,9 +63,9 @@
             "String",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
-        "Notes": ""
+        "Space": "O(n)",
+        "Time": "O(n)",
+        "Notes": "[Manacher Algorithm](https://cp-algorithms.com/string/manacher.html)"
     },
     {
         "ID": "6",
@@ -75,8 +75,8 @@
         "Tags": [
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -87,8 +87,8 @@
         "Tags": [
             "Math"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;n)",
         "Notes": ""
     },
     {
@@ -99,8 +99,8 @@
         "Tags": [
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -111,8 +111,8 @@
         "Tags": [
             "Math"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(log&nbsp;n)",
+        "Time": "O(log&nbsp;n)",
         "Notes": ""
     },
     {
@@ -125,8 +125,8 @@
             "Dynamic Programming",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -139,8 +139,8 @@
             "Two Pointers",
             "Greedy"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -153,8 +153,8 @@
             "Math",
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(1)",
         "Notes": ""
     },
     {
@@ -167,8 +167,8 @@
             "Math",
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -180,8 +180,8 @@
             "String",
             "Trie"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -194,8 +194,8 @@
             "Two Pointers",
             "Sorting"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
@@ -208,8 +208,8 @@
             "Two Pointers",
             "Sorting"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
@@ -222,8 +222,8 @@
             "String",
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(4<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -236,8 +236,8 @@
             "Two Pointers",
             "Sorting"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n<sup>3</sup>)",
         "Notes": ""
     },
     {
@@ -249,8 +249,8 @@
             "Linked List",
             "Two Pointers"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -262,8 +262,8 @@
             "String",
             "Stack"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -275,8 +275,8 @@
             "Linked List",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n+m)",
         "Notes": ""
     },
     {
@@ -289,8 +289,8 @@
             "Dynamic Programming",
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(4<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -304,8 +304,8 @@
             "Heap (Priority Queue)",
             "Merge Sort"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(k)",
+        "Time": "O(n&nbsp;log&nbsp;k)",
         "Notes": ""
     },
     {
@@ -317,8 +317,8 @@
             "Linked List",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -330,8 +330,8 @@
             "Linked List",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -343,8 +343,8 @@
             "Array",
             "Two Pointers"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -356,8 +356,8 @@
             "Array",
             "Two Pointers"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -370,9 +370,9 @@
             "String",
             "String Matching"
         ],
-        "Space": "",
-        "Time": "",
-        "Notes": ""
+        "Space": "O(m)",
+        "Time": "O(n+m)",
+        "Notes": "[KMP](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)"
     },
     {
         "ID": "30",
@@ -384,8 +384,8 @@
             "String",
             "Sliding Window"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(mk)",
+        "Time": "O(nmk)",
         "Notes": ""
     },
     {
@@ -397,8 +397,8 @@
             "Array",
             "Two Pointers"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -411,8 +411,8 @@
             "Dynamic Programming",
             "Stack"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -424,8 +424,8 @@
             "Array",
             "Binary Search"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;n)",
         "Notes": ""
     },
     {
@@ -437,8 +437,8 @@
             "Array",
             "Binary Search"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;n)",
         "Notes": ""
     },
     {
@@ -450,8 +450,8 @@
             "Array",
             "Binary Search"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;n)",
         "Notes": ""
     },
     {
@@ -464,8 +464,8 @@
             "Hash Table",
             "Matrix"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
@@ -479,8 +479,8 @@
             "Backtracking",
             "Matrix"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n<sup>2n<sup>2</sup></sup>)",
         "Notes": ""
     },
     {
@@ -491,9 +491,9 @@
         "Tags": [
             "String"
         ],
-        "Space": "",
-        "Time": "",
-        "Notes": ""
+        "Space": "O(&lambda;<sup>n</sup>)",
+        "Time": "O(&lambda;<sup>n</sup>)",
+        "Notes": "[Look&Say](https://en.wikipedia.org/wiki/Look-and-say_sequence)"
     },
     {
         "ID": "39",
@@ -504,8 +504,8 @@
             "Array",
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(t)",
+        "Time": "O(n<sup>t</sup>)",
         "Notes": ""
     },
     {
@@ -517,8 +517,8 @@
             "Array",
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(2<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -530,8 +530,8 @@
             "Array",
             "Hash Table"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -546,8 +546,8 @@
             "Stack",
             "Monotonic Stack"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -560,8 +560,8 @@
             "String",
             "Simulation"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n+m)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -575,8 +575,8 @@
             "Greedy",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -589,8 +589,8 @@
             "Dynamic Programming",
             "Greedy"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -602,8 +602,8 @@
             "Array",
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n!)",
         "Notes": ""
     },
     {
@@ -615,8 +615,8 @@
             "Array",
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n!)",
         "Notes": ""
     },
     {
@@ -629,8 +629,8 @@
             "Math",
             "Matrix"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
@@ -644,8 +644,8 @@
             "String",
             "Sorting"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nk)",
+        "Time": "O(nk&nbsp;log&nbsp;k)",
         "Notes": ""
     },
     {
@@ -657,8 +657,8 @@
             "Math",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;n)",
         "Notes": ""
     },
     {

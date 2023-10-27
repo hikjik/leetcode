@@ -7,15 +7,14 @@
 class Solution {
 public:
   static int lengthOfLongestSubstring(std::string s) {
-    std::unordered_map<char, size_t> letters;
-    size_t start = 0;
-    size_t length = 0;
-    for (size_t i = 0; i < s.size(); ++i) {
-      if (letters.count(s[i])) {
-        start = std::max(start, letters[s[i]] + 1);
+    std::unordered_map<char, int> indexes;
+    int length = 0;
+    for (int i = 0, j = 0; j < std::ssize(s); ++j) {
+      if (indexes.contains(s[j])) {
+        i = std::max(i, indexes[s[j]] + 1);
       }
-      letters[s[i]] = i;
-      length = std::max(length, i - start + 1);
+      indexes[s[j]] = j;
+      length = std::max(length, j - i + 1);
     }
     return length;
   }
