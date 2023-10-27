@@ -5,13 +5,12 @@
 
 class Solution {
 private:
-  static const size_t MAX_LENGTH = 500;
-  inline static int DP[MAX_LENGTH + 1][MAX_LENGTH + 1];
+  static constexpr size_t kMaxLength = 500;
+  inline static int DP[kMaxLength + 1][kMaxLength + 1];
 
 public:
   static int minDistance(std::string word1, std::string word2) {
-    size_t n = word1.size();
-    size_t m = word2.size();
+    const auto n = word1.size(), m = word2.size();
 
     for (size_t i = 0; i <= n; ++i) {
       DP[i][0] = i;
