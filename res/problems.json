@@ -63,9 +63,9 @@
             "String",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
-        "Notes": ""
+        "Space": "O(n)",
+        "Time": "O(n)",
+        "Notes": "[Manacher Algorithm](https://cp-algorithms.com/string/manacher.html)"
     },
     {
         "ID": "6",

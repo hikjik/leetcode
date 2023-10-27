@@ -6,17 +6,28 @@
 class Solution {
 public:
   static std::string longestPalindrome(std::string s) {
-    std::vector<std::vector<bool>> dp(s.size(),
-                                      std::vector<bool>(s.size(), false));
-    std::pair<size_t, size_t> sub{0, 0};
-    for (size_t k = 0; k < s.size(); ++k) {
-      for (size_t i = 0; i < s.size() - k; ++i) {
-        dp[i][i + k] = (k > 1 ? dp[i + 1][i + k - 1] : true) & s[i] == s[i + k];
-        if (dp[i][i + k] && k + 1 > sub.second) {
-          sub = {i, k + 1};
-        }
+    std::string t = "^";
+    for (auto c : s) {
+      t += '#', t += c;
+    }
+    t += '#', t += '$';
+
+    std::vector<int> p(t.size());
+    for (int i = 1, l = 1, r = 1; i < std::ssize(t) - 1; ++i) {
+      const int j = l + r - i;
+      p[i] = std::max(0, std::min(r - i, p[j]));
+
+      while (t[i - p[i]] == t[i + p[i]]) {
+        ++p[i];
+      }
+
+      if (i + p[i] > r) {
+        l = i - p[i], r = i + p[i];
       }
     }
-    return s.substr(sub.first, sub.second);
+
+    const auto c = std::ranges::max_element(p) - p.begin();
+    const auto l = (c - p[c]) / 2, r = (c + p[c]) / 2;
+    return s.substr(l, r - l - 1);
   }
 };
