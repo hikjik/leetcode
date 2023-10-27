@@ -139,8 +139,8 @@
             "Two Pointers",
             "Greedy"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -153,8 +153,8 @@
             "Math",
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(1)",
         "Notes": ""
     },
     {
@@ -167,8 +167,8 @@
             "Math",
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -180,8 +180,8 @@
             "String",
             "Trie"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -194,8 +194,8 @@
             "Two Pointers",
             "Sorting"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
