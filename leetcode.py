@@ -316,7 +316,8 @@ def get_test_data(content: str, test_examples: list[str]) -> list[TestData]:
         content,
     )
 
-    assert len(outputs) == len(test_examples), (outputs, test_examples)
+    if len(outputs) != len(test_examples):
+        print("Not Equal", outputs, test_examples)
 
     test_data: list[TestData] = []
     for inputs, output in zip(test_examples, outputs):

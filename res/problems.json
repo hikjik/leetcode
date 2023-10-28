@@ -7609,6 +7609,18 @@
         "Notes": ""
     },
     {
+        "ID": "1220",
+        "Title": "Count Vowels Permutation",
+        "Slug": "count-vowels-permutation",
+        "Difficulty": "Hard",
+        "Tags": [
+            "Dynamic Programming"
+        ],
+        "Space": "O(1)",
+        "Time": "O(n)",
+        "Notes": ""
+    },
+    {
         "ID": "1221",
         "Title": "Split a String in Balanced Strings",
         "Slug": "split-a-string-in-balanced-strings",
