@@ -8,11 +8,11 @@ using ChessBoard = std::vector<std::string>;
 
 class Solution {
 public:
-  inline static const size_t MAX_BOARD_SIZE = 9;
+  static constexpr size_t kSize = 9;
 
-  inline static std::array<bool, MAX_BOARD_SIZE> columns;
-  inline static std::array<bool, MAX_BOARD_SIZE * 2 - 1> major_diag;
-  inline static std::array<bool, MAX_BOARD_SIZE * 2 - 1> minor_diag;
+  inline static std::array<bool, kSize> columns;
+  inline static std::array<bool, kSize * 2 - 1> major_diag;
+  inline static std::array<bool, kSize * 2 - 1> minor_diag;
 
   inline static std::vector<ChessBoard> solveNQueens(size_t n) {
     std::vector<ChessBoard> boards;

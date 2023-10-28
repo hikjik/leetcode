@@ -6,11 +6,11 @@
 
 class Solution {
 public:
-  inline static const size_t MAX_BOARD_SIZE = 9;
+  static constexpr size_t kSize = 9;
 
-  inline static std::array<bool, MAX_BOARD_SIZE> columns;
-  inline static std::array<bool, MAX_BOARD_SIZE * 2 - 1> major_diag;
-  inline static std::array<bool, MAX_BOARD_SIZE * 2 - 1> minor_diag;
+  inline static std::array<bool, kSize> columns;
+  inline static std::array<bool, kSize * 2 - 1> major_diag;
+  inline static std::array<bool, kSize * 2 - 1> minor_diag;
 
   inline static size_t totalNQueens(size_t n) {
     size_t total = 0;

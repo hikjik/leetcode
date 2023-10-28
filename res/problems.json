@@ -223,7 +223,7 @@
             "Backtracking"
         ],
         "Space": "O(n)",
-        "Time": "O(4<sup>n</sup>)",
+        "Time": "O(n4<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -290,7 +290,7 @@
             "Backtracking"
         ],
         "Space": "O(n)",
-        "Time": "O(4<sup>n</sup>)",
+        "Time": "O(n4<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -518,7 +518,7 @@
             "Backtracking"
         ],
         "Space": "O(n)",
-        "Time": "O(2<sup>n</sup>)",
+        "Time": "O(n2<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -670,8 +670,8 @@
             "Array",
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n<sup>2</sup>)",
+        "Time": "O(n!)",
         "Notes": ""
     },
     {
@@ -682,8 +682,8 @@
         "Tags": [
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n!)",
         "Notes": ""
     },
     {
@@ -696,8 +696,8 @@
             "Divide and Conquer",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -710,8 +710,8 @@
             "Matrix",
             "Simulation"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -724,8 +724,8 @@
             "Dynamic Programming",
             "Greedy"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -737,8 +737,8 @@
             "Array",
             "Sorting"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n&nbsp;log&nbsp;n)",
         "Notes": ""
     },
     {
@@ -749,8 +749,8 @@
         "Tags": [
             "Array"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -761,8 +761,8 @@
         "Tags": [
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -775,8 +775,8 @@
             "Matrix",
             "Simulation"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
@@ -788,8 +788,8 @@
             "Math",
             "Recursion"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n!)",
         "Notes": ""
     },
     {
@@ -801,8 +801,8 @@
             "Linked List",
             "Two Pointers"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -815,8 +815,8 @@
             "Dynamic Programming",
             "Combinatorics"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -829,8 +829,8 @@
             "Dynamic Programming",
             "Matrix"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -843,8 +843,8 @@
             "Dynamic Programming",
             "Matrix"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -855,8 +855,8 @@
         "Tags": [
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -868,8 +868,8 @@
             "Array",
             "Math"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -883,8 +883,8 @@
             "Bit Manipulation",
             "Simulation"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(max(n,m))",
         "Notes": ""
     },
     {
@@ -897,8 +897,8 @@
             "String",
             "Simulation"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(nk)",
         "Notes": ""
     },
     {
@@ -910,8 +910,8 @@
             "Math",
             "Binary Search"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;n)",
         "Notes": ""
     },
     {
@@ -924,8 +924,8 @@
             "Dynamic Programming",
             "Memoization"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -937,8 +937,8 @@
             "String",
             "Stack"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -950,8 +950,8 @@
             "String",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -964,8 +964,8 @@
             "Hash Table",
             "Matrix"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -978,8 +978,8 @@
             "Binary Search",
             "Matrix"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(log&nbsp;nm)",
         "Notes": ""
     },
     {
@@ -992,8 +992,8 @@
             "Two Pointers",
             "Sorting"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1006,8 +1006,8 @@
             "String",
             "Sliding Window"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n+m)",
         "Notes": ""
     },
     {
@@ -1018,8 +1018,8 @@
         "Tags": [
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(k)",
+        "Time": "O(kC(n,k))",
         "Notes": ""
     },
     {
@@ -1032,8 +1032,8 @@
             "Backtracking",
             "Bit Manipulation"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n2<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -1046,8 +1046,8 @@
             "Backtracking",
             "Matrix"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm4<sup>k</sup>)",
         "Notes": ""
     },
     {
@@ -1059,8 +1059,8 @@
             "Array",
             "Two Pointers"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1072,8 +1072,8 @@
             "Array",
             "Binary Search"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1085,8 +1085,8 @@
             "Linked List",
             "Two Pointers"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1097,8 +1097,8 @@
         "Tags": [
             "Linked List"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1111,8 +1111,8 @@
             "Stack",
             "Monotonic Stack"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1127,8 +1127,8 @@
             "Matrix",
             "Monotonic Stack"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(m)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -1140,8 +1140,8 @@
             "Linked List",
             "Two Pointers"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1153,8 +1153,8 @@
             "String",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n<sup>2</sup>)",
+        "Time": "O(n<sup>4</sup>)",
         "Notes": ""
     },
     {
@@ -1167,8 +1167,8 @@
             "Two Pointers",
             "Sorting"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n+m)",
         "Notes": ""
     },
     {
@@ -1181,8 +1181,8 @@
             "Backtracking",
             "Bit Manipulation"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(2<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -1195,8 +1195,8 @@
             "Backtracking",
             "Bit Manipulation"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n2<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -1208,8 +1208,8 @@
             "String",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1220,8 +1220,8 @@
         "Tags": [
             "Linked List"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1233,8 +1233,8 @@
             "String",
             "Backtracking"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm<sup>n</sup>)",
         "Notes": ""
     },
     {
@@ -1248,8 +1248,8 @@
             "Depth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1264,8 +1264,8 @@
             "Binary Search Tree",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(<sup>4<sup>n</sup></sup>&frasl;<sub>&radic;n</sub>)",
+        "Time": "O(<sup>4<sup>n</sup></sup>&frasl;<sub>&radic;n</sub>)",
         "Notes": ""
     },
     {
@@ -1280,8 +1280,8 @@
             "Binary Search Tree",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
@@ -1293,8 +1293,8 @@
             "String",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -1308,8 +1308,8 @@
             "Binary Search Tree",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1323,8 +1323,8 @@
             "Binary Search Tree",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1338,8 +1338,8 @@
             "Breadth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
