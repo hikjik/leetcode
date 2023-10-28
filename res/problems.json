@@ -1353,8 +1353,8 @@
             "Breadth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1367,8 +1367,8 @@
             "Breadth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1381,8 +1381,8 @@
             "Breadth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1396,8 +1396,8 @@
             "Breadth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1412,8 +1412,8 @@
             "Tree",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1428,8 +1428,8 @@
             "Tree",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1444,8 +1444,8 @@
             "Binary Search Tree",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(log&nbsp;n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1460,8 +1460,8 @@
             "Binary Search Tree",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(log&nbsp;n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1474,8 +1474,8 @@
             "Depth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1489,8 +1489,8 @@
             "Breadth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1504,8 +1504,8 @@
             "Breadth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1519,8 +1519,8 @@
             "Depth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1535,8 +1535,8 @@
             "Depth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1548,8 +1548,8 @@
             "String",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
@@ -1564,8 +1564,8 @@
             "Breadth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1580,8 +1580,8 @@
             "Breadth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1593,8 +1593,8 @@
             "Array",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
@@ -1606,8 +1606,8 @@
             "Array",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
@@ -1619,8 +1619,8 @@
             "Array",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     },
     {
@@ -1632,8 +1632,8 @@
             "Array",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1646,8 +1646,8 @@
             "Dynamic Programming",
             "Greedy"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1659,8 +1659,8 @@
             "Array",
             "Dynamic Programming"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1674,8 +1674,8 @@
             "Depth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1687,8 +1687,8 @@
             "Two Pointers",
             "String"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(1)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1730,8 +1730,8 @@
             "Hash Table",
             "Union Find"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1744,8 +1744,8 @@
             "Depth-First Search",
             "Binary Tree"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(n)",
+        "Time": "O(n)",
         "Notes": ""
     },
     {
@@ -1760,8 +1760,8 @@
             "Union Find",
             "Matrix"
         ],
-        "Space": "",
-        "Time": "",
+        "Space": "O(nm)",
+        "Time": "O(nm)",
         "Notes": ""
     },
     {
