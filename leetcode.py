@@ -733,7 +733,7 @@ def update_readme_table() -> None:
     problems.sort(key=lambda x: int(x["ID"]))
 
     with open("res/problems.json", mode="w") as file:
-        json.dump(problems, file)
+        json.dump(problems, file, indent=4)
 
     with open("README.md", mode="r") as file:
         lines = file.readlines()
