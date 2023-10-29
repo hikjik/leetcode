@@ -3970,6 +3970,20 @@
         "Notes": ""
     },
     {
+        "ID": "458",
+        "Title": "Poor Pigs",
+        "Slug": "poor-pigs",
+        "Difficulty": "Hard",
+        "Tags": [
+            "Math",
+            "Dynamic Programming",
+            "Combinatorics"
+        ],
+        "Space": "O(1)",
+        "Time": "O(1)",
+        "Notes": ""
+    },
+    {
         "ID": "459",
         "Title": "Repeated Substring Pattern",
         "Slug": "repeated-substring-pattern",
@@ -14006,6 +14020,16 @@
         ],
         "Space": "",
         "Time": "",
+        "Notes": ""
+    },
+    {
+        "ID": "2913",
+        "Title": "Subarrays Distinct Element Sum of Squares I",
+        "Slug": "subarrays-distinct-element-sum-of-squares-i",
+        "Difficulty": "Easy",
+        "Tags": [],
+        "Space": "O(n)",
+        "Time": "O(n<sup>2</sup>)",
         "Notes": ""
     }
 ]
