@@ -14031,5 +14031,15 @@
         "Space": "O(n)",
         "Time": "O(n<sup>2</sup>)",
         "Notes": ""
+    },
+    {
+        "ID": "2914",
+        "Title": "Minimum Number of Changes to Make Binary String Beautiful",
+        "Slug": "minimum-number-of-changes-to-make-binary-string-beautiful",
+        "Difficulty": "Medium",
+        "Tags": [],
+        "Space": "O(1)",
+        "Time": "O(n)",
+        "Notes": ""
     }
 ]

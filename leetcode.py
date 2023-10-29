@@ -690,8 +690,36 @@ def create_task_folder(task_slug: str) -> None:
     create_test_file(task_path, task)
     create_cmake_file(task_path, task)
     update_cmake(task_slug)
+    save_problem_info(task)
 
     print(f"Created file: {task_path / SOLUTION_FILE}")
+
+
+def save_problem_info(task: Task) -> None:
+    problems: list[dict[str, Any]] = [
+        {
+            "ID": task.frontend_id,
+            "Title": task.title,
+            "Slug": task.title_slug,
+            "Difficulty": task.difficulty,
+            "Tags": task.tags,
+            "Space": "",
+            "Time": "",
+            "Notes": "",
+        }
+    ]
+
+    try:
+        with open("res/problems.json", mode="r") as file:
+            for row in json.load(file):
+                problems.append(row)
+    except FileNotFoundError:
+        pass
+
+    problems.sort(key=lambda x: int(x["ID"]))
+
+    with open("res/problems.json", mode="w") as file:
+        json.dump(problems, file, indent=4)
 
 
 def update_readme_table() -> None:
