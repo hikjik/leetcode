@@ -1,0 +1,1 @@
+add_catch(test_subarrays_distinct_element_sum_of_squares_i test.cpp)
