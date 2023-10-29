@@ -3,3 +3,4 @@ venv
 .vscode
 .cache
 solutions/**/description.md
+.env
