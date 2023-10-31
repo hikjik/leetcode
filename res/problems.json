@@ -12670,6 +12670,19 @@
         "Notes": ""
     },
     {
+        "ID": "2433",
+        "Title": "Find The Original Array of Prefix Xor",
+        "Slug": "find-the-original-array-of-prefix-xor",
+        "Difficulty": "Medium",
+        "Tags": [
+            "Array",
+            "Bit Manipulation"
+        ],
+        "Space": "O(1)",
+        "Time": "O(n)",
+        "Notes": ""
+    },
+    {
         "ID": "2437",
         "Title": "Number of Valid Clock Times",
         "Slug": "number-of-valid-clock-times",

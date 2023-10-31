@@ -1,0 +1,1 @@
+add_catch(test_find_the_original_array_of_prefix_xor test.cpp)
