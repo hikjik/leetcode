@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1588. Sum of All Odd Length Subarrays
+  https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
+  Difficulty: Easy
+  Tags: Array, Math, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int sumOddLengthSubarrays(const std::vector<int> &arr) {

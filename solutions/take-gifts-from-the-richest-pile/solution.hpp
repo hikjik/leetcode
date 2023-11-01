@@ -5,6 +5,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  2558. Take Gifts From the Richest Pile
+  https://leetcode.com/problems/take-gifts-from-the-richest-pile/
+  Difficulty: Easy
+  Tags: Array, Heap (Priority Queue), Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static long long pickGifts(std::vector<int> gifts, int k) {

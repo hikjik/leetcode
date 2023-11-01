@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  136. Single Number
+  https://leetcode.com/problems/single-number/
+  Difficulty: Easy
+  Tags: Array, Bit Manipulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int singleNumber(const std::vector<int> &numbers) {

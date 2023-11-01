@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_map>
 
+/*
+  242. Valid Anagram
+  https://leetcode.com/problems/valid-anagram/
+  Difficulty: Easy
+  Tags: Hash Table, String, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isAnagram(std::string ransom_note, std::string magazine) {

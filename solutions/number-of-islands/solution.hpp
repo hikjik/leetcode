@@ -3,6 +3,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  200. Number of Islands
+  https://leetcode.com/problems/number-of-islands/
+  Difficulty: Medium
+  Tags: Array, Depth-First Search, Breadth-First Search, Union Find, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static const char LAND = '1';

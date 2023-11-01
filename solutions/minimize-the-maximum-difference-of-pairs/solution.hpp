@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2616. Minimize the Maximum Difference of Pairs
+  https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/
+  Difficulty: Medium
+  Tags: Array, Binary Search, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minimizeMax(std::vector<int> nums, int p) {

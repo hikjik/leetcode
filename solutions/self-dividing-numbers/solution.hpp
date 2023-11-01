@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  728. Self Dividing Numbers
+  https://leetcode.com/problems/self-dividing-numbers/
+  Difficulty: Easy
+  Tags: Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> selfDividingNumbers(int left, int right) {

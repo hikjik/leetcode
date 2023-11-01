@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <string>
 
+/*
+  520. Detect Capital
+  https://leetcode.com/problems/detect-capital/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool detectCapitalUse(std::string word) {

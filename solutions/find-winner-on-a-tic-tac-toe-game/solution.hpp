@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1275. Find Winner on a Tic Tac Toe Game
+  https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Matrix, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string tictactoe(const std::vector<std::vector<int>> &moves) {

@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  717. 1-bit and 2-bit Characters
+  https://leetcode.com/problems/1-bit-and-2-bit-characters/
+  Difficulty: Easy
+  Tags: Array
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isOneBitCharacter(const std::vector<int> &bits) {

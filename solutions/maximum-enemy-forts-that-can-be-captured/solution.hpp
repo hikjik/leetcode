@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2511. Maximum Enemy Forts That Can Be Captured
+  https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/
+  Difficulty: Easy
+  Tags: Array, Two Pointers
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int captureForts(const std::vector<int> &forts) {

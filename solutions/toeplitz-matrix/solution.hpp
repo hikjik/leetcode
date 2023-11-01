@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  766. Toeplitz Matrix
+  https://leetcode.com/problems/toeplitz-matrix/
+  Difficulty: Easy
+  Tags: Array, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isToeplitzMatrix(const std::vector<std::vector<int>> &matrix) {

@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  22. Generate Parentheses
+  https://leetcode.com/problems/generate-parentheses/
+  Difficulty: Medium
+  Tags: String, Dynamic Programming, Backtracking
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static void generateParenthesis(int n, int opened,

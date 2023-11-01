@@ -2,6 +2,15 @@
 
 #include <cmath>
 
+/*
+  1925. Count Square Sum Triples
+  https://leetcode.com/problems/count-square-sum-triples/
+  Difficulty: Easy
+  Tags: Math, Enumeration
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countTriples(int n) {

@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  821. Shortest Distance to a Character
+  https://leetcode.com/problems/shortest-distance-to-a-character/
+  Difficulty: Easy
+  Tags: Array, Two Pointers, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> shortestToChar(std::string s, char target) {

@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1556. Thousand Separator
+  https://leetcode.com/problems/thousand-separator/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string thousandSeparator(int n) {

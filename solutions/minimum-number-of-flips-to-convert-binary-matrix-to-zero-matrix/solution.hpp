@@ -4,6 +4,15 @@
 #include <climits>
 #include <vector>
 
+/*
+  1284. Minimum Number of Flips to Convert Binary Matrix to Zero Matrix
+  https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/
+  Difficulty: Hard
+  Tags: Array, Bit Manipulation, Breadth-First Search, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minFlips(std::vector<std::vector<int>> mat) {

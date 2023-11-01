@@ -4,6 +4,15 @@
 #include <climits>
 #include <vector>
 
+/*
+  1984. Minimum Difference Between Highest and Lowest of K Scores
+  https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/
+  Difficulty: Easy
+  Tags: Array, Sliding Window, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minimumDifference(std::vector<int> nums, int k) {

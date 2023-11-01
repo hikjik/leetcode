@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_map>
 
+/*
+  567. Permutation in String
+  https://leetcode.com/problems/permutation-in-string/
+  Difficulty: Medium
+  Tags: Hash Table, Two Pointers, String, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool checkInclusion(std::string s1, std::string s2) {

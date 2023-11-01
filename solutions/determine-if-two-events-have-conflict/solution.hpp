@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2446. Determine if Two Events Have Conflict
+  https://leetcode.com/problems/determine-if-two-events-have-conflict/
+  Difficulty: Easy
+  Tags: Array, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool haveConflict(const std::vector<std::string> &event1,

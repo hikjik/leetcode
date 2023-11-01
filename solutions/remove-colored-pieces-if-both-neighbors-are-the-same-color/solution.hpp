@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  2038. Remove Colored Pieces if Both Neighbors are the Same Color
+  https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/
+  Difficulty: Medium
+  Tags: Math, String, Greedy, Game Theory
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool winnerOfGame(std::string colors) {

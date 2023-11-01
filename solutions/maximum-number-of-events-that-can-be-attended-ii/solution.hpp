@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1751. Maximum Number of Events That Can Be Attended II
+  https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/
+  Difficulty: Hard
+  Tags: Array, Binary Search, Dynamic Programming, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxValue(std::vector<std::vector<int>> events, int k) {

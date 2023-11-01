@@ -3,6 +3,15 @@
 #include <stack>
 #include <string>
 
+/*
+  20. Valid Parentheses
+  https://leetcode.com/problems/valid-parentheses/
+  Difficulty: Easy
+  Tags: String, Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isValid(std::string s) {

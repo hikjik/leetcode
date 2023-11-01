@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1539. Kth Missing Positive Number
+  https://leetcode.com/problems/kth-missing-positive-number/
+  Difficulty: Easy
+  Tags: Array, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int findKthPositive(const std::vector<int> &arr, int k) {

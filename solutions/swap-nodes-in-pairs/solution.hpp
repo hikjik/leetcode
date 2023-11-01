@@ -2,6 +2,15 @@
 
 #include <list_node.h>
 
+/*
+  24. Swap Nodes in Pairs
+  https://leetcode.com/problems/swap-nodes-in-pairs/
+  Difficulty: Medium
+  Tags: Linked List, Recursion
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static ListNode *swapPairs(ListNode *head) {

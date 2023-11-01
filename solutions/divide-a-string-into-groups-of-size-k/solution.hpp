@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2138. Divide a String Into Groups of Size k
+  https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/
+  Difficulty: Easy
+  Tags: String, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string> divideString(std::string s, int k,

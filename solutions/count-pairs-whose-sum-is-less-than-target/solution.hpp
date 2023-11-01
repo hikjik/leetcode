@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2824. Count Pairs Whose Sum is Less than Target
+  https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/
+  Difficulty: Easy
+  Tags: Array, Two Pointers, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countPairs(std::vector<int> nums, int target) {

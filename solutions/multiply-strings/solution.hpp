@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  43. Multiply Strings
+  https://leetcode.com/problems/multiply-strings/
+  Difficulty: Medium
+  Tags: Math, String, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string multiply(std::string num1, std::string num2) {

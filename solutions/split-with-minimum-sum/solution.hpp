@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2578. Split With Minimum Sum
+  https://leetcode.com/problems/split-with-minimum-sum/
+  Difficulty: Easy
+  Tags: Math, Greedy, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int splitNum(int num) {

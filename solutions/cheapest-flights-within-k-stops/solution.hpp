@@ -5,6 +5,16 @@
 #include <queue>
 #include <vector>
 
+/*
+  787. Cheapest Flights Within K Stops
+  https://leetcode.com/problems/cheapest-flights-within-k-stops/
+  Difficulty: Medium
+  Tags: Dynamic Programming, Depth-First Search, Breadth-First Search, Graph,
+        Heap (Priority Queue), Shortest Path
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int findCheapestPrice(int n,

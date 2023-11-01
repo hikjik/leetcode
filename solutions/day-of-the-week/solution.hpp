@@ -4,6 +4,15 @@
 #include <chrono>
 #include <string>
 
+/*
+  1185. Day of the Week
+  https://leetcode.com/problems/day-of-the-week/
+  Difficulty: Easy
+  Tags: Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string dayOfTheWeek(int day, int month, int year) {

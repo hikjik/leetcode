@@ -4,6 +4,16 @@
 
 #include <unordered_set>
 
+/*
+  653. Two Sum IV - Input is a BST
+  https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
+  Difficulty: Easy
+  Tags: Hash Table, Two Pointers, Tree, Depth-First Search,
+        Breadth-First Search, Binary Search Tree, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool findTarget(TreeNode *root, int target) {

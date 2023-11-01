@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1971. Find if Path Exists in Graph
+  https://leetcode.com/problems/find-if-path-exists-in-graph/
+  Difficulty: Easy
+  Tags: Depth-First Search, Breadth-First Search, Union Find, Graph
+  Time:
+  Space:
+*/
+
 class DisjointSets {
 public:
   explicit DisjointSets(size_t size) : sets_(size), count_(size) {

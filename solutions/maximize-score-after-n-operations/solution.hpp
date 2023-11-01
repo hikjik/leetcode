@@ -4,6 +4,16 @@
 #include <numeric>
 #include <vector>
 
+/*
+  1799. Maximize Score After N Operations
+  https://leetcode.com/problems/maximize-score-after-n-operations/
+  Difficulty: Hard
+  Tags: Array, Math, Dynamic Programming, Backtracking, Bit Manipulation,
+        Number Theory, Bitmask
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxScore(const std::vector<int> &nums) {

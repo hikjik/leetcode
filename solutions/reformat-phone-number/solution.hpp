@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1694. Reformat Phone Number
+  https://leetcode.com/problems/reformat-phone-number/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string reformatNumber(std::string number) {

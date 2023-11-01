@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  73. Set Matrix Zeroes
+  https://leetcode.com/problems/set-matrix-zeroes/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static void setZeroes(std::vector<std::vector<int>> &matrix) {

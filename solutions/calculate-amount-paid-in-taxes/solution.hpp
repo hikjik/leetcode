@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2303. Calculate Amount Paid in Taxes
+  https://leetcode.com/problems/calculate-amount-paid-in-taxes/
+  Difficulty: Easy
+  Tags: Array, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static double calculateTax(const std::vector<std::vector<int>> &brackets,

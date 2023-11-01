@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2873. Maximum Value of an Ordered Triplet I
+  https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/
+  Difficulty: Easy
+  Tags: Array
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static long long maximumTripletValue(const std::vector<int> &nums) {

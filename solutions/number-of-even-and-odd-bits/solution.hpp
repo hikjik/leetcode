@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2595. Number of Even and Odd Bits
+  https://leetcode.com/problems/number-of-even-and-odd-bits/
+  Difficulty: Easy
+  Tags: Bit Manipulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> evenOddBit(int n) {

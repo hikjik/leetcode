@@ -3,6 +3,15 @@
 #include <regex>
 #include <string>
 
+/*
+  10. Regular Expression Matching
+  https://leetcode.com/problems/regular-expression-matching/
+  Difficulty: Hard
+  Tags: String, Dynamic Programming, Recursion
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isMatch(std::string s, std::string p) {

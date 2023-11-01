@@ -3,6 +3,15 @@
 #include <cmath>
 #include <vector>
 
+/*
+  2562. Find the Array Concatenation Value
+  https://leetcode.com/problems/find-the-array-concatenation-value/
+  Difficulty: Easy
+  Tags: Array, Two Pointers, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static long long findTheArrayConcVal(const std::vector<int> &nums) {

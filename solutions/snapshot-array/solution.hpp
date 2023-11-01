@@ -3,6 +3,15 @@
 #include <map>
 #include <vector>
 
+/*
+  1146. Snapshot Array
+  https://leetcode.com/problems/snapshot-array/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Binary Search, Design
+  Time:
+  Space:
+*/
+
 class SnapshotArray {
 private:
   std::vector<std::map<int, int, std::greater<int>>> snapshots_;

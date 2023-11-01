@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1822. Sign of the Product of an Array
+  https://leetcode.com/problems/sign-of-the-product-of-an-array/
+  Difficulty: Easy
+  Tags: Array, Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int arraySign(std::vector<int> nums) {

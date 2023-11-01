@@ -3,6 +3,15 @@
 #include <array>
 #include <vector>
 
+/*
+  2094. Finding 3-Digit Even Numbers
+  https://leetcode.com/problems/finding-3-digit-even-numbers/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Sorting, Enumeration
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> findEvenNumbers(const std::vector<int> &digits) {

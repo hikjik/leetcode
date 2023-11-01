@@ -3,6 +3,15 @@
 #include <stack>
 #include <vector>
 
+/*
+  85. Maximal Rectangle
+  https://leetcode.com/problems/maximal-rectangle/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming, Stack, Matrix, Monotonic Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maximalRectangle(const std::vector<std::vector<char>> &matrix) {

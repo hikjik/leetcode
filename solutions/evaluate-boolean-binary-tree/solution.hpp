@@ -2,6 +2,15 @@
 
 #include <tree_node.h>
 
+/*
+  2331. Evaluate Boolean Binary Tree
+  https://leetcode.com/problems/evaluate-boolean-binary-tree/
+  Difficulty: Easy
+  Tags: Tree, Depth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool evaluateTree(TreeNode *root) {

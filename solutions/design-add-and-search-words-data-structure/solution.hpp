@@ -3,6 +3,15 @@
 #include <array>
 #include <string>
 
+/*
+  211. Design Add and Search Words Data Structure
+  https://leetcode.com/problems/design-add-and-search-words-data-structure/
+  Difficulty: Medium
+  Tags: String, Depth-First Search, Design, Trie
+  Time:
+  Space:
+*/
+
 class WordDictionary {
 private:
   struct TrieNode {

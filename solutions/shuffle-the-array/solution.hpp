@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1470. Shuffle the Array
+  https://leetcode.com/problems/shuffle-the-array/
+  Difficulty: Easy
+  Tags: Array
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> shuffle(const std::vector<int> &nums, int n) {

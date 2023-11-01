@@ -2,6 +2,15 @@
 
 #include <list_node.h>
 
+/*
+  19. Remove Nth Node From End of List
+  https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+  Difficulty: Medium
+  Tags: Linked List, Two Pointers
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static ListNode *removeNthFromEnd(ListNode *head, int n) {

@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  2652. Sum Multiples
+  https://leetcode.com/problems/sum-multiples/
+  Difficulty: Easy
+  Tags: Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int sumOfMultiples(int n) {

@@ -4,6 +4,15 @@
 #include <sstream>
 #include <string>
 
+/*
+  2409. Count Days Spent Together
+  https://leetcode.com/problems/count-days-spent-together/
+  Difficulty: Easy
+  Tags: Math, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countDaysTogether(std::string arriveAlice, std::string leaveAlice,

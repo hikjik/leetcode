@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2717. Semi-Ordered Permutation
+  https://leetcode.com/problems/semi-ordered-permutation/
+  Difficulty: Easy
+  Tags: Array, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int semiOrderedPermutation(const std::vector<int> &nums) {

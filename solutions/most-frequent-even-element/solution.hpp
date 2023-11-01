@@ -3,6 +3,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  2404. Most Frequent Even Element
+  https://leetcode.com/problems/most-frequent-even-element/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int mostFrequentEven(const std::vector<int> &nums) {

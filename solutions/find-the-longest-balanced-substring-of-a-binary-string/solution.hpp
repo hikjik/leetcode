@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  2609. Find the Longest Balanced Substring of a Binary String
+  https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int findTheLongestBalancedSubstring(std::string s) {

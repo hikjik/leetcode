@@ -5,6 +5,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  752. Open the Lock
+  https://leetcode.com/problems/open-the-lock/
+  Difficulty: Medium
+  Tags: Array, Hash Table, String, Breadth-First Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int openLock(const std::vector<std::string> &deadends,

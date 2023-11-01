@@ -4,6 +4,15 @@
 #include <climits>
 #include <vector>
 
+/*
+  229. Majority Element II
+  https://leetcode.com/problems/majority-element-ii/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Sorting, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> majorityElement(const std::vector<int> &nums) {

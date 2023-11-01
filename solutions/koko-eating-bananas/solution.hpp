@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  875. Koko Eating Bananas
+  https://leetcode.com/problems/koko-eating-bananas/
+  Difficulty: Medium
+  Tags: Array, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static const int MAX_EAT_SPEED = 1e9;

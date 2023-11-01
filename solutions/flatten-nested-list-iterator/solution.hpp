@@ -4,6 +4,15 @@
 #include <variant>
 #include <vector>
 
+/*
+  341. Flatten Nested List Iterator
+  https://leetcode.com/problems/flatten-nested-list-iterator/
+  Difficulty: Medium
+  Tags: Stack, Tree, Depth-First Search, Design, Queue, Iterator
+  Time:
+  Space:
+*/
+
 class NestedInteger {
 public:
   NestedInteger(std::vector<NestedInteger> variant)

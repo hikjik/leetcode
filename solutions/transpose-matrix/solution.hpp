@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  867. Transpose Matrix
+  https://leetcode.com/problems/transpose-matrix/
+  Difficulty: Easy
+  Tags: Array, Matrix, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>>

@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  852. Peak Index in a Mountain Array
+  https://leetcode.com/problems/peak-index-in-a-mountain-array/
+  Difficulty: Medium
+  Tags: Array, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int peakIndexInMountainArray(const std::vector<int> &arr) {

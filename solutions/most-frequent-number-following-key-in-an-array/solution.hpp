@@ -3,6 +3,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  2190. Most Frequent Number Following Key In an Array
+  https://leetcode.com/problems/most-frequent-number-following-key-in-an-array/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int mostFrequent(const std::vector<int> &nums, int key) {

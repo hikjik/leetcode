@@ -2,6 +2,15 @@
 
 #include <utility>
 
+/*
+  2169. Count Operations to Obtain Zero
+  https://leetcode.com/problems/count-operations-to-obtain-zero/
+  Difficulty: Easy
+  Tags: Math, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countOperations(int num1, int num2) {

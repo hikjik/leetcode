@@ -4,6 +4,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  502. IPO
+  https://leetcode.com/problems/ipo/
+  Difficulty: Hard
+  Tags: Array, Greedy, Sorting, Heap (Priority Queue)
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int findMaximizedCapital(int projects_limit, int initial_capital,

@@ -3,6 +3,15 @@
 #include <ranges>
 #include <vector>
 
+/*
+  1710. Maximum Units on a Truck
+  https://leetcode.com/problems/maximum-units-on-a-truck/
+  Difficulty: Easy
+  Tags: Array, Greedy, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maximumUnits(std::vector<std::vector<int>> boxTypes,

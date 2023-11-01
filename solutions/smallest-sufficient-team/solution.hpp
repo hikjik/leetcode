@@ -4,6 +4,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  1125. Smallest Sufficient Team
+  https://leetcode.com/problems/smallest-sufficient-team/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming, Bit Manipulation, Bitmask
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int>

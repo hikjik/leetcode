@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  46. Permutations
+  https://leetcode.com/problems/permutations/
+  Difficulty: Medium
+  Tags: Array, Backtracking
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>> permute(const std::vector<int> &nums) {

@@ -4,6 +4,15 @@
 #include <string>
 #include <unordered_map>
 
+/*
+  3. Longest Substring Without Repeating Characters
+  https://leetcode.com/problems/longest-substring-without-repeating-characters/
+  Difficulty: Medium
+  Tags: Hash Table, String, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int lengthOfLongestSubstring(std::string s) {

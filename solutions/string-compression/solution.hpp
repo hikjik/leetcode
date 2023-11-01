@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  443. String Compression
+  https://leetcode.com/problems/string-compression/
+  Difficulty: Medium
+  Tags: Two Pointers, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int compress(std::vector<char> &chars) {

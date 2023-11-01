@@ -4,6 +4,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  1854. Maximum Population Year
+  https://leetcode.com/problems/maximum-population-year/
+  Difficulty: Easy
+  Tags: Array, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static constexpr int kMinYear = 1950, kMaxYear = 2050;

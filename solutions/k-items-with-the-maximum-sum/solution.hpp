@@ -2,6 +2,15 @@
 
 #include <algorithm>
 
+/*
+  2600. K Items With the Maximum Sum
+  https://leetcode.com/problems/k-items-with-the-maximum-sum/
+  Difficulty: Easy
+  Tags: Math, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes,

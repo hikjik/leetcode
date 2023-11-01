@@ -5,6 +5,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  49. Group Anagrams
+  https://leetcode.com/problems/group-anagrams/
+  Difficulty: Medium
+  Tags: Array, Hash Table, String, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<std::string>>

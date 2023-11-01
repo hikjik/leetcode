@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1472. Design Browser History
+  https://leetcode.com/problems/design-browser-history/
+  Difficulty: Medium
+  Tags: Array, Linked List, Stack, Design, Doubly-Linked List, Data Stream
+  Time:
+  Space:
+*/
+
 class BrowserHistory {
 public:
   BrowserHistory(std::string homepage) { history_.emplace_back(homepage); }

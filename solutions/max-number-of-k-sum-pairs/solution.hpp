@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1679. Max Number of K-Sum Pairs
+  https://leetcode.com/problems/max-number-of-k-sum-pairs/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Two Pointers, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxOperations(std::vector<int> nums, int k) {

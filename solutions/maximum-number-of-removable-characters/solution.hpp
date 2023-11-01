@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1898. Maximum Number of Removable Characters
+  https://leetcode.com/problems/maximum-number-of-removable-characters/
+  Difficulty: Medium
+  Tags: Array, String, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maximumRemovals(std::string s, std::string p,

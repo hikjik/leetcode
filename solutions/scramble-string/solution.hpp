@@ -4,6 +4,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  87. Scramble String
+  https://leetcode.com/problems/scramble-string/
+  Difficulty: Hard
+  Tags: String, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   std::unordered_map<std::string, bool> dp;

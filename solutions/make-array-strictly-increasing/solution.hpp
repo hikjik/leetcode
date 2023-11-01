@@ -5,6 +5,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  1187. Make Array Strictly Increasing
+  https://leetcode.com/problems/make-array-strictly-increasing/
+  Difficulty: Hard
+  Tags: Array, Binary Search, Dynamic Programming, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static inline const int kInf = std::numeric_limits<int>::max();

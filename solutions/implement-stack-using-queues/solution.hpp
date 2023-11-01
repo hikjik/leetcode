@@ -2,6 +2,15 @@
 
 #include <queue>
 
+/*
+  225. Implement Stack using Queues
+  https://leetcode.com/problems/implement-stack-using-queues/
+  Difficulty: Easy
+  Tags: Stack, Design, Queue
+  Time:
+  Space:
+*/
+
 class MyStack {
 public:
   void push(int x) {

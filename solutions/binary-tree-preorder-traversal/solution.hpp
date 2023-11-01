@@ -4,6 +4,15 @@
 
 #include <vector>
 
+/*
+  144. Binary Tree Preorder Traversal
+  https://leetcode.com/problems/binary-tree-preorder-traversal/
+  Difficulty: Easy
+  Tags: Stack, Tree, Depth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> preorderTraversal(TreeNode *root) {

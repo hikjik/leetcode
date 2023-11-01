@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  686. Repeated String Match
+  https://leetcode.com/problems/repeated-string-match/
+  Difficulty: Medium
+  Tags: String, String Matching
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int repeatedStringMatch(std::string a, std::string b) {

@@ -4,6 +4,15 @@
 #include <stack>
 #include <string>
 
+/*
+  32. Longest Valid Parentheses
+  https://leetcode.com/problems/longest-valid-parentheses/
+  Difficulty: Hard
+  Tags: String, Dynamic Programming, Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int longestValidParentheses(std::string s) {

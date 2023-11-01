@@ -2,6 +2,15 @@
 
 #include <list_node.h>
 
+/*
+  82. Remove Duplicates from Sorted List II
+  https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+  Difficulty: Medium
+  Tags: Linked List, Two Pointers
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static ListNode *deleteDuplicates(ListNode *head) {

@@ -5,6 +5,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2347. Best Poker Hand
+  https://leetcode.com/problems/best-poker-hand/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string bestHand(const std::vector<int> &ranks,

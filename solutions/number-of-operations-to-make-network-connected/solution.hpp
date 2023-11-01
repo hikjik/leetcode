@@ -3,6 +3,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  1319. Number of Operations to Make Network Connected
+  https://leetcode.com/problems/number-of-operations-to-make-network-connected/
+  Difficulty: Medium
+  Tags: Depth-First Search, Breadth-First Search, Union Find, Graph
+  Time:
+  Space:
+*/
+
 class DisjointSets {
 public:
   explicit DisjointSets(size_t size) : sets_(size), count_(size) {

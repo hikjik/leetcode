@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  704. Binary Search
+  https://leetcode.com/problems/binary-search/
+  Difficulty: Easy
+  Tags: Array, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int search(const std::vector<int> &nums, int target) {

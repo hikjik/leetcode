@@ -2,6 +2,15 @@
 
 #include <tree_node.h>
 
+/*
+  98. Validate Binary Search Tree
+  https://leetcode.com/problems/validate-binary-search-tree/
+  Difficulty: Medium
+  Tags: Tree, Depth-First Search, Binary Search Tree, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isValidBST(TreeNode *root) {

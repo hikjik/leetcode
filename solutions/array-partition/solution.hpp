@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  561. Array Partition
+  https://leetcode.com/problems/array-partition/
+  Difficulty: Easy
+  Tags: Array, Greedy, Sorting, Counting Sort
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int arrayPairSum(std::vector<int> nums) {

@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1464. Maximum Product of Two Elements in an Array
+  https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/
+  Difficulty: Easy
+  Tags: Array, Sorting, Heap (Priority Queue)
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxProduct(std::vector<int> nums) {

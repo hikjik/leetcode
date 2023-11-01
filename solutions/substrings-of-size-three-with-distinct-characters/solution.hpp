@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1876. Substrings of Size Three with Distinct Characters
+  https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/
+  Difficulty: Easy
+  Tags: Hash Table, String, Sliding Window, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countGoodSubstrings(std::string s) {

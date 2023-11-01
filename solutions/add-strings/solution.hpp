@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  415. Add Strings
+  https://leetcode.com/problems/add-strings/
+  Difficulty: Easy
+  Tags: Math, String, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string addStrings(std::string num1, std::string num2) {

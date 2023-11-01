@@ -7,6 +7,16 @@
 #include <tuple>
 #include <vector>
 
+/*
+  1631. Path With Minimum Effort
+  https://leetcode.com/problems/path-with-minimum-effort/
+  Difficulty: Medium
+  Tags: Array, Binary Search, Depth-First Search, Breadth-First Search,
+        Union Find, Heap (Priority Queue), Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minimumEffortPath(const std::vector<std::vector<int>> &heights) {

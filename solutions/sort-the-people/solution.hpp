@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2418. Sort the People
+  https://leetcode.com/problems/sort-the-people/
+  Difficulty: Easy
+  Tags: Array, Hash Table, String, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string>

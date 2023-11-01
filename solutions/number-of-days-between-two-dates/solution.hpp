@@ -6,6 +6,15 @@
 #include <sstream>
 #include <string>
 
+/*
+  1360. Number of Days Between Two Dates
+  https://leetcode.com/problems/number-of-days-between-two-dates/
+  Difficulty: Easy
+  Tags: Math, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int daysBetweenDates(std::string date1, std::string date2) {

@@ -4,6 +4,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  2144. Minimum Cost of Buying Candies With Discount
+  https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/
+  Difficulty: Easy
+  Tags: Array, Greedy, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minimumCost(std::vector<int> cost) {

@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  1137. N-th Tribonacci Number
+  https://leetcode.com/problems/n-th-tribonacci-number/
+  Difficulty: Easy
+  Tags: Math, Dynamic Programming, Memoization
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int tribonacci(int n) {

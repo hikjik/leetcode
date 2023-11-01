@@ -4,6 +4,15 @@
 
 #include <stack>
 
+/*
+  173. Binary Search Tree Iterator
+  https://leetcode.com/problems/binary-search-tree-iterator/
+  Difficulty: Medium
+  Tags: Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator
+  Time:
+  Space:
+*/
+
 class BSTIterator {
 public:
   BSTIterator(TreeNode *root) { pushLeftSubTree(root); }

@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1331. Rank Transform of an Array
+  https://leetcode.com/problems/rank-transform-of-an-array/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> arrayRankTransform(const std::vector<int> &arr) {

@@ -2,6 +2,15 @@
 
 #include <unordered_map>
 
+/*
+  1399. Count Largest Group
+  https://leetcode.com/problems/count-largest-group/
+  Difficulty: Easy
+  Tags: Hash Table, Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countLargestGroup(int n) {

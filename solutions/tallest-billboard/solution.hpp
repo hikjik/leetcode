@@ -4,6 +4,15 @@
 #include <cmath>
 #include <vector>
 
+/*
+  956. Tallest Billboard
+  https://leetcode.com/problems/tallest-billboard/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static const int kMaxSum = 5000;

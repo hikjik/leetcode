@@ -4,6 +4,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  17. Letter Combinations of a Phone Number
+  https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+  Difficulty: Medium
+  Tags: Hash Table, String, Backtracking
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static const inline std::unordered_map<char, std::string> digit2letters{

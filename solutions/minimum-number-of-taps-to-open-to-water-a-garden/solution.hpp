@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1326. Minimum Number of Taps to Open to Water a Garden
+  https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minTaps(int n, const std::vector<int> &ranges) {

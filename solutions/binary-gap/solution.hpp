@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  868. Binary Gap
+  https://leetcode.com/problems/binary-gap/
+  Difficulty: Easy
+  Tags: Bit Manipulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int binaryGap(int n) {

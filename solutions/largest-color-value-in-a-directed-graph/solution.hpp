@@ -5,6 +5,16 @@
 #include <string>
 #include <vector>
 
+/*
+  1857. Largest Color Value in a Directed Graph
+  https://leetcode.com/problems/largest-color-value-in-a-directed-graph/
+  Difficulty: Hard
+  Tags: Hash Table, Dynamic Programming, Graph, Topological Sort, Memoization,
+        Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int largestPathValue(std::string colors,

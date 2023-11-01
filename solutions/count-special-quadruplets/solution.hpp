@@ -3,6 +3,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  1995. Count Special Quadruplets
+  https://leetcode.com/problems/count-special-quadruplets/
+  Difficulty: Easy
+  Tags: Array, Enumeration
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countQuadruplets(const std::vector<int> &nums) {

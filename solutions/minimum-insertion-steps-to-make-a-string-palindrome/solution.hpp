@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1312. Minimum Insertion Steps to Make a String Palindrome
+  https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
+  Difficulty: Hard
+  Tags: String, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minInsertions(std::string s) {

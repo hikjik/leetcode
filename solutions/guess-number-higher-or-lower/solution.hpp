@@ -4,6 +4,15 @@
 
 #include <cassert>
 
+/*
+  374. Guess Number Higher or Lower
+  https://leetcode.com/problems/guess-number-higher-or-lower/
+  Difficulty: Easy
+  Tags: Binary Search, Interactive
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int guessNumber(int n) {

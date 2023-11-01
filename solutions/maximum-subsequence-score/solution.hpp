@@ -4,6 +4,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  2542. Maximum Subsequence Score
+  https://leetcode.com/problems/maximum-subsequence-score/
+  Difficulty: Medium
+  Tags: Array, Greedy, Sorting, Heap (Priority Queue)
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static long long maxScore(const std::vector<int> &nums1,

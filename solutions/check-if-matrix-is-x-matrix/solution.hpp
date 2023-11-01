@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2319. Check if Matrix Is X-Matrix
+  https://leetcode.com/problems/check-if-matrix-is-x-matrix/
+  Difficulty: Easy
+  Tags: Array, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool checkXMatrix(const std::vector<std::vector<int>> &grid) {

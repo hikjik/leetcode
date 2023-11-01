@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1444. Number of Ways of Cutting a Pizza
+  https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming, Memoization, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int ways(const std::vector<std::string> &pizza, int k) {

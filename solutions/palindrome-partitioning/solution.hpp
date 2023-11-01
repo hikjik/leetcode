@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  131. Palindrome Partitioning
+  https://leetcode.com/problems/palindrome-partitioning/
+  Difficulty: Medium
+  Tags: String, Dynamic Programming, Backtracking
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<std::string>> partition(std::string s) {

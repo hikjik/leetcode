@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <string>
 
+/*
+  551. Student Attendance Record I
+  https://leetcode.com/problems/student-attendance-record-i/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool checkRecord(std::string s) {

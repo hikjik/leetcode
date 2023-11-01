@@ -3,6 +3,15 @@
 #include <map>
 #include <vector>
 
+/*
+  2363. Merge Similar Items
+  https://leetcode.com/problems/merge-similar-items/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Sorting, Ordered Set
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>>

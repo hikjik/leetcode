@@ -3,6 +3,15 @@
 #include <stack>
 #include <vector>
 
+/*
+  503. Next Greater Element II
+  https://leetcode.com/problems/next-greater-element-ii/
+  Difficulty: Medium
+  Tags: Array, Stack, Monotonic Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> nextGreaterElements(const std::vector<int> &nums) {

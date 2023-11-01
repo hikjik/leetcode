@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1143. Longest Common Subsequence
+  https://leetcode.com/problems/longest-common-subsequence/
+  Difficulty: Medium
+  Tags: String, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int longestCommonSubsequence(std::string text1, std::string text2) {

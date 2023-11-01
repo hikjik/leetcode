@@ -4,6 +4,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  30. Substring with Concatenation of All Words
+  https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+  Difficulty: Hard
+  Tags: Hash Table, String, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> findSubstring(const std::string &s,

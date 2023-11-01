@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <string>
 
+/*
+  899. Orderly Queue
+  https://leetcode.com/problems/orderly-queue/
+  Difficulty: Hard
+  Tags: Math, String, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static bool less(const std::string &s, size_t l, size_t r) {

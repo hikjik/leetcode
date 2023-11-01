@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  983. Minimum Cost For Tickets
+  https://leetcode.com/problems/minimum-cost-for-tickets/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int mincostTickets(const std::vector<int> &days,

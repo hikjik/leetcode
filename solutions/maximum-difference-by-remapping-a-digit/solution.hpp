@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  2566. Maximum Difference by Remapping a Digit
+  https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/
+  Difficulty: Easy
+  Tags: Math, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minMaxDifference(int num) { return getMax(num) - getMin(num); }

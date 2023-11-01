@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  860. Lemonade Change
+  https://leetcode.com/problems/lemonade-change/
+  Difficulty: Easy
+  Tags: Array, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool lemonadeChange(const std::vector<int> &bills) {

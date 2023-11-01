@@ -3,6 +3,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  1845. Seat Reservation Manager
+  https://leetcode.com/problems/seat-reservation-manager/
+  Difficulty: Medium
+  Tags: Design, Heap (Priority Queue)
+  Time:
+  Space:
+*/
+
 class SeatManager {
 public:
   SeatManager(int n) {

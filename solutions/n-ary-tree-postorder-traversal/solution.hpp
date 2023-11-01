@@ -4,6 +4,15 @@
 
 #include <node.h>
 
+/*
+  590. N-ary Tree Postorder Traversal
+  https://leetcode.com/problems/n-ary-tree-postorder-traversal/
+  Difficulty: Easy
+  Tags: Stack, Tree, Depth-First Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> postorder(Node *root) {

@@ -5,6 +5,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  23. Merge k Sorted Lists
+  https://leetcode.com/problems/merge-k-sorted-lists/
+  Difficulty: Hard
+  Tags: Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   using Element = std::tuple<int, size_t, size_t>;

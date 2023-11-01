@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2742. Painting the Walls
+  https://leetcode.com/problems/painting-the-walls/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int paintWalls(const std::vector<int> &cost,

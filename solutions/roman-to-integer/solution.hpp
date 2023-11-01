@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_map>
 
+/*
+  13. Roman to Integer
+  https://leetcode.com/problems/roman-to-integer/
+  Difficulty: Easy
+  Tags: Hash Table, Math, String
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static const inline std::unordered_map<char, int> symbols{

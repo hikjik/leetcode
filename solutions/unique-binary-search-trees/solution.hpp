@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  96. Unique Binary Search Trees
+  https://leetcode.com/problems/unique-binary-search-trees/
+  Difficulty: Medium
+  Tags: Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int numTrees(int n) {

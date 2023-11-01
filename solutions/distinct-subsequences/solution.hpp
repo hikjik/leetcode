@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  115. Distinct Subsequences
+  https://leetcode.com/problems/distinct-subsequences/
+  Difficulty: Hard
+  Tags: String, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int numDistinct(std::string s, std::string t) {

@@ -3,6 +3,15 @@
 #include <queue>
 #include <string>
 
+/*
+  649. Dota2 Senate
+  https://leetcode.com/problems/dota2-senate/
+  Difficulty: Medium
+  Tags: String, Greedy, Queue
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string predictPartyVictory(std::string senate) {

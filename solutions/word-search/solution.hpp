@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  79. Word Search
+  https://leetcode.com/problems/word-search/
+  Difficulty: Medium
+  Tags: Array, Backtracking, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool exist(const std::vector<std::vector<char>> &board,

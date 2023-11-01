@@ -4,6 +4,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  1140. Stone Game II
+  https://leetcode.com/problems/stone-game-ii/
+  Difficulty: Medium
+  Tags: Array, Math, Dynamic Programming, Prefix Sum, Game Theory
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   int stoneGameII(const std::vector<int> &piles) {

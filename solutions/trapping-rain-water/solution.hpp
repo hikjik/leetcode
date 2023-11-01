@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  42. Trapping Rain Water
+  https://leetcode.com/problems/trapping-rain-water/
+  Difficulty: Hard
+  Tags: Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int trap(const std::vector<int> &heights) {

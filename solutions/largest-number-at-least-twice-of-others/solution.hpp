@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  747. Largest Number At Least Twice of Others
+  https://leetcode.com/problems/largest-number-at-least-twice-of-others/
+  Difficulty: Easy
+  Tags: Array, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int dominantIndex(std::vector<int> nums) {

@@ -2,6 +2,15 @@
 
 #include <tree_node.h>
 
+/*
+  617. Merge Two Binary Trees
+  https://leetcode.com/problems/merge-two-binary-trees/
+  Difficulty: Easy
+  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static TreeNode *mergeTrees(TreeNode *root1, TreeNode *root2) {

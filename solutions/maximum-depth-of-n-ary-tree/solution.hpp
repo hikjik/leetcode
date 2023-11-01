@@ -5,6 +5,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  559. Maximum Depth of N-ary Tree
+  https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
+  Difficulty: Easy
+  Tags: Tree, Depth-First Search, Breadth-First Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxDepth(Node *root) {

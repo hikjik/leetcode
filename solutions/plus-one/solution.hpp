@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  66. Plus One
+  https://leetcode.com/problems/plus-one/
+  Difficulty: Easy
+  Tags: Array, Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> plusOne(const std::vector<int> &digits) {

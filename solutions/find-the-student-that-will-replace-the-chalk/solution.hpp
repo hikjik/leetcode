@@ -3,6 +3,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  1894. Find the Student that Will Replace the Chalk
+  https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/
+  Difficulty: Medium
+  Tags: Array, Binary Search, Simulation, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int chalkReplacer(const std::vector<int> &chalk, int k) {

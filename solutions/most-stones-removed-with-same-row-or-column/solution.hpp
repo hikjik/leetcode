@@ -3,6 +3,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  947. Most Stones Removed with Same Row or Column
+  https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/
+  Difficulty: Medium
+  Tags: Hash Table, Depth-First Search, Union Find, Graph
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int removeStones(const std::vector<std::vector<int>> &stones) {

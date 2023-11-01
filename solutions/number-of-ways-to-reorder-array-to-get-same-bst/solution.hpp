@@ -2,6 +2,16 @@
 
 #include <vector>
 
+/*
+  1569. Number of Ways to Reorder Array to Get Same BST
+  https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/
+  Difficulty: Hard
+  Tags: Array, Math, Divide and Conquer, Dynamic Programming, Tree, Union Find,
+        Binary Search Tree, Memoization, Combinatorics, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int numOfWays(const std::vector<int> &nums) {

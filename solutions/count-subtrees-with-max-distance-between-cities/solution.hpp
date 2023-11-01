@@ -4,6 +4,15 @@
 #include <climits>
 #include <vector>
 
+/*
+  1617. Count Subtrees With Max Distance Between Cities
+  https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/
+  Difficulty: Hard
+  Tags: Dynamic Programming, Bit Manipulation, Tree, Enumeration, Bitmask
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   // Floyd-Warshall Algorithm

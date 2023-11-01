@@ -3,6 +3,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  802. Find Eventual Safe States
+  https://leetcode.com/problems/find-eventual-safe-states/
+  Difficulty: Medium
+  Tags: Depth-First Search, Breadth-First Search, Graph, Topological Sort
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int>

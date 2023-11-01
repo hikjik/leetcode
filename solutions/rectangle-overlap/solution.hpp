@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  836. Rectangle Overlap
+  https://leetcode.com/problems/rectangle-overlap/
+  Difficulty: Easy
+  Tags: Math, Geometry
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isRectangleOverlap(const std::vector<int> &rec1,

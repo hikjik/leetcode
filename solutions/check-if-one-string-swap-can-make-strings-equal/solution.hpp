@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1790. Check if One String Swap Can Make Strings Equal
+  https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/
+  Difficulty: Easy
+  Tags: Hash Table, String, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool areAlmostEqual(std::string s1, std::string s2) {

@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2423. Remove Letter To Equalize Frequency
+  https://leetcode.com/problems/remove-letter-to-equalize-frequency/
+  Difficulty: Easy
+  Tags: Hash Table, String, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool equalFrequency(std::string word) {

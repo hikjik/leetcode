@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1784. Check if Binary String Has at Most One Segment of Ones
+  https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool checkOnesSegment(std::string s) {

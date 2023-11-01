@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2496. Maximum Value of a String in an Array
+  https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/
+  Difficulty: Easy
+  Tags: Array, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maximumValue(const std::vector<std::string> &strs) {

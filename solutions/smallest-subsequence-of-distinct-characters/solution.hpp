@@ -3,6 +3,15 @@
 #include <map>
 #include <string>
 
+/*
+  1081. Smallest Subsequence of Distinct Characters
+  https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/
+  Difficulty: Medium
+  Tags: String, Stack, Greedy, Monotonic Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string smallestSubsequence(const std::string &str) {

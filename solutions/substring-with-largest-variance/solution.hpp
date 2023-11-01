@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <string>
 
+/*
+  2272. Substring With Largest Variance
+  https://leetcode.com/problems/substring-with-largest-variance/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int largestVariance(std::string s) {

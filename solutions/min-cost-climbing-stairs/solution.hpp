@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  746. Min Cost Climbing Stairs
+  https://leetcode.com/problems/min-cost-climbing-stairs/
+  Difficulty: Easy
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minCostClimbingStairs(const std::vector<int> &cost) {

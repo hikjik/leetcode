@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1175. Prime Arrangements
+  https://leetcode.com/problems/prime-arrangements/
+  Difficulty: Easy
+  Tags: Math
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static constexpr int kMod = 1e9 + 7;

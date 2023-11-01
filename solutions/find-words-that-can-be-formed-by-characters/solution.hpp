@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1160. Find Words That Can Be Formed by Characters
+  https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
+  Difficulty: Easy
+  Tags: Array, Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countCharacters(std::vector<std::string> words,

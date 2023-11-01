@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2536. Increment Submatrices by One
+  https://leetcode.com/problems/increment-submatrices-by-one/
+  Difficulty: Medium
+  Tags: Array, Matrix, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>>

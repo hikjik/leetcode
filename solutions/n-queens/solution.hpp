@@ -6,6 +6,15 @@
 
 using ChessBoard = std::vector<std::string>;
 
+/*
+  51. N-Queens
+  https://leetcode.com/problems/n-queens/
+  Difficulty: Hard
+  Tags: Array, Backtracking
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static constexpr size_t kSize = 9;

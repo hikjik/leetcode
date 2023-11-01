@@ -3,6 +3,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  1926. Nearest Exit from Entrance in Maze
+  https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/
+  Difficulty: Medium
+  Tags: Array, Breadth-First Search, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
   static const char EMPTY = '.';
   static const char Wall = '+';

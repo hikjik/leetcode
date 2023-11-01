@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2187. Minimum Time to Complete Trips
+  https://leetcode.com/problems/minimum-time-to-complete-trips/
+  Difficulty: Medium
+  Tags: Array, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   using ll = long long;

@@ -2,6 +2,15 @@
 
 #include <cmath>
 
+/*
+  50. Pow(x, n)
+  https://leetcode.com/problems/powx-n/
+  Difficulty: Medium
+  Tags: Math, Recursion
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static double myPow(double x, int n) {

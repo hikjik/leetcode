@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  80. Remove Duplicates from Sorted Array II
+  https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+  Difficulty: Medium
+  Tags: Array, Two Pointers
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int removeDuplicates(std::vector<int> &nums) {

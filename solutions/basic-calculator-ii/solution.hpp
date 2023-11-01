@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  227. Basic Calculator II
+  https://leetcode.com/problems/basic-calculator-ii/
+  Difficulty: Medium
+  Tags: Math, String, Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int calculate(std::string s) {

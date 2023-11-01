@@ -4,6 +4,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  528. Random Pick with Weight
+  https://leetcode.com/problems/random-pick-with-weight/
+  Difficulty: Medium
+  Tags: Array, Math, Binary Search, Prefix Sum, Randomized
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   std::vector<int> ps_;

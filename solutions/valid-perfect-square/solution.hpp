@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  367. Valid Perfect Square
+  https://leetcode.com/problems/valid-perfect-square/
+  Difficulty: Easy
+  Tags: Math, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isPerfectSquare(int num) {

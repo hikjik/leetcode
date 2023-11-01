@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  33. Search in Rotated Sorted Array
+  https://leetcode.com/problems/search-in-rotated-sorted-array/
+  Difficulty: Medium
+  Tags: Array, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int search(const std::vector<int> &nums, int target) {

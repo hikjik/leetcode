@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  342. Power of Four
+  https://leetcode.com/problems/power-of-four/
+  Difficulty: Easy
+  Tags: Math, Bit Manipulation, Recursion
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isPowerOfFour(int n) {

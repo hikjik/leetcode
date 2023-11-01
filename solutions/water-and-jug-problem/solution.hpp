@@ -2,6 +2,15 @@
 
 #include <numeric>
 
+/*
+  365. Water and Jug Problem
+  https://leetcode.com/problems/water-and-jug-problem/
+  Difficulty: Medium
+  Tags: Math, Depth-First Search, Breadth-First Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool canMeasureWater(int jug1Capacity, int jug2Capacity,

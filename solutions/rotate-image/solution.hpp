@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  48. Rotate Image
+  https://leetcode.com/problems/rotate-image/
+  Difficulty: Medium
+  Tags: Array, Math, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static void rotate(std::vector<std::vector<int>> &matrix) {

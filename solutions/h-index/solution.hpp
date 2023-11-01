@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  274. H-Index
+  https://leetcode.com/problems/h-index/
+  Difficulty: Medium
+  Tags: Array, Sorting, Counting Sort
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int hIndex(std::vector<int> citations) {

@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <string>
 
+/*
+  2160. Minimum Sum of Four Digit Number After Splitting Digits
+  https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
+  Difficulty: Easy
+  Tags: Math, Greedy, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minimumSum(int num) {

@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1579. Remove Max Number of Edges to Keep Graph Fully Traversable
+  https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/
+  Difficulty: Hard
+  Tags: Union Find, Graph
+  Time:
+  Space:
+*/
+
 class DisjointSets {
 public:
   explicit DisjointSets(size_t size) : sets_(size), count_(size) {

@@ -3,6 +3,15 @@
 #include <deque>
 #include <string>
 
+/*
+  2810. Faulty Keyboard
+  https://leetcode.com/problems/faulty-keyboard/
+  Difficulty: Easy
+  Tags: String, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string finalString(std::string s) {

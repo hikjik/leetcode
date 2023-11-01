@@ -6,6 +6,15 @@
 
 // This is the Master's API interface.
 // You should not implement it, or speculate about its implementation
+/*
+  843. Guess the Word
+  https://leetcode.com/problems/guess-the-word/
+  Difficulty: Hard
+  Tags: Array, Math, String, Interactive, Game Theory
+  Time:
+  Space:
+*/
+
 class Master {
 public:
   Master(const std::vector<std::string> &words, std::string secret,

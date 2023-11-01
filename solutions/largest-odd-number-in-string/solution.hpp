@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1903. Largest Odd Number in String
+  https://leetcode.com/problems/largest-odd-number-in-string/
+  Difficulty: Easy
+  Tags: Math, String, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string largestOddNumber(std::string num) {

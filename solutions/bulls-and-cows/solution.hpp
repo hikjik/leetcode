@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  299. Bulls and Cows
+  https://leetcode.com/problems/bulls-and-cows/
+  Difficulty: Medium
+  Tags: Hash Table, String, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string getHint(std::string secret, std::string guess) {

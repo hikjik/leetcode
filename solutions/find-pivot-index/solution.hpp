@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  724. Find Pivot Index
+  https://leetcode.com/problems/find-pivot-index/
+  Difficulty: Easy
+  Tags: Array, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int pivotIndex(const std::vector<int> &nums) {

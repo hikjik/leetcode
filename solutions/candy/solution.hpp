@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  135. Candy
+  https://leetcode.com/problems/candy/
+  Difficulty: Hard
+  Tags: Array, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int candy(const std::vector<int> &ratings) {

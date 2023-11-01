@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2553. Separate the Digits in an Array
+  https://leetcode.com/problems/separate-the-digits-in-an-array/
+  Difficulty: Easy
+  Tags: Array, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> separateDigits(const std::vector<int> &nums) {

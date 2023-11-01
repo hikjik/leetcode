@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  441. Arranging Coins
+  https://leetcode.com/problems/arranging-coins/
+  Difficulty: Easy
+  Tags: Math, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int arrangeCoins(int n) {

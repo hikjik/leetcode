@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  413. Arithmetic Slices
+  https://leetcode.com/problems/arithmetic-slices/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int numberOfArithmeticSlices(const std::vector<int> &nums) {

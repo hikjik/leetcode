@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_set>
 
+/*
+  1763. Longest Nice Substring
+  https://leetcode.com/problems/longest-nice-substring/
+  Difficulty: Easy
+  Tags: Hash Table, String, Divide and Conquer, Bit Manipulation, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string longestNiceSubstring(std::string s) {

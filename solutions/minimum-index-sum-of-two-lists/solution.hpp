@@ -5,6 +5,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  599. Minimum Index Sum of Two Lists
+  https://leetcode.com/problems/minimum-index-sum-of-two-lists/
+  Difficulty: Easy
+  Tags: Array, Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string>

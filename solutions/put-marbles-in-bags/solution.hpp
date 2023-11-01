@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2551. Put Marbles in Bags
+  https://leetcode.com/problems/put-marbles-in-bags/
+  Difficulty: Hard
+  Tags: Array, Greedy, Sorting, Heap (Priority Queue)
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static long long putMarbles(const std::vector<int> &weights, size_t k) {

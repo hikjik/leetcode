@@ -3,6 +3,15 @@
 #include <array>
 #include <vector>
 
+/*
+  2369. Check if There is a Valid Partition For The Array
+  https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool validPartition(const std::vector<int> &nums) {

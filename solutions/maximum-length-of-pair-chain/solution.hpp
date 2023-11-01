@@ -4,6 +4,15 @@
 #include <climits>
 #include <vector>
 
+/*
+  646. Maximum Length of Pair Chain
+  https://leetcode.com/problems/maximum-length-of-pair-chain/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming, Greedy, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int findLongestChain(std::vector<std::vector<int>> pairs) {

@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  763. Partition Labels
+  https://leetcode.com/problems/partition-labels/
+  Difficulty: Medium
+  Tags: Hash Table, Two Pointers, String, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> partitionLabels(std::string s) {

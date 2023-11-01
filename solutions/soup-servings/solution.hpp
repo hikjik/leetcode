@@ -2,6 +2,15 @@
 
 #include <unordered_map>
 
+/*
+  808. Soup Servings
+  https://leetcode.com/problems/soup-servings/
+  Difficulty: Medium
+  Tags: Math, Dynamic Programming, Probability and Statistics
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static const size_t kMaxSteps = 171;

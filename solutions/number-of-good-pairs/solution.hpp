@@ -3,6 +3,15 @@
 #include <array>
 #include <vector>
 
+/*
+  1512. Number of Good Pairs
+  https://leetcode.com/problems/number-of-good-pairs/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Math, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static constexpr size_t kMaxNum = 100;

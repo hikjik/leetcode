@@ -4,6 +4,15 @@
 
 #include <random>
 
+/*
+  382. Linked List Random Node
+  https://leetcode.com/problems/linked-list-random-node/
+  Difficulty: Medium
+  Tags: Linked List, Math, Reservoir Sampling, Randomized
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   Solution(ListNode *head) : head(head) {}

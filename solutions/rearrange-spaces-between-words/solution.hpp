@@ -5,6 +5,15 @@
 #include <sstream>
 #include <string>
 
+/*
+  1592. Rearrange Spaces Between Words
+  https://leetcode.com/problems/rearrange-spaces-between-words/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string reorderSpaces(std::string text) {

@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  661. Image Smoother
+  https://leetcode.com/problems/image-smoother/
+  Difficulty: Easy
+  Tags: Array, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>>

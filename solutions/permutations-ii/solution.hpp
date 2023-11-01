@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  47. Permutations II
+  https://leetcode.com/problems/permutations-ii/
+  Difficulty: Medium
+  Tags: Array, Backtracking
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>> permuteUnique(std::vector<int> nums) {

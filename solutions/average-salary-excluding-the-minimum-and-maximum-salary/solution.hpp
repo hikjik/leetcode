@@ -4,6 +4,15 @@
 #include <limits>
 #include <vector>
 
+/*
+  1491. Average Salary Excluding the Minimum and Maximum Salary
+  https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
+  Difficulty: Easy
+  Tags: Array, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static double average(const std::vector<int> &salaries) {

@@ -3,6 +3,15 @@
 #include <stack>
 #include <vector>
 
+/*
+  84. Largest Rectangle in Histogram
+  https://leetcode.com/problems/largest-rectangle-in-histogram/
+  Difficulty: Hard
+  Tags: Array, Stack, Monotonic Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int largestRectangleArea(const std::vector<int> &heights) {

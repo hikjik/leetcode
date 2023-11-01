@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1422. Maximum Score After Splitting a String
+  https://leetcode.com/problems/maximum-score-after-splitting-a-string/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxScore(std::string s) {

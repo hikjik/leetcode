@@ -4,6 +4,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  911. Online Election
+  https://leetcode.com/problems/online-election/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Binary Search, Design
+  Time:
+  Space:
+*/
+
 class TopVotedCandidate {
 private:
   std::map<int, int> election_leaders;

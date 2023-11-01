@@ -3,6 +3,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  2670. Find the Distinct Difference Array
+  https://leetcode.com/problems/find-the-distinct-difference-array/
+  Difficulty: Easy
+  Tags: Array, Hash Table
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int>

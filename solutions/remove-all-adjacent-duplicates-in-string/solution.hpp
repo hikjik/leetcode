@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1047. Remove All Adjacent Duplicates In String
+  https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+  Difficulty: Easy
+  Tags: String, Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string removeDuplicates(std::string s) {

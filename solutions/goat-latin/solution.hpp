@@ -3,6 +3,15 @@
 #include <sstream>
 #include <string>
 
+/*
+  824. Goat Latin
+  https://leetcode.com/problems/goat-latin/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string toGoatLatin(std::string sentence) {

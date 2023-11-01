@@ -15,6 +15,15 @@ struct HashVector {
   }
 };
 
+/*
+  2352. Equal Row and Column Pairs
+  https://leetcode.com/problems/equal-row-and-column-pairs/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Matrix, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int equalPairs(const std::vector<std::vector<int>> &grid) {

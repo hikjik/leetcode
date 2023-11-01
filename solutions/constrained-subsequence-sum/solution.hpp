@@ -5,6 +5,16 @@
 #include <vector>
 
 template <typename ValueType, typename Comparator = std::less<>>
+/*
+  1425. Constrained Subsequence Sum
+  https://leetcode.com/problems/constrained-subsequence-sum/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming, Queue, Sliding Window,
+        Heap (Priority Queue), Monotonic Queue
+  Time:
+  Space:
+*/
+
 class SlidingWindow {
 public:
   explicit SlidingWindow(size_t size) : size_(size), comp_() {}

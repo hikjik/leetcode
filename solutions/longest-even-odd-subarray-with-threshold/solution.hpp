@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2760. Longest Even Odd Subarray With Threshold
+  https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/
+  Difficulty: Easy
+  Tags: Array, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int longestAlternatingSubarray(const std::vector<int> &nums,

@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  713. Subarray Product Less Than K
+  https://leetcode.com/problems/subarray-product-less-than-k/
+  Difficulty: Medium
+  Tags: Array, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int numSubarrayProductLessThanK(const std::vector<int> &nums, int k) {

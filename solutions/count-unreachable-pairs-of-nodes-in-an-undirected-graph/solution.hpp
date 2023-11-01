@@ -3,6 +3,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  2316. Count Unreachable Pairs of Nodes in an Undirected Graph
+  https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
+  Difficulty: Medium
+  Tags: Depth-First Search, Breadth-First Search, Union Find, Graph
+  Time:
+  Space:
+*/
+
 class DisjointSets {
 public:
   explicit DisjointSets(size_t size) : sets_(size), count_(size) {

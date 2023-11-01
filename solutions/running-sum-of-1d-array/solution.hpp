@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1480. Running Sum of 1d Array
+  https://leetcode.com/problems/running-sum-of-1d-array/
+  Difficulty: Easy
+  Tags: Array, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> runningSum(const std::vector<int> &nums) {

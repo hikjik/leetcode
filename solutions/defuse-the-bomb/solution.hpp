@@ -4,6 +4,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  1652. Defuse the Bomb
+  https://leetcode.com/problems/defuse-the-bomb/
+  Difficulty: Easy
+  Tags: Array
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> decrypt(const std::vector<int> &code, int k) {

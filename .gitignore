@@ -4,3 +4,4 @@ venv
 .cache
 solutions/**/description.md
 .env
+*.egg-info/

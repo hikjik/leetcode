@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2300. Successful Pairs of Spells and Potions
+  https://leetcode.com/problems/successful-pairs-of-spells-and-potions/
+  Difficulty: Medium
+  Tags: Array, Two Pointers, Binary Search, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> successfulPairs(const std::vector<int> &spells,

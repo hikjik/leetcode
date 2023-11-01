@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  377. Combination Sum IV
+  https://leetcode.com/problems/combination-sum-iv/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int combinationSum4(const std::vector<int> &nums, int target) {

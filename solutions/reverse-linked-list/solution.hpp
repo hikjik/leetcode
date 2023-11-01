@@ -2,6 +2,15 @@
 
 #include <list_node.h>
 
+/*
+  206. Reverse Linked List
+  https://leetcode.com/problems/reverse-linked-list/
+  Difficulty: Easy
+  Tags: Linked List, Recursion
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static ListNode *reverseList(ListNode *head) {

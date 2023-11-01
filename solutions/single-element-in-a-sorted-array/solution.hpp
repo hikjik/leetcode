@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  540. Single Element in a Sorted Array
+  https://leetcode.com/problems/single-element-in-a-sorted-array/
+  Difficulty: Medium
+  Tags: Array, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int singleNonDuplicate(const std::vector<int> &nums) {

@@ -4,6 +4,15 @@
 
 #include <tree_node.h>
 
+/*
+  606. Construct String from Binary Tree
+  https://leetcode.com/problems/construct-string-from-binary-tree/
+  Difficulty: Easy
+  Tags: String, Tree, Depth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string tree2str(TreeNode *root) {

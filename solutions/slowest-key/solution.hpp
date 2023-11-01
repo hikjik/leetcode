@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1629. Slowest Key
+  https://leetcode.com/problems/slowest-key/
+  Difficulty: Easy
+  Tags: Array, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static char slowestKey(const std::vector<int> &releaseTimes,

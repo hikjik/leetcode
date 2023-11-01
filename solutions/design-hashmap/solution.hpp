@@ -3,6 +3,15 @@
 #include <list>
 #include <vector>
 
+/*
+  706. Design HashMap
+  https://leetcode.com/problems/design-hashmap/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Linked List, Design, Hash Function
+  Time:
+  Space:
+*/
+
 class MyHashMap {
 private:
   using MapNode = std::pair<int, int>;

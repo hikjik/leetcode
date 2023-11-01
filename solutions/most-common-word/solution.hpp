@@ -6,6 +6,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  819. Most Common Word
+  https://leetcode.com/problems/most-common-word/
+  Difficulty: Easy
+  Tags: Hash Table, String, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string mostCommonWord(std::string paragraph,

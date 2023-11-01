@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  583. Delete Operation for Two Strings
+  https://leetcode.com/problems/delete-operation-for-two-strings/
+  Difficulty: Medium
+  Tags: String, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minDistance(std::string word1, std::string word2) {

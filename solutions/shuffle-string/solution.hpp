@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1528. Shuffle String
+  https://leetcode.com/problems/shuffle-string/
+  Difficulty: Easy
+  Tags: Array, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string restoreString(std::string s,

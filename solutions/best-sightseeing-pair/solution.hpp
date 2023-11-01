@@ -4,6 +4,15 @@
 #include <limits>
 #include <vector>
 
+/*
+  1014. Best Sightseeing Pair
+  https://leetcode.com/problems/best-sightseeing-pair/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxScoreSightseeingPair(const std::vector<int> &values) {

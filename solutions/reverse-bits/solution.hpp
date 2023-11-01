@@ -2,6 +2,15 @@
 
 #include <cstdint>
 
+/*
+  190. Reverse Bits
+  https://leetcode.com/problems/reverse-bits/
+  Difficulty: Easy
+  Tags: Divide and Conquer, Bit Manipulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::uint32_t reverseBits(std::uint32_t n) {

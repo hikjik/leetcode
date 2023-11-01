@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  303. Range Sum Query - Immutable
+  https://leetcode.com/problems/range-sum-query-immutable/
+  Difficulty: Easy
+  Tags: Array, Design, Prefix Sum
+  Time:
+  Space:
+*/
+
 class NumArray {
 public:
   NumArray(std::vector<int> nums) : prefix_sums_(nums.size() + 1, 0) {

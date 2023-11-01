@@ -4,6 +4,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  1712. Ways to Split Array Into Three Subarrays
+  https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/
+  Difficulty: Medium
+  Tags: Array, Two Pointers, Binary Search, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static const int kMod = 1e9 + 7;

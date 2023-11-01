@@ -3,6 +3,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  1376. Time Needed to Inform All Employees
+  https://leetcode.com/problems/time-needed-to-inform-all-employees/
+  Difficulty: Medium
+  Tags: Tree, Depth-First Search, Breadth-First Search
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static int dfs(int i, const std::vector<int> &manager,

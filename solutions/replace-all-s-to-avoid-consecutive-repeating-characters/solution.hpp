@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1576. Replace All ?'s to Avoid Consecutive Repeating Characters
+  https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string modifyString(std::string s) {

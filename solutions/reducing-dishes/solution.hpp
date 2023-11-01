@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1402. Reducing Dishes
+  https://leetcode.com/problems/reducing-dishes/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming, Greedy, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxSatisfaction(std::vector<int> satisfaction) {

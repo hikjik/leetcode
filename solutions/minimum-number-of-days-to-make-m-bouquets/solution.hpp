@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1482. Minimum Number of Days to Make m Bouquets
+  https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/
+  Difficulty: Medium
+  Tags: Array, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minDays(const std::vector<int> &bloom_days, int m, int k) {

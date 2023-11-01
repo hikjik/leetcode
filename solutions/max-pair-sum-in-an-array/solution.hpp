@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2815. Max Pair Sum in an Array
+  https://leetcode.com/problems/max-pair-sum-in-an-array/
+  Difficulty: Easy
+  Tags: Array, Hash Table
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxSum(const std::vector<int> &nums) {

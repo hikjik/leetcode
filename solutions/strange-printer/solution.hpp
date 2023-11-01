@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  664. Strange Printer
+  https://leetcode.com/problems/strange-printer/
+  Difficulty: Hard
+  Tags: String, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int strangePrinter(std::string s) {

@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  76. Minimum Window Substring
+  https://leetcode.com/problems/minimum-window-substring/
+  Difficulty: Hard
+  Tags: Hash Table, String, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string minWindow(std::string s, std::string t) {

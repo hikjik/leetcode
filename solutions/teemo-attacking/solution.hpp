@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  495. Teemo Attacking
+  https://leetcode.com/problems/teemo-attacking/
+  Difficulty: Easy
+  Tags: Array, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int findPoisonedDuration(const std::vector<int> &timeSeries,

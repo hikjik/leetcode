@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1615. Maximal Network Rank
+  https://leetcode.com/problems/maximal-network-rank/
+  Difficulty: Medium
+  Tags: Graph
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maximalNetworkRank(int n,

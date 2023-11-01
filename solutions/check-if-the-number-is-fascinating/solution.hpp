@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <string>
 
+/*
+  2729. Check if The Number is Fascinating
+  https://leetcode.com/problems/check-if-the-number-is-fascinating/
+  Difficulty: Easy
+  Tags: Hash Table, Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isFascinating(int n) {

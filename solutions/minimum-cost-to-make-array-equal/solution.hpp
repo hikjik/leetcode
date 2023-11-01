@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2448. Minimum Cost to Make Array Equal
+  https://leetcode.com/problems/minimum-cost-to-make-array-equal/
+  Difficulty: Hard
+  Tags: Array, Binary Search, Greedy, Sorting, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static long long minCost(const std::vector<int> &nums,

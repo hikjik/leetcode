@@ -4,6 +4,15 @@
 #include <limits>
 #include <vector>
 
+/*
+  643. Maximum Average Subarray I
+  https://leetcode.com/problems/maximum-average-subarray-i/
+  Difficulty: Easy
+  Tags: Array, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static double findMaxAverage(const std::vector<int> &nums, int k) {

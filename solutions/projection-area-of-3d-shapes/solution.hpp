@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  883. Projection Area of 3D Shapes
+  https://leetcode.com/problems/projection-area-of-3d-shapes/
+  Difficulty: Easy
+  Tags: Array, Math, Geometry, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int projectionArea(const std::vector<std::vector<int>> &grid) {

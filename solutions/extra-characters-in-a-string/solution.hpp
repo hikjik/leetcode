@@ -5,6 +5,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  2707. Extra Characters in a String
+  https://leetcode.com/problems/extra-characters-in-a-string/
+  Difficulty: Medium
+  Tags: Array, Hash Table, String, Dynamic Programming, Trie
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minExtraChar(std::string s,

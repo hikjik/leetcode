@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2788. Split Strings by Separator
+  https://leetcode.com/problems/split-strings-by-separator/
+  Difficulty: Easy
+  Tags: Array, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string>

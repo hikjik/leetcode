@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2614. Prime In Diagonal
+  https://leetcode.com/problems/prime-in-diagonal/
+  Difficulty: Easy
+  Tags: Array, Math, Matrix, Number Theory
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int diagonalPrime(const std::vector<std::vector<int>> &nums) {

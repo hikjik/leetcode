@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2176. Count Equal and Divisible Pairs in an Array
+  https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/
+  Difficulty: Easy
+  Tags: Array
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countPairs(const std::vector<int> &nums, int k) {

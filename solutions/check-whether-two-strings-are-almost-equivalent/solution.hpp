@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2068. Check Whether Two Strings are Almost Equivalent
+  https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/
+  Difficulty: Easy
+  Tags: Hash Table, String, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool checkAlmostEquivalent(std::string word1, std::string word2) {

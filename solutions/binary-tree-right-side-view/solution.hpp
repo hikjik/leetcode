@@ -5,6 +5,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  199. Binary Tree Right Side View
+  https://leetcode.com/problems/binary-tree-right-side-view/
+  Difficulty: Medium
+  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> rightSideView(TreeNode *root) {

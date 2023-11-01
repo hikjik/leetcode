@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2574. Left and Right Sum Differences
+  https://leetcode.com/problems/left-and-right-sum-differences/
+  Difficulty: Easy
+  Tags: Array, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> leftRightDifference(const std::vector<int> &nums) {

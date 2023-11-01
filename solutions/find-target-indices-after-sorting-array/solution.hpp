@@ -4,6 +4,15 @@
 #include <ranges>
 #include <vector>
 
+/*
+  2089. Find Target Indices After Sorting Array
+  https://leetcode.com/problems/find-target-indices-after-sorting-array/
+  Difficulty: Easy
+  Tags: Array, Binary Search, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> targetIndices(const std::vector<int> &nums,

@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_map>
 
+/*
+  205. Isomorphic Strings
+  https://leetcode.com/problems/isomorphic-strings/
+  Difficulty: Easy
+  Tags: Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isIsomorphic(std::string s, std::string t) {

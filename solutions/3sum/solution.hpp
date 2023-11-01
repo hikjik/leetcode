@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  15. 3Sum
+  https://leetcode.com/problems/3sum/
+  Difficulty: Medium
+  Tags: Array, Two Pointers, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>> threeSum(std::vector<int> nums) {

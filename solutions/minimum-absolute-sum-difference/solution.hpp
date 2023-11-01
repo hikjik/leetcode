@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1818. Minimum Absolute Sum Difference
+  https://leetcode.com/problems/minimum-absolute-sum-difference/
+  Difficulty: Medium
+  Tags: Array, Binary Search, Sorting, Ordered Set
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static const int MODULO = 1e9 + 7;

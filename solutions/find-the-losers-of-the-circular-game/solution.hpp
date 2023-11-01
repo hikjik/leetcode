@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2682. Find the Losers of the Circular Game
+  https://leetcode.com/problems/find-the-losers-of-the-circular-game/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> circularGameLosers(int n, int k) {

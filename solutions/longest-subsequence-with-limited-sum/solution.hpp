@@ -4,6 +4,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  2389. Longest Subsequence With Limited Sum
+  https://leetcode.com/problems/longest-subsequence-with-limited-sum/
+  Difficulty: Easy
+  Tags: Array, Binary Search, Greedy, Sorting, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> answerQueries(std::vector<int> nums,

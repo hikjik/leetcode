@@ -2,6 +2,15 @@
 
 #include <list_node.h>
 
+/*
+  2. Add Two Numbers
+  https://leetcode.com/problems/add-two-numbers/
+  Difficulty: Medium
+  Tags: Linked List, Math, Recursion
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {

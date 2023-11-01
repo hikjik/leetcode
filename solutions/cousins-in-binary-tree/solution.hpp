@@ -5,6 +5,15 @@
 #include <queue>
 #include <unordered_map>
 
+/*
+  993. Cousins in Binary Tree
+  https://leetcode.com/problems/cousins-in-binary-tree/
+  Difficulty: Easy
+  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isCousins(TreeNode *root, int x, int y) {

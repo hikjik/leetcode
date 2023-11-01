@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  78. Subsets
+  https://leetcode.com/problems/subsets/
+  Difficulty: Medium
+  Tags: Array, Backtracking, Bit Manipulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>> subsets(const std::vector<int> &nums) {

@@ -4,6 +4,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  841. Keys and Rooms
+  https://leetcode.com/problems/keys-and-rooms/
+  Difficulty: Medium
+  Tags: Depth-First Search, Breadth-First Search, Graph
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool canVisitAllRooms(const std::vector<std::vector<int>> &rooms) {

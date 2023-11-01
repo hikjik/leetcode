@@ -2,6 +2,15 @@
 
 #include <numeric>
 
+/*
+  1201. Ugly Number III
+  https://leetcode.com/problems/ugly-number-iii/
+  Difficulty: Medium
+  Tags: Math, Binary Search, Number Theory
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int nthUglyNumber(int n, long long a, long long b, long long c) {

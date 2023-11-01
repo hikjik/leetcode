@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  37. Sudoku Solver
+  https://leetcode.com/problems/sudoku-solver/
+  Difficulty: Hard
+  Tags: Array, Hash Table, Backtracking, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static void solveSudoku(std::vector<std::vector<char>> &board) {

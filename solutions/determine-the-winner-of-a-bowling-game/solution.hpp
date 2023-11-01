@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2660. Determine the Winner of a Bowling Game
+  https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/
+  Difficulty: Easy
+  Tags: Array, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int isWinner(const std::vector<int> &player1,

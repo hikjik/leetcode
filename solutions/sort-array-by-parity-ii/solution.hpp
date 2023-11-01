@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  922. Sort Array By Parity II
+  https://leetcode.com/problems/sort-array-by-parity-ii/
+  Difficulty: Easy
+  Tags: Array, Two Pointers, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> sortArrayByParityII(const std::vector<int> &nums) {

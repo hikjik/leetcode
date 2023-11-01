@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  118. Pascal's Triangle
+  https://leetcode.com/problems/pascals-triangle/
+  Difficulty: Easy
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>> generate(size_t numRows) {

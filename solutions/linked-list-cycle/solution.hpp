@@ -2,6 +2,15 @@
 
 #include <list_node.h>
 
+/*
+  141. Linked List Cycle
+  https://leetcode.com/problems/linked-list-cycle/
+  Difficulty: Easy
+  Tags: Hash Table, Linked List, Two Pointers
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool hasCycle(ListNode *head) {

@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2778. Sum of Squares of Special Elements
+  https://leetcode.com/problems/sum-of-squares-of-special-elements/
+  Difficulty: Easy
+  Tags: Array, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int sumOfSquares(const std::vector<int> &nums) {

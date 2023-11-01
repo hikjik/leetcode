@@ -3,6 +3,15 @@
 #include <regex>
 #include <string>
 
+/*
+  2437. Number of Valid Clock Times
+  https://leetcode.com/problems/number-of-valid-clock-times/
+  Difficulty: Easy
+  Tags: String, Enumeration
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countTime(std::string time) {

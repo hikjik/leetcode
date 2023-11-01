@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  2027. Minimum Moves to Convert String
+  https://leetcode.com/problems/minimum-moves-to-convert-string/
+  Difficulty: Easy
+  Tags: String, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minimumMoves(std::string s) {

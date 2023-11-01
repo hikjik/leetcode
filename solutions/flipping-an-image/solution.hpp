@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  832. Flipping an Image
+  https://leetcode.com/problems/flipping-an-image/
+  Difficulty: Easy
+  Tags: Array, Two Pointers, Matrix, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>>

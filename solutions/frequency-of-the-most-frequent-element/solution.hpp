@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1838. Frequency of the Most Frequent Element
+  https://leetcode.com/problems/frequency-of-the-most-frequent-element/
+  Difficulty: Medium
+  Tags: Array, Binary Search, Greedy, Sliding Window, Sorting, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxFrequency(std::vector<int> nums, int k) {

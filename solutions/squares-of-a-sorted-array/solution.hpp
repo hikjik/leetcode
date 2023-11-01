@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  977. Squares of a Sorted Array
+  https://leetcode.com/problems/squares-of-a-sorted-array/
+  Difficulty: Easy
+  Tags: Array, Two Pointers, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> sortedSquares(const std::vector<int> &nums) {

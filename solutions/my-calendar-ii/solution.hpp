@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  731. My Calendar II
+  https://leetcode.com/problems/my-calendar-ii/
+  Difficulty: Medium
+  Tags: Binary Search, Design, Segment Tree, Ordered Set
+  Time:
+  Space:
+*/
+
 class MyCalendarTwo {
 private:
   std::vector<std::pair<int, int>> intervals;

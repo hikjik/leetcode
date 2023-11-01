@@ -3,6 +3,16 @@
 #include <string>
 #include <vector>
 
+/*
+  5. Longest Palindromic Substring
+  https://leetcode.com/problems/longest-palindromic-substring/
+  Difficulty: Medium
+  Tags: String, Dynamic Programming
+  Time: O(N)
+  Space: O(N)
+  Notes: [Manacher's Algorithm](https://cp-algorithms.com/string/manacher.html)
+*/
+
 class Solution {
 public:
   static std::string longestPalindrome(std::string s) {

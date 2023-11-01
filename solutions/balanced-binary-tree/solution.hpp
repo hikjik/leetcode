@@ -4,6 +4,15 @@
 
 #include <algorithm>
 
+/*
+  110. Balanced Binary Tree
+  https://leetcode.com/problems/balanced-binary-tree/
+  Difficulty: Easy
+  Tags: Tree, Depth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isBalanced(TreeNode *root) {

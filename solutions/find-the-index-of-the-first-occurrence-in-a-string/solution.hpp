@@ -3,6 +3,16 @@
 #include <string>
 #include <vector>
 
+/*
+  28. Find the Index of the First Occurrence in a String
+  https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+  Difficulty: Easy
+  Tags: Two Pointers, String, String Matching
+  Time: O(N+M)
+  Space: O(M)
+  Notes: [Knuth Morris Pratt Algorithm](https://w.wiki/7$3A)
+*/
+
 class Solution {
 public:
   static int strStr(std::string haystack, std::string needle) {

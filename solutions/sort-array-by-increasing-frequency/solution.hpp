@@ -4,6 +4,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  1636. Sort Array by Increasing Frequency
+  https://leetcode.com/problems/sort-array-by-increasing-frequency/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> frequencySort(std::vector<int> nums) {

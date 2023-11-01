@@ -2,6 +2,15 @@
 
 #include <list_node.h>
 
+/*
+  21. Merge Two Sorted Lists
+  https://leetcode.com/problems/merge-two-sorted-lists/
+  Difficulty: Easy
+  Tags: Linked List, Recursion
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static ListNode *mergeTwoLists(ListNode *list1, ListNode *list2) {

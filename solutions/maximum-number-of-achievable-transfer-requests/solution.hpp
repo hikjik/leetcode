@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1601. Maximum Number of Achievable Transfer Requests
+  https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/
+  Difficulty: Hard
+  Tags: Array, Backtracking, Bit Manipulation, Enumeration
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maximumRequests(int n,

@@ -4,6 +4,15 @@
 #include <limits>
 #include <vector>
 
+/*
+  2305. Fair Distribution of Cookies
+  https://leetcode.com/problems/fair-distribution-of-cookies/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int distributeCookies(const std::vector<int> &cookies, int k) {

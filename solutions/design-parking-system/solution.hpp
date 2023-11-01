@@ -2,6 +2,15 @@
 
 #include <array>
 
+/*
+  1603. Design Parking System
+  https://leetcode.com/problems/design-parking-system/
+  Difficulty: Easy
+  Tags: Design, Simulation, Counting
+  Time:
+  Space:
+*/
+
 class ParkingSystem {
 public:
   ParkingSystem(int big, int medium, int small)

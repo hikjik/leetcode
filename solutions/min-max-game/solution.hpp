@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2293. Min Max Game
+  https://leetcode.com/problems/min-max-game/
+  Difficulty: Easy
+  Tags: Array, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minMaxGame(const std::vector<int> &nums) {

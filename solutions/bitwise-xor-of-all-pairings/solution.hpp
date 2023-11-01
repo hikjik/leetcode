@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2425. Bitwise XOR of All Pairings
+  https://leetcode.com/problems/bitwise-xor-of-all-pairings/
+  Difficulty: Medium
+  Tags: Array, Bit Manipulation, Brainteaser
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int xorAllNums(const std::vector<int> &nums1,

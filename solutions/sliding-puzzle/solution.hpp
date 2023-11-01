@@ -5,6 +5,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  773. Sliding Puzzle
+  https://leetcode.com/problems/sliding-puzzle/
+  Difficulty: Hard
+  Tags: Array, Breadth-First Search, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int slidingPuzzle(const std::vector<std::vector<int>> &board) {

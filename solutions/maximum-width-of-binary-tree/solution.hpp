@@ -4,6 +4,15 @@
 
 #include <queue>
 
+/*
+  662. Maximum Width of Binary Tree
+  https://leetcode.com/problems/maximum-width-of-binary-tree/
+  Difficulty: Medium
+  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int widthOfBinaryTree(TreeNode *root) {

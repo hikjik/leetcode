@@ -2,6 +2,15 @@
 
 #include <list_node.h>
 
+/*
+  86. Partition List
+  https://leetcode.com/problems/partition-list/
+  Difficulty: Medium
+  Tags: Linked List, Two Pointers
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static ListNode *partition(ListNode *head, int x) {

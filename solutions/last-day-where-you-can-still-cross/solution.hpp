@@ -2,6 +2,16 @@
 
 #include <vector>
 
+/*
+  1970. Last Day Where You Can Still Cross
+  https://leetcode.com/problems/last-day-where-you-can-still-cross/
+  Difficulty: Hard
+  Tags: Array, Binary Search, Depth-First Search, Breadth-First Search,
+        Union Find, Matrix
+  Time:
+  Space:
+*/
+
 class DisjointSets {
 public:
   explicit DisjointSets(size_t size) : sets_(size) {

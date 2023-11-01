@@ -4,6 +4,15 @@
 
 template <typename T> using Matrix = std::vector<std::vector<T>>;
 
+/*
+  566. Reshape the Matrix
+  https://leetcode.com/problems/reshape-the-matrix/
+  Difficulty: Easy
+  Tags: Array, Matrix, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static Matrix<int> matrixReshape(const Matrix<int> &mat, size_t rows,

@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1498. Number of Subsequences That Satisfy the Given Sum Condition
+  https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
+  Difficulty: Medium
+  Tags: Array, Two Pointers, Binary Search, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static const int kMod = 1e9 + 7;

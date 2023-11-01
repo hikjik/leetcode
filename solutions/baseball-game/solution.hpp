@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  682. Baseball Game
+  https://leetcode.com/problems/baseball-game/
+  Difficulty: Easy
+  Tags: Array, Stack, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int calPoints(const std::vector<std::string> &operations) {

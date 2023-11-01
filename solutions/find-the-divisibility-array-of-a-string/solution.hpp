@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2575. Find the Divisibility Array of a String
+  https://leetcode.com/problems/find-the-divisibility-array-of-a-string/
+  Difficulty: Medium
+  Tags: Array, Math, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> divisibilityArray(std::string word, int m) {

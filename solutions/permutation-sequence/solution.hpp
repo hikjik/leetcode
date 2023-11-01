@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  60. Permutation Sequence
+  https://leetcode.com/problems/permutation-sequence/
+  Difficulty: Hard
+  Tags: Math, Recursion
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string getPermutation(int n, int k) {

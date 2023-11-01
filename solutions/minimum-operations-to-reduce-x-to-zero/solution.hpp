@@ -4,6 +4,15 @@
 #include <numeric>
 #include <vector>
 
+/*
+  1658. Minimum Operations to Reduce X to Zero
+  https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Binary Search, Sliding Window, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minOperations(const std::vector<int> &nums, int x) {

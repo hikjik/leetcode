@@ -4,6 +4,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  139. Word Break
+  https://leetcode.com/problems/word-break/
+  Difficulty: Medium
+  Tags: Array, Hash Table, String, Dynamic Programming, Trie, Memoization
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool wordBreak(const std::string &str,

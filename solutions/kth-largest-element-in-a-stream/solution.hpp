@@ -3,6 +3,16 @@
 #include <queue>
 #include <vector>
 
+/*
+  703. Kth Largest Element in a Stream
+  https://leetcode.com/problems/kth-largest-element-in-a-stream/
+  Difficulty: Easy
+  Tags: Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree,
+        Data Stream
+  Time:
+  Space:
+*/
+
 class KthLargest {
 public:
   KthLargest(int k, const std::vector<int> &nums) : k_(k) {

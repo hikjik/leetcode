@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_map>
 
+/*
+  409. Longest Palindrome
+  https://leetcode.com/problems/longest-palindrome/
+  Difficulty: Easy
+  Tags: Hash Table, String, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
   static const size_t ALPHABET_LENGTH_EN = 26;
 

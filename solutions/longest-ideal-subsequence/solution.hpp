@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2370. Longest Ideal Subsequence
+  https://leetcode.com/problems/longest-ideal-subsequence/
+  Difficulty: Medium
+  Tags: Hash Table, String, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int longestIdealString(std::string s, int k) {

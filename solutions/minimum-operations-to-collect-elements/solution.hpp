@@ -3,6 +3,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  2869. Minimum Operations to Collect Elements
+  https://leetcode.com/problems/minimum-operations-to-collect-elements/
+  Difficulty: Easy
+  Tags: Array, Hash Table
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minOperations(const std::vector<int> &nums, int k) {

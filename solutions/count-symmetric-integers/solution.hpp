@@ -2,6 +2,15 @@
 
 #include <cmath>
 
+/*
+  2843.   Count Symmetric Integers
+  https://leetcode.com/problems/count-symmetric-integers/
+  Difficulty: Easy
+  Tags: Math, Enumeration
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countSymmetricIntegers(int low, int high) {

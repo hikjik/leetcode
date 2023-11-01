@@ -3,6 +3,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  217. Contains Duplicate
+  https://leetcode.com/problems/contains-duplicate/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool containsDuplicate(const std::vector<int> &nums) {

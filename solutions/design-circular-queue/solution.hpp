@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  622. Design Circular Queue
+  https://leetcode.com/problems/design-circular-queue/
+  Difficulty: Medium
+  Tags: Array, Linked List, Design, Queue
+  Time:
+  Space:
+*/
+
 class MyCircularQueue {
 public:
   MyCircularQueue(int k) : data_(k), head_(0), size_(0) {}

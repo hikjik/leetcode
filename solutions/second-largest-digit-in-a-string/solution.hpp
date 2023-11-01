@@ -3,6 +3,15 @@
 #include <set>
 #include <string>
 
+/*
+  1796. Second Largest Digit in a String
+  https://leetcode.com/problems/second-largest-digit-in-a-string/
+  Difficulty: Easy
+  Tags: Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int secondHighest(std::string s) {

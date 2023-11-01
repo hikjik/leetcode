@@ -5,6 +5,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  105. Construct Binary Tree from Preorder and Inorder Traversal
+  https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Divide and Conquer, Tree, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static TreeNode *buildTree(const std::vector<int> &preorder,

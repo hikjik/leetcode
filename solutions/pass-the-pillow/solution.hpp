@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  2582. Pass the Pillow
+  https://leetcode.com/problems/pass-the-pillow/
+  Difficulty: Easy
+  Tags: Math, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int passThePillow(int n, int time) {

@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  908. Smallest Range I
+  https://leetcode.com/problems/smallest-range-i/
+  Difficulty: Easy
+  Tags: Array, Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int smallestRangeI(const std::vector<int> &nums, int k) {

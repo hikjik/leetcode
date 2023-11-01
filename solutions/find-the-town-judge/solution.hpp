@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  997. Find the Town Judge
+  https://leetcode.com/problems/find-the-town-judge/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Graph
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int findJudge(int n, const std::vector<std::vector<int>> &trust) {

@@ -5,6 +5,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1406. Stone Game III
+  https://leetcode.com/problems/stone-game-iii/
+  Difficulty: Hard
+  Tags: Array, Math, Dynamic Programming, Game Theory
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   const size_t kMaxStones = 3;

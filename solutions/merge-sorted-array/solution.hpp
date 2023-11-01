@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  88. Merge Sorted Array
+  https://leetcode.com/problems/merge-sorted-array/
+  Difficulty: Easy
+  Tags: Array, Two Pointers, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static void merge(std::vector<int> &nums1, int m, std::vector<int> &nums2,

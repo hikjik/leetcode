@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  844. Backspace String Compare
+  https://leetcode.com/problems/backspace-string-compare/
+  Difficulty: Easy
+  Tags: Two Pointers, String, Stack, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool backspaceCompare(std::string s, std::string t) {

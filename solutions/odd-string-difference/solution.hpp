@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2451. Odd String Difference
+  https://leetcode.com/problems/odd-string-difference/
+  Difficulty: Easy
+  Tags: Array, Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string oddString(const std::vector<std::string> &words) {

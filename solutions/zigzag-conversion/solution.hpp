@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  6. Zigzag Conversion
+  https://leetcode.com/problems/zigzag-conversion/
+  Difficulty: Medium
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string convert(std::string s, int numRows) {

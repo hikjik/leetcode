@@ -4,6 +4,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  1773. Count Items Matching a Rule
+  https://leetcode.com/problems/count-items-matching-a-rule/
+  Difficulty: Easy
+  Tags: Array, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countMatches(const std::vector<std::vector<std::string>> &items,

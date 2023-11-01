@@ -2,6 +2,15 @@
 
 #include <tree_node.h>
 
+/*
+  1022. Sum of Root To Leaf Binary Numbers
+  https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/
+  Difficulty: Easy
+  Tags: Tree, Depth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int sumRootToLeaf(TreeNode *root) { return sumRootToLeaf(0, root); }

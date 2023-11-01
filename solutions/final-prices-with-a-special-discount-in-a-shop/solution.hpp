@@ -3,6 +3,15 @@
 #include <stack>
 #include <vector>
 
+/*
+  1475. Final Prices With a Special Discount in a Shop
+  https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
+  Difficulty: Easy
+  Tags: Array, Stack, Monotonic Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> finalPrices(const std::vector<int> &prices) {

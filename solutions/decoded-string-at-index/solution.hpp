@@ -3,6 +3,15 @@
 #include <cctype>
 #include <string>
 
+/*
+  880. Decoded String at Index
+  https://leetcode.com/problems/decoded-string-at-index/
+  Difficulty: Medium
+  Tags: String, Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string decodeAtIndex(std::string s, int k) {

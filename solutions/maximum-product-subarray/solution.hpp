@@ -3,6 +3,15 @@
 #include <limits>
 #include <vector>
 
+/*
+  152. Maximum Product Subarray
+  https://leetcode.com/problems/maximum-product-subarray/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxProduct(const std::vector<int> &nums) {

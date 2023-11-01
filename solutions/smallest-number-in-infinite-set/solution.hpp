@@ -3,6 +3,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  2336. Smallest Number in Infinite Set
+  https://leetcode.com/problems/smallest-number-in-infinite-set/
+  Difficulty: Medium
+  Tags: Hash Table, Design, Heap (Priority Queue)
+  Time:
+  Space:
+*/
+
 class SmallestInfiniteSet {
 public:
   int popSmallest() {

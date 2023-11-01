@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1313. Decompress Run-Length Encoded List
+  https://leetcode.com/problems/decompress-run-length-encoded-list/
+  Difficulty: Easy
+  Tags: Array
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> decompressRLElist(const std::vector<int> &nums) {

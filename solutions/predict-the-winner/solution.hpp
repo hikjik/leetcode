@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  486. Predict the Winner
+  https://leetcode.com/problems/predict-the-winner/
+  Difficulty: Medium
+  Tags: Array, Math, Dynamic Programming, Recursion, Game Theory
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool predictTheWinner(const std::vector<int> &nums) {

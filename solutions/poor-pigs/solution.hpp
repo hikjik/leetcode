@@ -2,6 +2,15 @@
 
 #include <cmath>
 
+/*
+  458. Poor Pigs
+  https://leetcode.com/problems/poor-pigs/
+  Difficulty: Hard
+  Tags: Math, Dynamic Programming, Combinatorics
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int poorPigs(int buckets, int minutesToDie, int minutesToTest) {

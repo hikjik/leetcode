@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  2269. Find the K-Beauty of a Number
+  https://leetcode.com/problems/find-the-k-beauty-of-a-number/
+  Difficulty: Easy
+  Tags: Math, String, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int divisorSubstrings(int num, int k) {

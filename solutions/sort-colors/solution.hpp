@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  75. Sort Colors
+  https://leetcode.com/problems/sort-colors/
+  Difficulty: Medium
+  Tags: Array, Two Pointers, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static void sortColors(std::vector<int> &nums) {

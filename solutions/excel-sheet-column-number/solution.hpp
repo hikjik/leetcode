@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  171. Excel Sheet Column Number
+  https://leetcode.com/problems/excel-sheet-column-number/
+  Difficulty: Easy
+  Tags: Math, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int titleToNumber(std::string columnTitle) {

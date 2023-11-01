@@ -4,6 +4,15 @@
 #include <climits>
 #include <vector>
 
+/*
+  1458. Max Dot Product of Two Subsequences
+  https://leetcode.com/problems/max-dot-product-of-two-subsequences/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxDotProduct(const std::vector<int> &nums1,

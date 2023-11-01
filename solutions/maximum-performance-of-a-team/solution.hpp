@@ -4,6 +4,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  1383. Maximum Performance of a Team
+  https://leetcode.com/problems/maximum-performance-of-a-team/
+  Difficulty: Hard
+  Tags: Array, Greedy, Sorting, Heap (Priority Queue)
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static const int kMod = 1e9 + 7;

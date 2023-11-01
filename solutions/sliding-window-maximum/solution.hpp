@@ -4,6 +4,15 @@
 #include <vector>
 
 template <typename ValueType, typename Comparator = std::less<>>
+/*
+  239. Sliding Window Maximum
+  https://leetcode.com/problems/sliding-window-maximum/
+  Difficulty: Hard
+  Tags: Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue
+  Time:
+  Space:
+*/
+
 class SlidingWindow {
 public:
   explicit SlidingWindow(size_t size) : size_(size), comp_() {}

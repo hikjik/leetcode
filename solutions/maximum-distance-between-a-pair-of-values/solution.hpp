@@ -4,6 +4,15 @@
 #include <iterator>
 #include <vector>
 
+/*
+  1855. Maximum Distance Between a Pair of Values
+  https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/
+  Difficulty: Medium
+  Tags: Array, Two Pointers, Binary Search, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxDistance(const std::vector<int> &nums1,

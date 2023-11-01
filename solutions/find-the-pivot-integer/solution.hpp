@@ -2,6 +2,15 @@
 
 #include <cmath>
 
+/*
+  2485. Find the Pivot Integer
+  https://leetcode.com/problems/find-the-pivot-integer/
+  Difficulty: Easy
+  Tags: Math, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int pivotInteger(int n) {

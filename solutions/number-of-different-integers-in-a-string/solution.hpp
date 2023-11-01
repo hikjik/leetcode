@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_set>
 
+/*
+  1805. Number of Different Integers in a String
+  https://leetcode.com/problems/number-of-different-integers-in-a-string/
+  Difficulty: Easy
+  Tags: Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int numDifferentIntegers(std::string word) {

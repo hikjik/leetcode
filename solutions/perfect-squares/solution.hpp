@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  279. Perfect Squares
+  https://leetcode.com/problems/perfect-squares/
+  Difficulty: Medium
+  Tags: Math, Dynamic Programming, Breadth-First Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int numSquares(int n) {

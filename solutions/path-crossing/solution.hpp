@@ -3,6 +3,15 @@
 #include <set>
 #include <string>
 
+/*
+  1496. Path Crossing
+  https://leetcode.com/problems/path-crossing/
+  Difficulty: Easy
+  Tags: Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isPathCrossing(std::string path) {

@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  2432. The Employee That Worked on the Longest Task
+  https://leetcode.com/problems/the-employee-that-worked-on-the-longest-task/
+  Difficulty: Easy
+  Tags: Array
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int hardestWorker(int n, const std::vector<std::vector<int>> &logs) {

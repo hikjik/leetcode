@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  1646. Get Maximum in Generated Array
+  https://leetcode.com/problems/get-maximum-in-generated-array/
+  Difficulty: Easy
+  Tags: Array, Dynamic Programming, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int getMaximumGenerated(int n) {

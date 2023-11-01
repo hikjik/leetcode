@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  2525. Categorize Box According to Criteria
+  https://leetcode.com/problems/categorize-box-according-to-criteria/
+  Difficulty: Easy
+  Tags: Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string categorizeBox(int length, int width, int height,

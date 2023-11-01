@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  1678. Goal Parser Interpretation
+  https://leetcode.com/problems/goal-parser-interpretation/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string interpret(std::string command) {

@@ -4,6 +4,15 @@
 
 #include <list_node_with_random.h>
 
+/*
+  138. Copy List with Random Pointer
+  https://leetcode.com/problems/copy-list-with-random-pointer/
+  Difficulty: Medium
+  Tags: Hash Table, Linked List
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static Node *copyRandomList(Node *head) {

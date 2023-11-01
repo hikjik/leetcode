@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_map>
 
+/*
+  1797. Design Authentication Manager
+  https://leetcode.com/problems/design-authentication-manager/
+  Difficulty: Medium
+  Tags: Hash Table, Design
+  Time:
+  Space:
+*/
+
 class AuthenticationManager {
 public:
   AuthenticationManager(int timeToLive) : timeToLive(timeToLive) {}

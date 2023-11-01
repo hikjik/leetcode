@@ -3,6 +3,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  207. Course Schedule
+  https://leetcode.com/problems/course-schedule/
+  Difficulty: Medium
+  Tags: Depth-First Search, Breadth-First Search, Graph, Topological Sort
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool canFinish(int numCourses,

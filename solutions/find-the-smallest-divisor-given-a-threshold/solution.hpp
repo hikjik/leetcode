@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1283. Find the Smallest Divisor Given a Threshold
+  https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
+  Difficulty: Medium
+  Tags: Array, Binary Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int smallestDivisor(const std::vector<int> &nums, int threshold) {

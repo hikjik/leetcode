@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  696. Count Binary Substrings
+  https://leetcode.com/problems/count-binary-substrings/
+  Difficulty: Easy
+  Tags: Two Pointers, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countBinarySubstrings(std::string s) {

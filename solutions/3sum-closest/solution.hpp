@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  16. 3Sum Closest
+  https://leetcode.com/problems/3sum-closest/
+  Difficulty: Medium
+  Tags: Array, Two Pointers, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int threeSumClosest(std::vector<int> nums, int target) {

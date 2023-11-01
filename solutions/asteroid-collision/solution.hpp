@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  735. Asteroid Collision
+  https://leetcode.com/problems/asteroid-collision/
+  Difficulty: Medium
+  Tags: Array, Stack, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> asteroidCollision(const std::vector<int> &asteroids) {

@@ -5,6 +5,15 @@
 #include <cmath>
 #include <vector>
 
+/*
+  1584. Min Cost to Connect All Points
+  https://leetcode.com/problems/min-cost-to-connect-all-points/
+  Difficulty: Medium
+  Tags: Array, Union Find, Graph, Minimum Spanning Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minCostConnectPoints(std::vector<std::vector<int>> points) {

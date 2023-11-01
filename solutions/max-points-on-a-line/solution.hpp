@@ -4,6 +4,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  149. Max Points on a Line
+  https://leetcode.com/problems/max-points-on-a-line/
+  Difficulty: Hard
+  Tags: Array, Hash Table, Math, Geometry
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxPoints(const std::vector<std::vector<int>> &points) {

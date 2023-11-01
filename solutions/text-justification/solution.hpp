@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  68. Text Justification
+  https://leetcode.com/problems/text-justification/
+  Difficulty: Hard
+  Tags: Array, String, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string>

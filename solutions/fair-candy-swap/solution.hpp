@@ -4,6 +4,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  888. Fair Candy Swap
+  https://leetcode.com/problems/fair-candy-swap/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Binary Search, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> fairCandySwap(const std::vector<int> &alice,

@@ -2,6 +2,15 @@
 
 #include "api.hpp"
 
+/*
+  278. First Bad Version
+  https://leetcode.com/problems/first-bad-version/
+  Difficulty: Easy
+  Tags: Binary Search, Interactive
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int firstBadVersion(int n) {

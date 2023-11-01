@@ -2,6 +2,15 @@
 
 #include <tree_node.h>
 
+/*
+  1372. Longest ZigZag Path in a Binary Tree
+  https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
+  Difficulty: Medium
+  Tags: Dynamic Programming, Tree, Depth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int longestZigZag(TreeNode *root) {

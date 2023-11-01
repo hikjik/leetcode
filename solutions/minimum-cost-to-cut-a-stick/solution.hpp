@@ -4,6 +4,15 @@
 #include <limits>
 #include <vector>
 
+/*
+  1547. Minimum Cost to Cut a Stick
+  https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
+  Difficulty: Hard
+  Tags: Array, Dynamic Programming, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   int minCost(int n, const std::vector<int> &cuts) {

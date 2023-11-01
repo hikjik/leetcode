@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  518. Coin Change II
+  https://leetcode.com/problems/coin-change-ii/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int change(int amount, const std::vector<int> &coins) {

@@ -2,6 +2,15 @@
 
 #include <tree_node.h>
 
+/*
+  572. Subtree of Another Tree
+  https://leetcode.com/problems/subtree-of-another-tree/
+  Difficulty: Easy
+  Tags: Tree, Depth-First Search, String Matching, Binary Tree, Hash Function
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isSubtree(TreeNode *root, TreeNode *sub_root) {

@@ -5,6 +5,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  953. Verifying an Alien Dictionary
+  https://leetcode.com/problems/verifying-an-alien-dictionary/
+  Difficulty: Easy
+  Tags: Array, Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isAlienSorted(const std::vector<std::string> &words,

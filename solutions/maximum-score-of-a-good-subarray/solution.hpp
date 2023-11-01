@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1793. Maximum Score of a Good Subarray
+  https://leetcode.com/problems/maximum-score-of-a-good-subarray/
+  Difficulty: Hard
+  Tags: Array, Two Pointers, Binary Search, Stack, Monotonic Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maximumScore(const std::vector<int> &nums, int k) {

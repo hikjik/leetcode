@@ -3,6 +3,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  909. Snakes and Ladders
+  https://leetcode.com/problems/snakes-and-ladders/
+  Difficulty: Medium
+  Tags: Array, Breadth-First Search, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int snakesAndLadders(const std::vector<std::vector<int>> &board) {

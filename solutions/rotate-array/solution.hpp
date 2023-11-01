@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  189. Rotate Array
+  https://leetcode.com/problems/rotate-array/
+  Difficulty: Medium
+  Tags: Array, Math, Two Pointers
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static void rotate(std::vector<int> &nums, int k) {

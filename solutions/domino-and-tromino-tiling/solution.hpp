@@ -2,6 +2,15 @@
 
 #include <tuple>
 
+/*
+  790. Domino and Tromino Tiling
+  https://leetcode.com/problems/domino-and-tromino-tiling/
+  Difficulty: Medium
+  Tags: Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static const int kMod = 1e9 + 7;

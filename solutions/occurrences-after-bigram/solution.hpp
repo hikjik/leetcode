@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  1078. Occurrences After Bigram
+  https://leetcode.com/problems/occurrences-after-bigram/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string>

@@ -3,6 +3,15 @@
 #include <functional>
 #include <vector>
 
+/*
+  1095. Find in Mountain Array
+  https://leetcode.com/problems/find-in-mountain-array/
+  Difficulty: Hard
+  Tags: Array, Binary Search, Interactive
+  Time:
+  Space:
+*/
+
 class MountainArray {
 public:
   MountainArray(std::vector<int> arr) : arr_(arr), cnt_(0) {}

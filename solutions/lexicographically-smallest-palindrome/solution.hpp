@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  2697. Lexicographically Smallest Palindrome
+  https://leetcode.com/problems/lexicographically-smallest-palindrome/
+  Difficulty: Easy
+  Tags: Two Pointers, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string makeSmallestPalindrome(std::string s) {

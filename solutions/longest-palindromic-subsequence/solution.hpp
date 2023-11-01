@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  516. Longest Palindromic Subsequence
+  https://leetcode.com/problems/longest-palindromic-subsequence/
+  Difficulty: Medium
+  Tags: String, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int longestPalindromeSubseq(std::string s) {

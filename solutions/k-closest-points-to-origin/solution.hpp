@@ -3,6 +3,16 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  973. K Closest Points to Origin
+  https://leetcode.com/problems/k-closest-points-to-origin/
+  Difficulty: Medium
+  Tags: Array, Math, Divide and Conquer, Geometry, Sorting,
+        Heap (Priority Queue), Quickselect
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::vector<int>>

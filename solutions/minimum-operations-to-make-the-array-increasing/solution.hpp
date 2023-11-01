@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1827. Minimum Operations to Make the Array Increasing
+  https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/
+  Difficulty: Easy
+  Tags: Array, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int minOperations(const std::vector<int> &nums) {

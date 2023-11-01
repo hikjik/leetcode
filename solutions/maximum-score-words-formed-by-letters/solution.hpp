@@ -4,6 +4,16 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  1255. Maximum Score Words Formed by Letters
+  https://leetcode.com/problems/maximum-score-words-formed-by-letters/
+  Difficulty: Hard
+  Tags: Array, String, Dynamic Programming, Backtracking, Bit Manipulation,
+        Bitmask
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxScoreWords(const std::vector<std::string> &words,

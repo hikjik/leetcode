@@ -2,6 +2,15 @@
 
 #include <tree_node.h>
 
+/*
+  450. Delete Node in a BST
+  https://leetcode.com/problems/delete-node-in-a-bst/
+  Difficulty: Medium
+  Tags: Tree, Binary Search Tree, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static TreeNode *deleteNode(TreeNode *root, int key) {

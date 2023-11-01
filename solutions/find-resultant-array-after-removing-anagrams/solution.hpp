@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  2273. Find Resultant Array After Removing Anagrams
+  https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/
+  Difficulty: Easy
+  Tags: Array, Hash Table, String, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string>

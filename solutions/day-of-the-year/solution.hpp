@@ -5,6 +5,15 @@
 #include <sstream>
 #include <string>
 
+/*
+  1154. Day of the Year
+  https://leetcode.com/problems/day-of-the-year/
+  Difficulty: Easy
+  Tags: Math, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int dayOfYear(std::string date) {

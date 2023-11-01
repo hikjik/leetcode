@@ -3,6 +3,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  895. Maximum Frequency Stack
+  https://leetcode.com/problems/maximum-frequency-stack/
+  Difficulty: Hard
+  Tags: Hash Table, Stack, Design, Ordered Set
+  Time:
+  Space:
+*/
+
 class FreqStack {
 public:
   FreqStack() {}

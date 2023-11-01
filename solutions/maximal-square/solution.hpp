@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  221. Maximal Square
+  https://leetcode.com/problems/maximal-square/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maximalSquare(const std::vector<std::vector<char>> &matrix) {

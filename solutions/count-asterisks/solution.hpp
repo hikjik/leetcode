@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  2315. Count Asterisks
+  https://leetcode.com/problems/count-asterisks/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countAsterisks(std::string s) {

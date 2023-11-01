@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  401. Binary Watch
+  https://leetcode.com/problems/binary-watch/
+  Difficulty: Easy
+  Tags: Backtracking, Bit Manipulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string> readBinaryWatch(int turnedOn) {

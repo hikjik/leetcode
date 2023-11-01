@@ -3,6 +3,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  697. Degree of an Array
+  https://leetcode.com/problems/degree-of-an-array/
+  Difficulty: Easy
+  Tags: Array, Hash Table
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int findShortestSubArray(const std::vector<int> &nums) {

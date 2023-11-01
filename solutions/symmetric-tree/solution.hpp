@@ -2,6 +2,15 @@
 
 #include <tree_node.h>
 
+/*
+  101. Symmetric Tree
+  https://leetcode.com/problems/symmetric-tree/
+  Difficulty: Easy
+  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isSymmetric(TreeNode *root) {

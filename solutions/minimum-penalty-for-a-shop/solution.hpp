@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <string>
 
+/*
+  2483. Minimum Penalty for a Shop
+  https://leetcode.com/problems/minimum-penalty-for-a-shop/
+  Difficulty: Medium
+  Tags: String, Prefix Sum
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int bestClosingTime(std::string customers) {

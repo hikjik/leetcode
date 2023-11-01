@@ -3,6 +3,15 @@
 #include <cmath>
 #include <vector>
 
+/*
+  812. Largest Triangle Area
+  https://leetcode.com/problems/largest-triangle-area/
+  Difficulty: Easy
+  Tags: Array, Math, Geometry
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static double

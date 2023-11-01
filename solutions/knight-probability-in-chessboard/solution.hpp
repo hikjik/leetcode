@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  688. Knight Probability in Chessboard
+  https://leetcode.com/problems/knight-probability-in-chessboard/
+  Difficulty: Medium
+  Tags: Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static double knightProbability(int n, int steps, int row, int col) {

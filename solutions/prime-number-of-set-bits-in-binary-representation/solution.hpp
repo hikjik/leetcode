@@ -2,6 +2,15 @@
 
 #include <unordered_set>
 
+/*
+  762. Prime Number of Set Bits in Binary Representation
+  https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
+  Difficulty: Easy
+  Tags: Math, Bit Manipulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countPrimeSetBits(int left, int right) {

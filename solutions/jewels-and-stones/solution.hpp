@@ -4,6 +4,15 @@
 #include <string>
 #include <unordered_set>
 
+/*
+  771. Jewels and Stones
+  https://leetcode.com/problems/jewels-and-stones/
+  Difficulty: Easy
+  Tags: Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int numJewelsInStones(std::string jewels, std::string stones) {

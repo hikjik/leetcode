@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  748. Shortest Completing Word
+  https://leetcode.com/problems/shortest-completing-word/
+  Difficulty: Easy
+  Tags: Array, Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string

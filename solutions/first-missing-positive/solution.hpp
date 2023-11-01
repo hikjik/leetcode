@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  41. First Missing Positive
+  https://leetcode.com/problems/first-missing-positive/
+  Difficulty: Hard
+  Tags: Array, Hash Table
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int firstMissingPositive(std::vector<int> nums) {

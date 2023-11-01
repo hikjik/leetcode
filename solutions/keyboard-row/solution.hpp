@@ -6,6 +6,15 @@
 #include <string>
 #include <vector>
 
+/*
+  500. Keyboard Row
+  https://leetcode.com/problems/keyboard-row/
+  Difficulty: Easy
+  Tags: Array, Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string>

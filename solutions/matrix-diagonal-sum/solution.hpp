@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  1572. Matrix Diagonal Sum
+  https://leetcode.com/problems/matrix-diagonal-sum/
+  Difficulty: Easy
+  Tags: Array, Matrix
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int diagonalSum(const std::vector<std::vector<int>> &mat) {

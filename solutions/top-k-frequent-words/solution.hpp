@@ -5,6 +5,16 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  692. Top K Frequent Words
+  https://leetcode.com/problems/top-k-frequent-words/
+  Difficulty: Medium
+  Tags: Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort,
+        Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<std::string>

@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  376. Wiggle Subsequence
+  https://leetcode.com/problems/wiggle-subsequence/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int wiggleMaxLength(const std::vector<int> &nums) {

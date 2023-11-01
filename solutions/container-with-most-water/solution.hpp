@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  11. Container With Most Water
+  https://leetcode.com/problems/container-with-most-water/
+  Difficulty: Medium
+  Tags: Array, Two Pointers, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxArea(const std::vector<int> &height) {

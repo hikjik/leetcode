@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2460. Apply Operations to an Array
+  https://leetcode.com/problems/apply-operations-to-an-array/
+  Difficulty: Easy
+  Tags: Array, Simulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> applyOperations(std::vector<int> nums) {

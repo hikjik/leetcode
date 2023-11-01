@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <array>
 
+/*
+  799. Champagne Tower
+  https://leetcode.com/problems/champagne-tower/
+  Difficulty: Medium
+  Tags: Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 private:
   static const size_t kMaxRows = 101;

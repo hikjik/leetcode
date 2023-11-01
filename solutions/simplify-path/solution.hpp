@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  71. Simplify Path
+  https://leetcode.com/problems/simplify-path/
+  Difficulty: Medium
+  Tags: String, Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string simplifyPath(std::string path) {

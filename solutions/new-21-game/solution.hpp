@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  837. New 21 Game
+  https://leetcode.com/problems/new-21-game/
+  Difficulty: Medium
+  Tags: Math, Dynamic Programming, Sliding Window, Probability and Statistics
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static double new21Game(int n, int k, int maxPts) {

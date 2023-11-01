@@ -3,6 +3,15 @@
 #include <queue>
 #include <vector>
 
+/*
+  1306. Jump Game III
+  https://leetcode.com/problems/jump-game-iii/
+  Difficulty: Medium
+  Tags: Array, Depth-First Search, Breadth-First Search
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool canReach(const std::vector<int> &arr, int start) {

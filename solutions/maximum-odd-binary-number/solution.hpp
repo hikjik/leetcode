@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <string>
 
+/*
+  2864. Maximum Odd Binary Number
+  https://leetcode.com/problems/maximum-odd-binary-number/
+  Difficulty: Easy
+  Tags: Math, String, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string maximumOddBinaryNumber(std::string s) {

@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_set>
 
+/*
+  2062. Count Vowel Substrings of a String
+  https://leetcode.com/problems/count-vowel-substrings-of-a-string/
+  Difficulty: Easy
+  Tags: Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countVowelSubstrings(std::string word) {

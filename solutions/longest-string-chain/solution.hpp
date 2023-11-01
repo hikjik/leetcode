@@ -5,6 +5,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  1048. Longest String Chain
+  https://leetcode.com/problems/longest-string-chain/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Two Pointers, String, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int longestStrChain(std::vector<std::string> words) {

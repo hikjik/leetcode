@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools >= 61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leetcode"
+version = "0.0.1"
+authors = [
+    {name = "Alexandr Morev", email = "alexandr.morev.89@gmail.com"},
+]
+maintainers = [
+    {name = "Alexandr Morev", email = "alexandr.morev.89@gmail.com"},
+]
+description = "Helper package for solving leetcode problems"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "requests",
+    "click",
+]
+
+[project.scripts]
+leetcode = "leetcode.cli:cli"
+
+[project.urls]
+Repository = "https://github.com/hikjik/leetcode"
+BugTracker = "https://github.com/hikjik/leetcode/issues"

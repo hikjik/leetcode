@@ -3,6 +3,15 @@
 #include <algorithm>
 #include <vector>
 
+/*
+  2140. Solving Questions With Brainpower
+  https://leetcode.com/problems/solving-questions-with-brainpower/
+  Difficulty: Medium
+  Tags: Array, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static long long mostPoints(const std::vector<std::vector<int>> &questions) {

@@ -3,6 +3,15 @@
 #include <stack>
 #include <string>
 
+/*
+  394. Decode String
+  https://leetcode.com/problems/decode-string/
+  Difficulty: Medium
+  Tags: String, Stack, Recursion
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string decodeString(std::string str) {

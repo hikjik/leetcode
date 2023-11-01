@@ -1,5 +1,14 @@
 #pragma once
 
+/*
+  2894. Divisible and Non-divisible Sums Difference
+  https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/
+  Difficulty: Easy
+  Tags: Math
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int differenceOfSums(int n, int m) {

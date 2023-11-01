@@ -3,6 +3,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  219. Contains Duplicate II
+  https://leetcode.com/problems/contains-duplicate-ii/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Sliding Window
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool containsNearbyDuplicate(const std::vector<int> &nums, size_t k) {

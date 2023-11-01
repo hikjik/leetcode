@@ -5,6 +5,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  290. Word Pattern
+  https://leetcode.com/problems/word-pattern/
+  Difficulty: Easy
+  Tags: Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool wordPattern(std::string pattern, std::string s) {

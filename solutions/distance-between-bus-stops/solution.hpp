@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1184. Distance Between Bus Stops
+  https://leetcode.com/problems/distance-between-bus-stops/
+  Difficulty: Easy
+  Tags: Array
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int distanceBetweenBusStops(const std::vector<int> &distance,

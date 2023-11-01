@@ -3,6 +3,15 @@
 #include <string>
 #include <unordered_map>
 
+/*
+  387. First Unique Character in a String
+  https://leetcode.com/problems/first-unique-character-in-a-string/
+  Difficulty: Easy
+  Tags: Hash Table, String, Queue, Counting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int firstUniqChar(std::string str) {

@@ -2,6 +2,15 @@
 
 #include <string>
 
+/*
+  58. Length of Last Word
+  https://leetcode.com/problems/length-of-last-word/
+  Difficulty: Easy
+  Tags: String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int lengthOfLastWord(std::string s) {

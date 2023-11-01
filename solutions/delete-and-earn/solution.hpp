@@ -4,6 +4,15 @@
 #include <array>
 #include <vector>
 
+/*
+  740. Delete and Earn
+  https://leetcode.com/problems/delete-and-earn/
+  Difficulty: Medium
+  Tags: Array, Hash Table, Dynamic Programming
+  Time:
+  Space:
+*/
+
 class Solution {
   static const int MAX_VALUE = 1e4;
 

@@ -3,6 +3,15 @@
 #include <stack>
 #include <vector>
 
+/*
+  1944. Number of Visible People in a Queue
+  https://leetcode.com/problems/number-of-visible-people-in-a-queue/
+  Difficulty: Hard
+  Tags: Array, Stack, Monotonic Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> canSeePersonsCount(const std::vector<int> &heights) {

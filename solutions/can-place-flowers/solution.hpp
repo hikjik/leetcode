@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  605. Can Place Flowers
+  https://leetcode.com/problems/can-place-flowers/
+  Difficulty: Easy
+  Tags: Array, Greedy
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool canPlaceFlowers(std::vector<int> flowerbed, int n) {

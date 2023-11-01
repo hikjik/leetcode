@@ -2,6 +2,15 @@
 
 #include <vector>
 
+/*
+  1037. Valid Boomerang
+  https://leetcode.com/problems/valid-boomerang/
+  Difficulty: Easy
+  Tags: Array, Math, Geometry
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool isBoomerang(const std::vector<std::vector<int>> &points) {

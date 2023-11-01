@@ -4,6 +4,15 @@
 #include <unordered_map>
 #include <vector>
 
+/*
+  496. Next Greater Element I
+  https://leetcode.com/problems/next-greater-element-i/
+  Difficulty: Easy
+  Tags: Array, Hash Table, Stack, Monotonic Stack
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::vector<int> nextGreaterElement(std::vector<int> nums1,

@@ -4,6 +4,15 @@
 #include <string>
 #include <vector>
 
+/*
+  859. Buddy Strings
+  https://leetcode.com/problems/buddy-strings/
+  Difficulty: Easy
+  Tags: Hash Table, String
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static bool buddyStrings(std::string s, std::string goal) {

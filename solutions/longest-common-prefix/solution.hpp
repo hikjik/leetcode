@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+  14. Longest Common Prefix
+  https://leetcode.com/problems/longest-common-prefix/
+  Difficulty: Easy
+  Tags: String, Trie
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static std::string longestCommonPrefix(const std::vector<std::string> &strs) {

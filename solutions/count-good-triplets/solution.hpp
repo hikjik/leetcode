@@ -3,6 +3,15 @@
 #include <cmath>
 #include <vector>
 
+/*
+  1534. Count Good Triplets
+  https://leetcode.com/problems/count-good-triplets/
+  Difficulty: Easy
+  Tags: Array, Enumeration
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countGoodTriplets(const std::vector<int> &arr, int a, int b,

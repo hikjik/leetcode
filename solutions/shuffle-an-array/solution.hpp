@@ -3,6 +3,15 @@
 #include <cstdlib>
 #include <vector>
 
+/*
+  384. Shuffle an Array
+  https://leetcode.com/problems/shuffle-an-array/
+  Difficulty: Medium
+  Tags: Array, Math, Randomized
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   Solution(std::vector<int> nums) : nums(nums) {}

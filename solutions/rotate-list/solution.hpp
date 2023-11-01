@@ -2,6 +2,15 @@
 
 #include <list_node.h>
 
+/*
+  61. Rotate List
+  https://leetcode.com/problems/rotate-list/
+  Difficulty: Medium
+  Tags: Linked List, Two Pointers
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static ListNode *rotateRight(ListNode *head, int k) {

@@ -3,6 +3,15 @@
 #include <climits>
 #include <vector>
 
+/*
+  414. Third Maximum Number
+  https://leetcode.com/problems/third-maximum-number/
+  Difficulty: Easy
+  Tags: Array, Sorting
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int thirdMax(const std::vector<int> &nums) {

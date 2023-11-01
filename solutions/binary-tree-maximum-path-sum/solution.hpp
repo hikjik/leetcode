@@ -4,6 +4,15 @@
 
 #include <limits>
 
+/*
+  124. Binary Tree Maximum Path Sum
+  https://leetcode.com/problems/binary-tree-maximum-path-sum/
+  Difficulty: Hard
+  Tags: Dynamic Programming, Tree, Depth-First Search, Binary Tree
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int maxPathSum(TreeNode *root) {

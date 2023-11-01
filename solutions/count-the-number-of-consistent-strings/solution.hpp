@@ -5,6 +5,15 @@
 #include <unordered_set>
 #include <vector>
 
+/*
+  1684. Count the Number of Consistent Strings
+  https://leetcode.com/problems/count-the-number-of-consistent-strings/
+  Difficulty: Easy
+  Tags: Array, Hash Table, String, Bit Manipulation
+  Time:
+  Space:
+*/
+
 class Solution {
 public:
   static int countConsistentStrings(std::string allowed,
