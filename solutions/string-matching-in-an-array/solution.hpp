@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  1408. String Matching in an Array
-  https://leetcode.com/problems/string-matching-in-an-array/
-  Difficulty: Easy
-  Tags: Array, String, String Matching
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

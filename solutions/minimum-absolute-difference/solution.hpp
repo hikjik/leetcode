@@ -4,14 +4,8 @@
 #include <climits>
 #include <vector>
 
-/*
-  1200. Minimum Absolute Difference
-  https://leetcode.com/problems/minimum-absolute-difference/
-  Difficulty: Easy
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

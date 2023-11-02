@@ -3,14 +3,8 @@
 #include <sstream>
 #include <string>
 
-/*
-  8. String to Integer (atoi)
-  https://leetcode.com/problems/string-to-integer-atoi/
-  Difficulty: Medium
-  Tags: String
-  Time:
-  Space:
-*/
+// Time: O(n)
+// Space: O(1)
 
 class Solution {
 public:

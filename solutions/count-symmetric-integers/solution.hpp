@@ -2,14 +2,8 @@
 
 #include <cmath>
 
-/*
-  2843.   Count Symmetric Integers
-  https://leetcode.com/problems/count-symmetric-integers/
-  Difficulty: Easy
-  Tags: Math, Enumeration
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

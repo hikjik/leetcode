@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  373. Find K Pairs with Smallest Sums
-  https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
-  Difficulty: Medium
-  Tags: Array, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

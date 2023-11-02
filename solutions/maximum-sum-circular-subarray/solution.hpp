@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  918. Maximum Sum Circular Subarray
-  https://leetcode.com/problems/maximum-sum-circular-subarray/
-  Difficulty: Medium
-  Tags: Array, Divide and Conquer, Dynamic Programming, Queue, Monotonic Queue
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

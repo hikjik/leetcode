@@ -4,14 +4,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  1652. Defuse the Bomb
-  https://leetcode.com/problems/defuse-the-bomb/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

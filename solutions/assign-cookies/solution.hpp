@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  455. Assign Cookies
-  https://leetcode.com/problems/assign-cookies/
-  Difficulty: Easy
-  Tags: Array, Two Pointers, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

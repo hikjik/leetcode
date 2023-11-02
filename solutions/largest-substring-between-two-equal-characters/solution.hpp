@@ -3,14 +3,8 @@
 #include <string>
 #include <unordered_map>
 
-/*
-  1624. Largest Substring Between Two Equal Characters
-  https://leetcode.com/problems/largest-substring-between-two-equal-characters/
-  Difficulty: Easy
-  Tags: Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

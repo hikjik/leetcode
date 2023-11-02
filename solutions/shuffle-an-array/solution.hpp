@@ -3,14 +3,8 @@
 #include <cstdlib>
 #include <vector>
 
-/*
-  384. Shuffle an Array
-  https://leetcode.com/problems/shuffle-an-array/
-  Difficulty: Medium
-  Tags: Array, Math, Randomized
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

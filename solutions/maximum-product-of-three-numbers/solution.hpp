@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  628. Maximum Product of Three Numbers
-  https://leetcode.com/problems/maximum-product-of-three-numbers/
-  Difficulty: Easy
-  Tags: Array, Math, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

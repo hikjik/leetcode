@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <string>
 
-/*
-  1332. Remove Palindromic Subsequences
-  https://leetcode.com/problems/remove-palindromic-subsequences/
-  Difficulty: Easy
-  Tags: Two Pointers, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

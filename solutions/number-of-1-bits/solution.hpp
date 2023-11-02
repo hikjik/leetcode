@@ -2,14 +2,8 @@
 
 #include <cstdint>
 
-/*
-  191. Number of 1 Bits
-  https://leetcode.com/problems/number-of-1-bits/
-  Difficulty: Easy
-  Tags: Divide and Conquer, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

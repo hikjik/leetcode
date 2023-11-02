@@ -4,14 +4,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  2542. Maximum Subsequence Score
-  https://leetcode.com/problems/maximum-subsequence-score/
-  Difficulty: Medium
-  Tags: Array, Greedy, Sorting, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

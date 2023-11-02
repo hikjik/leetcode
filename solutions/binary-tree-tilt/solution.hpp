@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  563. Binary Tree Tilt
-  https://leetcode.com/problems/binary-tree-tilt/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

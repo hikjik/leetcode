@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  605. Can Place Flowers
-  https://leetcode.com/problems/can-place-flowers/
-  Difficulty: Easy
-  Tags: Array, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2660. Determine the Winner of a Bowling Game
-  https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/
-  Difficulty: Easy
-  Tags: Array, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

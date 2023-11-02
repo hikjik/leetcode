@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1818. Minimum Absolute Sum Difference
-  https://leetcode.com/problems/minimum-absolute-sum-difference/
-  Difficulty: Medium
-  Tags: Array, Binary Search, Sorting, Ordered Set
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1863. Sum of All Subset XOR Totals
-  https://leetcode.com/problems/sum-of-all-subset-xor-totals/
-  Difficulty: Easy
-  Tags: Array, Math, Backtracking, Bit Manipulation, Combinatorics
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

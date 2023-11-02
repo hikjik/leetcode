@@ -3,14 +3,8 @@
 #include <stack>
 #include <string>
 
-/*
-  394. Decode String
-  https://leetcode.com/problems/decode-string/
-  Difficulty: Medium
-  Tags: String, Stack, Recursion
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

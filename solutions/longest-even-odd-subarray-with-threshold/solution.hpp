@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2760. Longest Even Odd Subarray With Threshold
-  https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/
-  Difficulty: Easy
-  Tags: Array, Sliding Window
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

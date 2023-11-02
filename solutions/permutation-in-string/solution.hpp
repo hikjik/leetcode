@@ -3,14 +3,8 @@
 #include <string>
 #include <unordered_map>
 
-/*
-  567. Permutation in String
-  https://leetcode.com/problems/permutation-in-string/
-  Difficulty: Medium
-  Tags: Hash Table, Two Pointers, String, Sliding Window
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

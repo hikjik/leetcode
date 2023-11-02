@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  16. 3Sum Closest
-  https://leetcode.com/problems/3sum-closest/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Sorting
-  Time:
-  Space:
-*/
+// Time: O(N^2)
+// Space: O(N), N to store sorted input array
 
 class Solution {
 public:

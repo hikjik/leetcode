@@ -4,14 +4,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  2643. Row With Maximum Ones
-  https://leetcode.com/problems/row-with-maximum-ones/
-  Difficulty: Easy
-  Tags: Array, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

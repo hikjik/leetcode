@@ -4,14 +4,8 @@
 #include <cstring>
 #include <vector>
 
-/*
-  879. Profitable Schemes
-  https://leetcode.com/problems/profitable-schemes/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
   static const int kMod = 1e9 + 7;

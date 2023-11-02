@@ -2,14 +2,8 @@
 
 #include <list_node.h>
 
-/*
-  237. Delete Node in a Linked List
-  https://leetcode.com/problems/delete-node-in-a-linked-list/
-  Difficulty: Medium
-  Tags: Linked List
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  983. Minimum Cost For Tickets
-  https://leetcode.com/problems/minimum-cost-for-tickets/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

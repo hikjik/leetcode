@@ -2,14 +2,8 @@
 
 #include <climits>
 
-/*
-  7. Reverse Integer
-  https://leetcode.com/problems/reverse-integer/
-  Difficulty: Medium
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time: O(logN)
+// Space: O(1)
 
 class Solution {
 public:

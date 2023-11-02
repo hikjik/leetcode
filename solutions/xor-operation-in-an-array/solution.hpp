@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  1486. XOR Operation in an Array
-  https://leetcode.com/problems/xor-operation-in-an-array/
-  Difficulty: Easy
-  Tags: Math, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

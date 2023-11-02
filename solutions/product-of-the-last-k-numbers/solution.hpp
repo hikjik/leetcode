@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1352. Product of the Last K Numbers
-  https://leetcode.com/problems/product-of-the-last-k-numbers/
-  Difficulty: Medium
-  Tags: Array, Math, Design, Queue, Data Stream
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class ProductOfNumbers {
 private:

@@ -3,14 +3,8 @@
 #include <cmath>
 #include <vector>
 
-/*
-  1266. Minimum Time Visiting All Points
-  https://leetcode.com/problems/minimum-time-visiting-all-points/
-  Difficulty: Easy
-  Tags: Array, Math, Geometry
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

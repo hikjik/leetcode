@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1974. Minimum Time to Type Word Using Special Typewriter
-  https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
-  Difficulty: Easy
-  Tags: String, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  2206. Divide Array Into Equal Pairs
-  https://leetcode.com/problems/divide-array-into-equal-pairs/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Bit Manipulation, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

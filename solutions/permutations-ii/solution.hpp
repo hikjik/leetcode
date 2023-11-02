@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  47. Permutations II
-  https://leetcode.com/problems/permutations-ii/
-  Difficulty: Medium
-  Tags: Array, Backtracking
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  540. Single Element in a Sorted Array
-  https://leetcode.com/problems/single-element-in-a-sorted-array/
-  Difficulty: Medium
-  Tags: Array, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

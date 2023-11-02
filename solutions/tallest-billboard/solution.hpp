@@ -4,14 +4,8 @@
 #include <cmath>
 #include <vector>
 
-/*
-  956. Tallest Billboard
-  https://leetcode.com/problems/tallest-billboard/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

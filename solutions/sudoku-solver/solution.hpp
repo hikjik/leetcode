@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  37. Sudoku Solver
-  https://leetcode.com/problems/sudoku-solver/
-  Difficulty: Hard
-  Tags: Array, Hash Table, Backtracking, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

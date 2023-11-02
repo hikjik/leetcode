@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  78. Subsets
-  https://leetcode.com/problems/subsets/
-  Difficulty: Medium
-  Tags: Array, Backtracking, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

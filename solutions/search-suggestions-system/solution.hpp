@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  1268. Search Suggestions System
-  https://leetcode.com/problems/search-suggestions-system/
-  Difficulty: Medium
-  Tags: Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  518. Coin Change II
-  https://leetcode.com/problems/coin-change-ii/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

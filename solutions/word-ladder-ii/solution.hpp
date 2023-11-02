@@ -5,14 +5,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  126. Word Ladder II
-  https://leetcode.com/problems/word-ladder-ii/
-  Difficulty: Hard
-  Tags: Hash Table, String, Backtracking, Breadth-First Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

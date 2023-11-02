@@ -3,14 +3,8 @@
 #include <climits>
 #include <vector>
 
-/*
-  334. Increasing Triplet Subsequence
-  https://leetcode.com/problems/increasing-triplet-subsequence/
-  Difficulty: Medium
-  Tags: Array, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <numeric>
 
-/*
-  365. Water and Jug Problem
-  https://leetcode.com/problems/water-and-jug-problem/
-  Difficulty: Medium
-  Tags: Math, Depth-First Search, Breadth-First Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

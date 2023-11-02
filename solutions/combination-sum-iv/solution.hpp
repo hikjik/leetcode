@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  377. Combination Sum IV
-  https://leetcode.com/problems/combination-sum-iv/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

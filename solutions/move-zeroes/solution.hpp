@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  283. Move Zeroes
-  https://leetcode.com/problems/move-zeroes/
-  Difficulty: Easy
-  Tags: Array, Two Pointers
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

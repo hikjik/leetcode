@@ -3,14 +3,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  2913. Subarrays Distinct Element Sum of Squares I
-  https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/
-  Difficulty: Easy
-  Tags: Array, Hash Table
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

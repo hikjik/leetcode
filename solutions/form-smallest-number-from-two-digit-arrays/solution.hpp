@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2605. Form Smallest Number From Two Digit Arrays
-  https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Enumeration
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

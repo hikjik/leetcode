@@ -3,14 +3,8 @@
 #include <ranges>
 #include <vector>
 
-/*
-  1710. Maximum Units on a Truck
-  https://leetcode.com/problems/maximum-units-on-a-truck/
-  Difficulty: Easy
-  Tags: Array, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  417. Pacific Atlantic Water Flow
-  https://leetcode.com/problems/pacific-atlantic-water-flow/
-  Difficulty: Medium
-  Tags: Array, Depth-First Search, Breadth-First Search, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

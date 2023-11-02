@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  949. Largest Time for Given Digits
-  https://leetcode.com/problems/largest-time-for-given-digits/
-  Difficulty: Medium
-  Tags: String, Enumeration
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1556. Thousand Separator
-  https://leetcode.com/problems/thousand-separator/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

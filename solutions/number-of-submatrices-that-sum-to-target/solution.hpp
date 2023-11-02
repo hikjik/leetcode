@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1074. Number of Submatrices That Sum to Target
-  https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/
-  Difficulty: Hard
-  Tags: Array, Hash Table, Matrix, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <string>
 #include <unordered_map>
 
-/*
-  205. Isomorphic Strings
-  https://leetcode.com/problems/isomorphic-strings/
-  Difficulty: Easy
-  Tags: Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

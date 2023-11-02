@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  886. Possible Bipartition
-  https://leetcode.com/problems/possible-bipartition/
-  Difficulty: Medium
-  Tags: Depth-First Search, Breadth-First Search, Union Find, Graph
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

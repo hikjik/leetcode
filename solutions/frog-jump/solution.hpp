@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  403. Frog Jump
-  https://leetcode.com/problems/frog-jump/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

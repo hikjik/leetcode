@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  712. Minimum ASCII Delete Sum for Two Strings
-  https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
-  Difficulty: Medium
-  Tags: String, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

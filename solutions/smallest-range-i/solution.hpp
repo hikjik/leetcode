@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  908. Smallest Range I
-  https://leetcode.com/problems/smallest-range-i/
-  Difficulty: Easy
-  Tags: Array, Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

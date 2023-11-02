@@ -4,14 +4,8 @@
 #include <climits>
 #include <vector>
 
-/*
-  229. Majority Element II
-  https://leetcode.com/problems/majority-element-ii/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Sorting, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

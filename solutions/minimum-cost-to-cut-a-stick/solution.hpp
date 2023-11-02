@@ -4,14 +4,8 @@
 #include <limits>
 #include <vector>
 
-/*
-  1547. Minimum Cost to Cut a Stick
-  https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  830. Positions of Large Groups
-  https://leetcode.com/problems/positions-of-large-groups/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <string>
 #include <unordered_map>
 
-/*
-  383. Ransom Note
-  https://leetcode.com/problems/ransom-note/
-  Difficulty: Easy
-  Tags: Hash Table, String, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

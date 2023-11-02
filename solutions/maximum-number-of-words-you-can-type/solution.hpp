@@ -5,14 +5,8 @@
 #include <string>
 #include <unordered_set>
 
-/*
-  1935. Maximum Number of Words You Can Type
-  https://leetcode.com/problems/maximum-number-of-words-you-can-type/
-  Difficulty: Easy
-  Tags: Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

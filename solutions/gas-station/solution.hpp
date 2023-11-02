@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  134. Gas Station
-  https://leetcode.com/problems/gas-station/
-  Difficulty: Medium
-  Tags: Array, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

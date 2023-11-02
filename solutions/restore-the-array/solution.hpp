@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  1416. Restore The Array
-  https://leetcode.com/problems/restore-the-array/
-  Difficulty: Hard
-  Tags: String, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

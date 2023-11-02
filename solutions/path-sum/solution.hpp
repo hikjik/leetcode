@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  112. Path Sum
-  https://leetcode.com/problems/path-sum/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

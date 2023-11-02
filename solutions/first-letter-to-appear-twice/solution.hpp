@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2351. First Letter to Appear Twice
-  https://leetcode.com/problems/first-letter-to-appear-twice/
-  Difficulty: Easy
-  Tags: Hash Table, String, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

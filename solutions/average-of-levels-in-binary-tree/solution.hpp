@@ -5,14 +5,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  637. Average of Levels in Binary Tree
-  https://leetcode.com/problems/average-of-levels-in-binary-tree/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

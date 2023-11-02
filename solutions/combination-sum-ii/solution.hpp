@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  40. Combination Sum II
-  https://leetcode.com/problems/combination-sum-ii/
-  Difficulty: Medium
-  Tags: Array, Backtracking
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

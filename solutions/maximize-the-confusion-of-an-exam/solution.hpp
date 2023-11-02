@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <string>
 
-/*
-  2024. Maximize the Confusion of an Exam
-  https://leetcode.com/problems/maximize-the-confusion-of-an-exam/
-  Difficulty: Medium
-  Tags: String, Binary Search, Sliding Window, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

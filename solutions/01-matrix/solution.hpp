@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  542. 01 Matrix
-  https://leetcode.com/problems/01-matrix/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming, Breadth-First Search, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

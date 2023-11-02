@@ -3,14 +3,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  1252. Cells with Odd Values in a Matrix
-  https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
-  Difficulty: Easy
-  Tags: Array, Math, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

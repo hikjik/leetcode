@@ -3,14 +3,8 @@
 #include <cmath>
 #include <string>
 
-/*
-  2833. Furthest Point From Origin
-  https://leetcode.com/problems/furthest-point-from-origin/
-  Difficulty: Easy
-  Tags: Array, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

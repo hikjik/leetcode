@@ -2,14 +2,8 @@
 
 #include <cmath>
 
-/*
-  633. Sum of Square Numbers
-  https://leetcode.com/problems/sum-of-square-numbers/
-  Difficulty: Medium
-  Tags: Math, Two Pointers, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

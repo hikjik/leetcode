@@ -7,14 +7,8 @@
 
 #include <tree_node.h>
 
-/*
-  515. Find Largest Value in Each Tree Row
-  https://leetcode.com/problems/find-largest-value-in-each-tree-row/
-  Difficulty: Medium
-  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  836. Rectangle Overlap
-  https://leetcode.com/problems/rectangle-overlap/
-  Difficulty: Easy
-  Tags: Math, Geometry
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

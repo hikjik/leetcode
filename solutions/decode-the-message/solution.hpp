@@ -4,14 +4,8 @@
 #include <string>
 #include <unordered_map>
 
-/*
-  2325. Decode the Message
-  https://leetcode.com/problems/decode-the-message/
-  Difficulty: Easy
-  Tags: Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

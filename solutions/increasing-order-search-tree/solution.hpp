@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  897. Increasing Order Search Tree
-  https://leetcode.com/problems/increasing-order-search-tree/
-  Difficulty: Easy
-  Tags: Stack, Tree, Depth-First Search, Binary Search Tree, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

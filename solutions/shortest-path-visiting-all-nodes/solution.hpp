@@ -3,15 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  847. Shortest Path Visiting All Nodes
-  https://leetcode.com/problems/shortest-path-visiting-all-nodes/
-  Difficulty: Hard
-  Tags: Dynamic Programming, Bit Manipulation, Breadth-First Search, Graph,
-        Bitmask
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <array>
 
-/*
-  1742. Maximum Number of Balls in a Box
-  https://leetcode.com/problems/maximum-number-of-balls-in-a-box/
-  Difficulty: Easy
-  Tags: Hash Table, Math, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

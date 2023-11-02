@@ -2,14 +2,8 @@
 
 #include <cmath>
 
-/*
-  458. Poor Pigs
-  https://leetcode.com/problems/poor-pigs/
-  Difficulty: Hard
-  Tags: Math, Dynamic Programming, Combinatorics
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

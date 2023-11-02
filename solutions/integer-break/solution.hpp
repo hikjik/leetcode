@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  343. Integer Break
-  https://leetcode.com/problems/integer-break/
-  Difficulty: Medium
-  Tags: Math, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

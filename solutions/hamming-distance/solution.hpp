@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  461. Hamming Distance
-  https://leetcode.com/problems/hamming-distance/
-  Difficulty: Easy
-  Tags: Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

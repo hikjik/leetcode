@@ -2,14 +2,8 @@
 
 #include <cstdint>
 
-/*
-  190. Reverse Bits
-  https://leetcode.com/problems/reverse-bits/
-  Difficulty: Easy
-  Tags: Divide and Conquer, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

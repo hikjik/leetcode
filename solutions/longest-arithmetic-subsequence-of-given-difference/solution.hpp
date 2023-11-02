@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1218. Longest Arithmetic Subsequence of Given Difference
-  https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

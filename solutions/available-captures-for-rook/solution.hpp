@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  999. Available Captures for Rook
-  https://leetcode.com/problems/available-captures-for-rook/
-  Difficulty: Easy
-  Tags: Array, Matrix, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

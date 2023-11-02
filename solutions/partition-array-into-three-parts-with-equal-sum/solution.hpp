@@ -4,14 +4,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  1013. Partition Array Into Three Parts With Equal Sum
-  https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/
-  Difficulty: Easy
-  Tags: Array, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

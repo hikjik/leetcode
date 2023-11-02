@@ -2,14 +2,8 @@
 
 #include <algorithm>
 
-/*
-  2591. Distribute Money to Maximum Children
-  https://leetcode.com/problems/distribute-money-to-maximum-children/
-  Difficulty: Easy
-  Tags: Math, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

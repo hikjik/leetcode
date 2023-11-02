@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2899. Last Visited Integers
-  https://leetcode.com/problems/last-visited-integers/
-  Difficulty: Easy
-  Tags: Array, String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

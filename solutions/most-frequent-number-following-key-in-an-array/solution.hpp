@@ -3,14 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  2190. Most Frequent Number Following Key In an Array
-  https://leetcode.com/problems/most-frequent-number-following-key-in-an-array/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

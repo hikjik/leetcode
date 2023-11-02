@@ -3,15 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  839. Similar String Groups
-  https://leetcode.com/problems/similar-string-groups/
-  Difficulty: Hard
-  Tags: Array, Hash Table, String, Depth-First Search, Breadth-First Search,
-        Union Find
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class DisjointSets {
 public:

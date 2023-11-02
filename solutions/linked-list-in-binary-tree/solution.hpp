@@ -3,14 +3,8 @@
 #include <list_node.h>
 #include <tree_node.h>
 
-/*
-  1367. Linked List in Binary Tree
-  https://leetcode.com/problems/linked-list-in-binary-tree/
-  Difficulty: Medium
-  Tags: Linked List, Tree, Depth-First Search, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

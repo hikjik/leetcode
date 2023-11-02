@@ -4,14 +4,8 @@
 #include <limits>
 #include <vector>
 
-/*
-  931. Minimum Falling Path Sum
-  https://leetcode.com/problems/minimum-falling-path-sum/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

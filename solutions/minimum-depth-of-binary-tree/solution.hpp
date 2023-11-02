@@ -4,14 +4,8 @@
 
 #include <queue>
 
-/*
-  111. Minimum Depth of Binary Tree
-  https://leetcode.com/problems/minimum-depth-of-binary-tree/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

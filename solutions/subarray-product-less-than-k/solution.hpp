@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  713. Subarray Product Less Than K
-  https://leetcode.com/problems/subarray-product-less-than-k/
-  Difficulty: Medium
-  Tags: Array, Sliding Window
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <ranges>
 #include <vector>
 
-/*
-  1380. Lucky Numbers in a Matrix
-  https://leetcode.com/problems/lucky-numbers-in-a-matrix/
-  Difficulty: Easy
-  Tags: Array, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

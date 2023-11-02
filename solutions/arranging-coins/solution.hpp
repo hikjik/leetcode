@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  441. Arranging Coins
-  https://leetcode.com/problems/arranging-coins/
-  Difficulty: Easy
-  Tags: Math, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

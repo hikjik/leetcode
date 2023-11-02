@@ -4,14 +4,8 @@
 #include <limits>
 #include <vector>
 
-/*
-  2492. Minimum Score of a Path Between Two Cities
-  https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/
-  Difficulty: Medium
-  Tags: Depth-First Search, Breadth-First Search, Union Find, Graph
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class DisjointSets {
 public:

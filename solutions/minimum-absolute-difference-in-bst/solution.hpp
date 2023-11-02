@@ -6,15 +6,8 @@
 #include <limits>
 #include <optional>
 
-/*
-  530. Minimum Absolute Difference in BST
-  https://leetcode.com/problems/minimum-absolute-difference-in-bst/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Search Tree,
-        Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

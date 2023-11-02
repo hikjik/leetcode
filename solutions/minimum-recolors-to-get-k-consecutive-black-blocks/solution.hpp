@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  2379. Minimum Recolors to Get K Consecutive Black Blocks
-  https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/
-  Difficulty: Easy
-  Tags: String, Sliding Window
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

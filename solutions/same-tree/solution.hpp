@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  100. Same Tree
-  https://leetcode.com/problems/same-tree/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

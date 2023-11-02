@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2090. K Radius Subarray Averages
-  https://leetcode.com/problems/k-radius-subarray-averages/
-  Difficulty: Medium
-  Tags: Array, Sliding Window
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

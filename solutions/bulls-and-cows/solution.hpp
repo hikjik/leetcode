@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  299. Bulls and Cows
-  https://leetcode.com/problems/bulls-and-cows/
-  Difficulty: Medium
-  Tags: Hash Table, String, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

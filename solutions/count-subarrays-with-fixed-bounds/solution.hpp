@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2444. Count Subarrays With Fixed Bounds
-  https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
-  Difficulty: Hard
-  Tags: Array, Queue, Sliding Window, Monotonic Queue
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

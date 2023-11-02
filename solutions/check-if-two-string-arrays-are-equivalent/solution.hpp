@@ -70,14 +70,8 @@ template <typename Container> auto FlattenRange(const Container &container) {
                FlattenIterator(container.cend(), container.cend()));
 }
 
-/*
-  1662. Check If Two String Arrays are Equivalent
-  https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
-  Difficulty: Easy
-  Tags: Array, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

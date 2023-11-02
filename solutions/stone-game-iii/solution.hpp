@@ -5,14 +5,8 @@
 #include <string>
 #include <vector>
 
-/*
-  1406. Stone Game III
-  https://leetcode.com/problems/stone-game-iii/
-  Difficulty: Hard
-  Tags: Array, Math, Dynamic Programming, Game Theory
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  1129. Shortest Path with Alternating Colors
-  https://leetcode.com/problems/shortest-path-with-alternating-colors/
-  Difficulty: Medium
-  Tags: Breadth-First Search, Graph
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

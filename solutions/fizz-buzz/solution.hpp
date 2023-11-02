@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  412. Fizz Buzz
-  https://leetcode.com/problems/fizz-buzz/
-  Difficulty: Easy
-  Tags: Math, String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

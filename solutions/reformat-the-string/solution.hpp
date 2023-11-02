@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1417. Reformat The String
-  https://leetcode.com/problems/reformat-the-string/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

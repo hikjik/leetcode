@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1700. Number of Students Unable to Eat Lunch
-  https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
-  Difficulty: Easy
-  Tags: Array, Stack, Queue, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

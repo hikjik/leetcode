@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1920. Build Array from Permutation
-  https://leetcode.com/problems/build-array-from-permutation/
-  Difficulty: Easy
-  Tags: Array, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -4,14 +4,8 @@
 
 #include <vector>
 
-/*
-  427. Construct Quad Tree
-  https://leetcode.com/problems/construct-quad-tree/
-  Difficulty: Medium
-  Tags: Array, Divide and Conquer, Tree, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

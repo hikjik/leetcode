@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  946. Validate Stack Sequences
-  https://leetcode.com/problems/validate-stack-sequences/
-  Difficulty: Medium
-  Tags: Array, Stack, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

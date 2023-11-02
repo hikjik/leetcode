@@ -2,15 +2,8 @@
 
 #include <vector>
 
-/*
-  1361. Validate Binary Tree Nodes
-  https://leetcode.com/problems/validate-binary-tree-nodes/
-  Difficulty: Medium
-  Tags: Tree, Depth-First Search, Breadth-First Search, Union Find,
-        Graph, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class DisjointSets {
 public:

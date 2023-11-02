@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  896. Monotonic Array
-  https://leetcode.com/problems/monotonic-array/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

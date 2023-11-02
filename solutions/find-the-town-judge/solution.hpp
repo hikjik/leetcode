@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  997. Find the Town Judge
-  https://leetcode.com/problems/find-the-town-judge/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Graph
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  594. Longest Harmonious Subsequence
-  https://leetcode.com/problems/longest-harmonious-subsequence/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

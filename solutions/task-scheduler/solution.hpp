@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  621. Task Scheduler
-  https://leetcode.com/problems/task-scheduler/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

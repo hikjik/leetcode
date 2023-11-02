@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  31. Next Permutation
-  https://leetcode.com/problems/next-permutation/
-  Difficulty: Medium
-  Tags: Array, Two Pointers
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

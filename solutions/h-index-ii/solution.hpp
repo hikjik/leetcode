@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  275. H-Index II
-  https://leetcode.com/problems/h-index-ii/
-  Difficulty: Medium
-  Tags: Array, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

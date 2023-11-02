@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  222. Count Complete Tree Nodes
-  https://leetcode.com/problems/count-complete-tree-nodes/
-  Difficulty: Easy
-  Tags: Binary Search, Bit Manipulation, Tree, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

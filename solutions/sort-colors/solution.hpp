@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  75. Sort Colors
-  https://leetcode.com/problems/sort-colors/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

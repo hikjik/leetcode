@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  741. Cherry Pickup
-  https://leetcode.com/problems/cherry-pickup/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

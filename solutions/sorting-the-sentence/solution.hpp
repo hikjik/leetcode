@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  1859. Sorting the Sentence
-  https://leetcode.com/problems/sorting-the-sentence/
-  Difficulty: Easy
-  Tags: String, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

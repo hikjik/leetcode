@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  93. Restore IP Addresses
-  https://leetcode.com/problems/restore-ip-addresses/
-  Difficulty: Medium
-  Tags: String, Backtracking
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

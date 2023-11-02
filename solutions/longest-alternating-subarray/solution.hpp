@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2765. Longest Alternating Subarray
-  https://leetcode.com/problems/longest-alternating-subarray/
-  Difficulty: Easy
-  Tags: Array, Enumeration
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

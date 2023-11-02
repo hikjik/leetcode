@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  87. Scramble String
-  https://leetcode.com/problems/scramble-string/
-  Difficulty: Hard
-  Tags: String, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

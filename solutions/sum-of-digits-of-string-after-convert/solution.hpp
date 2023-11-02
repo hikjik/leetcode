@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1945. Sum of Digits of String After Convert
-  https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
-  Difficulty: Easy
-  Tags: String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

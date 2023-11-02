@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  14. Longest Common Prefix
-  https://leetcode.com/problems/longest-common-prefix/
-  Difficulty: Easy
-  Tags: String, Trie
-  Time:
-  Space:
-*/
+// Time: O(NM)
+// Space: O(1)
 
 class Solution {
 public:

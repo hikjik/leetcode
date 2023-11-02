@@ -2,14 +2,8 @@
 
 #include <list_node.h>
 
-/*
-  203. Remove Linked List Elements
-  https://leetcode.com/problems/remove-linked-list-elements/
-  Difficulty: Easy
-  Tags: Linked List, Recursion
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

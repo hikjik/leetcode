@@ -3,14 +3,8 @@
 #include <map>
 #include <string>
 
-/*
-  316. Remove Duplicate Letters
-  https://leetcode.com/problems/remove-duplicate-letters/
-  Difficulty: Medium
-  Tags: String, Stack, Greedy, Monotonic Stack
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

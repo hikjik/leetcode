@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  45. Jump Game II
-  https://leetcode.com/problems/jump-game-ii/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  463. Island Perimeter
-  https://leetcode.com/problems/island-perimeter/
-  Difficulty: Easy
-  Tags: Array, Depth-First Search, Breadth-First Search, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

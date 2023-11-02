@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2319. Check if Matrix Is X-Matrix
-  https://leetcode.com/problems/check-if-matrix-is-x-matrix/
-  Difficulty: Easy
-  Tags: Array, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2706. Buy Two Chocolates
-  https://leetcode.com/problems/buy-two-chocolates/
-  Difficulty: Easy
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

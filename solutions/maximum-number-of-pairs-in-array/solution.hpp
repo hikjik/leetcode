@@ -3,14 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  2341. Maximum Number of Pairs in Array
-  https://leetcode.com/problems/maximum-number-of-pairs-in-array/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

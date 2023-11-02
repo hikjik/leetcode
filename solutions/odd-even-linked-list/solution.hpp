@@ -2,14 +2,8 @@
 
 #include <list_node.h>
 
-/*
-  328. Odd Even Linked List
-  https://leetcode.com/problems/odd-even-linked-list/
-  Difficulty: Medium
-  Tags: Linked List
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

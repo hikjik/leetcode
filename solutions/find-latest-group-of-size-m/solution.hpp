@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1562. Find Latest Group of Size M
-  https://leetcode.com/problems/find-latest-group-of-size-m/
-  Difficulty: Medium
-  Tags: Array, Binary Search, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

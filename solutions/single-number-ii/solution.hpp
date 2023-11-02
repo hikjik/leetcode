@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  137. Single Number II
-  https://leetcode.com/problems/single-number-ii/
-  Difficulty: Medium
-  Tags: Array, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  236. Lowest Common Ancestor of a Binary Tree
-  https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
-  Difficulty: Medium
-  Tags: Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

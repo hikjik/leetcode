@@ -5,47 +5,34 @@
 #include <queue>
 #include <vector>
 
-/*
-  23. Merge k Sorted Lists
-  https://leetcode.com/problems/merge-k-sorted-lists/
-  Difficulty: Hard
-  Tags: Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort
-  Time:
-  Space:
-*/
+// Time: O(NKlogK) for K linked lists each of size N
+// Space: O(K)
 
 class Solution {
-private:
-  using Element = std::tuple<int, size_t, size_t>;
-
 public:
   static ListNode *mergeKLists(std::vector<ListNode *> lists) {
-    std::priority_queue<Element, std::vector<Element>, std::greater<Element>>
-        queue;
-    for (size_t i = 0; i < lists.size(); ++i) {
-      if (lists[i]) {
-        queue.emplace(lists[i]->val, i, 0);
-        lists[i] = lists[i]->next;
+    auto greater = [](ListNode *lhs, ListNode *rhs) {
+      return lhs->val > rhs->val;
+    };
+    std::priority_queue<ListNode *, std::vector<ListNode *>, decltype(greater)>
+        queue(greater);
+    for (auto *list : lists) {
+      if (list) {
+        queue.emplace(list);
       }
     }
 
-    auto dummy_node = ListNode();
-    auto dummy = &dummy_node;
-
-    auto node = dummy;
-    while (!queue.empty()) {
-      const auto [value, index, position] = queue.top();
+    ListNode dummy;
+    for (auto node = &dummy; !queue.empty(); node = node->next) {
+      auto *list = queue.top();
       queue.pop();
 
-      node->next = new ListNode(value);
-      node = node->next;
+      node->next = list;
 
-      if (lists[index]) {
-        queue.emplace(lists[index]->val, index, position + 1);
-        lists[index] = lists[index]->next;
+      if (list->next) {
+        queue.emplace(list->next);
       }
     }
-
-    return dummy->next;
+    return dummy.next;
   }
 };

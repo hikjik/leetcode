@@ -2,14 +2,8 @@
 
 #include <cmath>
 
-/*
-  1952. Three Divisors
-  https://leetcode.com/problems/three-divisors/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

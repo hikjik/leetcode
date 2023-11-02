@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2744. Find Maximum Number of String Pairs
-  https://leetcode.com/problems/find-maximum-number-of-string-pairs/
-  Difficulty: Easy
-  Tags: Array, Hash Table, String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

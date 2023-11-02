@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1304. Find N Unique Integers Sum up to Zero
-  https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/
-  Difficulty: Easy
-  Tags: Array, Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

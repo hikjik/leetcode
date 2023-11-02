@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  657. Robot Return to Origin
-  https://leetcode.com/problems/robot-return-to-origin/
-  Difficulty: Easy
-  Tags: String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

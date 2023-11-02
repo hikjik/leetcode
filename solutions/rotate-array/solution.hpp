@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  189. Rotate Array
-  https://leetcode.com/problems/rotate-array/
-  Difficulty: Medium
-  Tags: Array, Math, Two Pointers
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

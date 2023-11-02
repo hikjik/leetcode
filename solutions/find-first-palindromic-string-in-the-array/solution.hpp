@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2108. Find First Palindromic String in the Array
-  https://leetcode.com/problems/find-first-palindromic-string-in-the-array/
-  Difficulty: Easy
-  Tags: Array, Two Pointers, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

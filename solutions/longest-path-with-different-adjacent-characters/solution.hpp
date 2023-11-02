@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2246. Longest Path With Different Adjacent Characters
-  https://leetcode.com/problems/longest-path-with-different-adjacent-characters/
-  Difficulty: Hard
-  Tags: Array, String, Tree, Depth-First Search, Graph, Topological Sort
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

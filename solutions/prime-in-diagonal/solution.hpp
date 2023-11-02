@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2614. Prime In Diagonal
-  https://leetcode.com/problems/prime-in-diagonal/
-  Difficulty: Easy
-  Tags: Array, Math, Matrix, Number Theory
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

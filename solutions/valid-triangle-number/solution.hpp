@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  611. Valid Triangle Number
-  https://leetcode.com/problems/valid-triangle-number/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Binary Search, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

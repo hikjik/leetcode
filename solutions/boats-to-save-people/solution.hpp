@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  881. Boats to Save People
-  https://leetcode.com/problems/boats-to-save-people/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,15 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  451. Sort Characters By Frequency
-  https://leetcode.com/problems/sort-characters-by-frequency/
-  Difficulty: Medium
-  Tags: Hash Table, String, Sorting, Heap (Priority Queue), Bucket Sort,
-        Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

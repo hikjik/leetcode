@@ -1,8 +1,12 @@
 import colorsys
+import json
 import re
 from glob import glob
 from pathlib import Path
 from typing import Any
+
+from .meta import META_FILE
+from .solution import SOLUTION_FILE
 
 TAGS = [
     "Brainteaser",
@@ -78,30 +82,26 @@ TAGS = [
     "Suffix Array",
 ]
 
+README_FILE = "README.md"
+
 REGEX = r"""
-/\*
-\s*(?P<id>\d*).\s(?P<title>.+)
-\s*(?P<url>https://leetcode.com/problems/(?P<slug>.+)/)
-\s*Difficulty:\s*(?P<difficulty>\w+)
-\s*Tags:\s*(?P<tags>[\w\s,\n\-\(\)]+)
-\s*Time:\s*(?P<time>O\(.*\))?.*
-\s*Space:\s*(?P<space>O\(.*\))?.*
-(?:\s*Notes:\s*(?P<notes>.+)\n)?\*/"""
+//\s*Time:\s*(?P<time>O\(.*\))?.*
+//\s*Space:\s*(?P<space>O\(.*\))?.*
+(?://\s*Notes:\s*(?P<notes>.+)?)?
+"""
 
 PATTERN = re.compile(REGEX)
 
 
 def get_problem(path: Path) -> dict[str, Any]:
-    with open(path, "r") as file:
-        content = file.read()
-
-    for it in re.finditer(PATTERN, content):
-        info = it.groupdict()
-        if "tags" in info:
-            info["tags"] = [s.strip() for s in info["tags"].split(",")]
-        return info
-
-    return {}
+    problem: dict[str, Any] = {}
+    with open(path / META_FILE, "r") as file:
+        problem.update(json.load(file))
+    with open(path / SOLUTION_FILE, "r") as file:
+        for it in re.finditer(PATTERN, file.read()):
+            problem.update(it.groupdict())
+            break
+    return problem
 
 
 def get_colors(
@@ -127,18 +127,24 @@ def badge(
     return f"<img src='{url}{tag}-{color}?style={style}'/>"
 
 
+def format_complexity(complexity: str) -> str:
+    complexity = complexity.replace(" ", "&nbsp;")
+    complexity = re.sub("\^(.)", "<sup>\\1</sup>", complexity)
+    return complexity
+
+
 def update_readme_table() -> None:
     problems: list[dict[str, Any]] = []
     for path in sorted(glob("./solutions/*")):
-        problem_path = Path(path) / "solution.hpp"
-        problems.append(get_problem(problem_path))
+        problem = get_problem(Path(path))
+        problems.append(problem)
 
     problems.sort(key=lambda x: int(x["id"]))
 
-    with open("README.md", mode="r") as file:
+    with open(README_FILE, mode="r") as file:
         lines = file.readlines()
 
-    with open("README.md", mode="w") as file:
+    with open(README_FILE, mode="w") as file:
         for line in lines:
             file.write(line)
             if line.startswith("## Accepted solution"):
@@ -169,8 +175,8 @@ def update_readme_table() -> None:
                 badge(tag=tag, color=tags_colors[TAGS.index(tag)])
                 for tag in problem["tags"]
             ]
-            space = problem["space"] or ""
-            time = problem["time"] or ""
+            space = format_complexity(problem["space"] or "")
+            time = format_complexity(problem["time"] or "")
             notes = problem["notes"] or ""
             file.write(
                 f"| {problem_id}. "

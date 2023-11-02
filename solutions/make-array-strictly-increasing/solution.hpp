@@ -5,14 +5,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1187. Make Array Strictly Increasing
-  https://leetcode.com/problems/make-array-strictly-increasing/
-  Difficulty: Hard
-  Tags: Array, Binary Search, Dynamic Programming, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

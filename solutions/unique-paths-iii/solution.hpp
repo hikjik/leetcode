@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  980. Unique Paths III
-  https://leetcode.com/problems/unique-paths-iii/
-  Difficulty: Hard
-  Tags: Array, Backtracking, Bit Manipulation, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

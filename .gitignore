@@ -3,5 +3,6 @@ venv
 .vscode
 .cache
 solutions/**/description.md
+solutions/**/meta.json
 .env
 *.egg-info/

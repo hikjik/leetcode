@@ -2,14 +2,8 @@
 
 #include <unordered_set>
 
-/*
-  202. Happy Number
-  https://leetcode.com/problems/happy-number/
-  Difficulty: Easy
-  Tags: Hash Table, Math, Two Pointers
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

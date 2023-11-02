@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  415. Add Strings
-  https://leetcode.com/problems/add-strings/
-  Difficulty: Easy
-  Tags: Math, String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

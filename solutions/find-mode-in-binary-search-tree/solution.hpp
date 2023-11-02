@@ -6,14 +6,8 @@
 
 #include <tree_node.h>
 
-/*
-  501. Find Mode in Binary Search Tree
-  https://leetcode.com/problems/find-mode-in-binary-search-tree/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Binary Search Tree, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

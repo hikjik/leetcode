@@ -4,14 +4,8 @@
 
 #include <utility>
 
-/*
-  226. Invert Binary Tree
-  https://leetcode.com/problems/invert-binary-tree/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

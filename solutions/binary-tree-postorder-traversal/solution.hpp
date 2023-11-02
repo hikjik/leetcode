@@ -4,14 +4,8 @@
 
 #include <vector>
 
-/*
-  145. Binary Tree Postorder Traversal
-  https://leetcode.com/problems/binary-tree-postorder-traversal/
-  Difficulty: Easy
-  Tags: Stack, Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  1823. Find the Winner of the Circular Game
-  https://leetcode.com/problems/find-the-winner-of-the-circular-game/
-  Difficulty: Medium
-  Tags: Array, Math, Recursion, Queue, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

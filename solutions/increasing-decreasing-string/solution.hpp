@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1370. Increasing Decreasing String
-  https://leetcode.com/problems/increasing-decreasing-string/
-  Difficulty: Easy
-  Tags: Hash Table, String, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

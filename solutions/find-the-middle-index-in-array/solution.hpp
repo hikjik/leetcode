@@ -3,14 +3,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  1991. Find the Middle Index in Array
-  https://leetcode.com/problems/find-the-middle-index-in-array/
-  Difficulty: Easy
-  Tags: Array, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

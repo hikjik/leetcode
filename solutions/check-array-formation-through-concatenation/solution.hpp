@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1640. Check Array Formation Through Concatenation
-  https://leetcode.com/problems/check-array-formation-through-concatenation/
-  Difficulty: Easy
-  Tags: Array, Hash Table
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

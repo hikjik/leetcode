@@ -3,14 +3,8 @@
 #include <iostream>
 #include <string>
 
-/*
-  680. Valid Palindrome II
-  https://leetcode.com/problems/valid-palindrome-ii/
-  Difficulty: Easy
-  Tags: Two Pointers, String, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

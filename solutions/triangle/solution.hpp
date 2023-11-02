@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  120. Triangle
-  https://leetcode.com/problems/triangle/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

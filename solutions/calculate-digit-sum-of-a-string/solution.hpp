@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  2243. Calculate Digit Sum of a String
-  https://leetcode.com/problems/calculate-digit-sum-of-a-string/
-  Difficulty: Easy
-  Tags: String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

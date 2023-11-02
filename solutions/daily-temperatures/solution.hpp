@@ -3,14 +3,8 @@
 #include <stack>
 #include <vector>
 
-/*
-  739. Daily Temperatures
-  https://leetcode.com/problems/daily-temperatures/
-  Difficulty: Medium
-  Tags: Array, Stack, Monotonic Stack
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

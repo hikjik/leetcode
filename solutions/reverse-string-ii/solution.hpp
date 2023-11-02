@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <string>
 
-/*
-  541. Reverse String II
-  https://leetcode.com/problems/reverse-string-ii/
-  Difficulty: Easy
-  Tags: Two Pointers, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1221. Split a String in Balanced Strings
-  https://leetcode.com/problems/split-a-string-in-balanced-strings/
-  Difficulty: Easy
-  Tags: String, Greedy, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

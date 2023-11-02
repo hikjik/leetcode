@@ -23,8 +23,7 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[nums, k, expected] : test_cases) {
-    auto actual = Solution::topKFrequent(nums, k);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
+    const auto actual = Solution::topKFrequent(nums, k);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

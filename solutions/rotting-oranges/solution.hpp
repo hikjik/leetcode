@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  994. Rotting Oranges
-  https://leetcode.com/problems/rotting-oranges/
-  Difficulty: Medium
-  Tags: Array, Breadth-First Search, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
   static const int EMPTY = 0;

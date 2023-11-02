@@ -4,14 +4,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  1383. Maximum Performance of a Team
-  https://leetcode.com/problems/maximum-performance-of-a-team/
-  Difficulty: Hard
-  Tags: Array, Greedy, Sorting, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

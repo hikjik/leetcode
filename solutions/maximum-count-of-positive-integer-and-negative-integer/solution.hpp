@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2529. Maximum Count of Positive Integer and Negative Integer
-  https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/
-  Difficulty: Easy
-  Tags: Array, Binary Search, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

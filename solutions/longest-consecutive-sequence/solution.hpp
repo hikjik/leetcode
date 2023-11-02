@@ -4,14 +4,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  128. Longest Consecutive Sequence
-  https://leetcode.com/problems/longest-consecutive-sequence/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Union Find
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  707. Design Linked List
-  https://leetcode.com/problems/design-linked-list/
-  Difficulty: Medium
-  Tags: Linked List, Design
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class MyLinkedList {
 private:

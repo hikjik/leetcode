@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1446. Consecutive Characters
-  https://leetcode.com/problems/consecutive-characters/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

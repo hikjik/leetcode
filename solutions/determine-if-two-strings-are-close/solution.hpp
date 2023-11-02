@@ -4,14 +4,8 @@
 #include <array>
 #include <string>
 
-/*
-  1657. Determine if Two Strings Are Close
-  https://leetcode.com/problems/determine-if-two-strings-are-close/
-  Difficulty: Medium
-  Tags: Hash Table, String, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1470. Shuffle the Array
-  https://leetcode.com/problems/shuffle-the-array/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

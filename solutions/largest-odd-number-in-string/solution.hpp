@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1903. Largest Odd Number in String
-  https://leetcode.com/problems/largest-odd-number-in-string/
-  Difficulty: Easy
-  Tags: Math, String, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

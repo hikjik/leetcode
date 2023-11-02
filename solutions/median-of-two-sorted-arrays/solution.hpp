@@ -3,14 +3,9 @@
 #include <climits>
 #include <vector>
 
-/*
-  4. Median of Two Sorted Arrays
-  https://leetcode.com/problems/median-of-two-sorted-arrays/
-  Difficulty: Hard
-  Tags: Array, Binary Search, Divide and Conquer
-  Time:
-  Space:
-*/
+// Time: O(log min(M, N))
+// Space: O(1)
+// Notes: [Medium](https://medium.com/@hazemu/1d3f2ecbeb46)
 
 class Solution {
 public:

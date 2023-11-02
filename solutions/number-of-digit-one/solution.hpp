@@ -3,14 +3,8 @@
 #include <cstring>
 #include <string>
 
-/*
-  233. Number of Digit One
-  https://leetcode.com/problems/number-of-digit-one/
-  Difficulty: Hard
-  Tags: Math, Dynamic Programming, Recursion
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

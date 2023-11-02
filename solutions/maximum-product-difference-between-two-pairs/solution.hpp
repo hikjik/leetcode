@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1913. Maximum Product Difference Between Two Pairs
-  https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
-  Difficulty: Easy
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

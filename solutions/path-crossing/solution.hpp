@@ -3,14 +3,8 @@
 #include <set>
 #include <string>
 
-/*
-  1496. Path Crossing
-  https://leetcode.com/problems/path-crossing/
-  Difficulty: Easy
-  Tags: Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

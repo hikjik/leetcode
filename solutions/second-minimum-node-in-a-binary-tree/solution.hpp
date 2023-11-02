@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  671. Second Minimum Node In a Binary Tree
-  https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1345. Jump Game IV
-  https://leetcode.com/problems/jump-game-iv/
-  Difficulty: Hard
-  Tags: Array, Hash Table, Breadth-First Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

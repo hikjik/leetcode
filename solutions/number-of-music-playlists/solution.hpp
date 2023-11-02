@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  920. Number of Music Playlists
-  https://leetcode.com/problems/number-of-music-playlists/
-  Difficulty: Hard
-  Tags: Math, Dynamic Programming, Combinatorics
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

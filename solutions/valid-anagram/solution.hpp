@@ -3,14 +3,8 @@
 #include <string>
 #include <unordered_map>
 
-/*
-  242. Valid Anagram
-  https://leetcode.com/problems/valid-anagram/
-  Difficulty: Easy
-  Tags: Hash Table, String, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

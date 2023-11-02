@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <string>
 
-/*
-  551. Student Attendance Record I
-  https://leetcode.com/problems/student-attendance-record-i/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

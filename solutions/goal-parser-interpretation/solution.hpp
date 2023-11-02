@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1678. Goal Parser Interpretation
-  https://leetcode.com/problems/goal-parser-interpretation/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

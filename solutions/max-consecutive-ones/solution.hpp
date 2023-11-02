@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  485. Max Consecutive Ones
-  https://leetcode.com/problems/max-consecutive-ones/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

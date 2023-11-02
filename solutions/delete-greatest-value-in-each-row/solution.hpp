@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2500. Delete Greatest Value in Each Row
-  https://leetcode.com/problems/delete-greatest-value-in-each-row/
-  Difficulty: Easy
-  Tags: Array, Sorting, Heap (Priority Queue), Matrix, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

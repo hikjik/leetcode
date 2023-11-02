@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1488. Avoid Flood in The City
-  https://leetcode.com/problems/avoid-flood-in-the-city/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Binary Search, Greedy, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

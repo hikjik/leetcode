@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2366. Minimum Replacements to Sort the Array
-  https://leetcode.com/problems/minimum-replacements-to-sort-the-array/
-  Difficulty: Hard
-  Tags: Array, Math, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  2544. Alternating Digit Sum
-  https://leetcode.com/problems/alternating-digit-sum/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

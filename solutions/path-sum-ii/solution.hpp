@@ -4,14 +4,8 @@
 
 #include <vector>
 
-/*
-  113. Path Sum II
-  https://leetcode.com/problems/path-sum-ii/
-  Difficulty: Medium
-  Tags: Backtracking, Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -11,14 +11,8 @@ SOLUTION_FILE_CONTENT = """\
 {std_includes}
 {utils_includes}
 
-/*
-  {id}. {title}
-  https://leetcode.com/problems/{slug}/
-  Difficulty: {difficulty}
-  Tags: {tags}
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 {snippet}
 """

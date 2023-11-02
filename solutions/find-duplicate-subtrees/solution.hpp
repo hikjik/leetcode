@@ -5,14 +5,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  652. Find Duplicate Subtrees
-  https://leetcode.com/problems/find-duplicate-subtrees/
-  Difficulty: Medium
-  Tags: Hash Table, Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -9,14 +9,8 @@ struct TrieNode {
   bool is_end = false;
 };
 
-/*
-  208. Implement Trie (Prefix Tree)
-  https://leetcode.com/problems/implement-trie-prefix-tree/
-  Difficulty: Medium
-  Tags: Hash Table, String, Design, Trie
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Trie : private TrieNode {
 public:

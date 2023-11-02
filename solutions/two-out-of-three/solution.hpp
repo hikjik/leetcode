@@ -4,14 +4,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  2032. Two Out of Three
-  https://leetcode.com/problems/two-out-of-three/
-  Difficulty: Easy
-  Tags: Array, Hash Table
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

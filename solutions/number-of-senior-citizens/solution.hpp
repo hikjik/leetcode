@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2678. Number of Senior Citizens
-  https://leetcode.com/problems/number-of-senior-citizens/
-  Difficulty: Easy
-  Tags: Array, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  598. Range Addition II
-  https://leetcode.com/problems/range-addition-ii/
-  Difficulty: Easy
-  Tags: Array, Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

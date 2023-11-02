@@ -4,14 +4,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  502. IPO
-  https://leetcode.com/problems/ipo/
-  Difficulty: Hard
-  Tags: Array, Greedy, Sorting, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

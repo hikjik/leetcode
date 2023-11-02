@@ -20,8 +20,7 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[s, expected] : test_cases) {
-    auto actual = Solution::findRepeatedDnaSequences(s);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
+    const auto actual = Solution::findRepeatedDnaSequences(s);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

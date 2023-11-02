@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  18. 4Sum
-  https://leetcode.com/problems/4sum/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Sorting
-  Time:
-  Space:
-*/
+// Time: O(N^3)
+// Space: O(N)
 
 class Solution {
 public:

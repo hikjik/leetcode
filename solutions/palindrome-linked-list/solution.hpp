@@ -2,14 +2,8 @@
 
 #include <list_node.h>
 
-/*
-  234. Palindrome Linked List
-  https://leetcode.com/problems/palindrome-linked-list/
-  Difficulty: Easy
-  Tags: Linked List, Two Pointers, Stack, Recursion
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

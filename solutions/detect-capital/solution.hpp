@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <string>
 
-/*
-  520. Detect Capital
-  https://leetcode.com/problems/detect-capital/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  2748. Number of Beautiful Pairs
-  https://leetcode.com/problems/number-of-beautiful-pairs/
-  Difficulty: Easy
-  Tags: Array, Math, Number Theory
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

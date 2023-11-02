@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  171. Excel Sheet Column Number
-  https://leetcode.com/problems/excel-sheet-column-number/
-  Difficulty: Easy
-  Tags: Math, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

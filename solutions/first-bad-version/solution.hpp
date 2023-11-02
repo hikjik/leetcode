@@ -2,14 +2,8 @@
 
 #include "api.hpp"
 
-/*
-  278. First Bad Version
-  https://leetcode.com/problems/first-bad-version/
-  Difficulty: Easy
-  Tags: Binary Search, Interactive
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -5,15 +5,8 @@
 #include <sstream>
 #include <string>
 
-/*
-  297. Serialize and Deserialize Binary Tree
-  https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
-  Difficulty: Hard
-  Tags: String, Tree, Depth-First Search, Breadth-First Search, Design,
-        Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Codec {
 public:

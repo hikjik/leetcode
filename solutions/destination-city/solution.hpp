@@ -4,14 +4,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  1436. Destination City
-  https://leetcode.com/problems/destination-city/
-  Difficulty: Easy
-  Tags: Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

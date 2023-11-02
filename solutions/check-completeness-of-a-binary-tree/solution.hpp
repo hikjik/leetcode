@@ -4,14 +4,8 @@
 
 #include <queue>
 
-/*
-  958. Check Completeness of a Binary Tree
-  https://leetcode.com/problems/check-completeness-of-a-binary-tree/
-  Difficulty: Medium
-  Tags: Tree, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1790. Check if One String Swap Can Make Strings Equal
-  https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/
-  Difficulty: Easy
-  Tags: Hash Table, String, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

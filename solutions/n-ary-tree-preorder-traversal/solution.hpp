@@ -4,14 +4,8 @@
 
 #include <vector>
 
-/*
-  589. N-ary Tree Preorder Traversal
-  https://leetcode.com/problems/n-ary-tree-preorder-traversal/
-  Difficulty: Easy
-  Tags: Stack, Tree, Depth-First Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

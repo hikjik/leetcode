@@ -4,14 +4,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  1254. Number of Closed Islands
-  https://leetcode.com/problems/number-of-closed-islands/
-  Difficulty: Medium
-  Tags: Array, Depth-First Search, Breadth-First Search, Union Find, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

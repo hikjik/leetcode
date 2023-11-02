@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1011. Capacity To Ship Packages Within D Days
-  https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
-  Difficulty: Medium
-  Tags: Array, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

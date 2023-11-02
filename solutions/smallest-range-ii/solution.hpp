@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  910. Smallest Range II
-  https://leetcode.com/problems/smallest-range-ii/
-  Difficulty: Medium
-  Tags: Array, Math, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

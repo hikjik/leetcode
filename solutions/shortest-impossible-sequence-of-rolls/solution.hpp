@@ -3,14 +3,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  2350. Shortest Impossible Sequence of Rolls
-  https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/
-  Difficulty: Hard
-  Tags: Array, Hash Table, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

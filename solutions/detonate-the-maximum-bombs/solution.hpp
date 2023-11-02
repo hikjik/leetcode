@@ -5,14 +5,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  2101. Detonate the Maximum Bombs
-  https://leetcode.com/problems/detonate-the-maximum-bombs/
-  Difficulty: Medium
-  Tags: Array, Math, Depth-First Search, Breadth-First Search, Graph, Geometry
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

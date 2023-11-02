@@ -3,14 +3,8 @@
 #include <sstream>
 #include <string>
 
-/*
-  1816. Truncate Sentence
-  https://leetcode.com/problems/truncate-sentence/
-  Difficulty: Easy
-  Tags: Array, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

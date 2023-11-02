@@ -4,14 +4,8 @@
 
 #include <string>
 
-/*
-  1028. Recover a Tree From Preorder Traversal
-  https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/
-  Difficulty: Hard
-  Tags: String, Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Tokenizer {
 public:

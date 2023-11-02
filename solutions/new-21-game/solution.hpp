@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  837. New 21 Game
-  https://leetcode.com/problems/new-21-game/
-  Difficulty: Medium
-  Tags: Math, Dynamic Programming, Sliding Window, Probability and Statistics
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

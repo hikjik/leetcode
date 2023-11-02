@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1323. Maximum 69 Number
-  https://leetcode.com/problems/maximum-69-number/
-  Difficulty: Easy
-  Tags: Math, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

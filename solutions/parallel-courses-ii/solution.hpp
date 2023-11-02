@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1494. Parallel Courses II
-  https://leetcode.com/problems/parallel-courses-ii/
-  Difficulty: Hard
-  Tags: Dynamic Programming, Bit Manipulation, Graph, Bitmask
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

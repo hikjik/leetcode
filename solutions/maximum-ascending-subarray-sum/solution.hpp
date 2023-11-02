@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1800. Maximum Ascending Subarray Sum
-  https://leetcode.com/problems/maximum-ascending-subarray-sum/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -5,14 +5,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  2085. Count Common Words With One Occurrence
-  https://leetcode.com/problems/count-common-words-with-one-occurrence/
-  Difficulty: Easy
-  Tags: Array, Hash Table, String, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2057. Smallest Index With Equal Value
-  https://leetcode.com/problems/smallest-index-with-equal-value/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

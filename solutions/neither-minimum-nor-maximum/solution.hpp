@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2733. Neither Minimum nor Maximum
-  https://leetcode.com/problems/neither-minimum-nor-maximum/
-  Difficulty: Easy
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2778. Sum of Squares of Special Elements
-  https://leetcode.com/problems/sum-of-squares-of-special-elements/
-  Difficulty: Easy
-  Tags: Array, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

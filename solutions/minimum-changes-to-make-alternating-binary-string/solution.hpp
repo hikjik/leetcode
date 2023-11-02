@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1758. Minimum Changes To Make Alternating Binary String
-  https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

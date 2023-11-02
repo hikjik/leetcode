@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2309. Greatest English Letter in Upper and Lower Case
-  https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/
-  Difficulty: Easy
-  Tags: Hash Table, String, Enumeration
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

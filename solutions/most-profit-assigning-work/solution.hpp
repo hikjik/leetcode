@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  826. Most Profit Assigning Work
-  https://leetcode.com/problems/most-profit-assigning-work/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Binary Search, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

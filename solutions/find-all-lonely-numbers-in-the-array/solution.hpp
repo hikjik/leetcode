@@ -3,14 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  2150. Find All Lonely Numbers in the Array
-  https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

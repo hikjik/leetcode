@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  977. Squares of a Sorted Array
-  https://leetcode.com/problems/squares-of-a-sorted-array/
-  Difficulty: Easy
-  Tags: Array, Two Pointers, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

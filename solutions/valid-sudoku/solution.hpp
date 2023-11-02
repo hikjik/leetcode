@@ -4,14 +4,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  36. Valid Sudoku
-  https://leetcode.com/problems/valid-sudoku/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
   static const size_t kSize = 9;

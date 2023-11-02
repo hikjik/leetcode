@@ -4,15 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  187. Repeated DNA Sequences
-  https://leetcode.com/problems/repeated-dna-sequences/
-  Difficulty: Medium
-  Tags: Hash Table, String, Bit Manipulation, Sliding Window, Rolling Hash,
-        Hash Function
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

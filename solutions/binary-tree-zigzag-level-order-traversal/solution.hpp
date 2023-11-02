@@ -5,14 +5,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  103. Binary Tree Zigzag Level Order Traversal
-  https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
-  Difficulty: Medium
-  Tags: Tree, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

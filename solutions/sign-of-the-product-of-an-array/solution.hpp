@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1822. Sign of the Product of an Array
-  https://leetcode.com/problems/sign-of-the-product-of-an-array/
-  Difficulty: Easy
-  Tags: Array, Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  2265. Count Nodes Equal to Average of Subtree
-  https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/
-  Difficulty: Medium
-  Tags: Tree, Depth-First Search, Binary Tree
-  Time: O(N)
-  Space: O(N)
-*/
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:

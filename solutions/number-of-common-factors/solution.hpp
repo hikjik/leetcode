@@ -3,14 +3,8 @@
 #include <cmath>
 #include <numeric>
 
-/*
-  2427. Number of Common Factors
-  https://leetcode.com/problems/number-of-common-factors/
-  Difficulty: Easy
-  Tags: Math, Enumeration, Number Theory
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

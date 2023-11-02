@@ -2,14 +2,8 @@
 
 #include <utility>
 
-/*
-  2169. Count Operations to Obtain Zero
-  https://leetcode.com/problems/count-operations-to-obtain-zero/
-  Difficulty: Easy
-  Tags: Math, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

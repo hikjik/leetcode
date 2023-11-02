@@ -2,15 +2,8 @@
 
 #include <vector>
 
-/*
-  2328. Number of Increasing Paths in a Grid
-  https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming, Depth-First Search, Breadth-First Search,
-        Graph, Topological Sort, Memoization, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

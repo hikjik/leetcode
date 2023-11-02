@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  1025. Divisor Game
-  https://leetcode.com/problems/divisor-game/
-  Difficulty: Easy
-  Tags: Math, Dynamic Programming, Brainteaser, Game Theory
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

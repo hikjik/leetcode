@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  413. Arithmetic Slices
-  https://leetcode.com/problems/arithmetic-slices/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

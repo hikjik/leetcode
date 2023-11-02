@@ -3,14 +3,8 @@
 #include <sstream>
 #include <string>
 
-/*
-  824. Goat Latin
-  https://leetcode.com/problems/goat-latin/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

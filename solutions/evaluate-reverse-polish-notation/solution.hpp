@@ -6,14 +6,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  150. Evaluate Reverse Polish Notation
-  https://leetcode.com/problems/evaluate-reverse-polish-notation/
-  Difficulty: Medium
-  Tags: Array, Math, Stack
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -4,14 +4,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  53. Maximum Subarray
-  https://leetcode.com/problems/maximum-subarray/
-  Difficulty: Medium
-  Tags: Array, Divide and Conquer, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

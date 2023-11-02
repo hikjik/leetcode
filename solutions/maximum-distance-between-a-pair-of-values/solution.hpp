@@ -4,14 +4,8 @@
 #include <iterator>
 #include <vector>
 
-/*
-  1855. Maximum Distance Between a Pair of Values
-  https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Binary Search, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

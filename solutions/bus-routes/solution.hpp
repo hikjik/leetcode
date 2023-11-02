@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  815. Bus Routes
-  https://leetcode.com/problems/bus-routes/
-  Difficulty: Hard
-  Tags: Array, Hash Table, Breadth-First Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

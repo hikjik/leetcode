@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  268. Missing Number
-  https://leetcode.com/problems/missing-number/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

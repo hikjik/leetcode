@@ -4,14 +4,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  1403. Minimum Subsequence in Non-Increasing Order
-  https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/
-  Difficulty: Easy
-  Tags: Array, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

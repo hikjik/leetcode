@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  2360. Longest Cycle in a Graph
-  https://leetcode.com/problems/longest-cycle-in-a-graph/
-  Difficulty: Hard
-  Tags: Depth-First Search, Graph, Topological Sort
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

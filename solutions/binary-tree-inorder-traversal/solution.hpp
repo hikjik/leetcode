@@ -4,14 +4,8 @@
 
 #include <vector>
 
-/*
-  94. Binary Tree Inorder Traversal
-  https://leetcode.com/problems/binary-tree-inorder-traversal/
-  Difficulty: Easy
-  Tags: Stack, Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

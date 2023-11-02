@@ -2,15 +2,48 @@
 
 #include <list_node.h>
 
-/*
-  25. Reverse Nodes in k-Group
-  https://leetcode.com/problems/reverse-nodes-in-k-group/
-  Difficulty: Hard
-  Tags: Linked List, Recursion
-  Time:
-  Space:
-*/
+// Time: O(N)
+// Space: O(1)
 
+namespace recursive {
+
+// Time: O(N)
+// Space: O(N)
+class Solution {
+public:
+  static ListNode *reverseKGroup(ListNode *head, int k) {
+    auto *tail = head;
+    for (int i = 0; i < k; ++i) {
+      if (!tail) {
+        return head;
+      }
+      tail = tail->next;
+    }
+
+    auto *new_head = reverse(head, tail);
+    head->next = reverseKGroup(tail, k);
+    return new_head;
+  }
+
+private:
+  static ListNode *reverse(ListNode *head, ListNode *tail) {
+    ListNode *prev = nullptr;
+    for (auto *curr = head; curr != tail;) {
+      auto *next = curr->next;
+      curr->next = prev;
+      prev = curr;
+      curr = next;
+    }
+    return prev;
+  }
+};
+
+} // namespace recursive
+
+namespace iterative {
+
+// Time: O(N)
+// Space: O(1)
 class Solution {
 public:
   static ListNode *reverseKGroup(ListNode *head, int k) {
@@ -30,12 +63,13 @@ public:
   }
 
 private:
-  static int length(ListNode *node) {
+  static int length(ListNode *head) {
     int length = 0;
-    while (node) {
-      node = node->next;
-      length++;
+    for (auto node = head; node; node = node->next) {
+      ++length;
     }
     return length;
   }
 };
+
+} // namespace iterative

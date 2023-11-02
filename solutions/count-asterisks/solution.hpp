@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  2315. Count Asterisks
-  https://leetcode.com/problems/count-asterisks/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  883. Projection Area of 3D Shapes
-  https://leetcode.com/problems/projection-area-of-3d-shapes/
-  Difficulty: Easy
-  Tags: Array, Math, Geometry, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

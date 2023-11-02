@@ -3,14 +3,8 @@
 #include <cmath>
 #include <vector>
 
-/*
-  1575. Count All Possible Routes
-  https://leetcode.com/problems/count-all-possible-routes/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming, Memoization
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

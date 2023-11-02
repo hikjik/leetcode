@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1051. Height Checker
-  https://leetcode.com/problems/height-checker/
-  Difficulty: Easy
-  Tags: Array, Sorting, Counting Sort
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

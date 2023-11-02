@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1482. Minimum Number of Days to Make m Bouquets
-  https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/
-  Difficulty: Medium
-  Tags: Array, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

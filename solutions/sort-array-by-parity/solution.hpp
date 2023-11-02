@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  905. Sort Array By Parity
-  https://leetcode.com/problems/sort-array-by-parity/
-  Difficulty: Easy
-  Tags: Array, Two Pointers, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

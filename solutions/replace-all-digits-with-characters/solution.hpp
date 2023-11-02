@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1844. Replace All Digits with Characters
-  https://leetcode.com/problems/replace-all-digits-with-characters/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

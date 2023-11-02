@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  69. Sqrt(x)
-  https://leetcode.com/problems/sqrtx/
-  Difficulty: Easy
-  Tags: Math, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

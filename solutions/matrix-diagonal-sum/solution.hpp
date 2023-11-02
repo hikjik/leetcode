@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1572. Matrix Diagonal Sum
-  https://leetcode.com/problems/matrix-diagonal-sum/
-  Difficulty: Easy
-  Tags: Array, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

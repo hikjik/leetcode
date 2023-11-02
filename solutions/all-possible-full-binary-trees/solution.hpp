@@ -4,14 +4,8 @@
 
 #include <vector>
 
-/*
-  894. All Possible Full Binary Trees
-  https://leetcode.com/problems/all-possible-full-binary-trees/
-  Difficulty: Medium
-  Tags: Dynamic Programming, Tree, Recursion, Memoization, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

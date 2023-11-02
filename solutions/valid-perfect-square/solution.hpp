@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  367. Valid Perfect Square
-  https://leetcode.com/problems/valid-perfect-square/
-  Difficulty: Easy
-  Tags: Math, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

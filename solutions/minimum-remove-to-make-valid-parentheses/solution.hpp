@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1249. Minimum Remove to Make Valid Parentheses
-  https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
-  Difficulty: Medium
-  Tags: String, Stack
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

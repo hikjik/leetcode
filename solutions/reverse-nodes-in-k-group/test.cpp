@@ -24,8 +24,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[head, k, expected] : test_cases) {
-    const List actual = Solution::reverseKGroup(Copy(head), k);
-    REQUIRE(expected == actual);
+  SECTION("Recursion") {
+    for (const auto &[head, k, expected] : test_cases) {
+      const List actual = recursive::Solution::reverseKGroup(Copy(head), k);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[head, k, expected] : test_cases) {
+      const List actual = iterative::Solution::reverseKGroup(Copy(head), k);
+      REQUIRE(expected == actual);
+    }
   }
 }

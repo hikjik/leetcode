@@ -5,14 +5,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  823. Binary Trees With Factors
-  https://leetcode.com/problems/binary-trees-with-factors/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Dynamic Programming, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

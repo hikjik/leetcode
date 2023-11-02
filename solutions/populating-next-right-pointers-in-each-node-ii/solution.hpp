@@ -2,14 +2,8 @@
 
 #include <tree_node_with_next.h>
 
-/*
-  117. Populating Next Right Pointers in Each Node II
-  https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
-  Difficulty: Medium
-  Tags: Linked List, Tree, Depth-First Search, Breadth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

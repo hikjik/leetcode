@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  221. Maximal Square
-  https://leetcode.com/problems/maximal-square/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

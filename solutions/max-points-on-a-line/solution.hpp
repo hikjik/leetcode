@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  149. Max Points on a Line
-  https://leetcode.com/problems/max-points-on-a-line/
-  Difficulty: Hard
-  Tags: Array, Hash Table, Math, Geometry
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

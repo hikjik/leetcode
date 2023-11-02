@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1557. Minimum Number of Vertices to Reach All Nodes
-  https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/
-  Difficulty: Medium
-  Tags: Graph
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -29,8 +29,19 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[list1, list2, expected] : test_cases) {
-    const List actual = Solution::mergeTwoLists(list1, list2);
-    REQUIRE(expected == actual);
+  SECTION("Recursive") {
+    for (const auto &[list1, list2, expected] : test_cases) {
+      const List actual =
+          recursive::Solution::mergeTwoLists(Copy(list1), Copy(list2));
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[list1, list2, expected] : test_cases) {
+      const List actual =
+          iterative::Solution::mergeTwoLists(Copy(list1), Copy(list2));
+      REQUIRE(expected == actual);
+    }
   }
 }

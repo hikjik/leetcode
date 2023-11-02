@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  43. Multiply Strings
-  https://leetcode.com/problems/multiply-strings/
-  Difficulty: Medium
-  Tags: Math, String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

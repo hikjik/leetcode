@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1089. Duplicate Zeros
-  https://leetcode.com/problems/duplicate-zeros/
-  Difficulty: Easy
-  Tags: Array, Two Pointers
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

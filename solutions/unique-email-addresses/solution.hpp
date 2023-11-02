@@ -4,14 +4,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  929. Unique Email Addresses
-  https://leetcode.com/problems/unique-email-addresses/
-  Difficulty: Easy
-  Tags: Array, Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

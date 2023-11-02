@@ -3,14 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  560. Subarray Sum Equals K
-  https://leetcode.com/problems/subarray-sum-equals-k/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2570. Merge Two 2D Arrays by Summing Values
-  https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Two Pointers
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

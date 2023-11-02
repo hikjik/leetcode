@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  260. Single Number III
-  https://leetcode.com/problems/single-number-iii/
-  Difficulty: Medium
-  Tags: Array, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

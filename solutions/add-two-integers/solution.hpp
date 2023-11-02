@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  2235. Add Two Integers
-  https://leetcode.com/problems/add-two-integers/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

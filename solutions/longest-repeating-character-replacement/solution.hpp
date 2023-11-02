@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  424. Longest Repeating Character Replacement
-  https://leetcode.com/problems/longest-repeating-character-replacement/
-  Difficulty: Medium
-  Tags: Hash Table, String, Sliding Window
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

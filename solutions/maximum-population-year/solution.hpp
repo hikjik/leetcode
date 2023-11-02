@@ -4,14 +4,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  1854. Maximum Population Year
-  https://leetcode.com/problems/maximum-population-year/
-  Difficulty: Easy
-  Tags: Array, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

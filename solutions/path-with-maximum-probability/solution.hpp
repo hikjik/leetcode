@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  1514. Path with Maximum Probability
-  https://leetcode.com/problems/path-with-maximum-probability/
-  Difficulty: Medium
-  Tags: Array, Graph, Heap (Priority Queue), Shortest Path
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

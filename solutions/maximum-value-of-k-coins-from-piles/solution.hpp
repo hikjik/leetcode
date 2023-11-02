@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2218. Maximum Value of K Coins From Piles
-  https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

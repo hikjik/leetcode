@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1630. Arithmetic Subarrays
-  https://leetcode.com/problems/arithmetic-subarrays/
-  Difficulty: Medium
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

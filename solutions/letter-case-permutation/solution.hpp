@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  784. Letter Case Permutation
-  https://leetcode.com/problems/letter-case-permutation/
-  Difficulty: Medium
-  Tags: String, Backtracking, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <map>
 
-/*
-  729. My Calendar I
-  https://leetcode.com/problems/my-calendar-i/
-  Difficulty: Medium
-  Tags: Binary Search, Design, Segment Tree, Ordered Set
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class MyCalendar {
 public:

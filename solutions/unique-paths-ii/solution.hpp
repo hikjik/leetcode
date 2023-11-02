@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  63. Unique Paths II
-  https://leetcode.com/problems/unique-paths-ii/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

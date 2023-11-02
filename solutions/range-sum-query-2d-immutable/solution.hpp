@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  304. Range Sum Query 2D - Immutable
-  https://leetcode.com/problems/range-sum-query-2d-immutable/
-  Difficulty: Medium
-  Tags: Array, Design, Matrix, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class NumMatrix {
 public:

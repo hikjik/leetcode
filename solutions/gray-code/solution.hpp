@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  89. Gray Code
-  https://leetcode.com/problems/gray-code/
-  Difficulty: Medium
-  Tags: Math, Backtracking, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  806. Number of Lines To Write String
-  https://leetcode.com/problems/number-of-lines-to-write-string/
-  Difficulty: Easy
-  Tags: Array, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

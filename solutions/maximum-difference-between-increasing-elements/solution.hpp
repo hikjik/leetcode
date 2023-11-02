@@ -3,14 +3,8 @@
 #include <climits>
 #include <vector>
 
-/*
-  2016. Maximum Difference Between Increasing Elements
-  https://leetcode.com/problems/maximum-difference-between-increasing-elements/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  766. Toeplitz Matrix
-  https://leetcode.com/problems/toeplitz-matrix/
-  Difficulty: Easy
-  Tags: Array, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

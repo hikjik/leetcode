@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  1598. Crawler Log Folder
-  https://leetcode.com/problems/crawler-log-folder/
-  Difficulty: Easy
-  Tags: Array, String, Stack
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

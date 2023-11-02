@@ -4,14 +4,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  695. Max Area of Island
-  https://leetcode.com/problems/max-area-of-island/
-  Difficulty: Medium
-  Tags: Array, Depth-First Search, Breadth-First Search, Union Find, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -5,41 +5,35 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1. Two Sum
-  https://leetcode.com/problems/two-sum/
-  Difficulty: Easy
-  Tags: Array, Hash Table
-  Time: O(N)
-  Space: O(N)
-*/
-
-namespace hash_table {
-
 // Time: O(N)
 // Space: O(N)
 
+namespace brute_force {
+
+// Time: O(N^2)
+// Space: O(1)
+// Brute Force
 class Solution {
 public:
   static std::vector<int> twoSum(const std::vector<int> &nums, int target) {
-    std::unordered_map<int, int> indexes;
     for (int i = 0; i < std::ssize(nums); ++i) {
-      if (indexes.contains(nums[i])) {
-        return {indexes[nums[i]], i};
+      for (int j = i + 1; j < std::ssize(nums); ++j) {
+        if (nums[i] + nums[j] == target) {
+          return {i, j};
+        }
       }
-      indexes[target - nums[i]] = i;
     }
     return {};
   }
 };
 
-} // namespace hash_table
+} // namespace brute_force
 
 namespace two_pointers {
 
 // Time: O(NlogN)
 // Space: O(N)
-
+// Two-Pointers Technique
 class Solution {
 public:
   static std::vector<int> twoSum(const std::vector<int> &nums, int target) {
@@ -60,23 +54,23 @@ public:
 
 } // namespace two_pointers
 
-namespace brute_force {
+namespace hash_table {
 
-// Time: O(N^2)
-// Space: O(1)
-
+// Time: O(N)
+// Space: O(N)
+// One-pass Hash Table
 class Solution {
 public:
   static std::vector<int> twoSum(const std::vector<int> &nums, int target) {
+    std::unordered_map<int, int> indexes;
     for (int i = 0; i < std::ssize(nums); ++i) {
-      for (int j = i + 1; j < std::ssize(nums); ++j) {
-        if (nums[i] + nums[j] == target) {
-          return {i, j};
-        }
+      if (indexes.contains(nums[i])) {
+        return {indexes[nums[i]], i};
       }
+      indexes[target - nums[i]] = i;
     }
     return {};
   }
 };
 
-} // namespace brute_force
+} // namespace hash_table

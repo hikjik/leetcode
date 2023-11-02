@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1103. Distribute Candies to People
-  https://leetcode.com/problems/distribute-candies-to-people/
-  Difficulty: Easy
-  Tags: Math, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

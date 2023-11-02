@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  1869. Longer Contiguous Segments of Ones than Zeros
-  https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

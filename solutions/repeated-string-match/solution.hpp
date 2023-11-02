@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  686. Repeated String Match
-  https://leetcode.com/problems/repeated-string-match/
-  Difficulty: Medium
-  Tags: String, String Matching
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

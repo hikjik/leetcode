@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1021. Remove Outermost Parentheses
-  https://leetcode.com/problems/remove-outermost-parentheses/
-  Difficulty: Easy
-  Tags: String, Stack
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

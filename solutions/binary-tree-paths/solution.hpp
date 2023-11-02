@@ -6,14 +6,8 @@
 
 #include <tree_node.h>
 
-/*
-  257. Binary Tree Paths
-  https://leetcode.com/problems/binary-tree-paths/
-  Difficulty: Easy
-  Tags: String, Backtracking, Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

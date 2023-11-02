@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  744. Find Smallest Letter Greater Than Target
-  https://leetcode.com/problems/find-smallest-letter-greater-than-target/
-  Difficulty: Easy
-  Tags: Array, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

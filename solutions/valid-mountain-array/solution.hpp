@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  941. Valid Mountain Array
-  https://leetcode.com/problems/valid-mountain-array/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1582. Special Positions in a Binary Matrix
-  https://leetcode.com/problems/special-positions-in-a-binary-matrix/
-  Difficulty: Easy
-  Tags: Array, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

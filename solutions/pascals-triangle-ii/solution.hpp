@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  119. Pascal's Triangle II
-  https://leetcode.com/problems/pascals-triangle-ii/
-  Difficulty: Easy
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

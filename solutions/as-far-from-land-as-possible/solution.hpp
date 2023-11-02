@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  1162. As Far from Land as Possible
-  https://leetcode.com/problems/as-far-from-land-as-possible/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming, Breadth-First Search, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

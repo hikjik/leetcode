@@ -3,14 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1748. Sum of Unique Elements
-  https://leetcode.com/problems/sum-of-unique-elements/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

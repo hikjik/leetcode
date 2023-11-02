@@ -3,14 +3,8 @@
 #include <set>
 #include <vector>
 
-/*
-  1675. Minimize Deviation in Array
-  https://leetcode.com/problems/minimize-deviation-in-array/
-  Difficulty: Hard
-  Tags: Array, Greedy, Heap (Priority Queue), Ordered Set
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

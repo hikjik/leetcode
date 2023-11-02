@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  934. Shortest Bridge
-  https://leetcode.com/problems/shortest-bridge/
-  Difficulty: Medium
-  Tags: Array, Depth-First Search, Breadth-First Search, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

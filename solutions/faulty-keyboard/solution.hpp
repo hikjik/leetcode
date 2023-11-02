@@ -3,14 +3,8 @@
 #include <deque>
 #include <string>
 
-/*
-  2810. Faulty Keyboard
-  https://leetcode.com/problems/faulty-keyboard/
-  Difficulty: Easy
-  Tags: String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

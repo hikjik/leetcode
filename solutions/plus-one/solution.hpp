@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  66. Plus One
-  https://leetcode.com/problems/plus-one/
-  Difficulty: Easy
-  Tags: Array, Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

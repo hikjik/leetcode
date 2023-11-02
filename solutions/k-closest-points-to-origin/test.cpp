@@ -23,8 +23,7 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[points, k, expected] : test_cases) {
-    auto actual = Solution::kClosest(points, k);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
+    const auto actual = Solution::kClosest(points, k);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

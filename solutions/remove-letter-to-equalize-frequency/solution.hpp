@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2423. Remove Letter To Equalize Frequency
-  https://leetcode.com/problems/remove-letter-to-equalize-frequency/
-  Difficulty: Easy
-  Tags: Hash Table, String, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

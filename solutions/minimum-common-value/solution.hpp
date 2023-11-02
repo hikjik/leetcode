@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2540. Minimum Common Value
-  https://leetcode.com/problems/minimum-common-value/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Two Pointers, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

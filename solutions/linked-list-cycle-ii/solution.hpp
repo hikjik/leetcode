@@ -2,14 +2,8 @@
 
 #include <list_node.h>
 
-/*
-  142. Linked List Cycle II
-  https://leetcode.com/problems/linked-list-cycle-ii/
-  Difficulty: Medium
-  Tags: Hash Table, Linked List, Two Pointers
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

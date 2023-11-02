@@ -4,15 +4,8 @@
 #include <climits>
 #include <vector>
 
-/*
-  1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
-  https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/
-  Difficulty: Hard
-  Tags: Union Find, Graph, Sorting, Minimum Spanning Tree,
-        Strongly Connected Component
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class DisjointSets {
 public:

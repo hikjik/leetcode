@@ -5,14 +5,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  884. Uncommon Words from Two Sentences
-  https://leetcode.com/problems/uncommon-words-from-two-sentences/
-  Difficulty: Easy
-  Tags: Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  682. Baseball Game
-  https://leetcode.com/problems/baseball-game/
-  Difficulty: Easy
-  Tags: Array, Stack, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

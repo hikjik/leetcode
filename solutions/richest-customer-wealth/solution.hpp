@@ -3,14 +3,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  1672. Richest Customer Wealth
-  https://leetcode.com/problems/richest-customer-wealth/
-  Difficulty: Easy
-  Tags: Array, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

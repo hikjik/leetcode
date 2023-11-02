@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1027. Longest Arithmetic Subsequence
-  https://leetcode.com/problems/longest-arithmetic-subsequence/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Binary Search, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

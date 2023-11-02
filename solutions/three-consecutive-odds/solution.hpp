@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1550. Three Consecutive Odds
-  https://leetcode.com/problems/three-consecutive-odds/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

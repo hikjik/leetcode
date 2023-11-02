@@ -4,14 +4,8 @@
 
 #include <vector>
 
-/*
-  437. Path Sum III
-  https://leetcode.com/problems/path-sum-iii/
-  Difficulty: Medium
-  Tags: Tree, Depth-First Search, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -5,15 +5,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  2196. Create Binary Tree From Descriptions
-  https://leetcode.com/problems/create-binary-tree-from-descriptions/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Tree, Depth-First Search, Breadth-First Search,
-        Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

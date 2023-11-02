@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1929. Concatenation of Array
-  https://leetcode.com/problems/concatenation-of-array/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  97. Interleaving String
-  https://leetcode.com/problems/interleaving-string/
-  Difficulty: Medium
-  Tags: String, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

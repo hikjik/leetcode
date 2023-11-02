@@ -3,14 +3,8 @@
 #include <array>
 #include <string>
 
-/*
-  2103. Rings and Rods
-  https://leetcode.com/problems/rings-and-rods/
-  Difficulty: Easy
-  Tags: Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

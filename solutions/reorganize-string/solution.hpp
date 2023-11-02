@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  767. Reorganize String
-  https://leetcode.com/problems/reorganize-string/
-  Difficulty: Medium
-  Tags: Hash Table, String, Greedy, Sorting, Heap (Priority Queue), Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

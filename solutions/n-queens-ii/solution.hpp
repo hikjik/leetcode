@@ -4,14 +4,8 @@
 #include <string>
 #include <vector>
 
-/*
-  52. N-Queens II
-  https://leetcode.com/problems/n-queens-ii/
-  Difficulty: Hard
-  Tags: Backtracking
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

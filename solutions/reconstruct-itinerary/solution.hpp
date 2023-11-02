@@ -6,14 +6,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  332. Reconstruct Itinerary
-  https://leetcode.com/problems/reconstruct-itinerary/
-  Difficulty: Hard
-  Tags: Depth-First Search, Graph, Eulerian Circuit
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

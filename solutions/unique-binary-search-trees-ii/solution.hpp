@@ -5,14 +5,8 @@
 #include <map>
 #include <vector>
 
-/*
-  95. Unique Binary Search Trees II
-  https://leetcode.com/problems/unique-binary-search-trees-ii/
-  Difficulty: Medium
-  Tags: Dynamic Programming, Backtracking, Tree, Binary Search Tree, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

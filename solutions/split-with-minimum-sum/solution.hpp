@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2578. Split With Minimum Sum
-  https://leetcode.com/problems/split-with-minimum-sum/
-  Difficulty: Easy
-  Tags: Math, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

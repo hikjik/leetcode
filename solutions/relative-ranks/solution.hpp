@@ -5,14 +5,8 @@
 #include <string>
 #include <vector>
 
-/*
-  506. Relative Ranks
-  https://leetcode.com/problems/relative-ranks/
-  Difficulty: Easy
-  Tags: Array, Sorting, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

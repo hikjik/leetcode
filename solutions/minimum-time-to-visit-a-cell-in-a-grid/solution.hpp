@@ -5,15 +5,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  2577. Minimum Time to Visit a Cell In a Grid
-  https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/
-  Difficulty: Hard
-  Tags: Array, Breadth-First Search, Graph, Heap (Priority Queue), Matrix,
-        Shortest Path
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

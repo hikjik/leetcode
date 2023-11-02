@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  2696. Minimum String Length After Removing Substrings
-  https://leetcode.com/problems/minimum-string-length-after-removing-substrings/
-  Difficulty: Easy
-  Tags: String, Stack, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

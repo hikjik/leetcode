@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  701. Insert into a Binary Search Tree
-  https://leetcode.com/problems/insert-into-a-binary-search-tree/
-  Difficulty: Medium
-  Tags: Tree, Binary Search Tree, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

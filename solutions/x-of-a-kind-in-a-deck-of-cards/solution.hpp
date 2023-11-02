@@ -4,14 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  914. X of a Kind in a Deck of Cards
-  https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Math, Counting, Number Theory
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

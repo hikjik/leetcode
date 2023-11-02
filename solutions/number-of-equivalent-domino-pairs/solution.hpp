@@ -3,14 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1128. Number of Equivalent Domino Pairs
-  https://leetcode.com/problems/number-of-equivalent-domino-pairs/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

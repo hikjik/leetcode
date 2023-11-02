@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2848. Points That Intersect With Cars
-  https://leetcode.com/problems/points-that-intersect-with-cars/
-  Difficulty: Easy
-  Tags: Hash Table, Math, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

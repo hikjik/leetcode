@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1720. Decode XORed Array
-  https://leetcode.com/problems/decode-xored-array/
-  Difficulty: Easy
-  Tags: Array, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

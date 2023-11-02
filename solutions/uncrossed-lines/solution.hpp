@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1035. Uncrossed Lines
-  https://leetcode.com/problems/uncrossed-lines/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -4,14 +4,8 @@
 #include <sstream>
 #include <string>
 
-/*
-  2409. Count Days Spent Together
-  https://leetcode.com/problems/count-days-spent-together/
-  Difficulty: Easy
-  Tags: Math, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

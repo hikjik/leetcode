@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  300. Longest Increasing Subsequence
-  https://leetcode.com/problems/longest-increasing-subsequence/
-  Difficulty: Medium
-  Tags: Array, Binary Search, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

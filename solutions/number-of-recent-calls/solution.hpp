@@ -2,14 +2,8 @@
 
 #include <queue>
 
-/*
-  933. Number of Recent Calls
-  https://leetcode.com/problems/number-of-recent-calls/
-  Difficulty: Easy
-  Tags: Design, Queue, Data Stream
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class RecentCounter {
   static const int kPastFrames = 3000;

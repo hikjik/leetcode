@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2255. Count Prefixes of a Given String
-  https://leetcode.com/problems/count-prefixes-of-a-given-string/
-  Difficulty: Easy
-  Tags: Array, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

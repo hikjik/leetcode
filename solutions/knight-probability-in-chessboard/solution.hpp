@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  688. Knight Probability in Chessboard
-  https://leetcode.com/problems/knight-probability-in-chessboard/
-  Difficulty: Medium
-  Tags: Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

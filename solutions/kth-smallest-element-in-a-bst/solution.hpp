@@ -4,14 +4,8 @@
 
 #include <stack>
 
-/*
-  230. Kth Smallest Element in a BST
-  https://leetcode.com/problems/kth-smallest-element-in-a-bst/
-  Difficulty: Medium
-  Tags: Tree, Depth-First Search, Binary Search Tree, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

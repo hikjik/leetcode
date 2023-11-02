@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  263. Ugly Number
-  https://leetcode.com/problems/ugly-number/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

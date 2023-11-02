@@ -4,14 +4,8 @@
 #include <stack>
 #include <vector>
 
-/*
-  456. 132 Pattern
-  https://leetcode.com/problems/132-pattern/
-  Difficulty: Medium
-  Tags: Array, Binary Search, Stack, Monotonic Stack, Ordered Set
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

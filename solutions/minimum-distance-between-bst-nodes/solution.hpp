@@ -6,15 +6,8 @@
 #include <limits>
 #include <optional>
 
-/*
-  783. Minimum Distance Between BST Nodes
-  https://leetcode.com/problems/minimum-distance-between-bst-nodes/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Breadth-First Search, Binary Search Tree,
-        Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -6,14 +6,8 @@
 #include <sstream>
 #include <string>
 
-/*
-  1360. Number of Days Between Two Dates
-  https://leetcode.com/problems/number-of-days-between-two-dates/
-  Difficulty: Easy
-  Tags: Math, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

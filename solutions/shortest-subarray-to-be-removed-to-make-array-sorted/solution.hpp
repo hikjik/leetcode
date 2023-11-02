@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1574. Shortest Subarray to be Removed to Make Array Sorted
-  https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Binary Search, Stack, Monotonic Stack
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

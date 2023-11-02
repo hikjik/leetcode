@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1539. Kth Missing Positive Number
-  https://leetcode.com/problems/kth-missing-positive-number/
-  Difficulty: Easy
-  Tags: Array, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

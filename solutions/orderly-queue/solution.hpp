@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <string>
 
-/*
-  899. Orderly Queue
-  https://leetcode.com/problems/orderly-queue/
-  Difficulty: Hard
-  Tags: Math, String, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  1768. Merge Strings Alternately
-  https://leetcode.com/problems/merge-strings-alternately/
-  Difficulty: Easy
-  Tags: Two Pointers, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

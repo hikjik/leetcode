@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  1716. Calculate Money in Leetcode Bank
-  https://leetcode.com/problems/calculate-money-in-leetcode-bank/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

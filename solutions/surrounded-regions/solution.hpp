@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  130. Surrounded Regions
-  https://leetcode.com/problems/surrounded-regions/
-  Difficulty: Medium
-  Tags: Array, Depth-First Search, Breadth-First Search, Union Find, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

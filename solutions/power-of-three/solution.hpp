@@ -2,14 +2,8 @@
 
 #include <cmath>
 
-/*
-  326. Power of Three
-  https://leetcode.com/problems/power-of-three/
-  Difficulty: Easy
-  Tags: Math, Recursion
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

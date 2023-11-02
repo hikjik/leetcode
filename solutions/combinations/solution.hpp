@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  77. Combinations
-  https://leetcode.com/problems/combinations/
-  Difficulty: Medium
-  Tags: Backtracking
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

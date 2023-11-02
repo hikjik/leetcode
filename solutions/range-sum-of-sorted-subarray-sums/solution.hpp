@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  1508. Range Sum of Sorted Subarray Sums
-  https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Binary Search, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

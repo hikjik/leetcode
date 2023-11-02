@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  68. Text Justification
-  https://leetcode.com/problems/text-justification/
-  Difficulty: Hard
-  Tags: Array, String, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -4,14 +4,8 @@
 
 #include <random>
 
-/*
-  382. Linked List Random Node
-  https://leetcode.com/problems/linked-list-random-node/
-  Difficulty: Medium
-  Tags: Linked List, Math, Reservoir Sampling, Randomized
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

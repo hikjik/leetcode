@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  6. Zigzag Conversion
-  https://leetcode.com/problems/zigzag-conversion/
-  Difficulty: Medium
-  Tags: String
-  Time:
-  Space:
-*/
+// Time: O(N), where N is the length of the string s
+// Space: O(1), result is not included
 
 class Solution {
 public:

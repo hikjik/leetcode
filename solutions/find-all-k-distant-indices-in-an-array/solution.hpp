@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2200. Find All K-Distant Indices in an Array
-  https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <list_node.h>
 
-/*
-  83. Remove Duplicates from Sorted List
-  https://leetcode.com/problems/remove-duplicates-from-sorted-list/
-  Difficulty: Easy
-  Tags: Linked List
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

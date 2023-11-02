@@ -3,14 +3,8 @@
 #include <numeric>
 #include <vector>
 
-/*
-  416. Partition Equal Subset Sum
-  https://leetcode.com/problems/partition-equal-subset-sum/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

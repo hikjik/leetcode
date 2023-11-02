@@ -5,14 +5,8 @@
 #include <string>
 #include <vector>
 
-/*
-  212. Word Search II
-  https://leetcode.com/problems/word-search-ii/
-  Difficulty: Hard
-  Tags: Array, String, Backtracking, Trie, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

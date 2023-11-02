@@ -4,14 +4,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  2465. Number of Distinct Averages
-  https://leetcode.com/problems/number-of-distinct-averages/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Two Pointers, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

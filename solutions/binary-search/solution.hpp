@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  704. Binary Search
-  https://leetcode.com/problems/binary-search/
-  Difficulty: Easy
-  Tags: Array, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

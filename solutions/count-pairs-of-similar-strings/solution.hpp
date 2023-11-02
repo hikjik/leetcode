@@ -5,14 +5,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  2506. Count Pairs Of Similar Strings
-  https://leetcode.com/problems/count-pairs-of-similar-strings/
-  Difficulty: Easy
-  Tags: Array, Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

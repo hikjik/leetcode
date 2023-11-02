@@ -3,14 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  1282. Group the People Given the Group Size They Belong To
-  https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
-  Difficulty: Medium
-  Tags: Array, Hash Table
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

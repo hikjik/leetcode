@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  135. Candy
-  https://leetcode.com/problems/candy/
-  Difficulty: Hard
-  Tags: Array, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

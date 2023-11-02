@@ -4,14 +4,8 @@
 #include <climits>
 #include <vector>
 
-/*
-  209. Minimum Size Subarray Sum
-  https://leetcode.com/problems/minimum-size-subarray-sum/
-  Difficulty: Medium
-  Tags: Array, Binary Search, Sliding Window, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

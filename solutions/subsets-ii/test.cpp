@@ -19,10 +19,8 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto &[nums, expected] : test_cases) {
-    auto actual = Solution::subsetsWithDup(nums);
-    std::sort(expected.begin(), expected.end());
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
+  for (const auto &[nums, expected] : test_cases) {
+    const auto actual = Solution::subsetsWithDup(nums);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

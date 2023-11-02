@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  54. Spiral Matrix
-  https://leetcode.com/problems/spiral-matrix/
-  Difficulty: Medium
-  Tags: Array, Matrix, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

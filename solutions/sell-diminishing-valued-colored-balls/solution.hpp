@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1648. Sell Diminishing-Valued Colored Balls
-  https://leetcode.com/problems/sell-diminishing-valued-colored-balls/
-  Difficulty: Medium
-  Tags: Array, Math, Binary Search, Greedy, Sorting, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

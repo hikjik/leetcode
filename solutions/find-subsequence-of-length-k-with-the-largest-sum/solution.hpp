@@ -3,14 +3,8 @@
 #include <ranges>
 #include <vector>
 
-/*
-  2099. Find Subsequence of Length K With the Largest Sum
-  https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Sorting, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

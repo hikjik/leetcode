@@ -3,14 +3,8 @@
 #include <cmath>
 #include <string>
 
-/*
-  504. Base 7
-  https://leetcode.com/problems/base-7/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

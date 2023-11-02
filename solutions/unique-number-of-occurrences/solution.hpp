@@ -4,14 +4,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  1207. Unique Number of Occurrences
-  https://leetcode.com/problems/unique-number-of-occurrences/
-  Difficulty: Easy
-  Tags: Array, Hash Table
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

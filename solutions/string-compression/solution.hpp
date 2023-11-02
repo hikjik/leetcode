@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  443. String Compression
-  https://leetcode.com/problems/string-compression/
-  Difficulty: Medium
-  Tags: Two Pointers, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

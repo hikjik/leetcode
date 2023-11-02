@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  1656. Design an Ordered Stream
-  https://leetcode.com/problems/design-an-ordered-stream/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Design, Data Stream
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class OrderedStream {
 public:

@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  289. Game of Life
-  https://leetcode.com/problems/game-of-life/
-  Difficulty: Medium
-  Tags: Array, Matrix, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

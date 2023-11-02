@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  938. Range Sum of BST
-  https://leetcode.com/problems/range-sum-of-bst/
-  Difficulty: Easy
-  Tags: Tree, Depth-First Search, Binary Search Tree, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

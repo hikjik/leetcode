@@ -3,14 +3,8 @@
 #include <cmath>
 #include <vector>
 
-/*
-  1848. Minimum Distance to the Target Element
-  https://leetcode.com/problems/minimum-distance-to-the-target-element/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

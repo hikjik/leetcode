@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  73. Set Matrix Zeroes
-  https://leetcode.com/problems/set-matrix-zeroes/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

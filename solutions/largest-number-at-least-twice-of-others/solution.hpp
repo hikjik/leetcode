@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  747. Largest Number At Least Twice of Others
-  https://leetcode.com/problems/largest-number-at-least-twice-of-others/
-  Difficulty: Easy
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

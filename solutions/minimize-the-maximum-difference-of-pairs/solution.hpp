@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2616. Minimize the Maximum Difference of Pairs
-  https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/
-  Difficulty: Medium
-  Tags: Array, Binary Search, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

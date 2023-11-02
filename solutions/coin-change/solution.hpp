@@ -4,14 +4,8 @@
 #include <climits>
 #include <vector>
 
-/*
-  322. Coin Change
-  https://leetcode.com/problems/coin-change/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming, Breadth-First Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

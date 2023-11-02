@@ -2,14 +2,8 @@
 
 #include <list_node.h>
 
-/*
-  876. Middle of the Linked List
-  https://leetcode.com/problems/middle-of-the-linked-list/
-  Difficulty: Easy
-  Tags: Linked List, Two Pointers
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

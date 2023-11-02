@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2248. Intersection of Multiple Arrays
-  https://leetcode.com/problems/intersection-of-multiple-arrays/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

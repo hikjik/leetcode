@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  172. Factorial Trailing Zeroes
-  https://leetcode.com/problems/factorial-trailing-zeroes/
-  Difficulty: Medium
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

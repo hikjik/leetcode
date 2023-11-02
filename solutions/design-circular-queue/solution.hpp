@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  622. Design Circular Queue
-  https://leetcode.com/problems/design-circular-queue/
-  Difficulty: Medium
-  Tags: Array, Linked List, Design, Queue
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class MyCircularQueue {
 public:

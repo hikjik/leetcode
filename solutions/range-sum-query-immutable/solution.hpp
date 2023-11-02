@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  303. Range Sum Query - Immutable
-  https://leetcode.com/problems/range-sum-query-immutable/
-  Difficulty: Easy
-  Tags: Array, Design, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class NumArray {
 public:

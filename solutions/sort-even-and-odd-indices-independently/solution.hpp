@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2164. Sort Even and Odd Indices Independently
-  https://leetcode.com/problems/sort-even-and-odd-indices-independently/
-  Difficulty: Easy
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

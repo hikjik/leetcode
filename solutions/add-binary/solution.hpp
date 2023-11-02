@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <string>
 
-/*
-  67. Add Binary
-  https://leetcode.com/problems/add-binary/
-  Difficulty: Easy
-  Tags: Math, String, Bit Manipulation, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

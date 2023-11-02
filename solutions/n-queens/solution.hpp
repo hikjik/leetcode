@@ -6,14 +6,8 @@
 
 using ChessBoard = std::vector<std::string>;
 
-/*
-  51. N-Queens
-  https://leetcode.com/problems/n-queens/
-  Difficulty: Hard
-  Tags: Array, Backtracking
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  1030. Matrix Cells in Distance Order
-  https://leetcode.com/problems/matrix-cells-in-distance-order/
-  Difficulty: Easy
-  Tags: Array, Math, Geometry, Sorting, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2293. Min Max Game
-  https://leetcode.com/problems/min-max-game/
-  Difficulty: Easy
-  Tags: Array, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -4,15 +4,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  347. Top K Frequent Elements
-  https://leetcode.com/problems/top-k-frequent-elements/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue),
-        Bucket Sort, Counting, Quickselect
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

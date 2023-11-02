@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  728. Self Dividing Numbers
-  https://leetcode.com/problems/self-dividing-numbers/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

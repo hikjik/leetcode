@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  1870. Minimum Speed to Arrive on Time
-  https://leetcode.com/problems/minimum-speed-to-arrive-on-time/
-  Difficulty: Medium
-  Tags: Array, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

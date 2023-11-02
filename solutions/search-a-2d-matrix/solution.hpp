@@ -4,14 +4,8 @@
 
 template <typename T> using Matrix = std::vector<std::vector<T>>;
 
-/*
-  74. Search a 2D Matrix
-  https://leetcode.com/problems/search-a-2d-matrix/
-  Difficulty: Medium
-  Tags: Array, Binary Search, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

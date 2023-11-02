@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  41. First Missing Positive
-  https://leetcode.com/problems/first-missing-positive/
-  Difficulty: Hard
-  Tags: Array, Hash Table
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

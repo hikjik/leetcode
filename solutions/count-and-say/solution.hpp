@@ -2,15 +2,9 @@
 
 #include <string>
 
-/*
-  38. Count and Say
-  https://leetcode.com/problems/count-and-say/
-  Difficulty: Medium
-  Tags: String
-  Time: O(L^N), where L = 1.303577269034...
-  Space: O(L^N)
-  Notes: [Look and Say](https://w.wiki/7$3C)
-*/
+// Time: O(L^N), where L = 1.303577269034...
+// Space: O(L^N)
+// Notes: [Look and Say](https://w.wiki/7$3C)
 
 class Solution {
 public:

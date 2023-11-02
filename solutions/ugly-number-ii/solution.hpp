@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  264. Ugly Number II
-  https://leetcode.com/problems/ugly-number-ii/
-  Difficulty: Medium
-  Tags: Hash Table, Math, Dynamic Programming, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

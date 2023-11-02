@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1697. Checking Existence of Edge Length Limited Paths
-  https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/
-  Difficulty: Hard
-  Tags: Array, Two Pointers, Union Find, Graph, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class DisjointSets {
 public:

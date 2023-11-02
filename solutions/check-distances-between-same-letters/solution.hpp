@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  2399. Check Distances Between Same Letters
-  https://leetcode.com/problems/check-distances-between-same-letters/
-  Difficulty: Easy
-  Tags: Array, Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

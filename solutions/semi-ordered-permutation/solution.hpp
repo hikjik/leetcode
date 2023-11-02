@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2717. Semi-Ordered Permutation
-  https://leetcode.com/problems/semi-ordered-permutation/
-  Difficulty: Easy
-  Tags: Array, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -2,14 +2,8 @@
 
 #include <list_node.h>
 
-/*
-  2130. Maximum Twin Sum of a Linked List
-  https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/
-  Difficulty: Medium
-  Tags: Linked List, Two Pointers, Stack
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

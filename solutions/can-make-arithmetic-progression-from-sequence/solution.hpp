@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1502. Can Make Arithmetic Progression From Sequence
-  https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
-  Difficulty: Easy
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

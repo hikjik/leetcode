@@ -3,14 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  350. Intersection of Two Arrays II
-  https://leetcode.com/problems/intersection-of-two-arrays-ii/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Two Pointers, Binary Search, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

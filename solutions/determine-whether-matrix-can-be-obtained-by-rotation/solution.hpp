@@ -5,14 +5,8 @@
 
 template <typename T> using Matrix = std::vector<std::vector<int>>;
 
-/*
-  1886. Determine Whether Matrix Can Be Obtained By Rotation
-  https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
-  Difficulty: Easy
-  Tags: Array, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

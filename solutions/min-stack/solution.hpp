@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <stack>
 
-/*
-  155. Min Stack
-  https://leetcode.com/problems/min-stack/
-  Difficulty: Medium
-  Tags: Stack, Design
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class MinStack {
 public:

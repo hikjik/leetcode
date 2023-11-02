@@ -4,14 +4,8 @@
 #include <string>
 #include <unordered_map>
 
-/*
-  1189. Maximum Number of Balloons
-  https://leetcode.com/problems/maximum-number-of-balloons/
-  Difficulty: Easy
-  Tags: Hash Table, String, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -26,7 +26,11 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[lists, expected] : test_cases) {
-    const List actual = Solution::mergeKLists({lists.begin(), lists.end()});
+    std::vector<ListNode *> copies;
+    for (const auto &list : lists) {
+      copies.push_back(Copy(list));
+    }
+    const List actual = Solution::mergeKLists(copies);
     REQUIRE(expected == actual);
   }
 }

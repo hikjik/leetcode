@@ -4,14 +4,8 @@
 #include <cmath>
 #include <vector>
 
-/*
-  2037. Minimum Number of Moves to Seat Everyone
-  https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/
-  Difficulty: Easy
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

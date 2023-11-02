@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  2697. Lexicographically Smallest Palindrome
-  https://leetcode.com/problems/lexicographically-smallest-palindrome/
-  Difficulty: Easy
-  Tags: Two Pointers, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

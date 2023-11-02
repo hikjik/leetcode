@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  2136. Earliest Possible Day of Full Bloom
-  https://leetcode.com/problems/earliest-possible-day-of-full-bloom/
-  Difficulty: Hard
-  Tags: Array, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

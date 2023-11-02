@@ -2,14 +2,8 @@
 
 #include <tree_node.h>
 
-/*
-  99. Recover Binary Search Tree
-  https://leetcode.com/problems/recover-binary-search-tree/
-  Difficulty: Medium
-  Tags: Tree, Depth-First Search, Binary Search Tree, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

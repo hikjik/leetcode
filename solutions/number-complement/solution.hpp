@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  476. Number Complement
-  https://leetcode.com/problems/number-complement/
-  Difficulty: Easy
-  Tags: Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

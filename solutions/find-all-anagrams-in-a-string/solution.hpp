@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  438. Find All Anagrams in a String
-  https://leetcode.com/problems/find-all-anagrams-in-a-string/
-  Difficulty: Medium
-  Tags: Hash Table, String, Sliding Window
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

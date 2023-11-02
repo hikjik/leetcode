@@ -3,14 +3,8 @@
 #include <string>
 #include <unordered_map>
 
-/*
-  13. Roman to Integer
-  https://leetcode.com/problems/roman-to-integer/
-  Difficulty: Easy
-  Tags: Hash Table, Math, String
-  Time:
-  Space:
-*/
+// Time: O(N), where N is the length of the string s
+// Space: O(1)
 
 class Solution {
 private:

@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2784. Check if Array is Good
-  https://leetcode.com/problems/check-if-array-is-good/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

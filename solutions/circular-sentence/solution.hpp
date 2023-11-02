@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  2490. Circular Sentence
-  https://leetcode.com/problems/circular-sentence/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

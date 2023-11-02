@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  295. Find Median from Data Stream
-  https://leetcode.com/problems/find-median-from-data-stream/
-  Difficulty: Hard
-  Tags: Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class MedianFinder {
 public:

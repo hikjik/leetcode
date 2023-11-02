@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  12. Integer to Roman
-  https://leetcode.com/problems/integer-to-roman/
-  Difficulty: Medium
-  Tags: Hash Table, Math, String
-  Time:
-  Space:
-*/
+// Time: O(N), where N is the length of result string
+// Space: O(1)
 
 class Solution {
 public:

@@ -20,8 +20,7 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[nums, expected] : test_cases) {
-    auto actual = Solution::findLonely(nums);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
+    const auto actual = Solution::findLonely(nums);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

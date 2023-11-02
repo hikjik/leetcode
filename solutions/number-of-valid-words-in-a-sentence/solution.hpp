@@ -4,14 +4,8 @@
 #include <sstream>
 #include <string>
 
-/*
-  2047. Number of Valid Words in a Sentence
-  https://leetcode.com/problems/number-of-valid-words-in-a-sentence/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

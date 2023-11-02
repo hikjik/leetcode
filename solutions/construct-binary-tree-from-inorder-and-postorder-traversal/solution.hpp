@@ -5,14 +5,8 @@
 #include <unordered_map>
 #include <vector>
 
-/*
-  106. Construct Binary Tree from Inorder and Postorder Traversal
-  https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
-  Difficulty: Medium
-  Tags: Array, Hash Table, Divide and Conquer, Tree, Binary Tree
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

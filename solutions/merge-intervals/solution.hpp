@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  56. Merge Intervals
-  https://leetcode.com/problems/merge-intervals/
-  Difficulty: Medium
-  Tags: Array, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

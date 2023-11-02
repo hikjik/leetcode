@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1901. Find a Peak Element II
-  https://leetcode.com/problems/find-a-peak-element-ii/
-  Difficulty: Medium
-  Tags: Array, Binary Search, Matrix
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

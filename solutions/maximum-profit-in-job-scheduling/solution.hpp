@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1235. Maximum Profit in Job Scheduling
-  https://leetcode.com/problems/maximum-profit-in-job-scheduling/
-  Difficulty: Hard
-  Tags: Array, Binary Search, Dynamic Programming, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 private:

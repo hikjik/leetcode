@@ -3,14 +3,8 @@
 #include <list>
 #include <vector>
 
-/*
-  705. Design HashSet
-  https://leetcode.com/problems/design-hashset/
-  Difficulty: Easy
-  Tags: Array, Hash Table, Linked List, Design, Hash Function
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class MyHashSet {
 public:

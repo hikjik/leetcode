@@ -3,14 +3,8 @@
 #include <string>
 #include <vector>
 
-/*
-  44. Wildcard Matching
-  https://leetcode.com/problems/wildcard-matching/
-  Difficulty: Hard
-  Tags: String, Dynamic Programming, Greedy, Recursion
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

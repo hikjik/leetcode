@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  125. Valid Palindrome
-  https://leetcode.com/problems/valid-palindrome/
-  Difficulty: Easy
-  Tags: Two Pointers, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

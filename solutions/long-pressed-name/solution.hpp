@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  925. Long Pressed Name
-  https://leetcode.com/problems/long-pressed-name/
-  Difficulty: Easy
-  Tags: Two Pointers, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

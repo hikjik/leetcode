@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  287. Find the Duplicate Number
-  https://leetcode.com/problems/find-the-duplicate-number/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Binary Search, Bit Manipulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

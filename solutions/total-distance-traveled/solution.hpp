@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  2739. Total Distance Traveled
-  https://leetcode.com/problems/total-distance-traveled/
-  Difficulty: Easy
-  Tags: Math, Simulation
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

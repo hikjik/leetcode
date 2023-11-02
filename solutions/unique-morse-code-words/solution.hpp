@@ -4,14 +4,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  804. Unique Morse Code Words
-  https://leetcode.com/problems/unique-morse-code-words/
-  Difficulty: Easy
-  Tags: Array, Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

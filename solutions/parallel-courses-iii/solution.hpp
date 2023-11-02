@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  2050. Parallel Courses III
-  https://leetcode.com/problems/parallel-courses-iii/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming, Graph, Topological Sort
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

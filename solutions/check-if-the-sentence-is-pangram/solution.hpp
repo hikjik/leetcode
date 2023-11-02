@@ -3,14 +3,8 @@
 #include <string>
 #include <unordered_set>
 
-/*
-  1832. Check if the Sentence Is Pangram
-  https://leetcode.com/problems/check-if-the-sentence-is-pangram/
-  Difficulty: Easy
-  Tags: Hash Table, String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

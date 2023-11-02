@@ -5,14 +5,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  433. Minimum Genetic Mutation
-  https://leetcode.com/problems/minimum-genetic-mutation/
-  Difficulty: Medium
-  Tags: Hash Table, String, Breadth-First Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

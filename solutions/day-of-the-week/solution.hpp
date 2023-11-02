@@ -4,14 +4,8 @@
 #include <chrono>
 #include <string>
 
-/*
-  1185. Day of the Week
-  https://leetcode.com/problems/day-of-the-week/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

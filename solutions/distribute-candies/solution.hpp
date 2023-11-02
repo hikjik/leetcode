@@ -3,14 +3,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  575. Distribute Candies
-  https://leetcode.com/problems/distribute-candies/
-  Difficulty: Easy
-  Tags: Array, Hash Table
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

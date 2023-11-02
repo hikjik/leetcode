@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  392. Is Subsequence
-  https://leetcode.com/problems/is-subsequence/
-  Difficulty: Easy
-  Tags: Two Pointers, String, Dynamic Programming
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

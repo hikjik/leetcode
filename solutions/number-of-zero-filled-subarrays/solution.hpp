@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2348. Number of Zero-Filled Subarrays
-  https://leetcode.com/problems/number-of-zero-filled-subarrays/
-  Difficulty: Medium
-  Tags: Array, Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

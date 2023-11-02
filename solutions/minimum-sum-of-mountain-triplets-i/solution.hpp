@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2908. Minimum Sum of Mountain Triplets I
-  https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/
-  Difficulty: Easy
-  Tags: Array
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

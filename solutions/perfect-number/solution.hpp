@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  507. Perfect Number
-  https://leetcode.com/problems/perfect-number/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

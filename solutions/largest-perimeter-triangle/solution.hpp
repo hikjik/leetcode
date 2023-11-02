@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  976. Largest Perimeter Triangle
-  https://leetcode.com/problems/largest-perimeter-triangle/
-  Difficulty: Easy
-  Tags: Array, Math, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

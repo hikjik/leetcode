@@ -2,14 +2,8 @@
 
 #include <list_node.h>
 
-/*
-  143. Reorder List
-  https://leetcode.com/problems/reorder-list/
-  Difficulty: Medium
-  Tags: Linked List, Two Pointers, Stack, Recursion
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

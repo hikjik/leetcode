@@ -6,14 +6,8 @@
 #include <unordered_set>
 #include <vector>
 
-/*
-  819. Most Common Word
-  https://leetcode.com/problems/most-common-word/
-  Difficulty: Easy
-  Tags: Hash Table, String, Counting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

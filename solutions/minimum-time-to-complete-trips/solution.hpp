@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2187. Minimum Time to Complete Trips
-  https://leetcode.com/problems/minimum-time-to-complete-trips/
-  Difficulty: Medium
-  Tags: Array, Binary Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

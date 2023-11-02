@@ -3,15 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  658. Find K Closest Elements
-  https://leetcode.com/problems/find-k-closest-elements/
-  Difficulty: Medium
-  Tags: Array, Two Pointers, Binary Search, Sliding Window, Sorting,
-        Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

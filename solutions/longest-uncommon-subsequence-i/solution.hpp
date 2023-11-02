@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  521. Longest Uncommon Subsequence I
-  https://leetcode.com/problems/longest-uncommon-subsequence-i/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

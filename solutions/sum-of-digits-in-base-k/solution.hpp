@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  1837. Sum of Digits in Base K
-  https://leetcode.com/problems/sum-of-digits-in-base-k/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

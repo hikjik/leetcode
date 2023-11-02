@@ -3,14 +3,8 @@
 #include <cmath>
 #include <vector>
 
-/*
-  492. Construct the Rectangle
-  https://leetcode.com/problems/construct-the-rectangle/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

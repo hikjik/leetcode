@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  785. Is Graph Bipartite?
-  https://leetcode.com/problems/is-graph-bipartite/
-  Difficulty: Medium
-  Tags: Depth-First Search, Breadth-First Search, Union Find, Graph
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

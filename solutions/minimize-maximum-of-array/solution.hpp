@@ -2,14 +2,8 @@
 
 #include <vector>
 
-/*
-  2439. Minimize Maximum of Array
-  https://leetcode.com/problems/minimize-maximum-of-array/
-  Difficulty: Medium
-  Tags: Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

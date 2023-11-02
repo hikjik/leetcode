@@ -3,14 +3,8 @@
 #include <numeric>
 #include <string>
 
-/*
-  389. Find the Difference
-  https://leetcode.com/problems/find-the-difference/
-  Difficulty: Easy
-  Tags: Hash Table, String, Bit Manipulation, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

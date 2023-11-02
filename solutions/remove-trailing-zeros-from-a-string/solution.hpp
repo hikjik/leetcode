@@ -2,14 +2,8 @@
 
 #include <string>
 
-/*
-  2710. Remove Trailing Zeros From a String
-  https://leetcode.com/problems/remove-trailing-zeros-from-a-string/
-  Difficulty: Easy
-  Tags: String
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

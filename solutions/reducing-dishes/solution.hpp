@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <vector>
 
-/*
-  1402. Reducing Dishes
-  https://leetcode.com/problems/reducing-dishes/
-  Difficulty: Hard
-  Tags: Array, Dynamic Programming, Greedy, Sorting
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

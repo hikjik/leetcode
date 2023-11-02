@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  1654. Minimum Jumps to Reach Home
-  https://leetcode.com/problems/minimum-jumps-to-reach-home/
-  Difficulty: Medium
-  Tags: Array, Dynamic Programming, Breadth-First Search
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
   static const int MAX_LENGTH = 6000;

@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  1281. Subtract the Product and Sum of Digits of an Integer
-  https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
-  Difficulty: Easy
-  Tags: Math
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <bitset>
 #include <string>
 
-/*
-  2405. Optimal Partition of String
-  https://leetcode.com/problems/optimal-partition-of-string/
-  Difficulty: Medium
-  Tags: Hash Table, String, Greedy
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

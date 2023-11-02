@@ -1,13 +1,7 @@
 #pragma once
 
-/*
-  231. Power of Two
-  https://leetcode.com/problems/power-of-two/
-  Difficulty: Easy
-  Tags: Math, Bit Manipulation, Recursion
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:

@@ -3,14 +3,8 @@
 #include <queue>
 #include <vector>
 
-/*
-  1046. Last Stone Weight
-  https://leetcode.com/problems/last-stone-weight/
-  Difficulty: Easy
-  Tags: Array, Heap (Priority Queue)
-  Time:
-  Space:
-*/
+// Time:
+// Space:
 
 class Solution {
 public:
