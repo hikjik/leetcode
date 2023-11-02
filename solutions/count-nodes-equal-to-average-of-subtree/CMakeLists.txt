@@ -1,0 +1,1 @@
+add_catch(test_count_nodes_equal_to_average_of_subtree test.cpp)
