@@ -21,7 +21,7 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[n, expected] : test_cases) {
-    const auto actual = Solution::solveNQueens(n);
+    const auto actual = Solution().solveNQueens(n);
     REQUIRE(expected == actual);
   }
 }

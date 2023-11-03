@@ -4,50 +4,40 @@
 #include <string>
 #include <vector>
 
-using ChessBoard = std::vector<std::string>;
-
-// Time:
-// Space:
+// Time: O(N!)
+// Space: O(N^2)
 
 class Solution {
 public:
+  using ChessBoard = std::vector<std::string>;
+
   static constexpr size_t kSize = 9;
 
-  inline static std::array<bool, kSize> columns;
-  inline static std::array<bool, kSize * 2 - 1> major_diag;
-  inline static std::array<bool, kSize * 2 - 1> minor_diag;
+  std::array<bool, kSize> cols{};
+  std::array<bool, kSize * 2 - 1> diag1{};
+  std::array<bool, kSize * 2 - 1> diag2{};
 
-  inline static std::vector<ChessBoard> solveNQueens(size_t n) {
+  std::vector<ChessBoard> solveNQueens(size_t n) {
     std::vector<ChessBoard> boards;
     ChessBoard board(n, std::string(n, '.'));
-
     solveNQueens(0, board, boards);
     return boards;
   }
 
-  inline static void solveNQueens(size_t row, ChessBoard &board,
-                                  std::vector<ChessBoard> &boards) {
-    size_t n = board.size();
-
-    if (row == n) {
+  void solveNQueens(int r, ChessBoard &board, std::vector<ChessBoard> &boards) {
+    const int n = board.size();
+    if (r == n) {
       boards.push_back(board);
       return;
     }
 
-    for (size_t col = 0; col < n; ++col) {
-      if (!columns[col] & !major_diag[row + col] &
-          !minor_diag[row + n - col - 1]) {
-        board[row][col] = 'Q';
-        columns[col] = true;
-        major_diag[row + col] = true;
-        minor_diag[row + n - col - 1] = true;
-
-        solveNQueens(row + 1, board, boards);
-
-        minor_diag[row + n - col - 1] = false;
-        major_diag[row + col] = false;
-        columns[col] = false;
-        board[row][col] = '.';
+    for (int c = 0; c < n; ++c) {
+      if (!cols[c] && !diag1[r + c] && !diag2[r + n - c - 1]) {
+        board[r][c] = 'Q';
+        cols[c] = diag1[r + c] = diag2[r + n - c - 1] = true;
+        solveNQueens(r + 1, board, boards);
+        cols[c] = diag1[r + c] = diag2[r + n - c - 1] = false;
+        board[r][c] = '.';
       }
     }
   }

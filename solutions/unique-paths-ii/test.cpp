@@ -19,8 +19,26 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[obstacleGrid, expected] : test_cases) {
-    const auto actual = Solution::uniquePathsWithObstacles(obstacleGrid);
-    REQUIRE(expected == actual);
+  SECTION("Memoization") {
+    for (const auto &[obstacleGrid, expected] : test_cases) {
+      const auto actual =
+          memo::Solution::uniquePathsWithObstacles(obstacleGrid);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("DP") {
+    for (const auto &[obstacleGrid, expected] : test_cases) {
+      const auto actual = dp::Solution::uniquePathsWithObstacles(obstacleGrid);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Optimized") {
+    for (const auto &[obstacleGrid, expected] : test_cases) {
+      const auto actual =
+          optimized::Solution::uniquePathsWithObstacles(obstacleGrid);
+      REQUIRE(expected == actual);
+    }
   }
 }

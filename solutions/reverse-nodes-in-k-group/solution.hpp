@@ -47,12 +47,12 @@ namespace iterative {
 class Solution {
 public:
   static ListNode *reverseKGroup(ListNode *head, int k) {
-    auto dummy = ListNode(0, head);
-    auto prev = &dummy;
+    ListNode dummy(0, head);
+    auto *prev = &dummy;
     for (int i = length(head) / k; i > 0; --i) {
-      auto curr = prev->next;
+      auto *curr = prev->next;
       for (int j = 0; j < k - 1; ++j) {
-        auto next = curr->next;
+        auto *next = curr->next;
         curr->next = next->next;
         next->next = prev->next;
         prev->next = next;
@@ -65,7 +65,7 @@ public:
 private:
   static int length(ListNode *head) {
     int length = 0;
-    for (auto node = head; node; node = node->next) {
+    for (auto *node = head; node; node = node->next) {
       ++length;
     }
     return length;

@@ -1,11 +1,15 @@
 #pragma once
 
-#include <algorithm>
+#include <ranges>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N!)
+// Space: O(N)
 
+namespace backtracking {
+
+// Time: O(N!)
+// Space: O(N)
 class Solution {
 public:
   static std::vector<std::vector<int>> permute(const std::vector<int> &nums) {
@@ -36,3 +40,23 @@ private:
     }
   }
 };
+
+} // namespace backtracking
+
+namespace stl {
+
+// Time: O(N!)
+// Space: O(N)
+class Solution {
+public:
+  static std::vector<std::vector<int>> permute(std::vector<int> nums) {
+    std::ranges::sort(nums);
+    std::vector<std::vector<int>> permutations;
+    do {
+      permutations.push_back(nums);
+    } while (std::ranges::next_permutation(nums).found);
+    return permutations;
+  }
+};
+
+} // namespace stl

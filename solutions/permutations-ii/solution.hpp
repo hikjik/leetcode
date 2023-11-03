@@ -3,13 +3,17 @@
 #include <algorithm>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N!)
+// Space: O(N)
 
+namespace backtracking {
+
+// Time: O(N!)
+// Space: O(N)
 class Solution {
 public:
   static std::vector<std::vector<int>> permuteUnique(std::vector<int> nums) {
-    std::sort(nums.begin(), nums.end());
+    std::ranges::sort(nums);
     std::vector<bool> visited(nums.size());
     std::vector<std::vector<int>> permutations;
     std::vector<int> permutation;
@@ -41,3 +45,23 @@ private:
     }
   }
 };
+
+} // namespace backtracking
+
+namespace stl {
+
+// Time: O(N!)
+// Space: O(N)
+class Solution {
+public:
+  static std::vector<std::vector<int>> permuteUnique(std::vector<int> nums) {
+    std::ranges::sort(nums);
+    std::vector<std::vector<int>> permutations;
+    do {
+      permutations.push_back(nums);
+    } while (std::ranges::next_permutation(nums).found);
+    return permutations;
+  }
+};
+
+} // namespace stl

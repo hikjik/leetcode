@@ -27,8 +27,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[s1, s2, expected] : test_cases) {
-    const auto actual = Solution().isScramble(s1, s2);
-    REQUIRE(expected == actual);
+  SECTION("Memoization") {
+    for (const auto &[s1, s2, expected] : test_cases) {
+      const auto actual = memo::Solution::isScramble(s1, s2);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Tabulation") {
+    for (const auto &[s1, s2, expected] : test_cases) {
+      const auto actual = dp::Solution::isScramble(s1, s2);
+      REQUIRE(expected == actual);
+    }
   }
 }

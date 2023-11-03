@@ -23,11 +23,23 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[n, expected] : test_cases) {
-    const auto actual = Solution::generateTrees(n);
-    REQUIRE(expected.size() == actual.size());
-    for (size_t i = 0; i < actual.size(); ++i) {
-      REQUIRE(expected[i] == Tree(Copy(actual[i])));
+  SECTION("Recursion") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = recursion::Solution::generateTrees(n);
+      REQUIRE(expected.size() == actual.size());
+      for (size_t i = 0; i < actual.size(); ++i) {
+        REQUIRE(expected[i] == Tree(Copy(actual[i])));
+      }
+    }
+  }
+
+  SECTION("Memoization") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = memo::Solution::generateTrees(n);
+      REQUIRE(expected.size() == actual.size());
+      for (size_t i = 0; i < actual.size(); ++i) {
+        REQUIRE(expected[i] == Tree(Copy(actual[i])));
+      }
     }
   }
 }

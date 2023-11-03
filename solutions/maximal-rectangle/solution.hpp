@@ -3,18 +3,18 @@
 #include <stack>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(MN)
+// Space: O(N)
 
 class Solution {
 public:
   static int maximalRectangle(const std::vector<std::vector<char>> &matrix) {
-    const int n = matrix.size(), m = matrix.back().size();
+    const int m = matrix.size(), n = matrix.back().size();
 
     int max_rectangle = 0;
-    std::vector<int> heights(m);
-    for (int i = 0; i < n; ++i) {
-      for (int j = 0; j < m; ++j) {
+    std::vector<int> heights(n);
+    for (int i = 0; i < m; ++i) {
+      for (int j = 0; j < n; ++j) {
         heights[j] = matrix[i][j] == '0' ? 0 : heights[j] + 1;
       }
       max_rectangle = std::max(max_rectangle, largestRectangleArea(heights));

@@ -1,36 +1,36 @@
 #pragma once
 
 #include <string>
-#include <vector>
+#include <unordered_map>
 
-// Time:
-// Space:
+// Time: O(N+M)
+// Space: O(A), where A is the size of the alphabet
 
 class Solution {
 public:
   static std::string minWindow(std::string s, std::string t) {
-    std::vector<int> counter(128, 0);
+    std::unordered_map<char, int> counter;
     for (auto c : t) {
-      counter[c]++;
+      ++counter[c];
     }
-    auto cnt = t.size();
 
-    auto min_length = s.size() + 1;
-    auto min_pos = std::string::npos;
-    for (size_t l = 0, r = 0; r < s.size(); ++r) {
+    int need = t.size();
+    int min_size = 1 + s.size();
+    int pos = -1;
+    for (int l = 0, r = 0; r < std::ssize(s); ++r) {
       if (--counter[s[r]] >= 0) {
-        cnt--;
+        --need;
       }
-      while (!cnt) {
-        if (r - l + 1 < min_length) {
-          min_length = r - l + 1;
-          min_pos = l;
+      while (!need) {
+        if (r - l + 1 < min_size) {
+          min_size = r - l + 1;
+          pos = l;
         }
         if (++counter[s[l++]] > 0) {
-          cnt++;
+          ++need;
         }
       }
     }
-    return min_pos == std::string::npos ? "" : s.substr(min_pos, min_length);
+    return pos == -1 ? "" : s.substr(pos, min_size);
   }
 };

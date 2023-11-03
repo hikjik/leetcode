@@ -2,16 +2,16 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static ListNode *deleteDuplicates(ListNode *head) {
-    auto node = head;
+    auto *node = head;
     while (node && node->next) {
       if (node->val == node->next->val) {
-        auto next = node->next->next;
+        auto *next = node->next->next;
         delete node->next;
         node->next = next;
       } else {

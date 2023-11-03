@@ -1,0 +1,1 @@
+add_catch(test_find_the_winner_of_an_array_game test.cpp)

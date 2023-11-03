@@ -2,8 +2,8 @@
 
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N) in worst case
+// Space: O(1)
 
 class Solution {
 public:
@@ -16,7 +16,7 @@ public:
       }
 
       if (nums[left] == nums[middle] && nums[right] == nums[middle]) {
-        left++, right--;
+        ++left, --right;
         continue;
       }
 

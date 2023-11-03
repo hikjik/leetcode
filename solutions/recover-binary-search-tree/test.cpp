@@ -21,9 +21,27 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[root, expected] : test_cases) {
-    auto copy = Copy(root);
-    Solution().recoverTree(copy);
-    REQUIRE(expected == Tree(copy));
+  SECTION("Recursion") {
+    for (const auto &[root, expected] : test_cases) {
+      auto copy = Copy(root);
+      recursion::Solution().recoverTree(copy);
+      REQUIRE(expected == Tree(copy));
+    }
+  }
+
+  SECTION("Iteration") {
+    for (const auto &[root, expected] : test_cases) {
+      auto copy = Copy(root);
+      iteration::Solution::recoverTree(copy);
+      REQUIRE(expected == Tree(copy));
+    }
+  }
+
+  SECTION("Morris Traversal") {
+    for (const auto &[root, expected] : test_cases) {
+      auto copy = Copy(root);
+      morris::Solution::recoverTree(copy);
+      REQUIRE(expected == Tree(copy));
+    }
   }
 }

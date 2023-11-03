@@ -4,33 +4,33 @@
 #include <string>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
   static std::string simplifyPath(std::string path) {
     std::stringstream sstream(path);
-    std::vector<std::string> stack;
+    std::vector<std::string> dirs;
     for (std::string dir; std::getline(sstream, dir, '/');) {
       if (dir.empty() || dir == ".") {
         continue;
       }
       if (dir == "..") {
-        if (!stack.empty()) {
-          stack.pop_back();
+        if (!dirs.empty()) {
+          dirs.pop_back();
         }
       } else {
-        stack.push_back(dir);
+        dirs.push_back(dir);
       }
     }
 
-    if (stack.empty()) {
+    if (dirs.empty()) {
       return "/";
     }
 
     std::string canonical;
-    for (const auto &dir : stack) {
+    for (const auto &dir : dirs) {
       canonical += "/" + dir;
     }
     return canonical;

@@ -4,41 +4,35 @@
 #include <string>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N!)
+// Space: O(N)
+// Notes: [Eight queens puzzle](https://w.wiki/84eA)
 
 class Solution {
 public:
   static constexpr size_t kSize = 9;
 
-  inline static std::array<bool, kSize> columns;
-  inline static std::array<bool, kSize * 2 - 1> major_diag;
-  inline static std::array<bool, kSize * 2 - 1> minor_diag;
+  std::array<bool, kSize> cols{};
+  std::array<bool, kSize * 2 - 1> diag1{};
+  std::array<bool, kSize * 2 - 1> diag2{};
 
-  inline static size_t totalNQueens(size_t n) {
-    size_t total = 0;
+  int totalNQueens(int n) {
+    int total = 0;
     totalNQueens(0, n, total);
     return total;
   }
 
-  inline static void totalNQueens(size_t row, size_t n, size_t &total) {
-    if (row == n) {
+  void totalNQueens(int r, int n, int &total) {
+    if (r == n) {
       total++;
       return;
     }
 
-    for (size_t col = 0; col < n; ++col) {
-      if (!columns[col] & !major_diag[row + col] &
-          !minor_diag[row + n - col - 1]) {
-        columns[col] = true;
-        major_diag[row + col] = true;
-        minor_diag[row + n - col - 1] = true;
-
-        totalNQueens(row + 1, n, total);
-
-        minor_diag[row + n - col - 1] = false;
-        major_diag[row + col] = false;
-        columns[col] = false;
+    for (int c = 0; c < n; ++c) {
+      if (!cols[c] && !diag1[r + c] && !diag2[r + n - c - 1]) {
+        cols[c] = diag1[r + c] = diag2[r + n - c - 1] = true;
+        totalNQueens(r + 1, n, total);
+        cols[c] = diag1[r + c] = diag2[r + n - c - 1] = false;
       }
     }
   }

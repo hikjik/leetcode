@@ -2,8 +2,9 @@
 
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(2^N)
+// Space: O(1)
+// Notes: [Gray code](https://w.wiki/84e8)
 
 class Solution {
 public:

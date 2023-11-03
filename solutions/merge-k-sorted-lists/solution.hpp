@@ -23,7 +23,7 @@ public:
     }
 
     ListNode dummy;
-    for (auto node = &dummy; !queue.empty(); node = node->next) {
+    for (auto *node = &dummy; !queue.empty(); node = node->next) {
       auto *list = queue.top();
       queue.pop();
 

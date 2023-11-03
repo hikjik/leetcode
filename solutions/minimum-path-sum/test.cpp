@@ -19,8 +19,24 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[grid, expected] : test_cases) {
-    const auto actual = Solution::minPathSum(grid);
-    REQUIRE(expected == actual);
+  SECTION("Memoization") {
+    for (const auto &[grid, expected] : test_cases) {
+      const auto actual = memo::Solution::minPathSum(grid);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("DP") {
+    for (const auto &[grid, expected] : test_cases) {
+      const auto actual = dp::Solution::minPathSum(grid);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Inplace") {
+    for (auto &[grid, expected] : test_cases) {
+      const auto actual = inplace::Solution::minPathSum(grid);
+      REQUIRE(expected == actual);
+    }
   }
 }

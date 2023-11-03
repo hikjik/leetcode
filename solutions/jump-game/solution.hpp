@@ -3,18 +3,17 @@
 #include <algorithm>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
-  static bool canJump(std::vector<int> nums) {
-    for (size_t j = 1; j < nums.size(); ++j) {
-      if (nums[j - 1] > 0) {
-        nums[j] = std::max(nums[j - 1] - 1, nums[j]);
-      } else {
+  static bool canJump(const std::vector<int> &nums) {
+    for (int i = 0, reach = 0; i < std::ssize(nums); ++i) {
+      if (reach < i) {
         return false;
       }
+      reach = std::max(reach, i + nums[i]);
     }
     return true;
   }

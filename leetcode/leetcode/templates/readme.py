@@ -129,7 +129,9 @@ def badge(
 
 def format_complexity(complexity: str) -> str:
     complexity = complexity.replace(" ", "&nbsp;")
+    complexity = re.sub("\^\(([^()]*)\)", "<sup>\\1</sup>", complexity)
     complexity = re.sub("\^(.)", "<sup>\\1</sup>", complexity)
+    # complexity = f"<sub><sup>{complexity}</sub></sup>"
     return complexity
 
 
@@ -151,8 +153,8 @@ def update_readme_table() -> None:
                 break
 
         file.write("\n")
-        file.write("|№|Title|Code|Difficulty|Time|Space|Tags|Notes|\n")
-        file.write("|-|-----|:--:|----------|:--:|:---:|----|-----|\n")
+        file.write("|№|Title|Code|Difficulty|Time / Space|Tags|Notes|\n")
+        file.write("|-|-----|:--:|----------|:----------:|----|-----|\n")
 
         tags_colors = get_colors(saturation=0.6, value=0.5)
         for problem in problems:
@@ -177,14 +179,14 @@ def update_readme_table() -> None:
             ]
             space = format_complexity(problem["space"] or "")
             time = format_complexity(problem["time"] or "")
+            complexity = f"{time} / {space}" if time else ""
             notes = problem["notes"] or ""
             file.write(
                 f"| {problem_id}. "
                 f"| [{title}]({url}) "
                 f"| [C++](./solutions/{slug}/solution.hpp) "
                 f"| {difficulty_badge} "
-                f"| {time} "
-                f"| {space} "
+                f"| {complexity}"
                 f"| {' '.join(tags)} "
                 f"| {notes} |\n"
             )

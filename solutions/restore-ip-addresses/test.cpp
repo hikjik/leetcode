@@ -24,8 +24,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[s, expected] : test_cases) {
-    const auto actual = Solution::restoreIpAddresses(s);
-    REQUIRE(expected == actual);
+  SECTION("Brute Force") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = brute_force::Solution::restoreIpAddresses(s);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Backtracking") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = backtracking::Solution::restoreIpAddresses(s);
+      REQUIRE(expected == actual);
+    }
   }
 }

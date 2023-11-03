@@ -1,28 +1,21 @@
 #pragma once
 
-#include <algorithm>
+#include <ranges>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
-  static std::vector<int> plusOne(const std::vector<int> &digits) {
-    std::vector<int> result;
-    result.reserve(digits.size() + 1);
-
-    int carry = 1;
-    for (auto it = digits.rbegin(); it != digits.rend(); ++it) {
-      int sum = carry + *it;
-      carry = sum / 10;
-      result.push_back(sum % 10);
+  static std::vector<int> plusOne(std::vector<int> digits) {
+    for (int i = digits.size() - 1; i >= 0; --i) {
+      if (digits[i]++ < 9) {
+        return digits;
+      }
+      digits[i] = 0;
     }
-    if (carry) {
-      result.push_back(carry);
-    }
-
-    std::reverse(result.begin(), result.end());
-    return result;
+    digits.insert(digits.begin(), 1);
+    return digits;
   }
 };
