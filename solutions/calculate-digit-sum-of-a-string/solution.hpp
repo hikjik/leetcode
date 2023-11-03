@@ -2,6 +2,9 @@
 
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::string digitSum(std::string s, size_t k) {

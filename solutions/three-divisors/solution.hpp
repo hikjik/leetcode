@@ -2,6 +2,9 @@
 
 #include <cmath>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool isThree(int n) {

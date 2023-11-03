@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int minDays(const std::vector<int> &bloom_days, int m, int k) {

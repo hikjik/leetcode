@@ -4,6 +4,9 @@
 
 #include <stack>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int kthSmallest(TreeNode *root, int k) {

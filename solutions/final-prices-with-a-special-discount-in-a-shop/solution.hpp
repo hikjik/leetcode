@@ -3,6 +3,9 @@
 #include <stack>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<int> finalPrices(const std::vector<int> &prices) {

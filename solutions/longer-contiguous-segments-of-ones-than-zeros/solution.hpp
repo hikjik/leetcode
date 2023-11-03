@@ -4,6 +4,9 @@
 #include <string>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool checkZeroOnes(std::string s) {

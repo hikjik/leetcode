@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static const int MAX_PENALTY = 1e9;

@@ -2,6 +2,9 @@
 
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::string removeDigit(std::string number, char digit) {

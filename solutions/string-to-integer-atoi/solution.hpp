@@ -3,6 +3,9 @@
 #include <sstream>
 #include <string>
 
+// Time: O(n)
+// Space: O(1)
+
 class Solution {
 public:
   static int myAtoi(std::string s) {

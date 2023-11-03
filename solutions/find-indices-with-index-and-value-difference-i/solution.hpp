@@ -3,6 +3,9 @@
 #include <cmath>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<int> findIndices(const std::vector<int> &nums,

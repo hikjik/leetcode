@@ -27,8 +27,7 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[beginWord, endWord, wordList, expected] : test_cases) {
-    auto actual = Solution::findLadders(beginWord, endWord, wordList);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
+    const auto actual = Solution::findLadders(beginWord, endWord, wordList);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

@@ -22,9 +22,19 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto &[nums, size, expected] : test_cases) {
-    REQUIRE(size == Solution::removeDuplicates(nums));
-    nums.erase(nums.begin() + size, nums.end());
-    REQUIRE(expected == nums);
+  SECTION("Two Pointers") {
+    for (auto &[nums, size, expected] : test_cases) {
+      REQUIRE(size == two_pointers::Solution::removeDuplicates(nums));
+      nums.erase(nums.begin() + size, nums.end());
+      REQUIRE(expected == nums);
+    }
+  }
+
+  SECTION("STL") {
+    for (auto &[nums, size, expected] : test_cases) {
+      REQUIRE(size == stl::Solution::removeDuplicates(nums));
+      nums.erase(nums.begin() + size, nums.end());
+      REQUIRE(expected == nums);
+    }
   }
 }

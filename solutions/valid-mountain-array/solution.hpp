@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool validMountainArray(const std::vector<int> &arr) {

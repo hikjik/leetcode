@@ -3,6 +3,9 @@
 #include <set>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int secondHighest(std::string s) {

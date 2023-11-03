@@ -3,6 +3,9 @@
 #include <map>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int findLucky(const std::vector<int> &arr) {

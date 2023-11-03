@@ -4,6 +4,9 @@
 #include <climits>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int nextGreaterElement(int n) {

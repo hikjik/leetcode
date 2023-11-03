@@ -1,3 +1,8 @@
+#pragma once
+
+// Time:
+// Space:
+
 class Solution {
 public:
   static int climbStairs(int n) {

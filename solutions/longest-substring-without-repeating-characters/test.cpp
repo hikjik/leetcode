@@ -21,10 +21,23 @@ TEST_CASE("Simple") {
           .s = "pwwkew",
           .expected = 3,
       },
+      {
+          .s = " ",
+          .expected = 1,
+      },
   };
 
-  for (const auto &[s, expected] : test_cases) {
-    const auto actual = Solution::lengthOfLongestSubstring(s);
-    REQUIRE(expected == actual);
+  SECTION("Sliding Window") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = sliding_window::Solution::lengthOfLongestSubstring(s);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Hash Table") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = hash_table::Solution::lengthOfLongestSubstring(s);
+      REQUIRE(expected == actual);
+    }
   }
 }

@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int getCommon(const std::vector<int> &nums1,

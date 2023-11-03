@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool search(const std::vector<int> &nums, int target) {

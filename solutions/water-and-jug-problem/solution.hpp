@@ -2,6 +2,9 @@
 
 #include <numeric>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool canMeasureWater(int jug1Capacity, int jug2Capacity,

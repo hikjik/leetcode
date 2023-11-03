@@ -2,6 +2,9 @@
 
 #include <list_node.h>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static ListNode *rotateRight(ListNode *head, int k) {

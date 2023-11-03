@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int searchInsert(const std::vector<int> &nums, int target) {

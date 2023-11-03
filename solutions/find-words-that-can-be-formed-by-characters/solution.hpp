@@ -4,6 +4,9 @@
 #include <string>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int countCharacters(std::vector<std::string> words,

@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int lengthOfLIS(const std::vector<int> &nums) {

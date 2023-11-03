@@ -4,6 +4,9 @@
 
 #include <cassert>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int guessNumber(int n) {

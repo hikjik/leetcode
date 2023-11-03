@@ -2,6 +2,10 @@
 
 #include <string>
 
+// Time: O(L^N), where L = 1.303577269034...
+// Space: O(L^N)
+// Notes: [Look and Say](https://w.wiki/7$3C)
+
 class Solution {
 public:
   static std::string countAndSay(int n) {

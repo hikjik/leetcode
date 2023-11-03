@@ -21,6 +21,10 @@ TEST_CASE("Simple") {
           .s = "4193 with words",
           .expected = 4193,
       },
+      {
+          .s = "9223372036854775807",
+          .expected = 2147483647,
+      },
   };
 
   for (const auto &[s, expected] : test_cases) {

@@ -2,6 +2,9 @@
 
 #include <array>
 
+// Time:
+// Space:
+
 class ParkingSystem {
 public:
   ParkingSystem(int big, int medium, int small)

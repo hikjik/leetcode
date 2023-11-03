@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<bool> prefixesDivBy5(const std::vector<int> &nums) {

@@ -3,6 +3,9 @@
 #include <cmath>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int furthestDistanceFromOrigin(std::string moves) {

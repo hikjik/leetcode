@@ -6,6 +6,9 @@
 #include <limits>
 #include <optional>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int minDiffInBST(TreeNode *root) {

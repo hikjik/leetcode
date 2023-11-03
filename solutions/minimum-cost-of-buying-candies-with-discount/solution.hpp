@@ -4,6 +4,9 @@
 #include <numeric>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int minimumCost(std::vector<int> cost) {

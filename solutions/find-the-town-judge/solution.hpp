@@ -1,5 +1,8 @@
 #pragma once
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int findJudge(int n, const std::vector<std::vector<int>> &trust) {

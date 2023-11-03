@@ -26,8 +26,7 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[board, words, expected] : test_cases) {
-    auto actual = Solution::findWords(board, words);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
+    const auto actual = Solution::findWords(board, words);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

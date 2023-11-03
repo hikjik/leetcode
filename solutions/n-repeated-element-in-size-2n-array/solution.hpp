@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int repeatedNTimes(const std::vector<int> &nums) {

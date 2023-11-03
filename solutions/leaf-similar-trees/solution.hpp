@@ -4,6 +4,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool leafSimilar(TreeNode *root1, TreeNode *root2) {

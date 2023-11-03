@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class DisjointSets {
 public:
   explicit DisjointSets(int size) : parents_(size), count_(size) {

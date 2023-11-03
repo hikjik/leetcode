@@ -2,6 +2,9 @@
 
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int minChanges(std::string s) {

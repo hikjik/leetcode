@@ -1,0 +1,1 @@
+add_catch(test_build_an_array_with_stack_operations test.cpp)

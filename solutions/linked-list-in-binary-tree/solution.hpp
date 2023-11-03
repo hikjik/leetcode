@@ -3,6 +3,9 @@
 #include <list_node.h>
 #include <tree_node.h>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool isSubPath(ListNode *head, TreeNode *root) {

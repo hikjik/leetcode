@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int minTaps(int n, const std::vector<int> &ranges) {

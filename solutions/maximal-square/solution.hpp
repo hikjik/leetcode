@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int maximalSquare(const std::vector<std::vector<char>> &matrix) {

@@ -1,5 +1,8 @@
 #pragma once
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int findTheWinner(int n, int k) { return f(n, k) + 1; }

@@ -5,6 +5,9 @@
 #include <unordered_map>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool wordPattern(std::string pattern, std::string s) {

@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<std::vector<int>> generateMatrix(int n) {

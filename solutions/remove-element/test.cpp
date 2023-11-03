@@ -25,11 +25,19 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto &[nums, val, size, expected] : test_cases) {
-    REQUIRE(size == Solution::removeElement(nums, val));
-    nums.resize(size);
-    std::sort(expected.begin(), expected.end());
-    std::sort(nums.begin(), nums.end());
-    REQUIRE(expected == nums);
+  SECTION("Two Pointers") {
+    for (auto &[nums, val, size, expected] : test_cases) {
+      REQUIRE(size == two_pointers::Solution::removeElement(nums, val));
+      nums.resize(size);
+      REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(nums));
+    }
+  }
+
+  SECTION("STL") {
+    for (auto &[nums, val, size, expected] : test_cases) {
+      REQUIRE(size == stl::Solution::removeElement(nums, val));
+      nums.resize(size);
+      REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(nums));
+    }
   }
 }

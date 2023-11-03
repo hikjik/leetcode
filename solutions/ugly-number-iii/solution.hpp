@@ -2,6 +2,9 @@
 
 #include <numeric>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int nthUglyNumber(int n, long long a, long long b, long long c) {

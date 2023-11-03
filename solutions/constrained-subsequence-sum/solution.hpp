@@ -5,6 +5,9 @@
 #include <vector>
 
 template <typename ValueType, typename Comparator = std::less<>>
+// Time:
+// Space:
+
 class SlidingWindow {
 public:
   explicit SlidingWindow(size_t size) : size_(size), comp_() {}

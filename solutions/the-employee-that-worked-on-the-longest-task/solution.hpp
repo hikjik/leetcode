@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int hardestWorker(int n, const std::vector<std::vector<int>> &logs) {

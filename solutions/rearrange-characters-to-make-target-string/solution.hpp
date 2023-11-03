@@ -4,6 +4,9 @@
 #include <string>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int rearrangeCharacters(std::string s, std::string t) {

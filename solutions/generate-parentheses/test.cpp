@@ -19,8 +19,24 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[n, expected] : test_cases) {
-    const auto actual = Solution::generateParenthesis(n);
-    REQUIRE(expected == actual);
+  SECTION("Brute Force") {
+    for (auto &[n, expected] : test_cases) {
+      const auto actual = brute_force::Solution::generateParenthesis(n);
+      REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
+    }
+  }
+
+  SECTION("Backtracing") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = backtracking::Solution::generateParenthesis(n);
+      REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
+    }
+  }
+
+  SECTION("Dynamic Programming") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = dp::Solution::generateParenthesis(n);
+      REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
+    }
   }
 }

@@ -1,5 +1,8 @@
 #pragma once
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int binaryGap(int n) {

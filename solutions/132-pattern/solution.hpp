@@ -4,6 +4,9 @@
 #include <stack>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool find132pattern(const std::vector<int> &nums) {

@@ -4,6 +4,9 @@
 #include <string>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int longestPath(const std::vector<int> &parent, const std::string &s) {

@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class MyCircularQueue {
 public:
   MyCircularQueue(int k) : data_(k), head_(0), size_(0) {}

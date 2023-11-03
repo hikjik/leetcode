@@ -2,6 +2,9 @@
 
 #include "api.hpp"
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int firstBadVersion(int n) {

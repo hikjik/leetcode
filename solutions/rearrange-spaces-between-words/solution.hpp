@@ -5,6 +5,9 @@
 #include <sstream>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::string reorderSpaces(std::string text) {

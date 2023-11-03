@@ -3,6 +3,9 @@
 #include <bitset>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int partitionString(std::string s) {

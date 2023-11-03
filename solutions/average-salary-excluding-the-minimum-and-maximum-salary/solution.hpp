@@ -4,6 +4,9 @@
 #include <limits>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static double average(const std::vector<int> &salaries) {

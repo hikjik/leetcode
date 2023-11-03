@@ -4,6 +4,9 @@
 #include <numeric>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<int> decrypt(const std::vector<int> &code, int k) {

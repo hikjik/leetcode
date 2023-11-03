@@ -2,6 +2,9 @@
 
 #include <climits>
 
+// Time: O(logN)
+// Space: O(1)
+
 class Solution {
 public:
   static int reverse(int n) {

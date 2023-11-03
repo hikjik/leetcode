@@ -6,6 +6,9 @@
 #include <climits>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<int> nodesBetweenCriticalPoints(ListNode *head) {

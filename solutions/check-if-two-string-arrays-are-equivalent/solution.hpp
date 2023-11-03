@@ -70,6 +70,9 @@ template <typename Container> auto FlattenRange(const Container &container) {
                FlattenIterator(container.cend(), container.cend()));
 }
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool arrayStringsAreEqual(const std::vector<std::string> &words1,

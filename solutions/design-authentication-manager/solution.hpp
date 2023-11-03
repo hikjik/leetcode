@@ -3,6 +3,9 @@
 #include <string>
 #include <unordered_map>
 
+// Time:
+// Space:
+
 class AuthenticationManager {
 public:
   AuthenticationManager(int timeToLive) : timeToLive(timeToLive) {}

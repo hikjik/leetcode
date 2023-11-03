@@ -3,6 +3,9 @@
 #include <sstream>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::string toGoatLatin(std::string sentence) {

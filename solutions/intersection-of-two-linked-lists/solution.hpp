@@ -2,6 +2,9 @@
 
 #include <list_node.h>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static ListNode *getIntersectionNode(ListNode *head_a, ListNode *head_b) {

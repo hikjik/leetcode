@@ -4,6 +4,9 @@
 #include <limits>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int maxScoreSightseeingPair(const std::vector<int> &values) {

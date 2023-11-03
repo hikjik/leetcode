@@ -3,6 +3,9 @@
 #include <array>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int countPoints(std::string rings) {

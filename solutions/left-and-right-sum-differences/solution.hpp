@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<int> leftRightDifference(const std::vector<int> &nums) {

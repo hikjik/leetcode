@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int findNonMinOrMax(std::vector<int> nums) {

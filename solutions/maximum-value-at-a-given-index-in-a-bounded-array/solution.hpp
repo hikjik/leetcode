@@ -1,5 +1,8 @@
 #pragma once
 
+// Time:
+// Space:
+
 class Solution {
 private:
   static long long sum(long long value, int index, int n) {

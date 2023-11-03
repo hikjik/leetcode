@@ -3,6 +3,9 @@
 #include <stack>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int maximalRectangle(const std::vector<std::vector<char>> &matrix) {

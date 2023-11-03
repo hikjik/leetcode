@@ -3,6 +3,9 @@
 #include <cmath>
 #include <numeric>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int commonFactors(int a, int b) {

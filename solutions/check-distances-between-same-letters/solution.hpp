@@ -3,6 +3,9 @@
 #include <string>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool checkDistances(std::string s, const std::vector<int> &distance) {

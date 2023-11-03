@@ -3,6 +3,9 @@
 #include <regex>
 #include <string>
 
+// Time: O(NM)
+// Space: O(NM)
+
 class Solution {
 public:
   static bool isMatch(std::string s, std::string p) {

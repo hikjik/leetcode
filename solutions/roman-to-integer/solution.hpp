@@ -3,6 +3,9 @@
 #include <string>
 #include <unordered_map>
 
+// Time: O(N), where N is the length of the string s
+// Space: O(1)
+
 class Solution {
 private:
   static const inline std::unordered_map<char, int> symbols{

@@ -2,15 +2,37 @@
 
 #include <vector>
 
+// Time: O(N)
+// Space: O(1)
+
+namespace two_pointers {
+
+// Time: O(N)
+// Space: O(1)
 class Solution {
 public:
   static int removeDuplicates(std::vector<int> &nums) {
-    size_t size = 0;
-    for (size_t i = 0; i < nums.size(); ++i) {
-      if (i < 1 || nums[i] != nums[size - 1]) {
+    int size = 0;
+    for (int i = 0; i < std::ssize(nums); ++i) {
+      if (!i || nums[i] != nums[size - 1]) {
         nums[size++] = nums[i];
       }
     }
     return size;
   }
 };
+
+} // namespace two_pointers
+
+namespace stl {
+
+// Time: O(N)
+// Space: O(1)
+class Solution {
+public:
+  static int removeDuplicates(std::vector<int> &nums) {
+    return std::distance(nums.begin(), std::unique(nums.begin(), nums.end()));
+  }
+};
+
+} // namespace stl

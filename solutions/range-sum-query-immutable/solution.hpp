@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class NumArray {
 public:
   NumArray(std::vector<int> nums) : prefix_sums_(nums.size() + 1, 0) {

@@ -3,6 +3,9 @@
 #include <string>
 #include <vector>
 
+// Time: O(N), where N is the length of the string s
+// Space: O(1), result is not included
+
 class Solution {
 public:
   static std::string convert(std::string s, int numRows) {

@@ -2,6 +2,9 @@
 
 #include <tree_node.h>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool isSubtree(TreeNode *root, TreeNode *sub_root) {

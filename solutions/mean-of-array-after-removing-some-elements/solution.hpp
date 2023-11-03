@@ -4,6 +4,9 @@
 #include <numeric>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static double trimMean(std::vector<int> arr) {

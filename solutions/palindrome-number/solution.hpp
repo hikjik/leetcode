@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <string>
 
+// Time: O(logN)
+// Space: O(logN)
+
 class Solution {
 public:
   static bool isPalindrome(int n) {

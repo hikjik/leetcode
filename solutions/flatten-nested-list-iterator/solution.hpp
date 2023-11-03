@@ -4,6 +4,9 @@
 #include <variant>
 #include <vector>
 
+// Time:
+// Space:
+
 class NestedInteger {
 public:
   NestedInteger(std::vector<NestedInteger> variant)

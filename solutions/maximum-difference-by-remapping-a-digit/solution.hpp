@@ -2,6 +2,9 @@
 
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int minMaxDifference(int num) { return getMax(num) - getMin(num); }

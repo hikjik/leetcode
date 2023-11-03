@@ -3,6 +3,9 @@
 #include <queue>
 #include <vector>
 
+// Time:
+// Space:
+
 class SmallestInfiniteSet {
 public:
   int popSmallest() {

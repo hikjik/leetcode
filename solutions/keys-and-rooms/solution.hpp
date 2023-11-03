@@ -4,6 +4,9 @@
 #include <unordered_set>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool canVisitAllRooms(const std::vector<std::vector<int>> &rooms) {

@@ -23,8 +23,7 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[candidates, target, expected] : test_cases) {
-    auto actual = Solution::combinationSum2(candidates, target);
-    std::sort(actual.begin(), actual.end());
-    REQUIRE(expected == actual);
+    const auto actual = Solution::combinationSum2(candidates, target);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

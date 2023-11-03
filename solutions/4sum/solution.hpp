@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time: O(N^3)
+// Space: O(N)
+
 class Solution {
 public:
   static std::vector<std::vector<int>> fourSum(std::vector<int> nums,

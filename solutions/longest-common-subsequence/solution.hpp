@@ -3,6 +3,9 @@
 #include <string>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int longestCommonSubsequence(std::string text1, std::string text2) {

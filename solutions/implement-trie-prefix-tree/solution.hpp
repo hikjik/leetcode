@@ -9,6 +9,9 @@ struct TrieNode {
   bool is_end = false;
 };
 
+// Time:
+// Space:
+
 class Trie : private TrieNode {
 public:
   void insert(std::string word) {

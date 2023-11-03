@@ -5,6 +5,9 @@
 #include <sstream>
 #include <string>
 
+// Time:
+// Space:
+
 class Codec {
 public:
   std::string serialize(TreeNode *root) {

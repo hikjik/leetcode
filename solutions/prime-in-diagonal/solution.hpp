@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int diagonalPrime(const std::vector<std::vector<int>> &nums) {

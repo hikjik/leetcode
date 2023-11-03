@@ -3,6 +3,9 @@
 #include <string>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<int> divisibilityArray(std::string word, int m) {

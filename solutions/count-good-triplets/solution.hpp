@@ -3,6 +3,9 @@
 #include <cmath>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int countGoodTriplets(const std::vector<int> &arr, int a, int b,

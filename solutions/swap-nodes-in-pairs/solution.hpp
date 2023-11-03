@@ -2,6 +2,9 @@
 
 #include <list_node.h>
 
+// Time: O(N)
+// Space: O(1)
+
 class Solution {
 public:
   static ListNode *swapPairs(ListNode *head) {

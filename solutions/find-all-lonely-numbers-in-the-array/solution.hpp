@@ -3,6 +3,9 @@
 #include <unordered_map>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<int> findLonely(const std::vector<int> &numbers) {

@@ -4,6 +4,9 @@
 
 #include <climits>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int goodNodes(TreeNode *root) { return dfs(INT_MIN, root); }

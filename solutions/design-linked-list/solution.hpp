@@ -1,5 +1,8 @@
 #pragma once
 
+// Time:
+// Space:
+
 class MyLinkedList {
 private:
   struct ListNode {

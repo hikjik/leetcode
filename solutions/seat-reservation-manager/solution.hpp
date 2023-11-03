@@ -3,6 +3,9 @@
 #include <queue>
 #include <vector>
 
+// Time:
+// Space:
+
 class SeatManager {
 public:
   SeatManager(int n) {

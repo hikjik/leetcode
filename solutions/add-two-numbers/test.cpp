@@ -29,8 +29,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[l1, l2, expected] : test_cases) {
-    const List actual = Solution::addTwoNumbers(l1, l2);
-    REQUIRE(expected == actual);
+  SECTION("Recursion") {
+    for (const auto &[l1, l2, expected] : test_cases) {
+      const List actual = recursion::Solution::addTwoNumbers(l1, l2);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[l1, l2, expected] : test_cases) {
+      const List actual = iterative::Solution::addTwoNumbers(l1, l2);
+      REQUIRE(expected == actual);
+    }
   }
 }

@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <array>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int countBalls(int lowLimit, int highLimit) {

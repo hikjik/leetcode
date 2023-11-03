@@ -23,10 +23,8 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto &[words, expected] : test_cases) {
-    auto actual = Solution::stringMatching(words);
-    std::sort(actual.begin(), actual.end());
-    std::sort(expected.begin(), expected.end());
-    REQUIRE(expected == actual);
+  for (const auto &[words, expected] : test_cases) {
+    const auto actual = Solution::stringMatching(words);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

@@ -3,6 +3,9 @@
 #include <map>
 #include <vector>
 
+// Time:
+// Space:
+
 class SnapshotArray {
 private:
   std::vector<std::map<int, int, std::greater<int>>> snapshots_;

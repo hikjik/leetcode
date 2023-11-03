@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool containsPattern(const std::vector<int> &arr, int m, int k) {

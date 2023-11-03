@@ -1,5 +1,8 @@
 #pragma once
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int minimumOneBitOperations(int n) { return GrayCodeToBinary(n); }

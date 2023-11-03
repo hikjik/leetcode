@@ -4,6 +4,9 @@
 #include <array>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool closeStrings(std::string word1, std::string word2) {

@@ -23,8 +23,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[digits, expected] : test_cases) {
-    const auto actual = Solution::letterCombinations(digits);
-    REQUIRE(expected == actual);
+  SECTION("Backtracking") {
+    for (const auto &[digits, expected] : test_cases) {
+      const auto actual = backtracking::Solution::letterCombinations(digits);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[digits, expected] : test_cases) {
+      const auto actual = iterative::Solution::letterCombinations(digits);
+      REQUIRE(expected == actual);
+    }
   }
 }

@@ -3,6 +3,9 @@
 #include <numeric>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int findGCD(const std::vector<int> &nums) {

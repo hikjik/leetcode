@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class ProductOfNumbers {
 private:
   std::vector<int> prefix;

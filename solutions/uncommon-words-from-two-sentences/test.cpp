@@ -22,10 +22,8 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto [s1, s2, expected] : test_cases) {
-    auto actual = Solution::uncommonFromSentences(s1, s2);
-    std::sort(actual.begin(), actual.end());
-    std::sort(expected.begin(), expected.end());
-    REQUIRE(expected == actual);
+  for (const auto &[s1, s2, expected] : test_cases) {
+    const auto actual = Solution::uncommonFromSentences(s1, s2);
+    REQUIRE_THAT(expected, Catch::Matchers::UnorderedEquals(actual));
   }
 }

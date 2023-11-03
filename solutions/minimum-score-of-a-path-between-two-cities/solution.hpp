@@ -4,6 +4,9 @@
 #include <limits>
 #include <vector>
 
+// Time:
+// Space:
+
 class DisjointSets {
 public:
   explicit DisjointSets(size_t size) : sets_(size), count_(size) {

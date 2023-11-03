@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool isToeplitzMatrix(const std::vector<std::vector<int>> &matrix) {

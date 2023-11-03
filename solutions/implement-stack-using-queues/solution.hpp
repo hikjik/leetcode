@@ -2,6 +2,9 @@
 
 #include <queue>
 
+// Time:
+// Space:
+
 class MyStack {
 public:
   void push(int x) {

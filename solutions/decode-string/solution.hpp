@@ -3,6 +3,9 @@
 #include <stack>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::string decodeString(std::string str) {

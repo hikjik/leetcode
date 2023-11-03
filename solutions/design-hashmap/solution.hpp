@@ -3,6 +3,9 @@
 #include <list>
 #include <vector>
 
+// Time:
+// Space:
+
 class MyHashMap {
 private:
   using MapNode = std::pair<int, int>;

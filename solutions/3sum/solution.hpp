@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <vector>
 
+// Time: O(N^2)
+// Space: O(N), N to store sorted input array
+
 class Solution {
 public:
   static std::vector<std::vector<int>> threeSum(std::vector<int> nums) {

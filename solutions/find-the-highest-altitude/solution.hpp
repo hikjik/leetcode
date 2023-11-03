@@ -2,6 +2,9 @@
 
 #include <algorithm>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int largestAltitude(const std::vector<int> &gain) {

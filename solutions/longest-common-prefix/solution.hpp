@@ -3,6 +3,9 @@
 #include <string>
 #include <vector>
 
+// Time: O(NM)
+// Space: O(1)
+
 class Solution {
 public:
   static std::string longestCommonPrefix(const std::vector<std::string> &strs) {

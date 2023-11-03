@@ -3,6 +3,9 @@
 #include <functional>
 #include <vector>
 
+// Time:
+// Space:
+
 class MountainArray {
 public:
   MountainArray(std::vector<int> arr) : arr_(arr), cnt_(0) {}

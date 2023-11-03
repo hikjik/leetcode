@@ -3,6 +3,9 @@
 #include <string>
 #include <vector>
 
+// Time: O(N), where N is the length of result string
+// Space: O(1)
+
 class Solution {
 public:
   static std::string intToRoman(int n) {

@@ -3,6 +3,9 @@
 #include <cmath>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int countRoutes(const std::vector<int> &locations, size_t start,

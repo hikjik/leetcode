@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int minSpeedOnTime(const std::vector<int> &dist, double hour) {

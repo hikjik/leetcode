@@ -4,6 +4,9 @@
 #include <unordered_map>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int minJumps(const std::vector<int> &arr) {

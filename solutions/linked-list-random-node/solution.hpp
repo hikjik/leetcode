@@ -4,6 +4,9 @@
 
 #include <random>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   Solution(ListNode *head) : head(head) {}

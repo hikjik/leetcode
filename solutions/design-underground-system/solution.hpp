@@ -3,6 +3,9 @@
 #include <string>
 #include <unordered_map>
 
+// Time:
+// Space:
+
 class UndergroundSystem {
 private:
   struct CheckIn {

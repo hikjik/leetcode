@@ -4,6 +4,9 @@
 #include <numeric>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<int> findArray(const std::vector<int> &pref) {

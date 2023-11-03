@@ -4,6 +4,9 @@
 #include <limits>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   int minCost(int n, const std::vector<int> &cuts) {

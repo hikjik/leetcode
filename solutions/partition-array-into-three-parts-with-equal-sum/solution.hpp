@@ -4,6 +4,9 @@
 #include <numeric>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool canThreePartsEqualSum(const std::vector<int> &arr) {

@@ -22,8 +22,33 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[haystack, needle, expected] : test_cases) {
-    const auto actual = Solution::strStr(haystack, needle);
-    REQUIRE(expected == actual);
+  SECTION("Naive") {
+    for (const auto &[haystack, needle, expected] : test_cases) {
+      const auto actual = naive::Solution::strStr(haystack, needle);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Boyer-Moore Algorithm") {
+    for (const auto &[haystack, needle, expected] : test_cases) {
+      const auto actual = boyer_moore::Solution::strStr(haystack, needle);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Boyer-Moore-Horspool Algorithm") {
+    for (const auto &[haystack, needle, expected] : test_cases) {
+      const auto actual =
+          boyer_moore_horspool::Solution::strStr(haystack, needle);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Knuth-Morris-Pratt Algorithm") {
+    for (const auto &[haystack, needle, expected] : test_cases) {
+      const auto actual =
+          knuth_morris_pratt::Solution::strStr(haystack, needle);
+      REQUIRE(expected == actual);
+    }
   }
 }

@@ -2,35 +2,29 @@
 
 #include <list_node.h>
 
+// Time: O(N)
+// Space: O(1)
+
 class Solution {
 public:
   static ListNode *removeNthFromEnd(ListNode *head, int n) {
-    auto dummy_node = ListNode(0, head);
-    auto dummy = &dummy_node;
+    auto dummy = ListNode(0, head);
 
-    auto before_delete = advance(dummy, listLength(head) - n);
-
-    auto next = before_delete->next->next;
-    delete before_delete->next;
-    before_delete->next = next;
-
-    return dummy->next;
-  }
-
-private:
-  static int listLength(ListNode *head) {
-    int length = 0;
-    for (auto node = head; node; node = node->next) {
-      ++length;
-    }
-    return length;
-  }
-
-  static ListNode *advance(ListNode *head, int n) {
-    auto node = head;
+    auto *fast = &dummy;
     while (n--) {
-      node = node->next;
+      fast = fast->next;
     }
-    return node;
+
+    auto *slow = &dummy;
+    while (fast->next) {
+      slow = slow->next;
+      fast = fast->next;
+    }
+
+    auto *next = slow->next->next;
+    delete slow->next;
+    slow->next = next;
+
+    return dummy.next;
   }
 };

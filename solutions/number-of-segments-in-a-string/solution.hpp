@@ -3,6 +3,9 @@
 #include <sstream>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int countSegments(std::string s) {

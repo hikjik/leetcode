@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int removePalindromeSub(std::string s) {

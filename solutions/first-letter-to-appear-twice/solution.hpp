@@ -3,6 +3,9 @@
 #include <string>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static char repeatedCharacter(std::string s) {

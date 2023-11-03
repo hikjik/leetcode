@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int maxConsecutiveAnswers(std::string answer_key, size_t k) {

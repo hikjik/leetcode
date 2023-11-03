@@ -3,6 +3,9 @@
 #include <unordered_set>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int shortestSequence(const std::vector<int> &rolls, size_t k) {

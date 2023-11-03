@@ -4,6 +4,9 @@
 
 #include <stack>
 
+// Time:
+// Space:
+
 class BSTIterator {
 public:
   BSTIterator(TreeNode *root) { pushLeftSubTree(root); }

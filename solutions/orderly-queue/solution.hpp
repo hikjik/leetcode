@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 private:
   static bool less(const std::string &s, size_t l, size_t r) {

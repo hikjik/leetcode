@@ -4,6 +4,9 @@
 #include <string>
 #include <unordered_map>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::string decodeMessage(std::string key, std::string message) {

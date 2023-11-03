@@ -3,6 +3,9 @@
 #include <string>
 #include <unordered_map>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool areOccurrencesEqual(std::string s) {

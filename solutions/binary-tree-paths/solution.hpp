@@ -6,6 +6,9 @@
 
 #include <tree_node.h>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<std::string> binaryTreePaths(TreeNode *root) {

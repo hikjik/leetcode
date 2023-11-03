@@ -4,6 +4,9 @@
 #include <ranges>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::vector<int> targetIndices(const std::vector<int> &nums,

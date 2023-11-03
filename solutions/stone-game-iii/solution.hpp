@@ -5,6 +5,9 @@
 #include <string>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 private:
   const size_t kMaxStones = 3;

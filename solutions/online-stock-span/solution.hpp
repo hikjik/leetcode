@@ -2,6 +2,9 @@
 
 #include <stack>
 
+// Time:
+// Space:
+
 class StockSpanner {
 public:
   int next(int price) {

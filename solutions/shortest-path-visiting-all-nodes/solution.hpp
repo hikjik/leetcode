@@ -3,6 +3,9 @@
 #include <queue>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int shortestPathLength(const std::vector<std::vector<int>> &graph) {

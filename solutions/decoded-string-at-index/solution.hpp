@@ -3,6 +3,9 @@
 #include <cctype>
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static std::string decodeAtIndex(std::string s, int k) {

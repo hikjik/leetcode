@@ -3,6 +3,9 @@
 #include <array>
 #include <string>
 
+// Time:
+// Space:
+
 class WordDictionary {
 private:
   struct TrieNode {

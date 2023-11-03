@@ -3,6 +3,9 @@
 #include <numeric>
 #include <vector>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static int findMiddleIndex(const std::vector<int> &nums) {

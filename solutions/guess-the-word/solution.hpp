@@ -6,6 +6,9 @@
 
 // This is the Master's API interface.
 // You should not implement it, or speculate about its implementation
+// Time:
+// Space:
+
 class Master {
 public:
   Master(const std::vector<std::string> &words, std::string secret,

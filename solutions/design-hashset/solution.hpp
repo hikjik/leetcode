@@ -3,6 +3,9 @@
 #include <list>
 #include <vector>
 
+// Time:
+// Space:
+
 class MyHashSet {
 public:
   MyHashSet() : buckets_(11) {}

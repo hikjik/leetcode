@@ -3,6 +3,10 @@
 #include <climits>
 #include <vector>
 
+// Time: O(log min(M, N))
+// Space: O(1)
+// Notes: [Medium](https://medium.com/@hazemu/1d3f2ecbeb46)
+
 class Solution {
 public:
   static double findMedianSortedArrays(const std::vector<int> &nums1,

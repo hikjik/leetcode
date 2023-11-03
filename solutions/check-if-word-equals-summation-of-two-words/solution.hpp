@@ -2,6 +2,9 @@
 
 #include <string>
 
+// Time:
+// Space:
+
 class Solution {
 public:
   static bool isSumEqual(std::string firstWord, std::string secondWord,
