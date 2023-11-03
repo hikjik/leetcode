@@ -1,47 +1,61 @@
 #pragma once
 
+#include <array>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N^(N^2)), where N = 9
+// Space: O(N^2)
+// Notes: [Sudoku solving](https://w.wiki/3F$y)
 
 class Solution {
 public:
-  static void solveSudoku(std::vector<std::vector<char>> &board) {
-    solveSudoku(0, board);
+  static constexpr int kSize = 9;
+  static constexpr char kEmpty = '.';
+
+  std::array<std::array<bool, kSize>, kSize> row{}, col{}, box{};
+
+  void solveSudoku(std::vector<std::vector<char>> &board) {
+    initMasks(board);
+    solveSudoku(0, 0, board);
   }
 
 private:
-  static bool solveSudoku(int step, std::vector<std::vector<char>> &board) {
-    if (step == 81) {
-      return true;
+  void initMasks(std::vector<std::vector<char>> &board) {
+    for (int i = 0; i < kSize; ++i) {
+      for (int j = 0; j < kSize; ++j) {
+        if (board[i][j] != kEmpty) {
+          const int c = board[i][j] - '1';
+          const int k = i / 3 * 3 + j / 3;
+          row[i][c] = col[j][c] = box[k][c] = true;
+        }
+      }
+    }
+  }
+
+  bool solveSudoku(int i, int j, std::vector<std::vector<char>> &board) {
+    if (j == kSize) {
+      if (i == kSize - 1) {
+        return true;
+      }
+      ++i, j = 0;
     }
 
-    const auto i = step / 9, j = step % 9;
-    if (board[i][j] != '.') {
-      return solveSudoku(step + 1, board);
+    if (board[i][j] != kEmpty) {
+      return solveSudoku(i, j + 1, board);
     }
 
-    for (char c = '1'; c <= '9'; ++c) {
-      if (isValid(i, j, c, board)) {
-        board[i][j] = c;
-        if (solveSudoku(step + 1, board)) {
+    const auto k = i / 3 * 3 + j / 3;
+    for (int c = 0; c < 9; ++c) {
+      if (!row[i][c] && !col[j][c] && !box[k][c]) {
+        row[i][c] = col[j][c] = box[k][c] = true;
+        board[i][j] = '1' + c;
+        if (solveSudoku(i, j + 1, board)) {
           return true;
         }
-        board[i][j] = '.';
+        board[i][j] = kEmpty;
+        row[i][c] = col[j][c] = box[k][c] = false;
       }
     }
     return false;
-  }
-
-  static bool isValid(int i, int j, char c,
-                      const std::vector<std::vector<char>> &board) {
-    for (int k = 0; k < 9; ++k) {
-      if (board[i][k] == c || board[k][j] == c ||
-          board[3 * (i / 3) + k / 3][3 * (j / 3) + k % 3] == c) {
-        return false;
-      }
-    }
-    return true;
   }
 };

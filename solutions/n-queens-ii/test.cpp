@@ -5,7 +5,7 @@
 TEST_CASE("Simple") {
   struct TestCase {
     int n;
-    size_t expected;
+    int expected;
   };
 
   std::vector<TestCase> test_cases{
@@ -20,7 +20,7 @@ TEST_CASE("Simple") {
   };
 
   for (const auto &[n, expected] : test_cases) {
-    const auto actual = Solution::totalNQueens(n);
+    const auto actual = Solution().totalNQueens(n);
     REQUIRE(expected == actual);
   }
 }

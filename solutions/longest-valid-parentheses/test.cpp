@@ -23,8 +23,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[s, expected] : test_cases) {
-    const auto actual = Solution::longestValidParentheses(s);
-    REQUIRE(expected == actual);
+  SECTION("Stack") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = stack::Solution::longestValidParentheses(s);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Dynamic Programming") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = dp::Solution::longestValidParentheses(s);
+      REQUIRE(expected == actual);
+    }
   }
 }

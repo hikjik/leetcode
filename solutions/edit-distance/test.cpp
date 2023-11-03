@@ -22,8 +22,24 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[word1, word2, expected] : test_cases) {
-    const auto actual = Solution::minDistance(word1, word2);
-    REQUIRE(expected == actual);
+  SECTION("Memoization") {
+    for (const auto &[word1, word2, expected] : test_cases) {
+      const auto actual = memo::Solution::minDistance(word1, word2);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Bottom-Up") {
+    for (const auto &[word1, word2, expected] : test_cases) {
+      const auto actual = dp::Solution::minDistance(word1, word2);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Memory Optimized") {
+    for (const auto &[word1, word2, expected] : test_cases) {
+      const auto actual = optimized::Solution::minDistance(word1, word2);
+      REQUIRE(expected == actual);
+    }
   }
 }

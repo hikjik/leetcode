@@ -2,27 +2,25 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static ListNode *partition(ListNode *head, int x) {
-    ListNode before(0, head), after(0, nullptr);
-    auto small = &before, big = &after;
-    while (small->next) {
-      if (small->next->val >= x) {
-        auto next = small->next;
-        small->next = small->next->next;
-        next->next = nullptr;
+    ListNode dummy_before, dummy_after;
 
-        big->next = next;
-        big = big->next;
+    auto *before = &dummy_before, *after = &dummy_after;
+    for (auto *node = head; node; node = node->next) {
+      if (node->val < x) {
+        before = before->next = node;
       } else {
-        small = small->next;
+        after = after->next = node;
       }
     }
-    small->next = after.next;
-    return before.next;
+
+    after->next = nullptr;
+    before->next = dummy_after.next;
+    return dummy_before.next;
   }
 };

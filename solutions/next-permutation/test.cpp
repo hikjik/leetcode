@@ -23,8 +23,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto &[nums, expected] : test_cases) {
-    Solution::nextPermutation(nums);
-    REQUIRE(expected == nums);
+  SECTION("Linear Time Solution") {
+    for (auto &[nums, expected] : test_cases) {
+      linear::Solution::nextPermutation(nums);
+      REQUIRE(expected == nums);
+    }
+  }
+
+  SECTION("STL") {
+    for (auto &[nums, expected] : test_cases) {
+      stl::Solution::nextPermutation(nums);
+      REQUIRE(expected == nums);
+    }
   }
 }

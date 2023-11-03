@@ -8,13 +8,13 @@
 class Solution {
 public:
   static ListNode *swapPairs(ListNode *head) {
-    auto dummy = ListNode(0, head);
-    auto node = &dummy;
+    ListNode dummy(0, head);
+    auto *node = &dummy;
     while (head && head->next) {
       node->next = head->next;
       node = head;
 
-      auto next_next = head->next->next;
+      auto *next_next = head->next->next;
       head->next->next = head;
       head = head->next = next_next;
     }

@@ -25,8 +25,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[root, expected] : test_cases) {
-    const auto actual = Solution::inorderTraversal(root);
-    REQUIRE(expected == actual);
+  SECTION("Recursive") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = recursive::Solution::inorderTraversal(root);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = iterative::Solution::inorderTraversal(root);
+      REQUIRE(expected == actual);
+    }
   }
 }

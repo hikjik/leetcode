@@ -30,7 +30,7 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[board, word, expected] : test_cases) {
+  for (auto &[board, word, expected] : test_cases) {
     const auto actual = Solution::exist(board, word);
     REQUIRE(expected == actual);
   }

@@ -1,25 +1,14 @@
 #pragma once
 
+#include <ranges>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(logN)
+// Space: O(1)
 
 class Solution {
 public:
   static int searchInsert(const std::vector<int> &nums, int target) {
-    int left = 0;
-    int right = nums.size();
-
-    while (left < right) {
-      int middle = left + (right - left) / 2;
-      if (nums[middle] >= target) {
-        right = middle;
-      } else {
-        left = middle + 1;
-      }
-    }
-
-    return left;
+    return std::ranges::lower_bound(nums, target) - nums.cbegin();
   }
 };

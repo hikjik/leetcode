@@ -2,8 +2,8 @@
 
 #include <tree_node.h>
 
-// Time:
-// Space:
+// Time: O(min(N, M))
+// Space: O(min(N, M))
 
 class Solution {
 public:
@@ -11,7 +11,6 @@ public:
     if (!p && !q) {
       return true;
     }
-
     if (!p || !q || p->val != q->val) {
       return false;
     }

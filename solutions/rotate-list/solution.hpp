@@ -2,8 +2,8 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
@@ -12,7 +12,7 @@ public:
       return head;
     }
 
-    auto tail = head;
+    auto *tail = head;
     int length = 1;
     while (tail->next) {
       tail = tail->next;
@@ -24,7 +24,7 @@ public:
     while (k--) {
       tail = tail->next;
     }
-    auto rotated_head = tail->next;
+    auto *rotated_head = tail->next;
     tail->next = nullptr;
     return rotated_head;
   }

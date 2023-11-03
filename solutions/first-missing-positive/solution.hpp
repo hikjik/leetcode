@@ -2,13 +2,13 @@
 
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static int firstMissingPositive(std::vector<int> nums) {
-    int n = nums.size();
+    const int n = nums.size();
     for (int i = 0; i < n; ++i) {
       while (nums[i] > 0 && nums[i] < n + 1 && nums[i] != nums[nums[i] - 1]) {
         std::swap(nums[i], nums[nums[i] - 1]);

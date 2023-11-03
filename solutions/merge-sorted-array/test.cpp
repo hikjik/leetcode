@@ -35,8 +35,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto &[nums1, m, nums2, n, expected] : test_cases) {
-    Solution::merge(nums1, m, nums2, n);
-    REQUIRE(expected == nums1);
+  SECTION("Linear") {
+    for (auto &[nums1, m, nums2, n, expected] : test_cases) {
+      linear::Solution::merge(nums1, m, nums2, n);
+      REQUIRE(expected == nums1);
+    }
+  }
+
+  SECTION("STL") {
+    for (auto &[nums1, m, nums2, n, expected] : test_cases) {
+      stl::Solution::merge(nums1, m, nums2, n);
+      REQUIRE(expected == nums1);
+    }
   }
 }

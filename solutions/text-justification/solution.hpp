@@ -3,55 +3,36 @@
 #include <string>
 #include <vector>
 
-// Time:
-// Space:
+// N is the number of words, M is the max length of word, W is maxWidth
+// Time: O(NM)
+// Space: O(W)
 
 class Solution {
 public:
   static std::vector<std::string>
-  fullJustify(const std::vector<std::string> &words, size_t max_width) {
+  fullJustify(const std::vector<std::string> &words, int maxWidth) {
     std::vector<std::string> ans;
+    for (auto left = words.begin(), right = left; left != words.end();) {
+      auto slots = maxWidth, words_count = 0;
+      while (right != words.end() &&
+             slots >= words_count + std::ssize(*right)) {
+        slots -= std::ssize(*right++);
+        ++words_count;
+      }
 
-    std::vector<std::string> row;
-    size_t letters_cnt = 0;
-    for (const auto &word : words) {
-      if (row.size() + letters_cnt + word.size() > max_width) {
-        const auto spaces = max_width - letters_cnt;
-        if (row.size() == 1) {
-          ans.push_back(pad_right(row[0], spaces));
+      std::string line = *left++;
+      const auto gaps = words_count - 1;
+      for (int i = 0; left != right; ++i) {
+        if (right == words.end()) {
+          line += ' ';
         } else {
-          for (size_t i = 0; i < spaces; ++i) {
-            row[i % (row.size() - 1)] += " ";
-          }
-          ans.push_back(join(row, ""));
+          line.append(slots / gaps + (i < slots % gaps), ' ');
         }
-
-        row.clear();
-        letters_cnt = 0;
+        line += *left++;
       }
-      row.push_back(word);
-      letters_cnt += word.size();
+      line.append(maxWidth - std::ssize(line), ' ');
+      ans.push_back(std::move(line));
     }
-    const auto spaces = max_width - letters_cnt - row.size() + 1;
-    ans.push_back(pad_right(join(row, " "), spaces));
-
     return ans;
-  }
-
-private:
-  static std::string join(const std::vector<std::string> &words,
-                          const std::string &delimeter) {
-    std::string res;
-    for (size_t i = 0; i < words.size(); ++i) {
-      res += words[i];
-      if (i + 1 != words.size()) {
-        res += delimeter;
-      }
-    }
-    return res;
-  }
-
-  static std::string pad_right(const std::string &s, size_t count) {
-    return s + std::string(count, ' ');
   }
 };

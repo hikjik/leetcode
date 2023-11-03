@@ -2,8 +2,9 @@
 
 #include <cmath>
 
-// Time:
-// Space:
+// Time: O(log N)
+// Space: O(1)
+// Notes: [Fast Exp](https://w.wiki/4LjE)
 
 class Solution {
 public:

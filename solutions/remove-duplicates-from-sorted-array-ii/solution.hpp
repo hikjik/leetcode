@@ -2,16 +2,16 @@
 
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static int removeDuplicates(std::vector<int> &nums) {
-    size_t size = 0;
-    for (size_t i = 0; i < nums.size(); ++i) {
-      if (i < 2 || nums[i] != nums[size - 2]) {
-        nums[size++] = nums[i];
+    int size = 0;
+    for (auto num : nums) {
+      if (size < 2 || num != nums[size - 2]) {
+        nums[size++] = num;
       }
     }
     return size;

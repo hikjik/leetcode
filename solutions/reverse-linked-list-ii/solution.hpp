@@ -2,32 +2,27 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static ListNode *reverseBetween(ListNode *head, int left, int right) {
-    auto dummy_node = ListNode(0, head);
-    auto dummy = &dummy_node;
+    ListNode dummy(0, head);
 
-    auto before_reversed_part = dummy;
-    for (int i = 1; i < left; ++i) {
-      before_reversed_part = before_reversed_part->next;
+    auto *before = &dummy;
+    for (int i = 0; i < left - 1; ++i) {
+      before = before->next;
     }
 
-    ListNode *reversed_list_head = nullptr;
-    auto node = before_reversed_part->next;
-    for (int i = left; i <= right; ++i) {
-      auto next = node->next;
-      node->next = reversed_list_head;
-      reversed_list_head = node;
-      node = next;
+    auto *node = before->next;
+    for (int i = left; i < right; ++i) {
+      auto *next = node->next;
+      node->next = next->next;
+      next->next = before->next;
+      before->next = next;
     }
 
-    before_reversed_part->next->next = node;
-    before_reversed_part->next = reversed_list_head;
-
-    return dummy->next;
+    return dummy.next;
   }
 };

@@ -1,21 +1,38 @@
 #pragma once
 
+#include <ranges>
 #include <string>
+#include <string_view>
+#include <unordered_map>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(NM4^K), where K is length of the word
+// Space: O(K)
 
 class Solution {
 public:
-  static bool exist(const std::vector<std::vector<char>> &board,
-                    std::string word) {
-    int m = board.size(), n = board.back().size();
-    std::vector<std::vector<bool>> visited(m, std::vector<bool>(n, false));
+  static bool exist(std::vector<std::vector<char>> &board, std::string word) {
+    const int m = board.size(), n = board.back().size();
+
+    std::unordered_map<char, int> counter;
+    for (int i = 0; i < m; ++i) {
+      for (int j = 0; j < n; ++j) {
+        ++counter[board[i][j]];
+      }
+    }
+
+    if (counter[word.front()] > counter[word.back()]) {
+      std::ranges::reverse(word);
+    }
+    for (auto c : word) {
+      if (!counter[c]--) {
+        return false;
+      }
+    }
 
     for (int i = 0; i < m; ++i) {
       for (int j = 0; j < n; ++j) {
-        if (exist(i, j, board, 0, word, &visited)) {
+        if (exist(i, j, board, std::string_view(word))) {
           return true;
         }
       }
@@ -24,29 +41,26 @@ public:
   }
 
 private:
-  static bool exist(int i, int j, const std::vector<std::vector<char>> &board,
-                    size_t k, const std::string &word,
-                    std::vector<std::vector<bool>> *visited) {
-    static std::vector<std::pair<int, int>> directions{
-        {-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-
-    int m = board.size(), n = board.back().size();
-    if (i < 0 || i >= m || j < 0 || j >= n || (*visited)[i][j] ||
-        word[k] != board[i][j]) {
+  static bool exist(int i, int j, std::vector<std::vector<char>> &board,
+                    std::string_view word) {
+    const int m = board.size(), n = board.back().size();
+    if (i < 0 || i >= m || j < 0 || j >= n) {
       return false;
     }
-    if (k + 1 == word.size()) {
+    if (!word.starts_with(board[i][j])) {
+      return false;
+    }
+    if (word.size() == 1) {
       return true;
     }
 
-    (*visited)[i][j] = true;
-    for (auto [di, dj] : directions) {
-      if (exist(i + di, j + dj, board, k + 1, word, visited)) {
-        return true;
-      }
-    }
-    (*visited)[i][j] = false;
-
-    return false;
+    const auto cache = board[i][j];
+    board[i][j] = '*';
+    const auto exists = exist(i, j + 1, board, word.substr(1)) ||
+                        exist(i, j - 1, board, word.substr(1)) ||
+                        exist(i + 1, j, board, word.substr(1)) ||
+                        exist(i - 1, j, board, word.substr(1));
+    board[i][j] = cache;
+    return exists;
   }
 };

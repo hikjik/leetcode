@@ -22,8 +22,31 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[m, n, expected] : test_cases) {
-    const auto actual = Solution::uniquePaths(m, n);
-    REQUIRE(expected == actual);
+  SECTION("Memoization") {
+    for (const auto &[m, n, expected] : test_cases) {
+      const auto actual = memo::Solution::uniquePaths(m, n);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("DP") {
+    for (const auto &[m, n, expected] : test_cases) {
+      const auto actual = dp::Solution::uniquePaths(m, n);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Memory Optimized") {
+    for (const auto &[m, n, expected] : test_cases) {
+      const auto actual = optimized::Solution::uniquePaths(m, n);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Combinatorics") {
+    for (const auto &[m, n, expected] : test_cases) {
+      const auto actual = combinatorics::Solution::uniquePaths(m, n);
+      REQUIRE(expected == actual);
+    }
   }
 }

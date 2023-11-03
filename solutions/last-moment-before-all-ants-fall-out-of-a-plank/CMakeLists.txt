@@ -1,0 +1,1 @@
+add_catch(test_last_moment_before_all_ants_fall_out_of_a_plank test.cpp)

@@ -1,44 +1,42 @@
 #pragma once
 
+#include <ranges>
+#include <span>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N2^N)
+// Space: O(N)
 
 class Solution {
 public:
   static std::vector<std::vector<int>>
   combinationSum2(std::vector<int> candidates, int target) {
-    std::sort(candidates.begin(), candidates.end());
-
-    std::vector<std::vector<int>> combinations;
+    std::ranges::sort(candidates);
     std::vector<int> combination;
-    combinationSum2(0, candidates, target, &combinations, &combination);
+    std::vector<std::vector<int>> combinations;
+    combinationSum2(target, std::span{candidates}, &combination, &combinations);
     return combinations;
   }
 
 private:
-  static void combinationSum2(size_t i, const std::vector<int> &candidates,
-                              int target,
-                              std::vector<std::vector<int>> *combinations,
-                              std::vector<int> *combination) {
+  static void combinationSum2(int target, std::span<int> candidates,
+                              std::vector<int> *combination,
+                              std::vector<std::vector<int>> *combinations) {
     if (target == 0) {
       combinations->push_back(*combination);
       return;
     }
+    if (target < 0) {
+      return;
+    }
 
-    for (size_t j = i; j < candidates.size(); ++j) {
-      if (j > i && candidates[j] == candidates[j - 1]) {
+    for (size_t j = 0; j < candidates.size(); ++j) {
+      if (j && candidates[j] == candidates[j - 1]) {
         continue;
       }
-
-      if (candidates[i] > target) {
-        break;
-      }
-
       combination->push_back(candidates[j]);
-      combinationSum2(j + 1, candidates, target - candidates[j], combinations,
-                      combination);
+      combinationSum2(target - candidates[j], candidates.subspan(j + 1),
+                      combination, combinations);
       combination->pop_back();
     }
   }

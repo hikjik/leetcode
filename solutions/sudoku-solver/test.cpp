@@ -32,7 +32,7 @@ TEST_CASE("Simple") {
   };
 
   for (auto &[board, expected] : test_cases) {
-    Solution::solveSudoku(board);
+    Solution().solveSudoku(board);
     REQUIRE(expected == board);
   }
 }

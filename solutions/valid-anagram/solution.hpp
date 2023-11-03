@@ -1,29 +1,25 @@
 #pragma once
 
+#include <array>
+#include <ranges>
 #include <string>
-#include <unordered_map>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(A), where A is the size of the alphabet
 
 class Solution {
 public:
-  static bool isAnagram(std::string ransom_note, std::string magazine) {
-    std::unordered_map<char, int> umap;
-    for (auto c : magazine) {
-      umap[c]++;
-    }
+  static constexpr size_t kSize = 26;
 
-    for (auto c : ransom_note) {
-      umap[c]--;
+  static bool isAnagram(std::string s, std::string t) {
+    if (s.size() != t.size()) {
+      return false;
     }
-
-    for (const auto &[key, value] : umap) {
-      if (value) {
-        return false;
-      }
+    std::array<int, kSize> counter{};
+    for (size_t i = 0; i < s.size(); ++i) {
+      ++counter[s[i] - 'a'];
+      --counter[t[i] - 'a'];
     }
-
-    return true;
+    return std::ranges::all_of(counter, [](int a) { return !a; });
   }
 };

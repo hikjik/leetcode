@@ -19,8 +19,24 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[n, expected] : test_cases) {
-    const auto actual = Solution::numTrees(n);
-    REQUIRE(expected == actual);
+  SECTION("Naive") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = naive::Solution::numTrees(n);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Dynamic Programming") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = dp::Solution::numTrees(n);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Combinatorics") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = combinatorics::Solution::numTrees(n);
+      REQUIRE(expected == actual);
+    }
   }
 }

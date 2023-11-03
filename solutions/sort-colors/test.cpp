@@ -19,8 +19,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto &[nums, expected] : test_cases) {
-    Solution::sortColors(nums);
-    REQUIRE(expected == nums);
+  SECTION("Iterators") {
+    for (auto &[nums, expected] : test_cases) {
+      iterators::Solution::sortColors(nums);
+      REQUIRE(expected == nums);
+    }
+  }
+
+  SECTION("Counting Sort") {
+    for (auto &[nums, expected] : test_cases) {
+      counting_sort::Solution::sortColors(nums);
+      REQUIRE(expected == nums);
+    }
   }
 }

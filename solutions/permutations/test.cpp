@@ -24,8 +24,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[nums, expected] : test_cases) {
-    const auto actual = Solution::permute(nums);
-    REQUIRE(expected == actual);
+  SECTION("Backtracking") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = backtracking::Solution::permute(nums);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("STL") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = stl::Solution::permute(nums);
+      REQUIRE(expected == actual);
+    }
   }
 }

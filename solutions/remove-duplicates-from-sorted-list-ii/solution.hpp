@@ -2,14 +2,14 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static ListNode *deleteDuplicates(ListNode *head) {
-    auto dummy = ListNode(0, head);
-    auto prev = &dummy, node = prev->next;
+    ListNode dummy(0, head);
+    auto *prev = &dummy, *node = prev->next;
     while (node && node->next) {
       if (node->val == node->next->val) {
         const auto val = node->val;

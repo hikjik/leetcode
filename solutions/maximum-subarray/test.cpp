@@ -23,8 +23,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[nums, expected] : test_cases) {
-    const auto actual = Solution::maxSubArray(nums);
-    REQUIRE(expected == actual);
+  SECTION("Dynamic Programming") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = dp::Solution::maxSubArray(nums);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Kadane's Algorithm") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = kadane::Solution::maxSubArray(nums);
+      REQUIRE(expected == actual);
+    }
   }
 }

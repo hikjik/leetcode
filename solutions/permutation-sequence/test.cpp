@@ -11,14 +11,14 @@ TEST_CASE("Simple") {
 
   std::vector<TestCase> test_cases{
       {
-          .n = 3,
-          .k = 3,
-          .expected = "213",
-      },
-      {
           .n = 4,
           .k = 9,
           .expected = "2314",
+      },
+      {
+          .n = 3,
+          .k = 3,
+          .expected = "213",
       },
       {
           .n = 3,
@@ -27,8 +27,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[n, k, expected] : test_cases) {
-    const auto actual = Solution::getPermutation(n, k);
-    REQUIRE(expected == actual);
+  SECTION("Efficient") {
+    for (const auto &[n, k, expected] : test_cases) {
+      const auto actual = efficient::Solution::getPermutation(n, k);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Naive") {
+    for (const auto &[n, k, expected] : test_cases) {
+      const auto actual = naive::Solution::getPermutation(n, k);
+      REQUIRE(expected == actual);
+    }
   }
 }
