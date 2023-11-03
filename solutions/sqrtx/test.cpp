@@ -17,6 +17,10 @@ TEST_CASE("Simple") {
           .x = 8,
           .expected = 2,
       },
+      {
+          .x = 0,
+          .expected = 0,
+      },
   };
 
   for (const auto &[x, expected] : test_cases) {
