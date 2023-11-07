@@ -1,30 +1,29 @@
 #pragma once
 
-#include <tree_node.h>
-
-#include <queue>
+#include <ranges>
 #include <vector>
+
+#include <tree_node.h>
 
 // Time: O(N)
 // Space: O(N)
 
 class Solution {
 public:
-  static std::vector<std::vector<int>> zigzagLevelOrder(TreeNode *root) {
+  static std::vector<std::vector<int>> levelOrderBottom(TreeNode *root) {
     if (!root) {
       return {};
     }
 
     std::vector<std::vector<int>> levels;
     std::queue<TreeNode *> queue{{root}};
-    for (bool forward = true; !queue.empty(); forward = !forward) {
-      const int size = queue.size();
-      std::vector<int> level(size);
-      for (int i = 0; i < size; ++i) {
+    while (!queue.empty()) {
+      std::vector<int> level(queue.size());
+      for (int i = 0; i < std::ssize(level); ++i) {
         auto *node = queue.front();
         queue.pop();
 
-        level[forward ? i : size - i - 1] = node->val;
+        level[i] = node->val;
 
         for (auto *child : {node->left, node->right}) {
           if (child) {
@@ -34,6 +33,7 @@ public:
       }
       levels.push_back(std::move(level));
     }
+    std::ranges::reverse(levels);
     return levels;
   }
 };

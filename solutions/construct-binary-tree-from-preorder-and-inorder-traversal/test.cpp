@@ -22,6 +22,11 @@ TEST_CASE("Simple") {
           .inorder{-1},
           .expected{-1},
       },
+      {
+          .preorder{1, 2},
+          .inorder{1, 2},
+          .expected{1, std::nullopt, 2},
+      },
   };
 
   for (const auto &[preorder, inorder, expected] : test_cases) {

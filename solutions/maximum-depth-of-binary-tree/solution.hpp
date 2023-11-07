@@ -4,8 +4,8 @@
 
 #include <algorithm>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
@@ -13,6 +13,6 @@ public:
     if (!root) {
       return 0;
     }
-    return std::max(maxDepth(root->left), maxDepth(root->right)) + 1;
+    return 1 + std::max(maxDepth(root->left), maxDepth(root->right));
   }
 };

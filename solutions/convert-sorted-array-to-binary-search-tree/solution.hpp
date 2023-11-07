@@ -4,8 +4,8 @@
 
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(logN)
 
 class Solution {
 public:

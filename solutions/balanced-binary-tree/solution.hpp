@@ -3,25 +3,33 @@
 #include <tree_node.h>
 
 #include <algorithm>
+#include <cmath>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
   static bool isBalanced(TreeNode *root) {
-    if (!root) {
-      return true;
-    }
-    return isBalanced(root->left) && isBalanced(root->right) &&
-           abs(depth(root->left) - depth(root->right)) <= 1;
+    return isHeightBalanced(root).is_balanced;
   }
 
 private:
-  static int depth(TreeNode *root) {
+  struct Result {
+    int height;
+    bool is_balanced;
+  };
+
+  static Result isHeightBalanced(TreeNode *root) {
     if (!root) {
-      return 0;
+      return {0, true};
     }
-    return 1 + std::max(depth(root->left), depth(root->right));
+    const auto left = isHeightBalanced(root->left);
+    const auto right = isHeightBalanced(root->right);
+    return {
+        1 + std::max(left.height, right.height),
+        left.is_balanced && right.is_balanced &&
+            std::abs(left.height - right.height) <= 1,
+    };
   }
 };

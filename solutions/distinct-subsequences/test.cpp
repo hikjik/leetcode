@@ -22,8 +22,24 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[s, t, expected] : test_cases) {
-    const auto actual = Solution::numDistinct(s, t);
-    REQUIRE(expected == actual);
+  SECTION("Memoization") {
+    for (const auto &[s, t, expected] : test_cases) {
+      const auto actual = memo::Solution::numDistinct(s, t);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Tabulation") {
+    for (const auto &[s, t, expected] : test_cases) {
+      const auto actual = dp::Solution::numDistinct(s, t);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Space Optimized") {
+    for (const auto &[s, t, expected] : test_cases) {
+      const auto actual = optimized::Solution::numDistinct(s, t);
+      REQUIRE(expected == actual);
+    }
   }
 }

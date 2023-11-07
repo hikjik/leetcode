@@ -2,43 +2,38 @@
 
 #include <tree_node.h>
 
+#include <span>
 #include <unordered_map>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
-  static TreeNode *buildTree(const std::vector<int> &in_order,
+  static TreeNode *buildTree(const std::vector<int> &inorder,
                              const std::vector<int> &postorder) {
-    std::unordered_map<int, int> positions;
-    for (size_t i = 0; i < in_order.size(); ++i) {
-      positions[in_order[i]] = i;
+    std::unordered_map<int, int> indexes;
+    for (int i = 0; i < std::ssize(inorder); ++i) {
+      indexes[inorder[i]] = i;
     }
-    return buildTree(0, in_order.size() - 1, in_order, 0, postorder.size() - 1,
-                     postorder, positions);
+    return buildTree(std::span{postorder}, std::span{inorder}, indexes);
   }
 
 private:
-  static TreeNode *
-  buildTree(int left_in, int right_in, const std::vector<int> &in_order,
-            int left_post, int right_post, const std::vector<int> &postorder,
-            const std::unordered_map<int, int> &in_order_positions) {
-    if (left_in > right_in) {
+  static TreeNode *buildTree(std::span<const int> postorder,
+                             std::span<const int> inorder,
+                             const std::unordered_map<int, int> &indexes) {
+    if (postorder.empty()) {
       return nullptr;
     }
-
-    auto root_val = postorder[right_post];
-    auto root_pos = in_order_positions.at(root_val);
-
-    return new TreeNode(root_val,
-                        buildTree(left_in, root_pos - 1, in_order, left_post,
-                                  left_post + root_pos - left_in - 1, postorder,
-                                  in_order_positions),
-                        buildTree(root_pos + 1, right_in, in_order,
-                                  left_post + root_pos - left_in,
-                                  right_post - 1, postorder,
-                                  in_order_positions));
+    const auto left_size =
+        indexes.at(postorder.back()) - indexes.at(inorder.front());
+    const auto right_size = postorder.size() - left_size - 1;
+    return new TreeNode(postorder.back(),
+                        buildTree(postorder.subspan(0, left_size),
+                                  inorder.subspan(0, left_size), indexes),
+                        buildTree(postorder.subspan(left_size, right_size),
+                                  inorder.subspan(left_size + 1), indexes));
   }
 };

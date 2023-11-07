@@ -22,8 +22,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[root, expected] : test_cases) {
-    const auto actual = Solution::minDepth(root);
-    REQUIRE(expected == actual);
+  SECTION("Recursion") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = dfs::Solution::minDepth(root);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = bfs::Solution::minDepth(root);
+      REQUIRE(expected == actual);
+    }
   }
 }

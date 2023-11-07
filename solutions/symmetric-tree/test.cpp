@@ -19,10 +19,24 @@ TEST_CASE("Simple") {
           .root{1, 2, 2, std::nullopt, 3, std::nullopt, 3},
           .expected = false,
       },
+      {
+          .root{9, -42, -42, std::nullopt, 76, 76, std::nullopt, std::nullopt,
+                13, std::nullopt, 13},
+          .expected = false,
+      },
   };
 
-  for (const auto &[root, expected] : test_cases) {
-    const auto actual = Solution::isSymmetric(root);
-    REQUIRE(expected == actual);
+  SECTION("Recursion") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = recursion::Solution::isSymmetric(root);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = iterative::Solution::isSymmetric(root);
+      REQUIRE(expected == actual);
+    }
   }
 }
