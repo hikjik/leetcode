@@ -26,9 +26,27 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[root, expected] : test_cases) {
-    TreeNode *copy = Copy(root);
-    Solution::flatten(copy);
-    REQUIRE(expected == Tree(copy));
+  SECTION("Recursive") {
+    for (const auto &[root, expected] : test_cases) {
+      TreeNode *copy = Copy(root);
+      recursive::Solution::flatten(copy);
+      REQUIRE(expected == Tree(copy));
+    }
+  }
+
+  SECTION("Stack") {
+    for (const auto &[root, expected] : test_cases) {
+      TreeNode *copy = Copy(root);
+      stack::Solution::flatten(copy);
+      REQUIRE(expected == Tree(copy));
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[root, expected] : test_cases) {
+      TreeNode *copy = Copy(root);
+      iterative::Solution::flatten(copy);
+      REQUIRE(expected == Tree(copy));
+    }
   }
 }

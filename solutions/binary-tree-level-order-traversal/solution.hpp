@@ -5,29 +5,34 @@
 #include <queue>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
   static std::vector<std::vector<int>> levelOrder(TreeNode *root) {
-    std::queue<std::pair<TreeNode *, size_t>> queue;
-    std::vector<std::vector<int>> values;
-    queue.emplace(root, 0);
-    while (!queue.empty()) {
-      const auto [node, depth] = queue.front();
-      queue.pop();
-
-      if (node) {
-        if (values.size() < depth + 1) {
-          values.emplace_back();
-        }
-        values[depth].push_back(node->val);
-
-        queue.emplace(node->left, depth + 1);
-        queue.emplace(node->right, depth + 1);
-      }
+    if (!root) {
+      return {};
     }
-    return values;
+
+    std::vector<std::vector<int>> levels;
+    std::queue<TreeNode *> queue{{root}};
+    while (!queue.empty()) {
+      std::vector<int> level(queue.size());
+      for (int i = 0; i < std::ssize(level); ++i) {
+        auto *node = queue.front();
+        queue.pop();
+
+        level[i] = node->val;
+
+        for (auto *child : {node->left, node->right}) {
+          if (child) {
+            queue.push(child);
+          }
+        }
+      }
+      levels.push_back(std::move(level));
+    }
+    return levels;
   }
 };
