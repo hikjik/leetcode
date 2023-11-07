@@ -1,0 +1,1 @@
+add_catch(test_eliminate_maximum_number_of_monsters test.cpp)
