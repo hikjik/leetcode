@@ -4,22 +4,21 @@
 
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N^2)
+// Space: O(N)
 
 class Solution {
 public:
   static std::vector<std::vector<int>> pathSum(TreeNode *root, int target) {
-    std::vector<std::vector<int>> paths;
     std::vector<int> path;
-    pathSum(root, target, &paths, &path);
+    std::vector<std::vector<int>> paths;
+    pathSum(root, target, &path, &paths);
     return paths;
   }
 
 private:
-  static void pathSum(TreeNode *root, int target,
-                      std::vector<std::vector<int>> *paths,
-                      std::vector<int> *path) {
+  static void pathSum(TreeNode *root, int target, std::vector<int> *path,
+                      std::vector<std::vector<int>> *paths) {
     if (!root) {
       return;
     }
@@ -30,8 +29,8 @@ private:
       }
     } else {
       target -= root->val;
-      pathSum(root->left, target, paths, path);
-      pathSum(root->right, target, paths, path);
+      pathSum(root->left, target, path, paths);
+      pathSum(root->right, target, path, paths);
     }
     path->pop_back();
   }

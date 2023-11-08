@@ -2,8 +2,8 @@
 
 #include <tree_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
@@ -11,17 +11,10 @@ public:
     if (!root) {
       return false;
     }
-
-    if (isLeaf(root)) {
+    if (!root->left && !root->right) {
       return target == root->val;
     }
-
-    target -= root->val;
-    return hasPathSum(root->left, target) || hasPathSum(root->right, target);
-  }
-
-private:
-  static bool isLeaf(TreeNode *node) {
-    return node && !node->left && !node->right;
+    return hasPathSum(root->left, target - root->val) ||
+           hasPathSum(root->right, target - root->val);
   }
 };

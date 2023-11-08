@@ -2,23 +2,63 @@
 
 #include <tree_node_with_next.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
+namespace recursive {
+
+// Time: O(N)
+// Space: O(N)
 class Solution {
 public:
   static Node *connect(Node *root) {
-    auto node = root;
-    while (node) {
+    if (!root) {
+      return nullptr;
+    }
+    if (root->left) {
+      root->left->next = root->right ? root->right : getNext(root->next);
+    }
+    if (root->right) {
+      root->right->next = getNext(root->next);
+    }
+    connect(root->right);
+    connect(root->left);
+    return root;
+  }
+
+private:
+  static Node *getNext(Node *root) {
+    for (auto *node = root; node; node = node->next) {
+      if (node->left) {
+        return node->left;
+      }
+      if (node->right) {
+        return node->right;
+      }
+    }
+    return nullptr;
+  }
+};
+
+} // namespace recursive
+
+namespace iterative {
+
+// Time: O(N)
+// Space: O(1)
+class Solution {
+public:
+  static Node *connect(Node *root) {
+    for (auto *node = root; node;) {
       Node dummy;
-      for (auto tail = &dummy; node; node = node->next) {
+      for (auto *curr = &dummy; node; node = node->next) {
         if (node->left) {
-          tail->next = node->left;
-          tail = tail->next;
+          curr->next = node->left;
+          curr = curr->next;
         }
         if (node->right) {
-          tail->next = node->right;
-          tail = tail->next;
+          curr->next = node->right;
+          curr = curr->next;
         }
       }
       node = dummy.next;
@@ -26,3 +66,5 @@ public:
     return root;
   }
 };
+
+} // namespace iterative
