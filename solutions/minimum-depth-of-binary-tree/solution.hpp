@@ -39,14 +39,14 @@ public:
     std::queue<TreeNode *> queue{{root}};
     for (int depth = 1; !queue.empty(); ++depth) {
       for (int sz = queue.size(); sz; --sz) {
-        auto node = queue.front();
+        auto *node = queue.front();
         queue.pop();
 
         if (!node->left && !node->right) {
           return depth;
         }
 
-        for (auto child : {node->left, node->right}) {
+        for (auto *child : {node->left, node->right}) {
           if (child) {
             queue.push(child);
           }

@@ -8,6 +8,20 @@
 #include <queue>
 #include <vector>
 
+void CheckSolution(Node *root,
+                   const std::vector<std::optional<int>> &expected) {
+  std::vector<std::optional<int>> actual;
+  for (auto node = root; node; node = node->left) {
+    auto next = node;
+    while (next) {
+      actual.push_back(next->val);
+      next = next->next;
+    }
+    actual.push_back(std::nullopt);
+  }
+  REQUIRE(expected == actual);
+}
+
 TEST_CASE("Simple") {
   struct TestCase {
     Tree root;
@@ -26,16 +40,15 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto &[root, expected] : test_cases) {
-    std::vector<std::optional<int>> actual;
-    for (auto node = Solution::connect(root); node; node = node->left) {
-      auto next = node;
-      while (next) {
-        actual.push_back(next->val);
-        next = next->next;
-      }
-      actual.push_back(std::nullopt);
+  SECTION("Recursion") {
+    for (auto &[root, expected] : test_cases) {
+      CheckSolution(recursive::Solution::connect(root), expected);
     }
-    REQUIRE(expected == actual);
+  }
+
+  SECTION("Iterative") {
+    for (auto &[root, expected] : test_cases) {
+      CheckSolution(iterative::Solution::connect(root), expected);
+    }
   }
 }
