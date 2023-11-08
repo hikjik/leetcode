@@ -2,8 +2,8 @@
 
 #include <tree_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:

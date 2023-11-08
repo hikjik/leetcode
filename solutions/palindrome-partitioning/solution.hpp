@@ -1,43 +1,38 @@
 #pragma once
 
+#include <algorithm>
 #include <string>
+#include <string_view>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N2^N)
+// Space: O(N)
 
 class Solution {
 public:
   static std::vector<std::vector<std::string>> partition(std::string s) {
-    std::vector<std::vector<std::string>> partitions;
     std::vector<std::string> partition;
-    dfs(0, s, &partitions, &partition);
+    std::vector<std::vector<std::string>> partitions;
+    dfs(std::string_view(s), &partition, &partitions);
     return partitions;
   }
 
 private:
-  static void dfs(size_t start, const std::string &s,
-                  std::vector<std::vector<std::string>> *partitions,
-                  std::vector<std::string> *partition) {
-    if (start == s.size()) {
+  static void dfs(std::string_view s, std::vector<std::string> *partition,
+                  std::vector<std::vector<std::string>> *partitions) {
+    if (s.empty()) {
       partitions->push_back(*partition);
     }
-
-    for (auto end = start; end < s.size(); ++end) {
-      if (isPalindrome(s, start, end)) {
-        partition->push_back(s.substr(start, end - start + 1));
-        dfs(end + 1, s, partitions, partition);
+    for (int i = 1; i <= std::ssize(s); ++i) {
+      if (isPalindrome(s.substr(0, i))) {
+        partition->emplace_back(s.substr(0, i));
+        dfs(s.substr(i), partition, partitions);
         partition->pop_back();
       }
     }
   }
 
-  static bool isPalindrome(const std::string &s, size_t start, size_t end) {
-    while (start < end) {
-      if (s[start++] != s[end--]) {
-        return false;
-      }
-    }
-    return true;
+  static bool isPalindrome(std::string_view s) {
+    return std::equal(s.cbegin(), s.cbegin() + s.size() / 2, s.crbegin());
   }
 };

@@ -17,10 +17,23 @@ TEST_CASE("Simple") {
           .nums{0, 3, 7, 2, 5, 8, 4, 6, 0, 1},
           .expected = 9,
       },
+      {
+          .nums{0},
+          .expected = 1,
+      },
   };
 
-  for (const auto &[nums, expected] : test_cases) {
-    const auto actual = Solution::longestConsecutive(nums);
-    REQUIRE(expected == actual);
+  SECTION("Sorting") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = sorting::Solution::longestConsecutive(nums);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Sorting") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = hash_table::Solution::longestConsecutive(nums);
+      REQUIRE(expected == actual);
+    }
   }
 }

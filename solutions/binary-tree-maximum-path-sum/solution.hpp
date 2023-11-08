@@ -4,28 +4,26 @@
 
 #include <limits>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
   static int maxPathSum(TreeNode *root) {
-    int path_sum = std::numeric_limits<int>::min();
-    maxPathSum(root, &path_sum);
-    return path_sum;
+    auto ans = std::numeric_limits<int>::min();
+    maxPathSum(root, &ans);
+    return ans;
   }
 
 private:
-  static int maxPathSum(TreeNode *root, int *path_sum) {
+  static int maxPathSum(TreeNode *root, int *ans) {
     if (!root) {
       return 0;
     }
 
-    const auto left = std::max(0, maxPathSum(root->left, path_sum));
-    const auto right = std::max(0, maxPathSum(root->right, path_sum));
-
-    *path_sum = std::max(*path_sum, root->val + left + right);
-
+    const auto left = std::max(0, maxPathSum(root->left, ans));
+    const auto right = std::max(0, maxPathSum(root->right, ans));
+    *ans = std::max(*ans, root->val + left + right);
     return root->val + std::max(left, right);
   }
 };
