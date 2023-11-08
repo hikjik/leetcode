@@ -12,7 +12,7 @@ def create_problem_folder(problem: Problem) -> None:
     path = Path("solutions") / Path(problem.title_slug)
 
     if Path.exists(path):
-        print(f"Already exists: {path}")
+        print(f"Already exists: {path / SOLUTION_FILE}")
         return
 
     path.mkdir()

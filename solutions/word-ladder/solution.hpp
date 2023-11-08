@@ -2,39 +2,46 @@
 
 #include <queue>
 #include <string>
+#include <string_view>
 #include <unordered_set>
 #include <vector>
 
-// Time:
-// Space:
+// N is the number of words in the wordList
+// K is the maximum word length
+// A is the size of the alphabet
+// Time: O(NA^K)
+// Space: O(N)
 
 class Solution {
 public:
-  static int ladderLength(std::string begin_word, std::string end_word,
-                          const std::vector<std::string> &word_list) {
-    std::unordered_set<std::string> words{word_list.begin(), word_list.end()};
+  static int ladderLength(std::string source, std::string target,
+                          const std::vector<std::string> &wordList) {
+    std::unordered_set<std::string_view> words{wordList.begin(),
+                                               wordList.end()};
+    words.erase(source);
+    if (!words.contains(target)) {
+      return 0;
+    }
 
-    std::queue<std::pair<std::string, int>> queue;
-    queue.emplace(begin_word, 0);
-    words.erase(begin_word);
-    while (!queue.empty()) {
-      auto [word, distance] = queue.front();
-      queue.pop();
+    std::queue<std::string_view> queue{{source}};
+    for (int distance = 1; !queue.empty(); ++distance) {
+      for (int sz = queue.size(); sz; --sz) {
+        auto word = std::string(queue.front());
+        queue.pop();
 
-      if (word == end_word) {
-        return distance + 1;
-      }
-
-      for (size_t i = 0; i < word.size(); ++i) {
-        char symbol = word[i];
-        for (char c = 'a'; c <= 'z'; ++c) {
-          word[i] = c;
-          if (words.count(word)) {
-            queue.emplace(word, distance + 1);
-            words.erase(word);
+        for (auto &c : word) {
+          const auto cache = c;
+          for (c = 'a'; c <= 'z'; ++c) {
+            if (auto it = words.find(word); it != words.end()) {
+              if (word == target) {
+                return distance + 1;
+              }
+              queue.push(*it);
+              words.erase(it);
+            }
           }
+          c = cache;
         }
-        word[i] = symbol;
       }
     }
     return 0;

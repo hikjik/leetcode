@@ -1,80 +1,99 @@
 #pragma once
 
+#include <numeric>
 #include <queue>
+#include <span>
 #include <string>
+#include <string_view>
 #include <unordered_set>
 #include <vector>
 
-// Time:
-// Space:
+// N is the number of words in the wordList
+// K is the maximum word length
+// A is the size of the alphabet
+// Time: O(NA^K)
+// Space: O(NK)
 
 class Solution {
 public:
   static std::vector<std::vector<std::string>>
-  findLadders(std::string begin_word, std::string end_word,
-              const std::vector<std::string> &word_list) {
-    std::unordered_set<std::string> words{word_list.begin(), word_list.end()};
-    if (!words.count(end_word)) {
-      return {};
-    }
-
-    std::vector<std::vector<std::string>> levels{{begin_word}};
-    words.erase(begin_word);
-
-    while (words.count(end_word)) {
-      levels.push_back(getNextLevel(levels.back(), &words));
-      if (levels.back().empty()) {
-        return {};
-      }
-    }
-
-    std::vector<std::vector<std::string>> paths;
-    std::vector<std::string> path{end_word};
-    dfs(levels.size() - 2, levels, &path, &paths);
-    return paths;
+  findLadders(std::string source, std::string target,
+              const std::vector<std::string> &wordList) {
+    const auto layers = bfs(source, target, wordList);
+    std::vector<std::vector<std::string>> ladders;
+    std::vector<std::string> ladder;
+    dfs(std::span{layers}, &ladder, &ladders);
+    return ladders;
   }
 
 private:
-  static void dfs(int i, const std::vector<std::vector<std::string>> &levels,
-                  std::vector<std::string> *path,
-                  std::vector<std::vector<std::string>> *paths) {
-    if (i < 0) {
-      paths->emplace_back(path->rbegin(), path->rend());
+  static void dfs(std::span<const std::vector<std::string_view>> layers,
+                  std::vector<std::string> *ladder,
+                  std::vector<std::vector<std::string>> *ladders) {
+    if (layers.empty()) {
+      if (!ladder->empty()) {
+        ladders->emplace_back(ladder->rbegin(), ladder->rend());
+      }
       return;
     }
 
-    const auto s = path->back();
-    for (const auto &p : levels[i]) {
-      if (isAdjacent(s, p)) {
-        path->push_back(p);
-        dfs(i - 1, levels, path, paths);
-        path->pop_back();
+    for (auto p : layers.front()) {
+      if (ladder->empty() || hammingDistance(ladder->back(), p) == 1) {
+        ladder->emplace_back(p);
+        dfs(layers.subspan(1), ladder, ladders);
+        ladder->pop_back();
       }
     }
   }
 
-  static std::vector<std::string>
-  getNextLevel(const std::vector<std::string> &prev_level,
-               std::unordered_set<std::string> *words) {
-    std::vector<std::string> level;
-    for (const auto &s : prev_level) {
-      for (auto it = words->begin(); it != words->end();) {
-        if (isAdjacent(s, *it)) {
-          level.push_back(*it);
-          it = words->erase(it);
-        } else {
-          ++it;
+  static std::vector<std::vector<std::string_view>>
+  bfs(std::string_view source, std::string_view target,
+      const std::vector<std::string> &wordList) {
+    std::unordered_set<std::string_view> words{wordList.begin(),
+                                               wordList.end()};
+    if (!words.contains(target)) {
+      return {};
+    }
+    words.erase(source);
+
+    std::vector<std::vector<std::string_view>> layers{{source}};
+    while (words.contains(target)) {
+      std::vector<std::string_view> layer;
+      for (auto word : layers.back()) {
+        for (auto adj : adjacentWords(word, words)) {
+          layer.push_back(adj);
+          words.erase(adj);
         }
       }
+      if (layer.empty()) {
+        return {};
+      }
+      layers.push_back(std::move(layer));
     }
-    return level;
+    layers.back() = {target};
+    std::reverse(layers.begin(), layers.end());
+    return layers;
   }
 
-  static bool isAdjacent(const std::string &s, const std::string &p) {
-    int cnt = 0;
-    for (size_t i = 0; i < s.size(); ++i) {
-      cnt += s[i] != p[i];
+  static std::vector<std::string_view>
+  adjacentWords(std::string_view s,
+                const std::unordered_set<std::string_view> &words) {
+    std::vector<std::string_view> adjacent;
+    auto word = std::string(s);
+    for (auto &c : word) {
+      const auto cache = c;
+      for (c = 'a'; c <= 'z'; ++c) {
+        if (auto it = words.find(word); it != words.end()) {
+          adjacent.push_back(*it);
+        }
+      }
+      c = cache;
     }
-    return cnt == 1;
+    return adjacent;
+  }
+
+  static int hammingDistance(std::string_view s, std::string_view p) {
+    return std::inner_product(s.cbegin(), s.cend(), p.cbegin(), 0, std::plus{},
+                              std::not_equal_to{});
   }
 };

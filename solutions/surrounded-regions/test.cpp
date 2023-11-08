@@ -25,8 +25,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (auto &[board, expected] : test_cases) {
-    Solution::solve(board);
-    REQUIRE(expected == board);
+  SECTION("Breadth First search") {
+    for (auto &[board, expected] : test_cases) {
+      bfs::Solution::solve(board);
+      REQUIRE(expected == board);
+    }
+  }
+
+  SECTION("Depth First search") {
+    for (auto &[board, expected] : test_cases) {
+      dfs::Solution::solve(board);
+      REQUIRE(expected == board);
+    }
   }
 }
