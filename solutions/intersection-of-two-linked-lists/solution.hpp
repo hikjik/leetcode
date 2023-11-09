@@ -2,16 +2,16 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(N+M)
+// Space: O(1)
 
 class Solution {
 public:
-  static ListNode *getIntersectionNode(ListNode *head_a, ListNode *head_b) {
-    auto a = head_a, b = head_b;
+  static ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+    auto *a = headA, *b = headB;
     while (a != b) {
-      a = a ? a->next : head_b;
-      b = b ? b->next : head_a;
+      a = a ? a->next : headB;
+      b = b ? b->next : headA;
     }
     return a;
   }

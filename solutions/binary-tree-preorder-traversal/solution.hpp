@@ -2,11 +2,16 @@
 
 #include <tree_node.h>
 
+#include <stack>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
+namespace recursive {
+
+// Time: O(N)
+// Space: O(N)
 class Solution {
 public:
   static std::vector<int> preorderTraversal(TreeNode *root) {
@@ -26,3 +31,36 @@ private:
     traverseInPreOrder(root->right, values);
   }
 };
+
+} // namespace recursive
+
+namespace iterative {
+
+// Time: O(N)
+// Space: O(N)
+class Solution {
+public:
+  static std::vector<int> preorderTraversal(TreeNode *root) {
+    if (!root) {
+      return {};
+    }
+
+    std::vector<int> values;
+    std::stack<TreeNode *> stack{{root}};
+    while (!stack.empty()) {
+      auto *node = stack.top();
+      stack.pop();
+
+      values.push_back(node->val);
+
+      for (auto *child : {node->right, node->left}) {
+        if (child) {
+          stack.push(child);
+        }
+      }
+    }
+    return values;
+  }
+};
+
+} // namespace iterative

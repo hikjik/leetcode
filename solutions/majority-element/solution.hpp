@@ -2,19 +2,19 @@
 
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static int majorityElement(const std::vector<int> &nums) {
-    int cnt = 0, majority = 0;
-    for (auto num : nums) {
+    int ans = 0;
+    for (int cnt = 0; auto num : nums) {
       if (!cnt) {
-        majority = num;
+        ans = num;
       }
-      cnt += majority == num ? 1 : -1;
+      cnt += ans == num ? 1 : -1;
     }
-    return majority;
+    return ans;
   }
 };

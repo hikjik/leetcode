@@ -23,8 +23,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[n, expected] : test_cases) {
-    const auto actual = Solution::hammingWeight(n);
-    REQUIRE(expected == actual);
+  SECTION("Naive") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = naive::Solution::hammingWeight(n);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Builtin") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = builtin::Solution::hammingWeight(n);
+      REQUIRE(expected == actual);
+    }
   }
 }

@@ -1,7 +1,7 @@
 #pragma once
 
-// Time:
-// Space:
+// Time: O(logN)
+// Space: O(1)
 
 class Solution {
 public:

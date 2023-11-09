@@ -19,8 +19,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[points, expected] : test_cases) {
-    const auto actual = Solution::maxPoints(points);
-    REQUIRE(expected == actual);
+  SECTION("Naive") {
+    for (const auto &[points, expected] : test_cases) {
+      const auto actual = naive::Solution::maxPoints(points);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Efficient") {
+    for (const auto &[points, expected] : test_cases) {
+      const auto actual = efficient::Solution::maxPoints(points);
+      REQUIRE(expected == actual);
+    }
   }
 }

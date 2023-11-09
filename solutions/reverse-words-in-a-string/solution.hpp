@@ -1,44 +1,55 @@
 #pragma once
 
 #include <algorithm>
+#include <iterator>
+#include <sstream>
 #include <string>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
+namespace stream {
+
+// Time: O(N)
+// Space: O(N)
 class Solution {
 public:
   static std::string reverseWords(std::string s) {
-    RemoveDuplicateSpaces(&s);
-    TrimRight(&s);
-    std::reverse(s.begin(), s.end());
-    TrimRight(&s);
-    ReverseWords(&s);
-    return s;
-  }
-
-private:
-  static void RemoveDuplicateSpaces(std::string *s_ptr) {
-    s_ptr->erase(std::unique(s_ptr->begin(), s_ptr->end(),
-                             [](char lhs, char rhs) {
-                               return lhs == rhs && lhs == ' ';
-                             }),
-                 s_ptr->end());
-  }
-
-  static void TrimRight(std::string *s_ptr) {
-    while (s_ptr->back() == ' ') {
-      s_ptr->pop_back();
-    }
-  }
-
-  static void ReverseWords(std::string *s_ptr) {
-    auto &s = *s_ptr;
-    for (size_t i = 0, j = 0; j <= s.size(); ++j) {
-      if (j == s.size() || s[j] == ' ') {
-        std::reverse(s.begin() + i, s.begin() + j);
-        i = j + 1;
-      }
-    }
+    std::istringstream istream(s);
+    std::vector<std::string> buffer{std::istream_iterator<std::string>(istream),
+                                    std::istream_iterator<std::string>()};
+    std::ostringstream ostream;
+    std::copy(buffer.rbegin(), std::prev(buffer.rend()),
+              std::ostream_iterator<std::string>(ostream, " "));
+    return ostream.str() + buffer.front();
   }
 };
+
+} // namespace stream
+
+namespace inplace {
+
+// Time: O(N)
+// Space: O(1)
+class Solution {
+public:
+  static std::string reverseWords(std::string s) {
+    s.erase(std::unique(s.begin(), s.end(),
+                        [](char a, char b) { return a == ' ' && b == ' '; }),
+            s.end());
+    s.erase(s.find_last_not_of(' ') + 1);
+    std::reverse(s.begin(), s.end());
+    s.erase(s.find_last_not_of(' ') + 1);
+    auto first = s.begin();
+    for (auto last = s.begin(); last != s.end(); ++last) {
+      if (*last == ' ') {
+        std::reverse(first, last);
+        first = std::next(last);
+      }
+    }
+    std::reverse(first, s.end());
+    return s;
+  }
+};
+
+} // namespace inplace

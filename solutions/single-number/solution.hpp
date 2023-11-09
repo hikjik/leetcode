@@ -1,17 +1,14 @@
 #pragma once
 
+#include <numeric>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
-  static int singleNumber(const std::vector<int> &numbers) {
-    int answer = 0;
-    for (auto number : numbers) {
-      answer ^= number;
-    }
-    return answer;
+  static int singleNumber(const std::vector<int> &nums) {
+    return std::accumulate(nums.begin(), nums.end(), 0, std::bit_xor{});
   }
 };

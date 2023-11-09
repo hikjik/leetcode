@@ -2,35 +2,23 @@
 
 #pragma once
 
+#include <climits>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static int maxProfit(const std::vector<int> &prices) {
-    int k = 2;
-    std::vector dp(2 * k + 1, std::vector<int>(prices.size(), -1));
-    return maxProfit(0, 2 * k, false, prices, &dp);
-  }
-
-private:
-  static int maxProfit(size_t i, int k, bool buy,
-                       const std::vector<int> &prices,
-                       std::vector<std::vector<int>> *dp) {
-    if (k == 0 || i == prices.size()) {
-      return 0;
+    std::vector<int> buy(2, INT_MIN);
+    std::vector<int> sell(2);
+    for (auto price : prices) {
+      buy[0] = std::max(buy[0], -price);
+      sell[0] = std::max(sell[0], price + buy[0]);
+      buy[1] = std::max(buy[1], sell[0] - price);
+      sell[1] = std::max(sell[1], price + buy[1]);
     }
-
-    auto &profit = (*dp)[k][i];
-    if (profit != -1) {
-      return profit;
-    }
-
-    profit =
-        (buy ? 1 : -1) * prices[i] + maxProfit(i + 1, k - 1, !buy, prices, dp);
-    profit = std::max(profit, maxProfit(i + 1, k, buy, prices, dp));
-    return profit;
+    return sell.back();
   }
 };

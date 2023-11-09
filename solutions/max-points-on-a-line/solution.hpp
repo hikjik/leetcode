@@ -1,54 +1,56 @@
 #pragma once
 
 #include <cmath>
+#include <ranges>
 #include <unordered_map>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N^2)
+// Space: O(N)
 
+namespace naive {
+
+// Time: O(N^3)
+// Space: O(N)
 class Solution {
 public:
   static int maxPoints(const std::vector<std::vector<int>> &points) {
-    return efficient(points);
-  }
-
-private:
-  static int efficient(const std::vector<std::vector<int>> &points) {
-    int max_count = 1;
-    for (size_t i = 0; i < points.size(); i++) {
-      std::unordered_map<double, int> counter;
-      for (size_t j = 0; j < points.size(); j++) {
-        if (i == j) {
-          continue;
-        }
-        const auto angle = std::atan2(points[j][1] - points[i][1],
-                                      points[j][0] - points[i][0]);
-        counter[angle]++;
-      }
-      for (const auto &cnt : counter) {
-        max_count = std::max(max_count, cnt.second + 1);
-      }
-    }
-    return max_count;
-  }
-
-  static int naive(const std::vector<std::vector<int>> &points) {
-    int max_count = 1;
-    for (size_t i = 0; i < points.size(); ++i) {
-      for (size_t j = i + 1; j < points.size(); ++j) {
+    int ans = 1;
+    for (int i = 0; i < std::ssize(points); ++i) {
+      for (int j = i + 1; j < std::ssize(points); ++j) {
         const auto dx = points[i][0] - points[j][0];
         const auto dy = points[i][1] - points[j][1];
-        int cnt = 0;
-        for (const auto &point : points) {
-          if ((point[0] - points[i][0]) * dy ==
-              (point[1] - points[i][1]) * dx) {
-            cnt++;
-          }
-        }
-        max_count = std::max(max_count, cnt);
+        const int cnt = std::ranges::count_if(points, [&](const auto &p) {
+          return (p[0] - points[i][0]) * dy == (p[1] - points[i][1]) * dx;
+        });
+        ans = std::max(ans, cnt);
       }
     }
-    return max_count;
+    return ans;
   }
 };
+
+} // namespace naive
+
+namespace efficient {
+
+// Time: O(N^2)
+// Space: O(N)
+class Solution {
+public:
+  static int maxPoints(std::vector<std::vector<int>> points) {
+    std::ranges::sort(points);
+    int ans = 0;
+    for (int i = 0; i < std::ssize(points); ++i) {
+      std::unordered_map<double, int> counter;
+      for (int j = i + 1; j < std::ssize(points); ++j) {
+        const auto atan2 = std::atan2(points[j][1] - points[i][1],
+                                      points[j][0] - points[i][0]);
+        ans = std::max(ans, ++counter[atan2]);
+      }
+    }
+    return ans + 1;
+  }
+};
+
+} // namespace efficient

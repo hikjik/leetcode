@@ -3,31 +3,26 @@
 #include <algorithm>
 #include <stack>
 
-// Time:
-// Space:
+// Time: O(1)
+// Space: O(N)
 
 class MinStack {
 public:
-  MinStack() {}
-
   void push(int val) {
-    stack_.push(val);
-    if (!min_stack_.empty()) {
-      val = std::min(val, min_stack_.top());
-    }
-    min_stack_.push(val);
+    stack.push({val, stack.empty() ? val : std::min(getMin(), val)});
   }
 
-  void pop() {
-    stack_.pop();
-    min_stack_.pop();
-  }
+  void pop() { stack.pop(); }
 
-  int top() { return stack_.top(); }
+  int top() const { return stack.top().val; }
 
-  int getMin() { return min_stack_.top(); }
+  int getMin() const { return stack.top().min; }
 
 private:
-  std::stack<int> stack_;
-  std::stack<int> min_stack_;
+  struct Item {
+    int val;
+    int min;
+  };
+
+  std::stack<Item> stack;
 };

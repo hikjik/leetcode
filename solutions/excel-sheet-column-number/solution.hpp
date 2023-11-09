@@ -1,17 +1,15 @@
 #pragma once
 
+#include <numeric>
 #include <string>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static int titleToNumber(std::string columnTitle) {
-    int number = 0;
-    for (auto c : columnTitle) {
-      number = number * 26 + (c - 'A' + 1);
-    }
-    return number;
+    return std::accumulate(columnTitle.begin(), columnTitle.end(), 0,
+                           [](int a, int b) { return a * 26 + (b - 'A' + 1); });
   }
 };

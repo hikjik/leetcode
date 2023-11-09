@@ -38,8 +38,8 @@ namespace iterative {
 class Solution {
 public:
   static ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-    ListNode dummy_head;
-    auto *node = &dummy_head;
+    ListNode dummy;
+    auto *node = &dummy;
     int carry = 0;
 
     while (l1 || l2 || carry) {
@@ -56,7 +56,7 @@ public:
       node = node->next;
     }
 
-    return dummy_head.next;
+    return dummy.next;
   }
 };
 

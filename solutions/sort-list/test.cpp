@@ -25,8 +25,10 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[head, expected] : test_cases) {
-    const List actual = Solution::sortList(Copy(head));
-    REQUIRE(expected == actual);
+  SECTION("Recursive") {
+    for (const auto &[head, expected] : test_cases) {
+      const List actual = recursive::Solution::sortList(Copy(head));
+      REQUIRE(expected == actual);
+    }
   }
 }
