@@ -1,0 +1,1 @@
+add_catch(test_restore_the_array_from_adjacent_pairs test.cpp)

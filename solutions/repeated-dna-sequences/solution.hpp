@@ -4,41 +4,30 @@
 #include <string>
 #include <vector>
 
-// Time:
-// Space:
+// N is the length of the string s, K = 10
+// Time: O(NK)
+// Space: O(4^K / W) W is the internal representation bitset, 32 or 64 bits
 
 class Solution {
 public:
   static std::vector<std::string> findRepeatedDnaSequences(std::string s) {
-    if (s.size() < 10) {
-      return {};
-    }
+    std::vector<std::string> ans;
+    std::bitset<1 << 20> seen, repeated;
+    for (int i = 0, hash = 0; i < std::ssize(s); ++i) {
+      hash = hash << 2 | convert(s[i]);
+      hash &= 0xfffff;
 
-    std::vector<std::string> repeated_sequences;
-    std::bitset<1 << 20> repeated;
-    std::bitset<1 << 20> seen;
-
-    int hash = 0;
-    for (size_t i = 0; i < 9; ++i) {
-      hash = (hash << 2) | convert(s[i]);
-    }
-
-    for (size_t i = 9; i < s.size(); ++i) {
-      hash = (hash << 2) | convert(s[i]);
-      hash &= 0xFFFFF;
-
-      if (repeated[hash]) {
+      if (i < 9 || repeated.test(hash)) {
         continue;
       }
 
-      if (seen[hash]) {
-        repeated_sequences.push_back(s.substr(i - 9, 10));
+      if (seen.test(hash)) {
+        ans.push_back(s.substr(i - 9, 10));
         repeated.set(hash);
       }
       seen.set(hash);
     }
-
-    return repeated_sequences;
+    return ans;
   }
 
 private:

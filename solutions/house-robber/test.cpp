@@ -19,8 +19,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[nums, expected] : test_cases) {
-    const auto actual = Solution::rob(nums);
-    REQUIRE(expected == actual);
+  SECTION("Tabulation") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = dp::Solution::rob(nums);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Optimized") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = optimized::Solution::rob(nums);
+      REQUIRE(expected == actual);
+    }
   }
 }

@@ -25,8 +25,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[root, expected] : test_cases) {
-    const auto actual = Solution::rightSideView(root);
-    REQUIRE(expected == actual);
+  SECTION("BFS") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = bfs::Solution::rightSideView(root);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("DFS") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = dfs::Solution::rightSideView(root);
+      REQUIRE(expected == actual);
+    }
   }
 }

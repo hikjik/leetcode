@@ -19,8 +19,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[n, expected] : test_cases) {
-    const auto actual = Solution::reverseBits(n);
-    REQUIRE(expected == actual);
+  SECTION("Iterative") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = iterative::Solution::reverseBits(n);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Divide & Conquer") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = divide_and_conquer::Solution::reverseBits(n);
+      REQUIRE(expected == actual);
+    }
   }
 }

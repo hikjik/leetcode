@@ -33,7 +33,7 @@ class Solution {
 public:
   static ListNode *mergeTwoLists(ListNode *list1, ListNode *list2) {
     ListNode dummy;
-    for (auto node = &dummy; list1 || list2; node = node->next) {
+    for (auto *node = &dummy; list1 || list2; node = node->next) {
       if (!list1 || !list2) {
         node->next = list1 ? list1 : list2;
         break;

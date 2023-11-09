@@ -23,8 +23,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[s, expected] : test_cases) {
-    const auto actual = Solution::reverseWords(s);
-    REQUIRE(expected == actual);
+  SECTION("Stream") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = stream::Solution::reverseWords(s);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Inplace") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = inplace::Solution::reverseWords(s);
+      REQUIRE(expected == actual);
+    }
   }
 }

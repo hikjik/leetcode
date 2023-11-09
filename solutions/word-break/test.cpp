@@ -27,8 +27,24 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[s, wordDict, expected] : test_cases) {
-    const auto actual = Solution::wordBreak(s, wordDict);
-    REQUIRE(expected == actual);
+  SECTION("Memoization") {
+    for (const auto &[s, wordDict, expected] : test_cases) {
+      const auto actual = memo::Solution::wordBreak(s, wordDict);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Tabulation") {
+    for (const auto &[s, wordDict, expected] : test_cases) {
+      const auto actual = dp::Solution::wordBreak(s, wordDict);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Optimized") {
+    for (const auto &[s, wordDict, expected] : test_cases) {
+      const auto actual = optimized::Solution::wordBreak(s, wordDict);
+      REQUIRE(expected == actual);
+    }
   }
 }

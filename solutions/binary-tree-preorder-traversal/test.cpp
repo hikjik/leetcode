@@ -25,8 +25,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[root, expected] : test_cases) {
-    const auto actual = Solution::preorderTraversal(root);
-    REQUIRE(expected == actual);
+  SECTION("Recursive") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = recursive::Solution::preorderTraversal(root);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[root, expected] : test_cases) {
+      const auto actual = iterative::Solution::preorderTraversal(root);
+      REQUIRE(expected == actual);
+    }
   }
 }

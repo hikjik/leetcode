@@ -4,43 +4,43 @@
 #include <unordered_map>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(1) for get and put
+// Space: O(C), where C is the cache capacity
 
 class LRUCache {
 public:
-  LRUCache(int capacity) : capacity_(capacity) {}
+  LRUCache(int capacity) : capacity(capacity) {}
 
   int get(int key) {
-    if (auto it = nodes_.find(key); it == nodes_.end()) {
+    if (auto it = map.find(key); it == map.end()) {
       return -1;
     } else {
-      items_.splice(items_.end(), items_, it->second);
+      nodes.splice(nodes.end(), nodes, it->second);
       return it->second->value;
     }
   }
 
   void put(int key, int value) {
-    if (auto it = nodes_.find(key); it == nodes_.end()) {
-      nodes_[key] = items_.insert(items_.end(), {key, value});
+    if (auto it = map.find(key); it == map.end()) {
+      map[key] = nodes.insert(nodes.end(), {key, value});
     } else {
       it->second->value = value;
-      items_.splice(items_.end(), items_, it->second);
+      nodes.splice(nodes.end(), nodes, it->second);
     }
 
-    if (capacity_ < items_.size()) {
-      nodes_.erase(items_.begin()->key);
-      items_.pop_front();
+    if (capacity < nodes.size()) {
+      map.erase(nodes.begin()->key);
+      nodes.pop_front();
     }
   }
 
 private:
-  struct Item {
+  struct Node {
     int key;
     int value;
   };
 
-  std::list<Item> items_;
-  std::unordered_map<int, std::list<Item>::iterator> nodes_;
-  size_t capacity_;
+  std::list<Node> nodes;
+  std::unordered_map<int, std::list<Node>::iterator> map;
+  size_t capacity;
 };

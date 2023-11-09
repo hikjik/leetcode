@@ -2,13 +2,13 @@
 
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(logN)
+// Space: O(1)
 
 class Solution {
 public:
   static int findMin(const std::vector<int> &nums) {
-    size_t left = 0, right = nums.size() - 1;
+    int left = 0, right = nums.size() - 1;
     while (left < right) {
       const auto middle = left + (right - left) / 2;
       if (nums[middle] < nums[right]) {

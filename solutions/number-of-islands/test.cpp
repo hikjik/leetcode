@@ -25,8 +25,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[grid, expected] : test_cases) {
-    const auto actual = Solution::numIslands(grid);
-    REQUIRE(expected == actual);
+  SECTION("BFS") {
+    for (const auto &[grid, expected] : test_cases) {
+      const auto actual = bfs::Solution::numIslands(grid);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("DFS") {
+    for (const auto &[grid, expected] : test_cases) {
+      const auto actual = dfs::Solution::numIslands(grid);
+      REQUIRE(expected == actual);
+    }
   }
 }

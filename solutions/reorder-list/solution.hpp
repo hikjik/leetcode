@@ -2,19 +2,19 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static void reorderList(ListNode *head) {
-    mergeLists(head, reverseList(splitInMiddle(head)));
+    combine(head, reverse(splitInMiddle(head)));
   }
 
 private:
-  static void mergeLists(ListNode *first, ListNode *second) {
+  static void combine(ListNode *first, ListNode *second) {
     while (second) {
-      auto next = first->next;
+      auto *next = first->next;
       first->next = second;
       first = second;
       second = next;
@@ -22,30 +22,27 @@ private:
   }
 
   static ListNode *splitInMiddle(ListNode *head) {
-    auto dummy = ListNode(0, head);
+    ListNode dummy(0, head);
 
-    auto slow = &dummy, fast = slow;
+    auto *slow = &dummy, *fast = slow;
     while (fast && fast->next) {
       slow = slow->next;
       fast = fast->next->next;
     }
 
-    auto middle = slow->next;
+    auto *middle = slow->next;
     slow->next = nullptr;
     return middle;
   }
 
-  static ListNode *reverseList(ListNode *head) {
+  static ListNode *reverse(ListNode *head) {
     ListNode *reversed = nullptr;
-
-    auto node = head;
-    while (node) {
-      auto next = node->next;
+    for (auto *node = head; node;) {
+      auto *next = node->next;
       node->next = reversed;
       reversed = node;
       node = next;
     }
-
     return reversed;
   }
 };

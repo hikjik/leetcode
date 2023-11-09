@@ -6,17 +6,17 @@
 #include <unordered_map>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
   static int evalRPN(const std::vector<std::string> &tokens) {
-    const std::unordered_map<std::string, std::function<int(int, int)>> ops{
-        {"+", std::plus<int>()},
-        {"-", std::minus<int>()},
-        {"*", std::multiplies<int>()},
-        {"/", std::divides<int>()}};
+    static const std::unordered_map<std::string, std::function<int(int, int)>>
+        ops{{"+", std::plus<int>()},
+            {"-", std::minus<int>()},
+            {"*", std::multiplies<int>()},
+            {"/", std::divides<int>()}};
 
     std::stack<int> stack;
     for (const auto &token : tokens) {

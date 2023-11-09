@@ -3,14 +3,13 @@
 #include <algorithm>
 #include <string>
 
-// Time:
-// Space:
+// Time: O(logN)
+// Space: O(1)
 
 class Solution {
-private:
-  static const int kAlphabetSize = 26;
-
 public:
+  static constexpr int kAlphabetSize = 26;
+
   static std::string convertToTitle(int columnNumber) {
     std::string title;
     while (columnNumber--) {

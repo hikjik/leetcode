@@ -4,31 +4,22 @@
 
 #include <list_node_with_random.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
   static Node *copyRandomList(Node *head) {
     std::unordered_map<Node *, Node *> map;
-
-    Node dummy(0);
-    auto node = head, copy = &dummy;
-    while (node) {
-      copy->next = new Node(node->val);
-      copy = copy->next;
-      map[node] = copy;
-      node = node->next;
+    for (auto *node = head; node; node = node->next) {
+      map[node] = new Node(node->val);
     }
 
-    node = head;
-    while (node) {
-      if (node->random) {
-        map[node]->random = map[node->random];
-      }
-      node = node->next;
+    for (auto *node = head; node; node = node->next) {
+      map[node]->random = map[node->random];
+      map[node]->next = map[node->next];
     }
 
-    return dummy.next;
+    return map[head];
   }
 };
