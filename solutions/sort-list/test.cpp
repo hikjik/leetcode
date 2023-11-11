@@ -23,11 +23,22 @@ TEST_CASE("Simple") {
           .head{},
           .expected{},
       },
+      {
+          .head{3, 2, 1},
+          .expected{1, 2, 3},
+      },
   };
 
   SECTION("Recursive") {
     for (const auto &[head, expected] : test_cases) {
       const List actual = recursive::Solution::sortList(Copy(head));
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterative") {
+    for (const auto &[head, expected] : test_cases) {
+      const List actual = iterative::Solution::sortList(Copy(head));
       REQUIRE(expected == actual);
     }
   }

@@ -2,8 +2,8 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(NlogN)
+// Space: O(1)
 
 namespace recursive {
 
@@ -49,3 +49,63 @@ private:
 };
 
 } // namespace recursive
+
+namespace iterative {
+
+// Time: O(NlogN)
+// Space: O(1)
+class Solution {
+public:
+  static ListNode *sortList(ListNode *head) {
+    const auto length = getLength(head);
+    ListNode dummy(0, head);
+    for (int gap = 1; gap < length; gap *= 2) {
+      auto *prev = &dummy;
+      for (auto *first = prev->next; first; first = prev->next) {
+        auto *middle = advance(first, gap);
+        if (!middle) {
+          break;
+        }
+        auto *last = advance(middle, gap);
+        prev = merge(prev, first, middle, last);
+      }
+    }
+    return dummy.next;
+  }
+
+private:
+  static ListNode *merge(ListNode *prev, ListNode *first, ListNode *middle,
+                         ListNode *last) {
+    auto *first1 = first, *last1 = middle;
+    auto *first2 = middle, *last2 = last;
+    while (first1 != last1 || first2 != last2) {
+      if (first2 == last2 || first1 != last1 && first1->val < first2->val) {
+        prev->next = first1;
+        first1 = first1->next;
+      } else {
+        prev->next = first2;
+        first2 = first2->next;
+      }
+      prev = prev->next;
+    }
+    prev->next = last;
+    return prev;
+  }
+
+  static ListNode *advance(ListNode *node, int k) {
+    while (k-- && node) {
+      node = node->next;
+    }
+    return node;
+  }
+
+  static int getLength(ListNode *head) {
+    int length = 0;
+    for (auto *node = head; node; node = node->next) {
+      ++length;
+    }
+    return length;
+  }
+};
+
+} // namespace iterative

@@ -1,7 +1,7 @@
 #pragma once
 
-// Time:
-// Space:
+// Time: O(logM) M = INT_MAX
+// Space: O(1)
 
 class Solution {
 public:
