@@ -19,8 +19,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[nums, expected] : test_cases) {
-    const auto actual = Solution::singleNumber(nums);
-    REQUIRE(expected == actual);
+  SECTION("Count bits") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = count_bits::Solution::singleNumber(nums);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Tricky") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = tricky::Solution::singleNumber(nums);
+      REQUIRE(expected == actual);
+    }
   }
 }
