@@ -1,0 +1,1 @@
+add_catch(test_design_graph_with_shortest_path_calculator test.cpp)
