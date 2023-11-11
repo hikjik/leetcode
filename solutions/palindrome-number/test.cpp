@@ -23,8 +23,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[n, expected] : test_cases) {
-    const auto actual = Solution::isPalindrome(n);
-    REQUIRE(expected == actual);
+  SECTION("STL") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = stl::Solution::isPalindrome(n);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Reverse Int") {
+    for (const auto &[n, expected] : test_cases) {
+      const auto actual = reverse::Solution::isPalindrome(n);
+      REQUIRE(expected == actual);
+    }
   }
 }
