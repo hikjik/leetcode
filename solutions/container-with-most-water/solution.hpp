@@ -13,7 +13,7 @@ public:
     for (int l = 0, r = height.size() - 1; l < r;) {
       const auto area = std::min(height[l], height[r]) * (r - l);
       max_area = std::max(max_area, area);
-      height[l] < height[r] ? l++ : r--;
+      height[l] < height[r] ? ++l : --r;
     }
     return max_area;
   }

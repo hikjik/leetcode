@@ -27,8 +27,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[s, expected] : test_cases) {
-    const auto actual = Solution::myAtoi(s);
-    REQUIRE(expected == actual);
+  SECTION("STL") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = stl::Solution::myAtoi(s);
+      REQUIRE(expected == actual);
+    }
   }
+
+  // SECTION("Iterative") {
+  //   for (const auto &[s, expected] : test_cases) {
+  //     const auto actual = iterative::Solution::myAtoi(s);
+  //     REQUIRE(expected == actual);
+  //   }
+  // }
 }
