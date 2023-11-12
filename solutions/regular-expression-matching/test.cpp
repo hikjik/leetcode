@@ -26,14 +26,44 @@ TEST_CASE("Simple") {
           .expected = true,
       },
       {
-          .s = "aa",
-          .p = "a*",
-          .expected = true,
+          .s = "mississippi",
+          .p = "mis*is*p*.",
+          .expected = false,
       },
   };
 
-  for (const auto &[s, p, expected] : test_cases) {
-    const auto actual = Solution::isMatch(s, p);
-    REQUIRE(expected == actual);
+  SECTION("Regex") {
+    for (const auto &[s, p, expected] : test_cases) {
+      const auto actual = regex::Solution::isMatch(s, p);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Recursion") {
+    for (const auto &[s, p, expected] : test_cases) {
+      const auto actual = recursion::Solution::isMatch(s, p);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Memoization") {
+    for (const auto &[s, p, expected] : test_cases) {
+      const auto actual = memo::Solution::isMatch(s, p);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Tabulation") {
+    for (const auto &[s, p, expected] : test_cases) {
+      const auto actual = dp::Solution::isMatch(s, p);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Memory Optimized") {
+    for (const auto &[s, p, expected] : test_cases) {
+      const auto actual = optimized::Solution::isMatch(s, p);
+      REQUIRE(expected == actual);
+    }
   }
 }
