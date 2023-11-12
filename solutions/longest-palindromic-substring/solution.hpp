@@ -18,20 +18,20 @@ class Solution {
 public:
   static std::string longestPalindrome(std::string s) {
     const int n = s.size();
-    const auto view = std::string_view(s);
+    std::string_view sv(s);
 
-    auto substr = view.substr(0, 0);
+    auto palindrome = sv.substr(0, 0);
     std::vector dp(n, std::vector<bool>(n));
 
     for (int i = 0; i < n; ++i) {
       dp[i][i] = true;
-      substr = view.substr(i, 1);
+      palindrome = sv.substr(i, 1);
     }
 
     for (int i = 0; i + 1 < n; ++i) {
       if (s[i] == s[i + 1]) {
         dp[i][i + 1] = true;
-        substr = view.substr(i, 2);
+        palindrome = sv.substr(i, 2);
       }
     }
 
@@ -41,12 +41,12 @@ public:
           dp[i][i + k] = dp[i + 1][i + k - 1];
         }
         if (dp[i][i + k]) {
-          substr = view.substr(i, k + 1);
+          palindrome = sv.substr(i, k + 1);
         }
       }
     }
 
-    return std::string(substr);
+    return std::string(palindrome);
   }
 };
 
@@ -61,29 +61,29 @@ class Solution {
 public:
   static std::string longestPalindrome(std::string s) {
     const int n = s.size();
-    const auto view = std::string_view(s);
+    std::string_view sv(s);
 
     auto expand = [&](int i, int j) {
-      while (i >= 0 && j < n && view[i] == view[j]) {
+      while (i >= 0 && j < n && sv[i] == sv[j]) {
         --i, ++j;
       }
-      return view.substr(i + 1, j - i - 1);
+      return sv.substr(i + 1, j - i - 1);
     };
 
-    auto substr = view.substr(0, 0);
+    auto palindrome = sv.substr(0, 0);
     for (int i = 0; i < n; ++i) {
-      auto odd = expand(i, i);
-      if (odd.size() > substr.size()) {
-        substr = odd;
+      const auto odd = expand(i, i);
+      if (odd.size() > palindrome.size()) {
+        palindrome = odd;
       }
 
-      auto even = expand(i, i + 1);
-      if (even.size() > substr.size()) {
-        substr = even;
+      const auto even = expand(i, i + 1);
+      if (even.size() > palindrome.size()) {
+        palindrome = even;
       }
     }
 
-    return std::string(substr);
+    return std::string(palindrome);
   }
 };
 
