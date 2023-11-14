@@ -6,6 +6,7 @@
 
 // Time: O(N^2)
 // Space: O(N)
+// Notes: [Manacher's Algorithm](https://cp-algorithms.com/string/manacher.html)
 
 namespace dp {
 
