@@ -1,0 +1,1 @@
+add_catch(test_unique_length_3_palindromic_subsequences test.cpp)
