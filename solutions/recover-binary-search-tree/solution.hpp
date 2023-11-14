@@ -89,7 +89,7 @@ namespace morris {
 // Space: O(1)
 class Visitor {
 public:
-  Visitor(TreeNode *&left, TreeNode *&right) : left_(left), right_(right) {}
+  Visitor(TreeNode **left, TreeNode **right) : left_(*left), right_(*right) {}
 
   void explore(TreeNode *node) {
     if (prev_ && prev_->val > node->val) {
@@ -134,7 +134,7 @@ class Solution {
 public:
   static void recoverTree(TreeNode *root) {
     TreeNode *left = nullptr, *right = nullptr;
-    Visitor visitor(left, right);
+    Visitor visitor(&left, &right);
     MorrisTraversal(root, visitor);
     std::swap(left->val, right->val);
   }
