@@ -40,13 +40,20 @@ def cli() -> None:
     help="LeetCode Problem Slug",
 )
 @click.option(
+    "-l",
+    "--lang",
+    type=str,
+    default="cpp",
+    help="Programming Language Slug",
+)
+@click.option(
     "-d",
     "--daily",
     is_flag=True,
     default=False,
     help="Get Problem of day",
 )
-def pull(problem_id: int, slug: str, daily: bool) -> None:
+def pull(problem_id: int, slug: str, lang: str, daily: bool) -> None:
     client = Client()
     if problem_id is not None:
         data = client.question_list(limit=1, skip=problem_id - 1)
@@ -60,7 +67,7 @@ def pull(problem_id: int, slug: str, daily: bool) -> None:
 
     data = client.question_data(slug)
     problem = parse_problem(data)
-    create_problem_folder(problem)
+    create_problem_folder(problem, lang)
 
 
 @cli.command()

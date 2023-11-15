@@ -6,7 +6,7 @@
 
 // N is the length of the string s, K = 10
 // Time: O(NK)
-// Space: O(4^K / W) W is the internal representation bitset, 32 or 64 bits
+// Space: O(4^K/W) W is the internal representation bitset, 32 or 64 bits
 
 class Solution {
 public:

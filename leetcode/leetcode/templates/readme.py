@@ -93,7 +93,7 @@ REGEX = r"""
 PATTERN = re.compile(REGEX)
 
 
-def get_problem(path: Path) -> dict[str, Any]:
+def get_cpp_problem(path: Path) -> dict[str, Any]:
     problem: dict[str, Any] = {}
     with open(path / META_FILE, "r") as file:
         problem.update(json.load(file))
@@ -101,6 +101,20 @@ def get_problem(path: Path) -> dict[str, Any]:
         for it in re.finditer(PATTERN, file.read()):
             problem.update(it.groupdict())
             break
+    slug = problem["slug"]
+    problem["code"] = [f"[C++](./solutions/{slug}/{SOLUTION_FILE})"]
+    return problem
+
+
+def get_extra_problem(path: Path, ext: str) -> dict[str, Any]:
+    problem: dict[str, Any] = {}
+    with open(path / META_FILE, "r") as file:
+        problem.update(json.load(file))
+    slug = problem["slug"]
+    if ext == "sql":
+        problem["code"] = [f"[SQL](./extra/{ext}/{slug}/solution.sql)"]
+    elif ext == "pandas":
+        problem["code"] = [f"[PY](./extra/{ext}/{slug}/solution.py)"]
     return problem
 
 
@@ -131,17 +145,23 @@ def format_complexity(complexity: str) -> str:
     complexity = complexity.replace(" ", "&nbsp;")
     complexity = re.sub("\^\(([^()]*)\)", "<sup>\\1</sup>", complexity)
     complexity = re.sub("\^(.)", "<sup>\\1</sup>", complexity)
-    # complexity = f"<sub><sup>{complexity}</sub></sup>"
     return complexity
 
 
 def update_readme_table() -> None:
-    problems: list[dict[str, Any]] = []
+    problems: dict[int, dict[str, Any]] = {}
     for path in sorted(glob("./solutions/*")):
-        problem = get_problem(Path(path))
-        problems.append(problem)
+        problem = get_cpp_problem(Path(path))
+        problems[int(problem["id"])] = problem
 
-    problems.sort(key=lambda x: int(x["id"]))
+    for ext in ["sql", "pandas"]:
+        for path in sorted(glob(f"./extra/{ext}/*")):
+            problem = get_extra_problem(Path(path), ext)
+            problem_id = int(problem["id"])
+            if problem_id in problems:
+                problems[problem_id]["code"].extend(problem["code"])
+            else:
+                problems[problem_id] = problem
 
     with open(README_FILE, mode="r") as file:
         lines = file.readlines()
@@ -157,8 +177,7 @@ def update_readme_table() -> None:
         file.write("|-|-----|:--:|----------|:----------:|----|-----|\n")
 
         tags_colors = get_colors(saturation=0.6, value=0.5)
-        for problem in problems:
-            problem_id = problem["id"]
+        for problem_id, problem in sorted(problems.items()):
             title = problem["title"]
             slug = problem["slug"]
             url = f"https://leetcode.com/problems/{slug}/"
@@ -177,14 +196,15 @@ def update_readme_table() -> None:
                 badge(tag=tag, color=tags_colors[TAGS.index(tag)])
                 for tag in problem["tags"]
             ]
-            space = format_complexity(problem["space"] or "")
-            time = format_complexity(problem["time"] or "")
+            space = format_complexity(problem.get("space") or "")
+            time = format_complexity(problem.get("time") or "")
             complexity = f"{time} / {space}" if time else ""
-            notes = problem["notes"] or ""
+            notes = problem.get("notes") or ""
+            code = ", ".join(problem["code"])
             file.write(
                 f"| {problem_id}. "
                 f"| [{title}]({url}) "
-                f"| [C++](./solutions/{slug}/solution.hpp) "
+                f"| {code} "
                 f"| {difficulty_badge} "
                 f"| {complexity}"
                 f"| {' '.join(tags)} "

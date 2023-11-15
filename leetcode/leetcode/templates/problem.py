@@ -266,6 +266,12 @@ def parse_problem(data: dict[str, Any]) -> Problem:
 
     snippets = {s["langSlug"]: s["code"] for s in question["codeSnippets"]}
 
+    solution_class = None
+    try:
+        solution_class = parse_cls(json.loads(question["metaData"]))
+    except Exception as e:
+        print("Failed to parse solution class:", e)
+
     return Problem(
         id=question["questionId"],
         frontend_id=question["questionFrontendId"],
@@ -274,7 +280,7 @@ def parse_problem(data: dict[str, Any]) -> Problem:
         difficulty=question["difficulty"],
         content=content,
         code_snippets=snippets,
-        cls=parse_cls(json.loads(question["metaData"])),
+        cls=solution_class,
         test_examples=question["exampleTestcaseList"],
         system_design="systemdesign" in question["metaData"],
         tags=[tag["name"] for tag in question["topicTags"]],
