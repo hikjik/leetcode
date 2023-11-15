@@ -1,0 +1,1 @@
+add_catch(test_maximum_element_after_decreasing_and_rearranging test.cpp)
