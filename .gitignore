@@ -4,5 +4,7 @@ venv
 .cache
 solutions/**/description.md
 solutions/**/meta.json
+extra/**/description.md
+extra/**/meta.json
 .env
 *.egg-info/
