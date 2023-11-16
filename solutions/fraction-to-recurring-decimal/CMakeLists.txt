@@ -1,0 +1,1 @@
+add_catch(test_fraction_to_recurring_decimal test.cpp)
