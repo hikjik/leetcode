@@ -55,10 +55,25 @@ def create_problem_folder_pandas(problem: Problem) -> None:
         file.write(problem.code_snippets["pythondata"])
 
 
+def create_problem_folder_bash(problem: Problem) -> None:
+    path = Path("extra") / "bash" / Path(problem.title_slug)
+    if Path.exists(path):
+        print(f"Already exists: {path / 'solution.sh'}")
+        return
+
+    path.mkdir()
+
+    create_meta_file(path, problem)
+    create_description_file(path, problem)
+    with open(path / "solution.sh", "w") as file:
+        file.write(problem.code_snippets["bash"])
+
+
 def create_problem_folder(problem: Problem, lang: str = "cpp") -> None:
     create = {
         "cpp": create_problem_folder_cpp,
         "sql": create_problem_folder_sql,
         "pandas": create_problem_folder_pandas,
+        "bash": create_problem_folder_bash,
     }[lang]
     create(problem)
