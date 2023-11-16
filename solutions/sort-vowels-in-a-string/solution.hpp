@@ -9,12 +9,12 @@
 
 class Solution {
 public:
-  inline static const string kVowels = "AEIOUaeiou";
+  inline static const std::string kVowels = "AEIOUaeiou";
 
-  bool isVowel(char c) { return kVowels.find(c) != string::npos; }
+  static bool isVowel(char c) { return kVowels.find(c) != std::string::npos; }
 
-  string sortVowels(string s) {
-    unordered_map<char, int> counter;
+  static std::string sortVowels(std::string s) {
+    std::unordered_map<char, int> counter;
     for (auto c : s) {
       if (isVowel(c)) {
         ++counter[c];
