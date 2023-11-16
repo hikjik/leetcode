@@ -18,7 +18,7 @@ class Solution {
 public:
   static std::string longestPalindrome(std::string s) {
     const int n = s.size();
-    std::string_view sv(s);
+    const std::string_view sv(s);
 
     auto palindrome = sv.substr(0, 0);
     std::vector dp(n, std::vector<bool>(n));
@@ -61,7 +61,7 @@ class Solution {
 public:
   static std::string longestPalindrome(std::string s) {
     const int n = s.size();
-    std::string_view sv(s);
+    const std::string_view sv(s);
 
     auto expand = [&](int i, int j) {
       while (i >= 0 && j < n && sv[i] == sv[j]) {
