@@ -1,13 +1,12 @@
 import pandas as pd
 
 
-def department_highest_salary(
+def top_three_salaries(
     employee: pd.DataFrame, department: pd.DataFrame
 ) -> pd.DataFrame:
+    rank = employee.groupby("departmentId").salary.rank(method="dense", ascending=False)
     return (
-        employee.groupby("departmentId")
-        .apply(lambda x: x[x.salary == x.salary.max()])
-        .reset_index(drop=True)
+        employee[rank <= 3]
         .merge(department, left_on="departmentId", right_on="id")
         .rename(
             columns={"name_y": "Department", "name_x": "Employee", "salary": "Salary"}
