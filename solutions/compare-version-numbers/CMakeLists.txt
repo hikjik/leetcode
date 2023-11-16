@@ -1,0 +1,1 @@
+add_catch(test_compare_version_numbers test.cpp)
