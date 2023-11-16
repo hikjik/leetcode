@@ -1,0 +1,1 @@
+add_catch(test_find_unique_binary_string test.cpp)
