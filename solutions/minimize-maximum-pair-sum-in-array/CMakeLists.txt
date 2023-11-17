@@ -1,0 +1,1 @@
+add_catch(test_minimize_maximum_pair_sum_in_array test.cpp)
