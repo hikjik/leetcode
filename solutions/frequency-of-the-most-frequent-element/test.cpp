@@ -27,8 +27,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[nums, k, expected] : test_cases) {
-    const auto actual = Solution::maxFrequency(nums, k);
-    REQUIRE(expected == actual);
+  SECTION("Sliding Window") {
+    for (const auto &[nums, k, expected] : test_cases) {
+      const auto actual = sliding_window::Solution::maxFrequency(nums, k);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Sliding Window + Counting Sort") {
+    for (const auto &[nums, k, expected] : test_cases) {
+      const auto actual = counting_sort::Solution::maxFrequency(nums, k);
+      REQUIRE(expected == actual);
+    }
   }
 }
