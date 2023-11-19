@@ -83,6 +83,7 @@ TAGS = [
 ]
 
 README_FILE = "README.md"
+PROBLEM_LIST_FILE = "PROBLEM_LIST.md"
 
 REGEX = r"""
 //\s*Time:\s*(?P<time>O\(.*\))?.*
@@ -168,18 +169,25 @@ def update_readme_table() -> None:
     with open(README_FILE, mode="r") as file:
         lines = file.readlines()
 
-    with open(README_FILE, mode="w") as file:
+    with open(README_FILE, mode="w") as readme_file, open(
+        PROBLEM_LIST_FILE, mode="w"
+    ) as list_file:
         for line in lines:
-            file.write(line)
-            if line.startswith("## Accepted solution"):
+            readme_file.write(line)
+            if line.startswith("<!-- accepted solution table -->"):
                 break
 
-        file.write("\n")
-        file.write("|№|Title|Code|Difficulty|Time / Space|Tags|Notes|\n")
-        file.write("|-|-----|:--:|----------|:----------:|----|-----|\n")
+        readme_file.write("\n")
+        readme_file.write("|№|Title|Code|Difficulty|Time / Space|Tags|Notes|\n")
+        readme_file.write("|-|-----|:--:|----------|:----------:|----|-----|\n")
+
+        list_file.write("## Accepted solution\n")
+        list_file.write("\n")
+        list_file.write("|№|Title|Code|Difficulty|Time / Space|Tags|Notes|\n")
+        list_file.write("|-|-----|:--:|----------|:----------:|----|-----|\n")
 
         tags_colors = get_colors(saturation=0.6, value=0.5)
-        for problem_id, problem in sorted(problems.items()):
+        for i, (problem_id, problem) in enumerate(sorted(problems.items())):
             title = problem["title"]
             slug = problem["slug"]
             url = f"https://leetcode.com/problems/{slug}/"
@@ -203,7 +211,17 @@ def update_readme_table() -> None:
             complexity = f"{time} / {space}" if time else ""
             notes = problem.get("notes") or ""
             code = ", ".join(problem["code"])
-            file.write(
+            if i < 1000:
+                readme_file.write(
+                    f"| {problem_id}. "
+                    f"| [{title}]({url}) "
+                    f"| {code} "
+                    f"| {difficulty_badge} "
+                    f"| {complexity}"
+                    f"| {' '.join(tags)} "
+                    f"| {notes} |\n"
+                )
+            list_file.write(
                 f"| {problem_id}. "
                 f"| [{title}]({url}) "
                 f"| {code} "
