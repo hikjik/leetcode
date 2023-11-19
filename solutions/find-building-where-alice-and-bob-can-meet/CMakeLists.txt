@@ -1,0 +1,1 @@
+add_catch(test_find_building_where_alice_and_bob_can_meet test.cpp)
