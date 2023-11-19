@@ -1,0 +1,1 @@
+add_catch(test_make_three_strings_equal test.cpp)
