@@ -1,0 +1,1 @@
+add_catch(test_separate_black_and_white_balls test.cpp)
