@@ -1,0 +1,1 @@
+add_catch(test_minimum_moves_to_equal_array_elements_ii test.cpp)
