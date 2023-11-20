@@ -1,0 +1,1 @@
+add_catch(test_number_of_pairs_satisfying_inequality test.cpp)
