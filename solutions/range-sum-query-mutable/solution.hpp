@@ -80,12 +80,13 @@ namespace segment_tree {
 template <typename ValueType, typename BinaryOp> class SegmentTree {
 public:
   // O(N)
-  SegmentTree(size_t size, BinaryOp op, ValueType init)
+  SegmentTree(size_t size, BinaryOp op = {}, ValueType init = {})
       : size_(size), data_(2 * size_), op_(op), init_(init) {}
 
   // O(N)
   template <typename Iterator>
-  SegmentTree(Iterator first, Iterator last, BinaryOp op, ValueType init)
+  SegmentTree(Iterator first, Iterator last, BinaryOp op = {},
+              ValueType init = {})
       : SegmentTree(std::distance(first, last), op, init) {
     std::copy(first, last, data_.begin() + size_);
     for (int i = size_ - 1; i > 0; --i) {
@@ -138,8 +139,7 @@ private:
 
 class NumArray {
 public:
-  NumArray(const std::vector<int> &nums)
-      : tree(nums.begin(), nums.end(), {}, 0) {}
+  NumArray(const std::vector<int> &nums) : tree(nums.begin(), nums.end()) {}
 
   void update(int index, int val) { tree.Set(index, val); }
 
