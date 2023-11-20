@@ -1,0 +1,1 @@
+add_catch(test_maximum_balanced_subsequence_sum test.cpp)
