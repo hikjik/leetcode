@@ -18,10 +18,10 @@ public:
   static std::vector<std::string>
   findAllConcatenatedWordsInADict(const std::vector<std::string> &words) {
     std::unordered_set<std::string_view> wordDict(words.begin(), words.end());
-    std::unordered_map<std::string_view, bool> memo;
 
     std::vector<std::string> ans;
     for (std::string_view sv : words) {
+      std::vector<char> memo(sv.size(), -1);
       if (isConcatenatedWord(sv, wordDict, &memo)) {
         ans.emplace_back(sv);
       }
@@ -33,19 +33,24 @@ private:
   static bool
   isConcatenatedWord(std::string_view s,
                      const std::unordered_set<std::string_view> &wordDict,
-                     std::unordered_map<std::string_view, bool> *memo) {
-    if (auto it = memo->find(s); it != memo->end()) {
-      return it->second;
+                     std::vector<char> *memo) {
+    if (s.empty()) {
+      return true;
     }
-    auto &ans = (*memo)[s];
-    for (int i = 1; i < std::ssize(s); ++i) {
-      if (wordDict.contains(s.substr(0, i)) &&
-          (wordDict.contains(s.substr(i)) ||
-           isConcatenatedWord(s.substr(i), wordDict, memo))) {
-        return ans = true;
+    const int n = s.size();
+
+    auto &ans = (*memo)[n - 1];
+    if (ans == -1) {
+      ans = false;
+      for (int i = 0; i <= n - (n == std::ssize(*memo)); ++i) {
+        if (wordDict.contains(s.substr(0, i)) &&
+            isConcatenatedWord(s.substr(i), wordDict, memo)) {
+          ans = true;
+          break;
+        }
       }
     }
-    return ans = false;
+    return ans;
   }
 };
 
