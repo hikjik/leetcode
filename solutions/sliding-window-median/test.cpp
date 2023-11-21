@@ -21,6 +21,11 @@ TEST_CASE("Simple") {
           .expected{2.00000, 3.00000, 3.00000, 3.00000, 2.00000, 3.00000,
                     2.00000},
       },
+      {
+          .nums{1, 2},
+          .k = 1,
+          .expected{1.00000, 2.00000},
+      },
   };
 
   SECTION("Ordered Set") {
@@ -30,9 +35,23 @@ TEST_CASE("Simple") {
     }
   }
 
-  SECTION("Multi Set") {
+  SECTION("Two MultiSet") {
+    for (const auto &[nums, k, expected] : test_cases) {
+      const auto actual = two_multiset::Solution::medianSlidingWindow(nums, k);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("MultiSet") {
     for (const auto &[nums, k, expected] : test_cases) {
       const auto actual = multiset::Solution::medianSlidingWindow(nums, k);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Two heap") {
+    for (const auto &[nums, k, expected] : test_cases) {
+      const auto actual = heap::Solution::medianSlidingWindow(nums, k);
       REQUIRE(expected == actual);
     }
   }
