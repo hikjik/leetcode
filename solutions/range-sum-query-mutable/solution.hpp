@@ -9,67 +9,74 @@
 namespace fenwick_tree {
 
 // Space: O(N)
-class BinaryIndexedTree {
+template <typename T = int> class BinaryIndexedTree {
 public:
-  // O(N)
-  explicit BinaryIndexedTree(const std::vector<int> &nums)
-      : tree(nums.size() + 1) {
-    for (size_t idx = 1; idx < tree.size(); ++idx) {
-      tree[idx] += nums[idx - 1];
-      const auto p = idx + RSB(idx);
+  explicit BinaryIndexedTree(size_t size) : tree(size + 1) {}
+
+  template <typename U>
+  explicit BinaryIndexedTree(const std::vector<U> &nums)
+      : BinaryIndexedTree(nums.size()) {
+    for (size_t i = 1; i < tree.size(); ++i) {
+      tree[i] += nums[i - 1];
+      const auto p = i + RSB(i);
       if (p < tree.size()) {
-        tree[p] += tree[idx];
+        tree[p] += tree[i];
       }
     }
   }
 
-  // O(logN)
-  void Set(size_t idx, int value) {
-    const auto delta = value - GetRangeSum(idx, idx);
-    Add(idx, delta);
+  void Set(size_t i, T value) {
+    const auto delta = value - GetRangeSum(i, i);
+    Add(i, delta);
   }
 
-  // O(logN)
-  long long GetRangeSum(size_t left, size_t right) const {
+  T GetRangeSum(size_t left, size_t right) const {
     return GetPrefixSum(right) - GetPrefixSum(left - 1);
   }
 
-  // O(logN)
-  void Add(size_t idx, int delta) {
-    while (idx < tree.size()) {
-      tree[idx] += delta;
-      idx += RSB(idx);
+  void Add(size_t i, T delta) {
+    for (++i; i < tree.size(); i += RSB(i)) {
+      tree[i] += delta;
     }
   }
 
-  // O(logN)
-  long long GetPrefixSum(size_t idx) const {
-    long long sum = 0;
-    while (idx > 0) {
-      sum += tree[idx];
-      idx -= RSB(idx);
+  T GetPrefixSum(size_t i) const {
+    T sum = 0;
+    for (++i; i; i -= RSB(i)) {
+      sum += tree[i];
     }
     return sum;
   }
 
-private:
-  size_t RSB(size_t idx) const { return -idx & idx; }
+  size_t UpperBound(T value) const {
+    size_t i = 0;
+    for (size_t j = std::bit_floor(tree.size() - 1); j; j >>= 1) {
+      if (i + j < tree.size() && tree[i + j] <= value) {
+        value -= tree[i + j];
+        i += j;
+      }
+    }
+    return i;
+  }
 
-  std::vector<long long> tree;
+private:
+  size_t RSB(size_t i) const { return -i & i; }
+
+  std::vector<T> tree;
 };
 
 class NumArray {
 public:
   NumArray(const std::vector<int> &nums) : tree(nums) {}
 
-  void update(int index, int val) { tree.Set(index + 1, val); }
+  void update(int index, int val) { tree.Set(index, val); }
 
   int sumRange(int left, int right) const {
-    return tree.GetRangeSum(left + 1, right + 1);
+    return tree.GetRangeSum(left, right);
   }
 
 private:
-  BinaryIndexedTree tree;
+  BinaryIndexedTree<long long> tree;
 };
 
 } // namespace fenwick_tree

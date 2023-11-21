@@ -86,50 +86,60 @@ namespace fenwick_tree {
 
 // Time: O(NlogN)
 // Space: O(M)
-class BinaryIndexedTree {
+template <typename T = int> class BinaryIndexedTree {
 public:
-  explicit BinaryIndexedTree(int size) : tree(size + 1) {}
+  explicit BinaryIndexedTree(size_t size) : tree(size + 1) {}
 
-  explicit BinaryIndexedTree(const std::vector<int> &nums)
+  template <typename U>
+  explicit BinaryIndexedTree(const std::vector<U> &nums)
       : BinaryIndexedTree(nums.size()) {
-    for (size_t idx = 1; idx < tree.size(); ++idx) {
-      tree[idx] += nums[idx - 1];
-      const auto p = idx + RSB(idx);
+    for (size_t i = 1; i < tree.size(); ++i) {
+      tree[i] += nums[i - 1];
+      const auto p = i + RSB(i);
       if (p < tree.size()) {
-        tree[p] += tree[idx];
+        tree[p] += tree[i];
       }
     }
   }
 
-  void Set(size_t idx, int value) {
-    const auto delta = value - GetRangeSum(idx, idx);
-    Add(idx, delta);
+  void Set(size_t i, T value) {
+    const auto delta = value - GetRangeSum(i, i);
+    Add(i, delta);
   }
 
-  int GetRangeSum(size_t left, size_t right) const {
+  T GetRangeSum(size_t left, size_t right) const {
     return GetPrefixSum(right) - GetPrefixSum(left - 1);
   }
 
-  void Add(size_t idx, int delta) {
-    while (idx < tree.size()) {
-      tree[idx] += delta;
-      idx += RSB(idx);
+  void Add(size_t i, T delta) {
+    for (++i; i < tree.size(); i += RSB(i)) {
+      tree[i] += delta;
     }
   }
 
-  int GetPrefixSum(size_t idx) const {
-    int sum = 0;
-    while (idx > 0) {
-      sum += tree[idx];
-      idx -= RSB(idx);
+  T GetPrefixSum(size_t i) const {
+    T sum = 0;
+    for (++i; i; i -= RSB(i)) {
+      sum += tree[i];
     }
     return sum;
   }
 
-private:
-  size_t RSB(size_t idx) const { return -idx & idx; }
+  size_t UpperBound(T value) const {
+    size_t i = 0;
+    for (size_t j = std::bit_floor(tree.size() - 1); j; j >>= 1) {
+      if (i + j < tree.size() && tree[i + j] <= value) {
+        value -= tree[i + j];
+        i += j;
+      }
+    }
+    return i;
+  }
 
-  std::vector<int> tree;
+private:
+  size_t RSB(size_t i) const { return -i & i; }
+
+  std::vector<T> tree;
 };
 
 class Solution {
@@ -141,8 +151,8 @@ public:
     BinaryIndexedTree bit(2 * kOffset);
     long long ans = 0;
     for (int i = 0; i < std::ssize(nums1); ++i) {
-      ans += bit.GetPrefixSum(nums1[i] - nums2[i] + diff + kOffset);
-      bit.Add(nums1[i] - nums2[i] + kOffset, 1);
+      ans += bit.GetPrefixSum(nums1[i] - nums2[i] + diff + kOffset - 1);
+      bit.Add(nums1[i] - nums2[i] + kOffset - 1, 1);
     }
     return ans;
   }
@@ -215,11 +225,11 @@ public:
 
   static long long numberOfPairs(const std::vector<int> &nums1,
                                  const std::vector<int> &nums2, int diff) {
-    SegmentTree<int, std::plus<int>> tree(2 * kOffset + 1);
+    SegmentTree<int, std::plus<int>> tree(2 * kOffset);
     long long ans = 0;
     for (int i = 0; i < std::ssize(nums1); ++i) {
-      ans += tree.RangeQuery(0, nums1[i] - nums2[i] + diff + kOffset);
-      tree.Add(nums1[i] - nums2[i] + kOffset, 1);
+      ans += tree.RangeQuery(0, nums1[i] - nums2[i] + diff + kOffset - 1);
+      tree.Add(nums1[i] - nums2[i] + kOffset - 1, 1);
     }
     return ans;
   }
