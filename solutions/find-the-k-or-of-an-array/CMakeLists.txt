@@ -1,0 +1,1 @@
+add_catch(test_find_the_k_or_of_an_array test.cpp)
