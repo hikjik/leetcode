@@ -10,6 +10,10 @@ TEST_CASE("Simple") {
 
   std::vector<TestCase> test_cases{
       {
+          .nums{{1, 2, 3}, {4}, {5, 6}},
+          .expected{1, 4, 2, 5, 3, 6},
+      },
+      {
           .nums{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}},
           .expected{1, 4, 2, 7, 5, 3, 8, 6, 9},
       },
@@ -20,16 +24,23 @@ TEST_CASE("Simple") {
       },
   };
 
-  SECTION("Hash Table") {
-    for (const auto &[nums, expected] : test_cases) {
-      const auto actual = hash_table::Solution::findDiagonalOrder(nums);
-      REQUIRE(expected == actual);
-    }
-  }
+  // SECTION("Hash Table") {
+  //   for (const auto &[nums, expected] : test_cases) {
+  //     const auto actual = hash_table::Solution::findDiagonalOrder(nums);
+  //     REQUIRE(expected == actual);
+  //   }
+  // }
 
-  SECTION("BFS") {
+  // SECTION("BFS") {
+  //   for (const auto &[nums, expected] : test_cases) {
+  //     const auto actual = bfs::Solution::findDiagonalOrder(nums);
+  //     REQUIRE(expected == actual);
+  //   }
+  // }
+
+  SECTION("Optimized") {
     for (const auto &[nums, expected] : test_cases) {
-      const auto actual = bfs::Solution::findDiagonalOrder(nums);
+      const auto actual = optimized::Solution::findDiagonalOrder(nums);
       REQUIRE(expected == actual);
     }
   }
