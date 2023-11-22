@@ -34,10 +34,10 @@ TEST_CASE("Simple") {
     }
   }
 
-  // SECTION("Iterative") {
-  //   for (const auto &[s, expected] : test_cases) {
-  //     const auto actual = iterative::Solution::myAtoi(s);
-  //     REQUIRE(expected == actual);
-  //   }
-  // }
+  SECTION("Iterative") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = iterative::Solution::myAtoi(s);
+      REQUIRE(expected == actual);
+    }
+  }
 }

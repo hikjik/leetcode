@@ -24,19 +24,19 @@ TEST_CASE("Simple") {
       },
   };
 
-  // SECTION("Hash Table") {
-  //   for (const auto &[nums, expected] : test_cases) {
-  //     const auto actual = hash_table::Solution::findDiagonalOrder(nums);
-  //     REQUIRE(expected == actual);
-  //   }
-  // }
+  SECTION("Hash Table") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = hash_table::Solution::findDiagonalOrder(nums);
+      REQUIRE(expected == actual);
+    }
+  }
 
-  // SECTION("BFS") {
-  //   for (const auto &[nums, expected] : test_cases) {
-  //     const auto actual = bfs::Solution::findDiagonalOrder(nums);
-  //     REQUIRE(expected == actual);
-  //   }
-  // }
+  SECTION("BFS") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = bfs::Solution::findDiagonalOrder(nums);
+      REQUIRE(expected == actual);
+    }
+  }
 
   SECTION("Optimized") {
     for (const auto &[nums, expected] : test_cases) {

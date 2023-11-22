@@ -19,19 +19,19 @@ TEST_CASE("Simple") {
       },
   };
 
-  // SECTION("Memoization") {
-  //   for (const auto &[dungeon, expected] : test_cases) {
-  //     const auto actual = memo::Solution::calculateMinimumHP(dungeon);
-  //     REQUIRE(expected == actual);
-  //   }
-  // }
+  SECTION("Memoization") {
+    for (const auto &[dungeon, expected] : test_cases) {
+      const auto actual = memo::Solution::calculateMinimumHP(dungeon);
+      REQUIRE(expected == actual);
+    }
+  }
 
-  // SECTION("Tabulation") {
-  //   for (const auto &[dungeon, expected] : test_cases) {
-  //     const auto actual = dp::Solution::calculateMinimumHP(dungeon);
-  //     REQUIRE(expected == actual);
-  //   }
-  // }
+  SECTION("Tabulation") {
+    for (const auto &[dungeon, expected] : test_cases) {
+      const auto actual = dp::Solution::calculateMinimumHP(dungeon);
+      REQUIRE(expected == actual);
+    }
+  }
 
   SECTION("Optimized") {
     for (const auto &[dungeon, expected] : test_cases) {

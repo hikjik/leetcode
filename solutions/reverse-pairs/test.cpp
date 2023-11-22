@@ -42,8 +42,7 @@ TEST_CASE("Simple") {
 
   SECTION("Segment Tree") {
     for (const auto &[nums, expected] : test_cases) {
-      const auto actual =
-          segment_tree::Solution::reversePairs(nums);
+      const auto actual = segment_tree::Solution::reversePairs(nums);
       REQUIRE(expected == actual);
     }
   }

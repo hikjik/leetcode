@@ -24,12 +24,12 @@ TEST_CASE("Simple") {
 
   };
 
-  // SECTION("Tabulation") {
-  //   for (const auto &[s, expected] : test_cases) {
-  //     const auto actual = dp::Solution::minCut(s);
-  //     REQUIRE(expected == actual);
-  //   }
-  // }
+  SECTION("Tabulation") {
+    for (const auto &[s, expected] : test_cases) {
+      const auto actual = dp::Solution::minCut(s);
+      REQUIRE(expected == actual);
+    }
+  }
 
   SECTION("Manacher") {
     for (const auto &[s, expected] : test_cases) {
