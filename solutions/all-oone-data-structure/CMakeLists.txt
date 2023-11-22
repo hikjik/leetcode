@@ -1,0 +1,1 @@
+add_catch(test_all_oone_data_structure test.cpp)
