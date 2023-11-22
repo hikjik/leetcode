@@ -1,0 +1,1 @@
+add_catch(test_maximum_strong_pair_xor_i test.cpp)
