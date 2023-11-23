@@ -1,0 +1,1 @@
+add_catch(test_move_pieces_to_obtain_a_string test.cpp)
