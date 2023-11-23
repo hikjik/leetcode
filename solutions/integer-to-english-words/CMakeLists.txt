@@ -1,0 +1,1 @@
+add_catch(test_integer_to_english_words test.cpp)
