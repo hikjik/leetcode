@@ -25,8 +25,19 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[nums, l, r, expected] : test_cases) {
-    const auto actual = Solution::checkArithmeticSubarrays(nums, l, r);
-    REQUIRE(expected == actual);
+  SECTION("Sorting") {
+    for (const auto &[nums, l, r, expected] : test_cases) {
+      const auto actual =
+          sorting::Solution::checkArithmeticSubarrays(nums, l, r);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Hash Table") {
+    for (const auto &[nums, l, r, expected] : test_cases) {
+      const auto actual =
+          hash_table::Solution::checkArithmeticSubarrays(nums, l, r);
+      REQUIRE(expected == actual);
+    }
   }
 }

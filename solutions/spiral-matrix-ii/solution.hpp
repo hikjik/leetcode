@@ -8,26 +8,19 @@
 class Solution {
 public:
   static std::vector<std::vector<int>> generateMatrix(int n) {
-    std::vector matrix(n, std::vector<int>(n));
-    int r1 = 0, r2 = n, c1 = 0, c2 = n;
-    for (int value = 0; value < n * n;) {
-      for (int j = c1; j < c2 && r1 != r2; ++j) {
-        matrix[r1][j] = ++value;
+    static const std::vector<int> kDirs{0, 1, 0, -1, 0};
+
+    std::vector ans(n, std::vector<int>(n, -1));
+    int i = 0, j = 0;
+    int d = 0;
+    for (int value = 1; value <= n * n; ++value) {
+      ans[i][j] = value;
+      const auto r = i + kDirs[d], c = j + kDirs[d + 1];
+      if (r < 0 || r >= n || c < 0 || c >= n || ans[r][c] != -1) {
+        d = (d + 1) % 4;
       }
-      ++r1;
-      for (int i = r1; i < r2 && c1 != c2; ++i) {
-        matrix[i][c2 - 1] = ++value;
-      }
-      --c2;
-      for (int j = c2 - 1; j >= c1 && r1 != r2; --j) {
-        matrix[r2 - 1][j] = ++value;
-      }
-      --r2;
-      for (int i = r2 - 1; i >= r1 && c1 != c2; --i) {
-        matrix[i][c1] = ++value;
-      }
-      ++c1;
+      i += kDirs[d], j += kDirs[d + 1];
     }
-    return matrix;
+    return ans;
   }
 };

@@ -1,0 +1,1 @@
+add_catch(test_number_of_people_aware_of_a_secret test.cpp)

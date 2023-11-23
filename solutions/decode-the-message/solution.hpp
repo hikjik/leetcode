@@ -1,24 +1,27 @@
 #pragma once
 
-#include <algorithm>
+#include <ranges>
 #include <string>
 #include <unordered_map>
 
-// Time:
-// Space:
+// N is the length of the key
+// M is the length of the message
+// A is the size of the alphabet
+// Time: O(N+M)
+// Space: O(A+N)
 
 class Solution {
 public:
   static std::string decodeMessage(std::string key, std::string message) {
     std::unordered_map<char, char> table{{' ', ' '}};
-    for (auto c : key) {
+    for (auto s = 'a'; auto c : key) {
       if (!table.contains(c)) {
-        table[c] = 'a' + table.size() - 1;
+        table[c] = s++;
       }
     }
 
-    std::transform(message.begin(), message.end(), message.begin(),
-                   [&table](char c) { return table[c]; });
+    std::ranges::transform(message, message.begin(),
+                           [&](auto c) { return table[c]; });
     return message;
   }
 };
