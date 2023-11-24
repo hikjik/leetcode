@@ -1,0 +1,1 @@
+add_catch(test_count_of_smaller_numbers_after_self test.cpp)
