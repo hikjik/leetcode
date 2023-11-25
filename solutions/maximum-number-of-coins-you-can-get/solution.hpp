@@ -16,7 +16,7 @@ public:
     std::ranges::sort(piles);
 
     int ans = 0;
-    for (int i = piles.size() / 3; i < piles.size(); i += 2) {
+    for (int i = piles.size() / 3; i < std::ssize(piles); i += 2) {
       ans += piles[i];
     }
     return ans;
@@ -43,7 +43,7 @@ public:
     }
 
     int ans = 0;
-    for (int i = piles.size() / 3; i < piles.size(); i += 2) {
+    for (int i = piles.size() / 3; i < std::ssize(piles); i += 2) {
       ans += piles[i];
     }
     return ans;
