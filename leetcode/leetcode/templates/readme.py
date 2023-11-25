@@ -118,6 +118,8 @@ def get_extra_problem(path: Path, ext: str) -> dict[str, Any]:
         problem["code"] = [f"[PY](./extra/{ext}/{slug}/solution.py)"]
     elif ext == "bash":
         problem["code"] = [f"[SH](./extra/{ext}/{slug}/solution.sh)"]
+    elif ext == "js":
+        problem["code"] = [f"[JS](./extra/{ext}/{slug}/solution.js)"]
     return problem
 
 
@@ -157,7 +159,7 @@ def update_readme_table() -> None:
         problem = get_cpp_problem(Path(path))
         problems[int(problem["id"])] = problem
 
-    for ext in ["sql", "pandas", "bash"]:
+    for ext in ["sql", "pandas", "bash", "js"]:
         for path in sorted(glob(f"./extra/{ext}/*")):
             problem = get_extra_problem(Path(path), ext)
             problem_id = int(problem["id"])

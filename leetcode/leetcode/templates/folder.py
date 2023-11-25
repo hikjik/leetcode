@@ -55,6 +55,20 @@ def create_problem_folder_pandas(problem: Problem) -> None:
         file.write(problem.code_snippets["pythondata"])
 
 
+def create_problem_folder_js(problem: Problem) -> None:
+    path = Path("extra") / "js" / Path(problem.title_slug)
+    if Path.exists(path):
+        print(f"Already exists: {path / 'solution.js'}")
+        return
+
+    path.mkdir()
+
+    create_meta_file(path, problem)
+    create_description_file(path, problem)
+    with open(path / "solution.js", "w") as file:
+        file.write(problem.code_snippets["javascript"])
+
+
 def create_problem_folder_bash(problem: Problem) -> None:
     path = Path("extra") / "bash" / Path(problem.title_slug)
     if Path.exists(path):
@@ -75,5 +89,6 @@ def create_problem_folder(problem: Problem, lang: str = "cpp") -> None:
         "sql": create_problem_folder_sql,
         "pandas": create_problem_folder_pandas,
         "bash": create_problem_folder_bash,
+        "js": create_problem_folder_js,
     }[lang]
     create(problem)
