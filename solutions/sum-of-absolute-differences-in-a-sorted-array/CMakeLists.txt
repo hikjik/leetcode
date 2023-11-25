@@ -1,0 +1,1 @@
+add_catch(test_sum_of_absolute_differences_in_a_sorted_array test.cpp)
