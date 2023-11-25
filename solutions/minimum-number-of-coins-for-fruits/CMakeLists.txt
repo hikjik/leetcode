@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_coins_for_fruits test.cpp)
