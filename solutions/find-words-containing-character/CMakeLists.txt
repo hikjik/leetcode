@@ -1,0 +1,1 @@
+add_catch(test_find_words_containing_character test.cpp)
