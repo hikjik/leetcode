@@ -1,0 +1,1 @@
+add_catch(test_matrix_similarity_after_cyclic_shifts test.cpp)
