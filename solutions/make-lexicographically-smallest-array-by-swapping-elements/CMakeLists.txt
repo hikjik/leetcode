@@ -1,0 +1,1 @@
+add_catch(test_make_lexicographically_smallest_array_by_swapping_elements test.cpp)
