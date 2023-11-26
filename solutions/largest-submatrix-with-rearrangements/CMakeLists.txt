@@ -1,0 +1,1 @@
+add_catch(test_largest_submatrix_with_rearrangements test.cpp)
