@@ -1,0 +1,1 @@
+add_catch(test_partitioning_into_minimum_number_of_deci_binary_numbers test.cpp)
