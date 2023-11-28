@@ -1,0 +1,1 @@
+add_catch(test_strictly_palindromic_number test.cpp)
