@@ -1113,6 +1113,7 @@
 | 2621. | [Sleep](https://leetcode.com/problems/sleep/) | [JS](./extra/js/sleep/solution.js) | <img src='https://img.shields.io/badge/Easy-darkgreen?style=flat-square'/> | |  |  |
 | 2622. | [Cache With Time Limit](https://leetcode.com/problems/cache-with-time-limit/) | [JS](./extra/js/cache-with-time-limit/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
 | 2623. | [Memoize](https://leetcode.com/problems/memoize/) | [JS](./extra/js/memoize/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
+| 2624. | [Snail Traversal](https://leetcode.com/problems/snail-traversal/) | [JS](./extra/js/snail-traversal/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
 | 2625. | [Flatten Deeply Nested Array](https://leetcode.com/problems/flatten-deeply-nested-array/) | [JS](./extra/js/flatten-deeply-nested-array/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
 | 2626. | [Array Reduce Transformation](https://leetcode.com/problems/array-reduce-transformation/) | [JS](./extra/js/array-reduce-transformation/solution.js) | <img src='https://img.shields.io/badge/Easy-darkgreen?style=flat-square'/> | |  |  |
 | 2627. | [Debounce](https://leetcode.com/problems/debounce/) | [JS](./extra/js/debounce/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
