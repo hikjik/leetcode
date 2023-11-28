@@ -1,0 +1,1 @@
+add_catch(test_insert_greatest_common_divisors_in_linked_list test.cpp)
