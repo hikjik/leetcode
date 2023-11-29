@@ -1,0 +1,1 @@
+add_catch(test_convert_bst_to_greater_tree test.cpp)
