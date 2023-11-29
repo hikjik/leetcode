@@ -1,0 +1,1 @@
+add_catch(test_convert_an_array_into_a_2d_array_with_conditions test.cpp)
