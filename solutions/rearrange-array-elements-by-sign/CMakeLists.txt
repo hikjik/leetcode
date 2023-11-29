@@ -1,0 +1,1 @@
+add_catch(test_rearrange_array_elements_by_sign test.cpp)
