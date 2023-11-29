@@ -1,0 +1,1 @@
+add_catch(test_binary_search_tree_to_greater_sum_tree test.cpp)
