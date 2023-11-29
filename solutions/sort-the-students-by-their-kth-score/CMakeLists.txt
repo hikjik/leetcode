@@ -1,0 +1,1 @@
+add_catch(test_sort_the_students_by_their_kth_score test.cpp)
