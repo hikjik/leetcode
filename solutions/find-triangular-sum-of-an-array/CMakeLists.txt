@@ -1,0 +1,1 @@
+add_catch(test_find_triangular_sum_of_an_array test.cpp)
