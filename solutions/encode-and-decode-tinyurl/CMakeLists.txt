@@ -1,0 +1,1 @@
+add_catch(test_encode_and_decode_tinyurl test.cpp)
