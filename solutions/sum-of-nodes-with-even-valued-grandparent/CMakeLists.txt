@@ -1,0 +1,1 @@
+add_catch(test_sum_of_nodes_with_even_valued_grandparent test.cpp)
