@@ -1,0 +1,1 @@
+add_catch(test_balance_a_binary_search_tree test.cpp)
