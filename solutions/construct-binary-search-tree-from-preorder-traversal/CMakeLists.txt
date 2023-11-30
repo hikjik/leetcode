@@ -1,0 +1,1 @@
+add_catch(test_construct_binary_search_tree_from_preorder_traversal test.cpp)
