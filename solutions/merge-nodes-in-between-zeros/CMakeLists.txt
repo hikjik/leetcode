@@ -1,0 +1,1 @@
+add_catch(test_merge_nodes_in_between_zeros test.cpp)
