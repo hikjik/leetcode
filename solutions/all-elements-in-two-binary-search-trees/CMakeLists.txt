@@ -1,0 +1,1 @@
+add_catch(test_all_elements_in_two_binary_search_trees test.cpp)
