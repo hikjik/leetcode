@@ -1,0 +1,1 @@
+add_catch(test_sort_the_matrix_diagonally test.cpp)
