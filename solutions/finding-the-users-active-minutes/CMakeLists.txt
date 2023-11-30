@@ -1,0 +1,1 @@
+add_catch(test_finding_the_users_active_minutes test.cpp)
