@@ -1,0 +1,1 @@
+add_catch(test_number_of_laser_beams_in_a_bank test.cpp)
