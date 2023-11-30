@@ -1,14 +1,14 @@
 #pragma once
 
-// Time:
-// Space:
+// Time: O(logN)
+// Space: O(1)
 
 class Solution {
 public:
-  static int minimumOneBitOperations(int n) { return GrayCodeToBinary(n); }
+  static int minimumOneBitOperations(int n) { return grayCodeToBinary(n); }
 
 private:
-  static int GrayCodeToBinary(int n) {
+  static int grayCodeToBinary(int n) {
     int res = n;
     while (n) {
       n >>= 1;
