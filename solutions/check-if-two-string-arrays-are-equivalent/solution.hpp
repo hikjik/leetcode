@@ -1,46 +1,61 @@
 #pragma once
 
+#include <iterator>
+#include <numeric>
 #include <string>
 #include <vector>
 
-template <typename OuterIterator> class FlattenIterator {
-public:
-  using InnerIterator = typename OuterIterator::value_type::const_iterator;
-  using reference = typename InnerIterator::reference;
-  using pointer = typename InnerIterator::pointer;
+// Time: O(NK)
+// Space: O(1)
 
-  FlattenIterator(OuterIterator outer, OuterIterator outer_end)
-      : outer_(outer), outer_end_(outer_end) {
-    if (outer_ != outer_end_) {
-      inner_ = outer_->cbegin();
+namespace extra_space {
+
+// Time: O(NK)
+// Space: O(NK)
+class Solution {
+public:
+  static bool arrayStringsAreEqual(const std::vector<std::string> &words1,
+                                   const std::vector<std::string> &words2) {
+    return std::accumulate(words1.begin(), words1.end(), std::string{}) ==
+           std::accumulate(words2.begin(), words2.end(), std::string{});
+  }
+};
+
+} // namespace extra_space
+
+namespace flatten_iterator {
+
+// Time: O(NK)
+// Space: O(1)
+template <typename OuterIterator>
+class FlattenIterator
+    : public std::iterator<
+          std::input_iterator_tag,
+          typename OuterIterator::value_type::const_iterator::value_type> {
+public:
+  FlattenIterator(OuterIterator first, OuterIterator last)
+      : first(first), last(last) {
+    if (first != last) {
+      inner = first->cbegin();
     }
   }
 
-  reference operator*() const { return *inner_; }
-
-  pointer operator->() const { return &*inner_; }
+  auto operator*() const { return *inner; }
 
   FlattenIterator &operator++() {
-    if (++inner_ == outer_->cend()) {
-      if (++outer_ != outer_end_) {
-        inner_ = outer_->cbegin();
+    if (++inner == first->cend()) {
+      if (++first != last) {
+        inner = first->cbegin();
       }
     }
     return *this;
   }
 
-  FlattenIterator operator++(int) {
-    FlattenIterator it(*this);
-    ++*this;
-    return it;
-  }
-
   bool operator==(FlattenIterator other) const {
-    if (outer_ != other.outer_) {
+    if (first != other.first) {
       return false;
     }
-    if (outer_ != outer_end_ && other.outer_ != other.outer_end_ &&
-        inner_ != other.inner_) {
+    if (first != last && other.first != other.last && inner != other.inner) {
       return false;
     }
     return true;
@@ -49,8 +64,10 @@ public:
   bool operator!=(FlattenIterator other) const { return !(*this == other); }
 
 private:
-  OuterIterator outer_, outer_end_;
-  InnerIterator inner_;
+  using InnerIterator = typename OuterIterator::value_type::const_iterator;
+
+  OuterIterator first, last;
+  InnerIterator inner;
 };
 
 template <class Iterator> class Range {
@@ -58,7 +75,6 @@ public:
   Range(Iterator begin, Iterator end) : begin_(begin), end_(end) {}
 
   Iterator begin() const { return begin_; }
-
   Iterator end() const { return end_; }
 
 private:
@@ -70,21 +86,13 @@ template <typename Container> auto FlattenRange(const Container &container) {
                FlattenIterator(container.cend(), container.cend()));
 }
 
-// Time:
-// Space:
-
 class Solution {
 public:
   static bool arrayStringsAreEqual(const std::vector<std::string> &words1,
                                    const std::vector<std::string> &words2) {
-    auto range1 = FlattenRange(words1);
-    auto range2 = FlattenRange(words2);
-    auto it1 = range1.begin(), it2 = range2.begin();
-    while (it1 != range1.end() && it2 != range2.end()) {
-      if (*it1++ != *it2++) {
-        return false;
-      }
-    }
-    return it1 == range1.end() && it2 == range2.end();
+    auto r1 = FlattenRange(words1), r2 = FlattenRange(words2);
+    return std::equal(r1.begin(), r1.end(), r2.begin(), r2.end());
   }
 };
+
+} // namespace flatten_iterator

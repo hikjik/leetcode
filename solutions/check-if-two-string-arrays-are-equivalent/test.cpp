@@ -27,8 +27,19 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[word1, word2, expected] : test_cases) {
-    const auto actual = Solution::arrayStringsAreEqual(word1, word2);
-    REQUIRE(expected == actual);
+  SECTION("Extra Space") {
+    for (const auto &[word1, word2, expected] : test_cases) {
+      const auto actual =
+          extra_space::Solution::arrayStringsAreEqual(word1, word2);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Iterator") {
+    for (const auto &[word1, word2, expected] : test_cases) {
+      const auto actual =
+          flatten_iterator::Solution::arrayStringsAreEqual(word1, word2);
+      REQUIRE(expected == actual);
+    }
   }
 }
