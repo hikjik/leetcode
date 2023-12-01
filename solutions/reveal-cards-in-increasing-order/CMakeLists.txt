@@ -1,0 +1,1 @@
+add_catch(test_reveal_cards_in_increasing_order test.cpp)
