@@ -1,0 +1,1 @@
+add_catch(test_count_number_of_distinct_integers_after_reverse_operations test.cpp)
