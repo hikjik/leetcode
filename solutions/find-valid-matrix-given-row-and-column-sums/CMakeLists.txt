@@ -1,0 +1,1 @@
+add_catch(test_find_valid_matrix_given_row_and_column_sums test.cpp)
