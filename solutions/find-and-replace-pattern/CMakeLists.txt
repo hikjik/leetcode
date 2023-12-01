@@ -1,0 +1,1 @@
+add_catch(test_find_and_replace_pattern test.cpp)
