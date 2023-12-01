@@ -1,0 +1,1 @@
+add_catch(test_find_elements_in_a_contaminated_binary_tree test.cpp)
