@@ -1,0 +1,1 @@
+add_catch(test_count_sorted_vowel_strings test.cpp)
