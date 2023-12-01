@@ -3,20 +3,18 @@
 #include <string>
 #include <unordered_map>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
-  static bool isIsomorphic(std::string s, std::string t) {
-    std::unordered_map<char, size_t> s_map;
-    std::unordered_map<char, size_t> t_map;
-    for (size_t i = 0; i < s.size(); ++i) {
-      if (s_map[s[i]] != t_map[t[i]]) {
+  static bool isIsomorphic(std::string s1, std::string s2) {
+    std::unordered_map<char, int> map1, map2;
+    for (int i = 0; i < std::ssize(s1); ++i) {
+      if (map1[s1[i]] != map2[s2[i]]) {
         return false;
       }
-      s_map[s[i]] = i + 1;
-      t_map[t[i]] = i + 1;
+      map1[s1[i]] = map2[s2[i]] = i + 1;
     }
     return true;
   }
