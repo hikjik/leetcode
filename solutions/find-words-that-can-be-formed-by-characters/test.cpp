@@ -22,8 +22,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[words, chars, expected] : test_cases) {
-    const auto actual = Solution::countCharacters(words, chars);
-    REQUIRE(expected == actual);
+  SECTION("Sorting") {
+    for (const auto &[words, chars, expected] : test_cases) {
+      const auto actual = sorting::Solution::countCharacters(words, chars);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Counting") {
+    for (const auto &[words, chars, expected] : test_cases) {
+      const auto actual = counting::Solution::countCharacters(words, chars);
+      REQUIRE(expected == actual);
+    }
   }
 }
