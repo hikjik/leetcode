@@ -2,19 +2,18 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static ListNode *removeElements(ListNode *head, int val) {
-    auto dummy_node = ListNode(0, head);
-    auto dummy = &dummy_node;
+    ListNode dummy(0, head);
 
-    auto node = dummy;
+    auto *node = &dummy;
     while (node && node->next) {
       if (node->next->val == val) {
-        auto next = node->next->next;
+        auto *next = node->next->next;
         delete node->next;
         node->next = next;
       } else {
@@ -22,6 +21,6 @@ public:
       }
     }
 
-    return dummy->next;
+    return dummy.next;
   }
 };
