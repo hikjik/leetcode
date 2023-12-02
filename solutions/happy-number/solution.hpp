@@ -1,28 +1,61 @@
 #pragma once
 
+#include <cmath>
 #include <unordered_set>
 
-// Time:
-// Space:
+// Time: O(logN)
+// Space: O(1)
+// Notes: [Floyd's Cycle](https://w.wiki/8Mdx)
 
+namespace hash_table {
+
+// Time: O(logN)
+// Space: O(logN)
 class Solution {
 public:
   static bool isHappy(int n) {
-    std::unordered_set<int> seen_before;
-    for (int m = n; !seen_before.count(m); m = next(m)) {
-      seen_before.insert(m);
+    std::unordered_set<int> set;
+    for (; !set.contains(n); n = next(n)) {
+      set.insert(n);
     }
-    return seen_before.count(1);
+    return set.contains(1);
   }
 
 private:
   static int next(int n) {
-    int m = 0;
-    while (n) {
-      int r = n % 10;
-      m += r * r;
-      n /= 10;
+    int sum = 0;
+    for (; n; n /= 10) {
+      sum += std::pow(n % 10, 2);
     }
-    return m;
+    return sum;
   }
 };
+
+} // namespace hash_table
+
+namespace slow_fast {
+
+// Time: O(logN)
+// Space: O(1)
+class Solution {
+public:
+  static bool isHappy(int n) {
+    int slow = n, fast = next(n);
+    while (slow != fast) {
+      slow = next(slow);
+      fast = next(next(fast));
+    }
+    return slow == 1;
+  }
+
+private:
+  static int next(int n) {
+    int sum = 0;
+    for (; n; n /= 10) {
+      sum += std::pow(n % 10, 2);
+    }
+    return sum;
+  }
+};
+
+} // namespace slow_fast
