@@ -4,17 +4,18 @@
 #include <memory>
 #include <string>
 
+// Time: O(QM)
+// Space: O(QM)
+
 struct TrieNode {
   std::array<std::unique_ptr<TrieNode>, 26> children;
-  bool is_end = false;
+  bool terminal = false;
 };
-
-// Time:
-// Space:
 
 class Trie : private TrieNode {
 public:
-  void insert(std::string word) {
+  // O(M)
+  void insert(const std::string &word) {
     TrieNode *node = this;
     for (auto c : word) {
       const auto i = c - 'a';
@@ -23,21 +24,24 @@ public:
       }
       node = node->children[i].get();
     }
-    node->is_end = true;
+    node->terminal = true;
   }
 
-  TrieNode *getPrefix(std::string prefix) {
+  // O(M)
+  bool search(const std::string &word) {
+    auto *node = getPrefix(word);
+    return node && node->terminal;
+  }
+
+  // O(M)
+  bool startsWith(const std::string &prefix) { return getPrefix(prefix); }
+
+private:
+  TrieNode *getPrefix(const std::string &prefix) {
     TrieNode *node = this;
-    for (size_t i = 0; node && i < prefix.size(); ++i) {
+    for (int i = 0; node && i < std::ssize(prefix); ++i) {
       node = node->children[prefix[i] - 'a'].get();
     }
     return node;
   }
-
-  bool search(std::string word) {
-    auto node = getPrefix(word);
-    return node && node->is_end;
-  }
-
-  bool startsWith(std::string prefix) { return getPrefix(prefix); }
 };
