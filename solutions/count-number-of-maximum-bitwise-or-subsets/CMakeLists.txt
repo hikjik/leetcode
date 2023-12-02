@@ -1,0 +1,1 @@
+add_catch(test_count_number_of_maximum_bitwise_or_subsets test.cpp)
