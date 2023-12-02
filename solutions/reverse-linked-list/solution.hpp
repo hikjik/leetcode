@@ -2,24 +2,19 @@
 
 #include <list_node.h>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static ListNode *reverseList(ListNode *head) {
-    ListNode *reversed_list_head = nullptr;
-
-    auto node = head;
-    while (node) {
-      auto next = node->next;
-
-      node->next = reversed_list_head;
-      reversed_list_head = node;
-
+    ListNode *reversed = nullptr;
+    for (auto *node = head; node;) {
+      auto *next = node->next;
+      node->next = reversed;
+      reversed = node;
       node = next;
     }
-
-    return reversed_list_head;
+    return reversed;
   }
 };
