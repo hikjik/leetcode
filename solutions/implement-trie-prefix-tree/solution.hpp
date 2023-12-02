@@ -28,17 +28,17 @@ public:
   }
 
   // O(M)
-  bool search(const std::string &word) {
-    auto *node = getPrefix(word);
+  bool search(const std::string &word) const {
+    const auto *node = getPrefix(word);
     return node && node->terminal;
   }
 
   // O(M)
-  bool startsWith(const std::string &prefix) { return getPrefix(prefix); }
+  bool startsWith(const std::string &prefix) const { return getPrefix(prefix); }
 
 private:
-  TrieNode *getPrefix(const std::string &prefix) {
-    TrieNode *node = this;
+  const TrieNode *getPrefix(const std::string &prefix) const {
+    const TrieNode *node = this;
     for (int i = 0; node && i < std::ssize(prefix); ++i) {
       node = node->children[prefix[i] - 'a'].get();
     }
