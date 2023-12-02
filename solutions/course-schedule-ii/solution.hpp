@@ -3,25 +3,25 @@
 #include <queue>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(V+E), V = |prerequisites|, E = numCourses
+// Space: O(V+E)
+// Notes: [Kahn's algorithm](https://w.wiki/8MeV)
 
 class Solution {
 public:
   static std::vector<int>
-  findOrder(int num_courses,
+  findOrder(int numCourses,
             const std::vector<std::vector<int>> &prerequisites) {
-    std::vector<std::vector<int>> graph(num_courses);
-    std::vector<int> in_degree(num_courses);
+    std::vector<std::vector<int>> graph(numCourses);
+    std::vector<int> degree(numCourses);
     for (const auto &edge : prerequisites) {
-      const auto u = edge[0], v = edge[1];
-      graph[v].push_back(u);
-      in_degree[u]++;
+      graph[edge[1]].push_back(edge[0]);
+      ++degree[edge[0]];
     }
 
     std::queue<int> queue;
-    for (int u = 0; u < num_courses; ++u) {
-      if (!in_degree[u]) {
+    for (int u = 0; u < numCourses; ++u) {
+      if (!degree[u]) {
         queue.push(u);
       }
     }
@@ -34,13 +34,13 @@ public:
       courses.push_back(u);
 
       for (auto v : graph[u]) {
-        if (!--in_degree[v]) {
+        if (!--degree[v]) {
           queue.push(v);
         }
       }
     }
 
-    if (num_courses * 1UL != courses.size()) {
+    if (numCourses != std::ssize(courses)) {
       return {};
     }
     return courses;
