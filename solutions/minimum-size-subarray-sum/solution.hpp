@@ -4,24 +4,21 @@
 #include <climits>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static int minSubArrayLen(int target, const std::vector<int> &nums) {
-    int n = nums.size();
-
-    int min_len = INT_MAX;
+    int ans = INT_MAX;
     int sum = 0;
-    for (int left = 0, right = 0; right < n; ++right) {
+    for (int left = 0, right = 0; right < std::ssize(nums); ++right) {
       sum += nums[right];
       while (sum >= target) {
-        min_len = std::min(min_len, right - left + 1);
+        ans = std::min(ans, right - left + 1);
         sum -= nums[left++];
       }
     }
-
-    return min_len == INT_MAX ? 0 : min_len;
+    return ans == INT_MAX ? 0 : ans;
   }
 };
