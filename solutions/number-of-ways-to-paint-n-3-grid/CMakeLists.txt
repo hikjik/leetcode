@@ -1,0 +1,1 @@
+add_catch(test_number_of_ways_to_paint_n_3_grid test.cpp)
