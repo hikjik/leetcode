@@ -1,0 +1,1 @@
+add_catch(test_count_complete_substrings test.cpp)
