@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_coins_to_be_added test.cpp)
