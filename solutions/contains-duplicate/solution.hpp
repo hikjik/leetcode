@@ -1,21 +1,17 @@
 #pragma once
 
+#include <ranges>
 #include <unordered_set>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
   static bool containsDuplicate(const std::vector<int> &nums) {
     std::unordered_set<int> set;
-    for (auto num : nums) {
-      if (set.find(num) != set.end()) {
-        return true;
-      }
-      set.insert(num);
-    }
-    return false;
+    return std::ranges::any_of(nums,
+                               [&](int a) { return !set.insert(a).second; });
   }
 };
