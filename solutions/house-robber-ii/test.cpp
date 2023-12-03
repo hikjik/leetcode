@@ -21,6 +21,18 @@ TEST_CASE("Simple") {
           .nums{1, 2, 3},
           .expected = 3,
       },
+      {
+          .nums{1},
+          .expected = 1,
+      },
+      {
+          .nums{1, 2},
+          .expected = 2,
+      },
+      {
+          .nums{1, 2, 3},
+          .expected = 3,
+      },
   };
 
   for (const auto &[nums, expected] : test_cases) {

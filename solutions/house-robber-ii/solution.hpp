@@ -1,26 +1,32 @@
 #pragma once
 
 #include <algorithm>
+#include <span>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static int rob(const std::vector<int> &nums) {
-    return std::max(nums.front() + rob_no_cycles(nums, 2, nums.size() - 1),
-                    rob_no_cycles(nums, 1, nums.size()));
+    auto view = std::span{nums};
+    return std::max({
+        nums[0], // case nums.size() == 1
+        rob(view.subspan(0, nums.size() - 1)),
+        rob(view.subspan(1)),
+    });
   }
 
 private:
-  static int rob_no_cycles(const std::vector<int> &nums, size_t start,
-                           size_t end) {
-    int a = 0, b = 0, c = 0;
-    for (size_t i = start; i < end; ++i) {
-      const auto d = std::max(nums[i] + a, nums[i] + b);
-      a = b, b = c, c = d;
+  // 198. House Robber
+  // https://leetcode.com/problems/house-robber/
+  static int rob(std::span<const int> nums) {
+    int a = 0, b = 0;
+    for (auto num : nums) {
+      std::swap(a, b);
+      b = std::max(b + num, a);
     }
-    return std::max(b, c);
+    return b;
   }
 };
