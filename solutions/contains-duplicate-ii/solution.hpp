@@ -3,15 +3,15 @@
 #include <unordered_set>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(K)
 
 class Solution {
 public:
-  static bool containsNearbyDuplicate(const std::vector<int> &nums, size_t k) {
+  static bool containsNearbyDuplicate(const std::vector<int> &nums, int k) {
     std::unordered_set<int> set;
-    for (size_t i = 0; i < nums.size(); ++i) {
-      if (set.count(nums[i])) {
+    for (int i = 0; i < std::ssize(nums); ++i) {
+      if (set.contains(nums[i])) {
         return true;
       }
       set.insert(nums[i]);
