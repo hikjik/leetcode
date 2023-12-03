@@ -2,12 +2,22 @@
 
 #include <solution.hpp>
 
-TEST_CASE("Simple") {
-  auto my_stack = MyStack();
+TEST_CASE("One Queue") {
+  one_queue::MyStack stack;
 
-  my_stack.push(1);
-  my_stack.push(2);
-  REQUIRE(2 == my_stack.top());
-  REQUIRE(2 == my_stack.pop());
-  REQUIRE(false == my_stack.empty());
+  stack.push(1);
+  stack.push(2);
+  REQUIRE(2 == stack.top());
+  REQUIRE(2 == stack.pop());
+  REQUIRE(false == stack.empty());
+}
+
+TEST_CASE("Two Queue") {
+  two_queue::MyStack stack;
+
+  stack.push(1);
+  stack.push(2);
+  REQUIRE(2 == stack.top());
+  REQUIRE(2 == stack.pop());
+  REQUIRE(false == stack.empty());
 }
