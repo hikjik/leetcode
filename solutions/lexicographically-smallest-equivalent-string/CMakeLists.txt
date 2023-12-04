@@ -1,0 +1,1 @@
+add_catch(test_lexicographically_smallest_equivalent_string test.cpp)
