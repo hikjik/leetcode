@@ -3,18 +3,18 @@
 #include <string>
 #include <unordered_map>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(A)
 
 class Solution {
 public:
-  static int firstUniqChar(std::string str) {
-    std::unordered_map<char, int> umap;
-    for (auto c : str) {
-      umap[c]++;
+  static int firstUniqChar(std::string s) {
+    std::unordered_map<char, int> counter;
+    for (auto c : s) {
+      ++counter[c];
     }
-    for (size_t i = 0; i < str.size(); ++i) {
-      if (umap[str[i]] == 1) {
+    for (int i = 0; i < ssize(s); ++i) {
+      if (counter[s[i]] == 1) {
         return i;
       }
     }
