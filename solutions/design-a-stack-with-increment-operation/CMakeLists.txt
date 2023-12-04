@@ -1,0 +1,1 @@
+add_catch(test_design_a_stack_with_increment_operation test.cpp)
