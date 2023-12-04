@@ -1,0 +1,1 @@
+add_catch(test_lexicographical_numbers test.cpp)
