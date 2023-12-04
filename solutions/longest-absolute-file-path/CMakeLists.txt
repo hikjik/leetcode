@@ -1,0 +1,1 @@
+add_catch(test_longest_absolute_file_path test.cpp)
