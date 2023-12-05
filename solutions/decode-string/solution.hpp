@@ -3,8 +3,10 @@
 #include <stack>
 #include <string>
 
-// Time:
-// Space:
+// K is the maximum number in the input string s
+// M is the maximum substring consisting of English letters
+// Time: O(KM)
+// Space: O(M)
 
 class Solution {
 public:
