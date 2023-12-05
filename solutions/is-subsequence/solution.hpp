@@ -2,22 +2,19 @@
 
 #include <string>
 
-// Time:
-// Space:
+// Time: O(N+M)
+// Space: O(1)
 
 class Solution {
 public:
   static bool isSubsequence(std::string s, std::string t) {
-    size_t pos = 0;
-    size_t count = 0;
-    for (auto c : s) {
+    for (size_t pos = 0; auto c : s) {
       pos = t.find(c, pos);
       if (pos == std::string::npos) {
-        break;
+        return false;
       }
-      pos++;
-      count++;
+      ++pos;
     }
-    return count == s.size();
+    return true;
   }
 };
