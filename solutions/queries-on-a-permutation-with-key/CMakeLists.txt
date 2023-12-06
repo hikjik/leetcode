@@ -1,0 +1,1 @@
+add_catch(test_queries_on_a_permutation_with_key test.cpp)
