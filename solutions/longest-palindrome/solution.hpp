@@ -3,23 +3,21 @@
 #include <string>
 #include <unordered_map>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(A)
 
 class Solution {
-  static const size_t ALPHABET_LENGTH_EN = 26;
-
 public:
-  static int longestPalindrome(std::string str) {
-    std::unordered_map<char, int> frequencies;
-    for (auto c : str) {
-      ++frequencies[c];
+  static int longestPalindrome(std::string s) {
+    std::unordered_map<char, int> counter;
+    for (auto c : s) {
+      ++counter[c];
     }
 
-    int odds_count = 0;
-    for (const auto &[c, f] : frequencies) {
-      odds_count += f & 1;
+    int odds = 0;
+    for (const auto &[c, f] : counter) {
+      odds += f & 1;
     }
-    return str.size() - odds_count + (odds_count > 0);
+    return s.size() - odds + (odds > 0);
   }
 };
