@@ -71,8 +71,7 @@ public:
 
     const auto lps = LPS(needle);
 
-    int i = 0, j = 0;
-    while (i < n) {
+    for (int i = 0, j = 0; i < n;) {
       if (haystack[i] == needle[j]) {
         i++, j++;
         if (j == m) {
@@ -90,17 +89,18 @@ public:
   }
 
 private:
-  static std::vector<int> LPS(const std::string &str) {
-    std::vector<int> lps(str.size(), 0);
-    for (size_t i = 1; i < str.size(); ++i) {
-      int j = lps[i - 1];
-      while (j && str[j] != str[i]) {
-        j = lps[j - 1];
+  static std::vector<int> LPS(const std::string &s) {
+    std::vector<int> lps(s.size());
+    for (int i = 1, j = 0; i < std::ssize(s);) {
+      if (s[i] == s[j]) {
+        lps[i++] = ++j;
+      } else {
+        if (j) {
+          j = lps[j - 1];
+        } else {
+          ++i;
+        }
       }
-      if (str[i] == str[j]) {
-        ++j;
-      }
-      lps[i] = j;
     }
     return lps;
   }

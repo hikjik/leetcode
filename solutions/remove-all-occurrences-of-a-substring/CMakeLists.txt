@@ -1,0 +1,1 @@
+add_catch(test_remove_all_occurrences_of_a_substring test.cpp)
