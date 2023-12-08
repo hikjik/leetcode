@@ -1,0 +1,1 @@
+add_catch(test_find_substring_with_given_hash_value test.cpp)
