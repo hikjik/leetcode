@@ -1,0 +1,1 @@
+add_catch(test_maximum_deletions_on_a_string test.cpp)
