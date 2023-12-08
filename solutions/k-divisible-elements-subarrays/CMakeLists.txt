@@ -1,0 +1,1 @@
+add_catch(test_k_divisible_elements_subarrays test.cpp)
