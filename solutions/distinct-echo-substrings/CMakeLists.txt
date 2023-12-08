@@ -1,0 +1,1 @@
+add_catch(test_distinct_echo_substrings test.cpp)
