@@ -1,0 +1,1 @@
+add_catch(test_maximum_sum_of_an_hourglass test.cpp)
