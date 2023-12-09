@@ -1,0 +1,1 @@
+add_catch(test_construct_smallest_number_from_di_string test.cpp)
