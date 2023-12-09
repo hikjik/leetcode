@@ -1,0 +1,1 @@
+add_catch(test_count_square_submatrices_with_all_ones test.cpp)
