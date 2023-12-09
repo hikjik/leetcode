@@ -1,0 +1,1 @@
+add_catch(test_score_after_flipping_matrix test.cpp)
