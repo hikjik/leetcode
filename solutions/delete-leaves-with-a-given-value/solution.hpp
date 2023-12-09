@@ -1,0 +1,21 @@
+#pragma once
+
+#include <tree_node.h>
+
+// Time: O(N)
+// Space: O(N)
+
+class Solution {
+public:
+  static TreeNode *removeLeafNodes(TreeNode *root, int target) {
+    if (!root) {
+      return nullptr;
+    }
+    root->left = removeLeafNodes(root->left, target);
+    root->right = removeLeafNodes(root->right, target);
+    if (!root->left && !root->right && root->val == target) {
+      return nullptr;
+    }
+    return root;
+  }
+};
