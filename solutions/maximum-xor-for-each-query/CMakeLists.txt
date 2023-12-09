@@ -1,0 +1,1 @@
+add_catch(test_maximum_xor_for_each_query test.cpp)
