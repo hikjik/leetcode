@@ -1,0 +1,1 @@
+add_catch(test_max_increase_to_keep_city_skyline test.cpp)
