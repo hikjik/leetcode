@@ -26,8 +26,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[matrix, expected] : test_cases) {
-    const auto actual = Solution::maximalSquare(matrix);
-    REQUIRE(expected == actual);
+  SECTION("DP") {
+    for (const auto &[matrix, expected] : test_cases) {
+      const auto actual = dp::Solution::maximalSquare(matrix);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Optimized") {
+    for (const auto &[matrix, expected] : test_cases) {
+      const auto actual = optimized::Solution::maximalSquare(matrix);
+      REQUIRE(expected == actual);
+    }
   }
 }
