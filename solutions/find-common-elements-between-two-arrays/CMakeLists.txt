@@ -1,0 +1,1 @@
+add_catch(test_find_common_elements_between_two_arrays test.cpp)
