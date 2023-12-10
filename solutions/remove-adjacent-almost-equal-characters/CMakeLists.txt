@@ -1,0 +1,1 @@
+add_catch(test_remove_adjacent_almost_equal_characters test.cpp)
