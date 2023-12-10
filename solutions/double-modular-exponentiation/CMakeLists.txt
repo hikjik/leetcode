@@ -1,0 +1,1 @@
+add_catch(test_double_modular_exponentiation test.cpp)
