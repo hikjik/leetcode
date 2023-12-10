@@ -1,0 +1,1 @@
+add_catch(test_number_of_possible_sets_of_closing_branches test.cpp)
