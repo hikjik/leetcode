@@ -1,0 +1,1 @@
+add_catch(test_smallest_range_covering_elements_from_k_lists test.cpp)
