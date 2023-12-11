@@ -1,0 +1,1 @@
+add_catch(test_find_maximum_non_decreasing_array_length test.cpp)
