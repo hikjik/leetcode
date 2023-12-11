@@ -1,0 +1,1 @@
+add_catch(test_count_fertile_pyramids_in_a_land test.cpp)
