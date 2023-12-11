@@ -1,0 +1,1 @@
+add_catch(test_maximum_spending_after_buying_items test.cpp)
