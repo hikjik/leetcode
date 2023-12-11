@@ -1,0 +1,1 @@
+add_catch(test_find_xor_sum_of_all_pairs_bitwise_and test.cpp)
