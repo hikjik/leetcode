@@ -23,8 +23,17 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[nums, expected] : test_cases) {
-    const auto actual = Solution::maxProduct(nums);
-    REQUIRE(expected == actual);
+  SECTION("STL") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = stl::Solution::maxProduct(nums);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("One Pass") {
+    for (const auto &[nums, expected] : test_cases) {
+      const auto actual = one_pass::Solution::maxProduct(nums);
+      REQUIRE(expected == actual);
+    }
   }
 }
