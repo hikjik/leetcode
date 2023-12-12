@@ -1,0 +1,1 @@
+add_catch(test_longest_unequal_adjacent_groups_subsequence_i test.cpp)
