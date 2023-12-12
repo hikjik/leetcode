@@ -1,0 +1,1 @@
+add_catch(test_find_positive_integer_solution_for_a_given_equation test.cpp)
