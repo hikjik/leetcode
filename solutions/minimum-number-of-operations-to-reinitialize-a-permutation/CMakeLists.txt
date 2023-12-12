@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_operations_to_reinitialize_a_permutation test.cpp)
