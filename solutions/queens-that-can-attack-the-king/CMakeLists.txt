@@ -1,0 +1,1 @@
+add_catch(test_queens_that_can_attack_the_king test.cpp)
