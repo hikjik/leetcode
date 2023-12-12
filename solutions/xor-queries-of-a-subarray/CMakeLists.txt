@@ -1,0 +1,1 @@
+add_catch(test_xor_queries_of_a_subarray test.cpp)
