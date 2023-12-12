@@ -1,0 +1,1 @@
+add_catch(test_number_of_strings_which_can_be_rearranged_to_contain_substring test.cpp)
