@@ -1,0 +1,1 @@
+add_catch(test_egg_drop_with_2_eggs_and_n_floors test.cpp)
