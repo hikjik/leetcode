@@ -1,0 +1,1 @@
+add_catch(test_check_if_a_string_can_break_another_string test.cpp)
