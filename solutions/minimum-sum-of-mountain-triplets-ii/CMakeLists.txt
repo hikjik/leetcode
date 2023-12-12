@@ -1,0 +1,1 @@
+add_catch(test_minimum_sum_of_mountain_triplets_ii test.cpp)
