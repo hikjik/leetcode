@@ -1,0 +1,1 @@
+add_catch(test_sum_of_even_numbers_after_queries test.cpp)
