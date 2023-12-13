@@ -1,0 +1,1 @@
+add_catch(test_complex_number_multiplication test.cpp)
