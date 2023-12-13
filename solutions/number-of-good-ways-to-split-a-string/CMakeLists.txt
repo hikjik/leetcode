@@ -1,0 +1,1 @@
+add_catch(test_number_of_good_ways_to_split_a_string test.cpp)
