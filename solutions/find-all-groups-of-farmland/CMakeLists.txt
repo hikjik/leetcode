@@ -1,0 +1,1 @@
+add_catch(test_find_all_groups_of_farmland test.cpp)
