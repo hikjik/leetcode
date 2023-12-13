@@ -1,0 +1,1 @@
+add_catch(test_sort_integers_by_the_power_value test.cpp)
