@@ -1,0 +1,1 @@
+add_catch(test_find_xor_beauty_of_array test.cpp)
