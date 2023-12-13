@@ -1,0 +1,1 @@
+add_catch(test_reduce_array_size_to_the_half test.cpp)
