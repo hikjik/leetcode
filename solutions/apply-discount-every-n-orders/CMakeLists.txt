@@ -1,0 +1,1 @@
+add_catch(test_apply_discount_every_n_orders test.cpp)
