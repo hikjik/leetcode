@@ -1,0 +1,1 @@
+add_catch(test_minimum_add_to_make_parentheses_valid test.cpp)
