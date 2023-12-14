@@ -1,0 +1,1 @@
+add_catch(test_maximum_score_from_removing_stones test.cpp)
