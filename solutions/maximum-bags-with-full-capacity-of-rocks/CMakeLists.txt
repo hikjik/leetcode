@@ -1,0 +1,1 @@
+add_catch(test_maximum_bags_with_full_capacity_of_rocks test.cpp)
