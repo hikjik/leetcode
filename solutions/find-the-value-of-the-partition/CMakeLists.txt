@@ -1,0 +1,1 @@
+add_catch(test_find_the_value_of_the_partition test.cpp)
