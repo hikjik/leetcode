@@ -1,0 +1,1 @@
+add_catch(test_rearrange_words_in_a_sentence test.cpp)
