@@ -1,0 +1,1 @@
+add_catch(test_find_duplicate_file_in_system test.cpp)
