@@ -1,0 +1,1 @@
+add_catch(test_evaluate_the_bracket_pairs_of_a_string test.cpp)
