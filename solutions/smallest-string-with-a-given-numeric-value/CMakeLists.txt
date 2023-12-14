@@ -1,0 +1,1 @@
+add_catch(test_smallest_string_with_a_given_numeric_value test.cpp)
