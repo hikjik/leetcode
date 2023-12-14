@@ -6,11 +6,10 @@
 class Solution {
 public:
   static bool checkPowersOfThree(int n) {
-    while (n > 1) {
+    for (; n > 1; n /= 3) {
       if (n % 3 == 2) {
         return false;
       }
-      n /= 3;
     }
     return true;
   }
