@@ -1,0 +1,1 @@
+add_catch(test_check_if_number_is_a_sum_of_powers_of_three test.cpp)
