@@ -1,0 +1,1 @@
+add_catch(test_trim_a_binary_search_tree test.cpp)
