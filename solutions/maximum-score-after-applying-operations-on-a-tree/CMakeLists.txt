@@ -1,0 +1,1 @@
+add_catch(test_maximum_score_after_applying_operations_on_a_tree test.cpp)
