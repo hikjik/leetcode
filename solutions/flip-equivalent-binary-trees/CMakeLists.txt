@@ -1,0 +1,1 @@
+add_catch(test_flip_equivalent_binary_trees test.cpp)
