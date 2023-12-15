@@ -1,0 +1,1 @@
+add_catch(test_minimum_rounds_to_complete_all_tasks test.cpp)
