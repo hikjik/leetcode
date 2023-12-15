@@ -1,0 +1,1 @@
+add_catch(test_reconstruct_original_digits_from_english test.cpp)
