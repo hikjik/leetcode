@@ -1,0 +1,1 @@
+add_catch(test_ways_to_make_a_fair_array test.cpp)
