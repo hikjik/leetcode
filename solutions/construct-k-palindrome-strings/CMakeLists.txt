@@ -1,0 +1,1 @@
+add_catch(test_construct_k_palindrome_strings test.cpp)
