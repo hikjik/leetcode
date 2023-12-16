@@ -1,0 +1,1 @@
+add_catch(test_count_complete_subarrays_in_an_array test.cpp)
