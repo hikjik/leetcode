@@ -1,0 +1,1 @@
+add_catch(test_minimum_time_to_make_rope_colorful test.cpp)
