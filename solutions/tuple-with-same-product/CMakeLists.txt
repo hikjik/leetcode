@@ -1,0 +1,1 @@
+add_catch(test_tuple_with_same_product test.cpp)
