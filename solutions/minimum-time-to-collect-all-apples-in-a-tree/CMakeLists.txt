@@ -1,0 +1,1 @@
+add_catch(test_minimum_time_to_collect_all_apples_in_a_tree test.cpp)
