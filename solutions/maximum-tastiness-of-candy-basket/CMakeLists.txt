@@ -1,0 +1,1 @@
+add_catch(test_maximum_tastiness_of_candy_basket test.cpp)
