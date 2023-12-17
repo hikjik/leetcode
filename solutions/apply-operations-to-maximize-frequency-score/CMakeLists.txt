@@ -1,0 +1,1 @@
+add_catch(test_apply_operations_to_maximize_frequency_score test.cpp)
