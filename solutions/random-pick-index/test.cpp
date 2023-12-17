@@ -10,7 +10,7 @@ TEST_CASE("Simple") {
   REQUIRE(1 == solution.pick(2));
 
   std::unordered_map<int, int> counter;
-  int N = 10000;
+  int N = 100000;
   for (int i = 0; i < N; ++i) {
     ++counter[solution.pick(3)];
   }
