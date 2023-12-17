@@ -1,0 +1,1 @@
+add_catch(test_design_a_food_rating_system test.cpp)
