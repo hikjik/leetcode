@@ -1,0 +1,1 @@
+add_catch(test_longest_increasing_path_in_a_matrix test.cpp)
