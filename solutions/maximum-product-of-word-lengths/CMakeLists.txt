@@ -1,0 +1,1 @@
+add_catch(test_maximum_product_of_word_lengths test.cpp)
