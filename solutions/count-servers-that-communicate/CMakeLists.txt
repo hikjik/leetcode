@@ -1,0 +1,1 @@
+add_catch(test_count_servers_that_communicate test.cpp)
