@@ -1,0 +1,1 @@
+add_catch(test_number_of_ways_to_rearrange_sticks_with_k_sticks_visible test.cpp)
