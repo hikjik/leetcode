@@ -1,0 +1,1 @@
+add_catch(test_satisfiability_of_equality_equations test.cpp)
