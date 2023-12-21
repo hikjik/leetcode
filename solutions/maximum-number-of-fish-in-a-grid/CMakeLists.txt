@@ -1,0 +1,1 @@
+add_catch(test_maximum_number_of_fish_in_a_grid test.cpp)
