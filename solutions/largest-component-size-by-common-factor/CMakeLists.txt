@@ -1,0 +1,1 @@
+add_catch(test_largest_component_size_by_common_factor test.cpp)
