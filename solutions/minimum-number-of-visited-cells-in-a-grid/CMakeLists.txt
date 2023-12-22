@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_visited_cells_in_a_grid test.cpp)
