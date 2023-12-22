@@ -1,0 +1,1 @@
+add_catch(test_bricks_falling_when_hit test.cpp)
