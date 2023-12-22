@@ -1,0 +1,1 @@
+add_catch(test_find_all_people_with_secret test.cpp)
