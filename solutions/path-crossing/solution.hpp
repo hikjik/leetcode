@@ -1,30 +1,20 @@
 #pragma once
 
-#include <set>
 #include <string>
+#include <unordered_set>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(N)
 
 class Solution {
 public:
   static bool isPathCrossing(std::string path) {
-    const std::pair<int, int> start{0, 0};
-    std::set<std::pair<int, int>> visited{start};
-    for (auto node = start; auto c : path) {
-      if (c == 'N') {
-        ++node.second;
-      } else if (c == 'S') {
-        --node.second;
-      } else if (c == 'E') {
-        ++node.first;
-      } else if (c == 'W') {
-        --node.first;
-      } else {
-        throw;
-      }
-
-      if (!visited.insert(node).second) {
+    const int n = path.size() + 1;
+    std::unordered_set<int> seen{{0}};
+    for (int x = 0, y = 0; auto c : path) {
+      x += (c == 'E') - (c == 'W');
+      y += (c == 'N') - (c == 'S');
+      if (!seen.insert(x * n + y).second) {
         return true;
       }
     }
