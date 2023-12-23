@@ -1,0 +1,1 @@
+add_catch(test_find_number_of_coins_to_place_in_tree_nodes test.cpp)
