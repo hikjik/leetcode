@@ -1,0 +1,1 @@
+add_catch(test_find_polygon_with_the_largest_perimeter test.cpp)
