@@ -1,0 +1,1 @@
+add_catch(test_process_restricted_friend_requests test.cpp)
