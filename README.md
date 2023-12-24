@@ -2,7 +2,7 @@
 
 LeetCode С++ solutions with VS Code.
 
-<img width="50%" src="https://leetcard.jacoblin.cool/alexandr_morev?theme=wtf&ext=contest">
+<img width="50%" src="https://leetcard.jacoblin.cool/morev?theme=wtf&ext=contest">
 
 ## Setup VS Code
 
