@@ -1,0 +1,1 @@
+add_catch(test_distribute_candies_among_children_ii test.cpp)
