@@ -1,0 +1,1 @@
+add_catch(test_minimum_cost_to_convert_string_i test.cpp)
