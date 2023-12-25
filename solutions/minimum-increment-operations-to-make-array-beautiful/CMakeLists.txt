@@ -1,0 +1,1 @@
+add_catch(test_minimum_increment_operations_to_make_array_beautiful test.cpp)
