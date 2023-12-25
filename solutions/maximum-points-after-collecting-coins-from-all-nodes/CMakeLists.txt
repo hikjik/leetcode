@@ -1,0 +1,1 @@
+add_catch(test_maximum_points_after_collecting_coins_from_all_nodes test.cpp)
