@@ -1,0 +1,1 @@
+add_catch(test_minimum_equal_sum_of_two_arrays_after_replacing_zeros test.cpp)
