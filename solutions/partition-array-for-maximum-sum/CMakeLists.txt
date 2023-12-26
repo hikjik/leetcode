@@ -1,0 +1,1 @@
+add_catch(test_partition_array_for_maximum_sum test.cpp)
