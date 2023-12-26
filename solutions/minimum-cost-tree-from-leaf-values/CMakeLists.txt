@@ -1,0 +1,1 @@
+add_catch(test_minimum_cost_tree_from_leaf_values test.cpp)
