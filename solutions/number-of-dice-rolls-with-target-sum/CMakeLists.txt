@@ -1,0 +1,1 @@
+add_catch(test_number_of_dice_rolls_with_target_sum test.cpp)
