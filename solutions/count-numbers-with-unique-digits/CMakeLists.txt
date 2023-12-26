@@ -1,0 +1,1 @@
+add_catch(test_count_numbers_with_unique_digits test.cpp)
