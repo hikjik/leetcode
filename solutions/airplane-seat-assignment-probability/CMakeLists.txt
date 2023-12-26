@@ -1,0 +1,1 @@
+add_catch(test_airplane_seat_assignment_probability test.cpp)
