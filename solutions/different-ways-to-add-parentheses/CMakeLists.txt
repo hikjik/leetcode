@@ -1,0 +1,1 @@
+add_catch(test_different_ways_to_add_parentheses test.cpp)
