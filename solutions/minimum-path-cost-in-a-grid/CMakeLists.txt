@@ -1,0 +1,1 @@
+add_catch(test_minimum_path_cost_in_a_grid test.cpp)
