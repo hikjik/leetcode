@@ -1,0 +1,1 @@
+add_catch(test_minimum_changes_to_make_k_semi_palindromes test.cpp)
