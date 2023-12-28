@@ -1,0 +1,1 @@
+add_catch(test_largest_merge_of_two_strings test.cpp)
