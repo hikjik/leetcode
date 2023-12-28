@@ -1,0 +1,1 @@
+add_catch(test_kth_largest_sum_in_a_binary_tree test.cpp)
