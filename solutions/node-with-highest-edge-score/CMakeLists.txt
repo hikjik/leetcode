@@ -1,0 +1,1 @@
+add_catch(test_node_with_highest_edge_score test.cpp)
