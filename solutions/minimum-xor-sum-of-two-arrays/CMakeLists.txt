@@ -1,0 +1,1 @@
+add_catch(test_minimum_xor_sum_of_two_arrays test.cpp)
