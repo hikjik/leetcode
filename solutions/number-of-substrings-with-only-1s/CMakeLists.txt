@@ -1,0 +1,1 @@
+add_catch(test_number_of_substrings_with_only_1s test.cpp)
