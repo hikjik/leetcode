@@ -1,0 +1,1 @@
+add_catch(test_maximum_binary_string_after_change test.cpp)
