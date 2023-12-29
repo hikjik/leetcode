@@ -1,0 +1,1 @@
+add_catch(test_graph_connectivity_with_threshold test.cpp)
