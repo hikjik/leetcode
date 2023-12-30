@@ -1,0 +1,1 @@
+add_catch(test_find_the_minimum_number_of_fibonacci_numbers_whose_sum_is_k test.cpp)
