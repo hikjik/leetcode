@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_operations_to_make_all_array_elements_equal_to_1 test.cpp)
