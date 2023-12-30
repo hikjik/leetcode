@@ -1,0 +1,1 @@
+add_catch(test_count_number_of_nice_subarrays test.cpp)
