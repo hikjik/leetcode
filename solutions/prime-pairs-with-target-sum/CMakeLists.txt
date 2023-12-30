@@ -1,0 +1,1 @@
+add_catch(test_prime_pairs_with_target_sum test.cpp)
