@@ -1,0 +1,1 @@
+add_catch(test_remove_nodes_from_linked_list test.cpp)
