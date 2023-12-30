@@ -1,0 +1,1 @@
+add_catch(test_append_characters_to_string_to_make_subsequence test.cpp)
