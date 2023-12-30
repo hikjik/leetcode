@@ -1,0 +1,1 @@
+add_catch(test_distinct_prime_factors_of_product_of_array test.cpp)
