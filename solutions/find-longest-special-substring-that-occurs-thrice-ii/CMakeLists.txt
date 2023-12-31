@@ -1,0 +1,1 @@
+add_catch(test_find_longest_special_substring_that_occurs_thrice_ii test.cpp)
