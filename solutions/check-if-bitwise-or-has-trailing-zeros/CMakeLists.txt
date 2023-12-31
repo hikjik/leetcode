@@ -1,0 +1,1 @@
+add_catch(test_check_if_bitwise_or_has_trailing_zeros test.cpp)
