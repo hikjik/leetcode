@@ -1,0 +1,1 @@
+add_catch(test_greatest_sum_divisible_by_three test.cpp)
