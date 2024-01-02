@@ -1,0 +1,1 @@
+add_catch(test_all_divisions_with_the_highest_score_of_a_binary_array test.cpp)
