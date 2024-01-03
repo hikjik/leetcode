@@ -1,0 +1,1 @@
+add_catch(test_implement_rand10_using_rand7 test.cpp)
