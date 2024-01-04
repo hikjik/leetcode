@@ -1,3 +1,4 @@
+import json
 import typing as tp
 from pathlib import Path
 
@@ -74,6 +75,20 @@ def pull(problem_id: int, slug: str, lang: str, daily: bool) -> None:
     data = client.question_data(slug)
     problem = parse_problem(data)
     create_problem_folder(problem, lang)
+
+
+@cli.command()
+@click.option(
+    "-f",
+    "--file",
+    type=str,
+    help="Get Problem from json file",
+)
+def parse(file: str) -> None:
+    with open(file, "r") as f:
+        data = json.load(f)
+        problem = parse_problem(data)
+        create_problem_folder(problem, "cpp")
 
 
 @cli.command()

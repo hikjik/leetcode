@@ -191,6 +191,8 @@ def update_readme_table() -> None:
         tags_colors = get_colors(saturation=0.6, value=0.5)
         for i, (problem_id, problem) in enumerate(sorted(problems.items())):
             title = problem["title"]
+            if problem.get("premium", False):
+                title += " 🔒"
             slug = problem["slug"]
             url = f"https://leetcode.com/problems/{slug}/"
             difficulty = problem["difficulty"]
