@@ -82,6 +82,32 @@ public:
 
   operator Node *() const { return root_; }
 
+  friend bool operator==(const Tree &lhs, const Tree &rhs) {
+    std::queue<std::pair<Node *, Node *>> queue;
+    queue.push({lhs.root_, rhs.root_});
+    while (!queue.empty()) {
+      const auto [node1, node2] = queue.front();
+      queue.pop();
+
+      if (!node1 && node2 || node1 && !node2) {
+        return false;
+      }
+      if (!node1 && !node2) {
+        continue;
+      }
+      if (node1->val != node2->val) {
+        return false;
+      }
+      if (node1->children.size() != node2->children.size()) {
+        return false;
+      }
+      for (int i = 0; i < std::ssize(node1->children); ++i) {
+        queue.push({node1->children[i], node2->children[i]});
+      }
+    }
+    return true;
+  }
+
 private:
   void Clear(Node *node) {
     if (!node) {
