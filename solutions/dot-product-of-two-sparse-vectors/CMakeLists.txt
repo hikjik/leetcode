@@ -1,0 +1,1 @@
+add_catch(test_dot_product_of_two_sparse_vectors test.cpp)
