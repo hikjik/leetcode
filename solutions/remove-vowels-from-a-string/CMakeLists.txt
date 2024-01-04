@@ -1,0 +1,1 @@
+add_catch(test_remove_vowels_from_a_string test.cpp)

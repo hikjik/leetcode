@@ -13,6 +13,7 @@ def create_meta_file(path: Path, problem: Problem) -> None:
         "url": f"https://leetcode.com/problems/{problem.title_slug}/",
         "slug": problem.title_slug,
         "difficulty": problem.difficulty,
+        "premium": problem.premium,
         "tags": problem.tags,
     }
     with open(Path(path) / META_FILE, "w") as file:

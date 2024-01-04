@@ -118,6 +118,7 @@ class Problem:
     cls: Class
     test_examples: list[str]
     system_design: bool
+    premium: bool
     tags: list[str]
 
 
@@ -283,5 +284,6 @@ def parse_problem(data: dict[str, Any]) -> Problem:
         cls=solution_class,
         test_examples=question["exampleTestcaseList"],
         system_design="systemdesign" in question["metaData"],
+        premium=question["isPaidOnly"],
         tags=[tag["name"] for tag in question["topicTags"]],
     )
