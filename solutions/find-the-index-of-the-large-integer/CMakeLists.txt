@@ -1,0 +1,1 @@
+add_catch(test_find_the_index_of_the_large_integer test.cpp)
