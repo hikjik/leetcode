@@ -1,0 +1,1 @@
+add_catch(test_minimize_product_sum_of_two_arrays test.cpp)
