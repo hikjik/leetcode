@@ -1,0 +1,1 @@
+add_catch(test_print_immutable_linked_list_in_reverse test.cpp)
