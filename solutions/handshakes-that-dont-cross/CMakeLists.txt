@@ -1,0 +1,1 @@
+add_catch(test_handshakes_that_dont_cross test.cpp)
