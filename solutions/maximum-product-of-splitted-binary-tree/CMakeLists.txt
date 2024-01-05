@@ -1,0 +1,1 @@
+add_catch(test_maximum_product_of_splitted_binary_tree test.cpp)
