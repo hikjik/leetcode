@@ -1354,6 +1354,7 @@
 | 2625. | [Flatten Deeply Nested Array](https://leetcode.com/problems/flatten-deeply-nested-array/) | [JS](./extra/js/flatten-deeply-nested-array/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
 | 2626. | [Array Reduce Transformation](https://leetcode.com/problems/array-reduce-transformation/) | [JS](./extra/js/array-reduce-transformation/solution.js) | <img src='https://img.shields.io/badge/Easy-darkgreen?style=flat-square'/> | |  |  |
 | 2627. | [Debounce](https://leetcode.com/problems/debounce/) | [JS](./extra/js/debounce/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
+| 2628. | [JSON Deep Equal 🔒](https://leetcode.com/problems/json-deep-equal/) | [JS](./extra/js/json-deep-equal/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
 | 2629. | [Function Composition](https://leetcode.com/problems/function-composition/) | [JS](./extra/js/function-composition/solution.js) | <img src='https://img.shields.io/badge/Easy-darkgreen?style=flat-square'/> | |  |  |
 | 2630. | [Memoize II](https://leetcode.com/problems/memoize-ii/) | [JS](./extra/js/memoize-ii/solution.js) | <img src='https://img.shields.io/badge/Hard-darkred?style=flat-square'/> | |  |  |
 | 2631. | [Group By](https://leetcode.com/problems/group-by/) | [JS](./extra/js/group-by/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
