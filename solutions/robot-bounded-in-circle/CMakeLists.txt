@@ -1,0 +1,1 @@
+add_catch(test_robot_bounded_in_circle test.cpp)
