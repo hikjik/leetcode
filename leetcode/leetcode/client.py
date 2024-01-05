@@ -74,6 +74,7 @@ class Client:
                 title
                 titleSlug
                 difficulty
+                isPaidOnly
                 content
                 codeSnippets {
                     langSlug
