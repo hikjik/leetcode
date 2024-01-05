@@ -1357,6 +1357,7 @@
 | 2629. | [Function Composition](https://leetcode.com/problems/function-composition/) | [JS](./extra/js/function-composition/solution.js) | <img src='https://img.shields.io/badge/Easy-darkgreen?style=flat-square'/> | |  |  |
 | 2630. | [Memoize II](https://leetcode.com/problems/memoize-ii/) | [JS](./extra/js/memoize-ii/solution.js) | <img src='https://img.shields.io/badge/Hard-darkred?style=flat-square'/> | |  |  |
 | 2631. | [Group By](https://leetcode.com/problems/group-by/) | [JS](./extra/js/group-by/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
+| 2632. | [Curry 🔒](https://leetcode.com/problems/curry/) | [JS](./extra/js/curry/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |
 | 2634. | [Filter Elements from Array](https://leetcode.com/problems/filter-elements-from-array/) | [JS](./extra/js/filter-elements-from-array/solution.js) | <img src='https://img.shields.io/badge/Easy-darkgreen?style=flat-square'/> | |  |  |
 | 2635. | [Apply Transform Over Each Element in Array](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) | [JS](./extra/js/apply-transform-over-each-element-in-array/solution.js) | <img src='https://img.shields.io/badge/Easy-darkgreen?style=flat-square'/> | |  |  |
 | 2637. | [Promise Time Limit](https://leetcode.com/problems/promise-time-limit/) | [JS](./extra/js/promise-time-limit/solution.js) | <img src='https://img.shields.io/badge/Medium-darkorange?style=flat-square'/> | |  |  |

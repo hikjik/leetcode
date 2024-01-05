@@ -84,11 +84,18 @@ def pull(problem_id: int, slug: str, lang: str, daily: bool) -> None:
     type=str,
     help="Get Problem from json file",
 )
-def parse(file: str) -> None:
+@click.option(
+    "-l",
+    "--lang",
+    type=str,
+    default="cpp",
+    help="Programming Language Slug",
+)
+def parse(file: str, lang: str) -> None:
     with open(file, "r") as f:
         data = json.load(f)
         problem = parse_problem(data)
-        create_problem_folder(problem, "cpp")
+        create_problem_folder(problem, lang)
 
 
 @cli.command()
