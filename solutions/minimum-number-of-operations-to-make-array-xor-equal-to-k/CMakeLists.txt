@@ -1,0 +1,1 @@
+add_catch(test_minimum_number_of_operations_to_make_array_xor_equal_to_k test.cpp)
