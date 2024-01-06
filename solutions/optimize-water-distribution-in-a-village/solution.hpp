@@ -1,0 +1,79 @@
+#pragma once
+
+#include <vector>
+
+// Time: O((M+N)log(M+N))
+// Space: O(M+N)
+
+class DisjointSets {
+public:
+  explicit DisjointSets(size_t size) : sets_(size), count_(size) {
+    for (size_t i = 0; i < sets_.size(); ++i) {
+      sets_[i].parent = i;
+    }
+  }
+
+  size_t Count() { return count_; }
+
+  size_t Parent(size_t i) {
+    if (sets_[i].parent != i) {
+      sets_[i].parent = Parent(sets_[i].parent);
+    }
+    return sets_[i].parent;
+  }
+
+  bool Merge(size_t u, size_t v) {
+    size_t i = Parent(u), j = Parent(v);
+    if (i == j) {
+      return false;
+    }
+    count_--;
+
+    if (sets_[i].rank > sets_[j].rank) {
+      sets_[j].parent = i;
+    } else {
+      sets_[i].parent = j;
+      if (sets_[i].rank == sets_[j].rank) {
+        ++sets_[j].rank;
+      }
+    }
+    return true;
+  }
+
+private:
+  struct DisjointSetsElement {
+    DisjointSetsElement() : parent(0), rank(0) {}
+
+    size_t parent;
+    size_t rank;
+  };
+
+  std::vector<DisjointSetsElement> sets_;
+  size_t count_;
+};
+
+class Solution {
+public:
+  static int minCostToSupplyWater(int n, const std::vector<int> &wells,
+                                  const std::vector<std::vector<int>> &pipes) {
+    auto edges = pipes;
+    for (int i = 0; i < n; ++i) {
+      edges.push_back({i + 1, i + 1 + n, wells[i]});
+    }
+    std::ranges::sort(edges, [](const auto &lhs, const auto &rhs) {
+      return lhs.back() < rhs.back();
+    });
+
+    DisjointSets sets(2 * n + 1);
+    for (int i = n + 1; i < 2 * n + 1; ++i) {
+      sets.Merge(0, i);
+    }
+    int ans = 0;
+    for (const auto &edge : edges) {
+      if (sets.Merge(edge[0], edge[1])) {
+        ans += edge[2];
+      }
+    }
+    return ans;
+  }
+};

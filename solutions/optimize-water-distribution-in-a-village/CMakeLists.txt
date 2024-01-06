@@ -1,0 +1,1 @@
+add_catch(test_optimize_water_distribution_in_a_village test.cpp)
