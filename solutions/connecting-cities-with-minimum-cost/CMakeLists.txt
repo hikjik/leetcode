@@ -1,0 +1,1 @@
+add_catch(test_connecting_cities_with_minimum_cost test.cpp)
