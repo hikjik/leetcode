@@ -1,0 +1,1 @@
+add_catch(test_smallest_missing_integer_greater_than_sequential_prefix_sum test.cpp)
