@@ -31,8 +31,19 @@ TEST_CASE("Simple") {
       },
   };
 
-  for (const auto &[startTime, endTime, profit, expected] : test_cases) {
-    const auto actual = Solution::jobScheduling(startTime, endTime, profit);
-    REQUIRE(expected == actual);
+  SECTION("Memoization") {
+    for (const auto &[startTime, endTime, profit, expected] : test_cases) {
+      const auto actual =
+          memo::Solution::jobScheduling(startTime, endTime, profit);
+      REQUIRE(expected == actual);
+    }
+  }
+
+  SECTION("Tabulation") {
+    for (const auto &[startTime, endTime, profit, expected] : test_cases) {
+      const auto actual =
+          dp::Solution::jobScheduling(startTime, endTime, profit);
+      REQUIRE(expected == actual);
+    }
   }
 }
