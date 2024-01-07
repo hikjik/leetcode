@@ -27,6 +27,13 @@ TEST_CASE("Simple") {
       },
   };
 
+  SECTION("Prefix Sums") {
+    for (const auto &[s, k, expected] : test_cases) {
+      const auto actual = ps::Solution::maxPartitionsAfterOperations(s, k);
+      REQUIRE(expected == actual);
+    }
+  }
+
   SECTION("Memoization") {
     for (const auto &[s, k, expected] : test_cases) {
       const auto actual = memo::Solution::maxPartitionsAfterOperations(s, k);
