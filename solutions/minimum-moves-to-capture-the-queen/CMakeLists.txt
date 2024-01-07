@@ -1,0 +1,1 @@
+add_catch(test_minimum_moves_to_capture_the_queen test.cpp)
