@@ -1,0 +1,1 @@
+add_catch(test_maximize_the_number_of_partitions_after_operations test.cpp)
