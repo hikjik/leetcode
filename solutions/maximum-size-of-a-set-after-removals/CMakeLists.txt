@@ -1,0 +1,1 @@
+add_catch(test_maximum_size_of_a_set_after_removals test.cpp)
