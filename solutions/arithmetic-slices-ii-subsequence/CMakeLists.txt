@@ -1,0 +1,1 @@
+add_catch(test_arithmetic_slices_ii_subsequence test.cpp)
