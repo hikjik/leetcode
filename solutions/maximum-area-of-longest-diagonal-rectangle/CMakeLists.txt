@@ -1,0 +1,1 @@
+add_catch(test_maximum_area_of_longest_diagonal_rectangle test.cpp)
