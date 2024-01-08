@@ -1,0 +1,1 @@
+add_catch(test_missing_number_in_arithmetic_progression test.cpp)
