@@ -82,6 +82,8 @@ public:
 
   operator Node *() const { return root_; }
 
+  const Node *Root() const { return root_; }
+
   friend bool operator==(const Tree &lhs, const Tree &rhs) {
     std::queue<std::pair<Node *, Node *>> queue;
     queue.push({lhs.root_, rhs.root_});
