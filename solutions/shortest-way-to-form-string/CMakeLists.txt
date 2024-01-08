@@ -1,0 +1,1 @@
+add_catch(test_shortest_way_to_form_string test.cpp)
