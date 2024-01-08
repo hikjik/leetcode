@@ -1,0 +1,1 @@
+add_catch(test_critical_connections_in_a_network test.cpp)
