@@ -1,0 +1,1 @@
+add_catch(test_check_if_a_number_is_majority_element_in_a_sorted_array test.cpp)
