@@ -1,0 +1,1 @@
+add_catch(test_maximum_distance_in_arrays test.cpp)
