@@ -1,0 +1,1 @@
+add_catch(test_find_leaves_of_binary_tree test.cpp)
