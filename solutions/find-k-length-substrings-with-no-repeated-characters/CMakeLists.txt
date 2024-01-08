@@ -1,0 +1,1 @@
+add_catch(test_find_k_length_substrings_with_no_repeated_characters test.cpp)
