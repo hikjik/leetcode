@@ -1,0 +1,1 @@
+add_catch(test_design_compressed_string_iterator test.cpp)
