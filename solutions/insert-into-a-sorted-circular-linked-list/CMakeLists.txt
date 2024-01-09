@@ -1,0 +1,1 @@
+add_catch(test_insert_into_a_sorted_circular_linked_list test.cpp)
