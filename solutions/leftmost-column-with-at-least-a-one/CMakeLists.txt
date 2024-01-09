@@ -1,0 +1,1 @@
+add_catch(test_leftmost_column_with_at_least_a_one test.cpp)
