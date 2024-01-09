@@ -1,0 +1,1 @@
+add_catch(test_all_paths_from_source_lead_to_destination test.cpp)
