@@ -1,0 +1,1 @@
+add_catch(test_ternary_expression_parser test.cpp)
