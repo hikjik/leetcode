@@ -1,0 +1,1 @@
+add_catch(test_moving_average_from_data_stream test.cpp)
