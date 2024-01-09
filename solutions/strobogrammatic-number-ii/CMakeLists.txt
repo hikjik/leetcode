@@ -1,0 +1,1 @@
+add_catch(test_strobogrammatic_number_ii test.cpp)
