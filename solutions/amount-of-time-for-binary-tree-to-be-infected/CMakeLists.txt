@@ -1,0 +1,1 @@
+add_catch(test_amount_of_time_for_binary_tree_to_be_infected test.cpp)
