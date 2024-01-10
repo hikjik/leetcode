@@ -1,0 +1,1 @@
+add_catch(test_best_team_with_no_conflicts test.cpp)
