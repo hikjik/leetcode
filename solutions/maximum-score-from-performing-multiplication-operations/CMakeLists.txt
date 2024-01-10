@@ -1,0 +1,1 @@
+add_catch(test_maximum_score_from_performing_multiplication_operations test.cpp)
