@@ -1,0 +1,1 @@
+add_catch(test_find_smallest_common_element_in_all_rows test.cpp)
