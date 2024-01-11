@@ -1,0 +1,1 @@
+add_catch(test_optimal_account_balancing test.cpp)
