@@ -1,0 +1,1 @@
+add_catch(test_partition_to_k_equal_sum_subsets test.cpp)
