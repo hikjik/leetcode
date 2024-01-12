@@ -1,0 +1,1 @@
+add_catch(test_sum_of_digits_in_the_minimum_number test.cpp)
