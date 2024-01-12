@@ -1,0 +1,1 @@
+add_catch(test_find_all_the_lonely_nodes test.cpp)
