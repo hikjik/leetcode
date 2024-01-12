@@ -1,0 +1,1 @@
+add_catch(test_intersection_of_three_sorted_arrays test.cpp)
