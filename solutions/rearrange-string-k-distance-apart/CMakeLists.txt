@@ -1,0 +1,1 @@
+add_catch(test_rearrange_string_k_distance_apart test.cpp)
