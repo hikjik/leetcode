@@ -1,0 +1,1 @@
+add_catch(test_encode_n_ary_tree_to_binary_tree test.cpp)
