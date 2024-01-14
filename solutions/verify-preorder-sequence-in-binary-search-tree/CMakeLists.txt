@@ -1,0 +1,1 @@
+add_catch(test_verify_preorder_sequence_in_binary_search_tree test.cpp)
