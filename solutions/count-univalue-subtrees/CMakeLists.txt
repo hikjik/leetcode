@@ -1,0 +1,1 @@
+add_catch(test_count_univalue_subtrees test.cpp)
