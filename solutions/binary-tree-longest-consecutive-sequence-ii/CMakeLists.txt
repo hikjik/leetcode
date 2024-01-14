@@ -1,0 +1,1 @@
+add_catch(test_binary_tree_longest_consecutive_sequence_ii test.cpp)
