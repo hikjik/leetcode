@@ -1,0 +1,1 @@
+add_catch(test_boundary_of_binary_tree test.cpp)
