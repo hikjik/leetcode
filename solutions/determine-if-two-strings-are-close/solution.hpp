@@ -1,11 +1,11 @@
 #pragma once
 
-#include <algorithm>
 #include <array>
+#include <ranges>
 #include <string>
 
-// Time:
-// Space:
+// Time: O(N+M+AlogA)
+// Space: O(A)
 
 class Solution {
 public:
@@ -14,19 +14,21 @@ public:
       return false;
     }
 
-    std::array<int, 26> freq1{}, freq2{};
+    std::array<int, 26> cnt1{}, cnt2{};
     for (auto c : word1) {
-      ++freq1[c - 'a'];
+      ++cnt1[c - 'a'];
     }
     for (auto c : word2) {
-      if (!freq1[c - 'a']) {
+      ++cnt2[c - 'a'];
+    }
+    for (int i = 0; i < 26; i++) {
+      if (!cnt1[i] && cnt2[i] || cnt1[i] && !cnt2[i]) {
         return false;
       }
-      ++freq2[c - 'a'];
     }
 
-    std::sort(freq1.begin(), freq1.end());
-    std::sort(freq2.begin(), freq2.end());
-    return freq1 == freq2;
+    std::ranges::sort(cnt1);
+    std::ranges::sort(cnt2);
+    return cnt1 == cnt2;
   }
 };
