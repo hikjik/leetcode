@@ -1,0 +1,1 @@
+add_catch(test_shortest_distance_from_all_buildings test.cpp)
