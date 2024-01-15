@@ -1,0 +1,1 @@
+add_catch(test_design_search_autocomplete_system test.cpp)
