@@ -1,0 +1,1 @@
+add_catch(test_sparse_matrix_multiplication test.cpp)
