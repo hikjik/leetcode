@@ -1,0 +1,1 @@
+add_catch(test_design_in_memory_file_system test.cpp)
