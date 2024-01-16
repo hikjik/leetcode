@@ -1,0 +1,1 @@
+add_catch(test_largest_subarray_length_k test.cpp)
