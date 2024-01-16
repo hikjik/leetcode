@@ -3,43 +3,38 @@
 #include <unordered_map>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(Q)
+// Space: O(Q)
 
 class RandomizedSet {
 public:
-  RandomizedSet() {}
-
+  // O(1)
   bool insert(int val) {
-    if (indexes_.count(val)) {
+    if (map.contains(val)) {
       return false;
     }
 
-    indexes_[val] = values_.size();
-    values_.push_back(val);
-
+    map[val] = vals.size();
+    vals.push_back(val);
     return true;
   }
 
+  // O(1)
   bool remove(int val) {
-    auto it = indexes_.find(val);
-    if (it == indexes_.end()) {
-      return false;
+    if (auto it = map.find(val); it != map.end()) {
+      map[vals.back()] = it->second;
+      vals[it->second] = vals.back();
+      vals.pop_back();
+      map.erase(val);
+      return true;
     }
-
-    indexes_[values_.back()] = it->second;
-    values_[it->second] = values_.back();
-    values_.pop_back();
-    indexes_.erase(val);
-    return true;
+    return false;
   }
 
-  int getRandom() {
-    const auto index = rand() % values_.size();
-    return values_[index];
-  }
+  // O(1)
+  int getRandom() const { return vals[rand() % vals.size()]; }
 
 private:
-  std::vector<int> values_;
-  std::unordered_map<int, size_t> indexes_;
+  std::vector<int> vals;
+  std::unordered_map<int, int> map;
 };
