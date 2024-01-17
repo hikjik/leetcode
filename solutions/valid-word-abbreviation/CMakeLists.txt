@@ -1,0 +1,1 @@
+add_catch(test_valid_word_abbreviation test.cpp)
