@@ -1,0 +1,1 @@
+add_catch(test_check_if_string_is_decomposable_into_value_equal_substrings test.cpp)
