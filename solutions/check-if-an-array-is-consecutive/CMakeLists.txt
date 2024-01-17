@@ -1,0 +1,1 @@
+add_catch(test_check_if_an_array_is_consecutive test.cpp)
