@@ -1,0 +1,1 @@
+add_catch(test_two_sum_iii_data_structure_design test.cpp)
