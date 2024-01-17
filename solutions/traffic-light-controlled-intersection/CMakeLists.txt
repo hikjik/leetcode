@@ -1,0 +1,1 @@
+add_catch(test_traffic_light_controlled_intersection test.cpp)
