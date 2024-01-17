@@ -1,0 +1,1 @@
+add_catch(test_count_elements_with_maximum_frequency test.cpp)
