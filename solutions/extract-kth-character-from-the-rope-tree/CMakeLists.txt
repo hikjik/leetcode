@@ -1,0 +1,1 @@
+add_catch(test_extract_kth_character_from_the_rope_tree test.cpp)
