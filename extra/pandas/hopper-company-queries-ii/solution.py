@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-def hopper_company(
+def hopper_company_queries(
     drivers: pd.DataFrame, rides: pd.DataFrame, accepted_rides: pd.DataFrame
 ) -> pd.DataFrame:
     month = pd.DataFrame({"month": range(1, 13)})
@@ -27,8 +27,16 @@ def hopper_company(
         .assign(month=lambda x: x.requested_at.dt.month)
         .merge(month, on="month", how="right")
         .groupby("month")
-        .ride_id.nunique()
+        .driver_id.nunique()
         .reset_index(name="accepted_rides")
     )
 
-    return active_drivers.merge(accepted_rides, on="month")
+    return (
+        active_drivers.merge(accepted_rides, on="month")
+        .assign(
+            working_percentage=lambda x: (x.accepted_rides / x.active_drivers * 100)
+        )
+        .round(2)
+        .fillna(0)
+        .drop(columns=["accepted_rides", "active_drivers"])
+    )
