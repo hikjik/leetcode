@@ -1,0 +1,1 @@
+add_catch(test_divide_an_array_into_subarrays_with_minimum_cost_i test.cpp)
