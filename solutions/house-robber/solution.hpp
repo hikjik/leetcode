@@ -41,8 +41,7 @@ public:
   static int rob(const std::vector<int> &nums) {
     int a = 0, b = 0;
     for (auto num : nums) {
-      std::swap(a, b);
-      b = std::max(b + num, a);
+      a = std::exchange(b, std::max(a + num, b));
     }
     return b;
   }
