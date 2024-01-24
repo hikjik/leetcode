@@ -1,0 +1,1 @@
+add_catch(test_pseudo_palindromic_paths_in_a_binary_tree test.cpp)
