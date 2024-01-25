@@ -16,4 +16,3 @@ def waitlist_analysis(flights: pd.DataFrame, passengers: pd.DataFrame) -> pd.Dat
         .reset_index()
         .sort_values("flight_id")
     )
-
