@@ -3,29 +3,27 @@
 #include <string>
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static int compress(std::vector<char> &chars) {
-    int n = chars.size();
-
-    int left = 0, right = 0;
-    while (right < n) {
-      chars[left] = chars[right];
-      int cnt = 0;
-      while (right < n && chars[left] == chars[right]) {
-        right++;
-        cnt++;
+    const int n = chars.size();
+    int size = 0;
+    for (int i = 0; i < n;) {
+      int len = 1;
+      while (i + len < n && chars[i] == chars[i + len]) {
+        ++len;
       }
-      ++left;
-      if (cnt > 1) {
-        for (auto c : std::to_string(cnt)) {
-          chars[left++] = c;
+      chars[size++] = chars[i];
+      i += len;
+      if (len > 1) {
+        for (auto d : std::to_string(len)) {
+          chars[size++] = d;
         }
       }
     }
-    return left;
+    return size;
   }
 };
