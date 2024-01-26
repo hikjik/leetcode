@@ -2,26 +2,23 @@
 
 #include <vector>
 
-// Time:
-// Space:
+// Time: O(N)
+// Space: O(1)
 
 class Solution {
 public:
   static int longestSubarray(const std::vector<int> &nums) {
     const int n = nums.size();
-    int max_length = 0;
+
+    int ans = 0;
     int zeros = 0;
     for (int l = 0, r = 0; r < n; ++r) {
-      if (!nums[r]) {
-        ++zeros;
-      }
+      zeros += !nums[r];
       while (zeros > 1) {
-        if (!nums[l++]) {
-          --zeros;
-        }
+        zeros -= !nums[l++];
       }
-      max_length = std::max(max_length, r - l);
+      ans = std::max(ans, r - l + 1 - zeros);
     }
-    return max_length;
+    return std::min(ans, n - 1);
   }
 };
