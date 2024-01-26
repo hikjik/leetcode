@@ -1,0 +1,1 @@
+add_catch(test_maximize_distance_to_closest_person test.cpp)
