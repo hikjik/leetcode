@@ -1,0 +1,1 @@
+add_catch(test_most_expensive_item_that_can_not_be_bought test.cpp)
