@@ -1,0 +1,1 @@
+add_catch(test_number_of_changing_keys test.cpp)
