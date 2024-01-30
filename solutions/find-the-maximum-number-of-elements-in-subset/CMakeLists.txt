@@ -1,0 +1,1 @@
+add_catch(test_find_the_maximum_number_of_elements_in_subset test.cpp)
