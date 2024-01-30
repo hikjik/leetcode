@@ -20,10 +20,10 @@ public:
 
     std::stack<int> stack;
     for (const auto &token : tokens) {
-      if (ops.count(token)) {
-        int b = stack.top();
+      if (ops.contains(token)) {
+        const auto b = stack.top();
         stack.pop();
-        int a = stack.top();
+        const auto a = stack.top();
         stack.pop();
         stack.push(ops.at(token)(a, b));
       } else {
