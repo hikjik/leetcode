@@ -1,0 +1,1 @@
+add_catch(test_minimize_or_of_remaining_elements_using_operations test.cpp)
