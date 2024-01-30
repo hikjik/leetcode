@@ -1,0 +1,1 @@
+add_catch(test_alice_and_bob_playing_flower_game test.cpp)
