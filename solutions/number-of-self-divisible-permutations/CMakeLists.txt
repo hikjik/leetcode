@@ -1,0 +1,1 @@
+add_catch(test_number_of_self_divisible_permutations test.cpp)
