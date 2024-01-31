@@ -1,0 +1,1 @@
+add_catch(test_clone_binary_tree_with_random_pointer test.cpp)
