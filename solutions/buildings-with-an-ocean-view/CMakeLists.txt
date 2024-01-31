@@ -1,0 +1,1 @@
+add_catch(test_buildings_with_an_ocean_view test.cpp)
