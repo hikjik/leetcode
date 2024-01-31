@@ -1,0 +1,1 @@
+add_catch(test_minimum_costs_using_the_train_line test.cpp)
