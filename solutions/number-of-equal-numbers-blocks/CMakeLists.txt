@@ -1,0 +1,1 @@
+add_catch(test_number_of_equal_numbers_blocks test.cpp)
