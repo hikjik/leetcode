@@ -1,0 +1,1 @@
+add_catch(test_maximum_length_of_semi_decreasing_subarrays test.cpp)
