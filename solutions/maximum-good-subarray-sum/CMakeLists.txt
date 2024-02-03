@@ -1,0 +1,1 @@
+add_catch(test_maximum_good_subarray_sum test.cpp)
