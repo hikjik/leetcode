@@ -1,0 +1,1 @@
+add_catch(test_find_the_number_of_ways_to_place_people_i test.cpp)
