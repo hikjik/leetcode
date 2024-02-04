@@ -1,0 +1,1 @@
+add_catch(test_minimum_time_to_revert_word_to_initial_state_ii test.cpp)

@@ -1,0 +1,1 @@
+add_catch(test_find_the_grid_of_region_average test.cpp)
