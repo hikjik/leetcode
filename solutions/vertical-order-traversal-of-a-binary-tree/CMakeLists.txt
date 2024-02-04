@@ -1,0 +1,1 @@
+add_catch(test_vertical_order_traversal_of_a_binary_tree test.cpp)
