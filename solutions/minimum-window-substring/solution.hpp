@@ -14,23 +14,19 @@ public:
       ++counter[c];
     }
 
-    int need = t.size();
-    int min_size = 1 + s.size();
+    int cnt = counter.size();
+    int length = s.size() + 1;
     int pos = -1;
     for (int l = 0, r = 0; r < std::ssize(s); ++r) {
-      if (--counter[s[r]] >= 0) {
-        --need;
-      }
-      while (!need) {
-        if (r - l + 1 < min_size) {
-          min_size = r - l + 1;
+      cnt -= --counter[s[r]] == 0;
+      while (!cnt) {
+        if (r - l + 1 < length) {
+          length = r - l + 1;
           pos = l;
         }
-        if (++counter[s[l++]] > 0) {
-          ++need;
-        }
+        cnt += ++counter[s[l++]] == 1;
       }
     }
-    return pos == -1 ? "" : s.substr(pos, min_size);
+    return pos == -1 ? "" : s.substr(pos, length);
   }
 };
