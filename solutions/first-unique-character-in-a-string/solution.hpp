@@ -1,7 +1,7 @@
 #pragma once
 
+#include <array>
 #include <string>
-#include <unordered_map>
 
 // Time: O(N)
 // Space: O(A)
@@ -9,11 +9,11 @@
 class Solution {
 public:
   static int firstUniqChar(std::string s) {
-    std::unordered_map<char, int> counter;
+    std::array<int, 128> counter{};
     for (auto c : s) {
       ++counter[c];
     }
-    for (int i = 0; i < ssize(s); ++i) {
+    for (int i = 0; i < std::ssize(s); ++i) {
       if (counter[s[i]] == 1) {
         return i;
       }
