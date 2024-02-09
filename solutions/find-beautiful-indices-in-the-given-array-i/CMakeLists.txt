@@ -1,0 +1,1 @@
+add_catch(test_find_beautiful_indices_in_the_given_array_i test.cpp)
