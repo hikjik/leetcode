@@ -1,0 +1,1 @@
+add_catch(test_find_if_array_can_be_sorted test.cpp)
