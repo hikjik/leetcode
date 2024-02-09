@@ -1,0 +1,1 @@
+add_catch(test_largest_divisible_subset test.cpp)
