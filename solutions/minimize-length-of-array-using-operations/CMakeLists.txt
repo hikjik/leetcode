@@ -1,0 +1,1 @@
+add_catch(test_minimize_length_of_array_using_operations test.cpp)
