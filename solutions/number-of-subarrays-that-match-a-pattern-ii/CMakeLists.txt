@@ -1,0 +1,1 @@
+add_catch(test_number_of_subarrays_that_match_a_pattern_ii test.cpp)

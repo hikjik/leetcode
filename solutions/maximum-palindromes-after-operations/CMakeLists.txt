@@ -1,0 +1,1 @@
+add_catch(test_maximum_palindromes_after_operations test.cpp)
