@@ -1,0 +1,1 @@
+add_catch(test_maximum_number_of_operations_with_the_same_score_ii test.cpp)
