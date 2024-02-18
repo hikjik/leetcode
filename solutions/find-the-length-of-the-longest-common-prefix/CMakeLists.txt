@@ -1,0 +1,1 @@
+add_catch(test_find_the_length_of_the_longest_common_prefix test.cpp)
