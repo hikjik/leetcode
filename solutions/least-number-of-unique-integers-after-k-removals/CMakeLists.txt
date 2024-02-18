@@ -1,0 +1,1 @@
+add_catch(test_least_number_of_unique_integers_after_k_removals test.cpp)
