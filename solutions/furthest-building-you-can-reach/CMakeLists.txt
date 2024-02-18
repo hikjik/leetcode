@@ -1,0 +1,1 @@
+add_catch(test_furthest_building_you_can_reach test.cpp)
