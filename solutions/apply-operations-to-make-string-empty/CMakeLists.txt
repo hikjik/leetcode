@@ -1,0 +1,1 @@
+add_catch(test_apply_operations_to_make_string_empty test.cpp)
