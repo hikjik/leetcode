@@ -1,0 +1,1 @@
+add_catch(test_find_the_largest_area_of_square_inside_two_rectangles test.cpp)
