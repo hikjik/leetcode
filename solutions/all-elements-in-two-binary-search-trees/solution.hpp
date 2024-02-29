@@ -10,7 +10,7 @@
 // Space: O(1)
 // Notes: [Morris Traversal](https://w.wiki/84dw)
 
-class BSTIterator : std::iterator<std::input_iterator_tag, int> {
+class BSTIterator {
 public:
   BSTIterator() : node(nullptr), curr(nullptr) {}
 

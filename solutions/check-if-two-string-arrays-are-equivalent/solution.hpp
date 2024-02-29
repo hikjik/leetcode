@@ -27,12 +27,14 @@ namespace flatten_iterator {
 
 // Time: O(NK)
 // Space: O(1)
-template <typename OuterIterator>
-class FlattenIterator
-    : public std::iterator<
-          std::input_iterator_tag,
-          typename OuterIterator::value_type::const_iterator::value_type> {
+template <typename OuterIterator> class FlattenIterator {
 public:
+  using value_type = OuterIterator::value_type::const_iterator::value_type;
+  using pointer = value_type *;
+  using reference = value_type &;
+  using iterator_category = std::input_iterator_tag;
+  using difference_type = std::ptrdiff_t;
+
   FlattenIterator(OuterIterator first, OuterIterator last)
       : first(first), last(last) {
     if (first != last) {
