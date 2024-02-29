@@ -171,8 +171,8 @@ def update_readme_table() -> None:
     with open(README_FILE, mode="r") as file:
         lines = file.readlines()
 
-    with open(README_FILE, mode="w") as readme_file, open(
-        PROBLEM_LIST_FILE, mode="w"
+    with open(README_FILE, mode="w", encoding="utf-8") as readme_file, open(
+        PROBLEM_LIST_FILE, mode="w", encoding="utf-8"
     ) as list_file:
         for line in lines:
             readme_file.write(line)

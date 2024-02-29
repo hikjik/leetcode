@@ -1,6 +1,6 @@
 # LeetCode
 
-LeetCode С++ solutions with VS Code.
+LeetCode C++ solutions with VS Code.
 
 <img width="50%" src="https://leetcard.jacoblin.cool/morev?theme=wtf&ext=contest">
 
