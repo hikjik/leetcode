@@ -1,0 +1,1 @@
+add_catch(test_minimum_length_of_string_after_deleting_similar_ends test.cpp)
