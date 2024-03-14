@@ -1,0 +1,1 @@
+add_catch(test_binary_subarrays_with_sum test.cpp)
