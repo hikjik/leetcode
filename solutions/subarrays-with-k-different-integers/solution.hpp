@@ -7,12 +7,12 @@
 
 class Solution {
 public:
-  static int subarraysWithKDistinct(std::vector<int> &nums, int k) {
-    return DistinctAtMostK(nums, k) - DistinctAtMostK(nums, k - 1);
+  static int subarraysWithKDistinct(const std::vector<int> &nums, int k) {
+    return distinctAtMostK(nums, k) - distinctAtMostK(nums, k - 1);
   }
 
 private:
-  static int DistinctAtMostK(const std::vector<int> &nums, int k) {
+  static int distinctAtMostK(const std::vector<int> &nums, int k) {
     std::vector<int> counter(nums.size() + 1);
     int distinct_count = 0;
 
