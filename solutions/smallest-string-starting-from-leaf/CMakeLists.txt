@@ -1,0 +1,1 @@
+add_catch(test_smallest_string_starting_from_leaf test.cpp)
